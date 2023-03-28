@@ -19,18 +19,42 @@ class PCB:
 
         # extract net info: net indices, pads with their regions
         self.net_indices = self.extract_nets_indices(delete_nets=delete_nets)
-        self.nets = self.extract_nets()
+        self.net2pads = self.extract_nets()
+        self.nets_info = self.extract_net_info()
 
-        # extract default wire width and clearance
-        try:
-            self.segment_width = self.pcb.net_class[0].trace_width
-            self.trace_clearance = self.pcb.net_class[0].clearance
-            self.via_size = self.pcb.net_class[0].via_dia
-        except:
+    def extract_net_info(self) -> Dict[int, Any]:
+
+        nets_info = dict()
+        
+        netname2idx = dict()
+        for net_idx_name in self.pcb.net:
+            netname2idx[net_idx_name[1]] = net_idx_name[0]
+        
+        if "net_class" in self.pcb:
+            for net_class in self.pcb.net_class:
+                for netname in net_class.add_net:
+                    netidx = netname2idx[str(netname)]
+                    if netidx not in nets_info:
+                        nets_info[netidx] = dict()
+                        nets_info[netidx]["clearance"] = net_class.clearance
+                        nets_info[netidx]["trace_width"] = net_class.trace_width
+                        nets_info[netidx]["via_dia"] = net_class.via_dia
+                        nets_info[netidx]["via_drill"] = net_class.via_drill
+                        try:
+                            nets_info[netidx]["uvia_dia"] = net_class.uvia_dia
+                            nets_info[netidx]["uvia_drill"] = net_class.uvia_drill
+                        except:
+                            print("There is no uvia in the net class!!!")
+        else:
             print(f"there is no default net class, setting clearance manually!!")
-            self.segment_width = 0.3
-            self.trace_clearance = 0.12
-            self.via_size = 0.5
+            for netidx in self.net2pads:
+                nets_info[netidx]["clearance"] = 0.12
+                nets_info[netidx]["trace_width"] = 0.3
+                nets_info[netidx]["via_dia"] = 0.5
+                nets_info[netidx]["via_drill"] = 0.35
+                nets_info[netidx]["uvia_dia"] = 0.3
+                nets_info[netidx]["uvia_drill"] = 0.1
+        return nets_info
 
     def extract_nets_indices(self, delete_nets: Optional[Set[str]]=None) -> None:
 
