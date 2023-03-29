@@ -2,6 +2,7 @@ from typing import Any, Dict, List, Optional, Set, Tuple
 import collections
 from thirdparty.kicad_parser.kicad_pcb import *
 from thirdparty.kicad_parser.sexp_parser import *
+from utils.rotation import cal_xy, cal_real_pad_vertices
 
 class PCB:
     def __init__(self, kicad_file: str="benchmarks/real_world/1bitsy.kicad_pcb", delete_nets: Optional[Set[str]]=None) -> None:
@@ -19,13 +20,33 @@ class PCB:
 
         # extract net info: net indices, pads with their regions
         self.net_indices = self.extract_nets_indices(delete_nets=delete_nets)
-        self.net2pads = self.extract_nets()
+        self._net2pads = self.extract_nets()
+        self.net2pads = self.calculate_pad_pos_size()
         self.nets_info = self.extract_net_info()
+        self.wires = self.pcb.segment if "segment" in self.pcb.segment else []
+        self.vias = self.pcb.via if "via" in self.pcb.via else []
+
+    def calculate_pad_pos_size(self) -> Dict[float, List[Any]]:
+        net2pads = dict()
+        for netidx, pads in self._net2pads.items():
+            if netidx != self.via_obs_pad_value:
+                net2pads[netidx] = []
+                for pad in pads:
+                    pad_xy = cal_xy(pad["module_pos"], pad["relative_pos"], pad["m_rotation"])
+                    pad_vertices = cal_real_pad_vertices(pad)
+                    net2pads[netidx].append({
+                        "pad_center_xy": pad_xy, 
+                        "pad_vertices": pad_vertices,
+                        "pad_size": pad["size"],
+                        "pad_layer": pad["layer"],
+                        "drill_hole": pad["drill_hole"]})
+            else:
+                net2pads[netidx] = pads
+        return net2pads 
 
     def extract_net_info(self) -> Dict[int, Any]:
-
         nets_info = dict()
-        
+
         netname2idx = dict()
         for net_idx_name in self.pcb.net:
             netname2idx[net_idx_name[1]] = net_idx_name[0]
