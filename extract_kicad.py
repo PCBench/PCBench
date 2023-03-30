@@ -2,13 +2,17 @@ from typing import Any, Dict, List, Optional, Set, Tuple
 import collections
 from thirdparty.kicad_parser.kicad_pcb import *
 from thirdparty.kicad_parser.sexp_parser import *
-from utils.rotation import cal_xy, cal_real_pad_vertices
+from utils.pad_rotation import calculate_pad_pos_size
 
 class PCB:
-    def __init__(self, kicad_file: str="benchmarks/real_world/1bitsy.kicad_pcb", delete_nets: Optional[Set[str]]=None) -> None:
+    def __init__(
+            self, 
+            kicad_file: str="benchmarks/real_world/1bitsy.kicad_pcb", 
+            delete_nets: Optional[Set[str]]=None
+        ) -> None:
 
-        self.obs_pad_value = -0.1
-        self.via_obs_pad_value = -0.2
+        self.obs_pad_value = -1
+        self.via_obs_pad_value = -2
         self.pcb = KicadPCB.load(kicad_file)
 
         self.layers = self.extract_layer()
@@ -20,29 +24,42 @@ class PCB:
 
         # extract net info: net indices, pads with their regions
         self.net_indices = self.extract_nets_indices(delete_nets=delete_nets)
-        self._net2pads = self.extract_nets()
-        self.net2pads = self.calculate_pad_pos_size()
+        self.net_pads = self.extract_net_pads()
         self.nets_info = self.extract_net_info()
-        self.wires = self.pcb.segment if "segment" in self.pcb.segment else []
-        self.vias = self.pcb.via if "via" in self.pcb.via else []
+        self.wires = self.pcb.segment if "segment" in self.pcb else []
+        self.vias = self.pcb.via if "via" in self.pcb else []
 
-    def calculate_pad_pos_size(self) -> Dict[float, List[Any]]:
-        net2pads = dict()
-        for netidx, pads in self._net2pads.items():
-            if netidx != self.via_obs_pad_value:
-                net2pads[netidx] = []
-                for pad in pads:
-                    pad_xy = cal_xy(pad["module_pos"], pad["relative_pos"], pad["m_rotation"])
-                    pad_vertices = cal_real_pad_vertices(pad)
-                    net2pads[netidx].append({
-                        "pad_center_xy": pad_xy, 
-                        "pad_vertices": pad_vertices,
-                        "pad_size": pad["size"],
-                        "pad_layer": pad["layer"],
-                        "drill_hole": pad["drill_hole"]})
-            else:
-                net2pads[netidx] = pads
-        return net2pads 
+    @property
+    def net_pads(self):
+        return self._net_pads
+    
+    @net_pads.setter
+    def net_pads(self, value):
+        self._net_pads = value
+    
+    @property
+    def wires(self):
+        return self._wires
+    
+    @wires.setter
+    def wires(self, value):
+        self._wires = value
+
+    @property
+    def vias(self):
+        return self._vias
+    
+    @vias.setter
+    def vias(self, value):
+        self._vias = value
+    
+    @property
+    def nets_info(self):
+        return self._nets_info
+    
+    @nets_info.setter
+    def nets_info(self, value):
+        self._nets_info = value
 
     def extract_net_info(self) -> Dict[int, Any]:
         nets_info = dict()
@@ -107,7 +124,7 @@ class PCB:
 
         return layers
 
-    def extract_nets(self) -> Dict[float, List[Any]]:
+    def extract_net_pads(self) -> Dict[float, List[Any]]:
 
         net2pads = collections.defaultdict(list)
 
@@ -118,12 +135,14 @@ class PCB:
                 for p_info in pads_info:
                     net2pads[p_info[0]].append(p_info[1])
         
-        for via in self.pcb.via:
-            pads_info = self.extract_single_via_pad(via)
-            for pad_info in pads_info:
-                net2pads[self.via_obs_pad_value].append(pad_info[1])
+        new_net2pads = calculate_pad_pos_size(net2pads, [self.via_obs_pad_value])
+        
+        # for via in self.pcb.via:
+        #     pads_info = self.extract_single_via_pad(via)
+        #     for pad_info in pads_info:
+        #         net2pads[self.via_obs_pad_value].append(pad_info[1])
 
-        return net2pads
+        return new_net2pads
 
     def extract_pad(self, module_pad: Dict[str, List[Any]], module_pos: Any) -> List[Any]:
 

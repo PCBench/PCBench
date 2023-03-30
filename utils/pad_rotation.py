@@ -1,7 +1,7 @@
-from math import radians
-from typing import Any, Dict
-import numpy as np
 
+from typing import Any, Dict, List, Tuple
+import numpy as np
+from .geometry import rotate
 
 def cal_xy(module_pos, pad_pos, theta):
     """ Considering rotation
@@ -12,15 +12,7 @@ def cal_xy(module_pos, pad_pos, theta):
 
     return (module_pos[0]+real_pos[0], module_pos[1]+real_pos[1])
 
-def rotate(pos, theta):
-
-    theta = radians(theta)
-    c, s = np.cos(theta), np.sin(theta)
-    R = np.array(((c, -s), (s, c)))
-    
-    return np.matmul(R, pos)
-
-def cal_real_pad_vertices(pad_info: Dict[str, Any], clearance: float=0):
+def cal_real_pad_vertices(pad_info: Dict[str, Any], clearance: float=0) -> List[Tuple[float, float]]:
     corner_directions = [(-1,-1), (-1,1), (1,-1), (1,1)]
     if "relative_pos" in pad_info:
         center_relative = pad_info["relative_pos"]
@@ -42,3 +34,21 @@ def cal_real_pad_vertices(pad_info: Dict[str, Any], clearance: float=0):
         real_vertex_pos = [(real_pos[0]+d[0]*radius, real_pos[1]+d[0]*radius) for d in corner_directions]
 
     return real_vertex_pos
+
+def calculate_pad_pos_size(net2pads_raw: Dict[float, List[Any]], exclude_nets: List[float]) -> Dict[float, List[Any]]:
+    net2pads_new = dict()
+    for netidx, pads in net2pads_raw.items():
+        if netidx not in exclude_nets:
+            net2pads_new[netidx] = []
+            for pad in pads:
+                pad_xy = cal_xy(pad["module_pos"], pad["relative_pos"], pad["m_rotation"])
+                pad_vertices = cal_real_pad_vertices(pad)
+                net2pads_new[netidx].append({
+                    "pad_center_xy": pad_xy, 
+                    "pad_vertices": pad_vertices,
+                    "pad_size": pad["size"],
+                    "pad_layer": pad["layer"],
+                    "drill_hole": pad["drill_hole"]})
+        else:
+            net2pads_new[netidx] = pads
+    return net2pads_new 
