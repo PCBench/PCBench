@@ -70,9 +70,13 @@ class PCB:
     def nets_info(self, value):
         self._nets_info = value
 
-    def design_rule_checker(self) -> None:
-        pass
-
+    @property
+    def DRV(self):
+        return self._DRV
+    
+    @DRV.setter
+    def DRV(self, value):
+        self._DRV = value
 
 
 def extract_net_info(pcb: KicadPCB, net_indices: Set[int]) -> Tuple[Dict[int, Any], List[Tuple[int, int]]]:
@@ -93,15 +97,19 @@ def extract_net_info(pcb: KicadPCB, net_indices: Set[int]) -> Tuple[Dict[int, An
     # extract basic net info
     if "net_class" in pcb:
         for net_class in pcb.net_class:
-            for netname in net_class.add_net:
+            if "add_net" in net_class: 
+                net_names = net_class['add_net']
+            else:
+                net_names = netname2idx.keys()
+            for netname in net_names:
                 netidx = netname2idx[str(netname)]
-                nets_info[netidx]["clearance"] = net_class.clearance
-                nets_info[netidx]["trace_width"] = net_class.trace_width
-                nets_info[netidx]["via_dia"] = net_class.via_dia
-                nets_info[netidx]["via_drill"] = net_class.via_drill
+                nets_info[netidx]["clearance"] = net_class['clearance']
+                nets_info[netidx]["trace_width"] = net_class['trace_width']
+                nets_info[netidx]["via_dia"] = net_class['via_dia']
+                nets_info[netidx]["via_drill"] = net_class['via_drill']
                 try:
-                    nets_info[netidx]["uvia_dia"] = net_class.uvia_dia
-                    nets_info[netidx]["uvia_drill"] = net_class.uvia_drill
+                    nets_info[netidx]["uvia_dia"] = net_class['uvia_dia']
+                    nets_info[netidx]["uvia_drill"] = net_class['uvia_drill']
                 except:
                     print("There is no uvia in the net class!!!")
     else:
@@ -219,17 +227,18 @@ def extract_bound(
 
     lines = []
     min_x, min_y = float("inf"), float("inf")
-    max_x, max_y = float("-inf"), float("-inf")    
+    max_x, max_y = float("-inf"), float("-inf") 
+    width = 0   
     for line in gr_lines:
         if line["layer"][1:-1] == "Edge.Cuts" or line["layer"] == "Edge.Cuts":
-            width = 0
+            width = line.width if "width" in line else line.stroke.width  # kicad v5 vs v6
             min_x = min([min_x, line.start[0]+width, line.end[0]+width])
             min_y = min([min_y, line.start[1]+width, line.end[1]+width])
             max_x = max([max_x, line.start[0]-width, line.end[0]-width])
             max_y = max([max_y, line.start[1]-width, line.end[1]-width])
-            lines.append([tuple(line.start), tuple(line.end), line.width])
+            lines.append([tuple(line.start), tuple(line.end), width])
     for arcs in gr_arcs:
-        width = 0
+        width = line.width if "width" in line else line.stroke.width
         min_x = min([min_x, arcs.start[0]+width, arcs.end[0]+width])
         min_y = min([min_y, arcs.start[1]+width, arcs.end[1]+width])
         max_x = max([max_x, arcs.start[0]-width, arcs.end[0]-width])

@@ -8,6 +8,7 @@ it is to implement a parser in an almost declarative way.
 A usage demonstration is available in `test.py`
 '''
 
+import json
 from .sexp_parser import *
 
 __author__ = "Zheng, Lei"
@@ -84,6 +85,41 @@ class KicadPCB(SexpParser):
 
     @staticmethod
     def load(filename):
-        with open(filename,'r') as f:
-            return KicadPCB(parseSexp(f.read()))
+        ret = None
+        with open(filename,'r') as f:               # v5 or v6 
+            ret = KicadPCB(parseSexp(f.read()))
+        if len(ret.net_class) == 0 :                # if v6, extract net_class from project file
+            circuitname = filename.replace(".kicad_pcb", ".kicad_pro")
+            try:
+                with open(circuitname) as f:
+                    ret.net_class = json.load(f)['net_settings']['classes']
+                    ret.V6ToV5Naming()
+            except FileNotFoundError:
+                print(f"ERROR: kicad_pcb.py detected a kicad v6 file format, but\
+                    \n could not find {circuitname} in the directory of {circuitname} file\
+                    Returning KicadPCB instance with empty net class list")
+            except KeyError:
+                print(f"ERROR: {circuitname} did not contain key 'net_settings'\
+                    \nand/or its subkey 'classes'\
+                    Returning KicadPCB instance with empty net class list")
 
+        return ret
+
+    def V6ToV5Naming(self):
+        for net_class in self.net_class[0]:     # TODO: net_class is currently singular instead of plural. Why?
+                                                # Also, is it just me or is the KicadPCB class miserable?
+            net_class['via_dia'] = net_class['via_diameter']
+            net_class['trace_width'] = net_class['wire_width']
+            net_class['uvia_dia'] = net_class['microvia_diameter']
+            net_class['uvia_drill'] = net_class['microvia_drill']
+            if "nets" in net_class:
+                net_class['add_net'] = net_class['nets']
+                del net_class['nets']
+            del net_class['wire_width']
+            del net_class['via_diameter']
+            del net_class['microvia_diameter']
+            del net_class['microvia_drill']
+        tmp = self.net_class[0]
+        del self.net_class[0]
+        for net_class in tmp:
+            self.net_class = net_class
