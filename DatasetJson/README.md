@@ -36,29 +36,24 @@
             ]
         }
     },
+    # all the wires/routing solution of the pcb, wires is a list of all paths, and aach path/wire isa straight line
     "wires": [
         {
-            "start": [101.6, 38.1],
-            "end": [101.6, 39.16],
-            "width" : 0.15,
-            "layer": "F.Cu",
-            "net": 1
+            "start": [101.6, 38.1], # start xy coordinate of a path
+            "end": [101.6, 39.16],  # end xy coordinate of a path
+            "width" : 0.15,        # line width (mm)
+            "layer": "F.Cu",       # layer where the line is located at
+            "net": 1              # which net the wire is belong to
         }
     ],
+    # this is the list of all the vias in the routing solution
     "vias": [
         {
-            "postion": [111.58, 44.720002],
-            "diameter": 0.45,
-            "drill_diameter" : 0.25,
-            "layers": ["F.Cu", "B.Cu"],
-            "net": 2
-        },
-        {
-            "postion": [126.128012, 41.37],
-            "diameter": 0.45,
-            "drill_diameter" : 0.25,
-            "layers": ["F.Cu", "B.Cu"],
-            "net": 3
+            "postion": [111.58, 44.720002],  # xy coordinate of the center of the via
+            "diameter": 0.45,                # diameter of the via
+            "drill_diameter" : 0.25,         # drill diameter of the via
+            "layers": ["F.Cu", "B.Cu"],      # the layers that the via is for
+            "net": 2                         # which net the via is belong to
         }
     ]
 }
