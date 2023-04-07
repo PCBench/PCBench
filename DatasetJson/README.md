@@ -11,6 +11,8 @@
     "boundaries": [[[line1_start_node_x, line1_start_node_x], [line1_end_node_x, line1_end_node_x], line_width], 
                    [[line2_start_node_x, line2_start_node_x], [line2_end_node_x, line2_end_node_x], line_width]],
     "net_indices": [1,2,3],  # a list of indices of all nets to be routed
+
+    # store all the net information, its is obstacles if net index is -1 or -2
     "nets": {
         net_index : {
             "net_name": "/VIN",  # net name

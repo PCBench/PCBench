@@ -134,4 +134,14 @@ def is_pad_node(
             return True
     
     return False
-        
+
+
+if __name__ == "__main__":
+    kicad_filename = "./benchmarks/real_world/candleLight.kicad_pcb"
+    pcb = PCB(kicad_filename)
+
+    PCB_cleaner(pcb=pcb)
+
+    from dump_wires2kicad_segments import dump_wires
+
+    dump_wires(kicad_filename, pcb.wires, pcb.vias)

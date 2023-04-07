@@ -36,8 +36,6 @@ class PCB:
         self.wires = self.pcb.segment if "segment" in self.pcb else []
         self.vias = self.pcb.via if "via" in self.pcb else []
 
-        self.DRV = dict()
-
     @property
     def net_pads(self):
         return self._net_pads
@@ -69,14 +67,6 @@ class PCB:
     @nets_info.setter
     def nets_info(self, value):
         self._nets_info = value
-
-    @property
-    def DRV(self):
-        return self._DRV
-    
-    @DRV.setter
-    def DRV(self, value):
-        self._DRV = value
 
 
 def extract_net_info(pcb: KicadPCB, net_indices: Set[int]) -> Tuple[Dict[int, Any], List[Tuple[int, int]]]:
@@ -168,7 +158,7 @@ def extract_net_pads(pcb: KicadPCB,
             pads_info = extract_pad(p, module_pos, layers, net_indices, obs_pad_value)
             for p_info in pads_info:
                 net2pads[p_info[0]].append(p_info[1])
-    
+
     new_net2pads = calculate_pad_pos_size(net2pads, exclude_nets)
     
     # for via in self.pcb.via:
@@ -228,7 +218,7 @@ def extract_bound(
     lines = []
     min_x, min_y = float("inf"), float("inf")
     max_x, max_y = float("-inf"), float("-inf") 
-    width = 0   
+    width = 0
     for line in gr_lines:
         if line["layer"][1:-1] == "Edge.Cuts" or line["layer"] == "Edge.Cuts":
             width = line.width if "width" in line else line.stroke.width  # kicad v5 vs v6
@@ -238,11 +228,13 @@ def extract_bound(
             max_y = max([max_y, line.start[1]-width, line.end[1]-width])
             lines.append([tuple(line.start), tuple(line.end), width])
     for arcs in gr_arcs:
-        width = line.width if "width" in line else line.stroke.width
-        min_x = min([min_x, arcs.start[0]+width, arcs.end[0]+width])
-        min_y = min([min_y, arcs.start[1]+width, arcs.end[1]+width])
-        max_x = max([max_x, arcs.start[0]-width, arcs.end[0]-width])
-        max_y = max([max_y, arcs.start[1]-width, arcs.end[1]-width])
+        if arcs["layer"][1:-1] == "Edge.Cuts" or arcs["layer"] == "Edge.Cuts":
+            width = arcs.width if "width" in arcs else arcs.stroke.width
+            min_x = min([min_x, arcs.start[0]+width, arcs.end[0]+width])
+            min_y = min([min_y, arcs.start[1]+width, arcs.end[1]+width])
+            max_x = max([max_x, arcs.start[0]-width, arcs.end[0]-width])
+            max_y = max([max_y, arcs.start[1]-width, arcs.end[1]-width])
+            lines.append([tuple(arcs.start), tuple(arcs.end), arcs.angle, width])
     
     return min_x, min_y, max_x, max_y, lines
 
