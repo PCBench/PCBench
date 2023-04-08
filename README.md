@@ -10,7 +10,7 @@ kicad_filename = "./benchmarks/real_world/1bitsy.kicad_pcb"
 pcb = PCB(kicad_filename)
 ```
 
-The extracted infomation are stored in `PCB` class, it includes following PCB inforamtion (look at test.ipynb about how to access each info):
+The extracted infomation are stored in `PCB` class, it includes following PCB inforamtion (look at [test.ipynb](https://github.com/ybiao-he/PCBench/blob/main/test.ipynb) about how to access each info):
 1. layers: a list of layer names
 2. boundary lines (now it only support straight lines, arcs need to be added later): a list of boundary lines
 3. circuit range: a list of min_x, min_y, max_x, max_y
