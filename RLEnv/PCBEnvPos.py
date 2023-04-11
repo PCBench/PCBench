@@ -1,4 +1,4 @@
-from typing import Any, List
+from typing import List
 import gymnasium as gym
 from gymnasium import spaces
 import numpy as np
@@ -6,9 +6,14 @@ from extract_kicad import PCB
 from .PCBGridize import PCBGridize
 from utils.geometry import closest_point_idx
 from collections import defaultdict
+import random
+import os
 
 class PCBEnvPos(gym.Env):
-    def __init__(self) -> None:
+    def __init__(self, resolution: float, pcb_folder: str, pcb_names: List[str]) -> None:
+        self.resolution = resolution
+        self.pcb_names = pcb_names
+        self.pcb_folder = pcb_folder
         n_actions = 6
         self._action_to_direction = {
             0: np.array([1, 0, 0]),
@@ -22,8 +27,8 @@ class PCBEnvPos(gym.Env):
         self.action_space = spaces.Discrete(n_actions)
         self.observation_space = spaces.Box(low=0, high=30, shape=self.state_shape, dtype=np.float32)
     
-    def _get_obs(self):
-        return np.array([self._agent_location, self._target_location])
+    def _get_obs(self) -> np.ndarray:
+        return np.array(np.concatenate((self._agent_location, self._target_location)))
 
     def _get_info(self):
         return {
@@ -32,10 +37,12 @@ class PCBEnvPos(gym.Env):
             )
         }
 
-    def reset(self, resolution: float, pcb_name: str):
+    def reset(self):
 
-        self.pcb = PCB(pcb_name)
-        self.pcb_matrix, self.nets = PCBGridize(pcb=self.pcb, resolution=resolution)
+        pcb_name = random.choice(self.pcb_names)
+        pcb_file_path = os.path.join(self.pcb_folder, pcb_name)
+        self.pcb = PCB(pcb_file_path)
+        self.pcb_matrix, self.nets = PCBGridize(pcb=self.pcb, resolution=self.resolution)
 
         self.nets_indices = list(self.nets.keys())
         self.current_net = self.nets_indices.pop(0)
@@ -45,19 +52,15 @@ class PCBEnvPos(gym.Env):
         self.path_length = 0
         self.DRVs = 0
         self.nets_path = defaultdict(list)
-        self.current_path = [self._agent_location]
+        self.current_path = [tuple(self._agent_location)]
 
         self.terminated = False
 
-        return self._get_obs()
+        return self._get_obs(), self._get_info()
 
     def step(self, action: int):
 
         self._update_state(action=action)
-        # TODO: revise termination
-        """
-        check if current pin pair is connected, if so, we need to select a new pin pair or go to next net, otherwise do nothing
-        """
         
         reward = self._get_reward()
         observation = self._get_obs()
@@ -69,7 +72,6 @@ class PCBEnvPos(gym.Env):
 
         direction = self._action_to_direction[action]
         new_location = self._agent_location + direction
-        print(new_location, self._agent_location, action)
         if np.array_equal(new_location, self._target_location):
             self.nets_path[self.current_net].append(self.current_path)
             if len(self.nets[self.current_net]) == 0:
@@ -90,15 +92,17 @@ class PCBEnvPos(gym.Env):
                 [0, 0, 0], 
                 [self.pcb_matrix.shape[0]-1, self.pcb_matrix.shape[1], len(self.pcb.layers)-1],
             )
-        self.current_path.append(self._agent_location)
-
-        if self.pcb_matrix[tuple(self._agent_location)] != 0 and self.pcb_matrix[tuple(self._agent_location)] != self.current_net:
+        
+        matrix_value = self.pcb_matrix[tuple(self._agent_location)]
+        if matrix_value != 0 and matrix_value != self.current_net and tuple(new_location) in self.current_path:
             self.DRVs += 1
         else:
             self.pcb_matrix[tuple(self._agent_location)] = self.current_net
+        
+        self.current_path.append(tuple(self._agent_location))
         self.path_length += 1
 
-    def _get_reward(self):
+    def _get_reward(self) -> float:
         return -self.DRVs - self.path_length if self.terminated else 0
 
     def render(self):
