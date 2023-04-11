@@ -20,7 +20,6 @@ def sort_quadrilateral_clockwise(vertices: List[Tuple[float, float]]) -> List[in
 
     # Calculate the angle of each point with respect to the centroid
     angles = [(i, (math.atan2(p[1] - cy, p[0] - cx) + 2 * math.pi) % (2 * math.pi)) for i, p in enumerate([p1, p2, p3, p4])]
-    print(angles)
     # Sort the points by angle in ascending order
     angles.sort(key=lambda x: x[1])
 
@@ -38,7 +37,7 @@ def is_point_inside_quadrilateral(point: Tuple[float, float], quadrilateral: Lis
     return polygon.contains(point)
 
 
-def closest_point(points: List[Tuple[int, int, int]], given_point: Tuple[int, int, int]) -> int:
+def closest_point_idx(points: List[Tuple[int, int, int]], given_point: Tuple[int, int, int]) -> int:
     # Convert list of points to a numpy array
     points = np.array(points)
     # Calculate Euclidean distance from given_point to each point in points

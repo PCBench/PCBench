@@ -2,12 +2,12 @@ from typing import Any, List
 import gymnasium as gym
 from gymnasium import spaces
 import numpy as np
-from ..extract_kicad import PCB
+from extract_kicad import PCB
 from .PCBGridize import PCBGridize
-from ..utils.geometry import closest_point_idx
+from utils.geometry import closest_point_idx
 from collections import defaultdict
 
-class PCEnvPos(gym.Env):
+class PCBEnvPos(gym.Env):
     def __init__(self) -> None:
         n_actions = 6
         self._action_to_direction = {
@@ -23,7 +23,7 @@ class PCEnvPos(gym.Env):
         self.observation_space = spaces.Box(low=0, high=30, shape=self.state_shape, dtype=np.float32)
     
     def _get_obs(self):
-        pass
+        return np.array([self._agent_location, self._target_location])
 
     def _get_info(self):
         return {
@@ -69,6 +69,7 @@ class PCEnvPos(gym.Env):
 
         direction = self._action_to_direction[action]
         new_location = self._agent_location + direction
+        print(new_location, self._agent_location, action)
         if np.array_equal(new_location, self._target_location):
             self.nets_path[self.current_net].append(self.current_path)
             if len(self.nets[self.current_net]) == 0:
@@ -91,10 +92,10 @@ class PCEnvPos(gym.Env):
             )
         self.current_path.append(self._agent_location)
 
-        if self.pcb_matrix[self._agent_location] != 0 and self.pcb_matrix[self._agent_location] != self.current_net:
+        if self.pcb_matrix[tuple(self._agent_location)] != 0 and self.pcb_matrix[tuple(self._agent_location)] != self.current_net:
             self.DRVs += 1
         else:
-            self.pcb_matrix[self._agent_location] = self.current_net
+            self.pcb_matrix[tuple(self._agent_location)] = self.current_net
         self.path_length += 1
 
     def _get_reward(self):
