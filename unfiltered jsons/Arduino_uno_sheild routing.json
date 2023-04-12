@@ -1,0 +1,1875 @@
+{
+  "board_settings": {},
+  "net classes": {},
+  "net routes": {
+    "0": {
+      "name": "",
+      "class": "TODO",
+      "pads": [],
+      "tracks": {
+        "segments": [],
+        "arcs": ["TODO: extract arc info. Most samples don't have arcs to help test :("],
+        "vias": ["TODO: are vias necessary for our routing interests?"]
+      },
+      "errors": []
+    },
+    "1": {
+      "name": "/RX",
+      "class": "TODO",
+      "pads": [
+        {
+          "JPL Robotics:455-1708-ND pad 4": {
+            "abs_pos": [9.8608, -15.5448]
+          }
+        },
+        {
+          "JPL Robotics:Arduino Uno Sheild pad 0": {
+            "abs_pos": [63.5, -50.8]
+          }
+        }
+      ],
+      "tracks": {
+        "segments": [
+          {
+            "start": [63.5, -50.8],
+            "end": [60.2488, -47.5488],
+            "width": 0.25,
+            "layer": "B.Cu"
+          },
+          {
+            "start": [60.2488, -47.5488],
+            "end": [18.8976, -47.5488],
+            "width": 0.25,
+            "layer": "B.Cu"
+          },
+          {
+            "start": [18.8976, -47.5488],
+            "end": [10.2108, -38.862],
+            "width": 0.25,
+            "layer": "B.Cu"
+          },
+          {
+            "start": [10.2108, -27.8948],
+            "end": [3.8608, -21.5448],
+            "width": 0.25,
+            "layer": "B.Cu"
+          },
+          {
+            "start": [10.2108, -38.862],
+            "end": [10.2108, -27.8948],
+            "width": 0.25,
+            "layer": "B.Cu"
+          }
+        ],
+        "arcs": ["TODO: extract arc info. Most samples don't have arcs to help test :("],
+        "vias": ["TODO: are vias necessary for our routing interests?"]
+      },
+      "errors": []
+    },
+    "2": {
+      "name": "/TX",
+      "class": "TODO",
+      "pads": [
+        {
+          "JPL Robotics:455-1708-ND pad 5": {
+            "abs_pos": [11.8608, -15.5448]
+          }
+        },
+        {
+          "JPL Robotics:Arduino Uno Sheild pad 1": {
+            "abs_pos": [60.96, -50.8]
+          }
+        }
+      ],
+      "tracks": {
+        "segments": [
+          {
+            "start": [58.5724, -48.4124],
+            "end": [18.288, -48.4124],
+            "width": 0.25,
+            "layer": "B.Cu"
+          },
+          {
+            "start": [60.96, -50.8],
+            "end": [58.5724, -48.4124],
+            "width": 0.25,
+            "layer": "B.Cu"
+          },
+          {
+            "start": [18.288, -48.4124],
+            "end": [9.4996, -39.624],
+            "width": 0.25,
+            "layer": "B.Cu"
+          },
+          {
+            "start": [9.4996, -29.1836],
+            "end": [3.8608, -23.5448],
+            "width": 0.25,
+            "layer": "B.Cu"
+          },
+          {
+            "start": [9.4996, -39.624],
+            "end": [9.4996, -29.1836],
+            "width": 0.25,
+            "layer": "B.Cu"
+          }
+        ],
+        "arcs": ["TODO: extract arc info. Most samples don't have arcs to help test :("],
+        "vias": ["TODO: are vias necessary for our routing interests?"]
+      },
+      "errors": []
+    },
+    "3": {
+      "name": "/R1",
+      "class": "TODO",
+      "pads": [
+        {
+          "JPL Robotics:Arduino Uno Sheild pad 2": {
+            "abs_pos": [58.42, -50.8]
+          }
+        },
+        {
+          "JPL Robotics:16 pos 3M connector pad 1": {
+            "abs_pos": [45.364399999999996, -29.311600000000002]
+          }
+        }
+      ],
+      "tracks": {
+        "segments": [
+          {
+            "start": [56.65577, -21.6916],
+            "end": [55.5244, -21.6916],
+            "width": 0.25,
+            "layer": "F.Cu"
+          },
+          {
+            "start": [60.220038, -25.255868],
+            "end": [56.65577, -21.6916],
+            "width": 0.25,
+            "layer": "F.Cu"
+          },
+          {
+            "start": [60.220038, -48.999962],
+            "end": [60.220038, -25.255868],
+            "width": 0.25,
+            "layer": "F.Cu"
+          },
+          {
+            "start": [58.42, -50.8],
+            "end": [60.220038, -48.999962],
+            "width": 0.25,
+            "layer": "F.Cu"
+          }
+        ],
+        "arcs": ["TODO: extract arc info. Most samples don't have arcs to help test :("],
+        "vias": ["TODO: are vias necessary for our routing interests?"]
+      },
+      "errors": []
+    },
+    "4": {
+      "name": "/G1",
+      "class": "TODO",
+      "pads": [
+        {
+          "JPL Robotics:Arduino Uno Sheild pad 3": {
+            "abs_pos": [55.88, -50.8]
+          }
+        },
+        {
+          "JPL Robotics:16 pos 3M connector pad 2": {
+            "abs_pos": [45.364399999999996, -31.8516]
+          }
+        }
+      ],
+      "tracks": {
+        "segments": [
+          {
+            "start": [59.770029, -46.909971],
+            "end": [59.770029, -26.292829],
+            "width": 0.25,
+            "layer": "F.Cu"
+          },
+          {
+            "start": [55.88, -50.8],
+            "end": [59.770029, -46.909971],
+            "width": 0.25,
+            "layer": "F.Cu"
+          },
+          {
+            "start": [53.784399, -22.491599],
+            "end": [52.9844, -21.6916],
+            "width": 0.25,
+            "layer": "F.Cu"
+          },
+          {
+            "start": [54.109401, -22.816601],
+            "end": [53.784399, -22.491599],
+            "width": 0.25,
+            "layer": "F.Cu"
+          },
+          {
+            "start": [56.293801, -22.816601],
+            "end": [54.109401, -22.816601],
+            "width": 0.25,
+            "layer": "F.Cu"
+          },
+          {
+            "start": [59.770029, -26.292829],
+            "end": [56.293801, -22.816601],
+            "width": 0.25,
+            "layer": "F.Cu"
+          }
+        ],
+        "arcs": ["TODO: extract arc info. Most samples don't have arcs to help test :("],
+        "vias": ["TODO: are vias necessary for our routing interests?"]
+      },
+      "errors": []
+    },
+    "5": {
+      "name": "/B1",
+      "class": "TODO",
+      "pads": [
+        {
+          "JPL Robotics:Arduino Uno Sheild pad 4": {
+            "abs_pos": [53.34, -50.8]
+          }
+        },
+        {
+          "JPL Robotics:16 pos 3M connector pad 3": {
+            "abs_pos": [47.904399999999995, -29.311600000000002]
+          }
+        }
+      ],
+      "tracks": {
+        "segments": [
+          {
+            "start": [53.34, -50.8],
+            "end": [53.34, -45.466],
+            "width": 0.25,
+            "layer": "F.Cu"
+          },
+          {
+            "start": [54.66799, -44.13801],
+            "end": [56.29359, -44.13801],
+            "width": 0.25,
+            "layer": "F.Cu"
+          },
+          {
+            "start": [53.34, -45.466],
+            "end": [54.66799, -44.13801],
+            "width": 0.25,
+            "layer": "F.Cu"
+          },
+          {
+            "start": [56.324399, -25.031599],
+            "end": [55.5244, -24.2316],
+            "width": 0.25,
+            "layer": "F.Cu"
+          },
+          {
+            "start": [59.32002, -28.02722],
+            "end": [56.324399, -25.031599],
+            "width": 0.25,
+            "layer": "F.Cu"
+          },
+          {
+            "start": [59.32002, -41.11158],
+            "end": [59.32002, -28.02722],
+            "width": 0.25,
+            "layer": "F.Cu"
+          },
+          {
+            "start": [56.29359, -44.13801],
+            "end": [59.32002, -41.11158],
+            "width": 0.25,
+            "layer": "F.Cu"
+          }
+        ],
+        "arcs": ["TODO: extract arc info. Most samples don't have arcs to help test :("],
+        "vias": ["TODO: are vias necessary for our routing interests?"]
+      },
+      "errors": []
+    },
+    "6": {
+      "name": "/R2",
+      "class": "TODO",
+      "pads": [
+        {
+          "JPL Robotics:Arduino Uno Sheild pad 5": {
+            "abs_pos": [50.8, -50.8]
+          }
+        },
+        {
+          "JPL Robotics:16 pos 3M connector pad 5": {
+            "abs_pos": [50.444399999999995, -29.311600000000002]
+          }
+        }
+      ],
+      "tracks": {
+        "segments": [
+          {
+            "start": [56.324399, -27.571599],
+            "end": [55.5244, -26.7716],
+            "width": 0.25,
+            "layer": "F.Cu"
+          },
+          {
+            "start": [50.8, -44.704],
+            "end": [51.82319, -43.68081],
+            "width": 0.25,
+            "layer": "F.Cu"
+          },
+          {
+            "start": [51.82319, -43.68081],
+            "end": [51.83038, -43.688],
+            "width": 0.25,
+            "layer": "F.Cu"
+          },
+          {
+            "start": [58.87001, -30.11721],
+            "end": [56.324399, -27.571599],
+            "width": 0.25,
+            "layer": "F.Cu"
+          },
+          {
+            "start": [51.83038, -43.688],
+            "end": [56.08602, -43.688],
+            "width": 0.25,
+            "layer": "F.Cu"
+          },
+          {
+            "start": [56.08602, -43.688],
+            "end": [58.87001, -40.90401],
+            "width": 0.25,
+            "layer": "F.Cu"
+          },
+          {
+            "start": [50.8, -50.8],
+            "end": [50.8, -44.704],
+            "width": 0.25,
+            "layer": "F.Cu"
+          },
+          {
+            "start": [58.87001, -40.90401],
+            "end": [58.87001, -30.11721],
+            "width": 0.25,
+            "layer": "F.Cu"
+          }
+        ],
+        "arcs": ["TODO: extract arc info. Most samples don't have arcs to help test :("],
+        "vias": ["TODO: are vias necessary for our routing interests?"]
+      },
+      "errors": []
+    },
+    "7": {
+      "name": "/G2",
+      "class": "TODO",
+      "pads": [
+        {
+          "JPL Robotics:Arduino Uno Sheild pad 6": {
+            "abs_pos": [48.26, -50.8]
+          }
+        },
+        {
+          "JPL Robotics:16 pos 3M connector pad 6": {
+            "abs_pos": [50.444399999999995, -31.8516]
+          }
+        }
+      ],
+      "tracks": {
+        "segments": [
+          {
+            "start": [48.26, -50.8],
+            "end": [48.26, -44.5516],
+            "width": 0.25,
+            "layer": "F.Cu"
+          },
+          {
+            "start": [48.26, -44.5516],
+            "end": [48.5648, -44.2468],
+            "width": 0.25,
+            "layer": "F.Cu"
+          },
+          {
+            "start": [48.5648, -44.2468],
+            "end": [48.5648, -29.8704],
+            "width": 0.25,
+            "layer": "B.Cu"
+          },
+          {
+            "start": [51.6636, -26.7716],
+            "end": [52.9844, -26.7716],
+            "width": 0.25,
+            "layer": "B.Cu"
+          },
+          {
+            "start": [48.5648, -29.8704],
+            "end": [51.6636, -26.7716],
+            "width": 0.25,
+            "layer": "B.Cu"
+          }
+        ],
+        "arcs": ["TODO: extract arc info. Most samples don't have arcs to help test :("],
+        "vias": ["TODO: are vias necessary for our routing interests?"]
+      },
+      "errors": []
+    },
+    "8": {
+      "name": "/B2",
+      "class": "TODO",
+      "pads": [
+        {
+          "JPL Robotics:Arduino Uno Sheild pad 7": {
+            "abs_pos": [45.72, -50.8]
+          }
+        },
+        {
+          "JPL Robotics:16 pos 3M connector pad 7": {
+            "abs_pos": [52.984399999999994, -29.311600000000002]
+          }
+        }
+      ],
+      "tracks": {
+        "segments": [
+          {
+            "start": [45.72, -49.696914],
+            "end": [45.7708, -49.646114],
+            "width": 0.25,
+            "layer": "F.Cu"
+          },
+          {
+            "start": [45.72, -50.8],
+            "end": [45.72, -49.696914],
+            "width": 0.25,
+            "layer": "F.Cu"
+          },
+          {
+            "start": [45.7708, -49.646114],
+            "end": [45.7708, -44.704],
+            "width": 0.25,
+            "layer": "F.Cu"
+          },
+          {
+            "start": [45.7708, -44.704],
+            "end": [47.244, -43.2308],
+            "width": 0.25,
+            "layer": "F.Cu"
+          },
+          {
+            "start": [55.90681, -43.2308],
+            "end": [58.42, -40.71761],
+            "width": 0.25,
+            "layer": "F.Cu"
+          },
+          {
+            "start": [47.244, -43.2308],
+            "end": [55.90681, -43.2308],
+            "width": 0.25,
+            "layer": "F.Cu"
+          },
+          {
+            "start": [58.42, -32.2072],
+            "end": [55.5244, -29.3116],
+            "width": 0.25,
+            "layer": "F.Cu"
+          },
+          {
+            "start": [58.42, -40.71761],
+            "end": [58.42, -32.2072],
+            "width": 0.25,
+            "layer": "F.Cu"
+          }
+        ],
+        "arcs": ["TODO: extract arc info. Most samples don't have arcs to help test :("],
+        "vias": ["TODO: are vias necessary for our routing interests?"]
+      },
+      "errors": []
+    },
+    "9": {
+      "name": "/CLK",
+      "class": "TODO",
+      "pads": [
+        {
+          "JPL Robotics:Arduino Uno Sheild pad 8": {
+            "abs_pos": [41.656, -50.8]
+          }
+        },
+        {
+          "JPL Robotics:16 pos 3M connector pad 13": {
+            "abs_pos": [60.6044, -29.311600000000002]
+          }
+        }
+      ],
+      "tracks": {
+        "segments": [
+          {
+            "start": [42.435999, -50.020001],
+            "end": [42.435999, -47.276801],
+            "width": 0.25,
+            "layer": "F.Cu"
+          },
+          {
+            "start": [41.656, -50.8],
+            "end": [42.435999, -50.020001],
+            "width": 0.25,
+            "layer": "F.Cu"
+          },
+          {
+            "start": [42.435999, -47.276801],
+            "end": [47.0408, -42.672],
+            "width": 0.25,
+            "layer": "F.Cu"
+          },
+          {
+            "start": [47.0408, -42.672],
+            "end": [55.8292, -42.672],
+            "width": 0.25,
+            "layer": "F.Cu"
+          },
+          {
+            "start": [55.8292, -42.672],
+            "end": [57.8104, -40.6908],
+            "width": 0.25,
+            "layer": "F.Cu"
+          },
+          {
+            "start": [57.8104, -39.2176],
+            "end": [55.5244, -36.9316],
+            "width": 0.25,
+            "layer": "F.Cu"
+          },
+          {
+            "start": [57.8104, -40.6908],
+            "end": [57.8104, -39.2176],
+            "width": 0.25,
+            "layer": "F.Cu"
+          }
+        ],
+        "arcs": ["TODO: extract arc info. Most samples don't have arcs to help test :("],
+        "vias": ["TODO: are vias necessary for our routing interests?"]
+      },
+      "errors": []
+    },
+    "10": {
+      "name": "/OE",
+      "class": "TODO",
+      "pads": [
+        {
+          "JPL Robotics:Arduino Uno Sheild pad 9": {
+            "abs_pos": [39.116, -50.8]
+          }
+        },
+        {
+          "JPL Robotics:16 pos 3M connector pad 15": {
+            "abs_pos": [63.1444, -29.311600000000002]
+          }
+        }
+      ],
+      "tracks": {
+        "segments": [
+          {
+            "start": [39.895999, -50.020001],
+            "end": [39.895999, -48.750001],
+            "width": 0.25,
+            "layer": "F.Cu"
+          },
+          {
+            "start": [39.116, -50.8],
+            "end": [39.895999, -50.020001],
+            "width": 0.25,
+            "layer": "F.Cu"
+          },
+          {
+            "start": [39.895999, -48.750001],
+            "end": [46.6852, -41.9608],
+            "width": 0.25,
+            "layer": "F.Cu"
+          },
+          {
+            "start": [53.0352, -41.9608],
+            "end": [55.5244, -39.4716],
+            "width": 0.25,
+            "layer": "F.Cu"
+          },
+          {
+            "start": [46.6852, -41.9608],
+            "end": [53.0352, -41.9608],
+            "width": 0.25,
+            "layer": "F.Cu"
+          }
+        ],
+        "arcs": ["TODO: extract arc info. Most samples don't have arcs to help test :("],
+        "vias": ["TODO: are vias necessary for our routing interests?"]
+      },
+      "errors": []
+    },
+    "11": {
+      "name": "/LAT",
+      "class": "TODO",
+      "pads": [
+        {
+          "JPL Robotics:Arduino Uno Sheild pad 10": {
+            "abs_pos": [36.576, -50.8]
+          }
+        },
+        {
+          "JPL Robotics:16 pos 3M connector pad 14": {
+            "abs_pos": [60.6044, -31.8516]
+          }
+        }
+      ],
+      "tracks": {
+        "segments": [
+          {
+            "start": [51.85303, -36.9316],
+            "end": [52.9844, -36.9316],
+            "width": 0.25,
+            "layer": "F.Cu"
+          },
+          {
+            "start": [49.341314, -36.9316],
+            "end": [51.85303, -36.9316],
+            "width": 0.25,
+            "layer": "F.Cu"
+          },
+          {
+            "start": [36.576, -49.696914],
+            "end": [49.341314, -36.9316],
+            "width": 0.25,
+            "layer": "F.Cu"
+          },
+          {
+            "start": [36.576, -50.8],
+            "end": [36.576, -49.696914],
+            "width": 0.25,
+            "layer": "F.Cu"
+          }
+        ],
+        "arcs": ["TODO: extract arc info. Most samples don't have arcs to help test :("],
+        "vias": ["TODO: are vias necessary for our routing interests?"]
+      },
+      "errors": []
+    },
+    "12": {
+      "name": "/MOSI",
+      "class": "TODO",
+      "pads": [
+        {
+          "JPL Robotics:Arduino Uno Sheild pad 11": {
+            "abs_pos": [34.036, -50.8]
+          }
+        },
+        {
+          "JPL Robotics:6 pos header pin pad 1": {
+            "abs_pos": [34.036, -40.64]
+          }
+        }
+      ],
+      "tracks": {
+        "segments": [
+          {
+            "start": [34.036, -50.8],
+            "end": [34.036, -40.64],
+            "width": 0.25,
+            "layer": "F.Cu"
+          }
+        ],
+        "arcs": ["TODO: extract arc info. Most samples don't have arcs to help test :("],
+        "vias": ["TODO: are vias necessary for our routing interests?"]
+      },
+      "errors": []
+    },
+    "13": {
+      "name": "/MISO",
+      "class": "TODO",
+      "pads": [
+        {
+          "JPL Robotics:Arduino Uno Sheild pad 12": {
+            "abs_pos": [31.496, -50.8]
+          }
+        },
+        {
+          "JPL Robotics:6 pos header pin pad 2": {
+            "abs_pos": [36.576, -40.64]
+          }
+        }
+      ],
+      "tracks": {
+        "segments": [
+          {
+            "start": [31.496, -49.696914],
+            "end": [31.496, -40.64],
+            "width": 0.25,
+            "layer": "F.Cu"
+          },
+          {
+            "start": [31.496, -50.8],
+            "end": [31.496, -49.696914],
+            "width": 0.25,
+            "layer": "F.Cu"
+          }
+        ],
+        "arcs": ["TODO: extract arc info. Most samples don't have arcs to help test :("],
+        "vias": ["TODO: are vias necessary for our routing interests?"]
+      },
+      "errors": []
+    },
+    "14": {
+      "name": "/SCK",
+      "class": "TODO",
+      "pads": [
+        {
+          "JPL Robotics:Arduino Uno Sheild pad 13": {
+            "abs_pos": [28.956, -50.8]
+          }
+        },
+        {
+          "JPL Robotics:6 pos header pin pad 3": {
+            "abs_pos": [39.116, -40.64]
+          }
+        }
+      ],
+      "tracks": {
+        "segments": [
+          {
+            "start": [28.956, -50.8],
+            "end": [28.956, -40.64],
+            "width": 0.25,
+            "layer": "F.Cu"
+          }
+        ],
+        "arcs": ["TODO: extract arc info. Most samples don't have arcs to help test :("],
+        "vias": ["TODO: are vias necessary for our routing interests?"]
+      },
+      "errors": []
+    },
+    "15": {
+      "name": "GND",
+      "class": "TODO",
+      "pads": [
+        {
+          "JPL Robotics:455-1708-ND pad 3": {
+            "abs_pos": [7.860799999999999, -15.5448]
+          }
+        },
+        {
+          "TestPoint:TestPoint_Pad_1.0x1.0mm pad 1": {
+            "abs_pos": [16.319001, -39.469999]
+          }
+        },
+        {
+          "TestPoint:TestPoint_Pad_1.0x1.0mm pad 1": {
+            "abs_pos": [6.5913, -35.56]
+          }
+        },
+        {
+          "TestPoint:TestPoint_Pad_1.0x1.0mm pad 1": {
+            "abs_pos": [21.5011, -7.6835]
+          }
+        },
+        {
+          "JPL Robotics:Arduino Uno Sheild pad 24": {
+            "abs_pos": [40.64, -2.54]
+          }
+        },
+        {
+          "JPL Robotics:Arduino Uno Sheild pad 25": {
+            "abs_pos": [43.18, -2.54]
+          }
+        },
+        {
+          "JPL Robotics:Arduino Uno Sheild pad 27": {
+            "abs_pos": [26.416, -50.8]
+          }
+        },
+        {
+          "JPL Robotics:16 pos 3M connector pad 4": {
+            "abs_pos": [47.904399999999995, -31.8516]
+          }
+        },
+        {
+          "JPL Robotics:16 pos 3M connector pad 8": {
+            "abs_pos": [52.984399999999994, -31.8516]
+          }
+        },
+        {
+          "JPL Robotics:16 pos 3M connector pad 12": {
+            "abs_pos": [58.0644, -31.8516]
+          }
+        },
+        {
+          "JPL Robotics:16 pos 3M connector pad 16": {
+            "abs_pos": [63.1444, -31.8516]
+          }
+        },
+        {
+          "JPL Robotics:6 pos header pin pad 4": {
+            "abs_pos": [66.675, -10.16]
+          }
+        },
+        {
+          "JPL Robotics:6 pos header pin pad 5": {
+            "abs_pos": [40.64, -10.16]
+          }
+        },
+        {
+          "JPL Robotics:6 pos header pin pad 4": {
+            "abs_pos": [41.656, -40.64]
+          }
+        },
+        {
+          "JPL Robotics:ED1501-ND pad 2": {
+            "abs_pos": [20.3656, -15.5448]
+          }
+        }
+      ],
+      "tracks": {
+        "segments": [
+          {
+            "start": [26.416, -50.8],
+            "end": [26.416, -40.64],
+            "width": 0.25,
+            "layer": "F.Cu"
+          },
+          {
+            "start": [40.64, -9.02863],
+            "end": [40.64, -2.54],
+            "width": 0.25,
+            "layer": "B.Cu"
+          },
+          {
+            "start": [40.64, -10.16],
+            "end": [40.64, -9.02863],
+            "width": 0.25,
+            "layer": "B.Cu"
+          },
+          {
+            "start": [40.64, -2.54],
+            "end": [43.18, -2.54],
+            "width": 0.25,
+            "layer": "B.Cu"
+          },
+          {
+            "start": [43.18, -2.54],
+            "end": [43.18, -6.35],
+            "width": 0.25,
+            "layer": "B.Cu"
+          },
+          {
+            "start": [43.18, -6.35],
+            "end": [45.085, -8.255],
+            "width": 0.25,
+            "layer": "B.Cu"
+          },
+          {
+            "start": [45.085, -8.255],
+            "end": [50.8635, -8.255],
+            "width": 0.25,
+            "layer": "B.Cu"
+          },
+          {
+            "start": [51.435, -8.8265],
+            "end": [51.435, -10.16],
+            "width": 0.25,
+            "layer": "B.Cu"
+          },
+          {
+            "start": [50.8635, -8.255],
+            "end": [51.435, -8.8265],
+            "width": 0.25,
+            "layer": "B.Cu"
+          },
+          {
+            "start": [9.3656, -19.5448],
+            "end": [13.3656, -15.5448],
+            "width": 0.5,
+            "layer": "B.Cu"
+          },
+          {
+            "start": [3.8608, -19.5448],
+            "end": [9.3656, -19.5448],
+            "width": 0.5,
+            "layer": "B.Cu"
+          }
+        ],
+        "arcs": ["TODO: extract arc info. Most samples don't have arcs to help test :("],
+        "vias": ["TODO: are vias necessary for our routing interests?"]
+      },
+      "errors": []
+    },
+    "16": {
+      "name": "/AREF",
+      "class": "TODO",
+      "pads": [
+        {
+          "JPL Robotics:Arduino Uno Sheild pad 28": {
+            "abs_pos": [23.876, -50.8]
+          }
+        },
+        {
+          "JPL Robotics:6 pos header pin pad 5": {
+            "abs_pos": [44.196, -40.64]
+          }
+        }
+      ],
+      "tracks": {
+        "segments": [
+          {
+            "start": [23.876, -49.696914],
+            "end": [23.876, -40.64],
+            "width": 0.25,
+            "layer": "F.Cu"
+          },
+          {
+            "start": [23.876, -50.8],
+            "end": [23.876, -49.696914],
+            "width": 0.25,
+            "layer": "F.Cu"
+          }
+        ],
+        "arcs": ["TODO: extract arc info. Most samples don't have arcs to help test :("],
+        "vias": ["TODO: are vias necessary for our routing interests?"]
+      },
+      "errors": []
+    },
+    "17": {
+      "name": "/SDA",
+      "class": "TODO",
+      "pads": [
+        {
+          "JPL Robotics:Arduino Uno Sheild pad 29": {
+            "abs_pos": [21.336, -50.8]
+          }
+        },
+        {
+          "JPL Robotics:6 pos header pin pad 6": {
+            "abs_pos": [71.755, -10.16]
+          }
+        }
+      ],
+      "tracks": {
+        "segments": [
+          {
+            "start": [46.355, -10.16],
+            "end": [46.355, -13.1826],
+            "width": 0.25,
+            "layer": "F.Cu"
+          },
+          {
+            "start": [46.355, -13.1826],
+            "end": [27.432, -32.1056],
+            "width": 0.25,
+            "layer": "F.Cu"
+          },
+          {
+            "start": [27.432, -32.1056],
+            "end": [25.1968, -32.1056],
+            "width": 0.25,
+            "layer": "F.Cu"
+          },
+          {
+            "start": [25.1968, -32.1056],
+            "end": [19.5072, -37.7952],
+            "width": 0.25,
+            "layer": "F.Cu"
+          },
+          {
+            "start": [19.5072, -37.7952],
+            "end": [19.5072, -42.926],
+            "width": 0.25,
+            "layer": "F.Cu"
+          },
+          {
+            "start": [21.336, -44.7548],
+            "end": [21.336, -50.8],
+            "width": 0.25,
+            "layer": "F.Cu"
+          },
+          {
+            "start": [19.5072, -42.926],
+            "end": [21.336, -44.7548],
+            "width": 0.25,
+            "layer": "F.Cu"
+          }
+        ],
+        "arcs": ["TODO: extract arc info. Most samples don't have arcs to help test :("],
+        "vias": ["TODO: are vias necessary for our routing interests?"]
+      },
+      "errors": []
+    },
+    "18": {
+      "name": "/SCL",
+      "class": "TODO",
+      "pads": [
+        {
+          "JPL Robotics:Arduino Uno Sheild pad 30": {
+            "abs_pos": [18.796, -50.8]
+          }
+        },
+        {
+          "JPL Robotics:6 pos header pin pad 5": {
+            "abs_pos": [69.215, -10.16]
+          }
+        }
+      ],
+      "tracks": {
+        "segments": [
+          {
+            "start": [18.796, -37.86999],
+            "end": [18.796, -49.696914],
+            "width": 0.25,
+            "layer": "F.Cu"
+          },
+          {
+            "start": [27.178, -31.5468],
+            "end": [25.11919, -31.5468],
+            "width": 0.25,
+            "layer": "F.Cu"
+          },
+          {
+            "start": [48.895, -9.0678],
+            "end": [48.1584, -8.3312],
+            "width": 0.25,
+            "layer": "F.Cu"
+          },
+          {
+            "start": [48.895, -10.16],
+            "end": [48.895, -9.0678],
+            "width": 0.25,
+            "layer": "F.Cu"
+          },
+          {
+            "start": [18.796, -49.696914],
+            "end": [18.796, -50.8],
+            "width": 0.25,
+            "layer": "F.Cu"
+          },
+          {
+            "start": [48.1584, -8.3312],
+            "end": [45.5676, -8.3312],
+            "width": 0.25,
+            "layer": "F.Cu"
+          },
+          {
+            "start": [45.5676, -8.3312],
+            "end": [44.8564, -9.0424],
+            "width": 0.25,
+            "layer": "F.Cu"
+          },
+          {
+            "start": [25.11919, -31.5468],
+            "end": [18.796, -37.86999],
+            "width": 0.25,
+            "layer": "F.Cu"
+          },
+          {
+            "start": [44.8564, -9.0424],
+            "end": [44.8564, -13.8684],
+            "width": 0.25,
+            "layer": "F.Cu"
+          },
+          {
+            "start": [44.8564, -13.8684],
+            "end": [27.178, -31.5468],
+            "width": 0.25,
+            "layer": "F.Cu"
+          }
+        ],
+        "arcs": ["TODO: extract arc info. Most samples don't have arcs to help test :("],
+        "vias": ["TODO: are vias necessary for our routing interests?"]
+      },
+      "errors": []
+    },
+    "19": {
+      "name": "/A5",
+      "class": "TODO",
+      "pads": [
+        {
+          "JPL Robotics:Arduino Uno Sheild pad 19": {
+            "abs_pos": [63.5, -2.54]
+          }
+        },
+        {
+          "JPL Robotics:6 pos header pin pad 1": {
+            "abs_pos": [59.055, -10.16]
+          }
+        }
+      ],
+      "tracks": {
+        "segments": [
+          {
+            "start": [59.055, -6.985],
+            "end": [63.5, -2.54],
+            "width": 0.25,
+            "layer": "F.Cu"
+          },
+          {
+            "start": [59.055, -10.16],
+            "end": [59.055, -6.985],
+            "width": 0.25,
+            "layer": "F.Cu"
+          }
+        ],
+        "arcs": ["TODO: extract arc info. Most samples don't have arcs to help test :("],
+        "vias": ["TODO: are vias necessary for our routing interests?"]
+      },
+      "errors": []
+    },
+    "20": {
+      "name": "/A4",
+      "class": "TODO",
+      "pads": [
+        {
+          "JPL Robotics:Arduino Uno Sheild pad 18": {
+            "abs_pos": [60.96, -2.54]
+          }
+        },
+        {
+          "JPL Robotics:6 pos header pin pad 2": {
+            "abs_pos": [61.595, -10.16]
+          }
+        }
+      ],
+      "tracks": {
+        "segments": [
+          {
+            "start": [56.515, -6.985],
+            "end": [60.96, -2.54],
+            "width": 0.25,
+            "layer": "F.Cu"
+          },
+          {
+            "start": [56.515, -10.16],
+            "end": [56.515, -6.985],
+            "width": 0.25,
+            "layer": "F.Cu"
+          }
+        ],
+        "arcs": ["TODO: extract arc info. Most samples don't have arcs to help test :("],
+        "vias": ["TODO: are vias necessary for our routing interests?"]
+      },
+      "errors": []
+    },
+    "21": {
+      "name": "/A3",
+      "class": "TODO",
+      "pads": [
+        {
+          "JPL Robotics:Arduino Uno Sheild pad 17": {
+            "abs_pos": [58.42, -2.54]
+          }
+        },
+        {
+          "JPL Robotics:6 pos header pin pad 3": {
+            "abs_pos": [64.135, -10.16]
+          }
+        }
+      ],
+      "tracks": {
+        "segments": [
+          {
+            "start": [53.975, -6.985],
+            "end": [58.42, -2.54],
+            "width": 0.25,
+            "layer": "F.Cu"
+          },
+          {
+            "start": [53.975, -10.16],
+            "end": [53.975, -6.985],
+            "width": 0.25,
+            "layer": "F.Cu"
+          }
+        ],
+        "arcs": ["TODO: extract arc info. Most samples don't have arcs to help test :("],
+        "vias": ["TODO: are vias necessary for our routing interests?"]
+      },
+      "errors": []
+    },
+    "22": {
+      "name": "/C",
+      "class": "TODO",
+      "pads": [
+        {
+          "JPL Robotics:Arduino Uno Sheild pad 16": {
+            "abs_pos": [55.88, -2.54]
+          }
+        },
+        {
+          "JPL Robotics:16 pos 3M connector pad 11": {
+            "abs_pos": [58.0644, -29.311600000000002]
+          }
+        }
+      ],
+      "tracks": {
+        "segments": [
+          {
+            "start": [55.88, -2.54],
+            "end": [55.88, -6.0452],
+            "width": 0.25,
+            "layer": "B.Cu"
+          },
+          {
+            "start": [55.88, -6.0452],
+            "end": [56.7944, -6.9596],
+            "width": 0.25,
+            "layer": "B.Cu"
+          },
+          {
+            "start": [56.324399, -33.591601],
+            "end": [55.5244, -34.3916],
+            "width": 0.25,
+            "layer": "B.Cu"
+          },
+          {
+            "start": [62.11402, -27.80198],
+            "end": [56.324399, -33.591601],
+            "width": 0.25,
+            "layer": "B.Cu"
+          },
+          {
+            "start": [62.11402, -9.076],
+            "end": [62.11402, -27.80198],
+            "width": 0.25,
+            "layer": "B.Cu"
+          },
+          {
+            "start": [59.997618, -6.9596],
+            "end": [62.11402, -9.076],
+            "width": 0.25,
+            "layer": "B.Cu"
+          },
+          {
+            "start": [56.7944, -6.9596],
+            "end": [59.997618, -6.9596],
+            "width": 0.25,
+            "layer": "B.Cu"
+          }
+        ],
+        "arcs": ["TODO: extract arc info. Most samples don't have arcs to help test :("],
+        "vias": ["TODO: are vias necessary for our routing interests?"]
+      },
+      "errors": []
+    },
+    "23": {
+      "name": "/B",
+      "class": "TODO",
+      "pads": [
+        {
+          "JPL Robotics:Arduino Uno Sheild pad 15": {
+            "abs_pos": [53.34, -2.54]
+          }
+        },
+        {
+          "JPL Robotics:16 pos 3M connector pad 10": {
+            "abs_pos": [55.5244, -31.8516]
+          }
+        }
+      ],
+      "tracks": {
+        "segments": [
+          {
+            "start": [53.34, -3.643086],
+            "end": [53.3908, -3.693886],
+            "width": 0.25,
+            "layer": "B.Cu"
+          },
+          {
+            "start": [53.34, -2.54],
+            "end": [53.34, -3.643086],
+            "width": 0.25,
+            "layer": "B.Cu"
+          },
+          {
+            "start": [53.3908, -6.35],
+            "end": [54.61719, -7.57639],
+            "width": 0.25,
+            "layer": "B.Cu"
+          },
+          {
+            "start": [53.3908, -3.693886],
+            "end": [53.3908, -6.35],
+            "width": 0.25,
+            "layer": "B.Cu"
+          },
+          {
+            "start": [61.66401, -27.376992],
+            "end": [55.817802, -33.2232],
+            "width": 0.25,
+            "layer": "B.Cu"
+          },
+          {
+            "start": [61.66401, -9.2624],
+            "end": [61.66401, -27.376992],
+            "width": 0.25,
+            "layer": "B.Cu"
+          },
+          {
+            "start": [54.61719, -7.57639],
+            "end": [59.978001, -7.576391],
+            "width": 0.25,
+            "layer": "B.Cu"
+          },
+          {
+            "start": [59.978001, -7.576391],
+            "end": [61.66401, -9.2624],
+            "width": 0.25,
+            "layer": "B.Cu"
+          },
+          {
+            "start": [54.356, -33.2232],
+            "end": [52.9844, -31.8516],
+            "width": 0.25,
+            "layer": "B.Cu"
+          },
+          {
+            "start": [55.817802, -33.2232],
+            "end": [54.356, -33.2232],
+            "width": 0.25,
+            "layer": "B.Cu"
+          }
+        ],
+        "arcs": ["TODO: extract arc info. Most samples don't have arcs to help test :("],
+        "vias": ["TODO: are vias necessary for our routing interests?"]
+      },
+      "errors": []
+    },
+    "24": {
+      "name": "/A",
+      "class": "TODO",
+      "pads": [
+        {
+          "JPL Robotics:Arduino Uno Sheild pad 14": {
+            "abs_pos": [50.8, -2.54]
+          }
+        },
+        {
+          "JPL Robotics:16 pos 3M connector pad 9": {
+            "abs_pos": [55.5244, -29.311600000000002]
+          }
+        }
+      ],
+      "tracks": {
+        "segments": [
+          {
+            "start": [50.8, -2.54],
+            "end": [50.8, -5.6388],
+            "width": 0.25,
+            "layer": "B.Cu"
+          },
+          {
+            "start": [50.8, -5.6388],
+            "end": [53.1876, -8.0264],
+            "width": 0.25,
+            "layer": "B.Cu"
+          },
+          {
+            "start": [53.1876, -8.0264],
+            "end": [59.7916, -8.0264],
+            "width": 0.25,
+            "layer": "B.Cu"
+          },
+          {
+            "start": [59.7916, -8.0264],
+            "end": [61.214, -9.4488],
+            "width": 0.25,
+            "layer": "B.Cu"
+          },
+          {
+            "start": [61.214, -26.162],
+            "end": [55.5244, -31.8516],
+            "width": 0.25,
+            "layer": "B.Cu"
+          },
+          {
+            "start": [61.214, -9.4488],
+            "end": [61.214, -26.162],
+            "width": 0.25,
+            "layer": "B.Cu"
+          }
+        ],
+        "arcs": ["TODO: extract arc info. Most samples don't have arcs to help test :("],
+        "vias": ["TODO: are vias necessary for our routing interests?"]
+      },
+      "errors": []
+    },
+    "25": {
+      "name": "+12V",
+      "class": "TODO",
+      "pads": [
+        {
+          "JPL Robotics:455-1708-ND pad 1": {
+            "abs_pos": [3.8608, -15.5448]
+          }
+        },
+        {
+          "TestPoint:TestPoint_Pad_1.0x1.0mm pad 1": {
+            "abs_pos": [6.5278, -39.4335]
+          }
+        },
+        {
+          "JPL Robotics:Arduino Uno Sheild pad 26": {
+            "abs_pos": [45.72, -2.54]
+          }
+        }
+      ],
+      "tracks": {
+        "segments": [
+          {
+            "start": [44.0944, -0.9144],
+            "end": [45.72, -2.54],
+            "width": 0.5,
+            "layer": "B.Cu"
+          },
+          {
+            "start": [20.9296, -0.9144],
+            "end": [44.0944, -0.9144],
+            "width": 0.5,
+            "layer": "B.Cu"
+          },
+          {
+            "start": [15.494, -6.35],
+            "end": [15.5956, -6.2484],
+            "width": 0.5,
+            "layer": "B.Cu"
+          },
+          {
+            "start": [11.97797, -6.35],
+            "end": [15.494, -6.35],
+            "width": 0.5,
+            "layer": "B.Cu"
+          },
+          {
+            "start": [3.8608, -14.46717],
+            "end": [11.97797, -6.35],
+            "width": 0.5,
+            "layer": "B.Cu"
+          },
+          {
+            "start": [3.8608, -15.5448],
+            "end": [3.8608, -14.46717],
+            "width": 0.5,
+            "layer": "B.Cu"
+          },
+          {
+            "start": [15.5956, -6.2484],
+            "end": [20.9296, -0.9144],
+            "width": 0.5,
+            "layer": "B.Cu"
+          },
+          {
+            "start": [5.7778, -39.4335],
+            "end": [1.4732, -35.1289],
+            "width": 0.25,
+            "layer": "F.Cu"
+          },
+          {
+            "start": [6.5278, -39.4335],
+            "end": [5.7778, -39.4335],
+            "width": 0.25,
+            "layer": "F.Cu"
+          },
+          {
+            "start": [1.4732, -17.9324],
+            "end": [3.8608, -15.5448],
+            "width": 0.25,
+            "layer": "F.Cu"
+          },
+          {
+            "start": [1.4732, -35.1289],
+            "end": [1.4732, -17.9324],
+            "width": 0.25,
+            "layer": "F.Cu"
+          }
+        ],
+        "arcs": ["TODO: extract arc info. Most samples don't have arcs to help test :("],
+        "vias": ["TODO: are vias necessary for our routing interests?"]
+      },
+      "errors": []
+    },
+    "26": {
+      "name": "/5V",
+      "class": "TODO",
+      "pads": [
+        {
+          "TestPoint:TestPoint_Pad_1.0x1.0mm pad 1": {
+            "abs_pos": [21.5011, -5.7277]
+          }
+        },
+        {
+          "JPL Robotics:Arduino Uno Sheild pad 23": {
+            "abs_pos": [38.1, -2.54]
+          }
+        },
+        {
+          "JPL Robotics:6 pos header pin pad 4": {
+            "abs_pos": [38.1, -10.16]
+          }
+        }
+      ],
+      "tracks": {
+        "segments": [
+          {
+            "start": [38.1, -10.16],
+            "end": [38.1, -9.02863],
+            "width": 0.25,
+            "layer": "B.Cu"
+          },
+          {
+            "start": [37.8968, -6.2992],
+            "end": [38.1, -6.096],
+            "width": 0.25,
+            "layer": "F.Cu"
+          },
+          {
+            "start": [38.1, -9.02863],
+            "end": [38.1, -6.096],
+            "width": 0.25,
+            "layer": "B.Cu"
+          },
+          {
+            "start": [38.1, -6.096],
+            "end": [38.1, -2.54],
+            "width": 0.25,
+            "layer": "B.Cu"
+          },
+          {
+            "start": [37.534315, -6.096],
+            "end": [37.331115, -6.2992],
+            "width": 0.25,
+            "layer": "F.Cu"
+          },
+          {
+            "start": [38.1, -6.096],
+            "end": [37.534315, -6.096],
+            "width": 0.25,
+            "layer": "F.Cu"
+          },
+          {
+            "start": [37.331115, -6.2992],
+            "end": [24.5364, -6.2992],
+            "width": 0.25,
+            "layer": "F.Cu"
+          },
+          {
+            "start": [23.9649, -5.7277],
+            "end": [21.5011, -5.7277],
+            "width": 0.25,
+            "layer": "F.Cu"
+          },
+          {
+            "start": [24.5364, -6.2992],
+            "end": [23.9649, -5.7277],
+            "width": 0.25,
+            "layer": "F.Cu"
+          }
+        ],
+        "arcs": ["TODO: extract arc info. Most samples don't have arcs to help test :("],
+        "vias": ["TODO: are vias necessary for our routing interests?"]
+      },
+      "errors": []
+    },
+    "27": {
+      "name": "/3.3V",
+      "class": "TODO",
+      "pads": [
+        {
+          "TestPoint:TestPoint_Pad_1.0x1.0mm pad 1": {
+            "abs_pos": [21.5011, -3.8862]
+          }
+        },
+        {
+          "JPL Robotics:Arduino Uno Sheild pad 22": {
+            "abs_pos": [35.56, -2.54]
+          }
+        },
+        {
+          "JPL Robotics:6 pos header pin pad 3": {
+            "abs_pos": [35.56, -10.16]
+          }
+        }
+      ],
+      "tracks": {
+        "segments": [
+          {
+            "start": [35.56, -5.4356],
+            "end": [35.56, -2.54],
+            "width": 0.25,
+            "layer": "B.Cu"
+          },
+          {
+            "start": [35.56, -10.16],
+            "end": [35.56, -5.4356],
+            "width": 0.25,
+            "layer": "B.Cu"
+          },
+          {
+            "start": [21.5011, -3.8862],
+            "end": [23.0886, -3.8862],
+            "width": 0.25,
+            "layer": "F.Cu"
+          },
+          {
+            "start": [24.638, -5.4356],
+            "end": [35.56, -5.4356],
+            "width": 0.25,
+            "layer": "F.Cu"
+          },
+          {
+            "start": [23.0886, -3.8862],
+            "end": [24.638, -5.4356],
+            "width": 0.25,
+            "layer": "F.Cu"
+          }
+        ],
+        "arcs": ["TODO: extract arc info. Most samples don't have arcs to help test :("],
+        "vias": ["TODO: are vias necessary for our routing interests?"]
+      },
+      "errors": []
+    },
+    "28": {
+      "name": "/RESET",
+      "class": "TODO",
+      "pads": [
+        {
+          "JPL Robotics:Arduino Uno Sheild pad 21": {
+            "abs_pos": [33.02, -2.54]
+          }
+        },
+        {
+          "JPL Robotics:6 pos header pin pad 2": {
+            "abs_pos": [33.02, -10.16]
+          }
+        }
+      ],
+      "tracks": {
+        "segments": [
+          {
+            "start": [33.02, -2.54],
+            "end": [33.02, -10.16],
+            "width": 0.25,
+            "layer": "B.Cu"
+          }
+        ],
+        "arcs": ["TODO: extract arc info. Most samples don't have arcs to help test :("],
+        "vias": ["TODO: are vias necessary for our routing interests?"]
+      },
+      "errors": []
+    },
+    "29": {
+      "name": "/IOREF",
+      "class": "TODO",
+      "pads": [
+        {
+          "JPL Robotics:Arduino Uno Sheild pad 20": {
+            "abs_pos": [30.48, -2.54]
+          }
+        },
+        {
+          "JPL Robotics:6 pos header pin pad 1": {
+            "abs_pos": [30.48, -10.16]
+          }
+        }
+      ],
+      "tracks": {
+        "segments": [
+          {
+            "start": [30.48, -2.54],
+            "end": [30.48, -10.16],
+            "width": 0.25,
+            "layer": "B.Cu"
+          }
+        ],
+        "arcs": ["TODO: extract arc info. Most samples don't have arcs to help test :("],
+        "vias": ["TODO: are vias necessary for our routing interests?"]
+      },
+      "errors": []
+    },
+    "30": {
+      "name": "Net-(A1-Pad31)",
+      "class": "TODO",
+      "pads": [
+        {
+          "JPL Robotics:Arduino Uno Sheild pad 31": {
+            "abs_pos": [27.94, -2.54]
+          }
+        }
+      ],
+      "tracks": {
+        "segments": [],
+        "arcs": ["TODO: extract arc info. Most samples don't have arcs to help test :("],
+        "vias": ["TODO: are vias necessary for our routing interests?"]
+      },
+      "errors": []
+    },
+    "31": {
+      "name": "Net-(J3-Pad6)",
+      "class": "TODO",
+      "pads": [
+        {
+          "JPL Robotics:6 pos header pin pad 6": {
+            "abs_pos": [43.18, -10.16]
+          }
+        }
+      ],
+      "tracks": {
+        "segments": [],
+        "arcs": ["TODO: extract arc info. Most samples don't have arcs to help test :("],
+        "vias": ["TODO: are vias necessary for our routing interests?"]
+      },
+      "errors": []
+    },
+    "32": {
+      "name": "Net-(J4-Pad6)",
+      "class": "TODO",
+      "pads": [
+        {
+          "JPL Robotics:6 pos header pin pad 6": {
+            "abs_pos": [46.736000000000004, -40.64]
+          }
+        }
+      ],
+      "tracks": {
+        "segments": [],
+        "arcs": ["TODO: extract arc info. Most samples don't have arcs to help test :("],
+        "vias": ["TODO: are vias necessary for our routing interests?"]
+      },
+      "errors": []
+    },
+    "33": {
+      "name": "+5V",
+      "class": "TODO",
+      "pads": [
+        {
+          "JPL Robotics:455-1708-ND pad 2": {
+            "abs_pos": [5.860799999999999, -15.5448]
+          }
+        },
+        {
+          "TestPoint:TestPoint_Pad_1.0x1.0mm pad 1": {
+            "abs_pos": [16.3195, -37.465]
+          }
+        },
+        {
+          "TestPoint:TestPoint_Pad_1.0x1.0mm pad 1": {
+            "abs_pos": [6.5278, -37.5285]
+          }
+        },
+        {
+          "JPL Robotics:ED1501-ND pad 1": {
+            "abs_pos": [16.8656, -15.5448]
+          }
+        }
+      ],
+      "tracks": {
+        "segments": [
+          {
+            "start": [3.8608, -17.5448],
+            "end": [5.3528, -17.5448],
+            "width": 0.5,
+            "layer": "F.Cu"
+          },
+          {
+            "start": [5.3528, -17.5448],
+            "end": [7.1628, -19.3548],
+            "width": 0.5,
+            "layer": "F.Cu"
+          },
+          {
+            "start": [16.3195, -36.715],
+            "end": [16.3195, -37.465],
+            "width": 0.5,
+            "layer": "F.Cu"
+          },
+          {
+            "start": [16.3195, -23.7687],
+            "end": [16.3195, -36.715],
+            "width": 0.5,
+            "layer": "F.Cu"
+          },
+          {
+            "start": [11.9056, -19.3548],
+            "end": [16.3195, -23.7687],
+            "width": 0.5,
+            "layer": "F.Cu"
+          },
+          {
+            "start": [14.2056, -19.3548],
+            "end": [11.7348, -19.3548],
+            "width": 0.5,
+            "layer": "F.Cu"
+          },
+          {
+            "start": [16.8656, -16.6948],
+            "end": [14.2056, -19.3548],
+            "width": 0.5,
+            "layer": "F.Cu"
+          },
+          {
+            "start": [16.8656, -15.5448],
+            "end": [16.8656, -16.6948],
+            "width": 0.5,
+            "layer": "F.Cu"
+          },
+          {
+            "start": [7.1628, -19.3548],
+            "end": [11.7348, -19.3548],
+            "width": 0.5,
+            "layer": "F.Cu"
+          },
+          {
+            "start": [11.7348, -19.3548],
+            "end": [11.9056, -19.3548],
+            "width": 0.5,
+            "layer": "F.Cu"
+          },
+          {
+            "start": [16.256, -37.5285],
+            "end": [16.3195, -37.465],
+            "width": 0.5,
+            "layer": "F.Cu"
+          },
+          {
+            "start": [6.5278, -37.5285],
+            "end": [16.256, -37.5285],
+            "width": 0.5,
+            "layer": "F.Cu"
+          }
+        ],
+        "arcs": ["TODO: extract arc info. Most samples don't have arcs to help test :("],
+        "vias": ["TODO: are vias necessary for our routing interests?"]
+      },
+      "errors": []
+    },
+    "34": {
+      "name": "Net-(J5-Pad6)",
+      "class": "TODO",
+      "pads": [
+        {
+          "JPL Robotics:455-1708-ND pad 6": {
+            "abs_pos": [13.8608, -15.5448]
+          }
+        }
+      ],
+      "tracks": {
+        "segments": [],
+        "arcs": ["TODO: extract arc info. Most samples don't have arcs to help test :("],
+        "vias": ["TODO: are vias necessary for our routing interests?"]
+      },
+      "errors": []
+    }
+  },
+  "errors": [
+    {
+      "\"JPL Robotics:Arduino Uno Sheild\" at [0, 0]": "pad \"\" np_thru_hole circle at [15.24, -50.8] has error 656: key \"net\" not found"
+    },
+    {
+      "\"JPL Robotics:Arduino Uno Sheild\" at [0, 0]": "pad \"\" np_thru_hole circle at [66.04, -35.56] has error 657: key \"net\" not found"
+    },
+    {
+      "\"JPL Robotics:Arduino Uno Sheild\" at [0, 0]": "pad \"\" np_thru_hole circle at [66.04, -7.62] has error 658: key \"net\" not found"
+    },
+    {
+      "\"JPL Robotics:Arduino Uno Sheild\" at [0, 0]": "pad \"\" np_thru_hole circle at [13.97, -2.54] has error 659: key \"net\" not found"
+    }
+  ]
+}

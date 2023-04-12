@@ -1,0 +1,1222 @@
+{
+  "board_settings": {},
+  "net classes": {},
+  "net routes": {
+    "0": {
+      "name": "",
+      "class": "TODO",
+      "pads": [],
+      "tracks": {
+        "segments": [],
+        "arcs": ["TODO: extract arc info. Most samples don't have arcs to help test :("],
+        "vias": ["TODO: are vias necessary for our routing interests?"]
+      },
+      "errors": []
+    },
+    "1": {
+      "name": "Net-(C1-Pad2)",
+      "class": "TODO",
+      "pads": [
+        {
+          "8BitMixtape_DIY-CAD:Loch_mixtape pad 1": {
+            "abs_pos": [72.39, 60.96]
+          }
+        },
+        {
+          "8BitMixtape_DIY-CAD:AUDIO-JACK-3.5mm_SMD_noPrint pad 3": {
+            "abs_pos": [74.92999999999999, 63.5]
+          }
+        },
+        {
+          "8BitMixtape_DIY-CAD:AUDIO-JACK-3.5mm_SMD_noPrint pad 3": {
+            "abs_pos": [74.92999999999999, 71.12]
+          }
+        },
+        {
+          "8BitMixtape_DIY-CAD:C_1210_MixtapeStyle pad 2": {
+            "abs_pos": [77.565, 59.023]
+          }
+        }
+      ],
+      "tracks": {
+        "segments": [
+          {
+            "start": [75.565, 57.023],
+            "end": [75.565, 58.423],
+            "width": 0.4,
+            "layer": "B.Cu"
+          },
+          {
+            "start": [75.565, 58.423],
+            "end": [75.06, 58.928],
+            "width": 0.4,
+            "layer": "B.Cu"
+          },
+          {
+            "start": [75.06, 58.928],
+            "end": [73.152, 58.928],
+            "width": 0.4,
+            "layer": "B.Cu"
+          },
+          {
+            "start": [72.39, 59.69],
+            "end": [72.39, 60.96],
+            "width": 0.4,
+            "layer": "B.Cu"
+          },
+          {
+            "start": [73.152, 58.928],
+            "end": [72.39, 59.69],
+            "width": 0.4,
+            "layer": "B.Cu"
+          }
+        ],
+        "arcs": ["TODO: extract arc info. Most samples don't have arcs to help test :("],
+        "vias": ["TODO: are vias necessary for our routing interests?"]
+      },
+      "errors": []
+    },
+    "2": {
+      "name": "VCC",
+      "class": "TODO",
+      "pads": [
+        {
+          "8BitMixtape_DIY-CAD:Loch_mixtape pad 1": {
+            "abs_pos": [80.01, 53.975]
+          }
+        },
+        {
+          "8BitMixtape_DIY-CAD:Mixtape_NEO_WS2812B pad 1": {
+            "abs_pos": [94.071, 59.32]
+          }
+        },
+        {
+          "8BitMixtape_DIY-CAD:Mixtape_NEO_WS2812B pad 1": {
+            "abs_pos": [74.919, 59.32]
+          }
+        },
+        {
+          "8BitMixtape_DIY-CAD:R_1206_Mixtape pad 1": {
+            "abs_pos": [75.375, 64.008]
+          }
+        },
+        {
+          "8BitMixtape_DIY-CAD:C_1210_MixtapeStyle pad 2": {
+            "abs_pos": [81.375, 59.023]
+          }
+        },
+        {
+          "8BitMixtape_mCore:Attiny_DIP-8_W7.62mm pad 8": {
+            "abs_pos": [90.805, 64.77]
+          }
+        },
+        {
+          "8BitMixtape_mCore:Loch_mixtape_seltsam pad 1": {
+            "abs_pos": [83.185, 54.483]
+          }
+        }
+      ],
+      "tracks": {
+        "segments": [
+          {
+            "start": [81.09598, 61.961542],
+            "end": [81.462522, 61.595],
+            "width": 0.4,
+            "layer": "F.Cu"
+          },
+          {
+            "start": [81.462522, 61.595],
+            "end": [82.697532, 60.35999],
+            "width": 0.4,
+            "layer": "F.Cu"
+          },
+          {
+            "start": [79.919001, 63.068541],
+            "end": [81.392542, 61.595],
+            "width": 0.4,
+            "layer": "F.Cu"
+          },
+          {
+            "start": [81.392542, 61.595],
+            "end": [81.462522, 61.595],
+            "width": 0.4,
+            "layer": "F.Cu"
+          },
+          {
+            "start": [79.919001, 64.540001],
+            "end": [79.919001, 63.068541],
+            "width": 0.4,
+            "layer": "F.Cu"
+          },
+          {
+            "start": [79.816002, 64.643],
+            "end": [79.919001, 64.540001],
+            "width": 0.4,
+            "layer": "F.Cu"
+          },
+          {
+            "start": [81.026, 61.961542],
+            "end": [81.09598, 61.961542],
+            "width": 0.4,
+            "layer": "F.Cu"
+          },
+          {
+            "start": [98.171, 58.72],
+            "end": [96.53101, 60.35999],
+            "width": 0.4,
+            "layer": "F.Cu"
+          },
+          {
+            "start": [98.171, 58.42],
+            "end": [98.171, 58.72],
+            "width": 0.4,
+            "layer": "F.Cu"
+          },
+          {
+            "start": [96.53101, 60.35999],
+            "end": [82.697532, 60.35999],
+            "width": 0.4,
+            "layer": "F.Cu"
+          },
+          {
+            "start": [78.232, 64.643],
+            "end": [77.851, 64.262],
+            "width": 0.4,
+            "layer": "F.Cu"
+          },
+          {
+            "start": [77.851, 64.262],
+            "end": [77.851, 60.788],
+            "width": 0.4,
+            "layer": "F.Cu"
+          },
+          {
+            "start": [77.851, 60.788],
+            "end": [79.019, 59.62],
+            "width": 0.4,
+            "layer": "F.Cu"
+          },
+          {
+            "start": [79.019, 59.62],
+            "end": [79.019, 58.42],
+            "width": 0.4,
+            "layer": "F.Cu"
+          },
+          {
+            "start": [79.816002, 64.643],
+            "end": [78.232, 64.643],
+            "width": 0.4,
+            "layer": "F.Cu"
+          },
+          {
+            "start": [79.019, 58.42],
+            "end": [81.915, 58.42],
+            "width": 0.4,
+            "layer": "F.Cu"
+          },
+          {
+            "start": [81.915, 58.42],
+            "end": [83.185, 57.15],
+            "width": 0.4,
+            "layer": "F.Cu"
+          },
+          {
+            "start": [80.01, 53.975],
+            "end": [83.185, 53.975],
+            "width": 0.4,
+            "layer": "B.Cu"
+          },
+          {
+            "start": [83.185, 54.102],
+            "end": [83.185, 57.15],
+            "width": 0.4,
+            "layer": "B.Cu"
+          },
+          {
+            "start": [80.01, 53.975],
+            "end": [80.645, 53.975],
+            "width": 0.4,
+            "layer": "B.Cu"
+          },
+          {
+            "start": [79.375, 61.023],
+            "end": [79.375, 64.008],
+            "width": 0.4,
+            "layer": "B.Cu"
+          },
+          {
+            "start": [82.677, 59.055],
+            "end": [81.593, 59.055],
+            "width": 0.4,
+            "layer": "B.Cu"
+          },
+          {
+            "start": [81.593, 59.055],
+            "end": [79.625, 61.023],
+            "width": 0.4,
+            "layer": "B.Cu"
+          },
+          {
+            "start": [79.625, 61.023],
+            "end": [79.375, 61.023],
+            "width": 0.4,
+            "layer": "B.Cu"
+          },
+          {
+            "start": [83.185, 58.547],
+            "end": [82.677, 59.055],
+            "width": 0.4,
+            "layer": "B.Cu"
+          },
+          {
+            "start": [83.185, 57.15],
+            "end": [83.185, 58.547],
+            "width": 0.4,
+            "layer": "B.Cu"
+          },
+          {
+            "start": [83.185, 57.15],
+            "end": [82.355, 57.15],
+            "width": 0.4,
+            "layer": "B.Cu"
+          },
+          {
+            "start": [83.185, 54.991],
+            "end": [83.185, 57.15],
+            "width": 0.4,
+            "layer": "B.Cu"
+          }
+        ],
+        "arcs": ["TODO: extract arc info. Most samples don't have arcs to help test :("],
+        "vias": ["TODO: are vias necessary for our routing interests?"]
+      },
+      "errors": []
+    },
+    "3": {
+      "name": "GND",
+      "class": "TODO",
+      "pads": [
+        {
+          "8BitMixtape_DIY-CAD:Loch_mixtape_seltsam pad 1": {
+            "abs_pos": [88.265, 54.483]
+          }
+        },
+        {
+          "8BitMixtape_DIY-CAD:Loch_mixtape_seltsam pad 1": {
+            "abs_pos": [90.805, 66.929]
+          }
+        },
+        {
+          "8BitMixtape_DIY-CAD:GND_Loch_mixtape pad 1": {
+            "abs_pos": [72.39, 64.77]
+          }
+        },
+        {
+          "8BitMixtape_DIY-CAD:GND_Loch_mixtape pad 1": {
+            "abs_pos": [93.98, 53.975]
+          }
+        },
+        {
+          "8BitMixtape_DIY-CAD:GND_Loch_mixtape pad 1": {
+            "abs_pos": [101.727, 64.897]
+          }
+        },
+        {
+          "8BitMixtape_DIY-CAD:GND_Loch_mixtape pad 1": {
+            "abs_pos": [77.47, 53.975]
+          }
+        },
+        {
+          "8BitMixtape_DIY-CAD:Mixtape_NEO_WS2812B pad 3": {
+            "abs_pos": [99.071, 62.52]
+          }
+        },
+        {
+          "8BitMixtape_DIY-CAD:Mixtape_NEO_WS2812B pad 3": {
+            "abs_pos": [79.919, 62.52]
+          }
+        },
+        {
+          "8BitMixtape_DIY-CAD:AUDIO-JACK-3.5mm_SMD_noPrint pad 1": {
+            "abs_pos": [107.95, 63.626999999999995]
+          }
+        },
+        {
+          "8BitMixtape_DIY-CAD:AUDIO-JACK-3.5mm_SMD_noPrint pad 1": {
+            "abs_pos": [107.95, 71.247]
+          }
+        },
+        {
+          "8BitMixtape_DIY-CAD:AUDIO-JACK-3.5mm_SMD_noPrint pad 1": {
+            "abs_pos": [71.12, 63.5]
+          }
+        },
+        {
+          "8BitMixtape_DIY-CAD:AUDIO-JACK-3.5mm_SMD_noPrint pad 1": {
+            "abs_pos": [71.12, 71.12]
+          }
+        },
+        {
+          "8BitMixtape_DIY-CAD:R_1206_Mixtape pad 2": {
+            "abs_pos": [79.375, 66.675]
+          }
+        },
+        {
+          "8BitMixtape_DIY-CAD:C_1210_MixtapeStyle pad 1": {
+            "abs_pos": [93.25, 64.802]
+          }
+        },
+        {
+          "8BitMixtape_DIY-CAD:C_1210_MixtapeStyle pad 1": {
+            "abs_pos": [77.375, 59.023]
+          }
+        },
+        {
+          "8BitMixtape_mCore:TOP_led_footprint pad 1": {
+            "abs_pos": [101.219, 52.197]
+          }
+        },
+        {
+          "8BitMixtape_mCore:Attiny_DIP-8_W7.62mm pad 4": {
+            "abs_pos": [83.185, 72.39]
+          }
+        }
+      ],
+      "tracks": {
+        "segments": [
+          {
+            "start": [103.378, 52.197],
+            "end": [98.933, 52.197],
+            "width": 0.4,
+            "layer": "F.Cu"
+          },
+          {
+            "start": [101.819, 52.197],
+            "end": [103.378, 52.197],
+            "width": 0.4,
+            "layer": "F.Cu"
+          },
+          {
+            "start": [101.219, 52.197],
+            "end": [101.819, 52.197],
+            "width": 0.4,
+            "layer": "F.Cu"
+          },
+          {
+            "start": [77.47, 53.975],
+            "end": [77.47, 54.61],
+            "width": 0.4,
+            "layer": "B.Cu"
+          },
+          {
+            "start": [77.47, 54.61],
+            "end": [79.375, 56.515],
+            "width": 0.4,
+            "layer": "B.Cu"
+          },
+          {
+            "start": [79.375, 56.515],
+            "end": [79.375, 57.023],
+            "width": 0.4,
+            "layer": "B.Cu"
+          },
+          {
+            "start": [95.25, 66.802],
+            "end": [94.742, 66.802],
+            "width": 0.4,
+            "layer": "B.Cu"
+          },
+          {
+            "start": [79.375, 57.28],
+            "end": [78.87, 57.785],
+            "width": 0.4,
+            "layer": "B.Cu"
+          },
+          {
+            "start": [90.805, 64.77],
+            "end": [90.805, 66.929],
+            "width": 0.4,
+            "layer": "B.Cu"
+          }
+        ],
+        "arcs": ["TODO: extract arc info. Most samples don't have arcs to help test :("],
+        "vias": ["TODO: are vias necessary for our routing interests?"]
+      },
+      "errors": []
+    },
+    "4": {
+      "name": "Net-(C3-Pad2)",
+      "class": "TODO",
+      "pads": [
+        {
+          "8BitMixtape_DIY-CAD:Loch_mixtape pad 1": {
+            "abs_pos": [101.6, 57.277]
+          }
+        },
+        {
+          "8BitMixtape_DIY-CAD:R_1206_Mixtape pad 1": {
+            "abs_pos": [94.615, 59.944]
+          }
+        },
+        {
+          "8BitMixtape_DIY-CAD:C_1210_MixtapeStyle pad 2": {
+            "abs_pos": [97.25, 64.802]
+          }
+        }
+      ],
+      "tracks": {
+        "segments": [
+          {
+            "start": [101.155, 61.659],
+            "end": [101.155, 59.944],
+            "width": 0.4,
+            "layer": "B.Cu"
+          },
+          {
+            "start": [101.155, 59.944],
+            "end": [101.155, 57.975],
+            "width": 0.4,
+            "layer": "B.Cu"
+          },
+          {
+            "start": [98.615, 59.944],
+            "end": [100.015, 59.944],
+            "width": 0.4,
+            "layer": "B.Cu"
+          },
+          {
+            "start": [100.015, 59.944],
+            "end": [101.155, 59.944],
+            "width": 0.4,
+            "layer": "B.Cu"
+          },
+          {
+            "start": [97.282, 62.802],
+            "end": [100.012, 62.802],
+            "width": 0.4,
+            "layer": "B.Cu"
+          },
+          {
+            "start": [100.012, 62.802],
+            "end": [101.155, 61.659],
+            "width": 0.4,
+            "layer": "B.Cu"
+          },
+          {
+            "start": [101.155, 57.975],
+            "end": [101.6, 57.53],
+            "width": 0.4,
+            "layer": "B.Cu"
+          },
+          {
+            "start": [95.25, 62.802],
+            "end": [97.727, 62.802],
+            "width": 0.4,
+            "layer": "B.Cu"
+          }
+        ],
+        "arcs": ["TODO: extract arc info. Most samples don't have arcs to help test :("],
+        "vias": ["TODO: are vias necessary for our routing interests?"]
+      },
+      "errors": []
+    },
+    "5": {
+      "name": "Net-(D1-Pad2)",
+      "class": "TODO",
+      "pads": [
+        {
+          "8BitMixtape_DIY-CAD:Loch_mixtape pad 1": {
+            "abs_pos": [96.52, 53.975]
+          }
+        },
+        {
+          "8BitMixtape_DIY-CAD:R_1206_Mixtape pad 2": {
+            "abs_pos": [98.615, 57.15]
+          }
+        },
+        {
+          "8BitMixtape_mCore:TOP_led_footprint pad 2": {
+            "abs_pos": [101.219, 49.403]
+          }
+        }
+      ],
+      "tracks": {
+        "segments": [
+          {
+            "start": [96.52, 53.975],
+            "end": [97.519999, 52.975001],
+            "width": 0.4,
+            "layer": "F.Cu"
+          },
+          {
+            "start": [97.646999, 52.975001],
+            "end": [98.171, 52.451],
+            "width": 0.4,
+            "layer": "F.Cu"
+          },
+          {
+            "start": [97.519999, 52.975001],
+            "end": [97.646999, 52.975001],
+            "width": 0.4,
+            "layer": "F.Cu"
+          },
+          {
+            "start": [98.171, 52.451],
+            "end": [98.171, 50.546],
+            "width": 0.4,
+            "layer": "F.Cu"
+          },
+          {
+            "start": [98.171, 50.546],
+            "end": [99.314, 49.403],
+            "width": 0.4,
+            "layer": "F.Cu"
+          },
+          {
+            "start": [99.314, 49.403],
+            "end": [100.619, 49.403],
+            "width": 0.4,
+            "layer": "F.Cu"
+          },
+          {
+            "start": [100.619, 49.403],
+            "end": [101.219, 49.403],
+            "width": 0.4,
+            "layer": "F.Cu"
+          },
+          {
+            "start": [98.615, 57.15],
+            "end": [98.615, 54.419],
+            "width": 0.4,
+            "layer": "B.Cu"
+          },
+          {
+            "start": [98.615, 54.419],
+            "end": [98.171, 53.975],
+            "width": 0.4,
+            "layer": "B.Cu"
+          },
+          {
+            "start": [98.171, 53.975],
+            "end": [96.52, 53.975],
+            "width": 0.4,
+            "layer": "B.Cu"
+          }
+        ],
+        "arcs": ["TODO: extract arc info. Most samples don't have arcs to help test :("],
+        "vias": ["TODO: are vias necessary for our routing interests?"]
+      },
+      "errors": []
+    },
+    "6": {
+      "name": "Net-(IC1-Pad6)",
+      "class": "TODO",
+      "pads": [
+        {
+          "8BitMixtape_DIY-CAD:R_1206_Mixtape pad 2": {
+            "abs_pos": [98.615, 59.944]
+          }
+        },
+        {
+          "8BitMixtape_DIY-CAD:R_1206_Mixtape pad 1": {
+            "abs_pos": [94.615, 57.15]
+          }
+        },
+        {
+          "8BitMixtape_mCore:Attiny_DIP-8_W7.62mm pad 6": {
+            "abs_pos": [90.805, 69.85]
+          }
+        }
+      ],
+      "tracks": {
+        "segments": [
+          {
+            "start": [94.615, 59.944],
+            "end": [94.615, 58.547],
+            "width": 0.4,
+            "layer": "B.Cu"
+          },
+          {
+            "start": [92.837, 58.547],
+            "end": [94.615, 58.547],
+            "width": 0.4,
+            "layer": "B.Cu"
+          },
+          {
+            "start": [94.615, 58.547],
+            "end": [94.615, 57.15],
+            "width": 0.4,
+            "layer": "B.Cu"
+          },
+          {
+            "start": [92.456, 58.928],
+            "end": [92.837, 58.547],
+            "width": 0.4,
+            "layer": "B.Cu"
+          },
+          {
+            "start": [88.646, 58.928],
+            "end": [92.456, 58.928],
+            "width": 0.4,
+            "layer": "B.Cu"
+          },
+          {
+            "start": [88.265, 58.547],
+            "end": [88.646, 58.928],
+            "width": 0.4,
+            "layer": "B.Cu"
+          },
+          {
+            "start": [88.265, 57.15],
+            "end": [88.265, 58.547],
+            "width": 0.4,
+            "layer": "B.Cu"
+          }
+        ],
+        "arcs": ["TODO: extract arc info. Most samples don't have arcs to help test :("],
+        "vias": ["TODO: are vias necessary for our routing interests?"]
+      },
+      "errors": []
+    },
+    "7": {
+      "name": "Net-(IC1-Pad7)",
+      "class": "TODO",
+      "pads": [
+        {
+          "8BitMixtape_mCore:Attiny_DIP-8_W7.62mm pad 7": {
+            "abs_pos": [90.805, 67.31]
+          }
+        },
+        {
+          "8BitMixtape_mCore:Loch_mixtape_seltsam pad 1": {
+            "abs_pos": [85.725, 54.483]
+          }
+        }
+      ],
+      "tracks": {
+        "segments": [
+          {
+            "start": [85.725, 54.102],
+            "end": [85.725, 57.15],
+            "width": 0.4,
+            "layer": "B.Cu"
+          },
+          {
+            "start": [85.725, 54.991],
+            "end": [85.725, 57.15],
+            "width": 0.4,
+            "layer": "B.Cu"
+          }
+        ],
+        "arcs": ["TODO: extract arc info. Most samples don't have arcs to help test :("],
+        "vias": ["TODO: are vias necessary for our routing interests?"]
+      },
+      "errors": []
+    },
+    "8": {
+      "name": "Net-(JACK2-Pad2)",
+      "class": "TODO",
+      "pads": [
+        {
+          "8BitMixtape_DIY-CAD:AUDIO-JACK-3.5mm_SMD_noPrint pad 2": {
+            "abs_pos": [115.57, 63.626999999999995]
+          }
+        },
+        {
+          "8BitMixtape_DIY-CAD:AUDIO-JACK-3.5mm_SMD_noPrint pad 2": {
+            "abs_pos": [115.57, 71.247]
+          }
+        }
+      ],
+      "tracks": {
+        "segments": [],
+        "arcs": ["TODO: extract arc info. Most samples don't have arcs to help test :("],
+        "vias": ["TODO: are vias necessary for our routing interests?"]
+      },
+      "errors": []
+    },
+    "9": {
+      "name": "Net-(IC1-Pad1)",
+      "class": "TODO",
+      "pads": [
+        {
+          "8BitMixtape_DIY-CAD:Loch_mixtape_seltsam pad 1": {
+            "abs_pos": [83.185, 66.929]
+          }
+        },
+        {
+          "8BitMixtape_mCore:Attiny_DIP-8_W7.62mm pad 1": {
+            "abs_pos": [83.185, 64.77]
+          }
+        }
+      ],
+      "tracks": {
+        "segments": [
+          {
+            "start": [83.185, 64.77],
+            "end": [83.185, 66.929],
+            "width": 0.4,
+            "layer": "B.Cu"
+          }
+        ],
+        "arcs": ["TODO: extract arc info. Most samples don't have arcs to help test :("],
+        "vias": ["TODO: are vias necessary for our routing interests?"]
+      },
+      "errors": []
+    },
+    "10": {
+      "name": "Prog",
+      "class": "TODO",
+      "pads": [
+        {
+          "8BitMixtape_DIY-CAD:Loch_mixtape_seltsam pad 1": {
+            "abs_pos": [85.725, 66.929]
+          }
+        },
+        {
+          "8BitMixtape_DIY-CAD:R_1206_Mixtape pad 1": {
+            "abs_pos": [75.375, 66.675]
+          }
+        },
+        {
+          "8BitMixtape_DIY-CAD:R_1206_Mixtape pad 2": {
+            "abs_pos": [79.375, 64.008]
+          }
+        },
+        {
+          "8BitMixtape_DIY-CAD:C_1210_MixtapeStyle pad 1": {
+            "abs_pos": [73.565, 59.023]
+          }
+        },
+        {
+          "8BitMixtape_mCore:Attiny_DIP-8_W7.62mm pad 2": {
+            "abs_pos": [83.185, 67.31]
+          }
+        }
+      ],
+      "tracks": {
+        "segments": [
+          {
+            "start": [75.375, 66.675],
+            "end": [75.375, 67.925],
+            "width": 0.4,
+            "layer": "B.Cu"
+          },
+          {
+            "start": [84.705999, 68.329001],
+            "end": [85.725, 67.31],
+            "width": 0.4,
+            "layer": "B.Cu"
+          },
+          {
+            "start": [75.375, 67.925],
+            "end": [75.418, 67.925],
+            "width": 0.4,
+            "layer": "B.Cu"
+          },
+          {
+            "start": [75.418, 67.925],
+            "end": [75.822001, 68.329001],
+            "width": 0.4,
+            "layer": "B.Cu"
+          },
+          {
+            "start": [85.725, 67.31],
+            "end": [85.725, 66.929],
+            "width": 0.4,
+            "layer": "B.Cu"
+          },
+          {
+            "start": [75.822001, 68.329001],
+            "end": [84.705999, 68.329001],
+            "width": 0.4,
+            "layer": "B.Cu"
+          },
+          {
+            "start": [75.375, 64.008],
+            "end": [75.375, 61.213],
+            "width": 0.4,
+            "layer": "B.Cu"
+          },
+          {
+            "start": [75.375, 61.213],
+            "end": [75.565, 61.023],
+            "width": 0.4,
+            "layer": "B.Cu"
+          },
+          {
+            "start": [75.375, 66.675],
+            "end": [75.375, 63.5],
+            "width": 0.4,
+            "layer": "B.Cu"
+          },
+          {
+            "start": [85.725, 64.77],
+            "end": [85.725, 66.929],
+            "width": 0.4,
+            "layer": "B.Cu"
+          }
+        ],
+        "arcs": ["TODO: extract arc info. Most samples don't have arcs to help test :("],
+        "vias": ["TODO: are vias necessary for our routing interests?"]
+      },
+      "errors": []
+    },
+    "11": {
+      "name": "NEO",
+      "class": "TODO",
+      "pads": [
+        {
+          "8BitMixtape_DIY-CAD:Loch_mixtape_seltsam pad 1": {
+            "abs_pos": [90.805, 54.483]
+          }
+        },
+        {
+          "8BitMixtape_DIY-CAD:Mixtape_NEO_WS2812B pad 4": {
+            "abs_pos": [79.919, 59.32]
+          }
+        },
+        {
+          "8BitMixtape_mCore:Attiny_DIP-8_W7.62mm pad 5": {
+            "abs_pos": [90.805, 72.39]
+          }
+        }
+      ],
+      "tracks": {
+        "segments": [
+          {
+            "start": [82.957, 59.182],
+            "end": [88.773, 59.182],
+            "width": 0.4,
+            "layer": "F.Cu"
+          },
+          {
+            "start": [88.773, 59.182],
+            "end": [90.805, 57.15],
+            "width": 0.4,
+            "layer": "F.Cu"
+          },
+          {
+            "start": [79.019, 63.42],
+            "end": [79.019, 63.12],
+            "width": 0.4,
+            "layer": "F.Cu"
+          },
+          {
+            "start": [79.019, 63.12],
+            "end": [82.957, 59.182],
+            "width": 0.4,
+            "layer": "F.Cu"
+          },
+          {
+            "start": [90.805, 54.102],
+            "end": [90.805, 57.15],
+            "width": 0.4,
+            "layer": "B.Cu"
+          },
+          {
+            "start": [90.805, 54.991],
+            "end": [90.805, 57.15],
+            "width": 0.4,
+            "layer": "B.Cu"
+          },
+          {
+            "start": [90.8685, 57.0865],
+            "end": [90.805, 57.15],
+            "width": 0.25,
+            "layer": "B.Cu"
+          }
+        ],
+        "arcs": ["TODO: extract arc info. Most samples don't have arcs to help test :("],
+        "vias": ["TODO: are vias necessary for our routing interests?"]
+      },
+      "errors": []
+    },
+    "12": {
+      "name": "Net-(NEO1-Pad2)",
+      "class": "TODO",
+      "pads": [
+        {
+          "8BitMixtape_DIY-CAD:Mixtape_NEO_WS2812B pad 4": {
+            "abs_pos": [99.071, 59.32]
+          }
+        },
+        {
+          "8BitMixtape_DIY-CAD:Mixtape_NEO_WS2812B pad 2": {
+            "abs_pos": [74.919, 62.52]
+          }
+        }
+      ],
+      "tracks": {
+        "segments": [
+          {
+            "start": [98.171, 63.42],
+            "end": [98.171, 63.12],
+            "width": 0.4,
+            "layer": "F.Cu"
+          },
+          {
+            "start": [98.171, 63.12],
+            "end": [96.012, 60.961],
+            "width": 0.4,
+            "layer": "F.Cu"
+          },
+          {
+            "start": [96.012, 60.961],
+            "end": [96.012, 60.96],
+            "width": 0.4,
+            "layer": "F.Cu"
+          },
+          {
+            "start": [96.012, 60.96],
+            "end": [82.946064, 60.96],
+            "width": 0.4,
+            "layer": "F.Cu"
+          },
+          {
+            "start": [82.946064, 60.96],
+            "end": [80.519011, 63.387053],
+            "width": 0.4,
+            "layer": "F.Cu"
+          },
+          {
+            "start": [80.519011, 63.387053],
+            "end": [80.519011, 64.788533],
+            "width": 0.4,
+            "layer": "F.Cu"
+          },
+          {
+            "start": [80.519011, 64.788533],
+            "end": [80.064534, 65.24301],
+            "width": 0.4,
+            "layer": "F.Cu"
+          },
+          {
+            "start": [75.819, 58.42],
+            "end": [76.454, 58.42],
+            "width": 0.4,
+            "layer": "F.Cu"
+          },
+          {
+            "start": [77.216, 58.917],
+            "end": [76.719, 58.42],
+            "width": 0.4,
+            "layer": "F.Cu"
+          },
+          {
+            "start": [76.719, 58.42],
+            "end": [76.454, 58.42],
+            "width": 0.4,
+            "layer": "F.Cu"
+          },
+          {
+            "start": [77.216, 64.475542],
+            "end": [77.216, 58.917],
+            "width": 0.4,
+            "layer": "F.Cu"
+          },
+          {
+            "start": [80.156544, 65.151],
+            "end": [80.064534, 65.24301],
+            "width": 0.4,
+            "layer": "F.Cu"
+          },
+          {
+            "start": [80.064534, 65.24301],
+            "end": [77.983467, 65.243009],
+            "width": 0.4,
+            "layer": "F.Cu"
+          },
+          {
+            "start": [77.983467, 65.243009],
+            "end": [77.216, 64.475542],
+            "width": 0.4,
+            "layer": "F.Cu"
+          }
+        ],
+        "arcs": ["TODO: extract arc info. Most samples don't have arcs to help test :("],
+        "vias": ["TODO: are vias necessary for our routing interests?"]
+      },
+      "errors": []
+    },
+    "13": {
+      "name": "CV_In",
+      "class": "TODO",
+      "pads": [
+        {
+          "8BitMixtape_DIY-CAD:Loch_mixtape_seltsam pad 1": {
+            "abs_pos": [88.265, 66.929]
+          }
+        },
+        {
+          "8BitMixtape_DIY-CAD:Loch_mixtape pad 1": {
+            "abs_pos": [72.39, 57.15]
+          }
+        },
+        {
+          "8BitMixtape_DIY-CAD:AUDIO-JACK-3.5mm_SMD_noPrint pad 2": {
+            "abs_pos": [78.74, 63.5]
+          }
+        },
+        {
+          "8BitMixtape_DIY-CAD:AUDIO-JACK-3.5mm_SMD_noPrint pad 2": {
+            "abs_pos": [78.74, 71.12]
+          }
+        },
+        {
+          "8BitMixtape_mCore:Attiny_DIP-8_W7.62mm pad 3": {
+            "abs_pos": [83.185, 69.85]
+          }
+        }
+      ],
+      "tracks": {
+        "segments": [
+          {
+            "start": [74.295, 64.516],
+            "end": [74.295, 59.038441],
+            "width": 0.4,
+            "layer": "F.Cu"
+          },
+          {
+            "start": [80.313067, 65.843019],
+            "end": [75.622019, 65.843019],
+            "width": 0.4,
+            "layer": "F.Cu"
+          },
+          {
+            "start": [75.622019, 65.843019],
+            "end": [74.295, 64.516],
+            "width": 0.4,
+            "layer": "F.Cu"
+          },
+          {
+            "start": [83.194596, 61.56001],
+            "end": [83.194596, 61.585404],
+            "width": 0.4,
+            "layer": "F.Cu"
+          },
+          {
+            "start": [83.194596, 61.585404],
+            "end": [81.119021, 63.660979],
+            "width": 0.4,
+            "layer": "F.Cu"
+          },
+          {
+            "start": [81.119021, 63.660979],
+            "end": [81.11902, 65.037066],
+            "width": 0.4,
+            "layer": "F.Cu"
+          },
+          {
+            "start": [81.11902, 65.037066],
+            "end": [80.313067, 65.843019],
+            "width": 0.4,
+            "layer": "F.Cu"
+          },
+          {
+            "start": [87.59501, 61.56001],
+            "end": [83.194596, 61.56001],
+            "width": 0.4,
+            "layer": "F.Cu"
+          },
+          {
+            "start": [88.265, 64.77],
+            "end": [88.265, 62.23],
+            "width": 0.4,
+            "layer": "F.Cu"
+          },
+          {
+            "start": [88.265, 62.23],
+            "end": [87.59501, 61.56001],
+            "width": 0.4,
+            "layer": "F.Cu"
+          },
+          {
+            "start": [73.405442, 58.149999],
+            "end": [73.389999, 58.149999],
+            "width": 0.4,
+            "layer": "F.Cu"
+          },
+          {
+            "start": [74.295, 59.038441],
+            "end": [73.406, 58.149441],
+            "width": 0.4,
+            "layer": "F.Cu"
+          },
+          {
+            "start": [73.406, 58.149441],
+            "end": [73.405442, 58.149999],
+            "width": 0.4,
+            "layer": "F.Cu"
+          },
+          {
+            "start": [73.389999, 58.149999],
+            "end": [72.39, 57.15],
+            "width": 0.4,
+            "layer": "F.Cu"
+          },
+          {
+            "start": [88.265, 64.77],
+            "end": [88.265, 66.929],
+            "width": 0.4,
+            "layer": "B.Cu"
+          }
+        ],
+        "arcs": ["TODO: extract arc info. Most samples don't have arcs to help test :("],
+        "vias": ["TODO: are vias necessary for our routing interests?"]
+      },
+      "errors": []
+    },
+    "14": {
+      "name": "Net-(JACK2-Pad3)",
+      "class": "TODO",
+      "pads": [
+        {
+          "8BitMixtape_DIY-CAD:AUDIO-JACK-3.5mm_SMD_noPrint pad 3": {
+            "abs_pos": [111.75999999999999, 63.626999999999995]
+          }
+        },
+        {
+          "8BitMixtape_DIY-CAD:AUDIO-JACK-3.5mm_SMD_noPrint pad 3": {
+            "abs_pos": [111.75999999999999, 71.247]
+          }
+        }
+      ],
+      "tracks": {
+        "segments": [],
+        "arcs": ["TODO: extract arc info. Most samples don't have arcs to help test :("],
+        "vias": ["TODO: are vias necessary for our routing interests?"]
+      },
+      "errors": []
+    }
+  },
+  "errors": [
+    {
+      "8BitMixtape_DIY-CAD:Loch_mixtape_seltsam at [88.265, 54.483]": "pad \"\" smd circle at [0, 0] has error 143: key \"net\" not found"
+    },
+    {
+      "8BitMixtape_DIY-CAD:Loch_mixtape_seltsam at [83.185, 66.929]": "pad \"\" smd circle at [0, 0] has error 157: key \"net\" not found"
+    },
+    {
+      "8BitMixtape_DIY-CAD:Loch_mixtape_seltsam at [85.725, 66.929]": "pad \"\" smd circle at [0, 0] has error 171: key \"net\" not found"
+    },
+    {
+      "8BitMixtape_DIY-CAD:Loch_mixtape_seltsam at [88.265, 66.929]": "pad \"\" smd circle at [0, 0] has error 185: key \"net\" not found"
+    },
+    {
+      "8BitMixtape_DIY-CAD:Loch_mixtape_seltsam at [90.805, 54.483]": "pad \"\" smd circle at [0, 0] has error 199: key \"net\" not found"
+    },
+    {
+      "8BitMixtape_DIY-CAD:Loch_mixtape_seltsam at [90.805, 66.929]": "pad \"\" smd circle at [0, 0] has error 213: key \"net\" not found"
+    },
+    {
+      "8BitMixtape_DIY-CAD:Mixtape_NEO_WS2812B at [96.571, 60.92, 270]": "pad 2 smd rect at [-2.5, 1.6] has error 359: key \"net\" not found"
+    },
+    {
+      "8BitMixtape_mCore:Loch_mixtape_seltsam at [83.185, 54.483]": "pad \"\" smd circle at [0, 0] has error 8181: key \"net\" not found"
+    },
+    {
+      "8BitMixtape_mCore:Loch_mixtape_seltsam at [85.725, 54.483]": "pad \"\" smd circle at [0, 0] has error 8195: key \"net\" not found"
+    }
+  ]
+}

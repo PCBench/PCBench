@@ -1,0 +1,1655 @@
+{
+  "board_settings": {},
+  "net classes": {},
+  "net routes": {
+    "0": {
+      "name": "",
+      "class": "TODO",
+      "pads": [],
+      "tracks": {
+        "segments": [],
+        "arcs": ["TODO: extract arc info. Most samples don't have arcs to help test :("],
+        "vias": ["TODO: are vias necessary for our routing interests?"]
+      },
+      "errors": []
+    },
+    "1": {
+      "name": "GND",
+      "class": "TODO",
+      "pads": [
+        {
+          "Sockets_DIP:DIP-28__300_ELL pad 8": {
+            "abs_pos": [68.58, 58.42]
+          }
+        },
+        {
+          "Sockets_DIP:DIP-28__300_ELL pad 22": {
+            "abs_pos": [66.04, 50.8]
+          }
+        },
+        {
+          "Discret:C1 pad 2": {
+            "abs_pos": [53.34, 59.69]
+          }
+        },
+        {
+          "Discret:C1 pad 2": {
+            "abs_pos": [53.34, 67.31]
+          }
+        },
+        {
+          "Discret:SW_PUSH_SMALL pad 2": {
+            "abs_pos": [49.53, 54.61]
+          }
+        },
+        {
+          "Discret:SW_PUSH_SMALL pad 2": {
+            "abs_pos": [41.91, 54.61]
+          }
+        },
+        {
+          "Pin_Headers:Pin_Header_Straight_1x06 pad 5": {
+            "abs_pos": [38.1, 48.260000000000005]
+          }
+        },
+        {
+          "Pin_Headers:Pin_Header_Straight_1x06 pad 6": {
+            "abs_pos": [38.1, 50.8]
+          }
+        },
+        {
+          "Pin_Headers:Pin_Header_Straight_1x08 pad 8": {
+            "abs_pos": [55.88, 55.88]
+          }
+        },
+        {
+          "Pin_Headers:Pin_Header_Straight_1x02 pad 2": {
+            "abs_pos": [78.74, 33.02]
+          }
+        },
+        {
+          "Pin_Headers:Pin_Header_Straight_1x14 pad 8": {
+            "abs_pos": [78.74, 88.9]
+          }
+        },
+        {
+          "Capacitors_ThroughHole:C_Radial_D6.3_L11.2_P2.5 pad 2": {
+            "abs_pos": [72.35, 30.48]
+          }
+        },
+        {
+          "Capacitors_ThroughHole:C_Radial_D6.3_L11.2_P2.5 pad 2": {
+            "abs_pos": [63.46, 27.94]
+          }
+        },
+        {
+          "Resistors_ThroughHole:Resistor_Horizontal_RM10mm pad 2": {
+            "abs_pos": [49.53, 64.77]
+          }
+        },
+        {
+          "Discret:LM78XX pad GND": {
+            "abs_pos": [55.88, 30.48]
+          }
+        }
+      ],
+      "tracks": {
+        "segments": [
+          {
+            "start": [67.31, 55.88],
+            "end": [69.85, 53.34],
+            "width": 0.508,
+            "layer": "B.Cu"
+          },
+          {
+            "start": [44.45, 59.69],
+            "end": [44.45, 66.04],
+            "width": 0.508,
+            "layer": "B.Cu"
+          },
+          {
+            "start": [46.99, 68.58],
+            "end": [52.07, 68.58],
+            "width": 0.508,
+            "layer": "B.Cu"
+          },
+          {
+            "start": [44.45, 66.04],
+            "end": [46.99, 68.58],
+            "width": 0.508,
+            "layer": "B.Cu"
+          },
+          {
+            "start": [49.53, 54.61],
+            "end": [49.53, 54.61],
+            "width": 0.508,
+            "layer": "B.Cu"
+          },
+          {
+            "start": [40.64, 64.77],
+            "end": [40.64, 62.23],
+            "width": 0.508,
+            "layer": "B.Cu"
+          },
+          {
+            "start": [40.64, 67.31],
+            "end": [40.64, 64.77],
+            "width": 0.508,
+            "layer": "B.Cu"
+          },
+          {
+            "start": [40.64, 69.85],
+            "end": [40.64, 67.31],
+            "width": 0.508,
+            "layer": "B.Cu"
+          },
+          {
+            "start": [52.07, 57.15],
+            "end": [52.07, 58.42],
+            "width": 0.508,
+            "layer": "B.Cu"
+          },
+          {
+            "start": [50.8, 55.88],
+            "end": [52.07, 57.15],
+            "width": 0.508,
+            "layer": "B.Cu"
+          },
+          {
+            "start": [55.88, 55.88],
+            "end": [50.8, 55.88],
+            "width": 0.508,
+            "layer": "B.Cu"
+          },
+          {
+            "start": [63.5, 55.88],
+            "end": [55.88, 55.88],
+            "width": 0.508,
+            "layer": "B.Cu"
+          },
+          {
+            "start": [49.53, 54.61],
+            "end": [41.91, 54.61],
+            "width": 0.508,
+            "layer": "B.Cu"
+          },
+          {
+            "start": [50.8, 55.88],
+            "end": [49.53, 54.61],
+            "width": 0.508,
+            "layer": "B.Cu"
+          },
+          {
+            "start": [38.1, 50.8],
+            "end": [38.1, 48.26],
+            "width": 0.508,
+            "layer": "B.Cu"
+          },
+          {
+            "start": [41.91, 54.61],
+            "end": [38.1, 50.8],
+            "width": 0.508,
+            "layer": "B.Cu"
+          },
+          {
+            "start": [63.5, 55.88],
+            "end": [67.31, 55.88],
+            "width": 0.508,
+            "layer": "B.Cu"
+          },
+          {
+            "start": [69.85, 53.34],
+            "end": [78.74, 53.34],
+            "width": 0.508,
+            "layer": "B.Cu"
+          },
+          {
+            "start": [76.2, 33.02],
+            "end": [72.43, 27.98],
+            "width": 0.508,
+            "layer": "B.Cu"
+          },
+          {
+            "start": [72.43, 27.98],
+            "end": [66.08, 27.98],
+            "width": 0.508,
+            "layer": "B.Cu"
+          },
+          {
+            "start": [66.08, 27.98],
+            "end": [63.62, 30.44],
+            "width": 0.508,
+            "layer": "B.Cu"
+          },
+          {
+            "start": [78.74, 33.02],
+            "end": [76.2, 33.02],
+            "width": 0.508,
+            "layer": "B.Cu"
+          },
+          {
+            "start": [67.31, 34.13],
+            "end": [63.62, 30.44],
+            "width": 0.508,
+            "layer": "B.Cu"
+          },
+          {
+            "start": [67.31, 50.8],
+            "end": [67.31, 34.13],
+            "width": 0.508,
+            "layer": "B.Cu"
+          },
+          {
+            "start": [69.85, 53.34],
+            "end": [67.31, 50.8],
+            "width": 0.508,
+            "layer": "B.Cu"
+          },
+          {
+            "start": [71.12, 53.34],
+            "end": [69.85, 53.34],
+            "width": 0.508,
+            "layer": "B.Cu"
+          },
+          {
+            "start": [69.85, 27.98],
+            "end": [66.08, 27.98],
+            "width": 0.508,
+            "layer": "B.Cu"
+          },
+          {
+            "start": [60.92, 30.48],
+            "end": [55.88, 30.48],
+            "width": 0.508,
+            "layer": "B.Cu"
+          },
+          {
+            "start": [60.96, 30.44],
+            "end": [60.92, 30.48],
+            "width": 0.508,
+            "layer": "B.Cu"
+          },
+          {
+            "start": [63.62, 30.44],
+            "end": [60.96, 30.44],
+            "width": 0.508,
+            "layer": "B.Cu"
+          },
+          {
+            "start": [40.64, 59.69],
+            "end": [40.64, 62.23],
+            "width": 0.508,
+            "layer": "B.Cu"
+          },
+          {
+            "start": [40.64, 55.88],
+            "end": [40.64, 58.42],
+            "width": 0.508,
+            "layer": "B.Cu"
+          },
+          {
+            "start": [40.64, 58.42],
+            "end": [40.64, 59.69],
+            "width": 0.508,
+            "layer": "B.Cu"
+          },
+          {
+            "start": [41.91, 54.61],
+            "end": [40.64, 55.88],
+            "width": 0.508,
+            "layer": "B.Cu"
+          },
+          {
+            "start": [40.64, 67.31],
+            "end": [40.64, 69.85],
+            "width": 0.508,
+            "layer": "B.Cu"
+          },
+          {
+            "start": [40.64, 64.77],
+            "end": [40.64, 67.31],
+            "width": 0.508,
+            "layer": "B.Cu"
+          },
+          {
+            "start": [40.64, 62.23],
+            "end": [40.64, 64.77],
+            "width": 0.508,
+            "layer": "B.Cu"
+          },
+          {
+            "start": [44.45, 59.69],
+            "end": [40.64, 59.69],
+            "width": 0.508,
+            "layer": "B.Cu"
+          }
+        ],
+        "arcs": ["TODO: extract arc info. Most samples don't have arcs to help test :("],
+        "vias": ["TODO: are vias necessary for our routing interests?"]
+      },
+      "errors": []
+    },
+    "2": {
+      "name": "Net-(C1-Pad1)",
+      "class": "TODO",
+      "pads": [
+        {
+          "Diodes_ThroughHole:Diode_DO-41_SOD81_Horizontal_RM10 pad 2": {
+            "abs_pos": [72.39, 34.29]
+          }
+        },
+        {
+          "Capacitors_ThroughHole:C_Radial_D6.3_L11.2_P2.5 pad 1": {
+            "abs_pos": [69.85, 30.48]
+          }
+        },
+        {
+          "Discret:LM78XX pad VI": {
+            "abs_pos": [55.88, 27.94]
+          }
+        }
+      ],
+      "tracks": {
+        "segments": [
+          {
+            "start": [59.69, 33.02],
+            "end": [60.96, 34.29],
+            "width": 0.508,
+            "layer": "F.Cu"
+          },
+          {
+            "start": [60.96, 34.29],
+            "end": [62.23, 34.29],
+            "width": 0.508,
+            "layer": "F.Cu"
+          },
+          {
+            "start": [55.88, 33.02],
+            "end": [59.69, 33.02],
+            "width": 0.508,
+            "layer": "F.Cu"
+          },
+          {
+            "start": [63.5, 34.29],
+            "end": [67.31, 30.48],
+            "width": 0.508,
+            "layer": "F.Cu"
+          },
+          {
+            "start": [67.31, 30.48],
+            "end": [69.85, 30.48],
+            "width": 0.508,
+            "layer": "F.Cu"
+          },
+          {
+            "start": [62.23, 34.29],
+            "end": [63.5, 34.29],
+            "width": 0.508,
+            "layer": "F.Cu"
+          }
+        ],
+        "arcs": ["TODO: extract arc info. Most samples don't have arcs to help test :("],
+        "vias": ["TODO: are vias necessary for our routing interests?"]
+      },
+      "errors": []
+    },
+    "3": {
+      "name": "+5V",
+      "class": "TODO",
+      "pads": [
+        {
+          "Sockets_DIP:DIP-28__300_ELL pad 7": {
+            "abs_pos": [66.04, 58.42]
+          }
+        },
+        {
+          "Sockets_DIP:DIP-28__300_ELL pad 20": {
+            "abs_pos": [71.12, 50.8]
+          }
+        },
+        {
+          "Pin_Headers:Pin_Header_Straight_1x06 pad 4": {
+            "abs_pos": [38.1, 45.72]
+          }
+        },
+        {
+          "Pin_Headers:Pin_Header_Straight_1x08 pad 7": {
+            "abs_pos": [55.88, 53.34]
+          }
+        },
+        {
+          "Pin_Headers:Pin_Header_Straight_1x14 pad 6": {
+            "abs_pos": [78.74, 83.82000000000001]
+          }
+        },
+        {
+          "Capacitors_ThroughHole:C_Radial_D6.3_L11.2_P2.5 pad 1": {
+            "abs_pos": [60.96, 27.94]
+          }
+        },
+        {
+          "LEDs:LED-3MM pad 1": {
+            "abs_pos": [46.989999999999995, 71.12]
+          }
+        },
+        {
+          "Resistors_ThroughHole:Resistor_Horizontal_RM10mm pad 1": {
+            "abs_pos": [46.99, 43.18]
+          }
+        },
+        {
+          "Discret:LM78XX pad VO": {
+            "abs_pos": [55.88, 33.02]
+          }
+        }
+      ],
+      "tracks": {
+        "segments": [
+          {
+            "start": [59.69, 53.34],
+            "end": [63.5, 53.34],
+            "width": 0.508,
+            "layer": "F.Cu"
+          },
+          {
+            "start": [55.88, 27.94],
+            "end": [60.96, 27.94],
+            "width": 0.508,
+            "layer": "F.Cu"
+          },
+          {
+            "start": [58.42, 53.34],
+            "end": [59.69, 53.34],
+            "width": 0.508,
+            "layer": "F.Cu"
+          },
+          {
+            "start": [58.42, 53.34],
+            "end": [55.88, 53.34],
+            "width": 0.508,
+            "layer": "F.Cu"
+          },
+          {
+            "start": [67.31, 57.15],
+            "end": [68.58, 58.42],
+            "width": 0.508,
+            "layer": "F.Cu"
+          },
+          {
+            "start": [68.58, 58.42],
+            "end": [71.12, 58.42],
+            "width": 0.508,
+            "layer": "F.Cu"
+          },
+          {
+            "start": [67.31, 55.88],
+            "end": [67.31, 57.15],
+            "width": 0.508,
+            "layer": "F.Cu"
+          },
+          {
+            "start": [64.77, 53.34],
+            "end": [67.31, 55.88],
+            "width": 0.508,
+            "layer": "F.Cu"
+          },
+          {
+            "start": [63.5, 53.34],
+            "end": [64.77, 53.34],
+            "width": 0.508,
+            "layer": "F.Cu"
+          },
+          {
+            "start": [53.34, 27.94],
+            "end": [52.07, 29.21],
+            "width": 0.508,
+            "layer": "F.Cu"
+          },
+          {
+            "start": [52.07, 29.21],
+            "end": [52.07, 34.29],
+            "width": 0.508,
+            "layer": "F.Cu"
+          },
+          {
+            "start": [52.07, 34.29],
+            "end": [53.34, 35.56],
+            "width": 0.508,
+            "layer": "F.Cu"
+          },
+          {
+            "start": [53.34, 35.56],
+            "end": [58.42, 35.56],
+            "width": 0.508,
+            "layer": "F.Cu"
+          },
+          {
+            "start": [58.42, 35.56],
+            "end": [59.69, 36.83],
+            "width": 0.508,
+            "layer": "F.Cu"
+          },
+          {
+            "start": [59.69, 36.83],
+            "end": [59.69, 53.34],
+            "width": 0.508,
+            "layer": "F.Cu"
+          },
+          {
+            "start": [55.88, 27.94],
+            "end": [53.34, 27.94],
+            "width": 0.508,
+            "layer": "F.Cu"
+          },
+          {
+            "start": [35.56, 52.07],
+            "end": [38.1, 54.61],
+            "width": 0.508,
+            "layer": "F.Cu"
+          },
+          {
+            "start": [35.56, 45.72],
+            "end": [35.56, 52.07],
+            "width": 0.508,
+            "layer": "F.Cu"
+          },
+          {
+            "start": [38.1, 45.72],
+            "end": [35.56, 45.72],
+            "width": 0.508,
+            "layer": "F.Cu"
+          },
+          {
+            "start": [53.34, 52.07],
+            "end": [52.07, 50.8],
+            "width": 0.508,
+            "layer": "F.Cu"
+          },
+          {
+            "start": [52.07, 50.8],
+            "end": [52.07, 48.26],
+            "width": 0.508,
+            "layer": "F.Cu"
+          },
+          {
+            "start": [54.61, 53.34],
+            "end": [53.34, 52.07],
+            "width": 0.508,
+            "layer": "F.Cu"
+          },
+          {
+            "start": [55.88, 53.34],
+            "end": [54.61, 53.34],
+            "width": 0.508,
+            "layer": "F.Cu"
+          },
+          {
+            "start": [40.64, 52.07],
+            "end": [53.34, 52.07],
+            "width": 0.508,
+            "layer": "F.Cu"
+          },
+          {
+            "start": [38.1, 54.61],
+            "end": [40.64, 52.07],
+            "width": 0.508,
+            "layer": "F.Cu"
+          },
+          {
+            "start": [39.37, 73.66],
+            "end": [46.99, 73.66],
+            "width": 0.508,
+            "layer": "F.Cu"
+          },
+          {
+            "start": [46.99, 73.66],
+            "end": [48.26, 72.39],
+            "width": 0.508,
+            "layer": "F.Cu"
+          },
+          {
+            "start": [48.26, 72.39],
+            "end": [49.53, 71.12],
+            "width": 0.508,
+            "layer": "F.Cu"
+          },
+          {
+            "start": [38.1, 54.61],
+            "end": [38.1, 72.39],
+            "width": 0.508,
+            "layer": "F.Cu"
+          },
+          {
+            "start": [38.1, 72.39],
+            "end": [39.37, 73.66],
+            "width": 0.508,
+            "layer": "F.Cu"
+          },
+          {
+            "start": [71.12, 58.42],
+            "end": [78.74, 58.42],
+            "width": 0.508,
+            "layer": "B.Cu"
+          }
+        ],
+        "arcs": ["TODO: extract arc info. Most samples don't have arcs to help test :("],
+        "vias": ["TODO: are vias necessary for our routing interests?"]
+      },
+      "errors": []
+    },
+    "4": {
+      "name": "Net-(C3-Pad1)",
+      "class": "TODO",
+      "pads": [
+        {
+          "Sockets_DIP:DIP-28__300_ELL pad 10": {
+            "abs_pos": [73.66, 58.42]
+          }
+        },
+        {
+          "Discret:C1 pad 1": {
+            "abs_pos": [50.8, 67.31]
+          }
+        },
+        {
+          "Crystal_HC50-U_Vertical pad 1": {
+            "abs_pos": [45.81906, 62.23]
+          }
+        }
+      ],
+      "tracks": {
+        "segments": [
+          {
+            "start": [54.61, 60.96],
+            "end": [63.5, 60.96],
+            "width": 0.508,
+            "layer": "B.Cu"
+          },
+          {
+            "start": [52.07, 63.5],
+            "end": [54.61, 60.96],
+            "width": 0.508,
+            "layer": "B.Cu"
+          },
+          {
+            "start": [52.07, 66.04],
+            "end": [52.07, 63.5],
+            "width": 0.508,
+            "layer": "B.Cu"
+          },
+          {
+            "start": [48.26, 64.77],
+            "end": [48.26, 64.67094],
+            "width": 0.508,
+            "layer": "B.Cu"
+          },
+          {
+            "start": [49.53, 66.04],
+            "end": [48.26, 64.77],
+            "width": 0.508,
+            "layer": "B.Cu"
+          },
+          {
+            "start": [52.07, 66.04],
+            "end": [49.53, 66.04],
+            "width": 0.508,
+            "layer": "B.Cu"
+          }
+        ],
+        "arcs": ["TODO: extract arc info. Most samples don't have arcs to help test :("],
+        "vias": ["TODO: are vias necessary for our routing interests?"]
+      },
+      "errors": []
+    },
+    "5": {
+      "name": "Net-(C4-Pad1)",
+      "class": "TODO",
+      "pads": [
+        {
+          "Sockets_DIP:DIP-28__300_ELL pad 9": {
+            "abs_pos": [71.12, 58.42]
+          }
+        },
+        {
+          "Discret:C1 pad 1": {
+            "abs_pos": [50.8, 59.69]
+          }
+        },
+        {
+          "Crystal_HC50-U_Vertical pad 2": {
+            "abs_pos": [50.700939999999996, 62.23]
+          }
+        }
+      ],
+      "tracks": {
+        "segments": [
+          {
+            "start": [51.97094, 61.05906],
+            "end": [52.07, 60.96],
+            "width": 0.508,
+            "layer": "B.Cu"
+          },
+          {
+            "start": [52.07, 60.96],
+            "end": [52.07, 60.96],
+            "width": 0.508,
+            "layer": "B.Cu"
+          },
+          {
+            "start": [54.61, 58.42],
+            "end": [52.07, 60.96],
+            "width": 0.508,
+            "layer": "B.Cu"
+          },
+          {
+            "start": [63.5, 58.42],
+            "end": [54.61, 58.42],
+            "width": 0.508,
+            "layer": "B.Cu"
+          },
+          {
+            "start": [48.35906, 59.78906],
+            "end": [48.26, 59.78906],
+            "width": 0.508,
+            "layer": "B.Cu"
+          },
+          {
+            "start": [49.53, 60.96],
+            "end": [48.35906, 59.78906],
+            "width": 0.508,
+            "layer": "B.Cu"
+          },
+          {
+            "start": [52.07, 60.96],
+            "end": [49.53, 60.96],
+            "width": 0.508,
+            "layer": "B.Cu"
+          }
+        ],
+        "arcs": ["TODO: extract arc info. Most samples don't have arcs to help test :("],
+        "vias": ["TODO: are vias necessary for our routing interests?"]
+      },
+      "errors": []
+    },
+    "6": {
+      "name": "Net-(C5-Pad1)",
+      "class": "TODO",
+      "pads": [
+        {
+          "Sockets_DIP:DIP-28__300_ELL pad 1": {
+            "abs_pos": [50.8, 58.42]
+          }
+        },
+        {
+          "Discret:C2 pad 1": {
+            "abs_pos": [41.910000000000004, 38.1]
+          }
+        },
+        {
+          "Discret:SW_PUSH_SMALL pad 1": {
+            "abs_pos": [49.53, 49.53]
+          }
+        },
+        {
+          "Discret:SW_PUSH_SMALL pad 1": {
+            "abs_pos": [41.91, 49.53]
+          }
+        },
+        {
+          "Pin_Headers:Pin_Header_Straight_1x08 pad 1": {
+            "abs_pos": [55.88, 38.1]
+          }
+        },
+        {
+          "Resistors_ThroughHole:Resistor_Horizontal_RM10mm pad 2": {
+            "abs_pos": [57.15, 43.18]
+          }
+        }
+      ],
+      "tracks": {
+        "segments": [
+          {
+            "start": [41.91, 49.53],
+            "end": [49.53, 49.53],
+            "width": 0.508,
+            "layer": "B.Cu"
+          },
+          {
+            "start": [55.88, 38.1],
+            "end": [63.5, 38.1],
+            "width": 0.508,
+            "layer": "B.Cu"
+          },
+          {
+            "start": [52.07, 38.1],
+            "end": [55.88, 38.1],
+            "width": 0.508,
+            "layer": "B.Cu"
+          },
+          {
+            "start": [52.07, 38.1],
+            "end": [46.99, 38.1],
+            "width": 0.508,
+            "layer": "B.Cu"
+          },
+          {
+            "start": [49.53, 40.64],
+            "end": [49.53, 49.53],
+            "width": 0.508,
+            "layer": "F.Cu"
+          },
+          {
+            "start": [52.07, 38.1],
+            "end": [49.53, 40.64],
+            "width": 0.508,
+            "layer": "F.Cu"
+          }
+        ],
+        "arcs": ["TODO: extract arc info. Most samples don't have arcs to help test :("],
+        "vias": ["TODO: are vias necessary for our routing interests?"]
+      },
+      "errors": []
+    },
+    "7": {
+      "name": "Net-(C5-Pad2)",
+      "class": "TODO",
+      "pads": [
+        {
+          "Discret:C2 pad 2": {
+            "abs_pos": [46.99, 38.1]
+          }
+        },
+        {
+          "Pin_Headers:Pin_Header_Straight_1x06 pad 1": {
+            "abs_pos": [38.1, 38.1]
+          }
+        }
+      ],
+      "tracks": {
+        "segments": [
+          {
+            "start": [38.1, 38.1],
+            "end": [41.91, 38.1],
+            "width": 0.508,
+            "layer": "B.Cu"
+          }
+        ],
+        "arcs": ["TODO: extract arc info. Most samples don't have arcs to help test :("],
+        "vias": ["TODO: are vias necessary for our routing interests?"]
+      },
+      "errors": []
+    },
+    "8": {
+      "name": "Net-(D1-Pad1)",
+      "class": "TODO",
+      "pads": [
+        {
+          "Diodes_ThroughHole:Diode_DO-41_SOD81_Horizontal_RM10 pad 1": {
+            "abs_pos": [62.230000000000004, 34.29]
+          }
+        },
+        {
+          "Pin_Headers:Pin_Header_Straight_1x02 pad 1": {
+            "abs_pos": [78.74, 30.48]
+          }
+        }
+      ],
+      "tracks": {
+        "segments": [
+          {
+            "start": [76.2, 30.48],
+            "end": [72.39, 34.29],
+            "width": 0.508,
+            "layer": "F.Cu"
+          },
+          {
+            "start": [78.74, 30.48],
+            "end": [76.2, 30.48],
+            "width": 0.508,
+            "layer": "F.Cu"
+          }
+        ],
+        "arcs": ["TODO: extract arc info. Most samples don't have arcs to help test :("],
+        "vias": ["TODO: are vias necessary for our routing interests?"]
+      },
+      "errors": []
+    },
+    "9": {
+      "name": "Net-(IC1-Pad2)",
+      "class": "TODO",
+      "pads": [
+        {
+          "Sockets_DIP:DIP-28__300_ELL pad 2": {
+            "abs_pos": [53.34, 58.42]
+          }
+        },
+        {
+          "Pin_Headers:Pin_Header_Straight_1x06 pad 3": {
+            "abs_pos": [38.1, 43.18]
+          }
+        },
+        {
+          "Pin_Headers:Pin_Header_Straight_1x08 pad 2": {
+            "abs_pos": [55.88, 40.64]
+          }
+        }
+      ],
+      "tracks": {
+        "segments": [
+          {
+            "start": [55.88, 40.64],
+            "end": [63.5, 40.64],
+            "width": 0.508,
+            "layer": "B.Cu"
+          },
+          {
+            "start": [44.45, 40.64],
+            "end": [41.91, 43.18],
+            "width": 0.508,
+            "layer": "F.Cu"
+          },
+          {
+            "start": [41.91, 43.18],
+            "end": [38.1, 43.18],
+            "width": 0.508,
+            "layer": "F.Cu"
+          },
+          {
+            "start": [55.88, 40.64],
+            "end": [44.45, 40.64],
+            "width": 0.508,
+            "layer": "B.Cu"
+          }
+        ],
+        "arcs": ["TODO: extract arc info. Most samples don't have arcs to help test :("],
+        "vias": ["TODO: are vias necessary for our routing interests?"]
+      },
+      "errors": []
+    },
+    "10": {
+      "name": "Net-(IC1-Pad3)",
+      "class": "TODO",
+      "pads": [
+        {
+          "Sockets_DIP:DIP-28__300_ELL pad 3": {
+            "abs_pos": [55.88, 58.42]
+          }
+        },
+        {
+          "Pin_Headers:Pin_Header_Straight_1x06 pad 2": {
+            "abs_pos": [38.1, 40.64]
+          }
+        },
+        {
+          "Pin_Headers:Pin_Header_Straight_1x08 pad 3": {
+            "abs_pos": [55.88, 43.18]
+          }
+        }
+      ],
+      "tracks": {
+        "segments": [
+          {
+            "start": [41.91, 40.64],
+            "end": [44.45, 43.18],
+            "width": 0.508,
+            "layer": "B.Cu"
+          },
+          {
+            "start": [44.45, 43.18],
+            "end": [55.88, 43.18],
+            "width": 0.508,
+            "layer": "B.Cu"
+          },
+          {
+            "start": [38.1, 40.64],
+            "end": [41.91, 40.64],
+            "width": 0.508,
+            "layer": "B.Cu"
+          },
+          {
+            "start": [55.88, 43.18],
+            "end": [63.5, 43.18],
+            "width": 0.508,
+            "layer": "B.Cu"
+          }
+        ],
+        "arcs": ["TODO: extract arc info. Most samples don't have arcs to help test :("],
+        "vias": ["TODO: are vias necessary for our routing interests?"]
+      },
+      "errors": []
+    },
+    "11": {
+      "name": "Net-(IC1-Pad4)",
+      "class": "TODO",
+      "pads": [
+        {
+          "Sockets_DIP:DIP-28__300_ELL pad 4": {
+            "abs_pos": [58.42, 58.42]
+          }
+        },
+        {
+          "Pin_Headers:Pin_Header_Straight_1x08 pad 4": {
+            "abs_pos": [55.88, 45.72]
+          }
+        }
+      ],
+      "tracks": {
+        "segments": [
+          {
+            "start": [55.88, 45.72],
+            "end": [63.5, 45.72],
+            "width": 0.508,
+            "layer": "B.Cu"
+          }
+        ],
+        "arcs": ["TODO: extract arc info. Most samples don't have arcs to help test :("],
+        "vias": ["TODO: are vias necessary for our routing interests?"]
+      },
+      "errors": []
+    },
+    "12": {
+      "name": "Net-(IC1-Pad5)",
+      "class": "TODO",
+      "pads": [
+        {
+          "Sockets_DIP:DIP-28__300_ELL pad 5": {
+            "abs_pos": [60.96, 58.42]
+          }
+        },
+        {
+          "Pin_Headers:Pin_Header_Straight_1x08 pad 5": {
+            "abs_pos": [55.88, 48.260000000000005]
+          }
+        }
+      ],
+      "tracks": {
+        "segments": [
+          {
+            "start": [55.88, 48.26],
+            "end": [63.5, 48.26],
+            "width": 0.508,
+            "layer": "B.Cu"
+          }
+        ],
+        "arcs": ["TODO: extract arc info. Most samples don't have arcs to help test :("],
+        "vias": ["TODO: are vias necessary for our routing interests?"]
+      },
+      "errors": []
+    },
+    "13": {
+      "name": "Net-(IC1-Pad6)",
+      "class": "TODO",
+      "pads": [
+        {
+          "Sockets_DIP:DIP-28__300_ELL pad 6": {
+            "abs_pos": [63.5, 58.42]
+          }
+        },
+        {
+          "Pin_Headers:Pin_Header_Straight_1x08 pad 6": {
+            "abs_pos": [55.88, 50.8]
+          }
+        }
+      ],
+      "tracks": {
+        "segments": [
+          {
+            "start": [55.88, 50.8],
+            "end": [63.5, 50.8],
+            "width": 0.508,
+            "layer": "B.Cu"
+          }
+        ],
+        "arcs": ["TODO: extract arc info. Most samples don't have arcs to help test :("],
+        "vias": ["TODO: are vias necessary for our routing interests?"]
+      },
+      "errors": []
+    },
+    "14": {
+      "name": "Net-(IC1-Pad11)",
+      "class": "TODO",
+      "pads": [
+        {
+          "Sockets_DIP:DIP-28__300_ELL pad 11": {
+            "abs_pos": [76.2, 58.42]
+          }
+        },
+        {
+          "Pin_Headers:Pin_Header_Straight_1x04 pad 1": {
+            "abs_pos": [55.88, 63.5]
+          }
+        }
+      ],
+      "tracks": {
+        "segments": [
+          {
+            "start": [55.88, 63.5],
+            "end": [63.5, 63.5],
+            "width": 0.508,
+            "layer": "B.Cu"
+          }
+        ],
+        "arcs": ["TODO: extract arc info. Most samples don't have arcs to help test :("],
+        "vias": ["TODO: are vias necessary for our routing interests?"]
+      },
+      "errors": []
+    },
+    "15": {
+      "name": "Net-(IC1-Pad12)",
+      "class": "TODO",
+      "pads": [
+        {
+          "Sockets_DIP:DIP-28__300_ELL pad 12": {
+            "abs_pos": [78.74000000000001, 58.42]
+          }
+        },
+        {
+          "Pin_Headers:Pin_Header_Straight_1x04 pad 2": {
+            "abs_pos": [55.88, 66.04]
+          }
+        }
+      ],
+      "tracks": {
+        "segments": [
+          {
+            "start": [55.88, 66.04],
+            "end": [63.5, 66.04],
+            "width": 0.508,
+            "layer": "B.Cu"
+          }
+        ],
+        "arcs": ["TODO: extract arc info. Most samples don't have arcs to help test :("],
+        "vias": ["TODO: are vias necessary for our routing interests?"]
+      },
+      "errors": []
+    },
+    "16": {
+      "name": "Net-(IC1-Pad13)",
+      "class": "TODO",
+      "pads": [
+        {
+          "Sockets_DIP:DIP-28__300_ELL pad 13": {
+            "abs_pos": [81.28, 58.42]
+          }
+        },
+        {
+          "Pin_Headers:Pin_Header_Straight_1x04 pad 3": {
+            "abs_pos": [55.88, 68.58]
+          }
+        }
+      ],
+      "tracks": {
+        "segments": [
+          {
+            "start": [55.88, 68.58],
+            "end": [63.5, 68.58],
+            "width": 0.508,
+            "layer": "B.Cu"
+          }
+        ],
+        "arcs": ["TODO: extract arc info. Most samples don't have arcs to help test :("],
+        "vias": ["TODO: are vias necessary for our routing interests?"]
+      },
+      "errors": []
+    },
+    "17": {
+      "name": "Net-(IC1-Pad14)",
+      "class": "TODO",
+      "pads": [
+        {
+          "Sockets_DIP:DIP-28__300_ELL pad 14": {
+            "abs_pos": [83.82000000000001, 58.42]
+          }
+        },
+        {
+          "Pin_Headers:Pin_Header_Straight_1x04 pad 4": {
+            "abs_pos": [55.88, 71.12]
+          }
+        }
+      ],
+      "tracks": {
+        "segments": [
+          {
+            "start": [55.88, 71.12],
+            "end": [63.5, 71.12],
+            "width": 0.508,
+            "layer": "B.Cu"
+          }
+        ],
+        "arcs": ["TODO: extract arc info. Most samples don't have arcs to help test :("],
+        "vias": ["TODO: are vias necessary for our routing interests?"]
+      },
+      "errors": []
+    },
+    "18": {
+      "name": "Net-(IC1-Pad15)",
+      "class": "TODO",
+      "pads": [
+        {
+          "Sockets_DIP:DIP-28__300_ELL pad 15": {
+            "abs_pos": [83.82000000000001, 50.8]
+          }
+        },
+        {
+          "Pin_Headers:Pin_Header_Straight_1x14 pad 1": {
+            "abs_pos": [78.74, 71.12]
+          }
+        }
+      ],
+      "tracks": {
+        "segments": [
+          {
+            "start": [71.12, 71.12],
+            "end": [78.74, 71.12],
+            "width": 0.508,
+            "layer": "B.Cu"
+          }
+        ],
+        "arcs": ["TODO: extract arc info. Most samples don't have arcs to help test :("],
+        "vias": ["TODO: are vias necessary for our routing interests?"]
+      },
+      "errors": []
+    },
+    "19": {
+      "name": "Net-(IC1-Pad16)",
+      "class": "TODO",
+      "pads": [
+        {
+          "Sockets_DIP:DIP-28__300_ELL pad 16": {
+            "abs_pos": [81.28, 50.8]
+          }
+        },
+        {
+          "Pin_Headers:Pin_Header_Straight_1x14 pad 2": {
+            "abs_pos": [78.74, 73.66000000000001]
+          }
+        }
+      ],
+      "tracks": {
+        "segments": [
+          {
+            "start": [71.12, 68.58],
+            "end": [78.74, 68.58],
+            "width": 0.508,
+            "layer": "B.Cu"
+          }
+        ],
+        "arcs": ["TODO: extract arc info. Most samples don't have arcs to help test :("],
+        "vias": ["TODO: are vias necessary for our routing interests?"]
+      },
+      "errors": []
+    },
+    "20": {
+      "name": "Net-(IC1-Pad17)",
+      "class": "TODO",
+      "pads": [
+        {
+          "Sockets_DIP:DIP-28__300_ELL pad 17": {
+            "abs_pos": [78.74000000000001, 50.8]
+          }
+        },
+        {
+          "Pin_Headers:Pin_Header_Straight_1x14 pad 3": {
+            "abs_pos": [78.74, 76.2]
+          }
+        }
+      ],
+      "tracks": {
+        "segments": [
+          {
+            "start": [71.12, 66.04],
+            "end": [78.74, 66.04],
+            "width": 0.508,
+            "layer": "B.Cu"
+          }
+        ],
+        "arcs": ["TODO: extract arc info. Most samples don't have arcs to help test :("],
+        "vias": ["TODO: are vias necessary for our routing interests?"]
+      },
+      "errors": []
+    },
+    "21": {
+      "name": "Net-(IC1-Pad18)",
+      "class": "TODO",
+      "pads": [
+        {
+          "Sockets_DIP:DIP-28__300_ELL pad 18": {
+            "abs_pos": [76.2, 50.8]
+          }
+        },
+        {
+          "Pin_Headers:Pin_Header_Straight_1x14 pad 4": {
+            "abs_pos": [78.74, 78.74000000000001]
+          }
+        }
+      ],
+      "tracks": {
+        "segments": [
+          {
+            "start": [71.12, 63.5],
+            "end": [78.74, 63.5],
+            "width": 0.508,
+            "layer": "B.Cu"
+          }
+        ],
+        "arcs": ["TODO: extract arc info. Most samples don't have arcs to help test :("],
+        "vias": ["TODO: are vias necessary for our routing interests?"]
+      },
+      "errors": []
+    },
+    "22": {
+      "name": "Net-(IC1-Pad19)",
+      "class": "TODO",
+      "pads": [
+        {
+          "Sockets_DIP:DIP-28__300_ELL pad 19": {
+            "abs_pos": [73.66, 50.8]
+          }
+        },
+        {
+          "Pin_Headers:Pin_Header_Straight_1x14 pad 5": {
+            "abs_pos": [78.74, 81.28]
+          }
+        }
+      ],
+      "tracks": {
+        "segments": [
+          {
+            "start": [71.12, 60.96],
+            "end": [78.74, 60.96],
+            "width": 0.508,
+            "layer": "B.Cu"
+          }
+        ],
+        "arcs": ["TODO: extract arc info. Most samples don't have arcs to help test :("],
+        "vias": ["TODO: are vias necessary for our routing interests?"]
+      },
+      "errors": []
+    },
+    "23": {
+      "name": "Net-(IC1-Pad21)",
+      "class": "TODO",
+      "pads": [
+        {
+          "Sockets_DIP:DIP-28__300_ELL pad 21": {
+            "abs_pos": [68.58, 50.8]
+          }
+        },
+        {
+          "Pin_Headers:Pin_Header_Straight_1x14 pad 7": {
+            "abs_pos": [78.74, 86.36]
+          }
+        }
+      ],
+      "tracks": {
+        "segments": [
+          {
+            "start": [71.12, 55.88],
+            "end": [78.74, 55.88],
+            "width": 0.508,
+            "layer": "B.Cu"
+          }
+        ],
+        "arcs": ["TODO: extract arc info. Most samples don't have arcs to help test :("],
+        "vias": ["TODO: are vias necessary for our routing interests?"]
+      },
+      "errors": []
+    },
+    "24": {
+      "name": "Net-(IC1-Pad23)",
+      "class": "TODO",
+      "pads": [
+        {
+          "Sockets_DIP:DIP-28__300_ELL pad 23": {
+            "abs_pos": [63.5, 50.8]
+          }
+        },
+        {
+          "Pin_Headers:Pin_Header_Straight_1x14 pad 9": {
+            "abs_pos": [78.74, 91.44]
+          }
+        }
+      ],
+      "tracks": {
+        "segments": [
+          {
+            "start": [71.12, 50.8],
+            "end": [78.74, 50.8],
+            "width": 0.508,
+            "layer": "B.Cu"
+          }
+        ],
+        "arcs": ["TODO: extract arc info. Most samples don't have arcs to help test :("],
+        "vias": ["TODO: are vias necessary for our routing interests?"]
+      },
+      "errors": []
+    },
+    "25": {
+      "name": "Net-(IC1-Pad24)",
+      "class": "TODO",
+      "pads": [
+        {
+          "Sockets_DIP:DIP-28__300_ELL pad 24": {
+            "abs_pos": [60.96, 50.8]
+          }
+        },
+        {
+          "Pin_Headers:Pin_Header_Straight_1x14 pad 10": {
+            "abs_pos": [78.74, 93.98]
+          }
+        }
+      ],
+      "tracks": {
+        "segments": [
+          {
+            "start": [71.12, 48.26],
+            "end": [78.74, 48.26],
+            "width": 0.508,
+            "layer": "B.Cu"
+          }
+        ],
+        "arcs": ["TODO: extract arc info. Most samples don't have arcs to help test :("],
+        "vias": ["TODO: are vias necessary for our routing interests?"]
+      },
+      "errors": []
+    },
+    "26": {
+      "name": "Net-(IC1-Pad25)",
+      "class": "TODO",
+      "pads": [
+        {
+          "Sockets_DIP:DIP-28__300_ELL pad 25": {
+            "abs_pos": [58.42, 50.8]
+          }
+        },
+        {
+          "Pin_Headers:Pin_Header_Straight_1x14 pad 11": {
+            "abs_pos": [78.74, 96.52000000000001]
+          }
+        }
+      ],
+      "tracks": {
+        "segments": [
+          {
+            "start": [71.12, 45.72],
+            "end": [78.74, 45.72],
+            "width": 0.508,
+            "layer": "B.Cu"
+          }
+        ],
+        "arcs": ["TODO: extract arc info. Most samples don't have arcs to help test :("],
+        "vias": ["TODO: are vias necessary for our routing interests?"]
+      },
+      "errors": []
+    },
+    "27": {
+      "name": "Net-(IC1-Pad26)",
+      "class": "TODO",
+      "pads": [
+        {
+          "Sockets_DIP:DIP-28__300_ELL pad 26": {
+            "abs_pos": [55.88, 50.8]
+          }
+        },
+        {
+          "Pin_Headers:Pin_Header_Straight_1x14 pad 12": {
+            "abs_pos": [78.74, 99.06]
+          }
+        }
+      ],
+      "tracks": {
+        "segments": [
+          {
+            "start": [71.12, 43.18],
+            "end": [78.74, 43.18],
+            "width": 0.508,
+            "layer": "B.Cu"
+          }
+        ],
+        "arcs": ["TODO: extract arc info. Most samples don't have arcs to help test :("],
+        "vias": ["TODO: are vias necessary for our routing interests?"]
+      },
+      "errors": []
+    },
+    "28": {
+      "name": "Net-(IC1-Pad27)",
+      "class": "TODO",
+      "pads": [
+        {
+          "Sockets_DIP:DIP-28__300_ELL pad 27": {
+            "abs_pos": [53.34, 50.8]
+          }
+        },
+        {
+          "Pin_Headers:Pin_Header_Straight_1x14 pad 13": {
+            "abs_pos": [78.74, 101.60000000000001]
+          }
+        }
+      ],
+      "tracks": {
+        "segments": [
+          {
+            "start": [71.12, 40.64],
+            "end": [78.74, 40.64],
+            "width": 0.508,
+            "layer": "B.Cu"
+          }
+        ],
+        "arcs": ["TODO: extract arc info. Most samples don't have arcs to help test :("],
+        "vias": ["TODO: are vias necessary for our routing interests?"]
+      },
+      "errors": []
+    },
+    "29": {
+      "name": "Net-(IC1-Pad28)",
+      "class": "TODO",
+      "pads": [
+        {
+          "Sockets_DIP:DIP-28__300_ELL pad 28": {
+            "abs_pos": [50.8, 50.8]
+          }
+        },
+        {
+          "Pin_Headers:Pin_Header_Straight_1x14 pad 14": {
+            "abs_pos": [78.74, 104.14000000000001]
+          }
+        }
+      ],
+      "tracks": {
+        "segments": [
+          {
+            "start": [71.12, 38.1],
+            "end": [78.74, 38.1],
+            "width": 0.508,
+            "layer": "B.Cu"
+          }
+        ],
+        "arcs": ["TODO: extract arc info. Most samples don't have arcs to help test :("],
+        "vias": ["TODO: are vias necessary for our routing interests?"]
+      },
+      "errors": []
+    },
+    "30": {
+      "name": "Net-(D2-Pad2)",
+      "class": "TODO",
+      "pads": [
+        {
+          "LEDs:LED-3MM pad 2": {
+            "abs_pos": [49.53, 71.12]
+          }
+        },
+        {
+          "Resistors_ThroughHole:Resistor_Horizontal_RM10mm pad 1": {
+            "abs_pos": [39.370000000000005, 64.77]
+          }
+        }
+      ],
+      "tracks": {
+        "segments": [
+          {
+            "start": [44.45, 69.85],
+            "end": [45.72, 71.12],
+            "width": 0.508,
+            "layer": "B.Cu"
+          },
+          {
+            "start": [45.72, 71.12],
+            "end": [46.99, 71.12],
+            "width": 0.508,
+            "layer": "B.Cu"
+          },
+          {
+            "start": [44.45, 69.85],
+            "end": [44.45, 69.85],
+            "width": 0.508,
+            "layer": "B.Cu"
+          }
+        ],
+        "arcs": ["TODO: extract arc info. Most samples don't have arcs to help test :("],
+        "vias": ["TODO: are vias necessary for our routing interests?"]
+      },
+      "errors": []
+    }
+  },
+  "errors": [
+    {
+      "Pin_Headers:Pin_Header_Straight_1x05 at [40.64, 59.69]": "pad 1 thru_hole oval at [0, 0] has error 483: key \"net\" not found"
+    },
+    {
+      "Pin_Headers:Pin_Header_Straight_1x05 at [40.64, 59.69]": "pad 2 thru_hole oval at [0, 2.54] has error 484: key \"net\" not found"
+    },
+    {
+      "Pin_Headers:Pin_Header_Straight_1x05 at [40.64, 59.69]": "pad 3 thru_hole oval at [0, 5.08] has error 485: key \"net\" not found"
+    },
+    {
+      "Pin_Headers:Pin_Header_Straight_1x05 at [40.64, 59.69]": "pad 4 thru_hole oval at [0, 7.62] has error 486: key \"net\" not found"
+    },
+    {
+      "Pin_Headers:Pin_Header_Straight_1x05 at [40.64, 59.69]": "pad 5 thru_hole oval at [0, 10.16] has error 487: key \"net\" not found"
+    },
+    {
+      "Pin_Headers:Pin_Header_Straight_1x05 at [38.1, 59.69]": "pad 1 thru_hole oval at [0, 0] has error 513: key \"net\" not found"
+    },
+    {
+      "Pin_Headers:Pin_Header_Straight_1x05 at [38.1, 59.69]": "pad 2 thru_hole oval at [0, 2.54] has error 514: key \"net\" not found"
+    },
+    {
+      "Pin_Headers:Pin_Header_Straight_1x05 at [38.1, 59.69]": "pad 3 thru_hole oval at [0, 5.08] has error 515: key \"net\" not found"
+    },
+    {
+      "Pin_Headers:Pin_Header_Straight_1x05 at [38.1, 59.69]": "pad 4 thru_hole oval at [0, 7.62] has error 516: key \"net\" not found"
+    },
+    {
+      "Pin_Headers:Pin_Header_Straight_1x05 at [38.1, 59.69]": "pad 5 thru_hole oval at [0, 10.16] has error 517: key \"net\" not found"
+    },
+    {
+      "Discret:LM78XX at [55.88, 30.48, 180]": "pad 4 thru_hole rect at [16.51, 0] has error 964: key \"net\" not found"
+    },
+    {
+      "Mounting_Holes:MountingHole_3mm at [78.74, 26.67]": "pad 1 thru_hole circle at [0, 0.5] has error 989: key \"net\" not found"
+    },
+    {
+      "Mounting_Holes:MountingHole_3mm at [35.56, 72.39]": "pad 1 thru_hole circle at [0, 0] has error 1003: key \"net\" not found"
+    }
+  ]
+}

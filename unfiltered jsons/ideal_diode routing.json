@@ -1,0 +1,948 @@
+{
+  "board_settings": {},
+  "net classes": {},
+  "net routes": {
+    "0": {
+      "name": "",
+      "class": "TODO",
+      "pads": [],
+      "tracks": {
+        "segments": [],
+        "arcs": ["TODO: extract arc info. Most samples don't have arcs to help test :("],
+        "vias": ["TODO: are vias necessary for our routing interests?"]
+      },
+      "errors": []
+    },
+    "1": {
+      "name": "/GATE",
+      "class": "TODO",
+      "pads": [
+        {
+          "Diodes_SMD:SOD-323 pad 1": {
+            "abs_pos": [145.47, 102.35]
+          }
+        },
+        {
+          "Housings_SSOP:MSOP-8_3x3mm_Pitch0.65mm pad 1": {
+            "abs_pos": [144.8, 104.22500000000001]
+          }
+        },
+        {
+          "_kb_footprint:TDSON-8-1 pad 4": {
+            "abs_pos": [147.67499999999998, 99.13]
+          }
+        },
+        {
+          "Resistors_SMD:R_0603 pad 1": {
+            "abs_pos": [152.75, 106.85]
+          }
+        },
+        {
+          "Resistors_SMD:R_0603 pad 2": {
+            "abs_pos": [147.45, 92.95]
+          }
+        }
+      ],
+      "tracks": {
+        "segments": [
+          {
+            "start": [147.58, 102.35],
+            "end": [147.58, 99.225],
+            "width": 0.4,
+            "layer": "F.Cu"
+          },
+          {
+            "start": [147.58, 99.225],
+            "end": [147.675, 99.13],
+            "width": 0.4,
+            "layer": "F.Cu"
+          },
+          {
+            "start": [147.6, 104.2],
+            "end": [147.6, 102.4],
+            "width": 0.4,
+            "layer": "B.Cu"
+          },
+          {
+            "start": [147.6, 102.4],
+            "end": [147.9, 102.1],
+            "width": 0.4,
+            "layer": "B.Cu"
+          },
+          {
+            "start": [147.9, 102.1],
+            "end": [147.9, 92.1],
+            "width": 0.4,
+            "layer": "B.Cu"
+          },
+          {
+            "start": [147.9, 92.1],
+            "end": [146.7, 90.9],
+            "width": 0.4,
+            "layer": "B.Cu"
+          },
+          {
+            "start": [146.7, 90.9],
+            "end": [146.7, 92.2],
+            "width": 0.4,
+            "layer": "F.Cu"
+          },
+          {
+            "start": [147.6, 104.2],
+            "end": [147.6, 102.37],
+            "width": 0.4,
+            "layer": "F.Cu"
+          },
+          {
+            "start": [147.6, 102.37],
+            "end": [147.58, 102.35],
+            "width": 0.4,
+            "layer": "F.Cu"
+          },
+          {
+            "start": [147.6, 104.2],
+            "end": [152.5, 104.2],
+            "width": 0.4,
+            "layer": "B.Cu"
+          },
+          {
+            "start": [153.5, 105.2],
+            "end": [153.5, 106.1],
+            "width": 0.4,
+            "layer": "F.Cu"
+          },
+          {
+            "start": [152.5, 104.2],
+            "end": [153.5, 105.2],
+            "width": 0.4,
+            "layer": "B.Cu"
+          },
+          {
+            "start": [144.825, 104.2],
+            "end": [147.6, 104.2],
+            "width": 0.4,
+            "layer": "F.Cu"
+          },
+          {
+            "start": [144.8, 104.225],
+            "end": [144.825, 104.2],
+            "width": 0.4,
+            "layer": "F.Cu"
+          }
+        ],
+        "arcs": ["TODO: extract arc info. Most samples don't have arcs to help test :("],
+        "vias": ["TODO: are vias necessary for our routing interests?"]
+      },
+      "errors": []
+    },
+    "2": {
+      "name": "/OUT",
+      "class": "TODO",
+      "pads": [
+        {
+          "_kb_footprint:via_0-9_0-5mm pad 1": {
+            "abs_pos": [149.6, 100.6]
+          }
+        },
+        {
+          "_kb_footprint:via_0-9_0-5mm pad 1": {
+            "abs_pos": [150.8, 100.6]
+          }
+        },
+        {
+          "_kb_footprint:via_0-9_0-5mm pad 1": {
+            "abs_pos": [154.2, 94.0]
+          }
+        },
+        {
+          "_kb_footprint:via_0-9_0-5mm pad 1": {
+            "abs_pos": [154.4, 100.6]
+          }
+        },
+        {
+          "_kb_footprint:via_0-9_0-5mm pad 1": {
+            "abs_pos": [152.0, 100.6]
+          }
+        },
+        {
+          "_kb_footprint:via_0-9_0-5mm pad 1": {
+            "abs_pos": [153.2, 100.6]
+          }
+        },
+        {
+          "_kb_footprint:via_0-9_0-5mm pad 1": {
+            "abs_pos": [154.8, 99.6]
+          }
+        },
+        {
+          "_kb_footprint:via_0-9_0-5mm pad 1": {
+            "abs_pos": [154.8, 98.4]
+          }
+        },
+        {
+          "_kb_footprint:via_0-9_0-5mm pad 1": {
+            "abs_pos": [154.8, 97.2]
+          }
+        },
+        {
+          "_kb_footprint:via_0-9_0-5mm pad 1": {
+            "abs_pos": [154.8, 96.0]
+          }
+        },
+        {
+          "_kb_footprint:via_0-9_0-5mm pad 1": {
+            "abs_pos": [154.8, 94.8]
+          }
+        },
+        {
+          "_kb_footprint:via_0-9_0-5mm pad 1": {
+            "abs_pos": [153, 94]
+          }
+        },
+        {
+          "_kb_footprint:via_0-9_0-5mm pad 1": {
+            "abs_pos": [151.8, 94.0]
+          }
+        },
+        {
+          "_kb_footprint:via_0-9_0-5mm pad 1": {
+            "abs_pos": [150.6, 94.0]
+          }
+        },
+        {
+          "_kb_footprint:via_0-9_0-5mm pad 1": {
+            "abs_pos": [149.4, 94.0]
+          }
+        },
+        {
+          "Housings_SSOP:MSOP-8_3x3mm_Pitch0.65mm pad 8": {
+            "abs_pos": [149.2, 104.22500000000001]
+          }
+        },
+        {
+          "_kb_footprint:TDSON-8-1 pad 7": {
+            "abs_pos": [151.125, 95.875]
+          }
+        },
+        {
+          "_kb_footprint:TDSON-8-1 pad 6": {
+            "abs_pos": [151.125, 97.225]
+          }
+        },
+        {
+          "_kb_footprint:TDSON-8-1 pad 6": {
+            "abs_pos": [151.375, 97.89999999999999]
+          }
+        },
+        {
+          "_kb_footprint:TDSON-8-1 pad 7": {
+            "abs_pos": [151.375, 96.55]
+          }
+        },
+        {
+          "_kb_footprint:TDSON-8-1 pad 8": {
+            "abs_pos": [151.375, 95.19999999999999]
+          }
+        },
+        {
+          "_kb_footprint:TDSON-8-1 pad 5": {
+            "abs_pos": [151.375, 99.25]
+          }
+        },
+        {
+          "_kb_footprint:TDSON-8-1 pad 5": {
+            "abs_pos": [151.125, 98.57499999999999]
+          }
+        },
+        {
+          "Capacitors_SMD:C_1206 pad 1": {
+            "abs_pos": [149.9, 104.375]
+          }
+        },
+        {
+          "Wire_Pads:SolderWirePad_single_2-5mmDrill pad 1": {
+            "abs_pos": [160.6, 97.2]
+          }
+        }
+      ],
+      "tracks": {
+        "segments": [
+          {
+            "start": [149.2, 104.225],
+            "end": [151.025, 104.225],
+            "width": 0.4,
+            "layer": "F.Cu"
+          },
+          {
+            "start": [151.4, 103.85],
+            "end": [151.4, 102.875],
+            "width": 0.4,
+            "layer": "F.Cu"
+          },
+          {
+            "start": [151.025, 104.225],
+            "end": [151.4, 103.85],
+            "width": 0.4,
+            "layer": "F.Cu"
+          }
+        ],
+        "arcs": ["TODO: extract arc info. Most samples don't have arcs to help test :("],
+        "vias": ["TODO: are vias necessary for our routing interests?"]
+      },
+      "errors": []
+    },
+    "3": {
+      "name": "Net-(D1-Pad2)",
+      "class": "TODO",
+      "pads": [
+        {
+          "Diodes_SMD:SMA_Standard pad 2": {
+            "abs_pos": [143.14898, 107.25]
+          }
+        },
+        {
+          "Diodes_SMD:SMA_Standard pad 2": {
+            "abs_pos": [148.69897999999998, 109.1]
+          }
+        }
+      ],
+      "tracks": {
+        "segments": [
+          {
+            "start": [144.70102, 109.1],
+            "end": [141.29898, 109.1],
+            "width": 0.7,
+            "layer": "F.Cu"
+          },
+          {
+            "start": [141.29898, 109.1],
+            "end": [141.15, 109.24898],
+            "width": 0.7,
+            "layer": "F.Cu"
+          }
+        ],
+        "arcs": ["TODO: extract arc info. Most samples don't have arcs to help test :("],
+        "vias": ["TODO: are vias necessary for our routing interests?"]
+      },
+      "errors": []
+    },
+    "4": {
+      "name": "GND",
+      "class": "TODO",
+      "pads": [
+        {
+          "_kb_footprint:via_0-9_0-5mm pad 1": {
+            "abs_pos": [138.0, 110.6]
+          }
+        },
+        {
+          "Capacitors_SMD:C_0603 pad 2": {
+            "abs_pos": [154.2, 109.65]
+          }
+        },
+        {
+          "Resistors_SMD:R_1206 pad 2": {
+            "abs_pos": [152.89999999999998, 108.9]
+          }
+        },
+        {
+          "Wire_Pads:SolderWirePad_single_2-5mmDrill pad 1": {
+            "abs_pos": [133.4, 109.7]
+          }
+        },
+        {
+          "Wire_Pads:SolderWirePad_single_2-5mmDrill pad 1": {
+            "abs_pos": [159.2, 109.7]
+          }
+        },
+        {
+          "Pin_Headers:Pin_Header_Straight_1x03 pad 2": {
+            "abs_pos": [132.25, 106.39]
+          }
+        }
+      ],
+      "tracks": {
+        "segments": [
+          {
+            "start": [134.79, 103.85],
+            "end": [134.79, 106.19],
+            "width": 0.4,
+            "layer": "F.Cu"
+          },
+          {
+            "start": [134.79, 106.19],
+            "end": [134.8, 106.2],
+            "width": 0.4,
+            "layer": "F.Cu"
+          }
+        ],
+        "arcs": ["TODO: extract arc info. Most samples don't have arcs to help test :("],
+        "vias": ["TODO: are vias necessary for our routing interests?"]
+      },
+      "errors": []
+    },
+    "5": {
+      "name": "/VSS",
+      "class": "TODO",
+      "pads": [
+        {
+          "Housings_SSOP:MSOP-8_3x3mm_Pitch0.65mm pad 6": {
+            "abs_pos": [149.2, 105.525]
+          }
+        },
+        {
+          "Diodes_SMD:SMA_Standard pad 1": {
+            "abs_pos": [144.70102, 109.1]
+          }
+        },
+        {
+          "Resistors_SMD:R_1206 pad 1": {
+            "abs_pos": [150.0, 108.9]
+          }
+        },
+        {
+          "Capacitors_SMD:C_1206 pad 2": {
+            "abs_pos": [152.9, 104.375]
+          }
+        }
+      ],
+      "tracks": {
+        "segments": [
+          {
+            "start": [151.05, 105.525],
+            "end": [151.4, 105.875],
+            "width": 0.4,
+            "layer": "F.Cu"
+          },
+          {
+            "start": [149.2, 105.525],
+            "end": [151.05, 105.525],
+            "width": 0.4,
+            "layer": "F.Cu"
+          },
+          {
+            "start": [151.45, 107.45],
+            "end": [151.4, 107.4],
+            "width": 0.4,
+            "layer": "F.Cu"
+          },
+          {
+            "start": [151.4, 107.4],
+            "end": [151.4, 105.875],
+            "width": 0.4,
+            "layer": "F.Cu"
+          },
+          {
+            "start": [148.69898, 109.1],
+            "end": [149.09898, 108.7],
+            "width": 0.7,
+            "layer": "F.Cu"
+          },
+          {
+            "start": [149.09898, 108.7],
+            "end": [151, 108.7],
+            "width": 0.7,
+            "layer": "F.Cu"
+          },
+          {
+            "start": [151, 108.7],
+            "end": [151.45, 108.25],
+            "width": 0.7,
+            "layer": "F.Cu"
+          },
+          {
+            "start": [151.45, 108.25],
+            "end": [151.45, 107.45],
+            "width": 0.7,
+            "layer": "F.Cu"
+          },
+          {
+            "start": [151.45, 107.45],
+            "end": [151.45, 107.45],
+            "width": 0.4,
+            "layer": "F.Cu"
+          }
+        ],
+        "arcs": ["TODO: extract arc info. Most samples don't have arcs to help test :("],
+        "vias": ["TODO: are vias necessary for our routing interests?"]
+      },
+      "errors": []
+    },
+    "6": {
+      "name": "/IN",
+      "class": "TODO",
+      "pads": [
+        {
+          "_kb_footprint:via_0-9_0-5mm pad 1": {
+            "abs_pos": [138.4, 98.8]
+          }
+        },
+        {
+          "_kb_footprint:via_0-9_0-5mm pad 1": {
+            "abs_pos": [139.6, 98.8]
+          }
+        },
+        {
+          "_kb_footprint:via_0-9_0-5mm pad 1": {
+            "abs_pos": [140.8, 98.8]
+          }
+        },
+        {
+          "_kb_footprint:via_0-9_0-5mm pad 1": {
+            "abs_pos": [142.0, 98.8]
+          }
+        },
+        {
+          "_kb_footprint:via_0-9_0-5mm pad 1": {
+            "abs_pos": [143.2, 98.8]
+          }
+        },
+        {
+          "_kb_footprint:via_0-9_0-5mm pad 1": {
+            "abs_pos": [138.0, 97.8]
+          }
+        },
+        {
+          "_kb_footprint:via_0-9_0-5mm pad 1": {
+            "abs_pos": [138.0, 96.6]
+          }
+        },
+        {
+          "_kb_footprint:via_0-9_0-5mm pad 1": {
+            "abs_pos": [138.0, 95.4]
+          }
+        },
+        {
+          "_kb_footprint:via_0-9_0-5mm pad 1": {
+            "abs_pos": [138.0, 94.2]
+          }
+        },
+        {
+          "_kb_footprint:via_0-9_0-5mm pad 1": {
+            "abs_pos": [138, 93]
+          }
+        },
+        {
+          "_kb_footprint:via_0-9_0-5mm pad 1": {
+            "abs_pos": [139.0, 92.2]
+          }
+        },
+        {
+          "_kb_footprint:via_0-9_0-5mm pad 1": {
+            "abs_pos": [140.2, 92.2]
+          }
+        },
+        {
+          "_kb_footprint:via_0-9_0-5mm pad 1": {
+            "abs_pos": [141.4, 92.2]
+          }
+        },
+        {
+          "_kb_footprint:via_0-9_0-5mm pad 1": {
+            "abs_pos": [142.6, 92.2]
+          }
+        },
+        {
+          "_kb_footprint:via_0-9_0-5mm pad 1": {
+            "abs_pos": [143.8, 92.2]
+          }
+        },
+        {
+          "_kb_footprint:via_0-9_0-5mm pad 1": {
+            "abs_pos": [145.0, 92.1]
+          }
+        },
+        {
+          "Diodes_SMD:SMA_Standard pad 1": {
+            "abs_pos": [139.15102000000002, 107.25]
+          }
+        },
+        {
+          "Housings_SSOP:MSOP-8_3x3mm_Pitch0.65mm pad 4": {
+            "abs_pos": [144.8, 106.175]
+          }
+        },
+        {
+          "_kb_footprint:TDSON-8-1 pad 7": {
+            "abs_pos": [142.85, 94.2]
+          }
+        },
+        {
+          "_kb_footprint:TDSON-8-1 pad 6": {
+            "abs_pos": [142.85, 95.55]
+          }
+        },
+        {
+          "_kb_footprint:TDSON-8-1 pad 6": {
+            "abs_pos": [143.1, 96.225]
+          }
+        },
+        {
+          "_kb_footprint:TDSON-8-1 pad 7": {
+            "abs_pos": [143.1, 94.875]
+          }
+        },
+        {
+          "_kb_footprint:TDSON-8-1 pad 8": {
+            "abs_pos": [143.1, 93.52499999999999]
+          }
+        },
+        {
+          "_kb_footprint:TDSON-8-1 pad 5": {
+            "abs_pos": [143.1, 97.575]
+          }
+        },
+        {
+          "_kb_footprint:TDSON-8-1 pad 5": {
+            "abs_pos": [142.85, 96.89999999999999]
+          }
+        },
+        {
+          "Resistors_SMD:R_0603 pad 1": {
+            "abs_pos": [139.7, 102.9]
+          }
+        },
+        {
+          "Wire_Pads:SolderWirePad_single_2-5mmDrill pad 1": {
+            "abs_pos": [132.4, 95.4]
+          }
+        }
+      ],
+      "tracks": {
+        "segments": [
+          {
+            "start": [141.2, 102.9],
+            "end": [141.2, 105.20102],
+            "width": 0.4,
+            "layer": "F.Cu"
+          },
+          {
+            "start": [141.2, 105.20102],
+            "end": [141.15, 105.25102],
+            "width": 0.4,
+            "layer": "F.Cu"
+          },
+          {
+            "start": [144.8, 106.175],
+            "end": [141.72398, 106.175],
+            "width": 0.4,
+            "layer": "F.Cu"
+          },
+          {
+            "start": [141.72398, 106.175],
+            "end": [141.2, 105.65102],
+            "width": 0.4,
+            "layer": "F.Cu"
+          }
+        ],
+        "arcs": ["TODO: extract arc info. Most samples don't have arcs to help test :("],
+        "vias": ["TODO: are vias necessary for our routing interests?"]
+      },
+      "errors": []
+    },
+    "7": {
+      "name": "Net-(C2-Pad1)",
+      "class": "TODO",
+      "pads": [
+        {
+          "Capacitors_SMD:C_0603 pad 1": {
+            "abs_pos": [152.7, 109.65]
+          }
+        },
+        {
+          "Resistors_SMD:R_0603 pad 2": {
+            "abs_pos": [154.25, 106.85]
+          }
+        }
+      ],
+      "tracks": {
+        "segments": [
+          {
+            "start": [153.45, 108.9],
+            "end": [153.45, 107.65],
+            "width": 0.4,
+            "layer": "F.Cu"
+          },
+          {
+            "start": [153.45, 107.65],
+            "end": [153.5, 107.6],
+            "width": 0.4,
+            "layer": "F.Cu"
+          }
+        ],
+        "arcs": ["TODO: extract arc info. Most samples don't have arcs to help test :("],
+        "vias": ["TODO: are vias necessary for our routing interests?"]
+      },
+      "errors": []
+    },
+    "8": {
+      "name": "/SOURCE",
+      "class": "TODO",
+      "pads": [
+        {
+          "_kb_footprint:via_0-9_0-5mm pad 1": {
+            "abs_pos": [145.4, 99.8]
+          }
+        },
+        {
+          "_kb_footprint:via_0-9_0-5mm pad 1": {
+            "abs_pos": [146.4, 97.6]
+          }
+        },
+        {
+          "_kb_footprint:via_0-9_0-5mm pad 1": {
+            "abs_pos": [146.4, 96.4]
+          }
+        },
+        {
+          "_kb_footprint:via_0-9_0-5mm pad 1": {
+            "abs_pos": [146.4, 95.2]
+          }
+        },
+        {
+          "Diodes_SMD:SOD-323 pad 2": {
+            "abs_pos": [147.58, 102.35]
+          }
+        },
+        {
+          "Housings_SSOP:MSOP-8_3x3mm_Pitch0.65mm pad 2": {
+            "abs_pos": [144.8, 104.875]
+          }
+        },
+        {
+          "_kb_footprint:TDSON-8-1 pad 1": {
+            "abs_pos": [147.67499999999998, 95.32]
+          }
+        },
+        {
+          "_kb_footprint:TDSON-8-1 pad 2": {
+            "abs_pos": [147.67499999999998, 96.58999999999999]
+          }
+        },
+        {
+          "_kb_footprint:TDSON-8-1 pad 3": {
+            "abs_pos": [147.67499999999998, 97.86]
+          }
+        },
+        {
+          "_kb_footprint:TDSON-8-1 pad 1": {
+            "abs_pos": [139.39999999999998, 93.645]
+          }
+        },
+        {
+          "_kb_footprint:TDSON-8-1 pad 2": {
+            "abs_pos": [139.39999999999998, 94.91499999999999]
+          }
+        },
+        {
+          "_kb_footprint:TDSON-8-1 pad 3": {
+            "abs_pos": [139.39999999999998, 96.185]
+          }
+        }
+      ],
+      "tracks": {
+        "segments": [
+          {
+            "start": [145, 96.115],
+            "end": [145.515, 96.115],
+            "width": 0.4,
+            "layer": "F.Cu"
+          },
+          {
+            "start": [144.8, 104.875],
+            "end": [143.575, 104.875],
+            "width": 0.4,
+            "layer": "F.Cu"
+          },
+          {
+            "start": [145.47, 103.08],
+            "end": [145.47, 102.35],
+            "width": 0.4,
+            "layer": "F.Cu"
+          },
+          {
+            "start": [145.15, 103.4],
+            "end": [145.47, 103.08],
+            "width": 0.4,
+            "layer": "F.Cu"
+          },
+          {
+            "start": [143.7, 103.4],
+            "end": [145.15, 103.4],
+            "width": 0.4,
+            "layer": "F.Cu"
+          },
+          {
+            "start": [143.35, 103.75],
+            "end": [143.7, 103.4],
+            "width": 0.4,
+            "layer": "F.Cu"
+          },
+          {
+            "start": [143.35, 104.65],
+            "end": [143.35, 103.75],
+            "width": 0.4,
+            "layer": "F.Cu"
+          },
+          {
+            "start": [143.575, 104.875],
+            "end": [143.35, 104.65],
+            "width": 0.4,
+            "layer": "F.Cu"
+          },
+          {
+            "start": [145.055, 94.9],
+            "end": [145, 94.845],
+            "width": 0.4,
+            "layer": "F.Cu"
+          }
+        ],
+        "arcs": ["TODO: extract arc info. Most samples don't have arcs to help test :("],
+        "vias": ["TODO: are vias necessary for our routing interests?"]
+      },
+      "errors": []
+    },
+    "9": {
+      "name": "Net-(Q2-Pad4)",
+      "class": "TODO",
+      "pads": [
+        {
+          "_kb_footprint:TDSON-8-1 pad 4": {
+            "abs_pos": [139.39999999999998, 97.455]
+          }
+        },
+        {
+          "Resistors_SMD:R_0603 pad 1": {
+            "abs_pos": [145.95, 92.95]
+          }
+        }
+      ],
+      "tracks": {
+        "segments": [
+          {
+            "start": [146.7, 93.7],
+            "end": [145.055, 93.7],
+            "width": 0.4,
+            "layer": "F.Cu"
+          },
+          {
+            "start": [145.055, 93.7],
+            "end": [145, 93.645],
+            "width": 0.4,
+            "layer": "F.Cu"
+          }
+        ],
+        "arcs": ["TODO: extract arc info. Most samples don't have arcs to help test :("],
+        "vias": ["TODO: are vias necessary for our routing interests?"]
+      },
+      "errors": []
+    },
+    "10": {
+      "name": "/~SHDN",
+      "class": "TODO",
+      "pads": [
+        {
+          "Housings_SSOP:MSOP-8_3x3mm_Pitch0.65mm pad 5": {
+            "abs_pos": [149.2, 106.175]
+          }
+        },
+        {
+          "Resistors_SMD:R_0603 pad 2": {
+            "abs_pos": [141.2, 102.9]
+          }
+        },
+        {
+          "Pin_Headers:Pin_Header_Straight_1x03 pad 3": {
+            "abs_pos": [132.25, 108.92999999999999]
+          }
+        }
+      ],
+      "tracks": {
+        "segments": [
+          {
+            "start": [137.33, 103.85],
+            "end": [139.2, 103.85],
+            "width": 0.4,
+            "layer": "F.Cu"
+          },
+          {
+            "start": [139.2, 103.85],
+            "end": [139.25, 103.8],
+            "width": 0.4,
+            "layer": "F.Cu"
+          },
+          {
+            "start": [139.8, 107.25],
+            "end": [139.25, 106.7],
+            "width": 0.4,
+            "layer": "F.Cu"
+          },
+          {
+            "start": [149.2, 106.175],
+            "end": [147.475, 106.175],
+            "width": 0.4,
+            "layer": "F.Cu"
+          },
+          {
+            "start": [146.4, 107.25],
+            "end": [147.475, 106.175],
+            "width": 0.4,
+            "layer": "F.Cu"
+          },
+          {
+            "start": [139.8, 107.25],
+            "end": [146.4, 107.25],
+            "width": 0.4,
+            "layer": "F.Cu"
+          },
+          {
+            "start": [139.25, 103.35],
+            "end": [139.7, 102.9],
+            "width": 0.4,
+            "layer": "F.Cu"
+          },
+          {
+            "start": [139.25, 106.7],
+            "end": [139.25, 103.8],
+            "width": 0.4,
+            "layer": "F.Cu"
+          },
+          {
+            "start": [139.25, 103.8],
+            "end": [139.25, 103.35],
+            "width": 0.4,
+            "layer": "F.Cu"
+          }
+        ],
+        "arcs": ["TODO: extract arc info. Most samples don't have arcs to help test :("],
+        "vias": ["TODO: are vias necessary for our routing interests?"]
+      },
+      "errors": []
+    },
+    "11": {
+      "name": "Net-(P1-Pad1)",
+      "class": "TODO",
+      "pads": [
+        {
+          "Pin_Headers:Pin_Header_Straight_1x03 pad 1": {
+            "abs_pos": [132.25, 103.85]
+          }
+        }
+      ],
+      "tracks": {
+        "segments": [],
+        "arcs": ["TODO: extract arc info. Most samples don't have arcs to help test :("],
+        "vias": ["TODO: are vias necessary for our routing interests?"]
+      },
+      "errors": []
+    }
+  },
+  "errors": [
+    {
+      "Housings_SSOP:MSOP-8_3x3mm_Pitch0.65mm at [147, 105.2]": "pad 3 smd rect at [-2.2, 0.325] has error 665: key \"net\" not found"
+    },
+    {
+      "Housings_SSOP:MSOP-8_3x3mm_Pitch0.65mm at [147, 105.2]": "pad 7 smd rect at [2.2, -0.325] has error 672: key \"net\" not found"
+    }
+  ]
+}

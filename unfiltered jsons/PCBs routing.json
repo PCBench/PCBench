@@ -1,0 +1,2360 @@
+{
+  "board_settings": {},
+  "net classes": {},
+  "net routes": {
+    "0": {
+      "name": "",
+      "class": "TODO",
+      "pads": [],
+      "tracks": {
+        "segments": [],
+        "arcs": ["TODO: extract arc info. Most samples don't have arcs to help test :("],
+        "vias": ["TODO: are vias necessary for our routing interests?"]
+      },
+      "errors": []
+    },
+    "1": {
+      "name": "Net-(C3-Pad2)",
+      "class": "TODO",
+      "pads": [
+        {
+          "Housings_SOIC:SOIC-20W_7.5x12.8mm_Pitch1.27mm pad 17": {
+            "abs_pos": [145.07, 82.105]
+          }
+        },
+        {
+          "Capacitors_SMD:C_0805_HandSoldering pad 2": {
+            "abs_pos": [138.47, 75.85]
+          }
+        }
+      ],
+      "tracks": {
+        "segments": [
+          {
+            "start": [138.47, 75.85],
+            "end": [138.47, 79.305],
+            "width": 0.5,
+            "layer": "F.Cu"
+          },
+          {
+            "start": [138.47, 79.305],
+            "end": [138.465, 79.31],
+            "width": 0.5,
+            "layer": "F.Cu"
+          }
+        ],
+        "arcs": ["TODO: extract arc info. Most samples don't have arcs to help test :("],
+        "vias": ["TODO: are vias necessary for our routing interests?"]
+      },
+      "errors": []
+    },
+    "2": {
+      "name": "Net-(C4-Pad1)",
+      "class": "TODO",
+      "pads": [
+        {
+          "Capacitors_SMD:C_0805_HandSoldering pad 1": {
+            "abs_pos": [119.72, 114.57]
+          }
+        },
+        {
+          "Housings_QFP:TQFP-44_10x10mm_Pitch0.8mm pad 7": {
+            "abs_pos": [124.17999999999999, 115.03999999999999]
+          }
+        }
+      ],
+      "tracks": {
+        "segments": [
+          {
+            "start": [120.97, 115.82],
+            "end": [122.15, 115.82],
+            "width": 0.5,
+            "layer": "F.Cu"
+          },
+          {
+            "start": [122.93, 115.04],
+            "end": [124.18, 115.04],
+            "width": 0.5,
+            "layer": "F.Cu"
+          },
+          {
+            "start": [122.15, 115.82],
+            "end": [122.93, 115.04],
+            "width": 0.5,
+            "layer": "F.Cu"
+          }
+        ],
+        "arcs": ["TODO: extract arc info. Most samples don't have arcs to help test :("],
+        "vias": ["TODO: are vias necessary for our routing interests?"]
+      },
+      "errors": []
+    },
+    "3": {
+      "name": "Net-(C7-Pad1)",
+      "class": "TODO",
+      "pads": [
+        {
+          "Capacitors_SMD:C_0805_HandSoldering pad 1": {
+            "abs_pos": [124.21, 123.56]
+          }
+        },
+        {
+          "Inductors_SMD:L_0805_HandSoldering pad 1": {
+            "abs_pos": [129.35, 123.55]
+          }
+        },
+        {
+          "Housings_QFP:TQFP-44_10x10mm_Pitch0.8mm pad 17": {
+            "abs_pos": [129.88, 119.94]
+          }
+        }
+      ],
+      "tracks": {
+        "segments": [
+          {
+            "start": [129.35, 123.55],
+            "end": [129.35, 122.37],
+            "width": 0.5,
+            "layer": "F.Cu"
+          },
+          {
+            "start": [129.88, 121.84],
+            "end": [129.88, 119.94],
+            "width": 0.5,
+            "layer": "F.Cu"
+          },
+          {
+            "start": [129.35, 122.37],
+            "end": [129.88, 121.84],
+            "width": 0.5,
+            "layer": "F.Cu"
+          },
+          {
+            "start": [126.71, 123.56],
+            "end": [129.34, 123.56],
+            "width": 0.5,
+            "layer": "F.Cu"
+          },
+          {
+            "start": [129.34, 123.56],
+            "end": [129.35, 123.55],
+            "width": 0.5,
+            "layer": "F.Cu"
+          }
+        ],
+        "arcs": ["TODO: extract arc info. Most samples don't have arcs to help test :("],
+        "vias": ["TODO: are vias necessary for our routing interests?"]
+      },
+      "errors": []
+    },
+    "4": {
+      "name": "Net-(J1-Pad5)",
+      "class": "TODO",
+      "pads": [
+        {
+          "Connectors:USB_B pad 5": {
+            "abs_pos": [130.76999999999998, 92.1]
+          }
+        },
+        {
+          "Connectors:USB_B pad 5": {
+            "abs_pos": [130.76999999999998, 80.1]
+          }
+        }
+      ],
+      "tracks": {
+        "segments": [
+          {
+            "start": [121.37, 89.56],
+            "end": [121.37, 77.56],
+            "width": 0.6,
+            "layer": "B.Cu"
+          }
+        ],
+        "arcs": ["TODO: extract arc info. Most samples don't have arcs to help test :("],
+        "vias": ["TODO: are vias necessary for our routing interests?"]
+      },
+      "errors": []
+    },
+    "5": {
+      "name": "MCLR",
+      "class": "TODO",
+      "pads": [
+        {
+          "Pin_Headers:Pin_Header_Straight_1x05_Pitch2.54mm pad 1": {
+            "abs_pos": [117.12, 118.8]
+          }
+        },
+        {
+          "Housings_QFP:TQFP-44_10x10mm_Pitch0.8mm pad 18": {
+            "abs_pos": [130.68, 119.94]
+          }
+        },
+        {
+          "Resistors_SMD:R_0805_HandSoldering pad 1": {
+            "abs_pos": [140.26000000000002, 123.55]
+          }
+        }
+      ],
+      "tracks": {
+        "segments": [
+          {
+            "start": [130.68, 119.94],
+            "end": [130.68, 121.43],
+            "width": 0.5,
+            "layer": "F.Cu"
+          },
+          {
+            "start": [142.96, 122.4],
+            "end": [142.96, 123.55],
+            "width": 0.5,
+            "layer": "F.Cu"
+          },
+          {
+            "start": [142.35, 121.79],
+            "end": [142.96, 122.4],
+            "width": 0.5,
+            "layer": "F.Cu"
+          },
+          {
+            "start": [131.04, 121.79],
+            "end": [142.35, 121.79],
+            "width": 0.5,
+            "layer": "F.Cu"
+          },
+          {
+            "start": [130.68, 121.43],
+            "end": [131.04, 121.79],
+            "width": 0.5,
+            "layer": "F.Cu"
+          },
+          {
+            "start": [130.68, 119.94],
+            "end": [130.68, 118.07],
+            "width": 0.5,
+            "layer": "F.Cu"
+          },
+          {
+            "start": [129.95, 118.8],
+            "end": [117.12, 118.8],
+            "width": 0.5,
+            "layer": "B.Cu"
+          },
+          {
+            "start": [130.68, 118.07],
+            "end": [129.95, 118.8],
+            "width": 0.5,
+            "layer": "B.Cu"
+          }
+        ],
+        "arcs": ["TODO: extract arc info. Most samples don't have arcs to help test :("],
+        "vias": ["TODO: are vias necessary for our routing interests?"]
+      },
+      "errors": []
+    },
+    "6": {
+      "name": "Net-(R1-Pad1)",
+      "class": "TODO",
+      "pads": [
+        {
+          "Housings_SOIC:SOIC-20W_7.5x12.8mm_Pitch1.27mm pad 4": {
+            "abs_pos": [135.67000000000002, 82.105]
+          }
+        },
+        {
+          "Resistors_SMD:R_0805_HandSoldering pad 1": {
+            "abs_pos": [129.57, 88.41]
+          }
+        }
+      ],
+      "tracks": {
+        "segments": [
+          {
+            "start": [130.92, 87.06],
+            "end": [130.92, 85.64],
+            "width": 0.5,
+            "layer": "F.Cu"
+          },
+          {
+            "start": [138.465, 86.435],
+            "end": [138.465, 88.71],
+            "width": 0.5,
+            "layer": "F.Cu"
+          },
+          {
+            "start": [137.16, 85.13],
+            "end": [138.465, 86.435],
+            "width": 0.5,
+            "layer": "F.Cu"
+          },
+          {
+            "start": [131.43, 85.13],
+            "end": [137.16, 85.13],
+            "width": 0.5,
+            "layer": "F.Cu"
+          },
+          {
+            "start": [130.92, 85.64],
+            "end": [131.43, 85.13],
+            "width": 0.5,
+            "layer": "F.Cu"
+          }
+        ],
+        "arcs": ["TODO: extract arc info. Most samples don't have arcs to help test :("],
+        "vias": ["TODO: are vias necessary for our routing interests?"]
+      },
+      "errors": []
+    },
+    "7": {
+      "name": "V-",
+      "class": "TODO",
+      "pads": [
+        {
+          "Housings_SOIC:SOIC-20W_7.5x12.8mm_Pitch1.27mm pad 20": {
+            "abs_pos": [145.07, 78.295]
+          }
+        },
+        {
+          "Capacitors_SMD:C_0805_HandSoldering pad 1": {
+            "abs_pos": [144.93, 96.77]
+          }
+        },
+        {
+          "Capacitors_SMD:C_0805_HandSoldering pad 1": {
+            "abs_pos": [144.93, 93.09]
+          }
+        },
+        {
+          "Capacitors_SMD:C_0805_HandSoldering pad 1": {
+            "abs_pos": [135.97, 75.85]
+          }
+        },
+        {
+          "Capacitors_SMD:C_0805_HandSoldering pad 1": {
+            "abs_pos": [129.68, 78.65]
+          }
+        },
+        {
+          "Capacitors_SMD:C_0805_HandSoldering pad 2": {
+            "abs_pos": [129.0, 93.88]
+          }
+        },
+        {
+          "Connectors:USB_B pad 4": {
+            "abs_pos": [128.07, 84.83]
+          }
+        },
+        {
+          "Capacitors_SMD:C_0805_HandSoldering pad 2": {
+            "abs_pos": [129.0, 98.45]
+          }
+        },
+        {
+          "TO_SOT_Packages_SMD:SOT-223 pad 1": {
+            "abs_pos": [117.27, 93.87]
+          }
+        },
+        {
+          "Pin_Headers:Pin_Header_Straight_1x03_Pitch2.54mm pad 1": {
+            "abs_pos": [139.87, 103.38]
+          }
+        }
+      ],
+      "tracks": {
+        "segments": [
+          {
+            "start": [139.87, 98.97],
+            "end": [139.87, 98.85],
+            "width": 0.5,
+            "layer": "F.Cu"
+          },
+          {
+            "start": [139.87, 98.85],
+            "end": [140.27, 98.45],
+            "width": 0.5,
+            "layer": "F.Cu"
+          },
+          {
+            "start": [139.87, 103.38],
+            "end": [139.87, 98.97],
+            "width": 0.5,
+            "layer": "F.Cu"
+          },
+          {
+            "start": [139.87, 98.97],
+            "end": [139.35, 98.45],
+            "width": 0.5,
+            "layer": "F.Cu"
+          },
+          {
+            "start": [149.16, 96.77],
+            "end": [149.28, 96.77],
+            "width": 0.5,
+            "layer": "F.Cu"
+          },
+          {
+            "start": [149.28, 96.77],
+            "end": [149.7, 97.19],
+            "width": 0.5,
+            "layer": "F.Cu"
+          },
+          {
+            "start": [129, 98.45],
+            "end": [139.35, 98.45],
+            "width": 0.5,
+            "layer": "F.Cu"
+          },
+          {
+            "start": [139.35, 98.45],
+            "end": [140.27, 98.45],
+            "width": 0.5,
+            "layer": "F.Cu"
+          },
+          {
+            "start": [140.27, 98.45],
+            "end": [148.47, 98.45],
+            "width": 0.5,
+            "layer": "F.Cu"
+          },
+          {
+            "start": [149.7, 97.4],
+            "end": [149.7, 97.19],
+            "width": 0.5,
+            "layer": "F.Cu"
+          },
+          {
+            "start": [148.65, 98.45],
+            "end": [149.7, 97.4],
+            "width": 0.5,
+            "layer": "F.Cu"
+          },
+          {
+            "start": [148.47, 98.45],
+            "end": [148.65, 98.45],
+            "width": 0.5,
+            "layer": "F.Cu"
+          },
+          {
+            "start": [149.7, 97.19],
+            "end": [149.7, 96.23],
+            "width": 0.5,
+            "layer": "F.Cu"
+          },
+          {
+            "start": [129, 93.88],
+            "end": [129, 98.45],
+            "width": 0.5,
+            "layer": "F.Cu"
+          },
+          {
+            "start": [123.57, 98.47],
+            "end": [123.57, 99.87],
+            "width": 0.5,
+            "layer": "F.Cu"
+          },
+          {
+            "start": [129, 100.06],
+            "end": [129, 98.45],
+            "width": 0.5,
+            "layer": "F.Cu"
+          },
+          {
+            "start": [128.74, 100.32],
+            "end": [129, 100.06],
+            "width": 0.5,
+            "layer": "F.Cu"
+          },
+          {
+            "start": [124.02, 100.32],
+            "end": [128.74, 100.32],
+            "width": 0.5,
+            "layer": "F.Cu"
+          },
+          {
+            "start": [123.57, 99.87],
+            "end": [124.02, 100.32],
+            "width": 0.5,
+            "layer": "F.Cu"
+          },
+          {
+            "start": [123.57, 98.47],
+            "end": [120.07, 98.47],
+            "width": 0.5,
+            "layer": "F.Cu"
+          },
+          {
+            "start": [119.5, 84.83],
+            "end": [122.52, 84.83],
+            "width": 0.5,
+            "layer": "F.Cu"
+          },
+          {
+            "start": [114.95, 89.38],
+            "end": [119.5, 84.83],
+            "width": 0.5,
+            "layer": "F.Cu"
+          },
+          {
+            "start": [120.07, 98.47],
+            "end": [118.91, 99.63],
+            "width": 0.5,
+            "layer": "F.Cu"
+          },
+          {
+            "start": [135.97, 75.85],
+            "end": [134.27, 75.85],
+            "width": 0.5,
+            "layer": "F.Cu"
+          },
+          {
+            "start": [134.27, 75.85],
+            "end": [133.86, 75.44],
+            "width": 0.5,
+            "layer": "F.Cu"
+          },
+          {
+            "start": [130.93, 75.91],
+            "end": [130.93, 75.78],
+            "width": 0.5,
+            "layer": "F.Cu"
+          },
+          {
+            "start": [130.93, 75.78],
+            "end": [130.59, 75.44],
+            "width": 0.5,
+            "layer": "F.Cu"
+          },
+          {
+            "start": [124.07, 84.83],
+            "end": [122.52, 84.83],
+            "width": 0.5,
+            "layer": "F.Cu"
+          },
+          {
+            "start": [127.18, 75.44],
+            "end": [130.59, 75.44],
+            "width": 0.5,
+            "layer": "F.Cu"
+          },
+          {
+            "start": [122.52, 84.83],
+            "end": [122.15, 84.46],
+            "width": 0.5,
+            "layer": "F.Cu"
+          },
+          {
+            "start": [122.15, 84.46],
+            "end": [122.15, 80.47],
+            "width": 0.5,
+            "layer": "F.Cu"
+          },
+          {
+            "start": [122.15, 80.47],
+            "end": [127.18, 75.44],
+            "width": 0.5,
+            "layer": "F.Cu"
+          },
+          {
+            "start": [130.59, 75.44],
+            "end": [131.4, 75.44],
+            "width": 0.5,
+            "layer": "F.Cu"
+          },
+          {
+            "start": [130.93, 77.4],
+            "end": [130.93, 75.91],
+            "width": 0.5,
+            "layer": "F.Cu"
+          },
+          {
+            "start": [134.655, 76.235],
+            "end": [134.655, 79.31],
+            "width": 0.5,
+            "layer": "F.Cu"
+          },
+          {
+            "start": [133.86, 75.44],
+            "end": [134.655, 76.235],
+            "width": 0.5,
+            "layer": "F.Cu"
+          },
+          {
+            "start": [131.4, 75.44],
+            "end": [133.86, 75.44],
+            "width": 0.5,
+            "layer": "F.Cu"
+          },
+          {
+            "start": [130.93, 75.91],
+            "end": [131.4, 75.44],
+            "width": 0.5,
+            "layer": "F.Cu"
+          },
+          {
+            "start": [147.43, 93.09],
+            "end": [149, 93.09],
+            "width": 0.5,
+            "layer": "F.Cu"
+          },
+          {
+            "start": [149, 93.09],
+            "end": [149.7, 93.79],
+            "width": 0.5,
+            "layer": "F.Cu"
+          },
+          {
+            "start": [149.7, 93.79],
+            "end": [149.7, 96.23],
+            "width": 0.5,
+            "layer": "F.Cu"
+          },
+          {
+            "start": [149.16, 96.77],
+            "end": [147.43, 96.77],
+            "width": 0.5,
+            "layer": "F.Cu"
+          },
+          {
+            "start": [149.7, 96.23],
+            "end": [149.16, 96.77],
+            "width": 0.5,
+            "layer": "F.Cu"
+          },
+          {
+            "start": [114.95, 95.66],
+            "end": [114.95, 89.38],
+            "width": 0.5,
+            "layer": "F.Cu"
+          },
+          {
+            "start": [118.91, 99.63],
+            "end": [118.36, 99.63],
+            "width": 0.5,
+            "layer": "F.Cu"
+          },
+          {
+            "start": [117.37, 99.63],
+            "end": [115.9, 99.63],
+            "width": 0.5,
+            "layer": "F.Cu"
+          },
+          {
+            "start": [115.9, 99.63],
+            "end": [114.95, 98.68],
+            "width": 0.5,
+            "layer": "F.Cu"
+          },
+          {
+            "start": [114.95, 98.68],
+            "end": [114.95, 95.66],
+            "width": 0.5,
+            "layer": "F.Cu"
+          },
+          {
+            "start": [118.36, 99.63],
+            "end": [117.37, 99.63],
+            "width": 0.5,
+            "layer": "F.Cu"
+          }
+        ],
+        "arcs": ["TODO: extract arc info. Most samples don't have arcs to help test :("],
+        "vias": ["TODO: are vias necessary for our routing interests?"]
+      },
+      "errors": []
+    },
+    "8": {
+      "name": "OS1",
+      "class": "TODO",
+      "pads": [
+        {
+          "Housings_SOIC:SOIC-20W_7.5x12.8mm_Pitch1.27mm pad 2": {
+            "abs_pos": [135.67000000000002, 79.565]
+          }
+        },
+        {
+          "Capacitors_SMD:C_0805_HandSoldering pad 2": {
+            "abs_pos": [147.43, 96.77]
+          }
+        },
+        {
+          "Crystals:Crystal_HC49-4H_Vertical pad 1": {
+            "abs_pos": [134.25, 95.02]
+          }
+        }
+      ],
+      "tracks": {
+        "segments": [
+          {
+            "start": [134.25, 95.02],
+            "end": [134.25, 93.52],
+            "width": 0.5,
+            "layer": "F.Cu"
+          },
+          {
+            "start": [135.925, 91.845],
+            "end": [135.925, 88.71],
+            "width": 0.5,
+            "layer": "F.Cu"
+          },
+          {
+            "start": [134.25, 93.52],
+            "end": [135.925, 91.845],
+            "width": 0.5,
+            "layer": "F.Cu"
+          },
+          {
+            "start": [134.25, 95.02],
+            "end": [134.25, 96.25],
+            "width": 0.5,
+            "layer": "F.Cu"
+          },
+          {
+            "start": [134.77, 96.77],
+            "end": [144.93, 96.77],
+            "width": 0.5,
+            "layer": "F.Cu"
+          },
+          {
+            "start": [134.25, 96.25],
+            "end": [134.77, 96.77],
+            "width": 0.5,
+            "layer": "F.Cu"
+          }
+        ],
+        "arcs": ["TODO: extract arc info. Most samples don't have arcs to help test :("],
+        "vias": ["TODO: are vias necessary for our routing interests?"]
+      },
+      "errors": []
+    },
+    "9": {
+      "name": "OS2",
+      "class": "TODO",
+      "pads": [
+        {
+          "Housings_SOIC:SOIC-20W_7.5x12.8mm_Pitch1.27mm pad 3": {
+            "abs_pos": [135.67000000000002, 80.83500000000001]
+          }
+        },
+        {
+          "Capacitors_SMD:C_0805_HandSoldering pad 2": {
+            "abs_pos": [147.43, 93.09]
+          }
+        },
+        {
+          "Crystals:Crystal_HC49-4H_Vertical pad 2": {
+            "abs_pos": [139.13, 95.02]
+          }
+        }
+      ],
+      "tracks": {
+        "segments": [
+          {
+            "start": [137.195, 88.71],
+            "end": [137.195, 92.015],
+            "width": 0.5,
+            "layer": "F.Cu"
+          },
+          {
+            "start": [137.195, 92.015],
+            "end": [139.13, 93.95],
+            "width": 0.5,
+            "layer": "F.Cu"
+          },
+          {
+            "start": [139.13, 95.02],
+            "end": [139.13, 93.95],
+            "width": 0.5,
+            "layer": "F.Cu"
+          },
+          {
+            "start": [139.13, 93.95],
+            "end": [139.13, 93.92],
+            "width": 0.5,
+            "layer": "F.Cu"
+          },
+          {
+            "start": [139.96, 93.09],
+            "end": [144.93, 93.09],
+            "width": 0.5,
+            "layer": "F.Cu"
+          },
+          {
+            "start": [139.13, 93.92],
+            "end": [139.96, 93.09],
+            "width": 0.5,
+            "layer": "F.Cu"
+          }
+        ],
+        "arcs": ["TODO: extract arc info. Most samples don't have arcs to help test :("],
+        "vias": ["TODO: are vias necessary for our routing interests?"]
+      },
+      "errors": []
+    },
+    "10": {
+      "name": "GND",
+      "class": "TODO",
+      "pads": [
+        {
+          "Capacitors_SMD:C_0805_HandSoldering pad 2": {
+            "abs_pos": [122.22, 114.57]
+          }
+        },
+        {
+          "Capacitors_SMD:C_0805_HandSoldering pad 1": {
+            "abs_pos": [129.09, 103.07]
+          }
+        },
+        {
+          "Capacitors_SMD:C_0805_HandSoldering pad 2": {
+            "abs_pos": [126.71, 123.56]
+          }
+        },
+        {
+          "Capacitors_SMD:C_0805_HandSoldering pad 2": {
+            "abs_pos": [149.29, 116.74]
+          }
+        },
+        {
+          "Capacitors_SMD:C_0805_HandSoldering pad 1": {
+            "abs_pos": [137.49, 116.3]
+          }
+        },
+        {
+          "Capacitors_SMD:C_0805_HandSoldering pad 2": {
+            "abs_pos": [149.29, 109.99]
+          }
+        },
+        {
+          "Pin_Headers:Pin_Header_Straight_1x05_Pitch2.54mm pad 3": {
+            "abs_pos": [117.12, 123.88]
+          }
+        },
+        {
+          "Pin_Headers:Pin_Header_Straight_1x02_Pitch2.54mm pad 2": {
+            "abs_pos": [147.79, 126.06]
+          }
+        },
+        {
+          "Housings_QFP:TQFP-44_10x10mm_Pitch0.8mm pad 6": {
+            "abs_pos": [124.17999999999999, 114.24]
+          }
+        },
+        {
+          "Housings_QFP:TQFP-44_10x10mm_Pitch0.8mm pad 16": {
+            "abs_pos": [129.07999999999998, 119.94]
+          }
+        },
+        {
+          "Housings_QFP:TQFP-44_10x10mm_Pitch0.8mm pad 29": {
+            "abs_pos": [135.57999999999998, 113.44]
+          }
+        },
+        {
+          "Housings_QFP:TQFP-44_10x10mm_Pitch0.8mm pad 39": {
+            "abs_pos": [129.88, 108.53999999999999]
+          }
+        },
+        {
+          "Capacitors_SMD:C_0805_HandSoldering pad 2": {
+            "abs_pos": [121.3, 123.57]
+          }
+        }
+      ],
+      "tracks": {
+        "segments": [
+          {
+            "start": [129.88, 108.54],
+            "end": [129.88, 106.16],
+            "width": 0.5,
+            "layer": "F.Cu"
+          },
+          {
+            "start": [131.59, 104.45],
+            "end": [131.59, 103.07],
+            "width": 0.5,
+            "layer": "F.Cu"
+          },
+          {
+            "start": [129.88, 106.16],
+            "end": [131.59, 104.45],
+            "width": 0.5,
+            "layer": "F.Cu"
+          },
+          {
+            "start": [120.97, 113.32],
+            "end": [118.98, 113.32],
+            "width": 0.5,
+            "layer": "F.Cu"
+          },
+          {
+            "start": [118.58, 113.72],
+            "end": [117.12, 113.72],
+            "width": 0.5,
+            "layer": "F.Cu"
+          },
+          {
+            "start": [118.98, 113.32],
+            "end": [118.58, 113.72],
+            "width": 0.5,
+            "layer": "F.Cu"
+          },
+          {
+            "start": [120.97, 113.32],
+            "end": [122.18, 113.32],
+            "width": 0.5,
+            "layer": "F.Cu"
+          },
+          {
+            "start": [123.1, 114.24],
+            "end": [124.18, 114.24],
+            "width": 0.5,
+            "layer": "F.Cu"
+          },
+          {
+            "start": [122.18, 113.32],
+            "end": [123.1, 114.24],
+            "width": 0.5,
+            "layer": "F.Cu"
+          },
+          {
+            "start": [150.26, 119.25],
+            "end": [150.26, 123.45],
+            "width": 0.5,
+            "layer": "F.Cu"
+          },
+          {
+            "start": [150.26, 123.45],
+            "end": [150.33, 123.52],
+            "width": 0.5,
+            "layer": "F.Cu"
+          },
+          {
+            "start": [138.74, 115.05],
+            "end": [140.21, 115.05],
+            "width": 0.5,
+            "layer": "F.Cu"
+          },
+          {
+            "start": [149.42, 113.32],
+            "end": [148.04, 113.32],
+            "width": 0.5,
+            "layer": "F.Cu"
+          },
+          {
+            "start": [150.26, 114.16],
+            "end": [149.42, 113.32],
+            "width": 0.5,
+            "layer": "F.Cu"
+          },
+          {
+            "start": [150.26, 119.25],
+            "end": [150.26, 114.16],
+            "width": 0.5,
+            "layer": "F.Cu"
+          },
+          {
+            "start": [149.28, 120.23],
+            "end": [150.26, 119.25],
+            "width": 0.5,
+            "layer": "F.Cu"
+          },
+          {
+            "start": [144.35, 120.23],
+            "end": [149.28, 120.23],
+            "width": 0.5,
+            "layer": "F.Cu"
+          },
+          {
+            "start": [141.22, 117.1],
+            "end": [144.35, 120.23],
+            "width": 0.5,
+            "layer": "F.Cu"
+          },
+          {
+            "start": [141.22, 116.06],
+            "end": [141.22, 117.1],
+            "width": 0.5,
+            "layer": "F.Cu"
+          },
+          {
+            "start": [140.21, 115.05],
+            "end": [141.22, 116.06],
+            "width": 0.5,
+            "layer": "F.Cu"
+          },
+          {
+            "start": [121.3, 123.57],
+            "end": [124.2, 123.57],
+            "width": 0.5,
+            "layer": "F.Cu"
+          },
+          {
+            "start": [124.2, 123.57],
+            "end": [124.21, 123.56],
+            "width": 0.5,
+            "layer": "F.Cu"
+          },
+          {
+            "start": [148.04, 111.24],
+            "end": [148.04, 113.32],
+            "width": 0.5,
+            "layer": "F.Cu"
+          },
+          {
+            "start": [148.04, 113.32],
+            "end": [148.04, 115.49],
+            "width": 0.5,
+            "layer": "F.Cu"
+          },
+          {
+            "start": [135.58, 113.44],
+            "end": [138.21, 113.44],
+            "width": 0.5,
+            "layer": "F.Cu"
+          },
+          {
+            "start": [138.74, 113.97],
+            "end": [138.74, 115.05],
+            "width": 0.5,
+            "layer": "F.Cu"
+          },
+          {
+            "start": [138.21, 113.44],
+            "end": [138.74, 113.97],
+            "width": 0.5,
+            "layer": "F.Cu"
+          },
+          {
+            "start": [124.21, 123.56],
+            "end": [124.21, 122.66],
+            "width": 0.5,
+            "layer": "F.Cu"
+          },
+          {
+            "start": [129.08, 121.24],
+            "end": [129.08, 119.94],
+            "width": 0.5,
+            "layer": "F.Cu"
+          },
+          {
+            "start": [128.51, 121.81],
+            "end": [129.08, 121.24],
+            "width": 0.5,
+            "layer": "F.Cu"
+          },
+          {
+            "start": [125.06, 121.81],
+            "end": [128.51, 121.81],
+            "width": 0.5,
+            "layer": "F.Cu"
+          },
+          {
+            "start": [124.21, 122.66],
+            "end": [125.06, 121.81],
+            "width": 0.5,
+            "layer": "F.Cu"
+          },
+          {
+            "start": [129.08, 117.49],
+            "end": [133.13, 113.44],
+            "width": 0.5,
+            "layer": "F.Cu"
+          },
+          {
+            "start": [129.08, 119.94],
+            "end": [129.08, 117.49],
+            "width": 0.5,
+            "layer": "F.Cu"
+          },
+          {
+            "start": [129.08, 117.49],
+            "end": [125.83, 114.24],
+            "width": 0.5,
+            "layer": "F.Cu"
+          },
+          {
+            "start": [124.18, 114.24],
+            "end": [125.83, 114.24],
+            "width": 0.5,
+            "layer": "F.Cu"
+          },
+          {
+            "start": [125.83, 114.24],
+            "end": [129.88, 110.19],
+            "width": 0.5,
+            "layer": "F.Cu"
+          },
+          {
+            "start": [129.88, 108.54],
+            "end": [129.88, 110.19],
+            "width": 0.5,
+            "layer": "F.Cu"
+          },
+          {
+            "start": [133.13, 113.44],
+            "end": [135.58, 113.44],
+            "width": 0.5,
+            "layer": "F.Cu"
+          },
+          {
+            "start": [129.88, 110.19],
+            "end": [133.13, 113.44],
+            "width": 0.5,
+            "layer": "F.Cu"
+          },
+          {
+            "start": [148.05, 115.48],
+            "end": [148.04, 115.49],
+            "width": 0.5,
+            "layer": "F.Cu"
+          }
+        ],
+        "arcs": ["TODO: extract arc info. Most samples don't have arcs to help test :("],
+        "vias": ["TODO: are vias necessary for our routing interests?"]
+      },
+      "errors": []
+    },
+    "11": {
+      "name": "V+",
+      "class": "TODO",
+      "pads": [
+        {
+          "Housings_SOIC:SOIC-20W_7.5x12.8mm_Pitch1.27mm pad 1": {
+            "abs_pos": [135.67000000000002, 78.295]
+          }
+        },
+        {
+          "Capacitors_SMD:C_0805_HandSoldering pad 2": {
+            "abs_pos": [132.18, 78.65]
+          }
+        },
+        {
+          "Resistors_SMD:R_0805_HandSoldering pad 2": {
+            "abs_pos": [132.26999999999998, 88.41]
+          }
+        },
+        {
+          "Capacitors_SMD:C_0805_HandSoldering pad 1": {
+            "abs_pos": [126.5, 98.45]
+          }
+        },
+        {
+          "TO_SOT_Packages_SMD:SOT-223 pad 4": {
+            "abs_pos": [123.57000000000001, 96.17]
+          }
+        },
+        {
+          "TO_SOT_Packages_SMD:SOT-223 pad 2": {
+            "abs_pos": [117.27, 96.17]
+          }
+        },
+        {
+          "Pin_Headers:Pin_Header_Straight_1x03_Pitch2.54mm pad 2": {
+            "abs_pos": [139.87, 105.92]
+          }
+        }
+      ],
+      "tracks": {
+        "segments": [
+          {
+            "start": [132.83, 90.48],
+            "end": [140.32, 90.48],
+            "width": 0.8,
+            "layer": "B.Cu"
+          },
+          {
+            "start": [142.41, 92.57],
+            "end": [142.41, 103.38],
+            "width": 0.8,
+            "layer": "B.Cu"
+          },
+          {
+            "start": [140.32, 90.48],
+            "end": [142.41, 92.57],
+            "width": 0.8,
+            "layer": "B.Cu"
+          },
+          {
+            "start": [132.57, 79.92],
+            "end": [132.87, 79.92],
+            "width": 0.8,
+            "layer": "B.Cu"
+          },
+          {
+            "start": [132.83, 79.96],
+            "end": [132.83, 90.48],
+            "width": 0.8,
+            "layer": "B.Cu"
+          },
+          {
+            "start": [132.87, 79.92],
+            "end": [132.83, 79.96],
+            "width": 0.8,
+            "layer": "B.Cu"
+          },
+          {
+            "start": [120.43, 94.4],
+            "end": [128.91, 94.4],
+            "width": 0.8,
+            "layer": "B.Cu"
+          },
+          {
+            "start": [120.43, 94.4],
+            "end": [120.42, 94.41],
+            "width": 0.5,
+            "layer": "F.Cu"
+          },
+          {
+            "start": [120.42, 94.41],
+            "end": [120.42, 96.17],
+            "width": 0.5,
+            "layer": "F.Cu"
+          },
+          {
+            "start": [128.91, 94.4],
+            "end": [132.83, 90.48],
+            "width": 0.8,
+            "layer": "B.Cu"
+          },
+          {
+            "start": [132.57, 79.92],
+            "end": [132.55, 79.9],
+            "width": 0.5,
+            "layer": "F.Cu"
+          },
+          {
+            "start": [132.84, 90.49],
+            "end": [132.84, 91.45],
+            "width": 0.5,
+            "layer": "F.Cu"
+          },
+          {
+            "start": [132.83, 90.48],
+            "end": [132.84, 90.49],
+            "width": 0.5,
+            "layer": "F.Cu"
+          },
+          {
+            "start": [131.35, 91.45],
+            "end": [132.84, 91.45],
+            "width": 0.5,
+            "layer": "F.Cu"
+          },
+          {
+            "start": [132.84, 91.45],
+            "end": [133.91, 91.45],
+            "width": 0.5,
+            "layer": "F.Cu"
+          },
+          {
+            "start": [130.92, 91.02],
+            "end": [131.35, 91.45],
+            "width": 0.5,
+            "layer": "F.Cu"
+          },
+          {
+            "start": [133.91, 91.45],
+            "end": [134.655, 90.705],
+            "width": 0.5,
+            "layer": "F.Cu"
+          },
+          {
+            "start": [132.55, 79.9],
+            "end": [130.93, 79.9],
+            "width": 0.5,
+            "layer": "F.Cu"
+          },
+          {
+            "start": [123.57, 96.17],
+            "end": [125.98, 96.17],
+            "width": 0.5,
+            "layer": "F.Cu"
+          },
+          {
+            "start": [126.5, 96.69],
+            "end": [126.5, 98.45],
+            "width": 0.5,
+            "layer": "F.Cu"
+          },
+          {
+            "start": [125.98, 96.17],
+            "end": [126.5, 96.69],
+            "width": 0.5,
+            "layer": "F.Cu"
+          },
+          {
+            "start": [117.27, 96.17],
+            "end": [120.42, 96.17],
+            "width": 0.5,
+            "layer": "F.Cu"
+          },
+          {
+            "start": [120.42, 96.17],
+            "end": [123.57, 96.17],
+            "width": 0.5,
+            "layer": "F.Cu"
+          },
+          {
+            "start": [130.92, 89.76],
+            "end": [130.92, 91.02],
+            "width": 0.5,
+            "layer": "F.Cu"
+          },
+          {
+            "start": [134.655, 90.705],
+            "end": [134.655, 88.71],
+            "width": 0.5,
+            "layer": "F.Cu"
+          }
+        ],
+        "arcs": ["TODO: extract arc info. Most samples don't have arcs to help test :("],
+        "vias": ["TODO: are vias necessary for our routing interests?"]
+      },
+      "errors": []
+    },
+    "12": {
+      "name": "VDD",
+      "class": "TODO",
+      "pads": [
+        {
+          "Capacitors_SMD:C_0805_HandSoldering pad 2": {
+            "abs_pos": [131.59, 103.07]
+          }
+        },
+        {
+          "Capacitors_SMD:C_0805_HandSoldering pad 2": {
+            "abs_pos": [139.99, 116.3]
+          }
+        },
+        {
+          "Pin_Headers:Pin_Header_Straight_1x05_Pitch2.54mm pad 2": {
+            "abs_pos": [117.12, 121.34]
+          }
+        },
+        {
+          "Pin_Headers:Pin_Header_Straight_1x02_Pitch2.54mm pad 1": {
+            "abs_pos": [147.79, 123.52]
+          }
+        },
+        {
+          "Inductors_SMD:L_0805_HandSoldering pad 2": {
+            "abs_pos": [132.04999999999998, 123.55]
+          }
+        },
+        {
+          "Resistors_SMD:R_0805_HandSoldering pad 2": {
+            "abs_pos": [137.5, 123.55]
+          }
+        },
+        {
+          "Housings_QFP:TQFP-44_10x10mm_Pitch0.8mm pad 28": {
+            "abs_pos": [135.57999999999998, 114.24]
+          }
+        },
+        {
+          "Housings_QFP:TQFP-44_10x10mm_Pitch0.8mm pad 40": {
+            "abs_pos": [129.07999999999998, 108.53999999999999]
+          }
+        }
+      ],
+      "tracks": {
+        "segments": [
+          {
+            "start": [129.08, 109.77],
+            "end": [129.08, 108.54],
+            "width": 0.5,
+            "layer": "F.Cu"
+          },
+          {
+            "start": [127.11, 111.16],
+            "end": [127.24, 111.29],
+            "width": 0.5,
+            "layer": "F.Cu"
+          },
+          {
+            "start": [127.24, 111.29],
+            "end": [127.56, 111.29],
+            "width": 0.5,
+            "layer": "F.Cu"
+          },
+          {
+            "start": [127.56, 111.29],
+            "end": [129.08, 109.77],
+            "width": 0.5,
+            "layer": "F.Cu"
+          },
+          {
+            "start": [132.19, 116.25],
+            "end": [130.07, 114.13],
+            "width": 0.8,
+            "layer": "B.Cu"
+          },
+          {
+            "start": [117.12, 116.26],
+            "end": [127.94, 116.26],
+            "width": 0.8,
+            "layer": "B.Cu"
+          },
+          {
+            "start": [127.94, 116.26],
+            "end": [130.07, 114.13],
+            "width": 0.8,
+            "layer": "B.Cu"
+          },
+          {
+            "start": [130.07, 114.13],
+            "end": [130.07, 114.12],
+            "width": 0.8,
+            "layer": "B.Cu"
+          },
+          {
+            "start": [130.07, 114.12],
+            "end": [127.11, 111.16],
+            "width": 0.8,
+            "layer": "B.Cu"
+          },
+          {
+            "start": [129.08, 108.54],
+            "end": [129.08, 103.08],
+            "width": 0.5,
+            "layer": "F.Cu"
+          },
+          {
+            "start": [129.08, 103.08],
+            "end": [129.09, 103.07],
+            "width": 0.5,
+            "layer": "F.Cu"
+          },
+          {
+            "start": [132.05, 123.55],
+            "end": [132.05, 124.68],
+            "width": 0.5,
+            "layer": "F.Cu"
+          },
+          {
+            "start": [145.83, 125.48],
+            "end": [147.79, 123.52],
+            "width": 0.5,
+            "layer": "F.Cu"
+          },
+          {
+            "start": [132.85, 125.48],
+            "end": [145.83, 125.48],
+            "width": 0.5,
+            "layer": "F.Cu"
+          },
+          {
+            "start": [132.05, 124.68],
+            "end": [132.85, 125.48],
+            "width": 0.5,
+            "layer": "F.Cu"
+          },
+          {
+            "start": [138.74, 117.55],
+            "end": [138.74, 119.58],
+            "width": 0.5,
+            "layer": "F.Cu"
+          },
+          {
+            "start": [138.74, 119.58],
+            "end": [139.44, 120.28],
+            "width": 0.5,
+            "layer": "F.Cu"
+          },
+          {
+            "start": [139.44, 120.28],
+            "end": [142.69, 120.28],
+            "width": 0.5,
+            "layer": "F.Cu"
+          },
+          {
+            "start": [142.69, 120.28],
+            "end": [143.89, 121.48],
+            "width": 0.5,
+            "layer": "F.Cu"
+          },
+          {
+            "start": [143.89, 121.48],
+            "end": [145.75, 121.48],
+            "width": 0.5,
+            "layer": "F.Cu"
+          },
+          {
+            "start": [145.75, 121.48],
+            "end": [147.79, 123.52],
+            "width": 0.5,
+            "layer": "F.Cu"
+          },
+          {
+            "start": [135.58, 114.24],
+            "end": [136.66, 114.24],
+            "width": 0.5,
+            "layer": "F.Cu"
+          },
+          {
+            "start": [137.74, 117.55],
+            "end": [138.74, 117.55],
+            "width": 0.5,
+            "layer": "F.Cu"
+          },
+          {
+            "start": [137.18, 116.99],
+            "end": [137.74, 117.55],
+            "width": 0.5,
+            "layer": "F.Cu"
+          },
+          {
+            "start": [137.18, 114.76],
+            "end": [137.18, 116.99],
+            "width": 0.5,
+            "layer": "F.Cu"
+          },
+          {
+            "start": [136.66, 114.24],
+            "end": [137.18, 114.76],
+            "width": 0.5,
+            "layer": "F.Cu"
+          },
+          {
+            "start": [127.94, 116.26],
+            "end": [130.07, 114.13],
+            "width": 0.5,
+            "layer": "B.Cu"
+          },
+          {
+            "start": [132.05, 123.55],
+            "end": [133.44, 123.55],
+            "width": 0.5,
+            "layer": "F.Cu"
+          },
+          {
+            "start": [133.44, 123.55],
+            "end": [134.8, 123.55],
+            "width": 0.5,
+            "layer": "F.Cu"
+          },
+          {
+            "start": [135.58, 114.24],
+            "end": [133.65, 114.24],
+            "width": 0.5,
+            "layer": "F.Cu"
+          },
+          {
+            "start": [127.11, 111.17],
+            "end": [127.11, 111.16],
+            "width": 0.5,
+            "layer": "B.Cu"
+          },
+          {
+            "start": [130.07, 114.13],
+            "end": [127.11, 111.17],
+            "width": 0.5,
+            "layer": "B.Cu"
+          },
+          {
+            "start": [132.19, 115.7],
+            "end": [132.19, 116.25],
+            "width": 0.5,
+            "layer": "F.Cu"
+          },
+          {
+            "start": [133.65, 114.24],
+            "end": [132.19, 115.7],
+            "width": 0.5,
+            "layer": "F.Cu"
+          }
+        ],
+        "arcs": ["TODO: extract arc info. Most samples don't have arcs to help test :("],
+        "vias": ["TODO: are vias necessary for our routing interests?"]
+      },
+      "errors": []
+    },
+    "13": {
+      "name": "OSC1",
+      "class": "TODO",
+      "pads": [
+        {
+          "Capacitors_SMD:C_0805_HandSoldering pad 1": {
+            "abs_pos": [146.79, 116.74]
+          }
+        },
+        {
+          "Housings_QFP:TQFP-44_10x10mm_Pitch0.8mm pad 30": {
+            "abs_pos": [135.57999999999998, 112.64]
+          }
+        },
+        {
+          "Crystals:Crystal_HC49-4H_Vertical pad 1": {
+            "abs_pos": [143.45, 115.86]
+          }
+        }
+      ],
+      "tracks": {
+        "segments": [
+          {
+            "start": [143.45, 115.86],
+            "end": [143.45, 116.87],
+            "width": 0.5,
+            "layer": "F.Cu"
+          },
+          {
+            "start": [144.57, 117.99],
+            "end": [148.04, 117.99],
+            "width": 0.5,
+            "layer": "F.Cu"
+          },
+          {
+            "start": [143.45, 116.87],
+            "end": [144.57, 117.99],
+            "width": 0.5,
+            "layer": "F.Cu"
+          },
+          {
+            "start": [135.58, 112.64],
+            "end": [140.68, 112.64],
+            "width": 0.5,
+            "layer": "F.Cu"
+          },
+          {
+            "start": [140.68, 112.64],
+            "end": [143.45, 115.41],
+            "width": 0.5,
+            "layer": "F.Cu"
+          },
+          {
+            "start": [143.45, 115.41],
+            "end": [143.45, 115.86],
+            "width": 0.5,
+            "layer": "F.Cu"
+          }
+        ],
+        "arcs": ["TODO: extract arc info. Most samples don't have arcs to help test :("],
+        "vias": ["TODO: are vias necessary for our routing interests?"]
+      },
+      "errors": []
+    },
+    "14": {
+      "name": "VBus",
+      "class": "TODO",
+      "pads": [
+        {
+          "Capacitors_SMD:C_0805_HandSoldering pad 1": {
+            "abs_pos": [126.5, 93.88]
+          }
+        },
+        {
+          "Connectors:USB_B pad 1": {
+            "abs_pos": [126.07, 84.83]
+          }
+        },
+        {
+          "TO_SOT_Packages_SMD:SOT-223 pad 3": {
+            "abs_pos": [117.27, 98.47]
+          }
+        },
+        {
+          "Pin_Headers:Pin_Header_Straight_1x03_Pitch2.54mm pad 3": {
+            "abs_pos": [139.87, 108.46]
+          }
+        }
+      ],
+      "tracks": {
+        "segments": [
+          {
+            "start": [126.07, 84.83],
+            "end": [128, 84.83],
+            "width": 0.8,
+            "layer": "B.Cu"
+          },
+          {
+            "start": [128, 84.83],
+            "end": [130.49, 82.34],
+            "width": 0.8,
+            "layer": "B.Cu"
+          },
+          {
+            "start": [144.95, 88.77],
+            "end": [144.95, 103.38],
+            "width": 0.8,
+            "layer": "B.Cu"
+          },
+          {
+            "start": [134.45, 78.27],
+            "end": [144.95, 88.77],
+            "width": 0.8,
+            "layer": "B.Cu"
+          },
+          {
+            "start": [131.32, 78.27],
+            "end": [134.45, 78.27],
+            "width": 0.8,
+            "layer": "B.Cu"
+          },
+          {
+            "start": [130.49, 79.1],
+            "end": [131.32, 78.27],
+            "width": 0.8,
+            "layer": "B.Cu"
+          },
+          {
+            "start": [130.49, 82.34],
+            "end": [130.49, 79.1],
+            "width": 0.8,
+            "layer": "B.Cu"
+          },
+          {
+            "start": [126.5, 93.88],
+            "end": [123.58, 93.88],
+            "width": 0.5,
+            "layer": "F.Cu"
+          },
+          {
+            "start": [123.58, 93.88],
+            "end": [123.57, 93.87],
+            "width": 0.5,
+            "layer": "F.Cu"
+          },
+          {
+            "start": [123.57, 93.87],
+            "end": [123.57, 92],
+            "width": 0.5,
+            "layer": "F.Cu"
+          },
+          {
+            "start": [126.07, 89.5],
+            "end": [126.07, 84.83],
+            "width": 0.5,
+            "layer": "F.Cu"
+          },
+          {
+            "start": [123.57, 92],
+            "end": [126.07, 89.5],
+            "width": 0.5,
+            "layer": "F.Cu"
+          }
+        ],
+        "arcs": ["TODO: extract arc info. Most samples don't have arcs to help test :("],
+        "vias": ["TODO: are vias necessary for our routing interests?"]
+      },
+      "errors": []
+    },
+    "15": {
+      "name": "OSC2",
+      "class": "TODO",
+      "pads": [
+        {
+          "Capacitors_SMD:C_0805_HandSoldering pad 1": {
+            "abs_pos": [146.79, 109.99]
+          }
+        },
+        {
+          "Housings_QFP:TQFP-44_10x10mm_Pitch0.8mm pad 31": {
+            "abs_pos": [135.57999999999998, 111.83999999999999]
+          }
+        },
+        {
+          "Crystals:Crystal_HC49-4H_Vertical pad 2": {
+            "abs_pos": [148.32999999999998, 115.86]
+          }
+        }
+      ],
+      "tracks": {
+        "segments": [
+          {
+            "start": [143.45, 110.98],
+            "end": [143.45, 110.06],
+            "width": 0.5,
+            "layer": "F.Cu"
+          },
+          {
+            "start": [144.77, 108.74],
+            "end": [148.04, 108.74],
+            "width": 0.5,
+            "layer": "F.Cu"
+          },
+          {
+            "start": [143.45, 110.06],
+            "end": [144.77, 108.74],
+            "width": 0.5,
+            "layer": "F.Cu"
+          },
+          {
+            "start": [135.58, 111.84],
+            "end": [139.78, 111.84],
+            "width": 0.5,
+            "layer": "F.Cu"
+          },
+          {
+            "start": [140.64, 110.98],
+            "end": [143.45, 110.98],
+            "width": 0.5,
+            "layer": "F.Cu"
+          },
+          {
+            "start": [139.78, 111.84],
+            "end": [140.64, 110.98],
+            "width": 0.5,
+            "layer": "F.Cu"
+          }
+        ],
+        "arcs": ["TODO: extract arc info. Most samples don't have arcs to help test :("],
+        "vias": ["TODO: are vias necessary for our routing interests?"]
+      },
+      "errors": []
+    },
+    "16": {
+      "name": "D-",
+      "class": "TODO",
+      "pads": [
+        {
+          "Housings_SOIC:SOIC-20W_7.5x12.8mm_Pitch1.27mm pad 18": {
+            "abs_pos": [145.07, 80.83500000000001]
+          }
+        },
+        {
+          "Connectors:USB_B pad 2": {
+            "abs_pos": [126.07, 87.37]
+          }
+        }
+      ],
+      "tracks": {
+        "segments": [
+          {
+            "start": [126.07, 82.29],
+            "end": [128.17, 82.29],
+            "width": 0.5,
+            "layer": "F.Cu"
+          },
+          {
+            "start": [137.195, 82.185],
+            "end": [137.195, 79.31],
+            "width": 0.5,
+            "layer": "F.Cu"
+          },
+          {
+            "start": [135.56, 83.82],
+            "end": [137.195, 82.185],
+            "width": 0.5,
+            "layer": "F.Cu"
+          },
+          {
+            "start": [129.7, 83.82],
+            "end": [135.56, 83.82],
+            "width": 0.5,
+            "layer": "F.Cu"
+          },
+          {
+            "start": [128.17, 82.29],
+            "end": [129.7, 83.82],
+            "width": 0.5,
+            "layer": "F.Cu"
+          }
+        ],
+        "arcs": ["TODO: extract arc info. Most samples don't have arcs to help test :("],
+        "vias": ["TODO: are vias necessary for our routing interests?"]
+      },
+      "errors": []
+    },
+    "17": {
+      "name": "D+",
+      "class": "TODO",
+      "pads": [
+        {
+          "Housings_SOIC:SOIC-20W_7.5x12.8mm_Pitch1.27mm pad 19": {
+            "abs_pos": [145.07, 79.565]
+          }
+        },
+        {
+          "Connectors:USB_B pad 3": {
+            "abs_pos": [128.07, 87.37]
+          }
+        }
+      ],
+      "tracks": {
+        "segments": [
+          {
+            "start": [124.07, 82.29],
+            "end": [124.07, 80.9],
+            "width": 0.5,
+            "layer": "F.Cu"
+          },
+          {
+            "start": [135.925, 81.275],
+            "end": [135.925, 79.31],
+            "width": 0.5,
+            "layer": "F.Cu"
+          },
+          {
+            "start": [134.69, 82.51],
+            "end": [135.925, 81.275],
+            "width": 0.5,
+            "layer": "F.Cu"
+          },
+          {
+            "start": [130.26, 82.51],
+            "end": [134.69, 82.51],
+            "width": 0.5,
+            "layer": "F.Cu"
+          },
+          {
+            "start": [127.99, 80.24],
+            "end": [130.26, 82.51],
+            "width": 0.5,
+            "layer": "F.Cu"
+          },
+          {
+            "start": [124.73, 80.24],
+            "end": [127.99, 80.24],
+            "width": 0.5,
+            "layer": "F.Cu"
+          },
+          {
+            "start": [124.07, 80.9],
+            "end": [124.73, 80.24],
+            "width": 0.5,
+            "layer": "F.Cu"
+          }
+        ],
+        "arcs": ["TODO: extract arc info. Most samples don't have arcs to help test :("],
+        "vias": ["TODO: are vias necessary for our routing interests?"]
+      },
+      "errors": []
+    },
+    "18": {
+      "name": "Rx",
+      "class": "TODO",
+      "pads": [
+        {
+          "Housings_SOIC:SOIC-20W_7.5x12.8mm_Pitch1.27mm pad 12": {
+            "abs_pos": [145.07, 88.45500000000001]
+          }
+        },
+        {
+          "Pin_Headers:Pin_Header_Straight_1x02_Pitch2.54mm pad 1": {
+            "abs_pos": [149.73, 82.95]
+          }
+        }
+      ],
+      "tracks": {
+        "segments": [
+          {
+            "start": [149.73, 82.95],
+            "end": [146.38, 82.95],
+            "width": 0.5,
+            "layer": "F.Cu"
+          },
+          {
+            "start": [144.815, 81.385],
+            "end": [144.815, 79.31],
+            "width": 0.5,
+            "layer": "F.Cu"
+          },
+          {
+            "start": [146.38, 82.95],
+            "end": [144.815, 81.385],
+            "width": 0.5,
+            "layer": "F.Cu"
+          }
+        ],
+        "arcs": ["TODO: extract arc info. Most samples don't have arcs to help test :("],
+        "vias": ["TODO: are vias necessary for our routing interests?"]
+      },
+      "errors": []
+    },
+    "19": {
+      "name": "Tx",
+      "class": "TODO",
+      "pads": [
+        {
+          "Housings_SOIC:SOIC-20W_7.5x12.8mm_Pitch1.27mm pad 10": {
+            "abs_pos": [135.67000000000002, 89.72500000000001]
+          }
+        },
+        {
+          "Pin_Headers:Pin_Header_Straight_1x02_Pitch2.54mm pad 2": {
+            "abs_pos": [149.73, 85.49000000000001]
+          }
+        }
+      ],
+      "tracks": {
+        "segments": [
+          {
+            "start": [146.085, 88.71],
+            "end": [146.085, 85.955],
+            "width": 0.5,
+            "layer": "F.Cu"
+          },
+          {
+            "start": [146.55, 85.49],
+            "end": [149.73, 85.49],
+            "width": 0.5,
+            "layer": "F.Cu"
+          },
+          {
+            "start": [146.085, 85.955],
+            "end": [146.55, 85.49],
+            "width": 0.5,
+            "layer": "F.Cu"
+          }
+        ],
+        "arcs": ["TODO: extract arc info. Most samples don't have arcs to help test :("],
+        "vias": ["TODO: are vias necessary for our routing interests?"]
+      },
+      "errors": []
+    },
+    "20": {
+      "name": "PGD",
+      "class": "TODO",
+      "pads": [
+        {
+          "Pin_Headers:Pin_Header_Straight_1x05_Pitch2.54mm pad 4": {
+            "abs_pos": [117.12, 126.42]
+          }
+        },
+        {
+          "Housings_QFP:TQFP-44_10x10mm_Pitch0.8mm pad 41": {
+            "abs_pos": [128.28, 108.53999999999999]
+          }
+        }
+      ],
+      "tracks": {
+        "segments": [
+          {
+            "start": [117.12, 111.18],
+            "end": [116.36, 111.18],
+            "width": 0.5,
+            "layer": "F.Cu"
+          },
+          {
+            "start": [116.36, 111.18],
+            "end": [115.38, 110.2],
+            "width": 0.5,
+            "layer": "F.Cu"
+          },
+          {
+            "start": [115.38, 110.2],
+            "end": [115.38, 106.82],
+            "width": 0.5,
+            "layer": "F.Cu"
+          },
+          {
+            "start": [115.38, 106.82],
+            "end": [117.09, 105.11],
+            "width": 0.5,
+            "layer": "F.Cu"
+          },
+          {
+            "start": [117.09, 105.11],
+            "end": [127.35, 105.11],
+            "width": 0.5,
+            "layer": "F.Cu"
+          },
+          {
+            "start": [127.35, 105.11],
+            "end": [128.28, 106.04],
+            "width": 0.5,
+            "layer": "F.Cu"
+          },
+          {
+            "start": [128.28, 106.04],
+            "end": [128.28, 108.54],
+            "width": 0.5,
+            "layer": "F.Cu"
+          }
+        ],
+        "arcs": ["TODO: extract arc info. Most samples don't have arcs to help test :("],
+        "vias": ["TODO: are vias necessary for our routing interests?"]
+      },
+      "errors": []
+    },
+    "21": {
+      "name": "PGC",
+      "class": "TODO",
+      "pads": [
+        {
+          "Pin_Headers:Pin_Header_Straight_1x05_Pitch2.54mm pad 5": {
+            "abs_pos": [117.12, 128.96]
+          }
+        },
+        {
+          "Housings_QFP:TQFP-44_10x10mm_Pitch0.8mm pad 42": {
+            "abs_pos": [127.47999999999999, 108.53999999999999]
+          }
+        }
+      ],
+      "tracks": {
+        "segments": [
+          {
+            "start": [117.12, 108.64],
+            "end": [117.12, 107.32],
+            "width": 0.5,
+            "layer": "F.Cu"
+          },
+          {
+            "start": [117.12, 107.32],
+            "end": [118.18, 106.26],
+            "width": 0.5,
+            "layer": "F.Cu"
+          },
+          {
+            "start": [127.48, 108.54],
+            "end": [127.48, 106.63],
+            "width": 0.5,
+            "layer": "F.Cu"
+          },
+          {
+            "start": [127.11, 106.26],
+            "end": [118.18, 106.26],
+            "width": 0.5,
+            "layer": "F.Cu"
+          },
+          {
+            "start": [127.48, 106.63],
+            "end": [127.11, 106.26],
+            "width": 0.5,
+            "layer": "F.Cu"
+          }
+        ],
+        "arcs": ["TODO: extract arc info. Most samples don't have arcs to help test :("],
+        "vias": ["TODO: are vias necessary for our routing interests?"]
+      },
+      "errors": []
+    },
+    "22": {
+      "name": "MCL_B",
+      "class": "TODO",
+      "pads": [
+        {
+          "Capacitors_SMD:C_0805_HandSoldering pad 1": {
+            "abs_pos": [118.8, 123.57]
+          }
+        },
+        {
+          "Pin_Headers:Pin_Header_Straight_1x02_Pitch2.54mm pad 2": {
+            "abs_pos": [112.7, 126.11]
+          }
+        }
+      ],
+      "tracks": {
+        "segments": [
+          {
+            "start": [115.24, 123.57],
+            "end": [118.8, 123.57],
+            "width": 0.5,
+            "layer": "F.Cu"
+          }
+        ],
+        "arcs": ["TODO: extract arc info. Most samples don't have arcs to help test :("],
+        "vias": ["TODO: are vias necessary for our routing interests?"]
+      },
+      "errors": []
+    },
+    "23": {
+      "name": "MCL_A",
+      "class": "TODO",
+      "pads": [
+        {
+          "Resistors_SMD:R_0805_HandSoldering pad 1": {
+            "abs_pos": [134.8, 123.55]
+          }
+        },
+        {
+          "Pin_Headers:Pin_Header_Straight_1x02_Pitch2.54mm pad 1": {
+            "abs_pos": [112.7, 123.57]
+          }
+        },
+        {
+          "Resistors_SMD:R_0805_HandSoldering pad 2": {
+            "abs_pos": [142.96, 123.55]
+          }
+        }
+      ],
+      "tracks": {
+        "segments": [
+          {
+            "start": [138.9, 123.57],
+            "end": [138.9, 121.77],
+            "width": 0.5,
+            "layer": "B.Cu"
+          },
+          {
+            "start": [138.33, 121.2],
+            "end": [134.88, 121.2],
+            "width": 0.5,
+            "layer": "B.Cu"
+          },
+          {
+            "start": [138.9, 121.77],
+            "end": [138.33, 121.2],
+            "width": 0.5,
+            "layer": "B.Cu"
+          },
+          {
+            "start": [138.89, 123.55],
+            "end": [138.9, 123.57],
+            "width": 0.5,
+            "layer": "F.Cu"
+          },
+          {
+            "start": [112.7, 122.09],
+            "end": [112.7, 123.57],
+            "width": 0.5,
+            "layer": "B.Cu"
+          },
+          {
+            "start": [134.88, 121.2],
+            "end": [113.59, 121.2],
+            "width": 0.5,
+            "layer": "B.Cu"
+          },
+          {
+            "start": [113.59, 121.2],
+            "end": [112.7, 122.09],
+            "width": 0.5,
+            "layer": "B.Cu"
+          },
+          {
+            "start": [137.5, 123.55],
+            "end": [138.89, 123.55],
+            "width": 0.5,
+            "layer": "F.Cu"
+          },
+          {
+            "start": [138.89, 123.55],
+            "end": [140.26, 123.55],
+            "width": 0.5,
+            "layer": "F.Cu"
+          }
+        ],
+        "arcs": ["TODO: extract arc info. Most samples don't have arcs to help test :("],
+        "vias": ["TODO: are vias necessary for our routing interests?"]
+      },
+      "errors": []
+    }
+  },
+  "errors": [
+    {
+      "Housings_SOIC:SOIC-20W_7.5x12.8mm_Pitch1.27mm at [140.37, 84.01, 90]": "pad 5 smd rect at [-4.7, -0.635] has error 193: key \"net\" not found"
+    },
+    {
+      "Housings_SOIC:SOIC-20W_7.5x12.8mm_Pitch1.27mm at [140.37, 84.01, 90]": "pad 6 smd rect at [-4.7, 0.635] has error 194: key \"net\" not found"
+    },
+    {
+      "Housings_SOIC:SOIC-20W_7.5x12.8mm_Pitch1.27mm at [140.37, 84.01, 90]": "pad 7 smd rect at [-4.7, 1.905] has error 195: key \"net\" not found"
+    },
+    {
+      "Housings_SOIC:SOIC-20W_7.5x12.8mm_Pitch1.27mm at [140.37, 84.01, 90]": "pad 8 smd rect at [-4.7, 3.175] has error 196: key \"net\" not found"
+    },
+    {
+      "Housings_SOIC:SOIC-20W_7.5x12.8mm_Pitch1.27mm at [140.37, 84.01, 90]": "pad 9 smd rect at [-4.7, 4.445] has error 197: key \"net\" not found"
+    },
+    {
+      "Housings_SOIC:SOIC-20W_7.5x12.8mm_Pitch1.27mm at [140.37, 84.01, 90]": "pad 11 smd rect at [4.7, 5.715] has error 200: key \"net\" not found"
+    },
+    {
+      "Housings_SOIC:SOIC-20W_7.5x12.8mm_Pitch1.27mm at [140.37, 84.01, 90]": "pad 13 smd rect at [4.7, 3.175] has error 203: key \"net\" not found"
+    },
+    {
+      "Housings_SOIC:SOIC-20W_7.5x12.8mm_Pitch1.27mm at [140.37, 84.01, 90]": "pad 14 smd rect at [4.7, 1.905] has error 204: key \"net\" not found"
+    },
+    {
+      "Housings_SOIC:SOIC-20W_7.5x12.8mm_Pitch1.27mm at [140.37, 84.01, 90]": "pad 15 smd rect at [4.7, 0.635] has error 205: key \"net\" not found"
+    },
+    {
+      "Housings_SOIC:SOIC-20W_7.5x12.8mm_Pitch1.27mm at [140.37, 84.01, 90]": "pad 16 smd rect at [4.7, -0.635] has error 206: key \"net\" not found"
+    },
+    {
+      "Housings_QFP:TQFP-44_10x10mm_Pitch0.8mm at [129.88, 114.24]": "pad 1 smd rect at [-5.7, -4] has error 925: key \"net\" not found"
+    },
+    {
+      "Housings_QFP:TQFP-44_10x10mm_Pitch0.8mm at [129.88, 114.24]": "pad 2 smd rect at [-5.7, -3.2] has error 926: key \"net\" not found"
+    },
+    {
+      "Housings_QFP:TQFP-44_10x10mm_Pitch0.8mm at [129.88, 114.24]": "pad 3 smd rect at [-5.7, -2.4] has error 927: key \"net\" not found"
+    },
+    {
+      "Housings_QFP:TQFP-44_10x10mm_Pitch0.8mm at [129.88, 114.24]": "pad 4 smd rect at [-5.7, -1.6] has error 928: key \"net\" not found"
+    },
+    {
+      "Housings_QFP:TQFP-44_10x10mm_Pitch0.8mm at [129.88, 114.24]": "pad 5 smd rect at [-5.7, -0.8] has error 929: key \"net\" not found"
+    },
+    {
+      "Housings_QFP:TQFP-44_10x10mm_Pitch0.8mm at [129.88, 114.24]": "pad 8 smd rect at [-5.7, 1.6] has error 934: key \"net\" not found"
+    },
+    {
+      "Housings_QFP:TQFP-44_10x10mm_Pitch0.8mm at [129.88, 114.24]": "pad 9 smd rect at [-5.7, 2.4] has error 935: key \"net\" not found"
+    },
+    {
+      "Housings_QFP:TQFP-44_10x10mm_Pitch0.8mm at [129.88, 114.24]": "pad 10 smd rect at [-5.7, 3.2] has error 936: key \"net\" not found"
+    },
+    {
+      "Housings_QFP:TQFP-44_10x10mm_Pitch0.8mm at [129.88, 114.24]": "pad 11 smd rect at [-5.7, 4] has error 937: key \"net\" not found"
+    },
+    {
+      "Housings_QFP:TQFP-44_10x10mm_Pitch0.8mm at [129.88, 114.24]": "pad 12 smd rect at [-4, 5.7] has error 938: key \"net\" not found"
+    },
+    {
+      "Housings_QFP:TQFP-44_10x10mm_Pitch0.8mm at [129.88, 114.24]": "pad 13 smd rect at [-3.2, 5.7] has error 939: key \"net\" not found"
+    },
+    {
+      "Housings_QFP:TQFP-44_10x10mm_Pitch0.8mm at [129.88, 114.24]": "pad 14 smd rect at [-2.4, 5.7] has error 940: key \"net\" not found"
+    },
+    {
+      "Housings_QFP:TQFP-44_10x10mm_Pitch0.8mm at [129.88, 114.24]": "pad 15 smd rect at [-1.6, 5.7] has error 941: key \"net\" not found"
+    },
+    {
+      "Housings_QFP:TQFP-44_10x10mm_Pitch0.8mm at [129.88, 114.24]": "pad 19 smd rect at [1.6, 5.7] has error 948: key \"net\" not found"
+    },
+    {
+      "Housings_QFP:TQFP-44_10x10mm_Pitch0.8mm at [129.88, 114.24]": "pad 20 smd rect at [2.4, 5.7] has error 949: key \"net\" not found"
+    },
+    {
+      "Housings_QFP:TQFP-44_10x10mm_Pitch0.8mm at [129.88, 114.24]": "pad 21 smd rect at [3.2, 5.7] has error 950: key \"net\" not found"
+    },
+    {
+      "Housings_QFP:TQFP-44_10x10mm_Pitch0.8mm at [129.88, 114.24]": "pad 22 smd rect at [4, 5.7] has error 951: key \"net\" not found"
+    },
+    {
+      "Housings_QFP:TQFP-44_10x10mm_Pitch0.8mm at [129.88, 114.24]": "pad 23 smd rect at [5.7, 4] has error 952: key \"net\" not found"
+    },
+    {
+      "Housings_QFP:TQFP-44_10x10mm_Pitch0.8mm at [129.88, 114.24]": "pad 24 smd rect at [5.7, 3.2] has error 953: key \"net\" not found"
+    },
+    {
+      "Housings_QFP:TQFP-44_10x10mm_Pitch0.8mm at [129.88, 114.24]": "pad 25 smd rect at [5.7, 2.4] has error 954: key \"net\" not found"
+    },
+    {
+      "Housings_QFP:TQFP-44_10x10mm_Pitch0.8mm at [129.88, 114.24]": "pad 26 smd rect at [5.7, 1.6] has error 955: key \"net\" not found"
+    },
+    {
+      "Housings_QFP:TQFP-44_10x10mm_Pitch0.8mm at [129.88, 114.24]": "pad 27 smd rect at [5.7, 0.8] has error 956: key \"net\" not found"
+    },
+    {
+      "Housings_QFP:TQFP-44_10x10mm_Pitch0.8mm at [129.88, 114.24]": "pad 32 smd rect at [5.7, -3.2] has error 965: key \"net\" not found"
+    },
+    {
+      "Housings_QFP:TQFP-44_10x10mm_Pitch0.8mm at [129.88, 114.24]": "pad 33 smd rect at [5.7, -4] has error 966: key \"net\" not found"
+    },
+    {
+      "Housings_QFP:TQFP-44_10x10mm_Pitch0.8mm at [129.88, 114.24]": "pad 34 smd rect at [4, -5.7] has error 967: key \"net\" not found"
+    },
+    {
+      "Housings_QFP:TQFP-44_10x10mm_Pitch0.8mm at [129.88, 114.24]": "pad 35 smd rect at [3.2, -5.7] has error 968: key \"net\" not found"
+    },
+    {
+      "Housings_QFP:TQFP-44_10x10mm_Pitch0.8mm at [129.88, 114.24]": "pad 36 smd rect at [2.4, -5.7] has error 969: key \"net\" not found"
+    },
+    {
+      "Housings_QFP:TQFP-44_10x10mm_Pitch0.8mm at [129.88, 114.24]": "pad 37 smd rect at [1.6, -5.7] has error 970: key \"net\" not found"
+    },
+    {
+      "Housings_QFP:TQFP-44_10x10mm_Pitch0.8mm at [129.88, 114.24]": "pad 38 smd rect at [0.8, -5.7] has error 971: key \"net\" not found"
+    },
+    {
+      "Housings_QFP:TQFP-44_10x10mm_Pitch0.8mm at [129.88, 114.24]": "pad 43 smd rect at [-3.2, -5.7] has error 980: key \"net\" not found"
+    },
+    {
+      "Housings_QFP:TQFP-44_10x10mm_Pitch0.8mm at [129.88, 114.24]": "pad 44 smd rect at [-4, -5.7] has error 981: key \"net\" not found"
+    }
+  ]
+}

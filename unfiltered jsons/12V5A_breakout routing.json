@@ -1,0 +1,332 @@
+{
+  "board_settings": {},
+  "net classes": {},
+  "net routes": {
+    "0": {
+      "name": "",
+      "class": "TODO",
+      "pads": [],
+      "tracks": {
+        "segments": [],
+        "arcs": ["TODO: extract arc info. Most samples don't have arcs to help test :("],
+        "vias": ["TODO: are vias necessary for our routing interests?"]
+      },
+      "errors": []
+    },
+    "1": {
+      "name": "GND",
+      "class": "TODO",
+      "pads": [
+        {
+          "Connector_JST:JST_XH_B2B-XH-A_1x02_P2.50mm_Vertical pad 1": {
+            "abs_pos": [109, 51]
+          }
+        },
+        {
+          "LED_THT:LED_D3.0mm pad 1": {
+            "abs_pos": [85.5, 43.0]
+          }
+        },
+        {
+          "Connector_JST:JST_XH_B2B-XH-A_1x02_P2.50mm_Vertical pad 1": {
+            "abs_pos": [119, 71]
+          }
+        },
+        {
+          "Connector_JST:JST_XH_B2B-XH-A_1x02_P2.50mm_Vertical pad 1": {
+            "abs_pos": [119, 61]
+          }
+        },
+        {
+          "Connector_JST:JST_XH_B2B-XH-A_1x02_P2.50mm_Vertical pad 1": {
+            "abs_pos": [119, 51]
+          }
+        },
+        {
+          "Connector_JST:JST_XH_B2B-XH-A_1x02_P2.50mm_Vertical pad 1": {
+            "abs_pos": [109, 71]
+          }
+        },
+        {
+          "Connector_JST:JST_XH_B2B-XH-A_1x02_P2.50mm_Vertical pad 1": {
+            "abs_pos": [109, 61]
+          }
+        },
+        {
+          "Connector_JST:JST_XH_B2B-XH-A_1x02_P2.50mm_Vertical pad 1": {
+            "abs_pos": [99, 71]
+          }
+        },
+        {
+          "Connector_JST:JST_XH_B2B-XH-A_1x02_P2.50mm_Vertical pad 1": {
+            "abs_pos": [99, 61]
+          }
+        },
+        {
+          "Connector_JST:JST_XH_B2B-XH-A_1x02_P2.50mm_Vertical pad 1": {
+            "abs_pos": [99, 51]
+          }
+        },
+        {
+          "Connector_BarrelJack:BarrelJack_Horizontal pad 3": {
+            "abs_pos": [87.0, 57.2]
+          }
+        },
+        {
+          "Connector_BarrelJack:BarrelJack_Horizontal pad 2": {
+            "abs_pos": [84.0, 52.5]
+          }
+        }
+      ],
+      "tracks": {
+        "segments": [],
+        "arcs": ["TODO: extract arc info. Most samples don't have arcs to help test :("],
+        "vias": ["TODO: are vias necessary for our routing interests?"]
+      },
+      "errors": []
+    },
+    "2": {
+      "name": "+12V",
+      "class": "TODO",
+      "pads": [
+        {
+          "Connector_JST:JST_XH_B2B-XH-A_1x02_P2.50mm_Vertical pad 2": {
+            "abs_pos": [111.5, 51.0]
+          }
+        },
+        {
+          "Resistor_THT:R_Box_L13.0mm_W4.0mm_P9.00mm pad 1": {
+            "abs_pos": [102, 43]
+          }
+        },
+        {
+          "Connector_JST:JST_XH_B2B-XH-A_1x02_P2.50mm_Vertical pad 2": {
+            "abs_pos": [121.5, 71.0]
+          }
+        },
+        {
+          "Connector_JST:JST_XH_B2B-XH-A_1x02_P2.50mm_Vertical pad 2": {
+            "abs_pos": [121.5, 61.0]
+          }
+        },
+        {
+          "Connector_JST:JST_XH_B2B-XH-A_1x02_P2.50mm_Vertical pad 2": {
+            "abs_pos": [121.5, 51.0]
+          }
+        },
+        {
+          "Connector_JST:JST_XH_B2B-XH-A_1x02_P2.50mm_Vertical pad 2": {
+            "abs_pos": [111.5, 71.0]
+          }
+        },
+        {
+          "Connector_JST:JST_XH_B2B-XH-A_1x02_P2.50mm_Vertical pad 2": {
+            "abs_pos": [111.5, 61.0]
+          }
+        },
+        {
+          "Connector_JST:JST_XH_B2B-XH-A_1x02_P2.50mm_Vertical pad 2": {
+            "abs_pos": [101.5, 71.0]
+          }
+        },
+        {
+          "Connector_JST:JST_XH_B2B-XH-A_1x02_P2.50mm_Vertical pad 2": {
+            "abs_pos": [101.5, 61.0]
+          }
+        },
+        {
+          "Connector_JST:JST_XH_B2B-XH-A_1x02_P2.50mm_Vertical pad 2": {
+            "abs_pos": [101.5, 51.0]
+          }
+        },
+        {
+          "Connector_BarrelJack:BarrelJack_Horizontal pad 1": {
+            "abs_pos": [90.0, 52.5]
+          }
+        }
+      ],
+      "tracks": {
+        "segments": [
+          {
+            "start": [91.5, 53.5],
+            "end": [93, 55],
+            "width": 1.25,
+            "layer": "F.Cu"
+          },
+          {
+            "start": [94.5, 63.5],
+            "end": [93, 62],
+            "width": 1.25,
+            "layer": "F.Cu"
+          },
+          {
+            "start": [94.5, 63.5],
+            "end": [93, 65],
+            "width": 1.25,
+            "layer": "F.Cu"
+          },
+          {
+            "start": [93, 55],
+            "end": [94.5, 53.5],
+            "width": 1.25,
+            "layer": "F.Cu"
+          },
+          {
+            "start": [100.585787, 43],
+            "end": [102, 43],
+            "width": 1.5,
+            "layer": "F.Cu"
+          },
+          {
+            "start": [97.5, 43],
+            "end": [100.585787, 43],
+            "width": 1.5,
+            "layer": "F.Cu"
+          },
+          {
+            "start": [90, 50.5],
+            "end": [97.5, 43],
+            "width": 1.5,
+            "layer": "F.Cu"
+          },
+          {
+            "start": [90, 52.5],
+            "end": [90, 50.5],
+            "width": 1.5,
+            "layer": "F.Cu"
+          },
+          {
+            "start": [109, 53.5],
+            "end": [119, 53.5],
+            "width": 1.5,
+            "layer": "F.Cu"
+          },
+          {
+            "start": [109, 73.5],
+            "end": [119, 73.5],
+            "width": 1.5,
+            "layer": "F.Cu"
+          },
+          {
+            "start": [93, 53.5],
+            "end": [93, 63.5],
+            "width": 1.5,
+            "layer": "F.Cu"
+          },
+          {
+            "start": [109, 63.5],
+            "end": [119, 63.5],
+            "width": 1.5,
+            "layer": "F.Cu"
+          },
+          {
+            "start": [92, 52.5],
+            "end": [90, 52.5],
+            "width": 1.25,
+            "layer": "F.Cu"
+          },
+          {
+            "start": [93, 53.5],
+            "end": [92, 52.5],
+            "width": 1.25,
+            "layer": "F.Cu"
+          },
+          {
+            "start": [99, 63.5],
+            "end": [93, 63.5],
+            "width": 1.5,
+            "layer": "F.Cu"
+          },
+          {
+            "start": [99, 63.5],
+            "end": [109, 63.5],
+            "width": 1.5,
+            "layer": "F.Cu"
+          },
+          {
+            "start": [96, 73.5],
+            "end": [99, 73.5],
+            "width": 1.5,
+            "layer": "F.Cu"
+          },
+          {
+            "start": [93, 63.5],
+            "end": [93, 70.5],
+            "width": 1.5,
+            "layer": "F.Cu"
+          },
+          {
+            "start": [93, 70.5],
+            "end": [96, 73.5],
+            "width": 1.5,
+            "layer": "F.Cu"
+          },
+          {
+            "start": [99, 73.5],
+            "end": [109, 73.5],
+            "width": 1.5,
+            "layer": "F.Cu"
+          },
+          {
+            "start": [99, 53.5],
+            "end": [109, 53.5],
+            "width": 1.5,
+            "layer": "F.Cu"
+          },
+          {
+            "start": [93, 53.5],
+            "end": [99, 53.5],
+            "width": 1.5,
+            "layer": "F.Cu"
+          }
+        ],
+        "arcs": ["TODO: extract arc info. Most samples don't have arcs to help test :("],
+        "vias": ["TODO: are vias necessary for our routing interests?"]
+      },
+      "errors": []
+    },
+    "3": {
+      "name": "Net-(D1-Pad2)",
+      "class": "TODO",
+      "pads": [
+        {
+          "Resistor_THT:R_Box_L13.0mm_W4.0mm_P9.00mm pad 2": {
+            "abs_pos": [111, 43]
+          }
+        },
+        {
+          "LED_THT:LED_D3.0mm pad 2": {
+            "abs_pos": [88.04, 43.0]
+          }
+        }
+      ],
+      "tracks": {
+        "segments": [
+          {
+            "start": [93, 43],
+            "end": [88.04, 43],
+            "width": 1,
+            "layer": "F.Cu"
+          }
+        ],
+        "arcs": ["TODO: extract arc info. Most samples don't have arcs to help test :("],
+        "vias": ["TODO: are vias necessary for our routing interests?"]
+      },
+      "errors": []
+    }
+  },
+  "errors": [
+    {
+      "MountingHole:MountingHole_3.2mm_M3_DIN965 at [120, 81.5]": "pad 1 np_thru_hole circle at [0, 0] has error 703: key \"net\" not found"
+    },
+    {
+      "MountingHole:MountingHole_3.2mm_M3_DIN965 at [78.5, 81.5]": "pad 1 np_thru_hole circle at [0, 0] has error 722: key \"net\" not found"
+    },
+    {
+      "MountingHole:MountingHole_3.2mm_M3_DIN965 at [78.5, 43]": "pad 1 np_thru_hole circle at [0, 0] has error 741: key \"net\" not found"
+    },
+    {
+      "MountingHole:MountingHole_3.2mm_M3_DIN965 at [120, 43]": "pad 1 np_thru_hole circle at [0, 0] has error 760: key \"net\" not found"
+    }
+  ]
+}

@@ -1,0 +1,2627 @@
+{
+  "board_settings": {},
+  "net classes": {},
+  "net routes": {
+    "0": {
+      "name": "",
+      "class": "TODO",
+      "pads": [],
+      "tracks": {
+        "segments": [],
+        "arcs": ["TODO: extract arc info. Most samples don't have arcs to help test :("],
+        "vias": ["TODO: are vias necessary for our routing interests?"]
+      },
+      "errors": []
+    },
+    "1": {
+      "name": "/ARDUINO_DIRECTION_PORT",
+      "class": "TODO",
+      "pads": [
+        {
+          "arduino:Arduino_shield_dynamixel pad 2": {
+            "abs_pos": [118.364, 56.388000000000005]
+          }
+        },
+        {
+          "Pin_Headers:Pin_Header_Straight_1x04 pad 1": {
+            "abs_pos": [104.648, 65.024]
+          }
+        },
+        {
+          "Pin_Headers:Pin_Header_Straight_1x04 pad 4": {
+            "abs_pos": [104.648, 72.644]
+          }
+        }
+      ],
+      "tracks": {
+        "segments": [
+          {
+            "start": [118.364, 56.388],
+            "end": [118.364, 57.658],
+            "width": 0.25,
+            "layer": "F.Cu"
+          },
+          {
+            "start": [106.934, 65.024],
+            "end": [104.648, 65.024],
+            "width": 0.25,
+            "layer": "F.Cu"
+          },
+          {
+            "start": [113.03, 58.928],
+            "end": [106.934, 65.024],
+            "width": 0.25,
+            "layer": "F.Cu"
+          },
+          {
+            "start": [117.094, 58.928],
+            "end": [113.03, 58.928],
+            "width": 0.25,
+            "layer": "F.Cu"
+          },
+          {
+            "start": [118.364, 57.658],
+            "end": [117.094, 58.928],
+            "width": 0.25,
+            "layer": "F.Cu"
+          },
+          {
+            "start": [104.648, 63.246],
+            "end": [104.648, 65.024],
+            "width": 0.25,
+            "layer": "F.Cu"
+          },
+          {
+            "start": [97.028, 65.024],
+            "end": [97.028, 62.992],
+            "width": 0.25,
+            "layer": "B.Cu"
+          },
+          {
+            "start": [104.648, 63.246],
+            "end": [104.648, 65.024],
+            "width": 0.25,
+            "layer": "F.Cu"
+          },
+          {
+            "start": [103.378, 61.976],
+            "end": [104.648, 63.246],
+            "width": 0.25,
+            "layer": "F.Cu"
+          },
+          {
+            "start": [100.838, 61.976],
+            "end": [103.378, 61.976],
+            "width": 0.25,
+            "layer": "F.Cu"
+          },
+          {
+            "start": [98.044, 61.976],
+            "end": [100.838, 61.976],
+            "width": 0.25,
+            "layer": "B.Cu"
+          },
+          {
+            "start": [97.028, 62.992],
+            "end": [98.044, 61.976],
+            "width": 0.25,
+            "layer": "B.Cu"
+          }
+        ],
+        "arcs": ["TODO: extract arc info. Most samples don't have arcs to help test :("],
+        "vias": ["TODO: are vias necessary for our routing interests?"]
+      },
+      "errors": []
+    },
+    "2": {
+      "name": "/DIRECTION_PORT",
+      "class": "TODO",
+      "pads": [
+        {
+          "Pin_Headers:Pin_Header_Straight_1x04 pad 2": {
+            "abs_pos": [104.648, 67.56400000000001]
+          }
+        },
+        {
+          "Pin_Headers:Pin_Header_Straight_1x04 pad 3": {
+            "abs_pos": [104.648, 70.104]
+          }
+        },
+        {
+          "Pin_Headers:Pin_Header_Angled_1x03 pad 3": {
+            "abs_pos": [117.856, 68.072]
+          }
+        },
+        {
+          "TO_SOT_Packages_SMD:SOT-353 pad 1": {
+            "abs_pos": [85.598, 65.151]
+          }
+        },
+        {
+          "TO_SOT_Packages_SMD:SOT-353 pad 1": {
+            "abs_pos": [85.598, 70.104]
+          }
+        },
+        {
+          "Resistors_SMD:R_0603_HandSoldering pad 1": {
+            "abs_pos": [80.307, 70.104]
+          }
+        },
+        {
+          "Resistors_SMD:R_0603_HandSoldering pad 2": {
+            "abs_pos": [91.905, 66.675]
+          }
+        }
+      ],
+      "tracks": {
+        "segments": [
+          {
+            "start": [85.598, 70.104],
+            "end": [82.507, 70.104],
+            "width": 0.25,
+            "layer": "F.Cu"
+          },
+          {
+            "start": [89.705, 66.675],
+            "end": [89.154, 66.675],
+            "width": 0.25,
+            "layer": "F.Cu"
+          },
+          {
+            "start": [89.154, 66.675],
+            "end": [88.9, 66.421],
+            "width": 0.25,
+            "layer": "F.Cu"
+          },
+          {
+            "start": [88.9, 66.421],
+            "end": [87.63, 66.421],
+            "width": 0.25,
+            "layer": "F.Cu"
+          },
+          {
+            "start": [99.568, 65.024],
+            "end": [99.568, 63.373],
+            "width": 0.25,
+            "layer": "F.Cu"
+          },
+          {
+            "start": [86.614, 66.04],
+            "end": [86.995, 66.421],
+            "width": 0.25,
+            "layer": "F.Cu"
+          },
+          {
+            "start": [86.614, 63.119],
+            "end": [86.614, 66.04],
+            "width": 0.25,
+            "layer": "F.Cu"
+          },
+          {
+            "start": [88.392, 61.341],
+            "end": [86.614, 63.119],
+            "width": 0.25,
+            "layer": "F.Cu"
+          },
+          {
+            "start": [97.536, 61.341],
+            "end": [88.392, 61.341],
+            "width": 0.25,
+            "layer": "F.Cu"
+          },
+          {
+            "start": [99.568, 63.373],
+            "end": [97.536, 61.341],
+            "width": 0.25,
+            "layer": "F.Cu"
+          },
+          {
+            "start": [86.995, 66.421],
+            "end": [87.63, 66.421],
+            "width": 0.25,
+            "layer": "F.Cu"
+          },
+          {
+            "start": [87.63, 66.421],
+            "end": [86.995, 66.421],
+            "width": 0.25,
+            "layer": "F.Cu"
+          },
+          {
+            "start": [85.979, 70.104],
+            "end": [85.598, 70.104],
+            "width": 0.25,
+            "layer": "F.Cu"
+          },
+          {
+            "start": [86.995, 66.421],
+            "end": [86.487, 66.929],
+            "width": 0.25,
+            "layer": "F.Cu"
+          },
+          {
+            "start": [86.487, 66.929],
+            "end": [86.487, 69.723],
+            "width": 0.25,
+            "layer": "F.Cu"
+          },
+          {
+            "start": [86.487, 69.723],
+            "end": [86.106, 70.104],
+            "width": 0.25,
+            "layer": "F.Cu"
+          },
+          {
+            "start": [86.106, 70.104],
+            "end": [85.979, 70.104],
+            "width": 0.25,
+            "layer": "F.Cu"
+          },
+          {
+            "start": [117.856, 68.072],
+            "end": [119.126, 68.072],
+            "width": 0.25,
+            "layer": "B.Cu"
+          },
+          {
+            "start": [102.108, 63.5],
+            "end": [102.108, 65.024],
+            "width": 0.25,
+            "layer": "B.Cu"
+          },
+          {
+            "start": [103.632, 61.976],
+            "end": [102.108, 63.5],
+            "width": 0.25,
+            "layer": "B.Cu"
+          },
+          {
+            "start": [114.681, 61.976],
+            "end": [103.632, 61.976],
+            "width": 0.25,
+            "layer": "B.Cu"
+          },
+          {
+            "start": [116.205, 60.452],
+            "end": [114.681, 61.976],
+            "width": 0.25,
+            "layer": "B.Cu"
+          },
+          {
+            "start": [118.745, 60.452],
+            "end": [116.205, 60.452],
+            "width": 0.25,
+            "layer": "B.Cu"
+          },
+          {
+            "start": [120.015, 61.722],
+            "end": [118.745, 60.452],
+            "width": 0.25,
+            "layer": "B.Cu"
+          },
+          {
+            "start": [120.015, 67.183],
+            "end": [120.015, 61.722],
+            "width": 0.25,
+            "layer": "B.Cu"
+          },
+          {
+            "start": [119.126, 68.072],
+            "end": [120.015, 67.183],
+            "width": 0.25,
+            "layer": "B.Cu"
+          },
+          {
+            "start": [102.108, 65.024],
+            "end": [102.108, 64.516],
+            "width": 0.25,
+            "layer": "B.Cu"
+          },
+          {
+            "start": [99.568, 65.024],
+            "end": [102.108, 65.024],
+            "width": 0.25,
+            "layer": "F.Cu"
+          }
+        ],
+        "arcs": ["TODO: extract arc info. Most samples don't have arcs to help test :("],
+        "vias": ["TODO: are vias necessary for our routing interests?"]
+      },
+      "errors": []
+    },
+    "3": {
+      "name": "/HW_TXD",
+      "class": "TODO",
+      "pads": [
+        {
+          "arduino:Arduino_shield_dynamixel pad 1": {
+            "abs_pos": [120.904, 56.388000000000005]
+          }
+        },
+        {
+          "Pin_Headers:Pin_Header_Straight_1x04 pad 1": {
+            "abs_pos": [104.648, 67.564]
+          }
+        }
+      ],
+      "tracks": {
+        "segments": [
+          {
+            "start": [120.904, 56.388],
+            "end": [120.904, 57.658],
+            "width": 0.25,
+            "layer": "F.Cu"
+          },
+          {
+            "start": [105.918, 67.564],
+            "end": [104.648, 67.564],
+            "width": 0.25,
+            "layer": "F.Cu"
+          },
+          {
+            "start": [113.792, 59.69],
+            "end": [105.918, 67.564],
+            "width": 0.25,
+            "layer": "F.Cu"
+          },
+          {
+            "start": [118.872, 59.69],
+            "end": [113.792, 59.69],
+            "width": 0.25,
+            "layer": "F.Cu"
+          },
+          {
+            "start": [120.904, 57.658],
+            "end": [118.872, 59.69],
+            "width": 0.25,
+            "layer": "F.Cu"
+          }
+        ],
+        "arcs": ["TODO: extract arc info. Most samples don't have arcs to help test :("],
+        "vias": ["TODO: are vias necessary for our routing interests?"]
+      },
+      "errors": []
+    },
+    "4": {
+      "name": "/TXD",
+      "class": "TODO",
+      "pads": [
+        {
+          "Pin_Headers:Pin_Header_Straight_1x04 pad 2": {
+            "abs_pos": [104.648, 70.104]
+          }
+        },
+        {
+          "Pin_Headers:Pin_Header_Straight_1x04 pad 3": {
+            "abs_pos": [104.648, 72.64399999999999]
+          }
+        },
+        {
+          "Pin_Headers:Pin_Header_Angled_1x03 pad 2": {
+            "abs_pos": [117.856, 65.532]
+          }
+        },
+        {
+          "TO_SOT_Packages_SMD:SOT-353 pad 2": {
+            "abs_pos": [85.598, 65.786]
+          }
+        },
+        {
+          "Resistors_SMD:R_0603_HandSoldering pad 2": {
+            "abs_pos": [91.905, 63.754]
+          }
+        }
+      ],
+      "tracks": {
+        "segments": [
+          {
+            "start": [99.568, 67.564],
+            "end": [99.441, 67.564],
+            "width": 0.25,
+            "layer": "F.Cu"
+          },
+          {
+            "start": [99.441, 67.564],
+            "end": [98.298, 66.421],
+            "width": 0.25,
+            "layer": "F.Cu"
+          },
+          {
+            "start": [89.705, 63.076],
+            "end": [89.705, 63.754],
+            "width": 0.25,
+            "layer": "F.Cu"
+          },
+          {
+            "start": [90.297, 62.484],
+            "end": [89.705, 63.076],
+            "width": 0.25,
+            "layer": "F.Cu"
+          },
+          {
+            "start": [97.028, 62.484],
+            "end": [90.297, 62.484],
+            "width": 0.25,
+            "layer": "F.Cu"
+          },
+          {
+            "start": [98.298, 63.754],
+            "end": [97.028, 62.484],
+            "width": 0.25,
+            "layer": "F.Cu"
+          },
+          {
+            "start": [98.298, 66.421],
+            "end": [98.298, 63.754],
+            "width": 0.25,
+            "layer": "F.Cu"
+          },
+          {
+            "start": [87.63, 65.786],
+            "end": [88.519, 65.786],
+            "width": 0.25,
+            "layer": "F.Cu"
+          },
+          {
+            "start": [89.705, 64.6],
+            "end": [89.705, 63.754],
+            "width": 0.25,
+            "layer": "F.Cu"
+          },
+          {
+            "start": [88.519, 65.786],
+            "end": [89.705, 64.6],
+            "width": 0.25,
+            "layer": "F.Cu"
+          },
+          {
+            "start": [117.856, 65.532],
+            "end": [116.332, 65.532],
+            "width": 0.25,
+            "layer": "B.Cu"
+          },
+          {
+            "start": [103.378, 68.834],
+            "end": [102.108, 67.564],
+            "width": 0.25,
+            "layer": "B.Cu"
+          },
+          {
+            "start": [103.378, 71.374],
+            "end": [103.378, 68.834],
+            "width": 0.25,
+            "layer": "B.Cu"
+          },
+          {
+            "start": [104.648, 72.644],
+            "end": [103.378, 71.374],
+            "width": 0.25,
+            "layer": "B.Cu"
+          },
+          {
+            "start": [109.22, 72.644],
+            "end": [104.648, 72.644],
+            "width": 0.25,
+            "layer": "B.Cu"
+          },
+          {
+            "start": [116.332, 65.532],
+            "end": [109.22, 72.644],
+            "width": 0.25,
+            "layer": "B.Cu"
+          },
+          {
+            "start": [102.108, 67.564],
+            "end": [102.108, 67.818],
+            "width": 0.25,
+            "layer": "B.Cu"
+          },
+          {
+            "start": [99.568, 67.564],
+            "end": [102.108, 67.564],
+            "width": 0.25,
+            "layer": "F.Cu"
+          }
+        ],
+        "arcs": ["TODO: extract arc info. Most samples don't have arcs to help test :("],
+        "vias": ["TODO: are vias necessary for our routing interests?"]
+      },
+      "errors": []
+    },
+    "5": {
+      "name": "/SW_TXD",
+      "class": "TODO",
+      "pads": [
+        {
+          "arduino:Arduino_shield_dynamixel pad 4": {
+            "abs_pos": [113.284, 56.388000000000005]
+          }
+        },
+        {
+          "Pin_Headers:Pin_Header_Straight_1x04 pad 4": {
+            "abs_pos": [104.648, 75.184]
+          }
+        }
+      ],
+      "tracks": {
+        "segments": [
+          {
+            "start": [97.028, 67.564],
+            "end": [95.631, 67.564],
+            "width": 0.25,
+            "layer": "F.Cu"
+          },
+          {
+            "start": [113.284, 58.166],
+            "end": [113.284, 56.388],
+            "width": 0.25,
+            "layer": "B.Cu"
+          },
+          {
+            "start": [112.141, 59.309],
+            "end": [113.284, 58.166],
+            "width": 0.25,
+            "layer": "B.Cu"
+          },
+          {
+            "start": [95.25, 59.309],
+            "end": [112.141, 59.309],
+            "width": 0.25,
+            "layer": "B.Cu"
+          },
+          {
+            "start": [93.726, 60.833],
+            "end": [95.25, 59.309],
+            "width": 0.25,
+            "layer": "B.Cu"
+          },
+          {
+            "start": [93.726, 65.659],
+            "end": [93.726, 60.833],
+            "width": 0.25,
+            "layer": "B.Cu"
+          },
+          {
+            "start": [95.631, 67.564],
+            "end": [93.726, 65.659],
+            "width": 0.25,
+            "layer": "F.Cu"
+          }
+        ],
+        "arcs": ["TODO: extract arc info. Most samples don't have arcs to help test :("],
+        "vias": ["TODO: are vias necessary for our routing interests?"]
+      },
+      "errors": []
+    },
+    "6": {
+      "name": "/HW_RXD",
+      "class": "TODO",
+      "pads": [
+        {
+          "arduino:Arduino_shield_dynamixel pad 0": {
+            "abs_pos": [123.444, 56.388000000000005]
+          }
+        },
+        {
+          "Pin_Headers:Pin_Header_Straight_1x04 pad 1": {
+            "abs_pos": [104.648, 70.104]
+          }
+        }
+      ],
+      "tracks": {
+        "segments": [
+          {
+            "start": [123.444, 56.388],
+            "end": [123.444, 57.658],
+            "width": 0.25,
+            "layer": "F.Cu"
+          },
+          {
+            "start": [105.664, 70.104],
+            "end": [104.648, 70.104],
+            "width": 0.25,
+            "layer": "F.Cu"
+          },
+          {
+            "start": [106.426, 69.342],
+            "end": [105.664, 70.104],
+            "width": 0.25,
+            "layer": "F.Cu"
+          },
+          {
+            "start": [106.426, 68.58],
+            "end": [106.426, 69.342],
+            "width": 0.25,
+            "layer": "F.Cu"
+          },
+          {
+            "start": [114.554, 60.452],
+            "end": [106.426, 68.58],
+            "width": 0.25,
+            "layer": "F.Cu"
+          },
+          {
+            "start": [120.65, 60.452],
+            "end": [114.554, 60.452],
+            "width": 0.25,
+            "layer": "F.Cu"
+          },
+          {
+            "start": [123.444, 57.658],
+            "end": [120.65, 60.452],
+            "width": 0.25,
+            "layer": "F.Cu"
+          }
+        ],
+        "arcs": ["TODO: extract arc info. Most samples don't have arcs to help test :("],
+        "vias": ["TODO: are vias necessary for our routing interests?"]
+      },
+      "errors": []
+    },
+    "7": {
+      "name": "/RXD",
+      "class": "TODO",
+      "pads": [
+        {
+          "Pin_Headers:Pin_Header_Straight_1x04 pad 2": {
+            "abs_pos": [104.648, 72.644]
+          }
+        },
+        {
+          "Pin_Headers:Pin_Header_Straight_1x04 pad 3": {
+            "abs_pos": [104.648, 75.184]
+          }
+        },
+        {
+          "Pin_Headers:Pin_Header_Angled_1x03 pad 1": {
+            "abs_pos": [117.856, 62.992]
+          }
+        },
+        {
+          "Resistors_SMD:R_0603_HandSoldering pad 2": {
+            "abs_pos": [91.905, 72.517]
+          }
+        }
+      ],
+      "tracks": {
+        "segments": [
+          {
+            "start": [91.905, 72.517],
+            "end": [98.552, 72.517],
+            "width": 0.25,
+            "layer": "F.Cu"
+          },
+          {
+            "start": [99.568, 71.501],
+            "end": [99.568, 70.104],
+            "width": 0.25,
+            "layer": "F.Cu"
+          },
+          {
+            "start": [98.552, 72.517],
+            "end": [99.568, 71.501],
+            "width": 0.25,
+            "layer": "F.Cu"
+          },
+          {
+            "start": [117.856, 62.992],
+            "end": [116.078, 62.992],
+            "width": 0.25,
+            "layer": "F.Cu"
+          },
+          {
+            "start": [102.108, 71.374],
+            "end": [102.108, 70.104],
+            "width": 0.25,
+            "layer": "F.Cu"
+          },
+          {
+            "start": [103.378, 72.644],
+            "end": [102.108, 71.374],
+            "width": 0.25,
+            "layer": "F.Cu"
+          },
+          {
+            "start": [106.426, 72.644],
+            "end": [103.378, 72.644],
+            "width": 0.25,
+            "layer": "F.Cu"
+          },
+          {
+            "start": [116.078, 62.992],
+            "end": [106.426, 72.644],
+            "width": 0.25,
+            "layer": "F.Cu"
+          },
+          {
+            "start": [102.108, 70.104],
+            "end": [102.108, 71.12],
+            "width": 0.25,
+            "layer": "F.Cu"
+          },
+          {
+            "start": [99.568, 70.104],
+            "end": [102.108, 70.104],
+            "width": 0.25,
+            "layer": "F.Cu"
+          }
+        ],
+        "arcs": ["TODO: extract arc info. Most samples don't have arcs to help test :("],
+        "vias": ["TODO: are vias necessary for our routing interests?"]
+      },
+      "errors": []
+    },
+    "8": {
+      "name": "/SW_RXD",
+      "class": "TODO",
+      "pads": [
+        {
+          "arduino:Arduino_shield_dynamixel pad 3": {
+            "abs_pos": [115.82400000000001, 56.388000000000005]
+          }
+        },
+        {
+          "Pin_Headers:Pin_Header_Straight_1x04 pad 4": {
+            "abs_pos": [104.648, 77.724]
+          }
+        }
+      ],
+      "tracks": {
+        "segments": [
+          {
+            "start": [97.028, 70.104],
+            "end": [96.139, 70.104],
+            "width": 0.25,
+            "layer": "B.Cu"
+          },
+          {
+            "start": [115.824, 58.928],
+            "end": [115.824, 56.388],
+            "width": 0.25,
+            "layer": "B.Cu"
+          },
+          {
+            "start": [114.046, 60.706],
+            "end": [115.824, 58.928],
+            "width": 0.25,
+            "layer": "B.Cu"
+          },
+          {
+            "start": [96.266, 60.706],
+            "end": [114.046, 60.706],
+            "width": 0.25,
+            "layer": "B.Cu"
+          },
+          {
+            "start": [94.869, 62.103],
+            "end": [96.266, 60.706],
+            "width": 0.25,
+            "layer": "B.Cu"
+          },
+          {
+            "start": [94.869, 68.834],
+            "end": [94.869, 62.103],
+            "width": 0.25,
+            "layer": "B.Cu"
+          },
+          {
+            "start": [96.139, 70.104],
+            "end": [94.869, 68.834],
+            "width": 0.25,
+            "layer": "B.Cu"
+          }
+        ],
+        "arcs": ["TODO: extract arc info. Most samples don't have arcs to help test :("],
+        "vias": ["TODO: are vias necessary for our routing interests?"]
+      },
+      "errors": []
+    },
+    "9": {
+      "name": "+12V",
+      "class": "TODO",
+      "pads": [
+        {
+          "molex:Molex_spox_1x3_right pad 2": {
+            "abs_pos": [71.5, 74.0]
+          }
+        },
+        {
+          "Pin_Headers:Pin_Header_Straight_1x03 pad 1": {
+            "abs_pos": [108.204, 96.52]
+          }
+        },
+        {
+          "TO_SOT_Packages_SMD:TO-252-2Lead pad 1": {
+            "abs_pos": [82.042, 84.836]
+          }
+        },
+        {
+          "fuse:Fuseholder5x20_horiz_lateral pad 2": {
+            "abs_pos": [97.80000000000001, 91.48]
+          }
+        },
+        {
+          "fuse:Fuseholder5x20_horiz_lateral pad 2": {
+            "abs_pos": [97.80000000000001, 96.48]
+          }
+        },
+        {
+          "Resistors_SMD:R_0603_HandSoldering pad 1": {
+            "abs_pos": [81.70400000000001, 103.886]
+          }
+        },
+        {
+          "molex:Molex_spox_1x3_right pad 2": {
+            "abs_pos": [71.5, 62.5]
+          }
+        },
+        {
+          "molex:Molex_spox_1x3_right pad 2": {
+            "abs_pos": [120.904, 79.756]
+          }
+        },
+        {
+          "molex:Molex_spox_1x3_right pad 2": {
+            "abs_pos": [120.904, 90.932]
+          }
+        },
+        {
+          "molex:Molex_spox_1x3_straight pad 2": {
+            "abs_pos": [108.712, 85.852]
+          }
+        },
+        {
+          "molex:Molex_spox_1x3_straight pad 2": {
+            "abs_pos": [108.712, 77.724]
+          }
+        },
+        {
+          "Capacitors_SMD:CP_Elec_6.3x7.7 pad 1": {
+            "abs_pos": [87.88, 79.67]
+          }
+        },
+        {
+          "Capacitors_SMD:CP_Elec_6.3x7.7 pad 1": {
+            "abs_pos": [95.19, 85.17]
+          }
+        }
+      ],
+      "tracks": {
+        "segments": [
+          {
+            "start": [98.462, 76.962],
+            "end": [93.06, 76.962],
+            "width": 2.5,
+            "layer": "F.Cu"
+          },
+          {
+            "start": [93.06, 76.962],
+            "end": [76.451602, 76.962],
+            "width": 2.5,
+            "layer": "F.Cu"
+          },
+          {
+            "start": [93.052, 76.97],
+            "end": [93.06, 76.962],
+            "width": 0.25,
+            "layer": "F.Cu"
+          },
+          {
+            "start": [90.58, 76.97],
+            "end": [93.052, 76.97],
+            "width": 0.25,
+            "layer": "F.Cu"
+          },
+          {
+            "start": [100.59, 88.69],
+            "end": [100.59, 82.26],
+            "width": 2.5,
+            "layer": "F.Cu"
+          },
+          {
+            "start": [100.59, 82.26],
+            "end": [100.59, 79.09],
+            "width": 2.5,
+            "layer": "F.Cu"
+          },
+          {
+            "start": [100.59, 85.17],
+            "end": [100.59, 82.26],
+            "width": 0.25,
+            "layer": "F.Cu"
+          },
+          {
+            "start": [90.98, 89.47],
+            "end": [95.79, 89.47],
+            "width": 0.25,
+            "layer": "F.Cu"
+          },
+          {
+            "start": [95.79, 89.47],
+            "end": [97.8, 91.48],
+            "width": 0.25,
+            "layer": "F.Cu"
+          },
+          {
+            "start": [88.632, 87.122],
+            "end": [90.98, 89.47],
+            "width": 0.25,
+            "layer": "F.Cu"
+          },
+          {
+            "start": [84.328, 87.122],
+            "end": [88.632, 87.122],
+            "width": 0.25,
+            "layer": "F.Cu"
+          },
+          {
+            "start": [97.8, 91.48],
+            "end": [100.59, 88.69],
+            "width": 2.5,
+            "layer": "F.Cu"
+          },
+          {
+            "start": [100.59, 79.09],
+            "end": [98.462, 76.962],
+            "width": 2.5,
+            "layer": "F.Cu"
+          },
+          {
+            "start": [76.451602, 76.962],
+            "end": [73.489602, 74],
+            "width": 2.5,
+            "layer": "F.Cu"
+          },
+          {
+            "start": [73.489602, 74],
+            "end": [71.5, 74],
+            "width": 2.5,
+            "layer": "F.Cu"
+          },
+          {
+            "start": [71.5, 74],
+            "end": [68, 74],
+            "width": 2.5,
+            "layer": "F.Cu"
+          },
+          {
+            "start": [68, 74],
+            "end": [66, 72],
+            "width": 2.5,
+            "layer": "F.Cu"
+          },
+          {
+            "start": [66, 72],
+            "end": [66, 64.484],
+            "width": 2.5,
+            "layer": "F.Cu"
+          },
+          {
+            "start": [66, 64.484],
+            "end": [67.984, 62.5],
+            "width": 2.5,
+            "layer": "F.Cu"
+          },
+          {
+            "start": [67.984, 62.5],
+            "end": [71.5, 62.5],
+            "width": 2.5,
+            "layer": "F.Cu"
+          },
+          {
+            "start": [83.904, 103.886],
+            "end": [83.904, 102.532],
+            "width": 0.25,
+            "layer": "F.Cu"
+          },
+          {
+            "start": [97.8, 98.288],
+            "end": [97.8, 96.48],
+            "width": 0.25,
+            "layer": "F.Cu"
+          },
+          {
+            "start": [96.012, 100.076],
+            "end": [97.8, 98.288],
+            "width": 0.25,
+            "layer": "F.Cu"
+          },
+          {
+            "start": [86.36, 100.076],
+            "end": [96.012, 100.076],
+            "width": 0.25,
+            "layer": "F.Cu"
+          },
+          {
+            "start": [83.904, 102.532],
+            "end": [86.36, 100.076],
+            "width": 0.25,
+            "layer": "F.Cu"
+          },
+          {
+            "start": [97.8, 96.48],
+            "end": [108.164, 96.48],
+            "width": 2.5,
+            "layer": "F.Cu"
+          },
+          {
+            "start": [108.164, 96.48],
+            "end": [108.204, 96.52],
+            "width": 2.5,
+            "layer": "F.Cu"
+          },
+          {
+            "start": [97.8, 91.48],
+            "end": [97.8, 96.48],
+            "width": 2.5,
+            "layer": "F.Cu"
+          },
+          {
+            "start": [120.904, 79.756],
+            "end": [116.586, 79.756],
+            "width": 2.5,
+            "layer": "B.Cu"
+          },
+          {
+            "start": [114.554, 81.788],
+            "end": [108.712, 81.788],
+            "width": 2.5,
+            "layer": "B.Cu"
+          },
+          {
+            "start": [116.586, 79.756],
+            "end": [114.554, 81.788],
+            "width": 2.5,
+            "layer": "B.Cu"
+          },
+          {
+            "start": [108.712, 85.852],
+            "end": [108.712, 88.646],
+            "width": 2.5,
+            "layer": "B.Cu"
+          },
+          {
+            "start": [110.998, 90.932],
+            "end": [120.904, 90.932],
+            "width": 2.5,
+            "layer": "B.Cu"
+          },
+          {
+            "start": [108.712, 88.646],
+            "end": [110.998, 90.932],
+            "width": 2.5,
+            "layer": "B.Cu"
+          },
+          {
+            "start": [108.712, 85.852],
+            "end": [108.712, 81.788],
+            "width": 2.5,
+            "layer": "B.Cu"
+          },
+          {
+            "start": [108.712, 81.788],
+            "end": [108.712, 77.724],
+            "width": 2.5,
+            "layer": "B.Cu"
+          },
+          {
+            "start": [108.204, 96.52],
+            "end": [108.204, 92.71],
+            "width": 2.5,
+            "layer": "F.Cu"
+          },
+          {
+            "start": [108.712, 92.202],
+            "end": [108.712, 85.852],
+            "width": 2.5,
+            "layer": "F.Cu"
+          },
+          {
+            "start": [108.204, 92.71],
+            "end": [108.712, 92.202],
+            "width": 2.5,
+            "layer": "F.Cu"
+          }
+        ],
+        "arcs": ["TODO: extract arc info. Most samples don't have arcs to help test :("],
+        "vias": ["TODO: are vias necessary for our routing interests?"]
+      },
+      "errors": []
+    },
+    "10": {
+      "name": "/VIN",
+      "class": "TODO",
+      "pads": [
+        {
+          "arduino:Arduino_shield_dynamixel pad VIN": {
+            "abs_pos": [105.664, 104.648]
+          }
+        },
+        {
+          "Pin_Headers:Pin_Header_Straight_1x03 pad 2": {
+            "abs_pos": [108.204, 99.06]
+          }
+        }
+      ],
+      "tracks": {
+        "segments": [
+          {
+            "start": [110.744, 96.52],
+            "end": [110.744, 99.06],
+            "width": 1.5,
+            "layer": "F.Cu"
+          },
+          {
+            "start": [110.744, 99.06],
+            "end": [105.664, 104.14],
+            "width": 1.5,
+            "layer": "F.Cu"
+          },
+          {
+            "start": [105.664, 104.14],
+            "end": [105.664, 104.648],
+            "width": 1.5,
+            "layer": "F.Cu"
+          }
+        ],
+        "arcs": ["TODO: extract arc info. Most samples don't have arcs to help test :("],
+        "vias": ["TODO: are vias necessary for our routing interests?"]
+      },
+      "errors": []
+    },
+    "11": {
+      "name": "GND",
+      "class": "TODO",
+      "pads": [
+        {
+          "arduino:Arduino_shield_dynamixel pad GND": {
+            "abs_pos": [100.584, 104.648]
+          }
+        },
+        {
+          "arduino:Arduino_shield_dynamixel pad GND": {
+            "abs_pos": [103.124, 104.648]
+          }
+        },
+        {
+          "arduino:Arduino_shield_dynamixel pad GND": {
+            "abs_pos": [86.36, 56.388000000000005]
+          }
+        },
+        {
+          "molex:Molex_spox_1x3_right pad 1": {
+            "abs_pos": [69.0, 74.0]
+          }
+        },
+        {
+          "LEDs:LED_0603 pad 1": {
+            "abs_pos": [77.64, 103.886]
+          }
+        },
+        {
+          "TO_SOT_Packages_SMD:TO-252-2Lead pad 3": {
+            "abs_pos": [86.614, 84.836]
+          }
+        },
+        {
+          "TO_SOT_Packages_SMD:SOT-353 pad 3": {
+            "abs_pos": [85.598, 66.421]
+          }
+        },
+        {
+          "TO_SOT_Packages_SMD:SOT-353 pad 3": {
+            "abs_pos": [85.598, 71.37400000000001]
+          }
+        },
+        {
+          "molex:Molex_spox_1x3_right pad 1": {
+            "abs_pos": [69.0, 62.5]
+          }
+        },
+        {
+          "molex:Molex_spox_1x3_right pad 1": {
+            "abs_pos": [118.404, 79.756]
+          }
+        },
+        {
+          "molex:Molex_spox_1x3_right pad 1": {
+            "abs_pos": [118.404, 90.932]
+          }
+        },
+        {
+          "molex:Molex_spox_1x3_straight pad 1": {
+            "abs_pos": [106.212, 85.852]
+          }
+        },
+        {
+          "molex:Molex_spox_1x3_straight pad 1": {
+            "abs_pos": [106.212, 77.724]
+          }
+        },
+        {
+          "Resistors_SMD:R_0603_HandSoldering pad 2": {
+            "abs_pos": [82.50699999999999, 70.104]
+          }
+        },
+        {
+          "Capacitors_SMD:CP_Elec_6.3x7.7 pad 2": {
+            "abs_pos": [93.28, 79.67]
+          }
+        },
+        {
+          "Capacitors_SMD:CP_Elec_6.3x7.7 pad 2": {
+            "abs_pos": [100.59, 85.17]
+          }
+        }
+      ],
+      "tracks": {
+        "segments": [
+          {
+            "start": [95.19, 85.17],
+            "end": [95.19, 86.22],
+            "width": 0.25,
+            "layer": "F.Cu"
+          },
+          {
+            "start": [95.19, 86.22],
+            "end": [94.61, 86.8],
+            "width": 0.25,
+            "layer": "F.Cu"
+          },
+          {
+            "start": [94.61, 86.8],
+            "end": [93.91, 86.8],
+            "width": 0.25,
+            "layer": "F.Cu"
+          },
+          {
+            "start": [71.5, 65],
+            "end": [71.3476, 65],
+            "width": 0.25,
+            "layer": "F.Cu"
+          },
+          {
+            "start": [71.3476, 65],
+            "end": [68.87, 67.4776],
+            "width": 0.25,
+            "layer": "F.Cu"
+          },
+          {
+            "start": [68.87, 67.4776],
+            "end": [68.87, 68.16],
+            "width": 0.25,
+            "layer": "F.Cu"
+          },
+          {
+            "start": [88.604, 59.14],
+            "end": [102.82, 59.14],
+            "width": 0.25,
+            "layer": "F.Cu"
+          },
+          {
+            "start": [102.82, 59.14],
+            "end": [106.92, 63.24],
+            "width": 0.25,
+            "layer": "F.Cu"
+          },
+          {
+            "start": [86.36, 56.388],
+            "end": [86.36, 56.896],
+            "width": 0.25,
+            "layer": "F.Cu"
+          },
+          {
+            "start": [86.36, 56.896],
+            "end": [88.604, 59.14],
+            "width": 0.25,
+            "layer": "F.Cu"
+          },
+          {
+            "start": [71.5, 76.5],
+            "end": [71.5, 77.82],
+            "width": 0.25,
+            "layer": "F.Cu"
+          },
+          {
+            "start": [71.5, 77.82],
+            "end": [69.52, 79.8],
+            "width": 0.25,
+            "layer": "F.Cu"
+          },
+          {
+            "start": [90.58, 82.37],
+            "end": [91.63, 82.37],
+            "width": 0.25,
+            "layer": "F.Cu"
+          },
+          {
+            "start": [91.63, 82.37],
+            "end": [92.26, 83],
+            "width": 0.25,
+            "layer": "F.Cu"
+          },
+          {
+            "start": [92.26, 83],
+            "end": [92.26, 84.09],
+            "width": 0.25,
+            "layer": "F.Cu"
+          },
+          {
+            "start": [90.58, 82.37],
+            "end": [89.53, 82.37],
+            "width": 0.25,
+            "layer": "F.Cu"
+          },
+          {
+            "start": [89.53, 82.37],
+            "end": [89.18, 82.72],
+            "width": 0.25,
+            "layer": "F.Cu"
+          },
+          {
+            "start": [89.18, 82.72],
+            "end": [89.18, 83.97],
+            "width": 0.25,
+            "layer": "F.Cu"
+          },
+          {
+            "start": [84.328, 82.55],
+            "end": [84.328, 83.828],
+            "width": 0.25,
+            "layer": "F.Cu"
+          },
+          {
+            "start": [84.328, 83.828],
+            "end": [84.5, 84],
+            "width": 0.25,
+            "layer": "F.Cu"
+          },
+          {
+            "start": [84.328, 82.55],
+            "end": [84.328, 81.172],
+            "width": 0.25,
+            "layer": "F.Cu"
+          },
+          {
+            "start": [84.328, 81.172],
+            "end": [84.5, 81],
+            "width": 0.25,
+            "layer": "F.Cu"
+          },
+          {
+            "start": [84.328, 82.55],
+            "end": [86.45, 82.55],
+            "width": 0.25,
+            "layer": "F.Cu"
+          },
+          {
+            "start": [86.45, 82.55],
+            "end": [86.5, 82.5],
+            "width": 0.25,
+            "layer": "F.Cu"
+          },
+          {
+            "start": [93.5, 67.084],
+            "end": [93.5, 68.5],
+            "width": 0.25,
+            "layer": "B.Cu"
+          },
+          {
+            "start": [86.36, 56.388],
+            "end": [86.36, 59.944],
+            "width": 0.25,
+            "layer": "B.Cu"
+          },
+          {
+            "start": [86.36, 59.944],
+            "end": [93.5, 67.084],
+            "width": 0.25,
+            "layer": "B.Cu"
+          },
+          {
+            "start": [120.904, 88.432],
+            "end": [121.1345, 88.432],
+            "width": 0.25,
+            "layer": "B.Cu"
+          },
+          {
+            "start": [121.1345, 88.432],
+            "end": [121.158, 88.4555],
+            "width": 0.25,
+            "layer": "B.Cu"
+          },
+          {
+            "start": [121.158, 88.4555],
+            "end": [124.333, 88.4555],
+            "width": 0.25,
+            "layer": "B.Cu"
+          },
+          {
+            "start": [124.333, 88.4555],
+            "end": [124.6505, 88.773],
+            "width": 0.25,
+            "layer": "B.Cu"
+          },
+          {
+            "start": [124.6505, 88.773],
+            "end": [124.6505, 93.218],
+            "width": 0.25,
+            "layer": "B.Cu"
+          },
+          {
+            "start": [124.6505, 93.218],
+            "end": [118.999, 98.8695],
+            "width": 0.25,
+            "layer": "B.Cu"
+          },
+          {
+            "start": [77.64, 103.886],
+            "end": [77.64, 102.954],
+            "width": 0.25,
+            "layer": "F.Cu"
+          },
+          {
+            "start": [80.01, 100.584],
+            "end": [82.2325, 100.584],
+            "width": 0.25,
+            "layer": "F.Cu"
+          },
+          {
+            "start": [77.64, 102.954],
+            "end": [80.01, 100.584],
+            "width": 0.25,
+            "layer": "F.Cu"
+          },
+          {
+            "start": [120.904, 77.256],
+            "end": [120.904, 74.8665],
+            "width": 0.25,
+            "layer": "F.Cu"
+          },
+          {
+            "start": [120.904, 74.8665],
+            "end": [118.11, 72.0725],
+            "width": 0.25,
+            "layer": "F.Cu"
+          },
+          {
+            "start": [106.212, 85.852],
+            "end": [106.212, 89.241],
+            "width": 0.25,
+            "layer": "B.Cu"
+          },
+          {
+            "start": [106.212, 89.241],
+            "end": [104.521, 90.932],
+            "width": 0.25,
+            "layer": "B.Cu"
+          },
+          {
+            "start": [80.307, 70.104],
+            "end": [77.597, 70.104],
+            "width": 0.25,
+            "layer": "F.Cu"
+          },
+          {
+            "start": [87.63, 65.151],
+            "end": [87.63, 63.5],
+            "width": 0.25,
+            "layer": "F.Cu"
+          },
+          {
+            "start": [87.63, 63.5],
+            "end": [88.773, 62.357],
+            "width": 0.25,
+            "layer": "F.Cu"
+          }
+        ],
+        "arcs": ["TODO: extract arc info. Most samples don't have arcs to help test :("],
+        "vias": ["TODO: are vias necessary for our routing interests?"]
+      },
+      "errors": []
+    },
+    "12": {
+      "name": "/IOREF",
+      "class": "TODO",
+      "pads": [
+        {
+          "arduino:Arduino_shield_dynamixel pad IO_R": {
+            "abs_pos": [90.424, 104.648]
+          }
+        },
+        {
+          "Resistors_SMD:R_0603_HandSoldering pad 1": {
+            "abs_pos": [89.70500000000001, 69.596]
+          }
+        },
+        {
+          "TO_SOT_Packages_SMD:SOT-353 pad 5": {
+            "abs_pos": [87.63000000000001, 70.104]
+          }
+        },
+        {
+          "Resistors_SMD:R_0603_HandSoldering pad 1": {
+            "abs_pos": [89.70500000000001, 63.754]
+          }
+        },
+        {
+          "Resistors_SMD:R_0603_HandSoldering pad 1": {
+            "abs_pos": [89.70500000000001, 66.675]
+          }
+        }
+      ],
+      "tracks": {
+        "segments": [
+          {
+            "start": [90.424, 104.648],
+            "end": [90.424, 70.485],
+            "width": 0.25,
+            "layer": "B.Cu"
+          },
+          {
+            "start": [88.138, 68.199],
+            "end": [89.535, 69.596],
+            "width": 0.25,
+            "layer": "F.Cu"
+          },
+          {
+            "start": [90.424, 70.485],
+            "end": [88.138, 68.199],
+            "width": 0.25,
+            "layer": "B.Cu"
+          },
+          {
+            "start": [89.535, 69.596],
+            "end": [89.705, 69.596],
+            "width": 0.25,
+            "layer": "F.Cu"
+          },
+          {
+            "start": [91.905, 63.754],
+            "end": [91.905, 66.675],
+            "width": 0.25,
+            "layer": "F.Cu"
+          },
+          {
+            "start": [89.705, 69.596],
+            "end": [89.705, 69.553],
+            "width": 0.25,
+            "layer": "F.Cu"
+          },
+          {
+            "start": [89.705, 69.553],
+            "end": [91.905, 67.353],
+            "width": 0.25,
+            "layer": "F.Cu"
+          },
+          {
+            "start": [91.905, 67.353],
+            "end": [91.905, 66.675],
+            "width": 0.25,
+            "layer": "F.Cu"
+          },
+          {
+            "start": [87.63, 70.104],
+            "end": [89.197, 70.104],
+            "width": 0.25,
+            "layer": "F.Cu"
+          },
+          {
+            "start": [89.197, 70.104],
+            "end": [89.705, 69.596],
+            "width": 0.25,
+            "layer": "F.Cu"
+          }
+        ],
+        "arcs": ["TODO: extract arc info. Most samples don't have arcs to help test :("],
+        "vias": ["TODO: are vias necessary for our routing interests?"]
+      },
+      "errors": []
+    },
+    "13": {
+      "name": "/DATA",
+      "class": "TODO",
+      "pads": [
+        {
+          "molex:Molex_spox_1x3_right pad 3": {
+            "abs_pos": [74.0, 74.0]
+          }
+        },
+        {
+          "Resistors_SMD:R_0603_HandSoldering pad 2": {
+            "abs_pos": [82.50699999999999, 66.675]
+          }
+        },
+        {
+          "TO_SOT_Packages_SMD:SOT-353 pad 4": {
+            "abs_pos": [87.63000000000001, 66.421]
+          }
+        },
+        {
+          "TO_SOT_Packages_SMD:SOT-353 pad 2": {
+            "abs_pos": [85.598, 70.739]
+          }
+        },
+        {
+          "molex:Molex_spox_1x3_right pad 3": {
+            "abs_pos": [74.0, 62.5]
+          }
+        },
+        {
+          "molex:Molex_spox_1x3_right pad 3": {
+            "abs_pos": [123.404, 79.756]
+          }
+        },
+        {
+          "molex:Molex_spox_1x3_right pad 3": {
+            "abs_pos": [123.404, 90.932]
+          }
+        },
+        {
+          "molex:Molex_spox_1x3_straight pad 3": {
+            "abs_pos": [111.212, 85.852]
+          }
+        },
+        {
+          "molex:Molex_spox_1x3_straight pad 3": {
+            "abs_pos": [111.212, 77.724]
+          }
+        }
+      ],
+      "tracks": {
+        "segments": [
+          {
+            "start": [111.212, 82.256],
+            "end": [103.756, 82.256],
+            "width": 0.25,
+            "layer": "F.Cu"
+          },
+          {
+            "start": [103.756, 82.256],
+            "end": [103, 81.5],
+            "width": 0.25,
+            "layer": "F.Cu"
+          },
+          {
+            "start": [85.598, 70.739],
+            "end": [85.979, 70.739],
+            "width": 0.25,
+            "layer": "F.Cu"
+          },
+          {
+            "start": [85.979, 70.739],
+            "end": [86.614, 71.374],
+            "width": 0.25,
+            "layer": "F.Cu"
+          },
+          {
+            "start": [86.614, 71.374],
+            "end": [86.614, 72.898],
+            "width": 0.25,
+            "layer": "F.Cu"
+          },
+          {
+            "start": [86.614, 72.898],
+            "end": [87.884, 74.168],
+            "width": 0.25,
+            "layer": "F.Cu"
+          },
+          {
+            "start": [87.884, 74.168],
+            "end": [101.668, 74.168],
+            "width": 0.25,
+            "layer": "F.Cu"
+          },
+          {
+            "start": [101.668, 74.168],
+            "end": [103, 75.5],
+            "width": 0.25,
+            "layer": "F.Cu"
+          },
+          {
+            "start": [103, 75.5],
+            "end": [103, 81.5],
+            "width": 0.25,
+            "layer": "F.Cu"
+          },
+          {
+            "start": [75.437, 71.5],
+            "end": [75.437, 68.581],
+            "width": 0.25,
+            "layer": "F.Cu"
+          },
+          {
+            "start": [75.437, 68.581],
+            "end": [77.343, 66.675],
+            "width": 0.25,
+            "layer": "F.Cu"
+          },
+          {
+            "start": [76.708, 72.771],
+            "end": [75.437, 71.5],
+            "width": 0.25,
+            "layer": "F.Cu"
+          },
+          {
+            "start": [75.437, 71.5],
+            "end": [71.5, 71.5],
+            "width": 0.25,
+            "layer": "F.Cu"
+          },
+          {
+            "start": [71.5, 60],
+            "end": [72.766, 60],
+            "width": 0.25,
+            "layer": "F.Cu"
+          },
+          {
+            "start": [72.766, 60],
+            "end": [77.343, 64.577],
+            "width": 0.25,
+            "layer": "F.Cu"
+          },
+          {
+            "start": [77.343, 64.577],
+            "end": [77.343, 66.675],
+            "width": 0.25,
+            "layer": "F.Cu"
+          },
+          {
+            "start": [84.709, 70.739],
+            "end": [82.677, 72.771],
+            "width": 0.25,
+            "layer": "F.Cu"
+          },
+          {
+            "start": [82.677, 72.771],
+            "end": [76.708, 72.771],
+            "width": 0.25,
+            "layer": "F.Cu"
+          },
+          {
+            "start": [85.598, 70.739],
+            "end": [84.709, 70.739],
+            "width": 0.25,
+            "layer": "F.Cu"
+          },
+          {
+            "start": [80.307, 66.675],
+            "end": [77.343, 66.675],
+            "width": 0.25,
+            "layer": "F.Cu"
+          },
+          {
+            "start": [85.598, 65.151],
+            "end": [80.899, 65.151],
+            "width": 0.25,
+            "layer": "F.Cu"
+          },
+          {
+            "start": [80.899, 65.151],
+            "end": [80.307, 65.743],
+            "width": 0.25,
+            "layer": "F.Cu"
+          },
+          {
+            "start": [80.307, 65.743],
+            "end": [80.307, 66.675],
+            "width": 0.25,
+            "layer": "F.Cu"
+          },
+          {
+            "start": [111.212, 85.852],
+            "end": [116.713, 85.852],
+            "width": 0.25,
+            "layer": "F.Cu"
+          },
+          {
+            "start": [120.904, 93.432],
+            "end": [119.34, 93.432],
+            "width": 0.25,
+            "layer": "F.Cu"
+          },
+          {
+            "start": [116.713, 90.805],
+            "end": [116.713, 85.852],
+            "width": 0.25,
+            "layer": "F.Cu"
+          },
+          {
+            "start": [116.713, 85.852],
+            "end": [116.713, 82.296],
+            "width": 0.25,
+            "layer": "F.Cu"
+          },
+          {
+            "start": [119.34, 93.432],
+            "end": [116.713, 90.805],
+            "width": 0.25,
+            "layer": "F.Cu"
+          },
+          {
+            "start": [111.212, 82.296],
+            "end": [116.713, 82.296],
+            "width": 0.25,
+            "layer": "F.Cu"
+          },
+          {
+            "start": [116.713, 82.296],
+            "end": [120.864, 82.296],
+            "width": 0.25,
+            "layer": "F.Cu"
+          },
+          {
+            "start": [120.864, 82.296],
+            "end": [120.904, 82.256],
+            "width": 0.25,
+            "layer": "F.Cu"
+          },
+          {
+            "start": [111.212, 82.256],
+            "end": [111.212, 82.296],
+            "width": 0.25,
+            "layer": "F.Cu"
+          },
+          {
+            "start": [111.212, 82.256],
+            "end": [111.212, 77.724],
+            "width": 0.25,
+            "layer": "F.Cu"
+          }
+        ],
+        "arcs": ["TODO: extract arc info. Most samples don't have arcs to help test :("],
+        "vias": ["TODO: are vias necessary for our routing interests?"]
+      },
+      "errors": []
+    },
+    "14": {
+      "name": "+5V",
+      "class": "TODO",
+      "pads": [
+        {
+          "arduino:Arduino_shield_dynamixel pad 5V": {
+            "abs_pos": [98.04400000000001, 104.648]
+          }
+        },
+        {
+          "Resistors_SMD:R_0603_HandSoldering pad 1": {
+            "abs_pos": [80.307, 66.675]
+          }
+        },
+        {
+          "TO_SOT_Packages_SMD:SOT-353 pad 5": {
+            "abs_pos": [87.63000000000001, 65.151]
+          }
+        }
+      ],
+      "tracks": {
+        "segments": [
+          {
+            "start": [98.044, 104.648],
+            "end": [98.044, 101.092],
+            "width": 0.25,
+            "layer": "B.Cu"
+          },
+          {
+            "start": [84.328, 68.453],
+            "end": [82.55, 66.675],
+            "width": 0.25,
+            "layer": "F.Cu"
+          },
+          {
+            "start": [86.995, 65.786],
+            "end": [84.328, 68.453],
+            "width": 0.25,
+            "layer": "B.Cu"
+          },
+          {
+            "start": [88.392, 65.786],
+            "end": [86.995, 65.786],
+            "width": 0.25,
+            "layer": "B.Cu"
+          },
+          {
+            "start": [99.949, 77.343],
+            "end": [88.392, 65.786],
+            "width": 0.25,
+            "layer": "B.Cu"
+          },
+          {
+            "start": [99.949, 99.187],
+            "end": [99.949, 77.343],
+            "width": 0.25,
+            "layer": "B.Cu"
+          },
+          {
+            "start": [98.044, 101.092],
+            "end": [99.949, 99.187],
+            "width": 0.25,
+            "layer": "B.Cu"
+          },
+          {
+            "start": [82.55, 66.675],
+            "end": [82.507, 66.675],
+            "width": 0.25,
+            "layer": "F.Cu"
+          },
+          {
+            "start": [82.507, 66.675],
+            "end": [84.455, 66.675],
+            "width": 0.25,
+            "layer": "F.Cu"
+          },
+          {
+            "start": [84.709, 66.421],
+            "end": [85.598, 66.421],
+            "width": 0.25,
+            "layer": "F.Cu"
+          },
+          {
+            "start": [84.455, 66.675],
+            "end": [84.709, 66.421],
+            "width": 0.25,
+            "layer": "F.Cu"
+          },
+          {
+            "start": [98.044, 104.648],
+            "end": [98.044, 103.505],
+            "width": 0.25,
+            "layer": "B.Cu"
+          }
+        ],
+        "arcs": ["TODO: extract arc info. Most samples don't have arcs to help test :("],
+        "vias": ["TODO: are vias necessary for our routing interests?"]
+      },
+      "errors": []
+    },
+    "15": {
+      "name": "+3V3",
+      "class": "TODO",
+      "pads": [
+        {
+          "arduino:Arduino_shield_dynamixel pad 3V3": {
+            "abs_pos": [95.504, 104.648]
+          }
+        }
+      ],
+      "tracks": {
+        "segments": [],
+        "arcs": ["TODO: extract arc info. Most samples don't have arcs to help test :("],
+        "vias": ["TODO: are vias necessary for our routing interests?"]
+      },
+      "errors": []
+    },
+    "16": {
+      "name": "Net-(SHIELD1-PadRST)",
+      "class": "TODO",
+      "pads": [
+        {
+          "arduino:Arduino_shield_dynamixel pad RST": {
+            "abs_pos": [92.964, 104.648]
+          }
+        }
+      ],
+      "tracks": {
+        "segments": [],
+        "arcs": ["TODO: extract arc info. Most samples don't have arcs to help test :("],
+        "vias": ["TODO: are vias necessary for our routing interests?"]
+      },
+      "errors": []
+    },
+    "17": {
+      "name": "Net-(SHIELD1-Pad5)",
+      "class": "TODO",
+      "pads": [
+        {
+          "arduino:Arduino_shield_dynamixel pad 5": {
+            "abs_pos": [110.744, 56.388000000000005]
+          }
+        }
+      ],
+      "tracks": {
+        "segments": [],
+        "arcs": ["TODO: extract arc info. Most samples don't have arcs to help test :("],
+        "vias": ["TODO: are vias necessary for our routing interests?"]
+      },
+      "errors": []
+    },
+    "18": {
+      "name": "Net-(SHIELD1-Pad8)",
+      "class": "TODO",
+      "pads": [
+        {
+          "arduino:Arduino_shield_dynamixel pad 8": {
+            "abs_pos": [101.6, 56.388000000000005]
+          }
+        }
+      ],
+      "tracks": {
+        "segments": [],
+        "arcs": ["TODO: extract arc info. Most samples don't have arcs to help test :("],
+        "vias": ["TODO: are vias necessary for our routing interests?"]
+      },
+      "errors": []
+    },
+    "19": {
+      "name": "Net-(SHIELD1-Pad9)",
+      "class": "TODO",
+      "pads": [
+        {
+          "arduino:Arduino_shield_dynamixel pad 9": {
+            "abs_pos": [99.06, 56.388000000000005]
+          }
+        }
+      ],
+      "tracks": {
+        "segments": [],
+        "arcs": ["TODO: extract arc info. Most samples don't have arcs to help test :("],
+        "vias": ["TODO: are vias necessary for our routing interests?"]
+      },
+      "errors": []
+    },
+    "20": {
+      "name": "Net-(SHIELD1-Pad10)",
+      "class": "TODO",
+      "pads": [
+        {
+          "arduino:Arduino_shield_dynamixel pad 10": {
+            "abs_pos": [96.52000000000001, 56.388000000000005]
+          }
+        }
+      ],
+      "tracks": {
+        "segments": [],
+        "arcs": ["TODO: extract arc info. Most samples don't have arcs to help test :("],
+        "vias": ["TODO: are vias necessary for our routing interests?"]
+      },
+      "errors": []
+    },
+    "21": {
+      "name": "Net-(SHIELD1-Pad11)",
+      "class": "TODO",
+      "pads": [
+        {
+          "arduino:Arduino_shield_dynamixel pad 11": {
+            "abs_pos": [93.98, 56.388000000000005]
+          }
+        }
+      ],
+      "tracks": {
+        "segments": [],
+        "arcs": ["TODO: extract arc info. Most samples don't have arcs to help test :("],
+        "vias": ["TODO: are vias necessary for our routing interests?"]
+      },
+      "errors": []
+    },
+    "22": {
+      "name": "Net-(SHIELD1-Pad12)",
+      "class": "TODO",
+      "pads": [
+        {
+          "arduino:Arduino_shield_dynamixel pad 12": {
+            "abs_pos": [91.44, 56.388000000000005]
+          }
+        }
+      ],
+      "tracks": {
+        "segments": [],
+        "arcs": ["TODO: extract arc info. Most samples don't have arcs to help test :("],
+        "vias": ["TODO: are vias necessary for our routing interests?"]
+      },
+      "errors": []
+    },
+    "23": {
+      "name": "Net-(SHIELD1-Pad13)",
+      "class": "TODO",
+      "pads": [
+        {
+          "arduino:Arduino_shield_dynamixel pad 13": {
+            "abs_pos": [88.9, 56.388000000000005]
+          }
+        }
+      ],
+      "tracks": {
+        "segments": [],
+        "arcs": ["TODO: extract arc info. Most samples don't have arcs to help test :("],
+        "vias": ["TODO: are vias necessary for our routing interests?"]
+      },
+      "errors": []
+    },
+    "24": {
+      "name": "Net-(SHIELD1-PadAREF)",
+      "class": "TODO",
+      "pads": [
+        {
+          "arduino:Arduino_shield_dynamixel pad AREF": {
+            "abs_pos": [83.82000000000001, 56.388000000000005]
+          }
+        }
+      ],
+      "tracks": {
+        "segments": [],
+        "arcs": ["TODO: extract arc info. Most samples don't have arcs to help test :("],
+        "vias": ["TODO: are vias necessary for our routing interests?"]
+      },
+      "errors": []
+    },
+    "25": {
+      "name": "Net-(JP4-Pad3)",
+      "class": "TODO",
+      "pads": [
+        {
+          "Pin_Headers:Pin_Header_Straight_1x03 pad 3": {
+            "abs_pos": [108.204, 101.6]
+          }
+        }
+      ],
+      "tracks": {
+        "segments": [],
+        "arcs": ["TODO: extract arc info. Most samples don't have arcs to help test :("],
+        "vias": ["TODO: are vias necessary for our routing interests?"]
+      },
+      "errors": []
+    },
+    "26": {
+      "name": "Net-(SHIELD1-PadATN)",
+      "class": "TODO",
+      "pads": [
+        {
+          "arduino:Arduino_shield_dynamixel pad ATN": {
+            "abs_pos": [87.884, 104.648]
+          }
+        }
+      ],
+      "tracks": {
+        "segments": [],
+        "arcs": ["TODO: extract arc info. Most samples don't have arcs to help test :("],
+        "vias": ["TODO: are vias necessary for our routing interests?"]
+      },
+      "errors": []
+    },
+    "27": {
+      "name": "Net-(SHIELD1-PadA1)",
+      "class": "TODO",
+      "pads": [
+        {
+          "arduino:Arduino_shield_dynamixel pad A1": {
+            "abs_pos": [113.284, 104.648]
+          }
+        }
+      ],
+      "tracks": {
+        "segments": [],
+        "arcs": ["TODO: extract arc info. Most samples don't have arcs to help test :("],
+        "vias": ["TODO: are vias necessary for our routing interests?"]
+      },
+      "errors": []
+    },
+    "28": {
+      "name": "Net-(SHIELD1-PadA2)",
+      "class": "TODO",
+      "pads": [
+        {
+          "arduino:Arduino_shield_dynamixel pad A2": {
+            "abs_pos": [115.82400000000001, 104.648]
+          }
+        }
+      ],
+      "tracks": {
+        "segments": [],
+        "arcs": ["TODO: extract arc info. Most samples don't have arcs to help test :("],
+        "vias": ["TODO: are vias necessary for our routing interests?"]
+      },
+      "errors": []
+    },
+    "29": {
+      "name": "Net-(SHIELD1-PadA3)",
+      "class": "TODO",
+      "pads": [
+        {
+          "arduino:Arduino_shield_dynamixel pad A3": {
+            "abs_pos": [118.364, 104.648]
+          }
+        }
+      ],
+      "tracks": {
+        "segments": [],
+        "arcs": ["TODO: extract arc info. Most samples don't have arcs to help test :("],
+        "vias": ["TODO: are vias necessary for our routing interests?"]
+      },
+      "errors": []
+    },
+    "30": {
+      "name": "Net-(SHIELD1-PadA4)",
+      "class": "TODO",
+      "pads": [
+        {
+          "arduino:Arduino_shield_dynamixel pad A4": {
+            "abs_pos": [120.904, 104.648]
+          }
+        }
+      ],
+      "tracks": {
+        "segments": [],
+        "arcs": ["TODO: extract arc info. Most samples don't have arcs to help test :("],
+        "vias": ["TODO: are vias necessary for our routing interests?"]
+      },
+      "errors": []
+    },
+    "31": {
+      "name": "Net-(SHIELD1-PadA5)",
+      "class": "TODO",
+      "pads": [
+        {
+          "arduino:Arduino_shield_dynamixel pad A5": {
+            "abs_pos": [123.444, 104.648]
+          }
+        }
+      ],
+      "tracks": {
+        "segments": [],
+        "arcs": ["TODO: extract arc info. Most samples don't have arcs to help test :("],
+        "vias": ["TODO: are vias necessary for our routing interests?"]
+      },
+      "errors": []
+    },
+    "32": {
+      "name": "Net-(SHIELD1-PadSDA)",
+      "class": "TODO",
+      "pads": [
+        {
+          "arduino:Arduino_shield_dynamixel pad SDA": {
+            "abs_pos": [81.28, 56.388000000000005]
+          }
+        }
+      ],
+      "tracks": {
+        "segments": [],
+        "arcs": ["TODO: extract arc info. Most samples don't have arcs to help test :("],
+        "vias": ["TODO: are vias necessary for our routing interests?"]
+      },
+      "errors": []
+    },
+    "33": {
+      "name": "Net-(SHIELD1-PadSCL)",
+      "class": "TODO",
+      "pads": [
+        {
+          "arduino:Arduino_shield_dynamixel pad SCL": {
+            "abs_pos": [78.74000000000001, 56.388000000000005]
+          }
+        }
+      ],
+      "tracks": {
+        "segments": [],
+        "arcs": ["TODO: extract arc info. Most samples don't have arcs to help test :("],
+        "vias": ["TODO: are vias necessary for our routing interests?"]
+      },
+      "errors": []
+    },
+    "34": {
+      "name": "Net-(SHIELD1-Pad7)",
+      "class": "TODO",
+      "pads": [
+        {
+          "arduino:Arduino_shield_dynamixel pad 7": {
+            "abs_pos": [105.664, 56.388000000000005]
+          }
+        }
+      ],
+      "tracks": {
+        "segments": [],
+        "arcs": ["TODO: extract arc info. Most samples don't have arcs to help test :("],
+        "vias": ["TODO: are vias necessary for our routing interests?"]
+      },
+      "errors": []
+    },
+    "35": {
+      "name": "Net-(SHIELD1-PadA0)",
+      "class": "TODO",
+      "pads": [
+        {
+          "arduino:Arduino_shield_dynamixel pad A0": {
+            "abs_pos": [110.744, 104.648]
+          }
+        }
+      ],
+      "tracks": {
+        "segments": [],
+        "arcs": ["TODO: extract arc info. Most samples don't have arcs to help test :("],
+        "vias": ["TODO: are vias necessary for our routing interests?"]
+      },
+      "errors": []
+    },
+    "36": {
+      "name": "Net-(SHIELD1-Pad6)",
+      "class": "TODO",
+      "pads": [
+        {
+          "arduino:Arduino_shield_dynamixel pad 6": {
+            "abs_pos": [108.20400000000001, 56.388000000000005]
+          }
+        }
+      ],
+      "tracks": {
+        "segments": [],
+        "arcs": ["TODO: extract arc info. Most samples don't have arcs to help test :("],
+        "vias": ["TODO: are vias necessary for our routing interests?"]
+      },
+      "errors": []
+    },
+    "37": {
+      "name": "Net-(F1-Pad1)",
+      "class": "TODO",
+      "pads": [
+        {
+          "Connect:bornier2 pad 1": {
+            "abs_pos": [64.51599999999999, 86.868]
+          }
+        },
+        {
+          "Connect:BARREL_JACK pad 1": {
+            "abs_pos": [71.20014, 99.6]
+          }
+        },
+        {
+          "fuse:Fuseholder5x20_horiz_lateral pad 1": {
+            "abs_pos": [80.0, 91.48]
+          }
+        },
+        {
+          "fuse:Fuseholder5x20_horiz_lateral pad 1": {
+            "abs_pos": [80.0, 96.48]
+          }
+        }
+      ],
+      "tracks": {
+        "segments": [
+          {
+            "start": [71.20014, 99.6],
+            "end": [71.20014, 95.34994],
+            "width": 2.5,
+            "layer": "B.Cu"
+          },
+          {
+            "start": [71.20014, 95.34994],
+            "end": [71.55408, 94.996],
+            "width": 2.5,
+            "layer": "B.Cu"
+          },
+          {
+            "start": [71.55408, 94.996],
+            "end": [71.628, 94.996],
+            "width": 2.5,
+            "layer": "B.Cu"
+          },
+          {
+            "start": [80, 96.48],
+            "end": [76.88, 99.6],
+            "width": 2.5,
+            "layer": "F.Cu"
+          },
+          {
+            "start": [76.88, 99.6],
+            "end": [71.20014, 99.6],
+            "width": 2.5,
+            "layer": "F.Cu"
+          },
+          {
+            "start": [80, 96.48],
+            "end": [80, 91.48],
+            "width": 2.5,
+            "layer": "F.Cu"
+          },
+          {
+            "start": [69.088, 84.328],
+            "end": [67.056, 84.328],
+            "width": 2.5,
+            "layer": "B.Cu"
+          },
+          {
+            "start": [71.628, 86.868],
+            "end": [69.088, 84.328],
+            "width": 2.5,
+            "layer": "B.Cu"
+          },
+          {
+            "start": [71.628, 94.996],
+            "end": [71.628, 86.868],
+            "width": 2.5,
+            "layer": "B.Cu"
+          }
+        ],
+        "arcs": ["TODO: extract arc info. Most samples don't have arcs to help test :("],
+        "vias": ["TODO: are vias necessary for our routing interests?"]
+      },
+      "errors": []
+    },
+    "38": {
+      "name": "Net-(P1-Pad2)",
+      "class": "TODO",
+      "pads": [
+        {
+          "Connect:bornier2 pad 2": {
+            "abs_pos": [69.596, 86.868]
+          }
+        },
+        {
+          "TO_SOT_Packages_SMD:TO-252-2Lead pad 2": {
+            "abs_pos": [84.328, 78.486]
+          }
+        },
+        {
+          "Connect:BARREL_JACK pad 2": {
+            "abs_pos": [65.20066, 99.6]
+          }
+        },
+        {
+          "Connect:BARREL_JACK pad 3": {
+            "abs_pos": [68.2004, 104.29899999999999]
+          }
+        }
+      ],
+      "tracks": {
+        "segments": [
+          {
+            "start": [65.20066, 99.6],
+            "end": [65.20066, 101.29926],
+            "width": 2.5,
+            "layer": "F.Cu"
+          },
+          {
+            "start": [65.20066, 101.29926],
+            "end": [68.2004, 104.299],
+            "width": 2.5,
+            "layer": "F.Cu"
+          },
+          {
+            "start": [67.056, 93.472],
+            "end": [65.20066, 95.32734],
+            "width": 2.5,
+            "layer": "F.Cu"
+          },
+          {
+            "start": [65.20066, 95.32734],
+            "end": [65.20066, 99.6],
+            "width": 2.5,
+            "layer": "F.Cu"
+          },
+          {
+            "start": [67.056, 89.408],
+            "end": [70.104, 89.408],
+            "width": 2.5,
+            "layer": "F.Cu"
+          },
+          {
+            "start": [74.676, 84.836],
+            "end": [77.978, 84.836],
+            "width": 2.5,
+            "layer": "F.Cu"
+          },
+          {
+            "start": [70.104, 89.408],
+            "end": [74.676, 84.836],
+            "width": 2.5,
+            "layer": "F.Cu"
+          },
+          {
+            "start": [67.056, 93.472],
+            "end": [67.056, 89.408],
+            "width": 2.5,
+            "layer": "F.Cu"
+          }
+        ],
+        "arcs": ["TODO: extract arc info. Most samples don't have arcs to help test :("],
+        "vias": ["TODO: are vias necessary for our routing interests?"]
+      },
+      "errors": []
+    },
+    "39": {
+      "name": "Net-(D1-Pad2)",
+      "class": "TODO",
+      "pads": [
+        {
+          "LEDs:LED_0603 pad 2": {
+            "abs_pos": [79.83999999999999, 103.886]
+          }
+        },
+        {
+          "Resistors_SMD:R_0603_HandSoldering pad 2": {
+            "abs_pos": [83.904, 103.886]
+          }
+        }
+      ],
+      "tracks": {
+        "segments": [
+          {
+            "start": [79.84, 103.886],
+            "end": [81.704, 103.886],
+            "width": 0.25,
+            "layer": "F.Cu"
+          }
+        ],
+        "arcs": ["TODO: extract arc info. Most samples don't have arcs to help test :("],
+        "vias": ["TODO: are vias necessary for our routing interests?"]
+      },
+      "errors": []
+    },
+    "40": {
+      "name": "Net-(R2-Pad2)",
+      "class": "TODO",
+      "pads": [
+        {
+          "Resistors_SMD:R_0603_HandSoldering pad 2": {
+            "abs_pos": [91.905, 69.596]
+          }
+        },
+        {
+          "TO_SOT_Packages_SMD:SOT-353 pad 4": {
+            "abs_pos": [87.63000000000001, 71.37400000000001]
+          }
+        },
+        {
+          "Resistors_SMD:R_0603_HandSoldering pad 1": {
+            "abs_pos": [89.70500000000001, 72.517]
+          }
+        }
+      ],
+      "tracks": {
+        "segments": [
+          {
+            "start": [89.705, 72.517],
+            "end": [89.916, 72.517],
+            "width": 0.25,
+            "layer": "F.Cu"
+          },
+          {
+            "start": [89.916, 72.517],
+            "end": [91.905, 70.528],
+            "width": 0.25,
+            "layer": "F.Cu"
+          },
+          {
+            "start": [91.905, 70.528],
+            "end": [91.905, 69.596],
+            "width": 0.25,
+            "layer": "F.Cu"
+          },
+          {
+            "start": [89.705, 72.517],
+            "end": [89.705, 72.179],
+            "width": 0.25,
+            "layer": "F.Cu"
+          },
+          {
+            "start": [89.705, 72.179],
+            "end": [88.9, 71.374],
+            "width": 0.25,
+            "layer": "F.Cu"
+          },
+          {
+            "start": [88.9, 71.374],
+            "end": [87.63, 71.374],
+            "width": 0.25,
+            "layer": "F.Cu"
+          }
+        ],
+        "arcs": ["TODO: extract arc info. Most samples don't have arcs to help test :("],
+        "vias": ["TODO: are vias necessary for our routing interests?"]
+      },
+      "errors": []
+    }
+  },
+  "errors": [
+    {
+      "arduino:Arduino_shield_dynamixel at [59.944, 107.188]": "pad \"\" np_thru_hole circle at [66.04, -35.56] has error 341: key \"net\" not found"
+    },
+    {
+      "arduino:Arduino_shield_dynamixel at [59.944, 107.188]": "pad \"\" np_thru_hole circle at [13.97, -2.54] has error 344: key \"net\" not found"
+    },
+    {
+      "arduino:Arduino_shield_dynamixel at [59.944, 107.188]": "pad \"\" np_thru_hole circle at [66.04, -7.62] has error 345: key \"net\" not found"
+    },
+    {
+      "arduino:Arduino_shield_dynamixel at [59.944, 107.188]": "pad \"\" np_thru_hole circle at [15.24, -50.8] has error 346: key \"net\" not found"
+    }
+  ]
+}

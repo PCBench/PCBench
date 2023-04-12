@@ -1,0 +1,3529 @@
+{
+  "board_settings": {},
+  "net classes": {},
+  "net routes": {
+    "0": {
+      "name": "",
+      "class": "TODO",
+      "pads": [],
+      "tracks": {
+        "segments": [],
+        "arcs": ["TODO: extract arc info. Most samples don't have arcs to help test :("],
+        "vias": ["TODO: are vias necessary for our routing interests?"]
+      },
+      "errors": []
+    },
+    "1": {
+      "name": "Net-(D1-Pad1)",
+      "class": "TODO",
+      "pads": [
+        {
+          "LED_THT:LED_D3.0mm pad \"1\"": {
+            "abs_pos": [98, 103]
+          }
+        },
+        {
+          "Connector_JST:JST_XH_B4B-XH-A_1x04_P2.50mm_Vertical pad \"2\"": {
+            "abs_pos": [91.0, 114.5]
+          }
+        },
+        {
+          "Resistor_THT:R_Axial_DIN0204_L3.6mm_D1.6mm_P2.54mm_Vertical pad \"2\"": {
+            "abs_pos": [98.04, 109.5]
+          }
+        }
+      ],
+      "tracks": {
+        "segments": [
+          {
+            "start": [91, 114.5],
+            "end": [93.5, 112],
+            "width": 0.5,
+            "layer": "\"F.Cu\""
+          },
+          {
+            "start": [93.5, 112],
+            "end": [95.54, 112],
+            "width": 0.5,
+            "layer": "\"F.Cu\""
+          },
+          {
+            "start": [98.04, 109.5],
+            "end": [98.04, 103.04],
+            "width": 0.5,
+            "layer": "\"F.Cu\""
+          },
+          {
+            "start": [95.54, 112],
+            "end": [98.04, 109.5],
+            "width": 0.5,
+            "layer": "\"F.Cu\""
+          },
+          {
+            "start": [98.04, 103.04],
+            "end": [98, 103],
+            "width": 0.5,
+            "layer": "\"F.Cu\""
+          }
+        ],
+        "arcs": ["TODO: extract arc info. Most samples don't have arcs to help test :("],
+        "vias": ["TODO: are vias necessary for our routing interests?"]
+      },
+      "errors": []
+    },
+    "2": {
+      "name": "Net-(D2-Pad1)",
+      "class": "TODO",
+      "pads": [
+        {
+          "Connector_JST:JST_XH_B4B-XH-A_1x04_P2.50mm_Vertical pad \"1\"": {
+            "abs_pos": [88.5, 114.5]
+          }
+        },
+        {
+          "Resistor_THT:R_Axial_DIN0204_L3.6mm_D1.6mm_P2.54mm_Vertical pad \"2\"": {
+            "abs_pos": [89.04, 109.5]
+          }
+        },
+        {
+          "LED_THT:LED_D3.0mm pad \"1\"": {
+            "abs_pos": [89, 103]
+          }
+        }
+      ],
+      "tracks": {
+        "segments": [
+          {
+            "start": [89.04, 103.04],
+            "end": [89, 103],
+            "width": 0.5,
+            "layer": "\"F.Cu\""
+          },
+          {
+            "start": [89.04, 113.96],
+            "end": [89.04, 109.5],
+            "width": 0.5,
+            "layer": "\"F.Cu\""
+          },
+          {
+            "start": [89.04, 109.5],
+            "end": [89.04, 103.04],
+            "width": 0.5,
+            "layer": "\"F.Cu\""
+          },
+          {
+            "start": [88.5, 114.5],
+            "end": [89.04, 113.96],
+            "width": 0.5,
+            "layer": "\"F.Cu\""
+          }
+        ],
+        "arcs": ["TODO: extract arc info. Most samples don't have arcs to help test :("],
+        "vias": ["TODO: are vias necessary for our routing interests?"]
+      },
+      "errors": []
+    },
+    "3": {
+      "name": "Net-(D2-Pad2)",
+      "class": "TODO",
+      "pads": [
+        {
+          "Resistor_THT:R_Axial_DIN0204_L3.6mm_D1.6mm_P2.54mm_Vertical pad \"1\"": {
+            "abs_pos": [86.5, 96.5]
+          }
+        },
+        {
+          "LED_THT:LED_D3.0mm pad \"2\"": {
+            "abs_pos": [91.54, 103.0]
+          }
+        }
+      ],
+      "tracks": {
+        "segments": [
+          {
+            "start": [86.46, 96.54],
+            "end": [86.5, 96.5],
+            "width": 0.5,
+            "layer": "\"F.Cu\""
+          },
+          {
+            "start": [86.46, 103],
+            "end": [86.46, 96.54],
+            "width": 0.5,
+            "layer": "\"F.Cu\""
+          }
+        ],
+        "arcs": ["TODO: extract arc info. Most samples don't have arcs to help test :("],
+        "vias": ["TODO: are vias necessary for our routing interests?"]
+      },
+      "errors": []
+    },
+    "4": {
+      "name": "Net-(D3-Pad1)",
+      "class": "TODO",
+      "pads": [
+        {
+          "LED_THT:LED_D3.0mm pad \"1\"": {
+            "abs_pos": [77.96, 103.0]
+          }
+        },
+        {
+          "Connector_JST:JST_XH_B4B-XH-A_1x04_P2.50mm_Vertical pad \"2\"": {
+            "abs_pos": [71.0, 114.5]
+          }
+        },
+        {
+          "Resistor_THT:R_Axial_DIN0204_L3.6mm_D1.6mm_P2.54mm_Vertical pad \"2\"": {
+            "abs_pos": [78.0, 109.5]
+          }
+        }
+      ],
+      "tracks": {
+        "segments": [
+          {
+            "start": [76, 111.5],
+            "end": [78, 109.5],
+            "width": 0.5,
+            "layer": "\"F.Cu\""
+          },
+          {
+            "start": [78, 103.04],
+            "end": [77.96, 103],
+            "width": 0.5,
+            "layer": "\"F.Cu\""
+          },
+          {
+            "start": [71, 113],
+            "end": [72.5, 111.5],
+            "width": 0.5,
+            "layer": "\"F.Cu\""
+          },
+          {
+            "start": [78, 109.5],
+            "end": [78, 103.04],
+            "width": 0.5,
+            "layer": "\"F.Cu\""
+          },
+          {
+            "start": [72.5, 111.5],
+            "end": [76, 111.5],
+            "width": 0.5,
+            "layer": "\"F.Cu\""
+          },
+          {
+            "start": [71, 114.5],
+            "end": [71, 113],
+            "width": 0.5,
+            "layer": "\"F.Cu\""
+          }
+        ],
+        "arcs": ["TODO: extract arc info. Most samples don't have arcs to help test :("],
+        "vias": ["TODO: are vias necessary for our routing interests?"]
+      },
+      "errors": []
+    },
+    "5": {
+      "name": "Net-(D3-Pad2)",
+      "class": "TODO",
+      "pads": [
+        {
+          "LED_THT:LED_D3.0mm pad \"2\"": {
+            "abs_pos": [80.5, 103.0]
+          }
+        },
+        {
+          "Resistor_THT:R_Axial_DIN0204_L3.6mm_D1.6mm_P2.54mm_Vertical pad \"2\"": {
+            "abs_pos": [80.54, 96.5]
+          }
+        }
+      ],
+      "tracks": {
+        "segments": [
+          {
+            "start": [75.46, 96.5],
+            "end": [75.46, 102.96],
+            "width": 0.5,
+            "layer": "\"F.Cu\""
+          },
+          {
+            "start": [75.46, 102.96],
+            "end": [75.42, 103],
+            "width": 0.5,
+            "layer": "\"F.Cu\""
+          }
+        ],
+        "arcs": ["TODO: extract arc info. Most samples don't have arcs to help test :("],
+        "vias": ["TODO: are vias necessary for our routing interests?"]
+      },
+      "errors": []
+    },
+    "6": {
+      "name": "Net-(D5-Pad2)",
+      "class": "TODO",
+      "pads": [
+        {
+          "LED_THT:LED_D3.0mm pad \"2\"": {
+            "abs_pos": [58.54, 90.5]
+          }
+        },
+        {
+          "Resistor_THT:R_Axial_DIN0204_L3.6mm_D1.6mm_P2.54mm_Vertical pad \"1\"": {
+            "abs_pos": [49.5, 90.5]
+          }
+        }
+      ],
+      "tracks": {
+        "segments": [
+          {
+            "start": [49.5, 90.5],
+            "end": [53.46, 90.5],
+            "width": 0.5,
+            "layer": "\"F.Cu\""
+          },
+          {
+            "start": [53.46, 90.5],
+            "end": [56, 87.96],
+            "width": 0.5,
+            "layer": "\"F.Cu\""
+          }
+        ],
+        "arcs": ["TODO: extract arc info. Most samples don't have arcs to help test :("],
+        "vias": ["TODO: are vias necessary for our routing interests?"]
+      },
+      "errors": []
+    },
+    "7": {
+      "name": "Net-(D6-Pad2)",
+      "class": "TODO",
+      "pads": [
+        {
+          "LED_THT:LED_D3.0mm pad \"2\"": {
+            "abs_pos": [58.54, 68.5]
+          }
+        },
+        {
+          "Resistor_THT:R_Axial_DIN0204_L3.6mm_D1.6mm_P2.54mm_Vertical pad \"1\"": {
+            "abs_pos": [49.0, 68.5]
+          }
+        }
+      ],
+      "tracks": {
+        "segments": [
+          {
+            "start": [53.54, 65.96],
+            "end": [56, 65.96],
+            "width": 0.5,
+            "layer": "\"F.Cu\""
+          },
+          {
+            "start": [49, 68.5],
+            "end": [51, 68.5],
+            "width": 0.5,
+            "layer": "\"F.Cu\""
+          },
+          {
+            "start": [51, 68.5],
+            "end": [53.54, 65.96],
+            "width": 0.5,
+            "layer": "\"F.Cu\""
+          }
+        ],
+        "arcs": ["TODO: extract arc info. Most samples don't have arcs to help test :("],
+        "vias": ["TODO: are vias necessary for our routing interests?"]
+      },
+      "errors": []
+    },
+    "8": {
+      "name": "Net-(D7-Pad2)",
+      "class": "TODO",
+      "pads": [
+        {
+          "LED_THT:LED_D3.0mm pad \"2\"": {
+            "abs_pos": [58.54, 75.0]
+          }
+        },
+        {
+          "Resistor_THT:R_Axial_DIN0204_L3.6mm_D1.6mm_P2.54mm_Vertical pad \"1\"": {
+            "abs_pos": [49, 75]
+          }
+        }
+      ],
+      "tracks": {
+        "segments": [
+          {
+            "start": [51.54, 72.46],
+            "end": [56, 72.46],
+            "width": 0.5,
+            "layer": "\"F.Cu\""
+          },
+          {
+            "start": [49, 75],
+            "end": [51.54, 72.46],
+            "width": 0.5,
+            "layer": "\"F.Cu\""
+          }
+        ],
+        "arcs": ["TODO: extract arc info. Most samples don't have arcs to help test :("],
+        "vias": ["TODO: are vias necessary for our routing interests?"]
+      },
+      "errors": []
+    },
+    "9": {
+      "name": "Net-(D8-Pad1)",
+      "class": "TODO",
+      "pads": [
+        {
+          "LED_THT:LED_D3.0mm pad \"1\"": {
+            "abs_pos": [69, 103]
+          }
+        },
+        {
+          "Connector_JST:JST_XH_B4B-XH-A_1x04_P2.50mm_Vertical pad \"1\"": {
+            "abs_pos": [68.5, 114.5]
+          }
+        },
+        {
+          "Resistor_THT:R_Axial_DIN0204_L3.6mm_D1.6mm_P2.54mm_Vertical pad \"2\"": {
+            "abs_pos": [69.04, 109.5]
+          }
+        }
+      ],
+      "tracks": {
+        "segments": [
+          {
+            "start": [69, 103],
+            "end": [69, 109.46],
+            "width": 0.5,
+            "layer": "\"F.Cu\""
+          },
+          {
+            "start": [69.04, 109.5],
+            "end": [69.04, 113.96],
+            "width": 0.5,
+            "layer": "\"F.Cu\""
+          },
+          {
+            "start": [69.04, 113.96],
+            "end": [68.5, 114.5],
+            "width": 0.5,
+            "layer": "\"F.Cu\""
+          },
+          {
+            "start": [69, 109.46],
+            "end": [69.04, 109.5],
+            "width": 0.5,
+            "layer": "\"F.Cu\""
+          }
+        ],
+        "arcs": ["TODO: extract arc info. Most samples don't have arcs to help test :("],
+        "vias": ["TODO: are vias necessary for our routing interests?"]
+      },
+      "errors": []
+    },
+    "10": {
+      "name": "Net-(D8-Pad2)",
+      "class": "TODO",
+      "pads": [
+        {
+          "LED_THT:LED_D3.0mm pad \"2\"": {
+            "abs_pos": [71.54, 103.0]
+          }
+        },
+        {
+          "Resistor_THT:R_Axial_DIN0204_L3.6mm_D1.6mm_P2.54mm_Vertical pad \"1\"": {
+            "abs_pos": [66.46, 96.5]
+          }
+        }
+      ],
+      "tracks": {
+        "segments": [
+          {
+            "start": [66.46, 96.5],
+            "end": [66.46, 103],
+            "width": 0.5,
+            "layer": "\"F.Cu\""
+          }
+        ],
+        "arcs": ["TODO: extract arc info. Most samples don't have arcs to help test :("],
+        "vias": ["TODO: are vias necessary for our routing interests?"]
+      },
+      "errors": []
+    },
+    "11": {
+      "name": "Net-(D9-Pad1)",
+      "class": "TODO",
+      "pads": [
+        {
+          "LED_THT:LED_D3.0mm pad \"1\"": {
+            "abs_pos": [59.5, 43.0]
+          }
+        },
+        {
+          "Resistor_THT:R_Axial_DIN0204_L3.6mm_D1.6mm_P2.54mm_Vertical pad \"1\"": {
+            "abs_pos": [59.5, 38.0]
+          }
+        }
+      ],
+      "tracks": {
+        "segments": [
+          {
+            "start": [59.5, 38],
+            "end": [59.5, 43],
+            "width": 0.5,
+            "layer": "\"F.Cu\""
+          }
+        ],
+        "arcs": ["TODO: extract arc info. Most samples don't have arcs to help test :("],
+        "vias": ["TODO: are vias necessary for our routing interests?"]
+      },
+      "errors": []
+    },
+    "12": {
+      "name": "Net-(D11-Pad1)",
+      "class": "TODO",
+      "pads": [
+        {
+          "LED_THT:LED_D3.0mm pad \"1\"": {
+            "abs_pos": [70.5, 43.0]
+          }
+        },
+        {
+          "Resistor_THT:R_Axial_DIN0204_L3.6mm_D1.6mm_P2.54mm_Vertical pad \"1\"": {
+            "abs_pos": [70.5, 38.0]
+          }
+        }
+      ],
+      "tracks": {
+        "segments": [
+          {
+            "start": [70.5, 38],
+            "end": [70.5, 43],
+            "width": 0.5,
+            "layer": "\"F.Cu\""
+          }
+        ],
+        "arcs": ["TODO: extract arc info. Most samples don't have arcs to help test :("],
+        "vias": ["TODO: are vias necessary for our routing interests?"]
+      },
+      "errors": []
+    },
+    "13": {
+      "name": "Net-(D13-Pad2)",
+      "class": "TODO",
+      "pads": [
+        {
+          "LED_THT:LED_D3.0mm pad \"2\"": {
+            "abs_pos": [63.04, 100.275]
+          }
+        },
+        {
+          "Resistor_THT:R_Axial_DIN0204_L3.6mm_D1.6mm_P2.54mm_Vertical pad \"2\"": {
+            "abs_pos": [61.82, 94.775]
+          }
+        }
+      ],
+      "tracks": {
+        "segments": [
+          {
+            "start": [61.82, 94.775],
+            "end": [61.82, 96.415],
+            "width": 0.5,
+            "layer": "\"F.Cu\""
+          },
+          {
+            "start": [61.82, 96.415],
+            "end": [60.5, 97.735],
+            "width": 0.5,
+            "layer": "\"F.Cu\""
+          }
+        ],
+        "arcs": ["TODO: extract arc info. Most samples don't have arcs to help test :("],
+        "vias": ["TODO: are vias necessary for our routing interests?"]
+      },
+      "errors": []
+    },
+    "14": {
+      "name": "Net-(J3-Pad3)",
+      "class": "TODO",
+      "pads": [
+        {
+          "Connector_JST:JST_XH_B4B-XH-A_1x04_P2.50mm_Vertical pad \"3\"": {
+            "abs_pos": [48.5, 82.0]
+          }
+        },
+        {
+          "Resistor_THT:R_Axial_DIN0204_L3.6mm_D1.6mm_P2.54mm_Vertical pad \"2\"": {
+            "abs_pos": [52.04, 90.5]
+          }
+        }
+      ],
+      "tracks": {
+        "segments": [
+          {
+            "start": [43.5, 87],
+            "end": [48.54, 87],
+            "width": 0.5,
+            "layer": "\"F.Cu\""
+          },
+          {
+            "start": [48.54, 87],
+            "end": [49.5, 87.96],
+            "width": 0.5,
+            "layer": "\"F.Cu\""
+          }
+        ],
+        "arcs": ["TODO: extract arc info. Most samples don't have arcs to help test :("],
+        "vias": ["TODO: are vias necessary for our routing interests?"]
+      },
+      "errors": []
+    },
+    "15": {
+      "name": "unconnected-(J6-Pad1)",
+      "class": "TODO",
+      "pads": [
+        {
+          "Connector_JST:JST_XH_B4B-XH-A_1x04_P2.50mm_Vertical pad \"1\"": {
+            "abs_pos": [43.5, 98.0]
+          }
+        }
+      ],
+      "tracks": {
+        "segments": [],
+        "arcs": ["TODO: extract arc info. Most samples don't have arcs to help test :("],
+        "vias": ["TODO: are vias necessary for our routing interests?"]
+      },
+      "errors": []
+    },
+    "16": {
+      "name": "Net-(D14-Pad2)",
+      "class": "TODO",
+      "pads": [
+        {
+          "LED_THT:LED_D3.0mm pad \"2\"": {
+            "abs_pos": [63.04, 105.775]
+          }
+        },
+        {
+          "Resistor_THT:R_Axial_DIN0204_L3.6mm_D1.6mm_P2.54mm_Vertical pad \"2\"": {
+            "abs_pos": [61.82, 108.775]
+          }
+        }
+      ],
+      "tracks": {
+        "segments": [
+          {
+            "start": [60.5, 103.235],
+            "end": [61.235, 103.235],
+            "width": 0.5,
+            "layer": "\"F.Cu\""
+          },
+          {
+            "start": [61.235, 103.235],
+            "end": [62.5, 104.5],
+            "width": 0.5,
+            "layer": "\"F.Cu\""
+          },
+          {
+            "start": [62.5, 108.095],
+            "end": [61.82, 108.775],
+            "width": 0.5,
+            "layer": "\"F.Cu\""
+          },
+          {
+            "start": [62.5, 104.5],
+            "end": [62.5, 108.095],
+            "width": 0.5,
+            "layer": "\"F.Cu\""
+          }
+        ],
+        "arcs": ["TODO: extract arc info. Most samples don't have arcs to help test :("],
+        "vias": ["TODO: are vias necessary for our routing interests?"]
+      },
+      "errors": []
+    },
+    "17": {
+      "name": "Net-(D15-Pad1)",
+      "class": "TODO",
+      "pads": [
+        {
+          "LED_THT:LED_D3.0mm pad \"1\"": {
+            "abs_pos": [59.5, 49.5]
+          }
+        },
+        {
+          "Resistor_THT:R_Axial_DIN0204_L3.6mm_D1.6mm_P2.54mm_Vertical pad \"1\"": {
+            "abs_pos": [59.525, 54.5]
+          }
+        }
+      ],
+      "tracks": {
+        "segments": [
+          {
+            "start": [59.5, 49.5],
+            "end": [59.5, 54.5],
+            "width": 0.5,
+            "layer": "\"F.Cu\""
+          }
+        ],
+        "arcs": ["TODO: extract arc info. Most samples don't have arcs to help test :("],
+        "vias": ["TODO: are vias necessary for our routing interests?"]
+      },
+      "errors": []
+    },
+    "18": {
+      "name": "Net-(D16-Pad1)",
+      "class": "TODO",
+      "pads": [
+        {
+          "LED_THT:LED_D3.0mm pad \"1\"": {
+            "abs_pos": [65.0, 49.5]
+          }
+        },
+        {
+          "Resistor_THT:R_Axial_DIN0204_L3.6mm_D1.6mm_P2.54mm_Vertical pad \"1\"": {
+            "abs_pos": [65.0, 54.5]
+          }
+        }
+      ],
+      "tracks": {
+        "segments": [
+          {
+            "start": [65, 49.5],
+            "end": [65, 54.5],
+            "width": 0.5,
+            "layer": "\"F.Cu\""
+          }
+        ],
+        "arcs": ["TODO: extract arc info. Most samples don't have arcs to help test :("],
+        "vias": ["TODO: are vias necessary for our routing interests?"]
+      },
+      "errors": []
+    },
+    "19": {
+      "name": "Net-(D17-Pad1)",
+      "class": "TODO",
+      "pads": [
+        {
+          "LED_THT:LED_D3.0mm pad \"1\"": {
+            "abs_pos": [70.5, 49.5]
+          }
+        },
+        {
+          "Resistor_THT:R_Axial_DIN0204_L3.6mm_D1.6mm_P2.54mm_Vertical pad \"1\"": {
+            "abs_pos": [70.5, 54.5]
+          }
+        }
+      ],
+      "tracks": {
+        "segments": [
+          {
+            "start": [70.5, 49.5],
+            "end": [70.5, 54.5],
+            "width": 0.5,
+            "layer": "\"F.Cu\""
+          }
+        ],
+        "arcs": ["TODO: extract arc info. Most samples don't have arcs to help test :("],
+        "vias": ["TODO: are vias necessary for our routing interests?"]
+      },
+      "errors": []
+    },
+    "20": {
+      "name": "+5V",
+      "class": "TODO",
+      "pads": [
+        {
+          "Connector_JST:JST_XH_B4B-XH-A_1x04_P2.50mm_Vertical pad \"3\"": {
+            "abs_pos": [48.5, 66.5]
+          }
+        }
+      ],
+      "tracks": {
+        "segments": [],
+        "arcs": ["TODO: extract arc info. Most samples don't have arcs to help test :("],
+        "vias": ["TODO: are vias necessary for our routing interests?"]
+      },
+      "errors": []
+    },
+    "21": {
+      "name": "Net-(J3-Pad2)",
+      "class": "TODO",
+      "pads": [
+        {
+          "Connector_JST:JST_XH_B4B-XH-A_1x04_P2.50mm_Vertical pad \"2\"": {
+            "abs_pos": [46.0, 82.0]
+          }
+        },
+        {
+          "Resistor_THT:R_Axial_DIN0204_L3.6mm_D1.6mm_P2.54mm_Vertical pad \"2\"": {
+            "abs_pos": [52.04, 81.28]
+          }
+        },
+        {
+          "LED_THT:LED_D3.0mm pad \"2\"": {
+            "abs_pos": [58.54, 81.225]
+          }
+        }
+      ],
+      "tracks": {
+        "segments": [
+          {
+            "start": [49.555, 83.765],
+            "end": [49.5, 83.82],
+            "width": 0.5,
+            "layer": "\"F.Cu\""
+          },
+          {
+            "start": [56, 83.765],
+            "end": [49.555, 83.765],
+            "width": 0.5,
+            "layer": "\"F.Cu\""
+          },
+          {
+            "start": [48.82, 84.5],
+            "end": [49.5, 83.82],
+            "width": 0.5,
+            "layer": "\"F.Cu\""
+          },
+          {
+            "start": [43.5, 84.5],
+            "end": [48.82, 84.5],
+            "width": 0.5,
+            "layer": "\"F.Cu\""
+          }
+        ],
+        "arcs": ["TODO: extract arc info. Most samples don't have arcs to help test :("],
+        "vias": ["TODO: are vias necessary for our routing interests?"]
+      },
+      "errors": []
+    },
+    "22": {
+      "name": "Net-(J3-Pad1)",
+      "class": "TODO",
+      "pads": [
+        {
+          "Connector_JST:JST_XH_B4B-XH-A_1x04_P2.50mm_Vertical pad \"1\"": {
+            "abs_pos": [43.5, 82.0]
+          }
+        },
+        {
+          "LED_THT:LED_D3.0mm pad \"1\"": {
+            "abs_pos": [56.0, 81.225]
+          }
+        }
+      ],
+      "tracks": {
+        "segments": [
+          {
+            "start": [43.5, 82],
+            "end": [46.5, 79],
+            "width": 0.5,
+            "layer": "\"F.Cu\""
+          },
+          {
+            "start": [46.5, 79],
+            "end": [53.775, 79],
+            "width": 0.5,
+            "layer": "\"F.Cu\""
+          },
+          {
+            "start": [53.775, 79],
+            "end": [56, 81.225],
+            "width": 0.5,
+            "layer": "\"F.Cu\""
+          }
+        ],
+        "arcs": ["TODO: extract arc info. Most samples don't have arcs to help test :("],
+        "vias": ["TODO: are vias necessary for our routing interests?"]
+      },
+      "errors": []
+    },
+    "23": {
+      "name": "Net-(J4-Pad1)",
+      "class": "TODO",
+      "pads": [
+        {
+          "Connector_JST:JST_XH_B4B-XH-A_1x04_P2.50mm_Vertical pad \"1\"": {
+            "abs_pos": [43.5, 66.5]
+          }
+        },
+        {
+          "Resistor_THT:R_Axial_DIN0204_L3.6mm_D1.6mm_P2.54mm_Vertical pad \"2\"": {
+            "abs_pos": [51.54, 68.5]
+          }
+        }
+      ],
+      "tracks": {
+        "segments": [
+          {
+            "start": [43.5, 66.5],
+            "end": [44.04, 65.96],
+            "width": 0.5,
+            "layer": "\"F.Cu\""
+          },
+          {
+            "start": [44.04, 65.96],
+            "end": [49, 65.96],
+            "width": 0.5,
+            "layer": "\"F.Cu\""
+          }
+        ],
+        "arcs": ["TODO: extract arc info. Most samples don't have arcs to help test :("],
+        "vias": ["TODO: are vias necessary for our routing interests?"]
+      },
+      "errors": []
+    },
+    "24": {
+      "name": "Net-(J4-Pad2)",
+      "class": "TODO",
+      "pads": [
+        {
+          "Connector_JST:JST_XH_B4B-XH-A_1x04_P2.50mm_Vertical pad \"2\"": {
+            "abs_pos": [46.0, 66.5]
+          }
+        },
+        {
+          "Resistor_THT:R_Axial_DIN0204_L3.6mm_D1.6mm_P2.54mm_Vertical pad \"2\"": {
+            "abs_pos": [51.54, 75.0]
+          }
+        }
+      ],
+      "tracks": {
+        "segments": [
+          {
+            "start": [43.5, 69],
+            "end": [45.54, 69],
+            "width": 0.5,
+            "layer": "\"F.Cu\""
+          },
+          {
+            "start": [45.54, 69],
+            "end": [49, 72.46],
+            "width": 0.5,
+            "layer": "\"F.Cu\""
+          }
+        ],
+        "arcs": ["TODO: extract arc info. Most samples don't have arcs to help test :("],
+        "vias": ["TODO: are vias necessary for our routing interests?"]
+      },
+      "errors": []
+    },
+    "25": {
+      "name": "Net-(J5-Pad1)",
+      "class": "TODO",
+      "pads": [
+        {
+          "Connector_JST:JST_XH_B4B-XH-A_1x04_P2.50mm_Vertical pad \"1\"": {
+            "abs_pos": [113.5, 114.5]
+          }
+        },
+        {
+          "Potentiometer_THT:Potentiometer_Alps_RK09K_Single_Vertical pad \"2\"": {
+            "abs_pos": [113.5, 101.0]
+          }
+        }
+      ],
+      "tracks": {
+        "segments": [
+          {
+            "start": [111, 112],
+            "end": [111, 103.5],
+            "width": 0.5,
+            "layer": "\"F.Cu\""
+          },
+          {
+            "start": [113.5, 114.5],
+            "end": [111, 112],
+            "width": 0.5,
+            "layer": "\"F.Cu\""
+          }
+        ],
+        "arcs": ["TODO: extract arc info. Most samples don't have arcs to help test :("],
+        "vias": ["TODO: are vias necessary for our routing interests?"]
+      },
+      "errors": []
+    },
+    "26": {
+      "name": "Net-(J5-Pad2)",
+      "class": "TODO",
+      "pads": [
+        {
+          "Connector_JST:JST_XH_B4B-XH-A_1x04_P2.50mm_Vertical pad \"2\"": {
+            "abs_pos": [116.0, 114.5]
+          }
+        },
+        {
+          "Potentiometer_THT:Potentiometer_Alps_RK09K_Single_Vertical pad \"2\"": {
+            "abs_pos": [128.5, 101.0]
+          }
+        }
+      ],
+      "tracks": {
+        "segments": [
+          {
+            "start": [118.5, 117],
+            "end": [122, 117],
+            "width": 0.5,
+            "layer": "\"F.Cu\""
+          },
+          {
+            "start": [116, 114.5],
+            "end": [118.5, 117],
+            "width": 0.5,
+            "layer": "\"F.Cu\""
+          },
+          {
+            "start": [122, 117],
+            "end": [126, 113],
+            "width": 0.5,
+            "layer": "\"F.Cu\""
+          },
+          {
+            "start": [126, 113],
+            "end": [126, 103.5],
+            "width": 0.5,
+            "layer": "\"F.Cu\""
+          }
+        ],
+        "arcs": ["TODO: extract arc info. Most samples don't have arcs to help test :("],
+        "vias": ["TODO: are vias necessary for our routing interests?"]
+      },
+      "errors": []
+    },
+    "27": {
+      "name": "Net-(J7-Pad1)",
+      "class": "TODO",
+      "pads": [
+        {
+          "Connector_JST:JST_XH_B4B-XH-A_1x04_P2.50mm_Vertical pad \"1\"": {
+            "abs_pos": [57.5, 25.979]
+          }
+        },
+        {
+          "Package_DIP:DIP-20_W7.62mm_LongPads pad \"8\"": {
+            "abs_pos": [45.5, 52.355000000000004]
+          }
+        }
+      ],
+      "tracks": {
+        "segments": [
+          {
+            "start": [48.5, 34],
+            "end": [48.5, 49.355],
+            "width": 0.5,
+            "layer": "\"F.Cu\""
+          },
+          {
+            "start": [57.5, 25.979],
+            "end": [55.479, 28],
+            "width": 0.5,
+            "layer": "\"F.Cu\""
+          },
+          {
+            "start": [55.479, 28],
+            "end": [54.5, 28],
+            "width": 0.5,
+            "layer": "\"F.Cu\""
+          },
+          {
+            "start": [48.5, 49.355],
+            "end": [45.5, 52.355],
+            "width": 0.5,
+            "layer": "\"F.Cu\""
+          },
+          {
+            "start": [54.5, 28],
+            "end": [48.5, 34],
+            "width": 0.5,
+            "layer": "\"F.Cu\""
+          }
+        ],
+        "arcs": ["TODO: extract arc info. Most samples don't have arcs to help test :("],
+        "vias": ["TODO: are vias necessary for our routing interests?"]
+      },
+      "errors": []
+    },
+    "28": {
+      "name": "Net-(J8-Pad1)",
+      "class": "TODO",
+      "pads": [
+        {
+          "Connector_JST:JST_XH_B4B-XH-A_1x04_P2.50mm_Vertical pad \"1\"": {
+            "abs_pos": [71.5, 25.979]
+          }
+        },
+        {
+          "Package_DIP:DIP-20_W7.62mm_LongPads pad \"13\"": {
+            "abs_pos": [53.12, 52.355000000000004]
+          }
+        }
+      ],
+      "tracks": {
+        "segments": [
+          {
+            "start": [52.513956, 32.5],
+            "end": [64.979, 32.5],
+            "width": 0.5,
+            "layer": "\"F.Cu\""
+          },
+          {
+            "start": [64.979, 32.5],
+            "end": [71.5, 25.979],
+            "width": 0.5,
+            "layer": "\"F.Cu\""
+          },
+          {
+            "start": [51, 34.013956],
+            "end": [52.513956, 32.5],
+            "width": 0.5,
+            "layer": "\"F.Cu\""
+          },
+          {
+            "start": [53.12, 52.355],
+            "end": [51, 50.235],
+            "width": 0.5,
+            "layer": "\"F.Cu\""
+          },
+          {
+            "start": [51, 50.235],
+            "end": [51, 34.013956],
+            "width": 0.5,
+            "layer": "\"F.Cu\""
+          }
+        ],
+        "arcs": ["TODO: extract arc info. Most samples don't have arcs to help test :("],
+        "vias": ["TODO: are vias necessary for our routing interests?"]
+      },
+      "errors": []
+    },
+    "29": {
+      "name": "Net-(R1-Pad1)",
+      "class": "TODO",
+      "pads": [
+        {
+          "Resistor_THT:R_Axial_DIN0204_L3.6mm_D1.6mm_P2.54mm_Vertical pad \"1\"": {
+            "abs_pos": [98.04, 96.5]
+          }
+        },
+        {
+          "Button_Switch_THT:SW_PUSH_6mm pad \"2\"": {
+            "abs_pos": [101.5, 96.5]
+          }
+        },
+        {
+          "Button_Switch_THT:SW_PUSH_6mm pad \"2\"": {
+            "abs_pos": [95.0, 96.5]
+          }
+        }
+      ],
+      "tracks": {
+        "segments": [
+          {
+            "start": [99.5, 95.04],
+            "end": [99.5, 92],
+            "width": 0.5,
+            "layer": "\"F.Cu\""
+          },
+          {
+            "start": [99.5, 85.5],
+            "end": [99.5, 92],
+            "width": 0.5,
+            "layer": "\"F.Cu\""
+          },
+          {
+            "start": [98.04, 96.5],
+            "end": [99.5, 95.04],
+            "width": 0.5,
+            "layer": "\"F.Cu\""
+          }
+        ],
+        "arcs": ["TODO: extract arc info. Most samples don't have arcs to help test :("],
+        "vias": ["TODO: are vias necessary for our routing interests?"]
+      },
+      "errors": []
+    },
+    "30": {
+      "name": "Net-(R2-Pad2)",
+      "class": "TODO",
+      "pads": [
+        {
+          "Resistor_THT:R_Axial_DIN0204_L3.6mm_D1.6mm_P2.54mm_Vertical pad \"2\"": {
+            "abs_pos": [89.04, 96.5]
+          }
+        },
+        {
+          "Button_Switch_THT:SW_PUSH_6mm pad \"2\"": {
+            "abs_pos": [85.5, 96.5]
+          }
+        },
+        {
+          "Button_Switch_THT:SW_PUSH_6mm pad \"2\"": {
+            "abs_pos": [92.0, 96.5]
+          }
+        }
+      ],
+      "tracks": {
+        "segments": [
+          {
+            "start": [90, 92],
+            "end": [90, 85.5],
+            "width": 0.5,
+            "layer": "\"F.Cu\""
+          },
+          {
+            "start": [89.04, 96.5],
+            "end": [89.04, 92.96],
+            "width": 0.5,
+            "layer": "\"F.Cu\""
+          },
+          {
+            "start": [89.04, 92.96],
+            "end": [90, 92],
+            "width": 0.5,
+            "layer": "\"F.Cu\""
+          }
+        ],
+        "arcs": ["TODO: extract arc info. Most samples don't have arcs to help test :("],
+        "vias": ["TODO: are vias necessary for our routing interests?"]
+      },
+      "errors": []
+    },
+    "31": {
+      "name": "unconnected-(J16-Pad1)",
+      "class": "TODO",
+      "pads": [
+        {
+          "Connector_JST:JST_XH_B4B-XH-A_1x04_P2.50mm_Vertical pad \"1\"": {
+            "abs_pos": [88.5, 26.025]
+          }
+        }
+      ],
+      "tracks": {
+        "segments": [],
+        "arcs": ["TODO: extract arc info. Most samples don't have arcs to help test :("],
+        "vias": ["TODO: are vias necessary for our routing interests?"]
+      },
+      "errors": []
+    },
+    "32": {
+      "name": "Net-(J16-Pad2)",
+      "class": "TODO",
+      "pads": [
+        {
+          "Resistor_THT:R_Axial_DIN0204_L3.6mm_D1.6mm_P2.54mm_Vertical pad \"2\"": {
+            "abs_pos": [86.04, 39.2625]
+          }
+        },
+        {
+          "digikey-footprints:TO-92-3 pad \"2\"": {
+            "abs_pos": [87.27, 43.7625]
+          }
+        },
+        {
+          "digikey-footprints:TO-92-3 pad \"2\"": {
+            "abs_pos": [87.27, 50.2625]
+          }
+        },
+        {
+          "Connector_JST:JST_XH_B4B-XH-A_1x04_P2.50mm_Vertical pad \"2\"": {
+            "abs_pos": [91.0, 26.025]
+          }
+        }
+      ],
+      "tracks": {
+        "segments": [
+          {
+            "start": [84.73, 43.7625],
+            "end": [84.73, 50.2625],
+            "width": 0.5,
+            "layer": "\"F.Cu\""
+          },
+          {
+            "start": [86, 26.025],
+            "end": [86, 39.2225],
+            "width": 0.5,
+            "layer": "\"F.Cu\""
+          },
+          {
+            "start": [86.04, 39.2625],
+            "end": [84.73, 40.5725],
+            "width": 0.5,
+            "layer": "\"F.Cu\""
+          },
+          {
+            "start": [86, 39.2225],
+            "end": [86.04, 39.2625],
+            "width": 0.5,
+            "layer": "\"F.Cu\""
+          },
+          {
+            "start": [84.73, 40.5725],
+            "end": [84.73, 43.7625],
+            "width": 0.5,
+            "layer": "\"F.Cu\""
+          }
+        ],
+        "arcs": ["TODO: extract arc info. Most samples don't have arcs to help test :("],
+        "vias": ["TODO: are vias necessary for our routing interests?"]
+      },
+      "errors": []
+    },
+    "33": {
+      "name": "unconnected-(RLY2-Pad4)",
+      "class": "TODO",
+      "pads": [
+        {
+          "digikey-footprints:Relay_THT_G5LE-14 pad \"4\"": {
+            "abs_pos": [116.7, 36.5]
+          }
+        }
+      ],
+      "tracks": {
+        "segments": [],
+        "arcs": ["TODO: extract arc info. Most samples don't have arcs to help test :("],
+        "vias": ["TODO: are vias necessary for our routing interests?"]
+      },
+      "errors": []
+    },
+    "34": {
+      "name": "Net-(D1-Pad2)",
+      "class": "TODO",
+      "pads": [
+        {
+          "LED_THT:LED_D3.0mm pad \"2\"": {
+            "abs_pos": [100.54, 103.0]
+          }
+        },
+        {
+          "Resistor_THT:R_Axial_DIN0204_L3.6mm_D1.6mm_P2.54mm_Vertical pad \"2\"": {
+            "abs_pos": [100.58000000000001, 96.5]
+          }
+        }
+      ],
+      "tracks": {
+        "segments": [
+          {
+            "start": [95.46, 103],
+            "end": [95.46, 96.54],
+            "width": 0.5,
+            "layer": "\"F.Cu\""
+          },
+          {
+            "start": [95.46, 96.54],
+            "end": [95.5, 96.5],
+            "width": 0.5,
+            "layer": "\"F.Cu\""
+          }
+        ],
+        "arcs": ["TODO: extract arc info. Most samples don't have arcs to help test :("],
+        "vias": ["TODO: are vias necessary for our routing interests?"]
+      },
+      "errors": []
+    },
+    "35": {
+      "name": "Net-(D22-Pad2)",
+      "class": "TODO",
+      "pads": [
+        {
+          "LED_THT:LED_D3.0mm pad \"2\"": {
+            "abs_pos": [102.54, 68.96]
+          }
+        },
+        {
+          "digikey-footprints:Relay_THT_G5LE-14 pad \"3\"": {
+            "abs_pos": [116.7, 48.5]
+          }
+        }
+      ],
+      "tracks": {
+        "segments": [
+          {
+            "start": [96.5, 56.7],
+            "end": [96.5, 62.92],
+            "width": 0.5,
+            "layer": "\"F.Cu\""
+          },
+          {
+            "start": [96.5, 62.92],
+            "end": [100, 66.42],
+            "width": 0.5,
+            "layer": "\"F.Cu\""
+          }
+        ],
+        "arcs": ["TODO: extract arc info. Most samples don't have arcs to help test :("],
+        "vias": ["TODO: are vias necessary for our routing interests?"]
+      },
+      "errors": []
+    },
+    "36": {
+      "name": "Net-(D22-Pad1)",
+      "class": "TODO",
+      "pads": [
+        {
+          "Resistor_THT:R_Axial_DIN0204_L3.6mm_D1.6mm_P2.54mm_Vertical pad \"1\"": {
+            "abs_pos": [107, 69]
+          }
+        },
+        {
+          "LED_THT:LED_D3.0mm pad \"1\"": {
+            "abs_pos": [100.0, 68.96]
+          }
+        }
+      ],
+      "tracks": {
+        "segments": [
+          {
+            "start": [106.96, 68.96],
+            "end": [107, 69],
+            "width": 0.5,
+            "layer": "\"F.Cu\""
+          },
+          {
+            "start": [100, 68.96],
+            "end": [106.96, 68.96],
+            "width": 0.5,
+            "layer": "\"F.Cu\""
+          }
+        ],
+        "arcs": ["TODO: extract arc info. Most samples don't have arcs to help test :("],
+        "vias": ["TODO: are vias necessary for our routing interests?"]
+      },
+      "errors": []
+    },
+    "37": {
+      "name": "Net-(J7-Pad2)",
+      "class": "TODO",
+      "pads": [
+        {
+          "Connector_JST:JST_XH_B4B-XH-A_1x04_P2.50mm_Vertical pad \"2\"": {
+            "abs_pos": [60.0, 25.979]
+          }
+        },
+        {
+          "Package_DIP:DIP-20_W7.62mm_LongPads pad \"3\"": {
+            "abs_pos": [45.5, 39.655]
+          }
+        }
+      ],
+      "tracks": {
+        "segments": [
+          {
+            "start": [55, 26],
+            "end": [47.5, 33.5],
+            "width": 0.5,
+            "layer": "\"F.Cu\""
+          },
+          {
+            "start": [47.5, 33.5],
+            "end": [47.5, 37.655],
+            "width": 0.5,
+            "layer": "\"F.Cu\""
+          },
+          {
+            "start": [47.5, 37.655],
+            "end": [45.5, 39.655],
+            "width": 0.5,
+            "layer": "\"F.Cu\""
+          },
+          {
+            "start": [55, 25.979],
+            "end": [55, 26],
+            "width": 0.5,
+            "layer": "\"F.Cu\""
+          }
+        ],
+        "arcs": ["TODO: extract arc info. Most samples don't have arcs to help test :("],
+        "vias": ["TODO: are vias necessary for our routing interests?"]
+      },
+      "errors": []
+    },
+    "38": {
+      "name": "Net-(J8-Pad2)",
+      "class": "TODO",
+      "pads": [
+        {
+          "Connector_JST:JST_XH_B4B-XH-A_1x04_P2.50mm_Vertical pad \"2\"": {
+            "abs_pos": [74.0, 25.979]
+          }
+        },
+        {
+          "Package_DIP:DIP-20_W7.62mm_LongPads pad \"12\"": {
+            "abs_pos": [53.12, 54.895]
+          }
+        }
+      ],
+      "tracks": {
+        "segments": [
+          {
+            "start": [50, 34],
+            "end": [50, 51.775],
+            "width": 0.5,
+            "layer": "\"F.Cu\""
+          },
+          {
+            "start": [52.5, 31.5],
+            "end": [50, 34],
+            "width": 0.5,
+            "layer": "\"F.Cu\""
+          },
+          {
+            "start": [50, 51.775],
+            "end": [53.12, 54.895],
+            "width": 0.5,
+            "layer": "\"F.Cu\""
+          },
+          {
+            "start": [69, 25.979],
+            "end": [63.479, 31.5],
+            "width": 0.5,
+            "layer": "\"F.Cu\""
+          },
+          {
+            "start": [63.479, 31.5],
+            "end": [52.5, 31.5],
+            "width": 0.5,
+            "layer": "\"F.Cu\""
+          }
+        ],
+        "arcs": ["TODO: extract arc info. Most samples don't have arcs to help test :("],
+        "vias": ["TODO: are vias necessary for our routing interests?"]
+      },
+      "errors": []
+    },
+    "39": {
+      "name": "unconnected-(U3-Pad18)",
+      "class": "TODO",
+      "pads": [
+        {
+          "Package_DIP:DIP-20_W7.62mm_LongPads pad \"18\"": {
+            "abs_pos": [53.12, 39.655]
+          }
+        }
+      ],
+      "tracks": {
+        "segments": [],
+        "arcs": ["TODO: extract arc info. Most samples don't have arcs to help test :("],
+        "vias": ["TODO: are vias necessary for our routing interests?"]
+      },
+      "errors": []
+    },
+    "40": {
+      "name": "Net-(D10-Pad1)",
+      "class": "TODO",
+      "pads": [
+        {
+          "LED_THT:LED_D3.0mm pad \"1\"": {
+            "abs_pos": [65, 43]
+          }
+        },
+        {
+          "Resistor_THT:R_Axial_DIN0204_L3.6mm_D1.6mm_P2.54mm_Vertical pad \"1\"": {
+            "abs_pos": [65, 38]
+          }
+        }
+      ],
+      "tracks": {
+        "segments": [
+          {
+            "start": [65, 38],
+            "end": [65, 42.96],
+            "width": 0.5,
+            "layer": "\"F.Cu\""
+          }
+        ],
+        "arcs": ["TODO: extract arc info. Most samples don't have arcs to help test :("],
+        "vias": ["TODO: are vias necessary for our routing interests?"]
+      },
+      "errors": []
+    },
+    "41": {
+      "name": "Net-(D12-Pad1)",
+      "class": "TODO",
+      "pads": [
+        {
+          "LED_THT:LED_D3.0mm pad \"1\"": {
+            "abs_pos": [76, 43]
+          }
+        },
+        {
+          "Resistor_THT:R_Axial_DIN0204_L3.6mm_D1.6mm_P2.54mm_Vertical pad \"1\"": {
+            "abs_pos": [76, 38]
+          }
+        }
+      ],
+      "tracks": {
+        "segments": [
+          {
+            "start": [76, 38],
+            "end": [76, 43],
+            "width": 0.5,
+            "layer": "\"F.Cu\""
+          }
+        ],
+        "arcs": ["TODO: extract arc info. Most samples don't have arcs to help test :("],
+        "vias": ["TODO: are vias necessary for our routing interests?"]
+      },
+      "errors": []
+    },
+    "42": {
+      "name": "Net-(R3-Pad1)",
+      "class": "TODO",
+      "pads": [
+        {
+          "Resistor_THT:R_Axial_DIN0204_L3.6mm_D1.6mm_P2.54mm_Vertical pad \"1\"": {
+            "abs_pos": [78.0, 96.5]
+          }
+        },
+        {
+          "Button_Switch_THT:SW_PUSH_6mm pad \"2\"": {
+            "abs_pos": [74.5, 96.646]
+          }
+        },
+        {
+          "Button_Switch_THT:SW_PUSH_6mm pad \"2\"": {
+            "abs_pos": [81.0, 96.646]
+          }
+        }
+      ],
+      "tracks": {
+        "segments": [
+          {
+            "start": [79, 92.146],
+            "end": [79, 85.646],
+            "width": 0.5,
+            "layer": "\"F.Cu\""
+          },
+          {
+            "start": [78, 96.5],
+            "end": [78, 94],
+            "width": 0.5,
+            "layer": "\"F.Cu\""
+          },
+          {
+            "start": [79, 93],
+            "end": [79, 92.146],
+            "width": 0.5,
+            "layer": "\"F.Cu\""
+          },
+          {
+            "start": [78, 94],
+            "end": [79, 93],
+            "width": 0.5,
+            "layer": "\"F.Cu\""
+          }
+        ],
+        "arcs": ["TODO: extract arc info. Most samples don't have arcs to help test :("],
+        "vias": ["TODO: are vias necessary for our routing interests?"]
+      },
+      "errors": []
+    },
+    "43": {
+      "name": "Net-(R11-Pad2)",
+      "class": "TODO",
+      "pads": [
+        {
+          "Resistor_THT:R_Axial_DIN0204_L3.6mm_D1.6mm_P2.54mm_Vertical pad \"2\"": {
+            "abs_pos": [69.0, 96.5]
+          }
+        },
+        {
+          "Button_Switch_THT:SW_PUSH_6mm pad \"2\"": {
+            "abs_pos": [65.0, 96.646]
+          }
+        },
+        {
+          "Button_Switch_THT:SW_PUSH_6mm pad \"2\"": {
+            "abs_pos": [71.5, 96.646]
+          }
+        }
+      ],
+      "tracks": {
+        "segments": [
+          {
+            "start": [69.5, 96],
+            "end": [69, 96.5],
+            "width": 0.5,
+            "layer": "\"F.Cu\""
+          },
+          {
+            "start": [69.5, 85.646],
+            "end": [69.5, 96],
+            "width": 0.5,
+            "layer": "\"F.Cu\""
+          }
+        ],
+        "arcs": ["TODO: extract arc info. Most samples don't have arcs to help test :("],
+        "vias": ["TODO: are vias necessary for our routing interests?"]
+      },
+      "errors": []
+    },
+    "44": {
+      "name": "unconnected-(J6-Pad2)",
+      "class": "TODO",
+      "pads": [
+        {
+          "Connector_JST:JST_XH_B4B-XH-A_1x04_P2.50mm_Vertical pad \"2\"": {
+            "abs_pos": [46.0, 98.0]
+          }
+        }
+      ],
+      "tracks": {
+        "segments": [],
+        "arcs": ["TODO: extract arc info. Most samples don't have arcs to help test :("],
+        "vias": ["TODO: are vias necessary for our routing interests?"]
+      },
+      "errors": []
+    },
+    "45": {
+      "name": "Net-(D20-Pad1)",
+      "class": "TODO",
+      "pads": [
+        {
+          "Connector_JST:JST_XH_B4B-XH-A_1x04_P2.50mm_Vertical pad \"2\"": {
+            "abs_pos": [107.5, 26.0]
+          }
+        },
+        {
+          "digikey-footprints:Relay_THT_G5LE-14 pad \"5\"": {
+            "abs_pos": [104.5, 36.5]
+          }
+        },
+        {
+          "Diode_THT:D_DO-201AE_P15.24mm_Horizontal pad \"1\"": {
+            "abs_pos": [110.255, 35.0]
+          }
+        }
+      ],
+      "tracks": {
+        "segments": [
+          {
+            "start": [102.5, 27.245],
+            "end": [110.255, 35],
+            "width": 1,
+            "layer": "\"F.Cu\""
+          },
+          {
+            "start": [102.5, 26],
+            "end": [102.5, 27.245],
+            "width": 1,
+            "layer": "\"F.Cu\""
+          },
+          {
+            "start": [110.255, 42.745],
+            "end": [108.5, 44.5],
+            "width": 1,
+            "layer": "\"F.Cu\""
+          },
+          {
+            "start": [110.255, 35],
+            "end": [110.255, 42.745],
+            "width": 1,
+            "layer": "\"F.Cu\""
+          }
+        ],
+        "arcs": ["TODO: extract arc info. Most samples don't have arcs to help test :("],
+        "vias": ["TODO: are vias necessary for our routing interests?"]
+      },
+      "errors": []
+    },
+    "46": {
+      "name": "Net-(D18-Pad1)",
+      "class": "TODO",
+      "pads": [
+        {
+          "LED_THT:LED_D3.0mm pad \"1\"": {
+            "abs_pos": [76.0, 49.5]
+          }
+        },
+        {
+          "Resistor_THT:R_Axial_DIN0204_L3.6mm_D1.6mm_P2.54mm_Vertical pad \"1\"": {
+            "abs_pos": [76.0, 54.5]
+          }
+        }
+      ],
+      "tracks": {
+        "segments": [
+          {
+            "start": [75.975, 49.5],
+            "end": [75.975, 54.475],
+            "width": 0.5,
+            "layer": "\"F.Cu\""
+          },
+          {
+            "start": [75.975, 54.475],
+            "end": [76, 54.5],
+            "width": 0.5,
+            "layer": "\"F.Cu\""
+          }
+        ],
+        "arcs": ["TODO: extract arc info. Most samples don't have arcs to help test :("],
+        "vias": ["TODO: are vias necessary for our routing interests?"]
+      },
+      "errors": []
+    },
+    "47": {
+      "name": "Net-(R13-Pad2)",
+      "class": "TODO",
+      "pads": [
+        {
+          "Resistor_THT:R_Axial_DIN0204_L3.6mm_D1.6mm_P2.54mm_Vertical pad \"2\"": {
+            "abs_pos": [62.04, 38.0]
+          }
+        },
+        {
+          "Package_DIP:DIP-20_W7.62mm_LongPads pad \"14\"": {
+            "abs_pos": [53.12, 49.815000000000005]
+          }
+        }
+      ],
+      "tracks": {
+        "segments": [
+          {
+            "start": [58.5, 36.5],
+            "end": [61.5, 36.5],
+            "width": 0.5,
+            "layer": "\"F.Cu\""
+          },
+          {
+            "start": [58, 37],
+            "end": [58.5, 36.5],
+            "width": 0.5,
+            "layer": "\"F.Cu\""
+          },
+          {
+            "start": [53.12, 49.815],
+            "end": [58, 44.935],
+            "width": 0.5,
+            "layer": "\"F.Cu\""
+          },
+          {
+            "start": [58, 44.935],
+            "end": [58, 37],
+            "width": 0.5,
+            "layer": "\"F.Cu\""
+          },
+          {
+            "start": [61.5, 36.5],
+            "end": [62.04, 37.04],
+            "width": 0.5,
+            "layer": "\"F.Cu\""
+          },
+          {
+            "start": [62.04, 37.04],
+            "end": [62.04, 38],
+            "width": 0.5,
+            "layer": "\"F.Cu\""
+          }
+        ],
+        "arcs": ["TODO: extract arc info. Most samples don't have arcs to help test :("],
+        "vias": ["TODO: are vias necessary for our routing interests?"]
+      },
+      "errors": []
+    },
+    "48": {
+      "name": "Net-(R14-Pad2)",
+      "class": "TODO",
+      "pads": [
+        {
+          "Resistor_THT:R_Axial_DIN0204_L3.6mm_D1.6mm_P2.54mm_Vertical pad \"2\"": {
+            "abs_pos": [67.54, 38.0]
+          }
+        },
+        {
+          "Package_DIP:DIP-20_W7.62mm_LongPads pad \"15\"": {
+            "abs_pos": [53.12, 47.275000000000006]
+          }
+        }
+      ],
+      "tracks": {
+        "segments": [
+          {
+            "start": [53.12, 47.275],
+            "end": [53.225, 47.275],
+            "width": 0.5,
+            "layer": "\"F.Cu\""
+          },
+          {
+            "start": [65, 35.5],
+            "end": [67.5, 38],
+            "width": 0.5,
+            "layer": "\"F.Cu\""
+          },
+          {
+            "start": [57, 43.5],
+            "end": [57, 36.5],
+            "width": 0.5,
+            "layer": "\"F.Cu\""
+          },
+          {
+            "start": [53.225, 47.275],
+            "end": [57, 43.5],
+            "width": 0.5,
+            "layer": "\"F.Cu\""
+          },
+          {
+            "start": [58, 35.5],
+            "end": [65, 35.5],
+            "width": 0.5,
+            "layer": "\"F.Cu\""
+          },
+          {
+            "start": [57, 36.5],
+            "end": [58, 35.5],
+            "width": 0.5,
+            "layer": "\"F.Cu\""
+          }
+        ],
+        "arcs": ["TODO: extract arc info. Most samples don't have arcs to help test :("],
+        "vias": ["TODO: are vias necessary for our routing interests?"]
+      },
+      "errors": []
+    },
+    "49": {
+      "name": "Net-(R15-Pad2)",
+      "class": "TODO",
+      "pads": [
+        {
+          "Resistor_THT:R_Axial_DIN0204_L3.6mm_D1.6mm_P2.54mm_Vertical pad \"2\"": {
+            "abs_pos": [73.04, 38.0]
+          }
+        },
+        {
+          "Package_DIP:DIP-20_W7.62mm_LongPads pad \"16\"": {
+            "abs_pos": [53.12, 44.735]
+          }
+        }
+      ],
+      "tracks": {
+        "segments": [
+          {
+            "start": [53.12, 44.735],
+            "end": [56, 41.855],
+            "width": 0.5,
+            "layer": "\"F.Cu\""
+          },
+          {
+            "start": [56, 35.5],
+            "end": [57, 34.5],
+            "width": 0.5,
+            "layer": "\"F.Cu\""
+          },
+          {
+            "start": [56, 41.855],
+            "end": [56, 35.5],
+            "width": 0.5,
+            "layer": "\"F.Cu\""
+          },
+          {
+            "start": [69.54, 34.5],
+            "end": [73.04, 38],
+            "width": 0.5,
+            "layer": "\"F.Cu\""
+          },
+          {
+            "start": [57, 34.5],
+            "end": [69.54, 34.5],
+            "width": 0.5,
+            "layer": "\"F.Cu\""
+          }
+        ],
+        "arcs": ["TODO: extract arc info. Most samples don't have arcs to help test :("],
+        "vias": ["TODO: are vias necessary for our routing interests?"]
+      },
+      "errors": []
+    },
+    "50": {
+      "name": "Net-(R16-Pad2)",
+      "class": "TODO",
+      "pads": [
+        {
+          "Resistor_THT:R_Axial_DIN0204_L3.6mm_D1.6mm_P2.54mm_Vertical pad \"2\"": {
+            "abs_pos": [78.54, 38.0]
+          }
+        },
+        {
+          "Package_DIP:DIP-20_W7.62mm_LongPads pad \"17\"": {
+            "abs_pos": [53.12, 42.195]
+          }
+        }
+      ],
+      "tracks": {
+        "segments": [
+          {
+            "start": [56.5, 33.5],
+            "end": [74.04, 33.5],
+            "width": 0.5,
+            "layer": "\"F.Cu\""
+          },
+          {
+            "start": [55, 35],
+            "end": [56.5, 33.5],
+            "width": 0.5,
+            "layer": "\"F.Cu\""
+          },
+          {
+            "start": [55, 40.315],
+            "end": [55, 35],
+            "width": 0.5,
+            "layer": "\"F.Cu\""
+          },
+          {
+            "start": [53.12, 42.195],
+            "end": [55, 40.315],
+            "width": 0.5,
+            "layer": "\"F.Cu\""
+          },
+          {
+            "start": [74.04, 33.5],
+            "end": [78.54, 38],
+            "width": 0.5,
+            "layer": "\"F.Cu\""
+          }
+        ],
+        "arcs": ["TODO: extract arc info. Most samples don't have arcs to help test :("],
+        "vias": ["TODO: are vias necessary for our routing interests?"]
+      },
+      "errors": []
+    },
+    "51": {
+      "name": "Net-(R22-Pad2)",
+      "class": "TODO",
+      "pads": [
+        {
+          "Resistor_THT:R_Axial_DIN0204_L3.6mm_D1.6mm_P2.54mm_Vertical pad \"2\"": {
+            "abs_pos": [62.065, 54.5]
+          }
+        },
+        {
+          "Package_DIP:DIP-20_W7.62mm_LongPads pad \"7\"": {
+            "abs_pos": [45.5, 49.815000000000005]
+          }
+        }
+      ],
+      "tracks": {
+        "segments": [
+          {
+            "start": [62.065, 55.935],
+            "end": [62.065, 54.5],
+            "width": 0.5,
+            "layer": "\"F.Cu\""
+          },
+          {
+            "start": [58.5, 59.5],
+            "end": [62.065, 55.935],
+            "width": 0.5,
+            "layer": "\"F.Cu\""
+          },
+          {
+            "start": [45.5, 49.815],
+            "end": [44.685, 49.815],
+            "width": 0.5,
+            "layer": "\"F.Cu\""
+          },
+          {
+            "start": [43.5, 58.5],
+            "end": [44.5, 59.5],
+            "width": 0.5,
+            "layer": "\"F.Cu\""
+          },
+          {
+            "start": [44.5, 59.5],
+            "end": [58.5, 59.5],
+            "width": 0.5,
+            "layer": "\"F.Cu\""
+          },
+          {
+            "start": [43.5, 51],
+            "end": [43.5, 58.5],
+            "width": 0.5,
+            "layer": "\"F.Cu\""
+          },
+          {
+            "start": [44.685, 49.815],
+            "end": [43.5, 51],
+            "width": 0.5,
+            "layer": "\"F.Cu\""
+          }
+        ],
+        "arcs": ["TODO: extract arc info. Most samples don't have arcs to help test :("],
+        "vias": ["TODO: are vias necessary for our routing interests?"]
+      },
+      "errors": []
+    },
+    "52": {
+      "name": "Net-(R23-Pad2)",
+      "class": "TODO",
+      "pads": [
+        {
+          "Resistor_THT:R_Axial_DIN0204_L3.6mm_D1.6mm_P2.54mm_Vertical pad \"2\"": {
+            "abs_pos": [67.54, 54.5]
+          }
+        },
+        {
+          "Package_DIP:DIP-20_W7.62mm_LongPads pad \"6\"": {
+            "abs_pos": [45.5, 47.275000000000006]
+          }
+        }
+      ],
+      "tracks": {
+        "segments": [
+          {
+            "start": [44, 60.5],
+            "end": [61.54, 60.5],
+            "width": 0.5,
+            "layer": "\"F.Cu\""
+          },
+          {
+            "start": [42.5, 59],
+            "end": [44, 60.5],
+            "width": 0.5,
+            "layer": "\"F.Cu\""
+          },
+          {
+            "start": [42.5, 50.275],
+            "end": [42.5, 59],
+            "width": 0.5,
+            "layer": "\"F.Cu\""
+          },
+          {
+            "start": [61.54, 60.5],
+            "end": [67.54, 54.5],
+            "width": 0.5,
+            "layer": "\"F.Cu\""
+          },
+          {
+            "start": [45.5, 47.275],
+            "end": [42.5, 50.275],
+            "width": 0.5,
+            "layer": "\"F.Cu\""
+          }
+        ],
+        "arcs": ["TODO: extract arc info. Most samples don't have arcs to help test :("],
+        "vias": ["TODO: are vias necessary for our routing interests?"]
+      },
+      "errors": []
+    },
+    "53": {
+      "name": "Net-(R24-Pad2)",
+      "class": "TODO",
+      "pads": [
+        {
+          "Resistor_THT:R_Axial_DIN0204_L3.6mm_D1.6mm_P2.54mm_Vertical pad \"2\"": {
+            "abs_pos": [73.04, 54.5]
+          }
+        },
+        {
+          "Package_DIP:DIP-20_W7.62mm_LongPads pad \"5\"": {
+            "abs_pos": [45.5, 44.735]
+          }
+        }
+      ],
+      "tracks": {
+        "segments": [
+          {
+            "start": [40.5, 58.5],
+            "end": [40.5, 49.735],
+            "width": 0.5,
+            "layer": "\"F.Cu\""
+          },
+          {
+            "start": [66.04, 61.5],
+            "end": [43.5, 61.5],
+            "width": 0.5,
+            "layer": "\"F.Cu\""
+          },
+          {
+            "start": [73.04, 54.5],
+            "end": [66.04, 61.5],
+            "width": 0.5,
+            "layer": "\"F.Cu\""
+          },
+          {
+            "start": [40.5, 49.735],
+            "end": [45.5, 44.735],
+            "width": 0.5,
+            "layer": "\"F.Cu\""
+          },
+          {
+            "start": [43.5, 61.5],
+            "end": [40.5, 58.5],
+            "width": 0.5,
+            "layer": "\"F.Cu\""
+          }
+        ],
+        "arcs": ["TODO: extract arc info. Most samples don't have arcs to help test :("],
+        "vias": ["TODO: are vias necessary for our routing interests?"]
+      },
+      "errors": []
+    },
+    "54": {
+      "name": "Net-(R25-Pad2)",
+      "class": "TODO",
+      "pads": [
+        {
+          "Resistor_THT:R_Axial_DIN0204_L3.6mm_D1.6mm_P2.54mm_Vertical pad \"2\"": {
+            "abs_pos": [78.54, 54.5]
+          }
+        },
+        {
+          "Package_DIP:DIP-20_W7.62mm_LongPads pad \"4\"": {
+            "abs_pos": [45.5, 42.195]
+          }
+        }
+      ],
+      "tracks": {
+        "segments": [
+          {
+            "start": [39, 46.5],
+            "end": [39, 58.5],
+            "width": 0.5,
+            "layer": "\"F.Cu\""
+          },
+          {
+            "start": [45.5, 42.195],
+            "end": [43.305, 42.195],
+            "width": 0.5,
+            "layer": "\"F.Cu\""
+          },
+          {
+            "start": [43.305, 42.195],
+            "end": [39, 46.5],
+            "width": 0.5,
+            "layer": "\"F.Cu\""
+          },
+          {
+            "start": [39, 58.5],
+            "end": [43, 62.5],
+            "width": 0.5,
+            "layer": "\"F.Cu\""
+          },
+          {
+            "start": [43, 62.5],
+            "end": [70.54, 62.5],
+            "width": 0.5,
+            "layer": "\"F.Cu\""
+          },
+          {
+            "start": [70.54, 62.5],
+            "end": [78.54, 54.5],
+            "width": 0.5,
+            "layer": "\"F.Cu\""
+          }
+        ],
+        "arcs": ["TODO: extract arc info. Most samples don't have arcs to help test :("],
+        "vias": ["TODO: are vias necessary for our routing interests?"]
+      },
+      "errors": []
+    },
+    "55": {
+      "name": "Net-(R17-Pad1)",
+      "class": "TODO",
+      "pads": [
+        {
+          "Resistor_THT:R_Axial_DIN0204_L3.6mm_D1.6mm_P2.54mm_Vertical pad \"1\"": {
+            "abs_pos": [113.5, 107.0]
+          }
+        },
+        {
+          "Potentiometer_THT:Potentiometer_Alps_RK09K_Single_Vertical pad \"1\"": {
+            "abs_pos": [113.5, 103.5]
+          }
+        }
+      ],
+      "tracks": {
+        "segments": [
+          {
+            "start": [113.5, 107],
+            "end": [113.5, 103.5],
+            "width": 1,
+            "layer": "\"F.Cu\""
+          }
+        ],
+        "arcs": ["TODO: extract arc info. Most samples don't have arcs to help test :("],
+        "vias": ["TODO: are vias necessary for our routing interests?"]
+      },
+      "errors": []
+    },
+    "56": {
+      "name": "unconnected-(J9-Pad1)",
+      "class": "TODO",
+      "pads": [
+        {
+          "Connector_JST:JST_XH_B4B-XH-A_1x04_P2.50mm_Vertical pad \"1\"": {
+            "abs_pos": [105, 26]
+          }
+        }
+      ],
+      "tracks": {
+        "segments": [],
+        "arcs": ["TODO: extract arc info. Most samples don't have arcs to help test :("],
+        "vias": ["TODO: are vias necessary for our routing interests?"]
+      },
+      "errors": []
+    },
+    "57": {
+      "name": "Net-(ENC1-PadA)",
+      "class": "TODO",
+      "pads": [
+        {
+          "Connector_JST:JST_XH_B4B-XH-A_1x04_P2.50mm_Vertical pad \"1\"": {
+            "abs_pos": [123.5, 26.0]
+          }
+        },
+        {
+          "eec:Bourns_Inc.-PEC16-4015F-N0024-MFG pad \"A\"": {
+            "abs_pos": [117.0, 50.900001]
+          }
+        }
+      ],
+      "tracks": {
+        "segments": [
+          {
+            "start": [126.5, 29],
+            "end": [123.5, 26],
+            "width": 0.5,
+            "layer": "\"F.Cu\""
+          },
+          {
+            "start": [127, 34.099999],
+            "end": [126.5, 33.599999],
+            "width": 0.5,
+            "layer": "\"F.Cu\""
+          },
+          {
+            "start": [126.5, 33.599999],
+            "end": [126.5, 29],
+            "width": 0.5,
+            "layer": "\"F.Cu\""
+          }
+        ],
+        "arcs": ["TODO: extract arc info. Most samples don't have arcs to help test :("],
+        "vias": ["TODO: are vias necessary for our routing interests?"]
+      },
+      "errors": []
+    },
+    "58": {
+      "name": "Net-(ENC1-PadB)",
+      "class": "TODO",
+      "pads": [
+        {
+          "Connector_JST:JST_XH_B4B-XH-A_1x04_P2.50mm_Vertical pad \"2\"": {
+            "abs_pos": [126.0, 26.0]
+          }
+        },
+        {
+          "eec:Bourns_Inc.-PEC16-4015F-N0024-MFG pad \"B\"": {
+            "abs_pos": [122.0, 50.900001]
+          }
+        }
+      ],
+      "tracks": {
+        "segments": [
+          {
+            "start": [122, 34.099999],
+            "end": [121, 33.099999],
+            "width": 0.5,
+            "layer": "\"F.Cu\""
+          },
+          {
+            "start": [121, 33.099999],
+            "end": [121, 26],
+            "width": 0.5,
+            "layer": "\"F.Cu\""
+          }
+        ],
+        "arcs": ["TODO: extract arc info. Most samples don't have arcs to help test :("],
+        "vias": ["TODO: are vias necessary for our routing interests?"]
+      },
+      "errors": []
+    },
+    "59": {
+      "name": "Net-(R26-Pad1)",
+      "class": "TODO",
+      "pads": [
+        {
+          "Potentiometer_THT:Potentiometer_Alps_RK09K_Single_Vertical pad \"1\"": {
+            "abs_pos": [128.5, 103.5]
+          }
+        },
+        {
+          "Resistor_THT:R_Axial_DIN0204_L3.6mm_D1.6mm_P2.54mm_Vertical pad \"1\"": {
+            "abs_pos": [119.5, 107.0]
+          }
+        }
+      ],
+      "tracks": {
+        "segments": [
+          {
+            "start": [119.5, 102.5],
+            "end": [121.5, 100.5],
+            "width": 1,
+            "layer": "\"F.Cu\""
+          },
+          {
+            "start": [121.5, 100.5],
+            "end": [127, 100.5],
+            "width": 1,
+            "layer": "\"F.Cu\""
+          },
+          {
+            "start": [128.5, 102],
+            "end": [128.5, 103.5],
+            "width": 1,
+            "layer": "\"F.Cu\""
+          },
+          {
+            "start": [127, 100.5],
+            "end": [128.5, 102],
+            "width": 1,
+            "layer": "\"F.Cu\""
+          },
+          {
+            "start": [119.5, 107],
+            "end": [119.5, 102.5],
+            "width": 1,
+            "layer": "\"F.Cu\""
+          }
+        ],
+        "arcs": ["TODO: extract arc info. Most samples don't have arcs to help test :("],
+        "vias": ["TODO: are vias necessary for our routing interests?"]
+      },
+      "errors": []
+    },
+    "60": {
+      "name": "Net-(J6-Pad3)",
+      "class": "TODO",
+      "pads": [
+        {
+          "Connector_JST:JST_XH_B4B-XH-A_1x04_P2.50mm_Vertical pad \"3\"": {
+            "abs_pos": [48.5, 98.0]
+          }
+        },
+        {
+          "Connector_JST:JST_XH_B2B-XH-A_1x02_P2.50mm_Vertical pad \"1\"": {
+            "abs_pos": [50.5, 104.975]
+          }
+        },
+        {
+          "Connector_JST:JST_XH_B2B-XH-A_1x02_P2.50mm_Vertical pad \"1\"": {
+            "abs_pos": [50.5, 97.5]
+          }
+        }
+      ],
+      "tracks": {
+        "segments": [
+          {
+            "start": [48, 103],
+            "end": [48.525, 103],
+            "width": 0.5,
+            "layer": "\"F.Cu\""
+          },
+          {
+            "start": [48.525, 99.475],
+            "end": [50.5, 97.5],
+            "width": 0.5,
+            "layer": "\"F.Cu\""
+          },
+          {
+            "start": [48.525, 102.475],
+            "end": [48.525, 102.525],
+            "width": 0.5,
+            "layer": "\"F.Cu\""
+          },
+          {
+            "start": [43.5, 103],
+            "end": [48, 103],
+            "width": 0.5,
+            "layer": "\"F.Cu\""
+          },
+          {
+            "start": [50, 103],
+            "end": [50.5, 103.5],
+            "width": 0.5,
+            "layer": "\"F.Cu\""
+          },
+          {
+            "start": [49, 103],
+            "end": [50, 103],
+            "width": 0.5,
+            "layer": "\"F.Cu\""
+          },
+          {
+            "start": [48.525, 103],
+            "end": [49, 103],
+            "width": 0.5,
+            "layer": "\"F.Cu\""
+          },
+          {
+            "start": [48.525, 102.525],
+            "end": [49, 103],
+            "width": 0.5,
+            "layer": "\"F.Cu\""
+          },
+          {
+            "start": [50.5, 103.5],
+            "end": [50.5, 104.975],
+            "width": 0.5,
+            "layer": "\"F.Cu\""
+          },
+          {
+            "start": [48.525, 102.475],
+            "end": [48.525, 99.475],
+            "width": 0.5,
+            "layer": "\"F.Cu\""
+          },
+          {
+            "start": [48.525, 103],
+            "end": [48.525, 102.475],
+            "width": 0.5,
+            "layer": "\"F.Cu\""
+          },
+          {
+            "start": [48.525, 102.475],
+            "end": [48, 103],
+            "width": 0.5,
+            "layer": "\"F.Cu\""
+          }
+        ],
+        "arcs": ["TODO: extract arc info. Most samples don't have arcs to help test :("],
+        "vias": ["TODO: are vias necessary for our routing interests?"]
+      },
+      "errors": []
+    },
+    "61": {
+      "name": "Net-(R27-Pad1)",
+      "class": "TODO",
+      "pads": [
+        {
+          "Resistor_THT:R_Axial_DIN0204_L3.6mm_D1.6mm_P2.54mm_Vertical pad \"1\"": {
+            "abs_pos": [59.28, 94.775]
+          }
+        },
+        {
+          "Connector_JST:JST_XH_B2B-XH-A_1x02_P2.50mm_Vertical pad \"2\"": {
+            "abs_pos": [53.0, 97.5]
+          }
+        }
+      ],
+      "tracks": {
+        "segments": [
+          {
+            "start": [53, 97.5],
+            "end": [56.555, 97.5],
+            "width": 0.5,
+            "layer": "\"F.Cu\""
+          },
+          {
+            "start": [56.555, 97.5],
+            "end": [59.28, 94.775],
+            "width": 0.5,
+            "layer": "\"F.Cu\""
+          }
+        ],
+        "arcs": ["TODO: extract arc info. Most samples don't have arcs to help test :("],
+        "vias": ["TODO: are vias necessary for our routing interests?"]
+      },
+      "errors": []
+    },
+    "62": {
+      "name": "Net-(R21-Pad1)",
+      "class": "TODO",
+      "pads": [
+        {
+          "Resistor_THT:R_Axial_DIN0204_L3.6mm_D1.6mm_P2.54mm_Vertical pad \"1\"": {
+            "abs_pos": [59.28, 108.775]
+          }
+        },
+        {
+          "Connector_JST:JST_XH_B2B-XH-A_1x02_P2.50mm_Vertical pad \"2\"": {
+            "abs_pos": [53.0, 104.975]
+          }
+        }
+      ],
+      "tracks": {
+        "segments": [
+          {
+            "start": [55.48, 104.975],
+            "end": [59.28, 108.775],
+            "width": 0.5,
+            "layer": "\"F.Cu\""
+          },
+          {
+            "start": [53, 104.975],
+            "end": [55.48, 104.975],
+            "width": 0.5,
+            "layer": "\"F.Cu\""
+          }
+        ],
+        "arcs": ["TODO: extract arc info. Most samples don't have arcs to help test :("],
+        "vias": ["TODO: are vias necessary for our routing interests?"]
+      },
+      "errors": []
+    },
+    "63": {
+      "name": "Net-(J9-Pad3)",
+      "class": "TODO",
+      "pads": [
+        {
+          "Connector_JST:JST_XH_B4B-XH-A_1x04_P2.50mm_Vertical pad \"3\"": {
+            "abs_pos": [110, 26]
+          }
+        },
+        {
+          "digikey-footprints:Relay_THT_G5LE-14 pad \"1\"": {
+            "abs_pos": [102.5, 42.5]
+          }
+        }
+      ],
+      "tracks": {
+        "segments": [
+          {
+            "start": [100, 40],
+            "end": [102.5, 42.5],
+            "width": 1,
+            "layer": "\"F.Cu\""
+          },
+          {
+            "start": [100, 26],
+            "end": [100, 40],
+            "width": 1,
+            "layer": "\"F.Cu\""
+          }
+        ],
+        "arcs": ["TODO: extract arc info. Most samples don't have arcs to help test :("],
+        "vias": ["TODO: are vias necessary for our routing interests?"]
+      },
+      "errors": []
+    },
+    "64": {
+      "name": "Net-(J5-Pad3)",
+      "class": "TODO",
+      "pads": [
+        {
+          "Connector_JST:JST_XH_B4B-XH-A_1x04_P2.50mm_Vertical pad \"3\"": {
+            "abs_pos": [118.5, 114.5]
+          }
+        },
+        {
+          "Resistor_THT:R_Axial_DIN0204_L3.6mm_D1.6mm_P2.54mm_Vertical pad \"2\"": {
+            "abs_pos": [116.04, 107.0]
+          }
+        },
+        {
+          "Resistor_THT:R_Axial_DIN0204_L3.6mm_D1.6mm_P2.54mm_Vertical pad \"2\"": {
+            "abs_pos": [122.04, 107.0]
+          }
+        }
+      ],
+      "tracks": {
+        "segments": [
+          {
+            "start": [114, 109.04],
+            "end": [113.5, 109.54],
+            "width": 1,
+            "layer": "\"F.Cu\""
+          },
+          {
+            "start": [119.5, 109.54],
+            "end": [119, 109.04],
+            "width": 1,
+            "layer": "\"F.Cu\""
+          },
+          {
+            "start": [119.5, 113.5],
+            "end": [119.5, 109.54],
+            "width": 1,
+            "layer": "\"F.Cu\""
+          },
+          {
+            "start": [119, 109.04],
+            "end": [114, 109.04],
+            "width": 1,
+            "layer": "\"F.Cu\""
+          },
+          {
+            "start": [118.5, 114.5],
+            "end": [119.5, 113.5],
+            "width": 1,
+            "layer": "\"F.Cu\""
+          }
+        ],
+        "arcs": ["TODO: extract arc info. Most samples don't have arcs to help test :("],
+        "vias": ["TODO: are vias necessary for our routing interests?"]
+      },
+      "errors": []
+    },
+    "65": {
+      "name": "temp_5V",
+      "class": "TODO",
+      "pads": [
+        {
+          "Resistor_THT:R_Axial_DIN0204_L3.6mm_D1.6mm_P2.54mm_Vertical pad \"1\"": {
+            "abs_pos": [83.5, 39.2625]
+          }
+        },
+        {
+          "digikey-footprints:TO-92-3 pad \"3\"": {
+            "abs_pos": [88.54, 43.7625]
+          }
+        },
+        {
+          "digikey-footprints:TO-92-3 pad \"3\"": {
+            "abs_pos": [88.54, 50.2625]
+          }
+        },
+        {
+          "Connector_JST:JST_XH_B4B-XH-A_1x04_P2.50mm_Vertical pad \"3\"": {
+            "abs_pos": [93.5, 26.025]
+          }
+        }
+      ],
+      "tracks": {
+        "segments": [
+          {
+            "start": [83.5, 50.2225],
+            "end": [83.5, 26.025],
+            "width": 0.5,
+            "layer": "\"F.Cu\""
+          },
+          {
+            "start": [83.46, 50.2625],
+            "end": [83.5, 50.2225],
+            "width": 1,
+            "layer": "\"F.Cu\""
+          }
+        ],
+        "arcs": ["TODO: extract arc info. Most samples don't have arcs to help test :("],
+        "vias": ["TODO: are vias necessary for our routing interests?"]
+      },
+      "errors": []
+    },
+    "66": {
+      "name": "unconnected-(J10-Pad3)",
+      "class": "TODO",
+      "pads": [
+        {
+          "Connector_JST:JST_XH_B4B-XH-A_1x04_P2.50mm_Vertical pad \"3\"": {
+            "abs_pos": [128.5, 26.0]
+          }
+        }
+      ],
+      "tracks": {
+        "segments": [],
+        "arcs": ["TODO: extract arc info. Most samples don't have arcs to help test :("],
+        "vias": ["TODO: are vias necessary for our routing interests?"]
+      },
+      "errors": []
+    },
+    "67": {
+      "name": "reg_5V",
+      "class": "TODO",
+      "pads": [
+        {
+          "LED_THT:LED_D3.0mm pad \"2\"": {
+            "abs_pos": [62.04, 43.0]
+          }
+        },
+        {
+          "LED_THT:LED_D3.0mm pad \"2\"": {
+            "abs_pos": [67.54, 43.0]
+          }
+        },
+        {
+          "LED_THT:LED_D3.0mm pad \"2\"": {
+            "abs_pos": [73.04, 43.0]
+          }
+        },
+        {
+          "LED_THT:LED_D3.0mm pad \"2\"": {
+            "abs_pos": [78.54, 43.0]
+          }
+        },
+        {
+          "LED_THT:LED_D3.0mm pad \"2\"": {
+            "abs_pos": [62.04, 49.5]
+          }
+        },
+        {
+          "LED_THT:LED_D3.0mm pad \"2\"": {
+            "abs_pos": [67.54, 49.5]
+          }
+        },
+        {
+          "LED_THT:LED_D3.0mm pad \"2\"": {
+            "abs_pos": [73.04, 49.5]
+          }
+        },
+        {
+          "LED_THT:LED_D3.0mm pad \"2\"": {
+            "abs_pos": [78.54, 49.5]
+          }
+        },
+        {
+          "Connector_JST:JST_XH_B4B-XH-A_1x04_P2.50mm_Vertical pad \"3\"": {
+            "abs_pos": [62.5, 25.979]
+          }
+        },
+        {
+          "Connector_JST:JST_XH_B4B-XH-A_1x04_P2.50mm_Vertical pad \"3\"": {
+            "abs_pos": [76.5, 25.979]
+          }
+        },
+        {
+          "Package_DIP:DIP-20_W7.62mm_LongPads pad \"2\"": {
+            "abs_pos": [45.5, 37.115]
+          }
+        },
+        {
+          "Capacitor_THT:C_Disc_D7.5mm_W5.0mm_P10.00mm pad \"2\"": {
+            "abs_pos": [51, 47]
+          }
+        }
+      ],
+      "tracks": {
+        "segments": [
+          {
+            "start": [52.5, 25.979],
+            "end": [52.5, 25],
+            "width": 1,
+            "layer": "\"F.Cu\""
+          },
+          {
+            "start": [77.58, 46.5],
+            "end": [78.5, 45.58],
+            "width": 1,
+            "layer": "\"F.Cu\""
+          },
+          {
+            "start": [45.385, 37],
+            "end": [45.5, 37.115],
+            "width": 1,
+            "layer": "\"F.Cu\""
+          },
+          {
+            "start": [62.96, 46.54],
+            "end": [62.04, 47.46],
+            "width": 1,
+            "layer": "\"F.Cu\""
+          },
+          {
+            "start": [81, 31.5],
+            "end": [81, 45.5],
+            "width": 1,
+            "layer": "\"F.Cu\""
+          },
+          {
+            "start": [67.54, 45.54],
+            "end": [68.46, 46.46],
+            "width": 1,
+            "layer": "\"F.Cu\""
+          },
+          {
+            "start": [73.08, 45.58],
+            "end": [74, 46.5],
+            "width": 1,
+            "layer": "\"F.Cu\""
+          },
+          {
+            "start": [74, 46.58],
+            "end": [73.08, 47.5],
+            "width": 1,
+            "layer": "\"F.Cu\""
+          },
+          {
+            "start": [65.5, 24],
+            "end": [66.5, 25],
+            "width": 1,
+            "layer": "\"F.Cu\""
+          },
+          {
+            "start": [62.04, 45.54],
+            "end": [62.96, 46.46],
+            "width": 1,
+            "layer": "\"F.Cu\""
+          },
+          {
+            "start": [78.58, 45.58],
+            "end": [79.5, 46.5],
+            "width": 1,
+            "layer": "\"F.Cu\""
+          },
+          {
+            "start": [62.04, 43],
+            "end": [62.04, 45.54],
+            "width": 1,
+            "layer": "\"F.Cu\""
+          },
+          {
+            "start": [80, 46.5],
+            "end": [79.5, 46.5],
+            "width": 1,
+            "layer": "\"F.Cu\""
+          },
+          {
+            "start": [66.5, 25],
+            "end": [67.5, 24],
+            "width": 1,
+            "layer": "\"F.Cu\""
+          },
+          {
+            "start": [78.46, 46.46],
+            "end": [62.04, 46.46],
+            "width": 1,
+            "layer": "\"F.Cu\""
+          },
+          {
+            "start": [68.46, 46.54],
+            "end": [67.54, 47.46],
+            "width": 1,
+            "layer": "\"F.Cu\""
+          },
+          {
+            "start": [67.5, 24],
+            "end": [73.5, 24],
+            "width": 1,
+            "layer": "\"F.Cu\""
+          },
+          {
+            "start": [62.96, 46.46],
+            "end": [62.96, 46.54],
+            "width": 1,
+            "layer": "\"F.Cu\""
+          },
+          {
+            "start": [73.04, 43],
+            "end": [73.04, 49.5],
+            "width": 1,
+            "layer": "\"F.Cu\""
+          },
+          {
+            "start": [67.54, 43.04],
+            "end": [67.54, 46.38],
+            "width": 1,
+            "layer": "\"F.Cu\""
+          },
+          {
+            "start": [72.08, 46.5],
+            "end": [73, 45.58],
+            "width": 1,
+            "layer": "\"F.Cu\""
+          },
+          {
+            "start": [78.54, 49.475],
+            "end": [78.515, 49.5],
+            "width": 1,
+            "layer": "\"F.Cu\""
+          },
+          {
+            "start": [62.04, 45.54],
+            "end": [62.04, 46.46],
+            "width": 1,
+            "layer": "\"F.Cu\""
+          },
+          {
+            "start": [66.5, 25],
+            "end": [66.5, 26],
+            "width": 1,
+            "layer": "\"F.Cu\""
+          },
+          {
+            "start": [79.5, 46.5],
+            "end": [78.5, 46.5],
+            "width": 1,
+            "layer": "\"F.Cu\""
+          },
+          {
+            "start": [41, 34],
+            "end": [41, 37],
+            "width": 1,
+            "layer": "\"F.Cu\""
+          },
+          {
+            "start": [78.5, 47.5],
+            "end": [77.58, 46.58],
+            "width": 1,
+            "layer": "\"F.Cu\""
+          },
+          {
+            "start": [66.54, 46.46],
+            "end": [67.46, 45.54],
+            "width": 1,
+            "layer": "\"F.Cu\""
+          },
+          {
+            "start": [67.54, 46.54],
+            "end": [67.54, 49.5],
+            "width": 1,
+            "layer": "\"F.Cu\""
+          },
+          {
+            "start": [52.5, 25.979],
+            "end": [52.5, 26.602],
+            "width": 1,
+            "layer": "\"F.Cu\""
+          },
+          {
+            "start": [62.04, 46.46],
+            "end": [62.04, 47.46],
+            "width": 1,
+            "layer": "\"F.Cu\""
+          },
+          {
+            "start": [66.5, 25.979],
+            "end": [66.5, 25],
+            "width": 1,
+            "layer": "\"F.Cu\""
+          },
+          {
+            "start": [67.54, 46.38],
+            "end": [67.46, 46.46],
+            "width": 1,
+            "layer": "\"F.Cu\""
+          },
+          {
+            "start": [78.5, 45.58],
+            "end": [78.58, 45.58],
+            "width": 1,
+            "layer": "\"F.Cu\""
+          },
+          {
+            "start": [81, 45.5],
+            "end": [80, 46.5],
+            "width": 1,
+            "layer": "\"F.Cu\""
+          },
+          {
+            "start": [67.46, 47.46],
+            "end": [66.54, 46.54],
+            "width": 1,
+            "layer": "\"F.Cu\""
+          },
+          {
+            "start": [67.5, 24],
+            "end": [65.5, 24],
+            "width": 1,
+            "layer": "\"F.Cu\""
+          },
+          {
+            "start": [52.5, 25],
+            "end": [53.5, 24],
+            "width": 1,
+            "layer": "\"F.Cu\""
+          },
+          {
+            "start": [73, 47.5],
+            "end": [72.08, 46.58],
+            "width": 1,
+            "layer": "\"F.Cu\""
+          },
+          {
+            "start": [52.5, 26.602],
+            "end": [47.602, 31.5],
+            "width": 1,
+            "layer": "\"F.Cu\""
+          },
+          {
+            "start": [78.54, 43],
+            "end": [78.54, 49.475],
+            "width": 1,
+            "layer": "\"F.Cu\""
+          },
+          {
+            "start": [78.5, 46.5],
+            "end": [78.46, 46.46],
+            "width": 1,
+            "layer": "\"F.Cu\""
+          },
+          {
+            "start": [41, 37],
+            "end": [45.385, 37],
+            "width": 1,
+            "layer": "\"F.Cu\""
+          },
+          {
+            "start": [43.5, 31.5],
+            "end": [41, 34],
+            "width": 1,
+            "layer": "\"F.Cu\""
+          },
+          {
+            "start": [53.5, 24],
+            "end": [65.5, 24],
+            "width": 1,
+            "layer": "\"F.Cu\""
+          },
+          {
+            "start": [73.5, 24],
+            "end": [81, 31.5],
+            "width": 1,
+            "layer": "\"F.Cu\""
+          },
+          {
+            "start": [78.5, 47.5],
+            "end": [79.5, 46.5],
+            "width": 1,
+            "layer": "\"F.Cu\""
+          },
+          {
+            "start": [47.602, 31.5],
+            "end": [43.5, 31.5],
+            "width": 1,
+            "layer": "\"F.Cu\""
+          },
+          {
+            "start": [62.04, 47.46],
+            "end": [62.04, 49.5],
+            "width": 1,
+            "layer": "\"F.Cu\""
+          }
+        ],
+        "arcs": ["TODO: extract arc info. Most samples don't have arcs to help test :("],
+        "vias": ["TODO: are vias necessary for our routing interests?"]
+      },
+      "errors": []
+    },
+    "68": {
+      "name": "button_5v",
+      "class": "TODO",
+      "pads": [
+        {
+          "Connector_JST:JST_XH_B4B-XH-A_1x04_P2.50mm_Vertical pad \"3\"": {
+            "abs_pos": [93.5, 114.5]
+          }
+        },
+        {
+          "Connector_JST:JST_XH_B4B-XH-A_1x04_P2.50mm_Vertical pad \"3\"": {
+            "abs_pos": [73.5, 114.5]
+          }
+        },
+        {
+          "Button_Switch_THT:SW_PUSH_6mm pad \"1\"": {
+            "abs_pos": [95, 92]
+          }
+        },
+        {
+          "Button_Switch_THT:SW_PUSH_6mm pad \"1\"": {
+            "abs_pos": [101.5, 92.0]
+          }
+        },
+        {
+          "Button_Switch_THT:SW_PUSH_6mm pad \"1\"": {
+            "abs_pos": [92.0, 92.0]
+          }
+        },
+        {
+          "Button_Switch_THT:SW_PUSH_6mm pad \"1\"": {
+            "abs_pos": [85.5, 92.0]
+          }
+        },
+        {
+          "Button_Switch_THT:SW_PUSH_6mm pad \"1\"": {
+            "abs_pos": [81.0, 92.146]
+          }
+        },
+        {
+          "Button_Switch_THT:SW_PUSH_6mm pad \"1\"": {
+            "abs_pos": [74.5, 92.146]
+          }
+        },
+        {
+          "Button_Switch_THT:SW_PUSH_6mm pad \"1\"": {
+            "abs_pos": [65.0, 92.146]
+          }
+        },
+        {
+          "Button_Switch_THT:SW_PUSH_6mm pad \"1\"": {
+            "abs_pos": [71.5, 92.146]
+          }
+        }
+      ],
+      "tracks": {
+        "segments": [
+          {
+            "start": [83, 116],
+            "end": [84, 117],
+            "width": 1,
+            "layer": "\"F.Cu\""
+          },
+          {
+            "start": [82, 117],
+            "end": [83, 116],
+            "width": 1,
+            "layer": "\"F.Cu\""
+          },
+          {
+            "start": [77.646, 82.5],
+            "end": [82.5, 82.5],
+            "width": 1,
+            "layer": "\"F.Cu\""
+          },
+          {
+            "start": [82, 117],
+            "end": [84, 117],
+            "width": 1,
+            "layer": "\"F.Cu\""
+          },
+          {
+            "start": [65, 85.646],
+            "end": [65, 85.5],
+            "width": 1,
+            "layer": "\"F.Cu\""
+          },
+          {
+            "start": [88.5, 82.5],
+            "end": [92, 82.5],
+            "width": 1,
+            "layer": "\"F.Cu\""
+          },
+          {
+            "start": [95, 85.5],
+            "end": [95, 92],
+            "width": 1,
+            "layer": "\"F.Cu\""
+          },
+          {
+            "start": [74.5, 85.646],
+            "end": [74.5, 92.146],
+            "width": 1,
+            "layer": "\"F.Cu\""
+          },
+          {
+            "start": [91.25, 117],
+            "end": [93.5, 114.75],
+            "width": 1,
+            "layer": "\"F.Cu\""
+          },
+          {
+            "start": [83, 117],
+            "end": [83, 116],
+            "width": 1,
+            "layer": "\"F.Cu\""
+          },
+          {
+            "start": [71.354, 82.5],
+            "end": [74.5, 85.646],
+            "width": 1,
+            "layer": "\"F.Cu\""
+          },
+          {
+            "start": [92, 82.5],
+            "end": [95, 85.5],
+            "width": 1,
+            "layer": "\"F.Cu\""
+          },
+          {
+            "start": [82.5, 82.5],
+            "end": [85.5, 85.5],
+            "width": 1,
+            "layer": "\"F.Cu\""
+          },
+          {
+            "start": [83, 116],
+            "end": [83, 94.5],
+            "width": 1,
+            "layer": "\"F.Cu\""
+          },
+          {
+            "start": [85.5, 92],
+            "end": [85.5, 85.5],
+            "width": 1,
+            "layer": "\"F.Cu\""
+          },
+          {
+            "start": [65, 85.5],
+            "end": [68, 82.5],
+            "width": 1,
+            "layer": "\"F.Cu\""
+          },
+          {
+            "start": [68, 82.5],
+            "end": [71.354, 82.5],
+            "width": 1,
+            "layer": "\"F.Cu\""
+          },
+          {
+            "start": [73.5, 115],
+            "end": [75.5, 117],
+            "width": 1,
+            "layer": "\"F.Cu\""
+          },
+          {
+            "start": [73.5, 114.5],
+            "end": [73.5, 115],
+            "width": 1,
+            "layer": "\"F.Cu\""
+          },
+          {
+            "start": [85.5, 85.5],
+            "end": [88.5, 82.5],
+            "width": 1,
+            "layer": "\"F.Cu\""
+          },
+          {
+            "start": [74.5, 85.646],
+            "end": [77.646, 82.5],
+            "width": 1,
+            "layer": "\"F.Cu\""
+          },
+          {
+            "start": [83, 94.5],
+            "end": [85.5, 92],
+            "width": 1,
+            "layer": "\"F.Cu\""
+          },
+          {
+            "start": [84, 117],
+            "end": [91.25, 117],
+            "width": 1,
+            "layer": "\"F.Cu\""
+          },
+          {
+            "start": [75.5, 117],
+            "end": [82, 117],
+            "width": 1,
+            "layer": "\"F.Cu\""
+          },
+          {
+            "start": [65, 85.646],
+            "end": [65, 92.146],
+            "width": 1,
+            "layer": "\"F.Cu\""
+          },
+          {
+            "start": [93.5, 114.75],
+            "end": [93.5, 114.5],
+            "width": 1,
+            "layer": "\"F.Cu\""
+          }
+        ],
+        "arcs": ["TODO: extract arc info. Most samples don't have arcs to help test :("],
+        "vias": ["TODO: are vias necessary for our routing interests?"]
+      },
+      "errors": []
+    },
+    "69": {
+      "name": "GND",
+      "class": "TODO",
+      "pads": [
+        {
+          "LED_THT:LED_D3.0mm pad \"1\"": {
+            "abs_pos": [56.0, 90.5]
+          }
+        },
+        {
+          "LED_THT:LED_D3.0mm pad \"1\"": {
+            "abs_pos": [56.0, 68.5]
+          }
+        },
+        {
+          "LED_THT:LED_D3.0mm pad \"1\"": {
+            "abs_pos": [56, 75]
+          }
+        },
+        {
+          "LED_THT:LED_D3.0mm pad \"1\"": {
+            "abs_pos": [60.5, 100.275]
+          }
+        },
+        {
+          "LED_THT:LED_D3.0mm pad \"1\"": {
+            "abs_pos": [60.5, 105.775]
+          }
+        },
+        {
+          "Connector_JST:JST_XH_B4B-XH-A_1x04_P2.50mm_Vertical pad \"4\"": {
+            "abs_pos": [96.0, 114.5]
+          }
+        },
+        {
+          "Connector_JST:JST_XH_B4B-XH-A_1x04_P2.50mm_Vertical pad \"4\"": {
+            "abs_pos": [76.0, 114.5]
+          }
+        },
+        {
+          "Connector_JST:JST_XH_B4B-XH-A_1x04_P2.50mm_Vertical pad \"4\"": {
+            "abs_pos": [51.0, 82.0]
+          }
+        },
+        {
+          "Connector_JST:JST_XH_B4B-XH-A_1x04_P2.50mm_Vertical pad \"4\"": {
+            "abs_pos": [51.0, 66.5]
+          }
+        },
+        {
+          "Connector_JST:JST_XH_B4B-XH-A_1x04_P2.50mm_Vertical pad \"4\"": {
+            "abs_pos": [121.0, 114.5]
+          }
+        },
+        {
+          "Resistor_THT:R_Axial_DIN0204_L3.6mm_D1.6mm_P2.54mm_Vertical pad \"1\"": {
+            "abs_pos": [49.5, 81.28]
+          }
+        },
+        {
+          "Resistor_THT:R_Axial_DIN0204_L3.6mm_D1.6mm_P2.54mm_Vertical pad \"1\"": {
+            "abs_pos": [95.5, 109.5]
+          }
+        },
+        {
+          "Resistor_THT:R_Axial_DIN0204_L3.6mm_D1.6mm_P2.54mm_Vertical pad \"1\"": {
+            "abs_pos": [75.46, 109.5]
+          }
+        },
+        {
+          "Resistor_THT:R_Axial_DIN0204_L3.6mm_D1.6mm_P2.54mm_Vertical pad \"1\"": {
+            "abs_pos": [66.5, 109.5]
+          }
+        },
+        {
+          "Resistor_THT:R_Axial_DIN0204_L3.6mm_D1.6mm_P2.54mm_Vertical pad \"1\"": {
+            "abs_pos": [86.5, 109.5]
+          }
+        },
+        {
+          "Resistor_THT:R_Axial_DIN0204_L3.6mm_D1.6mm_P2.54mm_Vertical pad \"2\"": {
+            "abs_pos": [109.54, 69.0]
+          }
+        },
+        {
+          "Potentiometer_THT:Potentiometer_Alps_RK09K_Single_Vertical pad \"3\"": {
+            "abs_pos": [113.5, 98.5]
+          }
+        },
+        {
+          "digikey-footprints:TO-92-3 pad \"1\"": {
+            "abs_pos": [86.0, 43.7625]
+          }
+        },
+        {
+          "digikey-footprints:TO-92-3 pad \"1\"": {
+            "abs_pos": [86.0, 50.2625]
+          }
+        },
+        {
+          "Connector_JST:JST_XH_B4B-XH-A_1x04_P2.50mm_Vertical pad \"4\"": {
+            "abs_pos": [96.0, 26.025]
+          }
+        },
+        {
+          "Connector_JST:JST_XH_B4B-XH-A_1x04_P2.50mm_Vertical pad \"4\"": {
+            "abs_pos": [65.0, 25.979]
+          }
+        },
+        {
+          "Connector_JST:JST_XH_B4B-XH-A_1x04_P2.50mm_Vertical pad \"4\"": {
+            "abs_pos": [79.0, 25.979]
+          }
+        },
+        {
+          "Connector_JST:JST_XH_B4B-XH-A_1x04_P2.50mm_Vertical pad \"4\"": {
+            "abs_pos": [112.5, 26.0]
+          }
+        },
+        {
+          "digikey-footprints:Relay_THT_G5LE-14 pad \"2\"": {
+            "abs_pos": [104.5, 48.5]
+          }
+        },
+        {
+          "Package_DIP:DIP-20_W7.62mm_LongPads pad \"1\"": {
+            "abs_pos": [45.5, 34.575]
+          }
+        },
+        {
+          "Package_DIP:DIP-20_W7.62mm_LongPads pad \"9\"": {
+            "abs_pos": [45.5, 54.895]
+          }
+        },
+        {
+          "Package_DIP:DIP-20_W7.62mm_LongPads pad \"10\"": {
+            "abs_pos": [45.5, 57.435]
+          }
+        },
+        {
+          "Package_DIP:DIP-20_W7.62mm_LongPads pad \"11\"": {
+            "abs_pos": [53.12, 57.435]
+          }
+        },
+        {
+          "Package_DIP:DIP-20_W7.62mm_LongPads pad \"19\"": {
+            "abs_pos": [53.12, 37.115]
+          }
+        },
+        {
+          "Package_DIP:DIP-20_W7.62mm_LongPads pad \"20\"": {
+            "abs_pos": [53.12, 34.575]
+          }
+        },
+        {
+          "Connector_JST:JST_XH_B4B-XH-A_1x04_P2.50mm_Vertical pad \"4\"": {
+            "abs_pos": [51.0, 98.0]
+          }
+        },
+        {
+          "Diode_THT:D_DO-201AE_P15.24mm_Horizontal pad \"2\"": {
+            "abs_pos": [125.49499999999999, 35.0]
+          }
+        },
+        {
+          "Connector_JST:JST_XH_B4B-XH-A_1x04_P2.50mm_Vertical pad \"4\"": {
+            "abs_pos": [131.0, 26.0]
+          }
+        },
+        {
+          "Capacitor_THT:C_Disc_D7.5mm_W5.0mm_P10.00mm pad \"1\"": {
+            "abs_pos": [41, 47]
+          }
+        },
+        {
+          "Potentiometer_THT:Potentiometer_Alps_RK09K_Single_Vertical pad \"3\"": {
+            "abs_pos": [128.5, 98.5]
+          }
+        },
+        {
+          "eec:Bourns_Inc.-PEC16-4015F-N0024-MFG pad \"C\"": {
+            "abs_pos": [127.0, 50.900001]
+          }
+        }
+      ],
+      "tracks": {
+        "segments": [],
+        "arcs": ["TODO: extract arc info. Most samples don't have arcs to help test :("],
+        "vias": ["TODO: are vias necessary for our routing interests?"]
+      },
+      "errors": []
+    }
+  },
+  "errors": [
+    {
+      "\"Potentiometer_THT:Potentiometer_Alps_RK09K_Single_Vertical\" at [113.5, 103.5, 90]": "pad \"\" np_thru_hole circle at [7, -6.9] has error 2144: key \"net\" not found"
+    },
+    {
+      "\"Potentiometer_THT:Potentiometer_Alps_RK09K_Single_Vertical\" at [113.5, 103.5, 90]": "pad \"\" np_thru_hole circle at [7, 1.9] has error 2145: key \"net\" not found"
+    },
+    {
+      "\"MountingHole:MountingHole_3.2mm_M3_DIN965\" at [132.5, 25.5]": "pad \"\" np_thru_hole circle at [0, 0] has error 4286: key \"net\" not found"
+    },
+    {
+      "\"MountingHole:MountingHole_3.2mm_M3_DIN965\" at [42.5, 115.5]": "pad \"\" np_thru_hole circle at [0, 0] has error 4312: key \"net\" not found"
+    },
+    {
+      "\"Potentiometer_THT:Potentiometer_Alps_RK09K_Single_Vertical\" at [128.5, 103.5, 90]": "pad \"\" np_thru_hole circle at [7, 1.9] has error 4354: key \"net\" not found"
+    },
+    {
+      "\"Potentiometer_THT:Potentiometer_Alps_RK09K_Single_Vertical\" at [128.5, 103.5, 90]": "pad \"\" np_thru_hole circle at [7, -6.9] has error 4355: key \"net\" not found"
+    },
+    {
+      "\"MountingHole:MountingHole_3.2mm_M3_DIN965\" at [132.5, 115.5]": "pad \"\" np_thru_hole circle at [0, 0] has error 4392: key \"net\" not found"
+    },
+    {
+      "\"MountingHole:MountingHole_3.2mm_M3_DIN965\" at [42.5, 25.5]": "pad \"\" np_thru_hole circle at [0, 0] has error 4418: key \"net\" not found"
+    },
+    {
+      "\"eec:Bourns_Inc.-PEC16-4015F-N0024-MFG\" at [122, 42.5, 180]": "pad \"\" np_thru_hole circle at [7.4, -2.099999] has error 4533: key \"net\" not found"
+    },
+    {
+      "\"eec:Bourns_Inc.-PEC16-4015F-N0024-MFG\" at [122, 42.5, 180]": "pad \"\" np_thru_hole circle at [-7.4, -2.099999] has error 4534: key \"net\" not found"
+    }
+  ]
+}

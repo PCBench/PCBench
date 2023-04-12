@@ -1,0 +1,222 @@
+{
+  "board_settings": {},
+  "net classes": {},
+  "net routes": {
+    "0": {
+      "name": "",
+      "class": "TODO",
+      "pads": [],
+      "tracks": {
+        "segments": [
+          {
+            "start": [136.915, 55.88],
+            "end": [137.15, 55.88],
+            "width": 0.25,
+            "layer": "F.Cu"
+          }
+        ],
+        "arcs": ["TODO: extract arc info. Most samples don't have arcs to help test :("],
+        "vias": ["TODO: are vias necessary for our routing interests?"]
+      },
+      "errors": []
+    },
+    "1": {
+      "name": "GND",
+      "class": "TODO",
+      "pads": [
+        {
+          "Connector_JST:JST_EH_B03B-EH-A_1x03_P2.50mm_Vertical pad 1": {
+            "abs_pos": [130.85, 66.04]
+          }
+        },
+        {
+          "Package_DIP:DIP-8_W7.62mm pad 3": {
+            "abs_pos": [137.15, 48.260000000000005]
+          }
+        },
+        {
+          "Package_DIP:DIP-8_W7.62mm pad 8": {
+            "abs_pos": [144.77, 53.34]
+          }
+        }
+      ],
+      "tracks": {
+        "segments": [],
+        "arcs": ["TODO: extract arc info. Most samples don't have arcs to help test :("],
+        "vias": ["TODO: are vias necessary for our routing interests?"]
+      },
+      "errors": []
+    },
+    "2": {
+      "name": "Net-(J1-Pad2)",
+      "class": "TODO",
+      "pads": [
+        {
+          "Connector_JST:JST_EH_B03B-EH-A_1x03_P2.50mm_Vertical pad 2": {
+            "abs_pos": [133.35, 66.04]
+          }
+        },
+        {
+          "Package_DIP:DIP-8_W7.62mm pad 5": {
+            "abs_pos": [144.77, 45.720000000000006]
+          }
+        },
+        {
+          "Potentiometer_SMD:Potentiometer_Bourns_3214J_Horizontal pad 2": {
+            "abs_pos": [131.35, 58.96]
+          }
+        }
+      ],
+      "tracks": {
+        "segments": [
+          {
+            "start": [129.53, 60.96],
+            "end": [133.35, 60.96],
+            "width": 0.25,
+            "layer": "F.Cu"
+          },
+          {
+            "start": [133.35, 60.96],
+            "end": [133.35, 66.04],
+            "width": 0.25,
+            "layer": "F.Cu"
+          }
+        ],
+        "arcs": ["TODO: extract arc info. Most samples don't have arcs to help test :("],
+        "vias": ["TODO: are vias necessary for our routing interests?"]
+      },
+      "errors": []
+    },
+    "3": {
+      "name": "+5V",
+      "class": "TODO",
+      "pads": [
+        {
+          "Connector_JST:JST_EH_B03B-EH-A_1x03_P2.50mm_Vertical pad 3": {
+            "abs_pos": [135.85, 66.04]
+          }
+        },
+        {
+          "Package_DIP:DIP-8_W7.62mm pad 1": {
+            "abs_pos": [137.15, 53.34]
+          }
+        }
+      ],
+      "tracks": {
+        "segments": [
+          {
+            "start": [135.85, 53.59],
+            "end": [136.1, 53.34],
+            "width": 0.25,
+            "layer": "B.Cu"
+          },
+          {
+            "start": [136.1, 53.34],
+            "end": [137.15, 53.34],
+            "width": 0.25,
+            "layer": "B.Cu"
+          },
+          {
+            "start": [135.85, 66.04],
+            "end": [135.85, 53.59],
+            "width": 0.25,
+            "layer": "B.Cu"
+          }
+        ],
+        "arcs": ["TODO: extract arc info. Most samples don't have arcs to help test :("],
+        "vias": ["TODO: are vias necessary for our routing interests?"]
+      },
+      "errors": []
+    },
+    "4": {
+      "name": "Net-(O1-Pad4)",
+      "class": "TODO",
+      "pads": [
+        {
+          "Package_DIP:DIP-8_W7.62mm pad 4": {
+            "abs_pos": [137.15, 45.720000000000006]
+          }
+        },
+        {
+          "Resistor_SMD:R_0805_2012Metric_Pad1.15x1.40mm_HandSolder pad 1": {
+            "abs_pos": [132.325, 53.34]
+          }
+        }
+      ],
+      "tracks": {
+        "segments": [
+          {
+            "start": [134.375, 53.34],
+            "end": [135.89, 54.855],
+            "width": 0.25,
+            "layer": "F.Cu"
+          },
+          {
+            "start": [135.89, 59.7],
+            "end": [137.15, 60.96],
+            "width": 0.25,
+            "layer": "F.Cu"
+          },
+          {
+            "start": [135.89, 54.855],
+            "end": [135.89, 59.7],
+            "width": 0.25,
+            "layer": "F.Cu"
+          }
+        ],
+        "arcs": ["TODO: extract arc info. Most samples don't have arcs to help test :("],
+        "vias": ["TODO: are vias necessary for our routing interests?"]
+      },
+      "errors": []
+    },
+    "5": {
+      "name": "Net-(R1-Pad2)",
+      "class": "TODO",
+      "pads": [
+        {
+          "Resistor_SMD:R_0805_2012Metric_Pad1.15x1.40mm_HandSolder pad 2": {
+            "abs_pos": [134.375, 53.34]
+          }
+        },
+        {
+          "Potentiometer_SMD:Potentiometer_Bourns_3214J_Horizontal pad 1": {
+            "abs_pos": [135.35, 57.81]
+          }
+        }
+      ],
+      "tracks": {
+        "segments": [
+          {
+            "start": [132.2, 53.465],
+            "end": [132.325, 53.34],
+            "width": 0.25,
+            "layer": "F.Cu"
+          },
+          {
+            "start": [132.2, 56.96],
+            "end": [132.2, 53.465],
+            "width": 0.25,
+            "layer": "F.Cu"
+          }
+        ],
+        "arcs": ["TODO: extract arc info. Most samples don't have arcs to help test :("],
+        "vias": ["TODO: are vias necessary for our routing interests?"]
+      },
+      "errors": []
+    }
+  },
+  "errors": [
+    {
+      "Package_DIP:DIP-8_W7.62mm at [137.15, 53.34, 180]": "pad 2 thru_hole oval at [0, -2.54] has error 198: key \"net\" not found"
+    },
+    {
+      "Package_DIP:DIP-8_W7.62mm at [137.15, 53.34, 180]": "pad 6 thru_hole oval at [7.62, -5.08] has error 199: key \"net\" not found"
+    },
+    {
+      "Package_DIP:DIP-8_W7.62mm at [137.15, 53.34, 180]": "pad 7 thru_hole oval at [7.62, -2.54] has error 202: key \"net\" not found"
+    },
+    {
+      "Potentiometer_SMD:Potentiometer_Bourns_3214J_Horizontal at [133.35, 58.96, 90]": "pad 3 smd rect at [2, 1.15] has error 292: key \"net\" not found"
+    }
+  ]
+}

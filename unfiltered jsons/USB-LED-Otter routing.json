@@ -1,0 +1,1907 @@
+{
+  "board_settings": {},
+  "net classes": {},
+  "net routes": {
+    "0": {
+      "name": "",
+      "class": "TODO",
+      "pads": [],
+      "tracks": {
+        "segments": [],
+        "arcs": ["TODO: extract arc info. Most samples don't have arcs to help test :("],
+        "vias": ["TODO: are vias necessary for our routing interests?"]
+      },
+      "errors": []
+    },
+    "1": {
+      "name": "GND",
+      "class": "TODO",
+      "pads": [
+        {
+          "otter:QFN-48-1EP_7x7mm_P0.5mm_EP2.6x2.6mm pad 47": {
+            "abs_pos": [53.84, 59.0375]
+          }
+        },
+        {
+          "otter:QFN-48-1EP_7x7mm_P0.5mm_EP2.6x2.6mm pad 35": {
+            "abs_pos": [59.5275, 57.85]
+          }
+        },
+        {
+          "otter:QFN-48-1EP_7x7mm_P0.5mm_EP2.6x2.6mm pad 23": {
+            "abs_pos": [58.34, 52.1625]
+          }
+        },
+        {
+          "otter:QFN-48-1EP_7x7mm_P0.5mm_EP2.6x2.6mm pad 8": {
+            "abs_pos": [52.6525, 54.85]
+          }
+        },
+        {
+          "otter:QFN-48-1EP_7x7mm_P0.5mm_EP2.6x2.6mm pad 49": {
+            "abs_pos": [56.09, 55.6]
+          }
+        },
+        {
+          "Capacitor_SMD:C_0402_1005Metric pad 2": {
+            "abs_pos": [54.885, 64.325]
+          }
+        },
+        {
+          "otter:LED-Strip pad 3": {
+            "abs_pos": [60.1, 62.8]
+          }
+        },
+        {
+          "otter:USBPCB pad 4": {
+            "abs_pos": [59.95, 54.949999999999996]
+          }
+        },
+        {
+          "Capacitor_SMD:C_0402_1005Metric pad 2": {
+            "abs_pos": [51.785, 54.65]
+          }
+        },
+        {
+          "Capacitor_SMD:C_0402_1005Metric pad 2": {
+            "abs_pos": [51.785, 57.9]
+          }
+        },
+        {
+          "Capacitor_SMD:C_0402_1005Metric pad 2": {
+            "abs_pos": [60.385, 60.075]
+          }
+        },
+        {
+          "Resistor_SMD:R_0402_1005Metric pad 2": {
+            "abs_pos": [58.085, 63.04]
+          }
+        },
+        {
+          "Capacitor_SMD:C_0402_1005Metric pad 2": {
+            "abs_pos": [61.335, 53.325]
+          }
+        },
+        {
+          "Package_TO_SOT_SMD:SOT-23 pad 1": {
+            "abs_pos": [53.925, 63.175000000000004]
+          }
+        }
+      ],
+      "tracks": {
+        "segments": [
+          {
+            "start": [59.95, 62.65],
+            "end": [60.1, 62.8],
+            "width": 1.2,
+            "layer": "F.Cu"
+          },
+          {
+            "start": [59.95, 54.95],
+            "end": [59.95, 62.65],
+            "width": 1.2,
+            "layer": "F.Cu"
+          },
+          {
+            "start": [53.85, 59.575],
+            "end": [53.9, 59.625],
+            "width": 0.2,
+            "layer": "B.Cu"
+          },
+          {
+            "start": [53.85, 59.0375],
+            "end": [53.85, 59.575],
+            "width": 0.2,
+            "layer": "B.Cu"
+          },
+          {
+            "start": [53.9, 59.885],
+            "end": [54.145, 60.13],
+            "width": 0.2,
+            "layer": "B.Cu"
+          },
+          {
+            "start": [53.9, 59.625],
+            "end": [53.9, 59.885],
+            "width": 0.2,
+            "layer": "B.Cu"
+          },
+          {
+            "start": [58.35, 52.1625],
+            "end": [58.35, 52.7],
+            "width": 0.2,
+            "layer": "B.Cu"
+          },
+          {
+            "start": [53.85, 59.0375],
+            "end": [53.85, 58.5],
+            "width": 0.2,
+            "layer": "B.Cu"
+          },
+          {
+            "start": [58.35, 52.7],
+            "end": [58.05, 53],
+            "width": 0.2,
+            "layer": "B.Cu"
+          },
+          {
+            "start": [60.27501, 58.05001],
+            "end": [60.075, 57.85],
+            "width": 0.2,
+            "layer": "B.Cu"
+          },
+          {
+            "start": [60.075, 57.85],
+            "end": [59.5375, 57.85],
+            "width": 0.2,
+            "layer": "B.Cu"
+          },
+          {
+            "start": [60.385, 58.16],
+            "end": [60.075, 57.85],
+            "width": 0.2,
+            "layer": "B.Cu"
+          },
+          {
+            "start": [60.385, 60.075],
+            "end": [60.385, 58.16],
+            "width": 0.2,
+            "layer": "B.Cu"
+          },
+          {
+            "start": [54.145, 60.13],
+            "end": [54.265, 60.25],
+            "width": 0.2,
+            "layer": "B.Cu"
+          },
+          {
+            "start": [60.21, 55.21],
+            "end": [60.21, 59.1],
+            "width": 0.2,
+            "layer": "F.Cu"
+          },
+          {
+            "start": [59.95, 54.95],
+            "end": [60.21, 55.21],
+            "width": 0.2,
+            "layer": "F.Cu"
+          },
+          {
+            "start": [53.85, 59.0375],
+            "end": [53.85, 58.315292],
+            "width": 0.157,
+            "layer": "B.Cu"
+          },
+          {
+            "start": [53.85, 58.315292],
+            "end": [53.982646, 58.182646],
+            "width": 0.157,
+            "layer": "B.Cu"
+          },
+          {
+            "start": [56.88, 60.13],
+            "end": [54.145, 60.13],
+            "width": 0.2,
+            "layer": "F.Cu"
+          },
+          {
+            "start": [57.4, 61.59],
+            "end": [57.4, 60.85],
+            "width": 0.2,
+            "layer": "F.Cu"
+          },
+          {
+            "start": [57.4, 60.85],
+            "end": [57.3, 60.75],
+            "width": 0.2,
+            "layer": "F.Cu"
+          },
+          {
+            "start": [57.3, 60.55],
+            "end": [56.88, 60.13],
+            "width": 0.2,
+            "layer": "F.Cu"
+          },
+          {
+            "start": [58.53, 62.72],
+            "end": [57.4, 61.59],
+            "width": 0.2,
+            "layer": "F.Cu"
+          },
+          {
+            "start": [57.3, 60.75],
+            "end": [57.3, 60.55],
+            "width": 0.2,
+            "layer": "F.Cu"
+          },
+          {
+            "start": [52.6525, 54.85],
+            "end": [51.23, 54.85],
+            "width": 0.25,
+            "layer": "B.Cu"
+          },
+          {
+            "start": [51.3, 54.92],
+            "end": [51.3, 55.135],
+            "width": 0.25,
+            "layer": "B.Cu"
+          },
+          {
+            "start": [51.23, 54.85],
+            "end": [51.3, 54.92],
+            "width": 0.25,
+            "layer": "B.Cu"
+          }
+        ],
+        "arcs": ["TODO: extract arc info. Most samples don't have arcs to help test :("],
+        "vias": ["TODO: are vias necessary for our routing interests?"]
+      },
+      "errors": []
+    },
+    "2": {
+      "name": "+3V3",
+      "class": "TODO",
+      "pads": [
+        {
+          "otter:QFN-48-1EP_7x7mm_P0.5mm_EP2.6x2.6mm pad 48": {
+            "abs_pos": [53.34, 59.0375]
+          }
+        },
+        {
+          "otter:QFN-48-1EP_7x7mm_P0.5mm_EP2.6x2.6mm pad 36": {
+            "abs_pos": [59.5275, 58.35]
+          }
+        },
+        {
+          "otter:QFN-48-1EP_7x7mm_P0.5mm_EP2.6x2.6mm pad 24": {
+            "abs_pos": [58.84, 52.1625]
+          }
+        },
+        {
+          "otter:QFN-48-1EP_7x7mm_P0.5mm_EP2.6x2.6mm pad 9": {
+            "abs_pos": [52.6525, 54.35]
+          }
+        },
+        {
+          "otter:QFN-48-1EP_7x7mm_P0.5mm_EP2.6x2.6mm pad 1": {
+            "abs_pos": [52.6525, 58.35]
+          }
+        },
+        {
+          "Button_Switch_SMD:SW_SPST_EVQP7A pad 2": {
+            "abs_pos": [53.324999999999996, 61.480000000000004]
+          }
+        },
+        {
+          "Button_Switch_SMD:SW_SPST_EVQP7A pad 2": {
+            "abs_pos": [49.725, 61.480000000000004]
+          }
+        },
+        {
+          "Capacitor_SMD:C_0402_1005Metric pad 1": {
+            "abs_pos": [50.815, 54.65]
+          }
+        },
+        {
+          "Capacitor_SMD:C_0402_1005Metric pad 1": {
+            "abs_pos": [50.815, 57.9]
+          }
+        },
+        {
+          "Capacitor_SMD:C_0402_1005Metric pad 1": {
+            "abs_pos": [59.415, 60.075]
+          }
+        },
+        {
+          "Capacitor_SMD:C_0402_1005Metric pad 1": {
+            "abs_pos": [60.365, 53.325]
+          }
+        },
+        {
+          "Package_TO_SOT_SMD:SOT-23 pad 2": {
+            "abs_pos": [53.925, 61.275]
+          }
+        }
+      ],
+      "tracks": {
+        "segments": [
+          {
+            "start": [58.82149, 52.88851],
+            "end": [58.82149, 52.19101],
+            "width": 0.157,
+            "layer": "B.Cu"
+          },
+          {
+            "start": [58.82149, 52.19101],
+            "end": [58.85, 52.1625],
+            "width": 0.157,
+            "layer": "B.Cu"
+          },
+          {
+            "start": [59.50899, 58.32149],
+            "end": [58.64149, 58.32149],
+            "width": 0.157,
+            "layer": "B.Cu"
+          },
+          {
+            "start": [59.5375, 58.35],
+            "end": [59.50899, 58.32149],
+            "width": 0.157,
+            "layer": "B.Cu"
+          },
+          {
+            "start": [53.77, 54.92],
+            "end": [53.2, 54.35],
+            "width": 0.2,
+            "layer": "B.Cu"
+          },
+          {
+            "start": [53.2, 54.35],
+            "end": [52.6625, 54.35],
+            "width": 0.2,
+            "layer": "B.Cu"
+          },
+          {
+            "start": [51.485, 54.35],
+            "end": [52.6625, 54.35],
+            "width": 0.2,
+            "layer": "B.Cu"
+          },
+          {
+            "start": [51.3, 54.165],
+            "end": [51.485, 54.35],
+            "width": 0.157,
+            "layer": "B.Cu"
+          },
+          {
+            "start": [53.28, 58.35],
+            "end": [52.6625, 58.35],
+            "width": 0.2,
+            "layer": "B.Cu"
+          },
+          {
+            "start": [53.77, 57.86],
+            "end": [53.28, 58.35],
+            "width": 0.2,
+            "layer": "B.Cu"
+          },
+          {
+            "start": [53.35, 58.28],
+            "end": [53.35, 59.0375],
+            "width": 0.2,
+            "layer": "B.Cu"
+          },
+          {
+            "start": [53.77, 57.86],
+            "end": [53.35, 58.28],
+            "width": 0.2,
+            "layer": "B.Cu"
+          },
+          {
+            "start": [58.57, 58.25],
+            "end": [58.37, 58.05],
+            "width": 0.2,
+            "layer": "B.Cu"
+          },
+          {
+            "start": [58.64149, 58.32149],
+            "end": [58.57, 58.25],
+            "width": 0.157,
+            "layer": "B.Cu"
+          },
+          {
+            "start": [58.37, 53.34],
+            "end": [58.69, 53.02],
+            "width": 0.2,
+            "layer": "B.Cu"
+          },
+          {
+            "start": [58.69, 53.02],
+            "end": [58.82149, 52.88851],
+            "width": 0.157,
+            "layer": "B.Cu"
+          },
+          {
+            "start": [53.77, 57.86],
+            "end": [53.77, 54.92],
+            "width": 0.2,
+            "layer": "B.Cu"
+          },
+          {
+            "start": [52.6625, 58.35],
+            "end": [51.95, 58.35],
+            "width": 0.2,
+            "layer": "B.Cu"
+          },
+          {
+            "start": [58.37, 58.05],
+            "end": [58.37, 53.34],
+            "width": 0.2,
+            "layer": "B.Cu"
+          },
+          {
+            "start": [53.35, 59.575],
+            "end": [53.35, 59.0375],
+            "width": 0.2,
+            "layer": "B.Cu"
+          },
+          {
+            "start": [53.35, 60.75],
+            "end": [53.35, 59.575],
+            "width": 0.2,
+            "layer": "B.Cu"
+          },
+          {
+            "start": [53.875, 61.275],
+            "end": [53.35, 60.75],
+            "width": 0.2,
+            "layer": "B.Cu"
+          },
+          {
+            "start": [53.925, 61.275],
+            "end": [53.875, 61.275],
+            "width": 0.2,
+            "layer": "B.Cu"
+          },
+          {
+            "start": [51.335, 58.35],
+            "end": [51.3, 58.385],
+            "width": 0.2,
+            "layer": "B.Cu"
+          },
+          {
+            "start": [52.6625, 58.35],
+            "end": [51.335, 58.35],
+            "width": 0.2,
+            "layer": "B.Cu"
+          },
+          {
+            "start": [50.805, 58.88],
+            "end": [51.3, 58.385],
+            "width": 0.2,
+            "layer": "B.Cu"
+          },
+          {
+            "start": [50.805, 60.4],
+            "end": [50.805, 58.88],
+            "width": 0.2,
+            "layer": "B.Cu"
+          },
+          {
+            "start": [60.1725, 52.1625],
+            "end": [58.85, 52.1625],
+            "width": 0.2,
+            "layer": "B.Cu"
+          },
+          {
+            "start": [60.85, 52.84],
+            "end": [60.1725, 52.1625],
+            "width": 0.2,
+            "layer": "B.Cu"
+          },
+          {
+            "start": [50.805, 64],
+            "end": [50.40001, 63.59501],
+            "width": 0.2,
+            "layer": "B.Cu"
+          },
+          {
+            "start": [50.40001, 63.59501],
+            "end": [50.40001, 60.80499],
+            "width": 0.2,
+            "layer": "B.Cu"
+          },
+          {
+            "start": [50.40001, 60.80499],
+            "end": [50.805, 60.4],
+            "width": 0.2,
+            "layer": "B.Cu"
+          },
+          {
+            "start": [59.415, 59.595],
+            "end": [59.415, 60.075],
+            "width": 0.2,
+            "layer": "B.Cu"
+          },
+          {
+            "start": [59.5375, 58.35],
+            "end": [59.415, 58.4725],
+            "width": 0.2,
+            "layer": "B.Cu"
+          },
+          {
+            "start": [59.415, 58.4725],
+            "end": [59.415, 59.595],
+            "width": 0.2,
+            "layer": "B.Cu"
+          },
+          {
+            "start": [58.52, 51.28],
+            "end": [52.36, 51.28],
+            "width": 0.2,
+            "layer": "B.Cu"
+          },
+          {
+            "start": [51.3, 52.34],
+            "end": [51.3, 54.165],
+            "width": 0.2,
+            "layer": "B.Cu"
+          },
+          {
+            "start": [52.36, 51.28],
+            "end": [51.3, 52.34],
+            "width": 0.2,
+            "layer": "B.Cu"
+          },
+          {
+            "start": [58.85, 52.1625],
+            "end": [58.85, 51.61],
+            "width": 0.2,
+            "layer": "B.Cu"
+          },
+          {
+            "start": [58.85, 51.61],
+            "end": [58.52, 51.28],
+            "width": 0.2,
+            "layer": "B.Cu"
+          }
+        ],
+        "arcs": ["TODO: extract arc info. Most samples don't have arcs to help test :("],
+        "vias": ["TODO: are vias necessary for our routing interests?"]
+      },
+      "errors": []
+    },
+    "3": {
+      "name": "+5V",
+      "class": "TODO",
+      "pads": [
+        {
+          "Capacitor_SMD:C_0402_1005Metric pad 1": {
+            "abs_pos": [53.915, 64.325]
+          }
+        },
+        {
+          "otter:LED-Strip pad 1": {
+            "abs_pos": [51.9, 62.8]
+          }
+        },
+        {
+          "otter:USBPCB pad 1": {
+            "abs_pos": [52.29, 54.949999999999996]
+          }
+        },
+        {
+          "Package_TO_SOT_SMD:SOT-23 pad 3": {
+            "abs_pos": [55.925, 62.225]
+          }
+        }
+      ],
+      "tracks": {
+        "segments": [
+          {
+            "start": [52.29, 54.95],
+            "end": [52.29, 61.019999],
+            "width": 1.2,
+            "layer": "F.Cu"
+          },
+          {
+            "start": [55.925, 63.285],
+            "end": [55.925, 62.225],
+            "width": 0.2,
+            "layer": "B.Cu"
+          },
+          {
+            "start": [54.885, 64.325],
+            "end": [55.925, 63.285],
+            "width": 0.2,
+            "layer": "B.Cu"
+          },
+          {
+            "start": [53.124999, 62.400001],
+            "end": [52.825, 62.7],
+            "width": 0.2,
+            "layer": "B.Cu"
+          },
+          {
+            "start": [55.099999, 62.400001],
+            "end": [53.124999, 62.400001],
+            "width": 0.2,
+            "layer": "B.Cu"
+          },
+          {
+            "start": [55.275, 62.225],
+            "end": [55.099999, 62.400001],
+            "width": 0.2,
+            "layer": "B.Cu"
+          },
+          {
+            "start": [55.925, 62.225],
+            "end": [55.275, 62.225],
+            "width": 0.2,
+            "layer": "B.Cu"
+          }
+        ],
+        "arcs": ["TODO: extract arc info. Most samples don't have arcs to help test :("],
+        "vias": ["TODO: are vias necessary for our routing interests?"]
+      },
+      "errors": []
+    },
+    "4": {
+      "name": "Net-(U2-Pad3)",
+      "class": "TODO",
+      "pads": [
+        {
+          "otter:QFN-48-1EP_7x7mm_P0.5mm_EP2.6x2.6mm pad 3": {
+            "abs_pos": [52.6525, 57.35]
+          }
+        }
+      ],
+      "tracks": {
+        "segments": [],
+        "arcs": ["TODO: extract arc info. Most samples don't have arcs to help test :("],
+        "vias": ["TODO: are vias necessary for our routing interests?"]
+      },
+      "errors": []
+    },
+    "5": {
+      "name": "Net-(U2-Pad4)",
+      "class": "TODO",
+      "pads": [
+        {
+          "otter:QFN-48-1EP_7x7mm_P0.5mm_EP2.6x2.6mm pad 4": {
+            "abs_pos": [52.6525, 56.85]
+          }
+        }
+      ],
+      "tracks": {
+        "segments": [],
+        "arcs": ["TODO: extract arc info. Most samples don't have arcs to help test :("],
+        "vias": ["TODO: are vias necessary for our routing interests?"]
+      },
+      "errors": []
+    },
+    "6": {
+      "name": "Net-(U2-Pad5)",
+      "class": "TODO",
+      "pads": [
+        {
+          "otter:QFN-48-1EP_7x7mm_P0.5mm_EP2.6x2.6mm pad 5": {
+            "abs_pos": [52.6525, 56.35]
+          }
+        }
+      ],
+      "tracks": {
+        "segments": [],
+        "arcs": ["TODO: extract arc info. Most samples don't have arcs to help test :("],
+        "vias": ["TODO: are vias necessary for our routing interests?"]
+      },
+      "errors": []
+    },
+    "7": {
+      "name": "Net-(U2-Pad6)",
+      "class": "TODO",
+      "pads": [
+        {
+          "otter:QFN-48-1EP_7x7mm_P0.5mm_EP2.6x2.6mm pad 6": {
+            "abs_pos": [52.6525, 55.85]
+          }
+        }
+      ],
+      "tracks": {
+        "segments": [],
+        "arcs": ["TODO: extract arc info. Most samples don't have arcs to help test :("],
+        "vias": ["TODO: are vias necessary for our routing interests?"]
+      },
+      "errors": []
+    },
+    "8": {
+      "name": "Net-(U2-Pad7)",
+      "class": "TODO",
+      "pads": [
+        {
+          "otter:QFN-48-1EP_7x7mm_P0.5mm_EP2.6x2.6mm pad 7": {
+            "abs_pos": [52.6525, 55.35]
+          }
+        }
+      ],
+      "tracks": {
+        "segments": [],
+        "arcs": ["TODO: extract arc info. Most samples don't have arcs to help test :("],
+        "vias": ["TODO: are vias necessary for our routing interests?"]
+      },
+      "errors": []
+    },
+    "9": {
+      "name": "Net-(U2-Pad10)",
+      "class": "TODO",
+      "pads": [
+        {
+          "otter:QFN-48-1EP_7x7mm_P0.5mm_EP2.6x2.6mm pad 10": {
+            "abs_pos": [52.6525, 53.85]
+          }
+        }
+      ],
+      "tracks": {
+        "segments": [],
+        "arcs": ["TODO: extract arc info. Most samples don't have arcs to help test :("],
+        "vias": ["TODO: are vias necessary for our routing interests?"]
+      },
+      "errors": []
+    },
+    "10": {
+      "name": "Net-(U2-Pad11)",
+      "class": "TODO",
+      "pads": [
+        {
+          "otter:QFN-48-1EP_7x7mm_P0.5mm_EP2.6x2.6mm pad 11": {
+            "abs_pos": [52.6525, 53.35]
+          }
+        }
+      ],
+      "tracks": {
+        "segments": [],
+        "arcs": ["TODO: extract arc info. Most samples don't have arcs to help test :("],
+        "vias": ["TODO: are vias necessary for our routing interests?"]
+      },
+      "errors": []
+    },
+    "11": {
+      "name": "Net-(U2-Pad12)",
+      "class": "TODO",
+      "pads": [
+        {
+          "otter:QFN-48-1EP_7x7mm_P0.5mm_EP2.6x2.6mm pad 12": {
+            "abs_pos": [52.6525, 52.85]
+          }
+        }
+      ],
+      "tracks": {
+        "segments": [],
+        "arcs": ["TODO: extract arc info. Most samples don't have arcs to help test :("],
+        "vias": ["TODO: are vias necessary for our routing interests?"]
+      },
+      "errors": []
+    },
+    "12": {
+      "name": "Net-(U2-Pad13)",
+      "class": "TODO",
+      "pads": [
+        {
+          "otter:QFN-48-1EP_7x7mm_P0.5mm_EP2.6x2.6mm pad 13": {
+            "abs_pos": [53.34, 52.1625]
+          }
+        }
+      ],
+      "tracks": {
+        "segments": [],
+        "arcs": ["TODO: extract arc info. Most samples don't have arcs to help test :("],
+        "vias": ["TODO: are vias necessary for our routing interests?"]
+      },
+      "errors": []
+    },
+    "13": {
+      "name": "Net-(U2-Pad14)",
+      "class": "TODO",
+      "pads": [
+        {
+          "otter:QFN-48-1EP_7x7mm_P0.5mm_EP2.6x2.6mm pad 14": {
+            "abs_pos": [53.84, 52.1625]
+          }
+        }
+      ],
+      "tracks": {
+        "segments": [],
+        "arcs": ["TODO: extract arc info. Most samples don't have arcs to help test :("],
+        "vias": ["TODO: are vias necessary for our routing interests?"]
+      },
+      "errors": []
+    },
+    "14": {
+      "name": "Net-(U2-Pad15)",
+      "class": "TODO",
+      "pads": [
+        {
+          "otter:QFN-48-1EP_7x7mm_P0.5mm_EP2.6x2.6mm pad 15": {
+            "abs_pos": [54.34, 52.1625]
+          }
+        }
+      ],
+      "tracks": {
+        "segments": [],
+        "arcs": ["TODO: extract arc info. Most samples don't have arcs to help test :("],
+        "vias": ["TODO: are vias necessary for our routing interests?"]
+      },
+      "errors": []
+    },
+    "15": {
+      "name": "Net-(U2-Pad16)",
+      "class": "TODO",
+      "pads": [
+        {
+          "otter:QFN-48-1EP_7x7mm_P0.5mm_EP2.6x2.6mm pad 16": {
+            "abs_pos": [54.84, 52.1625]
+          }
+        }
+      ],
+      "tracks": {
+        "segments": [],
+        "arcs": ["TODO: extract arc info. Most samples don't have arcs to help test :("],
+        "vias": ["TODO: are vias necessary for our routing interests?"]
+      },
+      "errors": []
+    },
+    "16": {
+      "name": "Net-(U2-Pad17)",
+      "class": "TODO",
+      "pads": [
+        {
+          "otter:QFN-48-1EP_7x7mm_P0.5mm_EP2.6x2.6mm pad 17": {
+            "abs_pos": [55.34, 52.1625]
+          }
+        }
+      ],
+      "tracks": {
+        "segments": [],
+        "arcs": ["TODO: extract arc info. Most samples don't have arcs to help test :("],
+        "vias": ["TODO: are vias necessary for our routing interests?"]
+      },
+      "errors": []
+    },
+    "17": {
+      "name": "Net-(U2-Pad18)",
+      "class": "TODO",
+      "pads": [
+        {
+          "otter:QFN-48-1EP_7x7mm_P0.5mm_EP2.6x2.6mm pad 18": {
+            "abs_pos": [55.84, 52.1625]
+          }
+        }
+      ],
+      "tracks": {
+        "segments": [],
+        "arcs": ["TODO: extract arc info. Most samples don't have arcs to help test :("],
+        "vias": ["TODO: are vias necessary for our routing interests?"]
+      },
+      "errors": []
+    },
+    "18": {
+      "name": "Net-(U2-Pad19)",
+      "class": "TODO",
+      "pads": [
+        {
+          "otter:QFN-48-1EP_7x7mm_P0.5mm_EP2.6x2.6mm pad 19": {
+            "abs_pos": [56.34, 52.1625]
+          }
+        }
+      ],
+      "tracks": {
+        "segments": [],
+        "arcs": ["TODO: extract arc info. Most samples don't have arcs to help test :("],
+        "vias": ["TODO: are vias necessary for our routing interests?"]
+      },
+      "errors": []
+    },
+    "19": {
+      "name": "Net-(U2-Pad20)",
+      "class": "TODO",
+      "pads": [
+        {
+          "otter:QFN-48-1EP_7x7mm_P0.5mm_EP2.6x2.6mm pad 20": {
+            "abs_pos": [56.84, 52.1625]
+          }
+        }
+      ],
+      "tracks": {
+        "segments": [],
+        "arcs": ["TODO: extract arc info. Most samples don't have arcs to help test :("],
+        "vias": ["TODO: are vias necessary for our routing interests?"]
+      },
+      "errors": []
+    },
+    "20": {
+      "name": "Net-(U2-Pad21)",
+      "class": "TODO",
+      "pads": [
+        {
+          "otter:QFN-48-1EP_7x7mm_P0.5mm_EP2.6x2.6mm pad 21": {
+            "abs_pos": [57.34, 52.1625]
+          }
+        }
+      ],
+      "tracks": {
+        "segments": [],
+        "arcs": ["TODO: extract arc info. Most samples don't have arcs to help test :("],
+        "vias": ["TODO: are vias necessary for our routing interests?"]
+      },
+      "errors": []
+    },
+    "21": {
+      "name": "Net-(U2-Pad22)",
+      "class": "TODO",
+      "pads": [
+        {
+          "otter:QFN-48-1EP_7x7mm_P0.5mm_EP2.6x2.6mm pad 22": {
+            "abs_pos": [57.84, 52.1625]
+          }
+        }
+      ],
+      "tracks": {
+        "segments": [],
+        "arcs": ["TODO: extract arc info. Most samples don't have arcs to help test :("],
+        "vias": ["TODO: are vias necessary for our routing interests?"]
+      },
+      "errors": []
+    },
+    "22": {
+      "name": "Net-(U2-Pad25)",
+      "class": "TODO",
+      "pads": [
+        {
+          "otter:QFN-48-1EP_7x7mm_P0.5mm_EP2.6x2.6mm pad 25": {
+            "abs_pos": [59.5275, 52.85]
+          }
+        }
+      ],
+      "tracks": {
+        "segments": [],
+        "arcs": ["TODO: extract arc info. Most samples don't have arcs to help test :("],
+        "vias": ["TODO: are vias necessary for our routing interests?"]
+      },
+      "errors": []
+    },
+    "23": {
+      "name": "Net-(U2-Pad26)",
+      "class": "TODO",
+      "pads": [
+        {
+          "otter:QFN-48-1EP_7x7mm_P0.5mm_EP2.6x2.6mm pad 26": {
+            "abs_pos": [59.5275, 53.35]
+          }
+        }
+      ],
+      "tracks": {
+        "segments": [],
+        "arcs": ["TODO: extract arc info. Most samples don't have arcs to help test :("],
+        "vias": ["TODO: are vias necessary for our routing interests?"]
+      },
+      "errors": []
+    },
+    "24": {
+      "name": "Net-(U2-Pad27)",
+      "class": "TODO",
+      "pads": [
+        {
+          "otter:QFN-48-1EP_7x7mm_P0.5mm_EP2.6x2.6mm pad 27": {
+            "abs_pos": [59.5275, 53.85]
+          }
+        }
+      ],
+      "tracks": {
+        "segments": [],
+        "arcs": ["TODO: extract arc info. Most samples don't have arcs to help test :("],
+        "vias": ["TODO: are vias necessary for our routing interests?"]
+      },
+      "errors": []
+    },
+    "25": {
+      "name": "Net-(U2-Pad28)",
+      "class": "TODO",
+      "pads": [
+        {
+          "otter:QFN-48-1EP_7x7mm_P0.5mm_EP2.6x2.6mm pad 28": {
+            "abs_pos": [59.5275, 54.35]
+          }
+        }
+      ],
+      "tracks": {
+        "segments": [],
+        "arcs": ["TODO: extract arc info. Most samples don't have arcs to help test :("],
+        "vias": ["TODO: are vias necessary for our routing interests?"]
+      },
+      "errors": []
+    },
+    "26": {
+      "name": "Net-(U2-Pad29)",
+      "class": "TODO",
+      "pads": [
+        {
+          "otter:QFN-48-1EP_7x7mm_P0.5mm_EP2.6x2.6mm pad 29": {
+            "abs_pos": [59.5275, 54.85]
+          }
+        }
+      ],
+      "tracks": {
+        "segments": [],
+        "arcs": ["TODO: extract arc info. Most samples don't have arcs to help test :("],
+        "vias": ["TODO: are vias necessary for our routing interests?"]
+      },
+      "errors": []
+    },
+    "27": {
+      "name": "Net-(U2-Pad30)",
+      "class": "TODO",
+      "pads": [
+        {
+          "otter:QFN-48-1EP_7x7mm_P0.5mm_EP2.6x2.6mm pad 30": {
+            "abs_pos": [59.5275, 55.35]
+          }
+        }
+      ],
+      "tracks": {
+        "segments": [],
+        "arcs": ["TODO: extract arc info. Most samples don't have arcs to help test :("],
+        "vias": ["TODO: are vias necessary for our routing interests?"]
+      },
+      "errors": []
+    },
+    "28": {
+      "name": "Net-(U2-Pad31)",
+      "class": "TODO",
+      "pads": [
+        {
+          "otter:QFN-48-1EP_7x7mm_P0.5mm_EP2.6x2.6mm pad 31": {
+            "abs_pos": [59.5275, 55.85]
+          }
+        }
+      ],
+      "tracks": {
+        "segments": [],
+        "arcs": ["TODO: extract arc info. Most samples don't have arcs to help test :("],
+        "vias": ["TODO: are vias necessary for our routing interests?"]
+      },
+      "errors": []
+    },
+    "29": {
+      "name": "Net-(U2-Pad38)",
+      "class": "TODO",
+      "pads": [
+        {
+          "otter:QFN-48-1EP_7x7mm_P0.5mm_EP2.6x2.6mm pad 38": {
+            "abs_pos": [58.34, 59.0375]
+          }
+        }
+      ],
+      "tracks": {
+        "segments": [],
+        "arcs": ["TODO: extract arc info. Most samples don't have arcs to help test :("],
+        "vias": ["TODO: are vias necessary for our routing interests?"]
+      },
+      "errors": []
+    },
+    "30": {
+      "name": "USB_N",
+      "class": "TODO",
+      "pads": [
+        {
+          "otter:QFN-48-1EP_7x7mm_P0.5mm_EP2.6x2.6mm pad 32": {
+            "abs_pos": [59.5275, 56.35]
+          }
+        },
+        {
+          "otter:USBPCB pad 2": {
+            "abs_pos": [55.033, 55.3]
+          }
+        }
+      ],
+      "tracks": {
+        "segments": [
+          {
+            "start": [57.9, 60.05],
+            "end": [57.9, 60.429999],
+            "width": 0.2,
+            "layer": "F.Cu"
+          },
+          {
+            "start": [57.41, 59.56],
+            "end": [57.9, 60.05],
+            "width": 0.2,
+            "layer": "F.Cu"
+          },
+          {
+            "start": [55.928, 59.56],
+            "end": [57.41, 59.56],
+            "width": 0.2,
+            "layer": "F.Cu"
+          },
+          {
+            "start": [55.033, 55.3],
+            "end": [55.033, 58.665],
+            "width": 0.2,
+            "layer": "F.Cu"
+          },
+          {
+            "start": [55.033, 58.665],
+            "end": [55.928, 59.56],
+            "width": 0.2,
+            "layer": "F.Cu"
+          },
+          {
+            "start": [60.239132, 56.35],
+            "end": [61.475011, 57.585879],
+            "width": 0.2,
+            "layer": "B.Cu"
+          },
+          {
+            "start": [59.5375, 56.35],
+            "end": [60.239132, 56.35],
+            "width": 0.2,
+            "layer": "B.Cu"
+          },
+          {
+            "start": [61.475011, 60.524989],
+            "end": [60.951043, 61.048957],
+            "width": 0.2,
+            "layer": "B.Cu"
+          },
+          {
+            "start": [58.518958, 61.048957],
+            "end": [58.199999, 60.729998],
+            "width": 0.2,
+            "layer": "B.Cu"
+          },
+          {
+            "start": [58.199999, 60.729998],
+            "end": [57.9, 60.429999],
+            "width": 0.2,
+            "layer": "B.Cu"
+          },
+          {
+            "start": [60.951043, 61.048957],
+            "end": [58.518958, 61.048957],
+            "width": 0.2,
+            "layer": "B.Cu"
+          },
+          {
+            "start": [61.475011, 57.585879],
+            "end": [61.475011, 60.524989],
+            "width": 0.2,
+            "layer": "B.Cu"
+          }
+        ],
+        "arcs": ["TODO: extract arc info. Most samples don't have arcs to help test :("],
+        "vias": ["TODO: are vias necessary for our routing interests?"]
+      },
+      "errors": []
+    },
+    "31": {
+      "name": "USB_P",
+      "class": "TODO",
+      "pads": [
+        {
+          "otter:QFN-48-1EP_7x7mm_P0.5mm_EP2.6x2.6mm pad 33": {
+            "abs_pos": [59.5275, 56.85]
+          }
+        },
+        {
+          "otter:USBPCB pad 3": {
+            "abs_pos": [57.167, 55.3]
+          }
+        }
+      ],
+      "tracks": {
+        "segments": [
+          {
+            "start": [57.167, 58.665],
+            "end": [57.167, 58.703112],
+            "width": 0.2,
+            "layer": "F.Cu"
+          },
+          {
+            "start": [57.167, 58.703112],
+            "end": [58.303938, 59.84005],
+            "width": 0.2,
+            "layer": "F.Cu"
+          },
+          {
+            "start": [58.303938, 59.84005],
+            "end": [58.603937, 60.140049],
+            "width": 0.2,
+            "layer": "F.Cu"
+          },
+          {
+            "start": [59.5375, 56.85],
+            "end": [60.075, 56.85],
+            "width": 0.2,
+            "layer": "B.Cu"
+          },
+          {
+            "start": [58.72857, 60.688946],
+            "end": [58.603937, 60.564313],
+            "width": 0.2,
+            "layer": "B.Cu"
+          },
+          {
+            "start": [61.075, 60.3593],
+            "end": [60.745354, 60.688946],
+            "width": 0.2,
+            "layer": "B.Cu"
+          },
+          {
+            "start": [61.075, 57.85],
+            "end": [61.075, 60.3593],
+            "width": 0.2,
+            "layer": "B.Cu"
+          },
+          {
+            "start": [58.603937, 60.564313],
+            "end": [58.603937, 60.140049],
+            "width": 0.2,
+            "layer": "B.Cu"
+          },
+          {
+            "start": [60.745354, 60.688946],
+            "end": [58.72857, 60.688946],
+            "width": 0.2,
+            "layer": "B.Cu"
+          },
+          {
+            "start": [60.075, 56.85],
+            "end": [61.075, 57.85],
+            "width": 0.2,
+            "layer": "B.Cu"
+          }
+        ],
+        "arcs": ["TODO: extract arc info. Most samples don't have arcs to help test :("],
+        "vias": ["TODO: are vias necessary for our routing interests?"]
+      },
+      "errors": []
+    },
+    "32": {
+      "name": "Net-(R1-Pad1)",
+      "class": "TODO",
+      "pads": [
+        {
+          "otter:QFN-48-1EP_7x7mm_P0.5mm_EP2.6x2.6mm pad 46": {
+            "abs_pos": [54.34, 59.0375]
+          }
+        },
+        {
+          "otter:QFN-48-1EP_7x7mm_P0.5mm_EP2.6x2.6mm pad 44": {
+            "abs_pos": [55.34, 59.0375]
+          }
+        },
+        {
+          "Button_Switch_SMD:SW_SPST_EVQP7A pad 1": {
+            "abs_pos": [53.324999999999996, 62.92]
+          }
+        },
+        {
+          "Button_Switch_SMD:SW_SPST_EVQP7A pad 1": {
+            "abs_pos": [49.725, 62.92]
+          }
+        },
+        {
+          "Resistor_SMD:R_0402_1005Metric pad 1": {
+            "abs_pos": [57.115, 63.04]
+          }
+        }
+      ],
+      "tracks": {
+        "segments": [
+          {
+            "start": [53.196499, 61.897801],
+            "end": [53.196499, 61.271499],
+            "width": 0.157,
+            "layer": "B.Cu"
+          },
+          {
+            "start": [53.252199, 61.953501],
+            "end": [53.196499, 61.897801],
+            "width": 0.157,
+            "layer": "B.Cu"
+          },
+          {
+            "start": [54.597801, 61.953501],
+            "end": [53.252199, 61.953501],
+            "width": 0.157,
+            "layer": "B.Cu"
+          },
+          {
+            "start": [54.653501, 61.897801],
+            "end": [54.597801, 61.953501],
+            "width": 0.157,
+            "layer": "B.Cu"
+          },
+          {
+            "start": [52.325, 60.4],
+            "end": [52.245, 60.4],
+            "width": 0.157,
+            "layer": "B.Cu"
+          },
+          {
+            "start": [53.196499, 61.271499],
+            "end": [52.325, 60.4],
+            "width": 0.157,
+            "layer": "B.Cu"
+          },
+          {
+            "start": [52.245, 60.67],
+            "end": [52.245, 60.4],
+            "width": 0.2,
+            "layer": "B.Cu"
+          },
+          {
+            "start": [52.25, 60.675],
+            "end": [52.245, 60.67],
+            "width": 0.2,
+            "layer": "B.Cu"
+          },
+          {
+            "start": [50.800021, 62.250021],
+            "end": [50.800021, 61.699979],
+            "width": 0.2,
+            "layer": "B.Cu"
+          },
+          {
+            "start": [50.800021, 61.699979],
+            "end": [51.099999, 61.400001],
+            "width": 0.2,
+            "layer": "B.Cu"
+          },
+          {
+            "start": [52.275, 63.97],
+            "end": [52.275, 63.704998],
+            "width": 0.2,
+            "layer": "B.Cu"
+          },
+          {
+            "start": [52.245, 64],
+            "end": [52.275, 63.97],
+            "width": 0.2,
+            "layer": "B.Cu"
+          },
+          {
+            "start": [52.275, 63.704998],
+            "end": [51.320002, 62.75],
+            "width": 0.2,
+            "layer": "B.Cu"
+          },
+          {
+            "start": [51.3, 62.75],
+            "end": [50.800021, 62.250021],
+            "width": 0.2,
+            "layer": "B.Cu"
+          },
+          {
+            "start": [51.524999, 61.400001],
+            "end": [52.25, 60.675],
+            "width": 0.2,
+            "layer": "B.Cu"
+          },
+          {
+            "start": [51.099999, 61.400001],
+            "end": [51.524999, 61.400001],
+            "width": 0.2,
+            "layer": "B.Cu"
+          },
+          {
+            "start": [51.320002, 62.75],
+            "end": [51.3, 62.75],
+            "width": 0.2,
+            "layer": "B.Cu"
+          },
+          {
+            "start": [54.900832, 61.65047],
+            "end": [54.825, 61.726302],
+            "width": 0.157,
+            "layer": "B.Cu"
+          },
+          {
+            "start": [54.825, 61.726302],
+            "end": [54.676302, 61.875],
+            "width": 0.157,
+            "layer": "B.Cu"
+          },
+          {
+            "start": [55.248698, 61.55],
+            "end": [55.001302, 61.55],
+            "width": 0.157,
+            "layer": "B.Cu"
+          },
+          {
+            "start": [55.001302, 61.55],
+            "end": [54.825, 61.726302],
+            "width": 0.157,
+            "layer": "B.Cu"
+          },
+          {
+            "start": [55.252199, 61.546499],
+            "end": [55.248698, 61.55],
+            "width": 0.157,
+            "layer": "B.Cu"
+          },
+          {
+            "start": [56.601302, 61.55],
+            "end": [56.597801, 61.546499],
+            "width": 0.157,
+            "layer": "B.Cu"
+          },
+          {
+            "start": [56.597801, 61.546499],
+            "end": [56.02, 61.546499],
+            "width": 0.157,
+            "layer": "B.Cu"
+          },
+          {
+            "start": [56.02, 61.546499],
+            "end": [55.252199, 61.546499],
+            "width": 0.157,
+            "layer": "B.Cu"
+          },
+          {
+            "start": [56.79, 61.738698],
+            "end": [56.597801, 61.546499],
+            "width": 0.157,
+            "layer": "B.Cu"
+          },
+          {
+            "start": [57.63, 62.31],
+            "end": [57.361302, 62.31],
+            "width": 0.157,
+            "layer": "B.Cu"
+          },
+          {
+            "start": [57.361302, 62.31],
+            "end": [56.79, 61.738698],
+            "width": 0.157,
+            "layer": "B.Cu"
+          },
+          {
+            "start": [54.55, 58.25],
+            "end": [54.35, 58.45],
+            "width": 0.157,
+            "layer": "B.Cu"
+          },
+          {
+            "start": [54.35, 58.45],
+            "end": [54.35, 59.0375],
+            "width": 0.157,
+            "layer": "B.Cu"
+          },
+          {
+            "start": [55.35, 59.0375],
+            "end": [55.35, 58.45],
+            "width": 0.157,
+            "layer": "B.Cu"
+          },
+          {
+            "start": [55.15, 58.25],
+            "end": [54.55, 58.25],
+            "width": 0.157,
+            "layer": "B.Cu"
+          },
+          {
+            "start": [55.35, 58.45],
+            "end": [55.15, 58.25],
+            "width": 0.157,
+            "layer": "B.Cu"
+          },
+          {
+            "start": [55.35, 60.031641],
+            "end": [55.35, 59.575],
+            "width": 0.157,
+            "layer": "B.Cu"
+          },
+          {
+            "start": [56.02, 61.546499],
+            "end": [56.02, 60.701641],
+            "width": 0.157,
+            "layer": "B.Cu"
+          },
+          {
+            "start": [55.35, 59.575],
+            "end": [55.35, 59.0375],
+            "width": 0.157,
+            "layer": "B.Cu"
+          },
+          {
+            "start": [56.02, 60.701641],
+            "end": [55.35, 60.031641],
+            "width": 0.157,
+            "layer": "B.Cu"
+          }
+        ],
+        "arcs": ["TODO: extract arc info. Most samples don't have arcs to help test :("],
+        "vias": ["TODO: are vias necessary for our routing interests?"]
+      },
+      "errors": []
+    },
+    "33": {
+      "name": "LED",
+      "class": "TODO",
+      "pads": [
+        {
+          "otter:QFN-48-1EP_7x7mm_P0.5mm_EP2.6x2.6mm pad 45": {
+            "abs_pos": [54.84, 59.0375]
+          }
+        },
+        {
+          "otter:LED-Strip pad 2": {
+            "abs_pos": [56.0, 62.8]
+          }
+        }
+      ],
+      "tracks": {
+        "segments": [
+          {
+            "start": [54.85, 60.371598],
+            "end": [55.141491, 60.663089],
+            "width": 0.157,
+            "layer": "B.Cu"
+          },
+          {
+            "start": [55.141491, 60.663089],
+            "end": [55.44149, 60.963088],
+            "width": 0.157,
+            "layer": "B.Cu"
+          },
+          {
+            "start": [54.85, 59.0375],
+            "end": [54.85, 60.371598],
+            "width": 0.157,
+            "layer": "B.Cu"
+          }
+        ],
+        "arcs": ["TODO: extract arc info. Most samples don't have arcs to help test :("],
+        "vias": ["TODO: are vias necessary for our routing interests?"]
+      },
+      "errors": []
+    },
+    "34": {
+      "name": "Net-(U2-Pad2)",
+      "class": "TODO",
+      "pads": [
+        {
+          "otter:QFN-48-1EP_7x7mm_P0.5mm_EP2.6x2.6mm pad 2": {
+            "abs_pos": [52.6525, 57.85]
+          }
+        }
+      ],
+      "tracks": {
+        "segments": [],
+        "arcs": ["TODO: extract arc info. Most samples don't have arcs to help test :("],
+        "vias": ["TODO: are vias necessary for our routing interests?"]
+      },
+      "errors": []
+    },
+    "35": {
+      "name": "SCL",
+      "class": "TODO",
+      "pads": [
+        {
+          "otter:QFN-48-1EP_7x7mm_P0.5mm_EP2.6x2.6mm pad 42": {
+            "abs_pos": [56.34, 59.0375]
+          }
+        },
+        {
+          "otter:QFN-48-1EP_7x7mm_P0.5mm_EP2.6x2.6mm pad 41": {
+            "abs_pos": [56.84, 59.0375]
+          }
+        },
+        {
+          "otter:Pad_0.80.8 pad 1": {
+            "abs_pos": [60.8, 63.9]
+          }
+        }
+      ],
+      "tracks": {
+        "segments": [
+          {
+            "start": [60.8, 63.9],
+            "end": [59.987011, 63.087011],
+            "width": 0.157,
+            "layer": "B.Cu"
+          },
+          {
+            "start": [59.987011, 63.087011],
+            "end": [59.987011, 61.94869],
+            "width": 0.157,
+            "layer": "B.Cu"
+          },
+          {
+            "start": [59.987011, 61.94869],
+            "end": [59.7428, 61.704479],
+            "width": 0.157,
+            "layer": "B.Cu"
+          },
+          {
+            "start": [56.35, 60.135],
+            "end": [56.35, 59.575],
+            "width": 0.157,
+            "layer": "B.Cu"
+          },
+          {
+            "start": [56.35, 59.575],
+            "end": [56.35, 59.0375],
+            "width": 0.157,
+            "layer": "B.Cu"
+          },
+          {
+            "start": [59.7428, 61.704479],
+            "end": [57.919479, 61.704479],
+            "width": 0.157,
+            "layer": "B.Cu"
+          },
+          {
+            "start": [57.919479, 61.704479],
+            "end": [56.35, 60.135],
+            "width": 0.157,
+            "layer": "B.Cu"
+          },
+          {
+            "start": [56.595, 58.195],
+            "end": [56.85, 58.45],
+            "width": 0.157,
+            "layer": "B.Cu"
+          },
+          {
+            "start": [56.85, 58.45],
+            "end": [56.85, 59.0375],
+            "width": 0.157,
+            "layer": "B.Cu"
+          },
+          {
+            "start": [56.35, 59.0375],
+            "end": [56.35, 58.44],
+            "width": 0.157,
+            "layer": "B.Cu"
+          },
+          {
+            "start": [56.35, 58.44],
+            "end": [56.595, 58.195],
+            "width": 0.157,
+            "layer": "B.Cu"
+          }
+        ],
+        "arcs": ["TODO: extract arc info. Most samples don't have arcs to help test :("],
+        "vias": ["TODO: are vias necessary for our routing interests?"]
+      },
+      "errors": []
+    },
+    "36": {
+      "name": "SDA",
+      "class": "TODO",
+      "pads": [
+        {
+          "otter:QFN-48-1EP_7x7mm_P0.5mm_EP2.6x2.6mm pad 43": {
+            "abs_pos": [55.84, 59.0375]
+          }
+        },
+        {
+          "otter:QFN-48-1EP_7x7mm_P0.5mm_EP2.6x2.6mm pad 40": {
+            "abs_pos": [57.34, 59.0375]
+          }
+        },
+        {
+          "otter:Pad_0.80.8 pad 1": {
+            "abs_pos": [59.2, 63.9]
+          }
+        }
+      ],
+      "tracks": {
+        "segments": [
+          {
+            "start": [59.61149, 62.02149],
+            "end": [57.788169, 62.02149],
+            "width": 0.157,
+            "layer": "B.Cu"
+          },
+          {
+            "start": [55.85, 59.575],
+            "end": [55.85, 59.0375],
+            "width": 0.157,
+            "layer": "B.Cu"
+          },
+          {
+            "start": [59.67, 63.8],
+            "end": [59.67, 62.08],
+            "width": 0.157,
+            "layer": "B.Cu"
+          },
+          {
+            "start": [57.788169, 62.02149],
+            "end": [55.85, 60.083321],
+            "width": 0.157,
+            "layer": "B.Cu"
+          },
+          {
+            "start": [55.85, 60.083321],
+            "end": [55.85, 59.575],
+            "width": 0.157,
+            "layer": "B.Cu"
+          },
+          {
+            "start": [59.2, 63.9],
+            "end": [59.57, 63.9],
+            "width": 0.157,
+            "layer": "B.Cu"
+          },
+          {
+            "start": [59.57, 63.9],
+            "end": [59.67, 63.8],
+            "width": 0.157,
+            "layer": "B.Cu"
+          },
+          {
+            "start": [59.67, 62.08],
+            "end": [59.61149, 62.02149],
+            "width": 0.157,
+            "layer": "B.Cu"
+          },
+          {
+            "start": [57.35, 58.5],
+            "end": [57.35, 59.0375],
+            "width": 0.157,
+            "layer": "B.Cu"
+          },
+          {
+            "start": [55.85, 58.40168],
+            "end": [56.42869, 57.82299],
+            "width": 0.157,
+            "layer": "B.Cu"
+          },
+          {
+            "start": [55.85, 59.0375],
+            "end": [55.85, 58.40168],
+            "width": 0.157,
+            "layer": "B.Cu"
+          },
+          {
+            "start": [56.42869, 57.82299],
+            "end": [56.71299, 57.82299],
+            "width": 0.157,
+            "layer": "B.Cu"
+          },
+          {
+            "start": [56.71299, 57.82299],
+            "end": [57.35, 58.46],
+            "width": 0.157,
+            "layer": "B.Cu"
+          },
+          {
+            "start": [57.35, 58.46],
+            "end": [57.35, 58.5],
+            "width": 0.157,
+            "layer": "B.Cu"
+          }
+        ],
+        "arcs": ["TODO: extract arc info. Most samples don't have arcs to help test :("],
+        "vias": ["TODO: are vias necessary for our routing interests?"]
+      },
+      "errors": []
+    },
+    "37": {
+      "name": "SCK",
+      "class": "TODO",
+      "pads": [
+        {
+          "otter:QFN-48-1EP_7x7mm_P0.5mm_EP2.6x2.6mm pad 39": {
+            "abs_pos": [57.84, 59.0375]
+          }
+        },
+        {
+          "otter:Pad_0.80.8 pad 1": {
+            "abs_pos": [60.9, 62.24]
+          }
+        }
+      ],
+      "tracks": {
+        "segments": [
+          {
+            "start": [57.26, 60.165],
+            "end": [57.26, 60.59668],
+            "width": 0.157,
+            "layer": "B.Cu"
+          },
+          {
+            "start": [60.047468, 61.387468],
+            "end": [60.317158, 61.657158],
+            "width": 0.157,
+            "layer": "B.Cu"
+          },
+          {
+            "start": [57.85, 59.575],
+            "end": [57.26, 60.165],
+            "width": 0.157,
+            "layer": "B.Cu"
+          },
+          {
+            "start": [57.26, 60.59668],
+            "end": [58.050788, 61.387468],
+            "width": 0.157,
+            "layer": "B.Cu"
+          },
+          {
+            "start": [60.317158, 61.657158],
+            "end": [60.9, 62.24],
+            "width": 0.157,
+            "layer": "B.Cu"
+          },
+          {
+            "start": [57.85, 59.0375],
+            "end": [57.85, 59.575],
+            "width": 0.157,
+            "layer": "B.Cu"
+          },
+          {
+            "start": [58.050788, 61.387468],
+            "end": [60.047468, 61.387468],
+            "width": 0.157,
+            "layer": "B.Cu"
+          }
+        ],
+        "arcs": ["TODO: extract arc info. Most samples don't have arcs to help test :("],
+        "vias": ["TODO: are vias necessary for our routing interests?"]
+      },
+      "errors": []
+    },
+    "38": {
+      "name": "SWDIO",
+      "class": "TODO",
+      "pads": [
+        {
+          "otter:QFN-48-1EP_7x7mm_P0.5mm_EP2.6x2.6mm pad 34": {
+            "abs_pos": [59.5275, 57.35]
+          }
+        }
+      ],
+      "tracks": {
+        "segments": [],
+        "arcs": ["TODO: extract arc info. Most samples don't have arcs to help test :("],
+        "vias": ["TODO: are vias necessary for our routing interests?"]
+      },
+      "errors": []
+    },
+    "39": {
+      "name": "SWCLK",
+      "class": "TODO",
+      "pads": [
+        {
+          "otter:QFN-48-1EP_7x7mm_P0.5mm_EP2.6x2.6mm pad 37": {
+            "abs_pos": [58.84, 59.0375]
+          }
+        }
+      ],
+      "tracks": {
+        "segments": [],
+        "arcs": ["TODO: extract arc info. Most samples don't have arcs to help test :("],
+        "vias": ["TODO: are vias necessary for our routing interests?"]
+      },
+      "errors": []
+    }
+  },
+  "errors": [
+    {
+      "otter:QFN-48-1EP_7x7mm_P0.5mm_EP2.6x2.6mm at [56.09, 55.6]": "pad \"\" smd roundrect at [0.7, -0.7] has error 317: key \"net\" not found"
+    },
+    {
+      "otter:QFN-48-1EP_7x7mm_P0.5mm_EP2.6x2.6mm at [56.09, 55.6]": "pad \"\" smd roundrect at [0.7, 0.7] has error 318: key \"net\" not found"
+    },
+    {
+      "otter:QFN-48-1EP_7x7mm_P0.5mm_EP2.6x2.6mm at [56.09, 55.6]": "pad \"\" smd roundrect at [-0.7, -0.7] has error 319: key \"net\" not found"
+    },
+    {
+      "otter:QFN-48-1EP_7x7mm_P0.5mm_EP2.6x2.6mm at [56.09, 55.6]": "pad \"\" smd roundrect at [-0.7, 0.7] has error 320: key \"net\" not found"
+    }
+  ]
+}

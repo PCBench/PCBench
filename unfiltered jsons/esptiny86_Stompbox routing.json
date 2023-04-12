@@ -1,0 +1,2677 @@
+{
+  "board_settings": {},
+  "net classes": {},
+  "net routes": {
+    "0": {
+      "name": "",
+      "class": "TODO",
+      "pads": [],
+      "tracks": {
+        "segments": [
+          {
+            "start": [81.3385, 53.355],
+            "end": [81.3385, 53.0275],
+            "width": 0.4,
+            "layer": "F.Cu"
+          }
+        ],
+        "arcs": ["TODO: extract arc info. Most samples don't have arcs to help test :("],
+        "vias": ["TODO: are vias necessary for our routing interests?"]
+      },
+      "errors": []
+    },
+    "1": {
+      "name": "+3V3",
+      "class": "TODO",
+      "pads": [
+        {
+          "8BitMixtape_DIY-CAD:Mixtape_NEO_WS2812B pad 1": {
+            "abs_pos": [81.498, 80.99000000000001]
+          }
+        },
+        {
+          "8Bit_ESPTINY86-Mixtape:TopLED_2835 pad 2": {
+            "abs_pos": [103.076, 43.1165]
+          }
+        },
+        {
+          "8Bit_ESPTINY86-Mixtape:TopLED_2835 pad 2": {
+            "abs_pos": [67.4765, 43.053]
+          }
+        },
+        {
+          "8Bit_ESPTINY86-Mixtape:WeMOS_ESP pad 16": {
+            "abs_pos": [95.50399999999999, 48.387]
+          }
+        },
+        {
+          "8Bit_ESPTINY86-Mixtape:ESP-Stomp_Pot_Alps pad 1": {
+            "abs_pos": [86.365, 53.355]
+          }
+        },
+        {
+          "8Bit_ESPTINY86-Mixtape:ESP-Stomp_Pot_Alps pad 1": {
+            "abs_pos": [107.32, 61.61]
+          }
+        },
+        {
+          "8Bit_ESPTINY86-Mixtape:ESP-Stomp_Pot_Alps pad 1": {
+            "abs_pos": [65.447, 61.61]
+          }
+        },
+        {
+          "8Bit_ESPTINY86-Mixtape:ESP-Stomp_Pot_Alps pad 1": {
+            "abs_pos": [86.4655, 89.9945]
+          }
+        },
+        {
+          "8Bit_ESPTINY86-Mixtape:4xxx_SOIC-16W_Pitch1.27mm pad 16": {
+            "abs_pos": [87.624, 64.262]
+          }
+        },
+        {
+          "8Bit_ESPTINY86-Mixtape:SOIC-8_3.9x4.9mm_Pitch1.27mm pad 4": {
+            "abs_pos": [81.374, 60.452]
+          }
+        },
+        {
+          "8Bit_ESPTINY86-Mixtape:R_1206_Mixtape_Silk pad 1": {
+            "abs_pos": [99.334619, 87.630251]
+          }
+        }
+      ],
+      "tracks": {
+        "segments": [
+          {
+            "start": [90.17, 80.434264],
+            "end": [90.17, 86.106],
+            "width": 0.4,
+            "layer": "B.Cu"
+          },
+          {
+            "start": [90.17, 86.106],
+            "end": [90.17, 86.29],
+            "width": 0.4,
+            "layer": "B.Cu"
+          },
+          {
+            "start": [91.694, 86.106],
+            "end": [90.17, 86.106],
+            "width": 0.4,
+            "layer": "B.Cu"
+          },
+          {
+            "start": [99.334619, 87.630251],
+            "end": [97.934619, 87.630251],
+            "width": 0.4,
+            "layer": "F.Cu"
+          },
+          {
+            "start": [97.934619, 87.630251],
+            "end": [96.410368, 86.106],
+            "width": 0.4,
+            "layer": "F.Cu"
+          },
+          {
+            "start": [96.410368, 86.106],
+            "end": [91.694, 86.106],
+            "width": 0.4,
+            "layer": "F.Cu"
+          },
+          {
+            "start": [90.17, 86.29],
+            "end": [86.4655, 89.9945],
+            "width": 0.4,
+            "layer": "B.Cu"
+          },
+          {
+            "start": [88.9, 78.74],
+            "end": [88.9, 79.164264],
+            "width": 0.4,
+            "layer": "B.Cu"
+          },
+          {
+            "start": [88.9, 79.164264],
+            "end": [90.17, 80.434264],
+            "width": 0.4,
+            "layer": "B.Cu"
+          },
+          {
+            "start": [85.598, 80.09],
+            "end": [87.55, 80.09],
+            "width": 0.4,
+            "layer": "F.Cu"
+          },
+          {
+            "start": [87.55, 80.09],
+            "end": [88.9, 78.74],
+            "width": 0.4,
+            "layer": "F.Cu"
+          },
+          {
+            "start": [88.219001, 74.086999],
+            "end": [85.598, 76.708],
+            "width": 0.4,
+            "layer": "F.Cu"
+          },
+          {
+            "start": [85.598, 76.708],
+            "end": [85.598, 80.09],
+            "width": 0.4,
+            "layer": "F.Cu"
+          },
+          {
+            "start": [88.519, 73.66],
+            "end": [88.219001, 73.959999],
+            "width": 0.4,
+            "layer": "F.Cu"
+          },
+          {
+            "start": [88.219001, 73.959999],
+            "end": [88.219001, 74.086999],
+            "width": 0.4,
+            "layer": "F.Cu"
+          },
+          {
+            "start": [73.025, 45.72],
+            "end": [77.551001, 50.246001],
+            "width": 0.4,
+            "layer": "B.Cu"
+          },
+          {
+            "start": [87.457001, 50.246001],
+            "end": [89.281, 52.07],
+            "width": 0.4,
+            "layer": "B.Cu"
+          },
+          {
+            "start": [77.551001, 50.246001],
+            "end": [87.457001, 50.246001],
+            "width": 0.4,
+            "layer": "B.Cu"
+          },
+          {
+            "start": [71.374, 45.72],
+            "end": [73.025, 45.72],
+            "width": 0.4,
+            "layer": "F.Cu"
+          },
+          {
+            "start": [96.403999, 47.487001],
+            "end": [96.403999, 43.18],
+            "width": 0.4,
+            "layer": "F.Cu"
+          },
+          {
+            "start": [96.403999, 43.18],
+            "end": [96.403999, 42.026001],
+            "width": 0.4,
+            "layer": "F.Cu"
+          },
+          {
+            "start": [86.365, 53.355],
+            "end": [91.333, 48.387],
+            "width": 0.4,
+            "layer": "F.Cu"
+          },
+          {
+            "start": [91.333, 48.387],
+            "end": [95.504, 48.387],
+            "width": 0.4,
+            "layer": "F.Cu"
+          },
+          {
+            "start": [98.298, 51.181],
+            "end": [98.298, 56.515],
+            "width": 0.4,
+            "layer": "F.Cu"
+          },
+          {
+            "start": [107.32, 61.61],
+            "end": [107.32, 59.695],
+            "width": 0.4,
+            "layer": "F.Cu"
+          },
+          {
+            "start": [107.32, 59.695],
+            "end": [106.045, 58.42],
+            "width": 0.4,
+            "layer": "F.Cu"
+          },
+          {
+            "start": [106.045, 58.42],
+            "end": [100.203, 58.42],
+            "width": 0.4,
+            "layer": "F.Cu"
+          },
+          {
+            "start": [100.203, 58.42],
+            "end": [98.298, 56.515],
+            "width": 0.4,
+            "layer": "F.Cu"
+          },
+          {
+            "start": [68.834, 40.64],
+            "end": [71.374, 43.18],
+            "width": 0.4,
+            "layer": "F.Cu"
+          },
+          {
+            "start": [65.1895, 40.64],
+            "end": [68.834, 40.64],
+            "width": 0.4,
+            "layer": "F.Cu"
+          },
+          {
+            "start": [64.4765, 43.053],
+            "end": [64.4765, 41.353],
+            "width": 0.4,
+            "layer": "F.Cu"
+          },
+          {
+            "start": [64.4765, 41.353],
+            "end": [65.1895, 40.64],
+            "width": 0.4,
+            "layer": "F.Cu"
+          },
+          {
+            "start": [103.124, 40.64],
+            "end": [103.076, 40.688],
+            "width": 0.4,
+            "layer": "F.Cu"
+          },
+          {
+            "start": [103.076, 40.688],
+            "end": [103.076, 43.1165],
+            "width": 0.4,
+            "layer": "F.Cu"
+          },
+          {
+            "start": [97.79, 40.64],
+            "end": [103.124, 40.64],
+            "width": 0.4,
+            "layer": "F.Cu"
+          },
+          {
+            "start": [96.403999, 42.026001],
+            "end": [97.79, 40.64],
+            "width": 0.4,
+            "layer": "F.Cu"
+          },
+          {
+            "start": [95.504, 48.387],
+            "end": [96.403999, 47.487001],
+            "width": 0.4,
+            "layer": "F.Cu"
+          },
+          {
+            "start": [65.447, 61.61],
+            "end": [66.719792, 61.61],
+            "width": 0.4,
+            "layer": "F.Cu"
+          },
+          {
+            "start": [95.504, 48.387],
+            "end": [98.298, 51.181],
+            "width": 0.4,
+            "layer": "F.Cu"
+          },
+          {
+            "start": [88.519, 73.66],
+            "end": [88.519, 72.257],
+            "width": 0.4,
+            "layer": "F.Cu"
+          },
+          {
+            "start": [90.424, 73.66],
+            "end": [88.519, 73.66],
+            "width": 0.4,
+            "layer": "B.Cu"
+          },
+          {
+            "start": [91.948, 72.136],
+            "end": [90.424, 73.66],
+            "width": 0.4,
+            "layer": "B.Cu"
+          },
+          {
+            "start": [91.948, 62.23],
+            "end": [91.948, 72.136],
+            "width": 0.4,
+            "layer": "B.Cu"
+          },
+          {
+            "start": [89.281, 59.563],
+            "end": [91.948, 62.23],
+            "width": 0.4,
+            "layer": "B.Cu"
+          },
+          {
+            "start": [89.281, 56.642],
+            "end": [89.281, 59.563],
+            "width": 0.4,
+            "layer": "B.Cu"
+          },
+          {
+            "start": [88.265, 56.642],
+            "end": [86.774, 56.642],
+            "width": 0.4,
+            "layer": "F.Cu"
+          },
+          {
+            "start": [89.281, 56.642],
+            "end": [88.265, 56.642],
+            "width": 0.4,
+            "layer": "B.Cu"
+          },
+          {
+            "start": [89.281, 52.07],
+            "end": [89.281, 56.642],
+            "width": 0.4,
+            "layer": "B.Cu"
+          },
+          {
+            "start": [92.964, 48.387],
+            "end": [89.281, 52.07],
+            "width": 0.4,
+            "layer": "B.Cu"
+          },
+          {
+            "start": [94.231208, 48.387],
+            "end": [92.964, 48.387],
+            "width": 0.4,
+            "layer": "B.Cu"
+          },
+          {
+            "start": [95.504, 48.387],
+            "end": [94.231208, 48.387],
+            "width": 0.4,
+            "layer": "B.Cu"
+          },
+          {
+            "start": [66.719792, 61.61],
+            "end": [69.909792, 58.42],
+            "width": 0.4,
+            "layer": "F.Cu"
+          },
+          {
+            "start": [69.909792, 58.42],
+            "end": [69.909792, 47.184208],
+            "width": 0.4,
+            "layer": "F.Cu"
+          },
+          {
+            "start": [71.374, 43.18],
+            "end": [71.374, 45.72],
+            "width": 0.4,
+            "layer": "F.Cu"
+          },
+          {
+            "start": [69.909792, 47.184208],
+            "end": [71.374, 45.72],
+            "width": 0.4,
+            "layer": "F.Cu"
+          }
+        ],
+        "arcs": ["TODO: extract arc info. Most samples don't have arcs to help test :("],
+        "vias": ["TODO: are vias necessary for our routing interests?"]
+      },
+      "errors": []
+    },
+    "2": {
+      "name": "CV1",
+      "class": "TODO",
+      "pads": [
+        {
+          "8Bit_ESPTINY86-Mixtape:AUDIO-Jack_3.5mm_5Pin pad 2": {
+            "abs_pos": [109.20222000000001, 71.03872]
+          }
+        },
+        {
+          "8Bit_ESPTINY86-Mixtape:4xxx_SOIC-16W_Pitch1.27mm pad 1": {
+            "abs_pos": [80.524, 64.262]
+          }
+        }
+      ],
+      "tracks": {
+        "segments": [
+          {
+            "start": [92.964, 67.056],
+            "end": [92.964, 66.631736],
+            "width": 0.4,
+            "layer": "F.Cu"
+          },
+          {
+            "start": [92.964, 66.631736],
+            "end": [91.489264, 65.157],
+            "width": 0.4,
+            "layer": "F.Cu"
+          },
+          {
+            "start": [91.489264, 65.157],
+            "end": [89.219, 65.157],
+            "width": 0.4,
+            "layer": "F.Cu"
+          },
+          {
+            "start": [89.219, 65.157],
+            "end": [88.519, 65.157],
+            "width": 0.4,
+            "layer": "F.Cu"
+          },
+          {
+            "start": [92.964, 76.536308],
+            "end": [92.964, 67.056],
+            "width": 0.4,
+            "layer": "B.Cu"
+          },
+          {
+            "start": [99.20478, 81.23428],
+            "end": [97.661972, 81.23428],
+            "width": 0.4,
+            "layer": "B.Cu"
+          },
+          {
+            "start": [97.661972, 81.23428],
+            "end": [92.964, 76.536308],
+            "width": 0.4,
+            "layer": "B.Cu"
+          }
+        ],
+        "arcs": ["TODO: extract arc info. Most samples don't have arcs to help test :("],
+        "vias": ["TODO: are vias necessary for our routing interests?"]
+      },
+      "errors": []
+    },
+    "3": {
+      "name": "CV2",
+      "class": "TODO",
+      "pads": [
+        {
+          "8Bit_ESPTINY86-Mixtape:AUDIO-Jack_3.5mm_5Pin pad 3": {
+            "abs_pos": [109.20222000000001, 81.23428]
+          }
+        },
+        {
+          "8Bit_ESPTINY86-Mixtape:4xxx_SOIC-16W_Pitch1.27mm pad 5": {
+            "abs_pos": [80.524, 69.342]
+          }
+        }
+      ],
+      "tracks": {
+        "segments": [
+          {
+            "start": [90.17, 69.342],
+            "end": [87.122, 66.294],
+            "width": 0.4,
+            "layer": "B.Cu"
+          },
+          {
+            "start": [84.328, 66.548],
+            "end": [84.583501, 66.292499],
+            "width": 0.4,
+            "layer": "B.Cu"
+          },
+          {
+            "start": [84.583501, 66.292499],
+            "end": [87.120499, 66.292499],
+            "width": 0.4,
+            "layer": "B.Cu"
+          },
+          {
+            "start": [87.120499, 66.292499],
+            "end": [87.122, 66.294],
+            "width": 0.4,
+            "layer": "B.Cu"
+          },
+          {
+            "start": [83.68, 66.548],
+            "end": [84.328, 66.548],
+            "width": 0.4,
+            "layer": "F.Cu"
+          },
+          {
+            "start": [83.439, 65.157],
+            "end": [83.439, 66.307],
+            "width": 0.4,
+            "layer": "F.Cu"
+          },
+          {
+            "start": [83.439, 66.307],
+            "end": [83.68, 66.548],
+            "width": 0.4,
+            "layer": "F.Cu"
+          },
+          {
+            "start": [90.17, 69.85],
+            "end": [90.17, 69.342],
+            "width": 0.4,
+            "layer": "B.Cu"
+          },
+          {
+            "start": [96.473252, 69.85],
+            "end": [90.17, 69.85],
+            "width": 0.4,
+            "layer": "F.Cu"
+          },
+          {
+            "start": [99.20478, 71.03872],
+            "end": [97.661972, 71.03872],
+            "width": 0.4,
+            "layer": "F.Cu"
+          },
+          {
+            "start": [97.661972, 71.03872],
+            "end": [96.473252, 69.85],
+            "width": 0.4,
+            "layer": "F.Cu"
+          }
+        ],
+        "arcs": ["TODO: extract arc info. Most samples don't have arcs to help test :("],
+        "vias": ["TODO: are vias necessary for our routing interests?"]
+      },
+      "errors": []
+    },
+    "4": {
+      "name": "GND",
+      "class": "TODO",
+      "pads": [
+        {
+          "8BitMixtape_DIY-CAD:Mixtape_NEO_WS2812B pad 3": {
+            "abs_pos": [86.498, 84.19]
+          }
+        },
+        {
+          "8BitMixtape_Stomp:Bat_connector+- pad 2": {
+            "abs_pos": [93.218, 88.9]
+          }
+        },
+        {
+          "8Bit_ESPTINY86-Mixtape:AUDIO-Jack_3.5mm_5Pin pad 1": {
+            "abs_pos": [104.2035, 76.1365]
+          }
+        },
+        {
+          "8Bit_ESPTINY86-Mixtape:AUDIO-Jack_3.5mm_5Pin pad 1": {
+            "abs_pos": [63.58128, 76.24064]
+          }
+        },
+        {
+          "8Bit_ESPTINY86-Mixtape:WeMOS_ESP pad 2": {
+            "abs_pos": [72.644, 50.927]
+          }
+        },
+        {
+          "8Bit_ESPTINY86-Mixtape:SW_PUSH-12mm_3D pad 2": {
+            "abs_pos": [107.32991899999999, 103.031551]
+          }
+        },
+        {
+          "8Bit_ESPTINY86-Mixtape:SW_PUSH-12mm_3D pad 2": {
+            "abs_pos": [94.82991899999999, 103.031551]
+          }
+        },
+        {
+          "8Bit_ESPTINY86-Mixtape:SW_PUSH-12mm_3D pad 2": {
+            "abs_pos": [72.884864, 103.248026]
+          }
+        },
+        {
+          "8Bit_ESPTINY86-Mixtape:SW_PUSH-12mm_3D pad 2": {
+            "abs_pos": [60.38486399999999, 103.248026]
+          }
+        },
+        {
+          "8Bit_ESPTINY86-Mixtape:ESP-Stomp_Pot_Alps pad 3": {
+            "abs_pos": [86.365, 48.355]
+          }
+        },
+        {
+          "8Bit_ESPTINY86-Mixtape:ESP-Stomp_Pot_Alps pad 3": {
+            "abs_pos": [107.32, 56.61]
+          }
+        },
+        {
+          "8Bit_ESPTINY86-Mixtape:ESP-Stomp_Pot_Alps pad 3": {
+            "abs_pos": [65.447, 56.61]
+          }
+        },
+        {
+          "8Bit_ESPTINY86-Mixtape:ESP-Stomp_Pot_Alps pad 3": {
+            "abs_pos": [86.4655, 84.9945]
+          }
+        },
+        {
+          "8Bit_ESPTINY86-Mixtape:4xxx_SOIC-16W_Pitch1.27mm pad 6": {
+            "abs_pos": [80.524, 70.612]
+          }
+        },
+        {
+          "8Bit_ESPTINY86-Mixtape:4xxx_SOIC-16W_Pitch1.27mm pad 7": {
+            "abs_pos": [80.524, 71.88199999999999]
+          }
+        },
+        {
+          "8Bit_ESPTINY86-Mixtape:4xxx_SOIC-16W_Pitch1.27mm pad 8": {
+            "abs_pos": [80.524, 73.15199999999999]
+          }
+        },
+        {
+          "8Bit_ESPTINY86-Mixtape:SOIC-8_3.9x4.9mm_Pitch1.27mm pad 5": {
+            "abs_pos": [86.774, 60.452]
+          }
+        },
+        {
+          "8Bit_ESPTINY86-Mixtape:R_1206_Mixtape_Silk pad 1": {
+            "abs_pos": [63.786, 46.5455]
+          }
+        },
+        {
+          "8Bit_ESPTINY86-Mixtape:AUDIO-JACK-3.5mm_SMD pad 1": {
+            "abs_pos": [111.6965, 119.38]
+          }
+        },
+        {
+          "8Bit_ESPTINY86-Mixtape:AUDIO-JACK-3.5mm_SMD pad 1": {
+            "abs_pos": [111.6965, 111.75999999999999]
+          }
+        },
+        {
+          "8Bit_ESPTINY86-Mixtape:AUDIO-JACK-3.5mm_SMD pad 1": {
+            "abs_pos": [60.96, 119.38]
+          }
+        },
+        {
+          "8Bit_ESPTINY86-Mixtape:AUDIO-JACK-3.5mm_SMD pad 1": {
+            "abs_pos": [60.96, 111.75999999999999]
+          }
+        }
+      ],
+      "tracks": {
+        "segments": [
+          {
+            "start": [71.12, 50.165],
+            "end": [71.12, 50.419],
+            "width": 0.4,
+            "layer": "F.Cu"
+          },
+          {
+            "start": [71.12, 49.403],
+            "end": [71.12, 50.165],
+            "width": 0.4,
+            "layer": "F.Cu"
+          },
+          {
+            "start": [71.12, 47.244],
+            "end": [71.12, 49.403],
+            "width": 0.4,
+            "layer": "F.Cu"
+          },
+          {
+            "start": [70.866, 46.99],
+            "end": [71.12, 47.244],
+            "width": 0.4,
+            "layer": "B.Cu"
+          },
+          {
+            "start": [70.104, 46.99],
+            "end": [70.866, 46.99],
+            "width": 0.4,
+            "layer": "B.Cu"
+          },
+          {
+            "start": [68.534001, 48.559999],
+            "end": [70.104, 46.99],
+            "width": 0.4,
+            "layer": "B.Cu"
+          },
+          {
+            "start": [65.913, 48.26],
+            "end": [66.212999, 48.559999],
+            "width": 0.4,
+            "layer": "B.Cu"
+          },
+          {
+            "start": [66.212999, 48.559999],
+            "end": [68.534001, 48.559999],
+            "width": 0.4,
+            "layer": "B.Cu"
+          },
+          {
+            "start": [65.913, 47.2725],
+            "end": [65.913, 48.26],
+            "width": 0.4,
+            "layer": "F.Cu"
+          },
+          {
+            "start": [63.786, 46.5455],
+            "end": [65.186, 46.5455],
+            "width": 0.4,
+            "layer": "F.Cu"
+          },
+          {
+            "start": [65.186, 46.5455],
+            "end": [65.913, 47.2725],
+            "width": 0.4,
+            "layer": "F.Cu"
+          },
+          {
+            "start": [80.899, 64.007],
+            "end": [80.899, 63.5],
+            "width": 0.4,
+            "layer": "F.Cu"
+          },
+          {
+            "start": [80.899, 65.157],
+            "end": [80.899, 64.007],
+            "width": 0.4,
+            "layer": "F.Cu"
+          },
+          {
+            "start": [78.613, 55.626],
+            "end": [77.978, 55.626],
+            "width": 0.4,
+            "layer": "F.Cu"
+          },
+          {
+            "start": [79.629, 56.642],
+            "end": [78.613, 55.626],
+            "width": 0.4,
+            "layer": "F.Cu"
+          },
+          {
+            "start": [80.199, 56.642],
+            "end": [79.629, 56.642],
+            "width": 0.4,
+            "layer": "F.Cu"
+          },
+          {
+            "start": [81.374, 56.642],
+            "end": [80.199, 56.642],
+            "width": 0.4,
+            "layer": "F.Cu"
+          },
+          {
+            "start": [80.899, 65.157],
+            "end": [80.899, 65.607],
+            "width": 0.4,
+            "layer": "F.Cu"
+          }
+        ],
+        "arcs": ["TODO: extract arc info. Most samples don't have arcs to help test :("],
+        "vias": ["TODO: are vias necessary for our routing interests?"]
+      },
+      "errors": []
+    },
+    "5": {
+      "name": "Net-(IC1-Pad9)",
+      "class": "TODO",
+      "pads": [
+        {
+          "8Bit_ESPTINY86-Mixtape:WeMOS_ESP pad 5": {
+            "abs_pos": [72.644, 58.547]
+          }
+        },
+        {
+          "8Bit_ESPTINY86-Mixtape:4xxx_SOIC-16W_Pitch1.27mm pad 9": {
+            "abs_pos": [87.624, 73.15199999999999]
+          }
+        }
+      ],
+      "tracks": {
+        "segments": [
+          {
+            "start": [69.723, 66.802],
+            "end": [69.723, 61.468],
+            "width": 0.4,
+            "layer": "F.Cu"
+          },
+          {
+            "start": [69.723, 61.468],
+            "end": [72.644, 58.547],
+            "width": 0.4,
+            "layer": "F.Cu"
+          },
+          {
+            "start": [71.374, 68.453],
+            "end": [69.723, 66.802],
+            "width": 0.4,
+            "layer": "F.Cu"
+          },
+          {
+            "start": [75.125, 68.453],
+            "end": [71.374, 68.453],
+            "width": 0.4,
+            "layer": "F.Cu"
+          },
+          {
+            "start": [79.629, 72.257],
+            "end": [78.929, 72.257],
+            "width": 0.4,
+            "layer": "F.Cu"
+          },
+          {
+            "start": [78.929, 72.257],
+            "end": [75.125, 68.453],
+            "width": 0.4,
+            "layer": "F.Cu"
+          }
+        ],
+        "arcs": ["TODO: extract arc info. Most samples don't have arcs to help test :("],
+        "vias": ["TODO: are vias necessary for our routing interests?"]
+      },
+      "errors": []
+    },
+    "6": {
+      "name": "Net-(IC1-Pad10)",
+      "class": "TODO",
+      "pads": [
+        {
+          "8Bit_ESPTINY86-Mixtape:WeMOS_ESP pad 6": {
+            "abs_pos": [72.644, 61.086999999999996]
+          }
+        },
+        {
+          "8Bit_ESPTINY86-Mixtape:4xxx_SOIC-16W_Pitch1.27mm pad 10": {
+            "abs_pos": [87.624, 71.88199999999999]
+          }
+        }
+      ],
+      "tracks": {
+        "segments": [
+          {
+            "start": [70.866, 66.421],
+            "end": [70.866, 62.865],
+            "width": 0.4,
+            "layer": "F.Cu"
+          },
+          {
+            "start": [70.866, 62.865],
+            "end": [72.644, 61.087],
+            "width": 0.4,
+            "layer": "F.Cu"
+          },
+          {
+            "start": [71.912001, 67.467001],
+            "end": [70.866, 66.421],
+            "width": 0.4,
+            "layer": "F.Cu"
+          },
+          {
+            "start": [80.632, 71.107],
+            "end": [76.992001, 67.467001],
+            "width": 0.4,
+            "layer": "F.Cu"
+          },
+          {
+            "start": [76.992001, 67.467001],
+            "end": [71.912001, 67.467001],
+            "width": 0.4,
+            "layer": "F.Cu"
+          },
+          {
+            "start": [80.899, 71.107],
+            "end": [80.632, 71.107],
+            "width": 0.4,
+            "layer": "F.Cu"
+          },
+          {
+            "start": [80.899, 72.257],
+            "end": [80.899, 71.107],
+            "width": 0.4,
+            "layer": "F.Cu"
+          }
+        ],
+        "arcs": ["TODO: extract arc info. Most samples don't have arcs to help test :("],
+        "vias": ["TODO: are vias necessary for our routing interests?"]
+      },
+      "errors": []
+    },
+    "7": {
+      "name": "Net-(IC1-Pad11)",
+      "class": "TODO",
+      "pads": [
+        {
+          "8Bit_ESPTINY86-Mixtape:WeMOS_ESP pad 11": {
+            "abs_pos": [95.50399999999999, 61.086999999999996]
+          }
+        },
+        {
+          "8Bit_ESPTINY86-Mixtape:4xxx_SOIC-16W_Pitch1.27mm pad 11": {
+            "abs_pos": [87.624, 70.612]
+          }
+        }
+      ],
+      "tracks": {
+        "segments": [
+          {
+            "start": [95.504, 61.087],
+            "end": [97.282, 61.087],
+            "width": 0.4,
+            "layer": "F.Cu"
+          },
+          {
+            "start": [97.282, 61.087],
+            "end": [97.536, 61.341],
+            "width": 0.4,
+            "layer": "F.Cu"
+          },
+          {
+            "start": [97.536, 61.341],
+            "end": [97.536, 67.31],
+            "width": 0.4,
+            "layer": "F.Cu"
+          },
+          {
+            "start": [97.536, 67.31],
+            "end": [96.774, 68.072],
+            "width": 0.4,
+            "layer": "F.Cu"
+          },
+          {
+            "start": [96.774, 68.072],
+            "end": [82.677, 68.072],
+            "width": 0.4,
+            "layer": "F.Cu"
+          },
+          {
+            "start": [82.677, 68.072],
+            "end": [82.169, 68.58],
+            "width": 0.4,
+            "layer": "F.Cu"
+          },
+          {
+            "start": [82.169, 68.58],
+            "end": [82.169, 72.257],
+            "width": 0.4,
+            "layer": "F.Cu"
+          },
+          {
+            "start": [82.169, 72.257],
+            "end": [82.169, 71.107],
+            "width": 0.4,
+            "layer": "F.Cu"
+          }
+        ],
+        "arcs": ["TODO: extract arc info. Most samples don't have arcs to help test :("],
+        "vias": ["TODO: are vias necessary for our routing interests?"]
+      },
+      "errors": []
+    },
+    "8": {
+      "name": "Pot4",
+      "class": "TODO",
+      "pads": [
+        {
+          "8Bit_ESPTINY86-Mixtape:ESP-Stomp_Pot_Alps pad 2": {
+            "abs_pos": [86.4655, 87.4945]
+          }
+        },
+        {
+          "8Bit_ESPTINY86-Mixtape:4xxx_SOIC-16W_Pitch1.27mm pad 12": {
+            "abs_pos": [87.624, 69.342]
+          }
+        }
+      ],
+      "tracks": {
+        "segments": [
+          {
+            "start": [83.9655, 89.9945],
+            "end": [83.9655, 83.312],
+            "width": 0.4,
+            "layer": "F.Cu"
+          },
+          {
+            "start": [83.9655, 73.9335],
+            "end": [83.9655, 83.312],
+            "width": 0.4,
+            "layer": "F.Cu"
+          },
+          {
+            "start": [83.9655, 83.312],
+            "end": [83.9655, 82.595],
+            "width": 0.4,
+            "layer": "F.Cu"
+          },
+          {
+            "start": [83.439, 72.257],
+            "end": [83.439, 73.407],
+            "width": 0.4,
+            "layer": "F.Cu"
+          },
+          {
+            "start": [83.439, 73.407],
+            "end": [83.9655, 73.9335],
+            "width": 0.4,
+            "layer": "F.Cu"
+          },
+          {
+            "start": [83.9655, 89.9945],
+            "end": [83.9655, 88.721708],
+            "width": 0.4,
+            "layer": "F.Cu"
+          },
+          {
+            "start": [83.439, 72.257],
+            "end": [83.439, 71.807],
+            "width": 0.4,
+            "layer": "F.Cu"
+          }
+        ],
+        "arcs": ["TODO: extract arc info. Most samples don't have arcs to help test :("],
+        "vias": ["TODO: are vias necessary for our routing interests?"]
+      },
+      "errors": []
+    },
+    "9": {
+      "name": "Pot1",
+      "class": "TODO",
+      "pads": [
+        {
+          "8Bit_ESPTINY86-Mixtape:ESP-Stomp_Pot_Alps pad 2": {
+            "abs_pos": [65.447, 59.11]
+          }
+        },
+        {
+          "8Bit_ESPTINY86-Mixtape:4xxx_SOIC-16W_Pitch1.27mm pad 13": {
+            "abs_pos": [87.624, 68.07199999999999]
+          }
+        }
+      ],
+      "tracks": {
+        "segments": [
+          {
+            "start": [62.947, 61.61],
+            "end": [69.977, 68.64],
+            "width": 0.4,
+            "layer": "F.Cu"
+          },
+          {
+            "start": [69.977, 69.9135],
+            "end": [69.977, 68.64],
+            "width": 0.4,
+            "layer": "B.Cu"
+          },
+          {
+            "start": [83.82, 69.9135],
+            "end": [69.977, 69.9135],
+            "width": 0.4,
+            "layer": "B.Cu"
+          },
+          {
+            "start": [84.709, 72.257],
+            "end": [84.709, 70.8025],
+            "width": 0.4,
+            "layer": "F.Cu"
+          },
+          {
+            "start": [84.709, 70.8025],
+            "end": [83.82, 69.9135],
+            "width": 0.4,
+            "layer": "F.Cu"
+          },
+          {
+            "start": [84.709, 72.257],
+            "end": [84.709, 72.707],
+            "width": 0.4,
+            "layer": "F.Cu"
+          }
+        ],
+        "arcs": ["TODO: extract arc info. Most samples don't have arcs to help test :("],
+        "vias": ["TODO: are vias necessary for our routing interests?"]
+      },
+      "errors": []
+    },
+    "10": {
+      "name": "Pot2",
+      "class": "TODO",
+      "pads": [
+        {
+          "8Bit_ESPTINY86-Mixtape:ESP-Stomp_Pot_Alps pad 2": {
+            "abs_pos": [86.365, 50.855]
+          }
+        },
+        {
+          "8Bit_ESPTINY86-Mixtape:4xxx_SOIC-16W_Pitch1.27mm pad 14": {
+            "abs_pos": [87.624, 66.80199999999999]
+          }
+        }
+      ],
+      "tracks": {
+        "segments": [
+          {
+            "start": [84.7725, 68.8975],
+            "end": [84.348236, 68.8975],
+            "width": 0.4,
+            "layer": "B.Cu"
+          },
+          {
+            "start": [84.348236, 68.8975],
+            "end": [82.938501, 67.487765],
+            "width": 0.4,
+            "layer": "B.Cu"
+          },
+          {
+            "start": [82.938501, 67.487765],
+            "end": [82.938501, 54.254999],
+            "width": 0.4,
+            "layer": "B.Cu"
+          },
+          {
+            "start": [82.938501, 54.254999],
+            "end": [83.8385, 53.355],
+            "width": 0.4,
+            "layer": "B.Cu"
+          },
+          {
+            "start": [85.979, 72.257],
+            "end": [85.979, 70.104],
+            "width": 0.4,
+            "layer": "F.Cu"
+          },
+          {
+            "start": [85.979, 70.104],
+            "end": [84.7725, 68.8975],
+            "width": 0.4,
+            "layer": "F.Cu"
+          }
+        ],
+        "arcs": ["TODO: extract arc info. Most samples don't have arcs to help test :("],
+        "vias": ["TODO: are vias necessary for our routing interests?"]
+      },
+      "errors": []
+    },
+    "11": {
+      "name": "L-Out",
+      "class": "TODO",
+      "pads": [
+        {
+          "8Bit_ESPTINY86-Mixtape:AUDIO-Jack_3.5mm_5Pin pad 3": {
+            "abs_pos": [68.58, 71.14286]
+          }
+        },
+        {
+          "8Bit_ESPTINY86-Mixtape:SOIC-8_3.9x4.9mm_Pitch1.27mm pad 6": {
+            "abs_pos": [86.774, 59.181999999999995]
+          }
+        }
+      ],
+      "tracks": {
+        "segments": [
+          {
+            "start": [77.978, 57.912],
+            "end": [81.374, 57.912],
+            "width": 0.4,
+            "layer": "F.Cu"
+          },
+          {
+            "start": [75.946, 66.613],
+            "end": [75.946, 59.944],
+            "width": 0.4,
+            "layer": "B.Cu"
+          },
+          {
+            "start": [75.946, 59.944],
+            "end": [77.978, 57.912],
+            "width": 0.4,
+            "layer": "B.Cu"
+          },
+          {
+            "start": [73.406, 69.153],
+            "end": [75.946, 66.613],
+            "width": 0.4,
+            "layer": "B.Cu"
+          },
+          {
+            "start": [71.35114, 71.14286],
+            "end": [73.341, 69.153],
+            "width": 0.4,
+            "layer": "F.Cu"
+          },
+          {
+            "start": [73.341, 69.153],
+            "end": [73.406, 69.153],
+            "width": 0.4,
+            "layer": "F.Cu"
+          },
+          {
+            "start": [68.58, 71.14286],
+            "end": [71.35114, 71.14286],
+            "width": 0.4,
+            "layer": "F.Cu"
+          }
+        ],
+        "arcs": ["TODO: extract arc info. Most samples don't have arcs to help test :("],
+        "vias": ["TODO: are vias necessary for our routing interests?"]
+      },
+      "errors": []
+    },
+    "12": {
+      "name": "R-Out",
+      "class": "TODO",
+      "pads": [
+        {
+          "8Bit_ESPTINY86-Mixtape:AUDIO-Jack_3.5mm_5Pin pad 2": {
+            "abs_pos": [68.58, 81.33842]
+          }
+        },
+        {
+          "8Bit_ESPTINY86-Mixtape:SOIC-8_3.9x4.9mm_Pitch1.27mm pad 8": {
+            "abs_pos": [86.774, 56.641999999999996]
+          }
+        }
+      ],
+      "tracks": {
+        "segments": [
+          {
+            "start": [74.676, 69.153],
+            "end": [74.376001, 69.452999],
+            "width": 0.4,
+            "layer": "F.Cu"
+          },
+          {
+            "start": [74.376001, 69.452999],
+            "end": [74.376001, 75.542419],
+            "width": 0.4,
+            "layer": "F.Cu"
+          },
+          {
+            "start": [74.376001, 75.542419],
+            "end": [68.58, 81.33842],
+            "width": 0.4,
+            "layer": "F.Cu"
+          },
+          {
+            "start": [76.962, 67.02749],
+            "end": [74.83649, 69.153],
+            "width": 0.4,
+            "layer": "B.Cu"
+          },
+          {
+            "start": [74.83649, 69.153],
+            "end": [74.676, 69.153],
+            "width": 0.4,
+            "layer": "B.Cu"
+          },
+          {
+            "start": [76.962, 61.468],
+            "end": [76.962, 67.02749],
+            "width": 0.4,
+            "layer": "B.Cu"
+          },
+          {
+            "start": [77.978, 60.452],
+            "end": [76.962, 61.468],
+            "width": 0.4,
+            "layer": "B.Cu"
+          },
+          {
+            "start": [81.374, 60.452],
+            "end": [77.978, 60.452],
+            "width": 0.4,
+            "layer": "F.Cu"
+          }
+        ],
+        "arcs": ["TODO: extract arc info. Most samples don't have arcs to help test :("],
+        "vias": ["TODO: are vias necessary for our routing interests?"]
+      },
+      "errors": []
+    },
+    "13": {
+      "name": "Net-(D1-Pad1)",
+      "class": "TODO",
+      "pads": [
+        {
+          "8Bit_ESPTINY86-Mixtape:TopLED_2835 pad 1": {
+            "abs_pos": [100.076, 43.1165]
+          }
+        },
+        {
+          "8Bit_ESPTINY86-Mixtape:R_1206_Mixtape_Silk pad 1": {
+            "abs_pos": [99.5685, 46.609]
+          }
+        }
+      ],
+      "tracks": {
+        "segments": [
+          {
+            "start": [100.076, 43.1165],
+            "end": [100.076, 46.1015],
+            "width": 0.4,
+            "layer": "F.Cu"
+          },
+          {
+            "start": [100.076, 46.1015],
+            "end": [99.5685, 46.609],
+            "width": 0.4,
+            "layer": "F.Cu"
+          },
+          {
+            "start": [99.5685, 43.6875],
+            "end": [100.076, 43.18],
+            "width": 0.4,
+            "layer": "F.Cu"
+          }
+        ],
+        "arcs": ["TODO: extract arc info. Most samples don't have arcs to help test :("],
+        "vias": ["TODO: are vias necessary for our routing interests?"]
+      },
+      "errors": []
+    },
+    "14": {
+      "name": "Net-(IC1-Pad3)",
+      "class": "TODO",
+      "pads": [
+        {
+          "8Bit_ESPTINY86-Mixtape:WeMOS_ESP pad 10": {
+            "abs_pos": [95.50399999999999, 63.626999999999995]
+          }
+        },
+        {
+          "8Bit_ESPTINY86-Mixtape:4xxx_SOIC-16W_Pitch1.27mm pad 3": {
+            "abs_pos": [80.524, 66.80199999999999]
+          }
+        }
+      ],
+      "tracks": {
+        "segments": [
+          {
+            "start": [85.979, 63.119],
+            "end": [85.979, 65.157],
+            "width": 0.4,
+            "layer": "F.Cu"
+          },
+          {
+            "start": [86.614, 62.484],
+            "end": [85.979, 63.119],
+            "width": 0.4,
+            "layer": "F.Cu"
+          },
+          {
+            "start": [90.297, 62.484],
+            "end": [86.614, 62.484],
+            "width": 0.4,
+            "layer": "F.Cu"
+          },
+          {
+            "start": [91.44, 63.627],
+            "end": [90.297, 62.484],
+            "width": 0.4,
+            "layer": "F.Cu"
+          },
+          {
+            "start": [95.504, 63.627],
+            "end": [91.44, 63.627],
+            "width": 0.4,
+            "layer": "F.Cu"
+          }
+        ],
+        "arcs": ["TODO: extract arc info. Most samples don't have arcs to help test :("],
+        "vias": ["TODO: are vias necessary for our routing interests?"]
+      },
+      "errors": []
+    },
+    "15": {
+      "name": "Net-(IC2-Pad1)",
+      "class": "TODO",
+      "pads": [
+        {
+          "8Bit_ESPTINY86-Mixtape:WeMOS_ESP pad 15": {
+            "abs_pos": [95.50399999999999, 50.927]
+          }
+        },
+        {
+          "8Bit_ESPTINY86-Mixtape:SOIC-8_3.9x4.9mm_Pitch1.27mm pad 1": {
+            "abs_pos": [81.374, 56.641999999999996]
+          }
+        }
+      ],
+      "tracks": {
+        "segments": [
+          {
+            "start": [91.567, 51.943],
+            "end": [92.583, 50.927],
+            "width": 0.4,
+            "layer": "F.Cu"
+          },
+          {
+            "start": [92.583, 50.927],
+            "end": [95.504, 50.927],
+            "width": 0.4,
+            "layer": "F.Cu"
+          },
+          {
+            "start": [91.567, 59.055],
+            "end": [91.567, 51.943],
+            "width": 0.4,
+            "layer": "F.Cu"
+          },
+          {
+            "start": [90.17, 60.452],
+            "end": [91.567, 59.055],
+            "width": 0.4,
+            "layer": "F.Cu"
+          },
+          {
+            "start": [86.774, 60.452],
+            "end": [90.17, 60.452],
+            "width": 0.4,
+            "layer": "F.Cu"
+          }
+        ],
+        "arcs": ["TODO: extract arc info. Most samples don't have arcs to help test :("],
+        "vias": ["TODO: are vias necessary for our routing interests?"]
+      },
+      "errors": []
+    },
+    "16": {
+      "name": "/PDS",
+      "class": "TODO",
+      "pads": [
+        {
+          "8Bit_ESPTINY86-Mixtape:WeMOS_ESP pad 7": {
+            "abs_pos": [72.644, 63.626999999999995]
+          }
+        },
+        {
+          "8Bit_ESPTINY86-Mixtape:SOIC-8_3.9x4.9mm_Pitch1.27mm pad 3": {
+            "abs_pos": [81.374, 59.181999999999995]
+          }
+        }
+      ],
+      "tracks": {
+        "segments": [
+          {
+            "start": [84.201, 60.01],
+            "end": [86.299, 57.912],
+            "width": 0.4,
+            "layer": "F.Cu"
+          },
+          {
+            "start": [86.299, 57.912],
+            "end": [86.774, 57.912],
+            "width": 0.4,
+            "layer": "F.Cu"
+          },
+          {
+            "start": [84.201, 60.579],
+            "end": [84.201, 60.01],
+            "width": 0.4,
+            "layer": "F.Cu"
+          },
+          {
+            "start": [82.169, 62.611],
+            "end": [84.201, 60.579],
+            "width": 0.4,
+            "layer": "F.Cu"
+          },
+          {
+            "start": [74.932792, 62.611],
+            "end": [82.169, 62.611],
+            "width": 0.4,
+            "layer": "F.Cu"
+          },
+          {
+            "start": [72.644, 63.627],
+            "end": [73.916792, 63.627],
+            "width": 0.4,
+            "layer": "F.Cu"
+          },
+          {
+            "start": [73.916792, 63.627],
+            "end": [74.932792, 62.611],
+            "width": 0.4,
+            "layer": "F.Cu"
+          }
+        ],
+        "arcs": ["TODO: extract arc info. Most samples don't have arcs to help test :("],
+        "vias": ["TODO: are vias necessary for our routing interests?"]
+      },
+      "errors": []
+    },
+    "17": {
+      "name": "Led1_pulldown",
+      "class": "TODO",
+      "pads": [
+        {
+          "8Bit_ESPTINY86-Mixtape:WeMOS_ESP pad 13": {
+            "abs_pos": [95.50399999999999, 56.007]
+          }
+        },
+        {
+          "8Bit_ESPTINY86-Mixtape:R_1206_Mixtape_Silk pad 2": {
+            "abs_pos": [103.5685, 46.609]
+          }
+        }
+      ],
+      "tracks": {
+        "segments": [
+          {
+            "start": [97.79, 52.153736],
+            "end": [97.79, 53.721],
+            "width": 0.4,
+            "layer": "B.Cu"
+          },
+          {
+            "start": [97.79, 53.721],
+            "end": [95.504, 56.007],
+            "width": 0.4,
+            "layer": "B.Cu"
+          },
+          {
+            "start": [101.6, 48.768],
+            "end": [101.175736, 48.768],
+            "width": 0.4,
+            "layer": "B.Cu"
+          },
+          {
+            "start": [101.175736, 48.768],
+            "end": [97.79, 52.153736],
+            "width": 0.4,
+            "layer": "B.Cu"
+          },
+          {
+            "start": [103.5685, 46.609],
+            "end": [103.5685, 46.7995],
+            "width": 0.4,
+            "layer": "F.Cu"
+          },
+          {
+            "start": [103.5685, 46.7995],
+            "end": [101.6, 48.768],
+            "width": 0.4,
+            "layer": "F.Cu"
+          }
+        ],
+        "arcs": ["TODO: extract arc info. Most samples don't have arcs to help test :("],
+        "vias": ["TODO: are vias necessary for our routing interests?"]
+      },
+      "errors": []
+    },
+    "18": {
+      "name": "+BATT",
+      "class": "TODO",
+      "pads": [
+        {
+          "8BitMixtape_Stomp:Bat_connector+- pad 1": {
+            "abs_pos": [95.75800000000001, 88.9]
+          }
+        },
+        {
+          "8Bit_ESPTINY86-Mixtape:Push_SWITCH_hole pad 1": {
+            "abs_pos": [83.82, 105.41]
+          }
+        }
+      ],
+      "tracks": {
+        "segments": [
+          {
+            "start": [90.17, 99.06],
+            "end": [91.82, 99.06],
+            "width": 0.4,
+            "layer": "B.Cu"
+          },
+          {
+            "start": [91.82, 99.06],
+            "end": [95.758, 95.122],
+            "width": 0.4,
+            "layer": "B.Cu"
+          },
+          {
+            "start": [95.758, 95.122],
+            "end": [95.758, 90.805],
+            "width": 0.4,
+            "layer": "B.Cu"
+          },
+          {
+            "start": [95.758, 90.805],
+            "end": [95.758, 88.9],
+            "width": 0.4,
+            "layer": "B.Cu"
+          }
+        ],
+        "arcs": ["TODO: extract arc info. Most samples don't have arcs to help test :("],
+        "vias": ["TODO: are vias necessary for our routing interests?"]
+      },
+      "errors": []
+    },
+    "19": {
+      "name": "Pot3",
+      "class": "TODO",
+      "pads": [
+        {
+          "8Bit_ESPTINY86-Mixtape:ESP-Stomp_Pot_Alps pad 2": {
+            "abs_pos": [107.32, 59.11]
+          }
+        },
+        {
+          "8Bit_ESPTINY86-Mixtape:4xxx_SOIC-16W_Pitch1.27mm pad 15": {
+            "abs_pos": [87.624, 65.532]
+          }
+        }
+      ],
+      "tracks": {
+        "segments": [
+          {
+            "start": [104.7985, 61.595],
+            "end": [98.933, 67.4605],
+            "width": 0.4,
+            "layer": "F.Cu"
+          },
+          {
+            "start": [98.933, 69.0245],
+            "end": [98.933, 67.4605],
+            "width": 0.4,
+            "layer": "B.Cu"
+          },
+          {
+            "start": [93.853, 69.0245],
+            "end": [98.933, 69.0245],
+            "width": 0.4,
+            "layer": "B.Cu"
+          },
+          {
+            "start": [89.3315, 69.0245],
+            "end": [93.853, 69.0245],
+            "width": 0.4,
+            "layer": "F.Cu"
+          },
+          {
+            "start": [87.249, 72.257],
+            "end": [87.249, 71.107],
+            "width": 0.4,
+            "layer": "F.Cu"
+          },
+          {
+            "start": [87.249, 71.107],
+            "end": [89.3315, 69.0245],
+            "width": 0.4,
+            "layer": "F.Cu"
+          },
+          {
+            "start": [87.249, 72.257],
+            "end": [87.249, 71.807],
+            "width": 0.4,
+            "layer": "F.Cu"
+          }
+        ],
+        "arcs": ["TODO: extract arc info. Most samples don't have arcs to help test :("],
+        "vias": ["TODO: are vias necessary for our routing interests?"]
+      },
+      "errors": []
+    },
+    "20": {
+      "name": "NEO-Pixel",
+      "class": "TODO",
+      "pads": [
+        {
+          "8BitMixtape_DIY-CAD:Mixtape_NEO_WS2812B pad 4": {
+            "abs_pos": [86.498, 80.99000000000001]
+          }
+        },
+        {
+          "8Bit_ESPTINY86-Mixtape:WeMOS_ESP pad 14": {
+            "abs_pos": [95.50399999999999, 53.467]
+          }
+        }
+      ],
+      "tracks": {
+        "segments": [
+          {
+            "start": [98.806, 63.754],
+            "end": [99.105999, 63.454001],
+            "width": 0.4,
+            "layer": "F.Cu"
+          },
+          {
+            "start": [99.105999, 63.454001],
+            "end": [99.105999, 58.171541],
+            "width": 0.4,
+            "layer": "F.Cu"
+          },
+          {
+            "start": [97.536, 56.601542],
+            "end": [97.536, 53.594],
+            "width": 0.4,
+            "layer": "F.Cu"
+          },
+          {
+            "start": [99.105999, 58.171541],
+            "end": [97.536, 56.601542],
+            "width": 0.4,
+            "layer": "F.Cu"
+          },
+          {
+            "start": [97.536, 53.594],
+            "end": [97.409, 53.467],
+            "width": 0.4,
+            "layer": "F.Cu"
+          },
+          {
+            "start": [97.409, 53.467],
+            "end": [95.504, 53.467],
+            "width": 0.4,
+            "layer": "F.Cu"
+          },
+          {
+            "start": [96.012, 75.692],
+            "end": [96.575929, 75.128071],
+            "width": 0.4,
+            "layer": "B.Cu"
+          },
+          {
+            "start": [99.920428, 75.128071],
+            "end": [100.695711, 74.352788],
+            "width": 0.4,
+            "layer": "B.Cu"
+          },
+          {
+            "start": [96.575929, 75.128071],
+            "end": [99.920428, 75.128071],
+            "width": 0.4,
+            "layer": "B.Cu"
+          },
+          {
+            "start": [100.695711, 74.352788],
+            "end": [100.695711, 65.643711],
+            "width": 0.4,
+            "layer": "B.Cu"
+          },
+          {
+            "start": [100.695711, 65.643711],
+            "end": [98.806, 63.754],
+            "width": 0.4,
+            "layer": "B.Cu"
+          },
+          {
+            "start": [96.012, 80.01],
+            "end": [96.012, 75.692],
+            "width": 0.4,
+            "layer": "F.Cu"
+          },
+          {
+            "start": [89.916, 86.106],
+            "end": [96.012, 80.01],
+            "width": 0.4,
+            "layer": "F.Cu"
+          },
+          {
+            "start": [87.514, 86.106],
+            "end": [89.916, 86.106],
+            "width": 0.4,
+            "layer": "F.Cu"
+          },
+          {
+            "start": [85.598, 85.09],
+            "end": [86.498, 85.09],
+            "width": 0.4,
+            "layer": "F.Cu"
+          },
+          {
+            "start": [86.498, 85.09],
+            "end": [87.514, 86.106],
+            "width": 0.4,
+            "layer": "F.Cu"
+          }
+        ],
+        "arcs": ["TODO: extract arc info. Most samples don't have arcs to help test :("],
+        "vias": ["TODO: are vias necessary for our routing interests?"]
+      },
+      "errors": []
+    },
+    "21": {
+      "name": "Net-(D2-Pad1)",
+      "class": "TODO",
+      "pads": [
+        {
+          "8Bit_ESPTINY86-Mixtape:TopLED_2835 pad 1": {
+            "abs_pos": [64.4765, 43.053]
+          }
+        },
+        {
+          "8Bit_ESPTINY86-Mixtape:R_1206_Mixtape_Silk pad 2": {
+            "abs_pos": [67.786, 46.5455]
+          }
+        }
+      ],
+      "tracks": {
+        "segments": [
+          {
+            "start": [67.4765, 43.053],
+            "end": [67.4765, 46.236],
+            "width": 0.4,
+            "layer": "F.Cu"
+          },
+          {
+            "start": [67.4765, 46.236],
+            "end": [67.786, 46.5455],
+            "width": 0.4,
+            "layer": "F.Cu"
+          },
+          {
+            "start": [67.945, 46.6405],
+            "end": [67.786, 46.7995],
+            "width": 0.3,
+            "layer": "F.Cu"
+          }
+        ],
+        "arcs": ["TODO: extract arc info. Most samples don't have arcs to help test :("],
+        "vias": ["TODO: are vias necessary for our routing interests?"]
+      },
+      "errors": []
+    },
+    "22": {
+      "name": "Net-(NEO7-Pad4)",
+      "class": "TODO",
+      "pads": [
+        {
+          "8BitMixtape_DIY-CAD:Mixtape_NEO_WS2812B pad 2": {
+            "abs_pos": [81.498, 84.19]
+          }
+        }
+      ],
+      "tracks": {
+        "segments": [],
+        "arcs": ["TODO: extract arc info. Most samples don't have arcs to help test :("],
+        "vias": ["TODO: are vias necessary for our routing interests?"]
+      },
+      "errors": []
+    },
+    "23": {
+      "name": "Net-(R3-Pad1)",
+      "class": "TODO",
+      "pads": [
+        {
+          "8Bit_ESPTINY86-Mixtape:SW_PUSH-12mm_3D pad 1": {
+            "abs_pos": [72.884864, 98.248026]
+          }
+        },
+        {
+          "8Bit_ESPTINY86-Mixtape:SW_PUSH-12mm_3D pad 1": {
+            "abs_pos": [60.38486399999999, 98.248026]
+          }
+        },
+        {
+          "8Bit_ESPTINY86-Mixtape:R_1206_Mixtape_Silk pad 1": {
+            "abs_pos": [64.779564, 90.869326]
+          }
+        },
+        {
+          "8Bit_ESPTINY86-Mixtape:R_1206_Mixtape_Silk pad 1": {
+            "abs_pos": [64.779064, 87.376826]
+          }
+        }
+      ],
+      "tracks": {
+        "segments": [
+          {
+            "start": [68.779064, 87.376826],
+            "end": [68.779064, 90.868826],
+            "width": 0.4,
+            "layer": "F.Cu"
+          },
+          {
+            "start": [68.779064, 90.868826],
+            "end": [68.779564, 90.869326],
+            "width": 0.4,
+            "layer": "F.Cu"
+          },
+          {
+            "start": [69.287564, 94.425326],
+            "end": [69.287564, 91.123326],
+            "width": 0.4,
+            "layer": "F.Cu"
+          }
+        ],
+        "arcs": ["TODO: extract arc info. Most samples don't have arcs to help test :("],
+        "vias": ["TODO: are vias necessary for our routing interests?"]
+      },
+      "errors": []
+    },
+    "24": {
+      "name": "Net-(R5-Pad1)",
+      "class": "TODO",
+      "pads": [
+        {
+          "8Bit_ESPTINY86-Mixtape:SW_PUSH-12mm_3D pad 1": {
+            "abs_pos": [107.32991899999999, 98.031551]
+          }
+        },
+        {
+          "8Bit_ESPTINY86-Mixtape:SW_PUSH-12mm_3D pad 1": {
+            "abs_pos": [94.82991899999999, 98.031551]
+          }
+        },
+        {
+          "8Bit_ESPTINY86-Mixtape:R_1206_Mixtape_Silk pad 1": {
+            "abs_pos": [99.334619, 90.932251]
+          }
+        }
+      ],
+      "tracks": {
+        "segments": [
+          {
+            "start": [99.334619, 90.932251],
+            "end": [99.334619, 93.752251],
+            "width": 0.4,
+            "layer": "F.Cu"
+          },
+          {
+            "start": [99.334619, 93.752251],
+            "end": [98.652619, 94.434251],
+            "width": 0.4,
+            "layer": "F.Cu"
+          }
+        ],
+        "arcs": ["TODO: extract arc info. Most samples don't have arcs to help test :("],
+        "vias": ["TODO: are vias necessary for our routing interests?"]
+      },
+      "errors": []
+    },
+    "25": {
+      "name": "+5V",
+      "class": "TODO",
+      "pads": [
+        {
+          "8Bit_ESPTINY86-Mixtape:WeMOS_ESP pad 1": {
+            "abs_pos": [72.644, 48.387]
+          }
+        },
+        {
+          "8Bit_ESPTINY86-Mixtape:Push_SWITCH_hole pad 2": {
+            "abs_pos": [83.82, 92.71000000000001]
+          }
+        }
+      ],
+      "tracks": {
+        "segments": [
+          {
+            "start": [77.216, 93.472],
+            "end": [73.152, 89.408],
+            "width": 0.4,
+            "layer": "B.Cu"
+          },
+          {
+            "start": [77.47, 99.06],
+            "end": [77.47, 93.726],
+            "width": 0.4,
+            "layer": "B.Cu"
+          },
+          {
+            "start": [77.47, 93.726],
+            "end": [77.216, 93.472],
+            "width": 0.4,
+            "layer": "B.Cu"
+          },
+          {
+            "start": [62.484, 84.582],
+            "end": [63.754, 83.312],
+            "width": 0.4,
+            "layer": "B.Cu"
+          },
+          {
+            "start": [64.262, 89.408],
+            "end": [62.484, 87.63],
+            "width": 0.4,
+            "layer": "B.Cu"
+          },
+          {
+            "start": [66.04, 66.294],
+            "end": [69.85, 62.484],
+            "width": 0.4,
+            "layer": "B.Cu"
+          },
+          {
+            "start": [73.152, 89.408],
+            "end": [64.262, 89.408],
+            "width": 0.4,
+            "layer": "B.Cu"
+          },
+          {
+            "start": [69.85, 62.484],
+            "end": [69.85, 49.022],
+            "width": 0.4,
+            "layer": "B.Cu"
+          },
+          {
+            "start": [62.484, 87.63],
+            "end": [62.484, 84.582],
+            "width": 0.4,
+            "layer": "B.Cu"
+          },
+          {
+            "start": [65.278, 83.312],
+            "end": [66.04, 82.55],
+            "width": 0.4,
+            "layer": "B.Cu"
+          },
+          {
+            "start": [70.485, 48.387],
+            "end": [72.644, 48.387],
+            "width": 0.4,
+            "layer": "B.Cu"
+          },
+          {
+            "start": [63.754, 83.312],
+            "end": [65.278, 83.312],
+            "width": 0.4,
+            "layer": "B.Cu"
+          },
+          {
+            "start": [66.04, 82.55],
+            "end": [66.04, 66.294],
+            "width": 0.4,
+            "layer": "B.Cu"
+          },
+          {
+            "start": [69.85, 49.022],
+            "end": [70.485, 48.387],
+            "width": 0.4,
+            "layer": "B.Cu"
+          }
+        ],
+        "arcs": ["TODO: extract arc info. Most samples don't have arcs to help test :("],
+        "vias": ["TODO: are vias necessary for our routing interests?"]
+      },
+      "errors": []
+    },
+    "26": {
+      "name": "Buttons",
+      "class": "TODO",
+      "pads": [
+        {
+          "8Bit_ESPTINY86-Mixtape:4xxx_SOIC-16W_Pitch1.27mm pad 2": {
+            "abs_pos": [80.524, 65.532]
+          }
+        },
+        {
+          "8Bit_ESPTINY86-Mixtape:R_1206_Mixtape_Silk pad 2": {
+            "abs_pos": [68.779564, 90.869326]
+          }
+        },
+        {
+          "8Bit_ESPTINY86-Mixtape:R_1206_Mixtape_Silk pad 2": {
+            "abs_pos": [103.334619, 87.630251]
+          }
+        },
+        {
+          "8Bit_ESPTINY86-Mixtape:R_1206_Mixtape_Silk pad 2": {
+            "abs_pos": [103.334619, 90.932251]
+          }
+        },
+        {
+          "8Bit_ESPTINY86-Mixtape:R_1206_Mixtape_Silk pad 2": {
+            "abs_pos": [68.779064, 87.376826]
+          }
+        }
+      ],
+      "tracks": {
+        "segments": [
+          {
+            "start": [64.897, 84.7725],
+            "end": [64.897, 87.25889],
+            "width": 0.4,
+            "layer": "F.Cu"
+          },
+          {
+            "start": [64.897, 87.25889],
+            "end": [64.779064, 87.376826],
+            "width": 0.4,
+            "layer": "F.Cu"
+          },
+          {
+            "start": [70.231, 84.7725],
+            "end": [64.897, 84.7725],
+            "width": 0.4,
+            "layer": "B.Cu"
+          },
+          {
+            "start": [81.579999, 73.423501],
+            "end": [70.231, 84.7725],
+            "width": 0.4,
+            "layer": "B.Cu"
+          },
+          {
+            "start": [86.377501, 73.423501],
+            "end": [81.579999, 73.423501],
+            "width": 0.4,
+            "layer": "B.Cu"
+          },
+          {
+            "start": [103.3145, 85.1535],
+            "end": [103.3145, 87.610132],
+            "width": 0.4,
+            "layer": "F.Cu"
+          },
+          {
+            "start": [103.3145, 87.610132],
+            "end": [103.334619, 87.630251],
+            "width": 0.4,
+            "layer": "F.Cu"
+          },
+          {
+            "start": [98.1075, 85.1535],
+            "end": [103.3145, 85.1535],
+            "width": 0.4,
+            "layer": "B.Cu"
+          },
+          {
+            "start": [86.377501, 73.423501],
+            "end": [98.1075, 85.1535],
+            "width": 0.4,
+            "layer": "B.Cu"
+          },
+          {
+            "start": [86.6775, 66.9925],
+            "end": [86.377501, 67.292499],
+            "width": 0.4,
+            "layer": "B.Cu"
+          },
+          {
+            "start": [86.377501, 67.292499],
+            "end": [86.377501, 73.423501],
+            "width": 0.4,
+            "layer": "B.Cu"
+          },
+          {
+            "start": [87.249, 65.157],
+            "end": [87.249, 66.421],
+            "width": 0.4,
+            "layer": "F.Cu"
+          },
+          {
+            "start": [87.249, 66.421],
+            "end": [86.6775, 66.9925],
+            "width": 0.4,
+            "layer": "F.Cu"
+          },
+          {
+            "start": [64.779564, 90.869326],
+            "end": [64.779564, 87.948326],
+            "width": 0.4,
+            "layer": "F.Cu"
+          },
+          {
+            "start": [102.572619, 91.186251],
+            "end": [102.572619, 87.884251],
+            "width": 0.4,
+            "layer": "F.Cu"
+          }
+        ],
+        "arcs": ["TODO: extract arc info. Most samples don't have arcs to help test :("],
+        "vias": ["TODO: are vias necessary for our routing interests?"]
+      },
+      "errors": []
+    },
+    "27": {
+      "name": "D3",
+      "class": "TODO",
+      "pads": [
+        {
+          "8Bit_ESPTINY86-Mixtape:WeMOS_ESP pad 4": {
+            "abs_pos": [72.644, 56.007]
+          }
+        },
+        {
+          "8Bit_ESPTINY86-Mixtape:AUDIO-JACK-3.5mm_SMD pad 2": {
+            "abs_pos": [68.072, 119.38]
+          }
+        },
+        {
+          "8Bit_ESPTINY86-Mixtape:AUDIO-JACK-3.5mm_SMD pad 2": {
+            "abs_pos": [68.072, 111.75999999999999]
+          }
+        }
+      ],
+      "tracks": {
+        "segments": [
+          {
+            "start": [68.072, 111.76],
+            "end": [69.07144, 111.76],
+            "width": 0.4,
+            "layer": "B.Cu"
+          },
+          {
+            "start": [69.07144, 111.76],
+            "end": [69.342, 112.03056],
+            "width": 0.4,
+            "layer": "B.Cu"
+          },
+          {
+            "start": [69.342, 112.03056],
+            "end": [69.342, 119.38],
+            "width": 0.4,
+            "layer": "B.Cu"
+          },
+          {
+            "start": [69.342, 119.38],
+            "end": [68.072, 119.38],
+            "width": 0.4,
+            "layer": "B.Cu"
+          },
+          {
+            "start": [67.580559, 102.124559],
+            "end": [67.580559, 109.618879],
+            "width": 0.4,
+            "layer": "B.Cu"
+          },
+          {
+            "start": [67.580559, 109.618879],
+            "end": [68.072, 110.11032],
+            "width": 0.4,
+            "layer": "B.Cu"
+          },
+          {
+            "start": [68.072, 110.11032],
+            "end": [68.072, 111.76],
+            "width": 0.4,
+            "layer": "B.Cu"
+          },
+          {
+            "start": [61.88399, 96.42799],
+            "end": [67.580559, 102.124559],
+            "width": 0.4,
+            "layer": "B.Cu"
+          },
+          {
+            "start": [65.43999, 82.301468],
+            "end": [65.029468, 82.71199],
+            "width": 0.4,
+            "layer": "B.Cu"
+          },
+          {
+            "start": [65.029468, 82.71199],
+            "end": [63.505467, 82.711991],
+            "width": 0.4,
+            "layer": "B.Cu"
+          },
+          {
+            "start": [63.505467, 82.711991],
+            "end": [61.88399, 84.333468],
+            "width": 0.4,
+            "layer": "B.Cu"
+          },
+          {
+            "start": [61.88399, 84.333468],
+            "end": [61.88399, 96.42799],
+            "width": 0.4,
+            "layer": "B.Cu"
+          },
+          {
+            "start": [67.056, 63.5],
+            "end": [65.43999, 65.11601],
+            "width": 0.4,
+            "layer": "B.Cu"
+          },
+          {
+            "start": [65.43999, 65.11601],
+            "end": [65.43999, 82.301468],
+            "width": 0.4,
+            "layer": "B.Cu"
+          },
+          {
+            "start": [70.739, 59.055],
+            "end": [67.056, 62.738],
+            "width": 0.4,
+            "layer": "F.Cu"
+          },
+          {
+            "start": [67.056, 62.738],
+            "end": [67.056, 63.5],
+            "width": 0.4,
+            "layer": "F.Cu"
+          },
+          {
+            "start": [70.739, 56.007],
+            "end": [70.739, 59.055],
+            "width": 0.4,
+            "layer": "F.Cu"
+          },
+          {
+            "start": [72.644, 56.007],
+            "end": [70.739, 56.007],
+            "width": 0.4,
+            "layer": "F.Cu"
+          }
+        ],
+        "arcs": ["TODO: extract arc info. Most samples don't have arcs to help test :("],
+        "vias": ["TODO: are vias necessary for our routing interests?"]
+      },
+      "errors": []
+    },
+    "28": {
+      "name": "D5",
+      "class": "TODO",
+      "pads": [
+        {
+          "8Bit_ESPTINY86-Mixtape:WeMOS_ESP pad 12": {
+            "abs_pos": [95.50399999999999, 58.547]
+          }
+        },
+        {
+          "8Bit_ESPTINY86-Mixtape:AUDIO-JACK-3.5mm_SMD pad 2": {
+            "abs_pos": [118.8085, 119.38]
+          }
+        },
+        {
+          "8Bit_ESPTINY86-Mixtape:AUDIO-JACK-3.5mm_SMD pad 2": {
+            "abs_pos": [118.8085, 111.75999999999999]
+          }
+        }
+      ],
+      "tracks": {
+        "segments": [
+          {
+            "start": [99.5045, 111.76],
+            "end": [98.425, 111.76],
+            "width": 0.4,
+            "layer": "B.Cu"
+          },
+          {
+            "start": [97.79, 118.999],
+            "end": [97.917, 118.999],
+            "width": 0.4,
+            "layer": "B.Cu"
+          },
+          {
+            "start": [98.425, 111.76],
+            "end": [97.79, 112.395],
+            "width": 0.4,
+            "layer": "B.Cu"
+          },
+          {
+            "start": [97.79, 112.395],
+            "end": [97.79, 118.999],
+            "width": 0.4,
+            "layer": "B.Cu"
+          },
+          {
+            "start": [97.917, 118.999],
+            "end": [98.298, 119.38],
+            "width": 0.4,
+            "layer": "B.Cu"
+          },
+          {
+            "start": [98.171, 119.253],
+            "end": [98.298, 119.38],
+            "width": 0.4,
+            "layer": "B.Cu"
+          },
+          {
+            "start": [98.298, 119.38],
+            "end": [99.5045, 119.38],
+            "width": 0.4,
+            "layer": "B.Cu"
+          },
+          {
+            "start": [95.504, 58.547],
+            "end": [101.6, 64.643],
+            "width": 0.4,
+            "layer": "B.Cu"
+          },
+          {
+            "start": [104.12476, 109.855],
+            "end": [100.31476, 109.855],
+            "width": 0.4,
+            "layer": "B.Cu"
+          },
+          {
+            "start": [101.6, 64.643],
+            "end": [101.6, 82.402998],
+            "width": 0.4,
+            "layer": "B.Cu"
+          },
+          {
+            "start": [101.6, 82.402998],
+            "end": [103.017002, 83.82],
+            "width": 0.4,
+            "layer": "B.Cu"
+          },
+          {
+            "start": [103.017002, 83.82],
+            "end": [105.41, 83.82],
+            "width": 0.4,
+            "layer": "B.Cu"
+          },
+          {
+            "start": [105.41, 83.82],
+            "end": [106.045, 84.455],
+            "width": 0.4,
+            "layer": "B.Cu"
+          },
+          {
+            "start": [106.045, 84.455],
+            "end": [106.045, 107.93476],
+            "width": 0.4,
+            "layer": "B.Cu"
+          },
+          {
+            "start": [106.045, 107.93476],
+            "end": [104.12476, 109.855],
+            "width": 0.4,
+            "layer": "B.Cu"
+          },
+          {
+            "start": [100.31476, 109.855],
+            "end": [99.06, 111.10976],
+            "width": 0.4,
+            "layer": "B.Cu"
+          },
+          {
+            "start": [99.06, 111.10976],
+            "end": [99.06, 111.76],
+            "width": 0.4,
+            "layer": "B.Cu"
+          }
+        ],
+        "arcs": ["TODO: extract arc info. Most samples don't have arcs to help test :("],
+        "vias": ["TODO: are vias necessary for our routing interests?"]
+      },
+      "errors": []
+    },
+    "29": {
+      "name": "Net-(Jack2-Pad3)",
+      "class": "TODO",
+      "pads": [
+        {
+          "8Bit_ESPTINY86-Mixtape:AUDIO-JACK-3.5mm_SMD pad 3": {
+            "abs_pos": [64.516, 119.38]
+          }
+        },
+        {
+          "8Bit_ESPTINY86-Mixtape:AUDIO-JACK-3.5mm_SMD pad 3": {
+            "abs_pos": [64.516, 111.75999999999999]
+          }
+        }
+      ],
+      "tracks": {
+        "segments": [],
+        "arcs": ["TODO: extract arc info. Most samples don't have arcs to help test :("],
+        "vias": ["TODO: are vias necessary for our routing interests?"]
+      },
+      "errors": []
+    },
+    "30": {
+      "name": "Net-(Jack4-Pad3)",
+      "class": "TODO",
+      "pads": [
+        {
+          "8Bit_ESPTINY86-Mixtape:AUDIO-JACK-3.5mm_SMD pad 3": {
+            "abs_pos": [115.2525, 119.38]
+          }
+        },
+        {
+          "8Bit_ESPTINY86-Mixtape:AUDIO-JACK-3.5mm_SMD pad 3": {
+            "abs_pos": [115.2525, 111.75999999999999]
+          }
+        }
+      ],
+      "tracks": {
+        "segments": [],
+        "arcs": ["TODO: extract arc info. Most samples don't have arcs to help test :("],
+        "vias": ["TODO: are vias necessary for our routing interests?"]
+      },
+      "errors": []
+    },
+    "31": {
+      "name": "Net-(IC2-Pad2)",
+      "class": "TODO",
+      "pads": [
+        {
+          "8Bit_ESPTINY86-Mixtape:WeMOS_ESP pad 3": {
+            "abs_pos": [72.644, 53.467]
+          }
+        },
+        {
+          "8Bit_ESPTINY86-Mixtape:SOIC-8_3.9x4.9mm_Pitch1.27mm pad 2": {
+            "abs_pos": [81.374, 57.912]
+          }
+        }
+      ],
+      "tracks": {
+        "segments": [
+          {
+            "start": [72.644, 53.467],
+            "end": [79.502, 53.467],
+            "width": 0.4,
+            "layer": "F.Cu"
+          },
+          {
+            "start": [89.281, 58.293],
+            "end": [88.392, 59.182],
+            "width": 0.4,
+            "layer": "F.Cu"
+          },
+          {
+            "start": [79.502, 53.467],
+            "end": [79.502, 54.991],
+            "width": 0.4,
+            "layer": "F.Cu"
+          },
+          {
+            "start": [79.502, 54.991],
+            "end": [88.9, 54.991],
+            "width": 0.4,
+            "layer": "F.Cu"
+          },
+          {
+            "start": [88.9, 54.991],
+            "end": [89.281, 55.372],
+            "width": 0.4,
+            "layer": "F.Cu"
+          },
+          {
+            "start": [89.281, 55.372],
+            "end": [89.281, 58.293],
+            "width": 0.4,
+            "layer": "F.Cu"
+          },
+          {
+            "start": [88.392, 59.182],
+            "end": [86.774, 59.182],
+            "width": 0.4,
+            "layer": "F.Cu"
+          }
+        ],
+        "arcs": ["TODO: extract arc info. Most samples don't have arcs to help test :("],
+        "vias": ["TODO: are vias necessary for our routing interests?"]
+      },
+      "errors": []
+    }
+  },
+  "errors": [
+    {
+      "8Bit_ESPTINY86-Mixtape:AUDIO-Jack_3.5mm_5Pin at [104.2035, 76.1365, 180]": "pad 6 thru_hole circle at [4.99872, 2.49936] has error 950: key \"net\" not found"
+    },
+    {
+      "8Bit_ESPTINY86-Mixtape:AUDIO-Jack_3.5mm_5Pin at [104.2035, 76.1365, 180]": "pad 5 thru_hole circle at [4.99872, -2.49936] has error 955: key \"net\" not found"
+    },
+    {
+      "8Bit_ESPTINY86-Mixtape:AUDIO-Jack_3.5mm_5Pin at [104.2035, 76.1365, 180]": "pad 0 thru_hole circle at [5.0165, 0] has error 956: key \"net\" not found"
+    },
+    {
+      "8Bit_ESPTINY86-Mixtape:AUDIO-Jack_3.5mm_5Pin at [104.2035, 76.1365, 180]": "pad 0 thru_hole circle at [-2.4765, 5.0165] has error 957: key \"net\" not found"
+    },
+    {
+      "8Bit_ESPTINY86-Mixtape:AUDIO-Jack_3.5mm_5Pin at [104.2035, 76.1365, 180]": "pad 0 thru_hole circle at [0, -5.0165] has error 958: key \"net\" not found"
+    },
+    {
+      "8Bit_ESPTINY86-Mixtape:AUDIO-Jack_3.5mm_5Pin at [104.2035, 76.1365, 180]": "pad 0 thru_hole circle at [0, 5.0165] has error 959: key \"net\" not found"
+    },
+    {
+      "8Bit_ESPTINY86-Mixtape:AUDIO-Jack_3.5mm_5Pin at [104.2035, 76.1365, 180]": "pad 0 thru_hole circle at [-2.4765, -5.0165] has error 960: key \"net\" not found"
+    },
+    {
+      "8Bit_ESPTINY86-Mixtape:AUDIO-Jack_3.5mm_5Pin at [63.58128, 76.24064]": "pad 6 thru_hole circle at [4.99872, 2.49936] has error 1017: key \"net\" not found"
+    },
+    {
+      "8Bit_ESPTINY86-Mixtape:AUDIO-Jack_3.5mm_5Pin at [63.58128, 76.24064]": "pad 5 thru_hole circle at [4.99872, -2.49936] has error 1022: key \"net\" not found"
+    },
+    {
+      "8Bit_ESPTINY86-Mixtape:AUDIO-Jack_3.5mm_5Pin at [63.58128, 76.24064]": "pad 0 thru_hole circle at [5.0165, 0] has error 1023: key \"net\" not found"
+    },
+    {
+      "8Bit_ESPTINY86-Mixtape:AUDIO-Jack_3.5mm_5Pin at [63.58128, 76.24064]": "pad 0 thru_hole circle at [-2.4765, 5.0165] has error 1024: key \"net\" not found"
+    },
+    {
+      "8Bit_ESPTINY86-Mixtape:AUDIO-Jack_3.5mm_5Pin at [63.58128, 76.24064]": "pad 0 thru_hole circle at [0, -5.0165] has error 1025: key \"net\" not found"
+    },
+    {
+      "8Bit_ESPTINY86-Mixtape:AUDIO-Jack_3.5mm_5Pin at [63.58128, 76.24064]": "pad 0 thru_hole circle at [0, 5.0165] has error 1026: key \"net\" not found"
+    },
+    {
+      "8Bit_ESPTINY86-Mixtape:AUDIO-Jack_3.5mm_5Pin at [63.58128, 76.24064]": "pad 0 thru_hole circle at [-2.4765, -5.0165] has error 1027: key \"net\" not found"
+    },
+    {
+      "8Bit_ESPTINY86-Mixtape:WeMOS_ESP at [84.074, 56.007]": "pad 8 thru_hole circle at [-11.43, 10.16] has error 3461: key \"net\" not found"
+    },
+    {
+      "8Bit_ESPTINY86-Mixtape:WeMOS_ESP at [84.074, 56.007]": "pad 9 thru_hole circle at [11.43, 10.16] has error 3490: key \"net\" not found"
+    },
+    {
+      "8Bit_ESPTINY86-Mixtape:ESP-Stomp_Pot_Alps at [86.365, 53.355, 90]": "pad \"\" np_thru_hole oval at [7, -6.9] has error 3623: key \"net\" not found"
+    },
+    {
+      "8Bit_ESPTINY86-Mixtape:ESP-Stomp_Pot_Alps at [86.365, 53.355, 90]": "pad \"\" np_thru_hole oval at [7, 1.9] has error 3624: key \"net\" not found"
+    },
+    {
+      "8Bit_ESPTINY86-Mixtape:ESP-Stomp_Pot_Alps at [107.32, 61.61, 90]": "pad \"\" np_thru_hole oval at [7, -6.9] has error 3670: key \"net\" not found"
+    },
+    {
+      "8Bit_ESPTINY86-Mixtape:ESP-Stomp_Pot_Alps at [107.32, 61.61, 90]": "pad \"\" np_thru_hole oval at [7, 1.9] has error 3671: key \"net\" not found"
+    },
+    {
+      "8Bit_ESPTINY86-Mixtape:ESP-Stomp_Pot_Alps at [65.447, 61.61, 90]": "pad \"\" np_thru_hole oval at [7, -6.9] has error 3717: key \"net\" not found"
+    },
+    {
+      "8Bit_ESPTINY86-Mixtape:ESP-Stomp_Pot_Alps at [65.447, 61.61, 90]": "pad \"\" np_thru_hole oval at [7, 1.9] has error 3718: key \"net\" not found"
+    },
+    {
+      "8Bit_ESPTINY86-Mixtape:ESP-Stomp_Pot_Alps at [86.4655, 89.9945, 90]": "pad \"\" np_thru_hole oval at [7, -6.9] has error 3764: key \"net\" not found"
+    },
+    {
+      "8Bit_ESPTINY86-Mixtape:ESP-Stomp_Pot_Alps at [86.4655, 89.9945, 90]": "pad \"\" np_thru_hole oval at [7, 1.9] has error 3765: key \"net\" not found"
+    },
+    {
+      "8Bit_ESPTINY86-Mixtape:4xxx_SOIC-16W_Pitch1.27mm at [84.074, 68.707, 270]": "pad 4 smd rect at [-3.55, -0.635] has error 3803: key \"net\" not found"
+    },
+    {
+      "8Bit_ESPTINY86-Mixtape:SOIC-8_3.9x4.9mm_Pitch1.27mm at [84.074, 58.547, 180]": "pad 7 smd rect at [2.7, -0.635] has error 3878: key \"net\" not found"
+    },
+    {
+      "8Bit_ESPTINY86-Mixtape:AUDIO-JACK-3.5mm_SMD at [109.1565, 115.57, 180]": "pad \"\" np_thru_hole circle at [3.556, 0] has error 13591: key \"net\" not found"
+    },
+    {
+      "8Bit_ESPTINY86-Mixtape:AUDIO-JACK-3.5mm_SMD at [109.1565, 115.57, 180]": "pad 0 thru_hole circle at [9.398, 0] has error 13592: key \"net\" not found"
+    },
+    {
+      "8Bit_ESPTINY86-Mixtape:AUDIO-JACK-3.5mm_SMD at [58.42, 115.57]": "pad \"\" np_thru_hole circle at [3.556, 0] has error 13632: key \"net\" not found"
+    },
+    {
+      "8Bit_ESPTINY86-Mixtape:AUDIO-JACK-3.5mm_SMD at [58.42, 115.57]": "pad 0 thru_hole circle at [9.398, 0] has error 13633: key \"net\" not found"
+    },
+    {
+      "8Bit_ESPTINY86-Mixtape:Push_SWITCH_hole at [83.82, 99.06, 90]": "pad \"\" thru_hole circle at [0, 0] has error 13662: key \"net\" not found"
+    }
+  ]
+}

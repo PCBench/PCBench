@@ -1,0 +1,1014 @@
+{
+  "board_settings": {},
+  "net classes": {},
+  "net routes": {
+    "0": {
+      "name": "",
+      "class": "TODO",
+      "pads": [],
+      "tracks": {
+        "segments": [],
+        "arcs": ["TODO: extract arc info. Most samples don't have arcs to help test :("],
+        "vias": ["TODO: are vias necessary for our routing interests?"]
+      },
+      "errors": []
+    },
+    "1": {
+      "name": "GND",
+      "class": "TODO",
+      "pads": [
+        {
+          "TerminalBlock_TE-Connectivity:TerminalBlock_TE_282834-4_1x04_P2.54mm_Horizontal pad 1": {
+            "abs_pos": [133.35, 106.68]
+          }
+        },
+        {
+          "OptoDevice:Vishay_CAST-3Pin pad 1": {
+            "abs_pos": [133.35, 106.68]
+          }
+        },
+        {
+          "Connector_PinHeader_2.54mm:PinHeader_1x04_P2.54mm_Vertical pad 2": {
+            "abs_pos": [136.525, 151.765]
+          }
+        },
+        {
+          "Connector_PinSocket_2.54mm:PinSocket_1x04_P2.54mm_Vertical pad 4": {
+            "abs_pos": [135.89, 133.35]
+          }
+        },
+        {
+          "Package_TO_SOT_THT:TO-92_Inline pad 3": {
+            "abs_pos": [138.42999999999998, 120.65]
+          }
+        },
+        {
+          "Resistor_THT:R_Axial_DIN0204_L3.6mm_D1.6mm_P7.62mm_Horizontal pad 1": {
+            "abs_pos": [141.605, 129.54]
+          }
+        },
+        {
+          "Package_TO_SOT_THT:TO-92_Inline pad 3": {
+            "abs_pos": [132.715, 120.65]
+          }
+        },
+        {
+          "Connector_PinHeader_2.54mm:PinHeader_1x03_P2.54mm_Vertical pad 1": {
+            "abs_pos": [123.825, 134.62]
+          }
+        },
+        {
+          "Module:NodeMCU_Amica pad 24": {
+            "abs_pos": [144.14499999999998, 129.54]
+          }
+        },
+        {
+          "Module:NodeMCU_Amica pad 17": {
+            "abs_pos": [144.14499999999998, 111.75999999999999]
+          }
+        },
+        {
+          "Module:NodeMCU_Amica pad 14": {
+            "abs_pos": [121.285, 111.75999999999999]
+          }
+        },
+        {
+          "Module:NodeMCU_Amica pad 10": {
+            "abs_pos": [121.285, 121.92]
+          }
+        },
+        {
+          "Connector_PinHeader_2.54mm:PinHeader_1x03_P2.54mm_Vertical pad 1": {
+            "abs_pos": [135.255, 146.05]
+          }
+        },
+        {
+          "Connector_PinHeader_2.54mm:PinHeader_1x04_P2.54mm_Vertical pad 2": {
+            "abs_pos": [141.605, 111.76]
+          }
+        }
+      ],
+      "tracks": {
+        "segments": [
+          {
+            "start": [141.605, 111.76],
+            "end": [144.145, 111.76],
+            "width": 0.5,
+            "layer": "B.Cu"
+          }
+        ],
+        "arcs": ["TODO: extract arc info. Most samples don't have arcs to help test :("],
+        "vias": ["TODO: are vias necessary for our routing interests?"]
+      },
+      "errors": []
+    },
+    "2": {
+      "name": "+5V",
+      "class": "TODO",
+      "pads": [
+        {
+          "TerminalBlock_TE-Connectivity:TerminalBlock_TE_282834-4_1x04_P2.54mm_Horizontal pad 2": {
+            "abs_pos": [135.89, 106.68]
+          }
+        },
+        {
+          "OptoDevice:Vishay_CAST-3Pin pad 2": {
+            "abs_pos": [135.89, 106.68]
+          }
+        },
+        {
+          "Connector_PinHeader_2.54mm:PinHeader_1x04_P2.54mm_Vertical pad 1": {
+            "abs_pos": [136.525, 149.225]
+          }
+        },
+        {
+          "Connector_PinSocket_2.54mm:PinSocket_1x04_P2.54mm_Vertical pad 1": {
+            "abs_pos": [135.89, 125.73]
+          }
+        },
+        {
+          "LED_THT:LED_D5.0mm pad 2": {
+            "abs_pos": [142.23999999999998, 106.68]
+          }
+        },
+        {
+          "Diode_THT:D_DO-35_SOD27_P7.62mm_Horizontal pad 1": {
+            "abs_pos": [123.825, 111.76]
+          }
+        },
+        {
+          "Relay_THT:Relay_SPDT_Omron_G5V-1 pad 9": {
+            "abs_pos": [132.715, 119.38000000000001]
+          }
+        },
+        {
+          "Resistor_THT:R_Axial_DIN0204_L3.6mm_D1.6mm_P7.62mm_Horizontal pad 2": {
+            "abs_pos": [149.225, 137.16]
+          }
+        },
+        {
+          "Connector_PinHeader_2.54mm:PinHeader_1x03_P2.54mm_Vertical pad 3": {
+            "abs_pos": [123.825, 139.70000000000002]
+          }
+        },
+        {
+          "Module:NodeMCU_Amica pad 15": {
+            "abs_pos": [121.285, 109.22]
+          }
+        },
+        {
+          "Connector_PinHeader_2.54mm:PinHeader_1x03_P2.54mm_Vertical pad 2": {
+            "abs_pos": [135.255, 148.59]
+          }
+        },
+        {
+          "Resistor_THT:R_Axial_DIN0204_L3.6mm_D1.6mm_P7.62mm_Horizontal pad 2": {
+            "abs_pos": [131.445, 129.54]
+          }
+        },
+        {
+          "Connector_PinHeader_2.54mm:PinHeader_1x04_P2.54mm_Vertical pad 1": {
+            "abs_pos": [141.605, 109.22]
+          }
+        }
+      ],
+      "tracks": {
+        "segments": [],
+        "arcs": ["TODO: extract arc info. Most samples don't have arcs to help test :("],
+        "vias": ["TODO: are vias necessary for our routing interests?"]
+      },
+      "errors": []
+    },
+    "3": {
+      "name": "A0",
+      "class": "TODO",
+      "pads": [
+        {
+          "Connector_PinHeader_2.54mm:PinHeader_1x04_P2.54mm_Vertical pad 4": {
+            "abs_pos": [136.525, 156.845]
+          }
+        },
+        {
+          "Module:NodeMCU_Amica pad 1": {
+            "abs_pos": [121.285, 144.78]
+          }
+        },
+        {
+          "Connector_PinHeader_2.54mm:PinHeader_1x03_P2.54mm_Vertical pad 3": {
+            "abs_pos": [135.255, 151.13000000000002]
+          }
+        }
+      ],
+      "tracks": {
+        "segments": [
+          {
+            "start": [128.905, 149.225],
+            "end": [128.905, 147.32],
+            "width": 0.5,
+            "layer": "B.Cu"
+          },
+          {
+            "start": [128.905, 147.32],
+            "end": [130.175, 146.05],
+            "width": 0.5,
+            "layer": "B.Cu"
+          },
+          {
+            "start": [130.175, 146.05],
+            "end": [128.905, 144.78],
+            "width": 0.5,
+            "layer": "B.Cu"
+          },
+          {
+            "start": [128.905, 144.78],
+            "end": [121.285, 144.78],
+            "width": 0.5,
+            "layer": "B.Cu"
+          }
+        ],
+        "arcs": ["TODO: extract arc info. Most samples don't have arcs to help test :("],
+        "vias": ["TODO: are vias necessary for our routing interests?"]
+      },
+      "errors": []
+    },
+    "4": {
+      "name": "RxD",
+      "class": "TODO",
+      "pads": [
+        {
+          "Module:NodeMCU_Amica pad 19": {
+            "abs_pos": [144.14499999999998, 116.84]
+          }
+        },
+        {
+          "Connector_PinHeader_2.54mm:PinHeader_1x04_P2.54mm_Vertical pad 4": {
+            "abs_pos": [141.605, 116.84]
+          }
+        }
+      ],
+      "tracks": {
+        "segments": [
+          {
+            "start": [141.605, 116.84],
+            "end": [144.145, 116.84],
+            "width": 0.5,
+            "layer": "B.Cu"
+          }
+        ],
+        "arcs": ["TODO: extract arc info. Most samples don't have arcs to help test :("],
+        "vias": ["TODO: are vias necessary for our routing interests?"]
+      },
+      "errors": []
+    },
+    "5": {
+      "name": "TxD",
+      "class": "TODO",
+      "pads": [
+        {
+          "Module:NodeMCU_Amica pad 18": {
+            "abs_pos": [144.14499999999998, 114.3]
+          }
+        },
+        {
+          "Connector_PinHeader_2.54mm:PinHeader_1x04_P2.54mm_Vertical pad 3": {
+            "abs_pos": [141.605, 114.3]
+          }
+        }
+      ],
+      "tracks": {
+        "segments": [
+          {
+            "start": [144.145, 114.3],
+            "end": [141.605, 114.3],
+            "width": 0.5,
+            "layer": "B.Cu"
+          }
+        ],
+        "arcs": ["TODO: extract arc info. Most samples don't have arcs to help test :("],
+        "vias": ["TODO: are vias necessary for our routing interests?"]
+      },
+      "errors": []
+    },
+    "6": {
+      "name": "DHT",
+      "class": "TODO",
+      "pads": [
+        {
+          "Connector_PinSocket_2.54mm:PinSocket_1x04_P2.54mm_Vertical pad 2": {
+            "abs_pos": [135.89, 128.27]
+          }
+        },
+        {
+          "Module:NodeMCU_Amica pad 28": {
+            "abs_pos": [144.14499999999998, 139.7]
+          }
+        },
+        {
+          "Resistor_THT:R_Axial_DIN0204_L3.6mm_D1.6mm_P7.62mm_Horizontal pad 1": {
+            "abs_pos": [123.825, 129.54]
+          }
+        }
+      ],
+      "tracks": {
+        "segments": [
+          {
+            "start": [129.54, 129.54],
+            "end": [123.825, 129.54],
+            "width": 0.5,
+            "layer": "F.Cu"
+          },
+          {
+            "start": [133.35, 125.73],
+            "end": [129.54, 129.54],
+            "width": 0.5,
+            "layer": "F.Cu"
+          },
+          {
+            "start": [141.605, 139.7],
+            "end": [133.35, 131.445],
+            "width": 0.5,
+            "layer": "B.Cu"
+          },
+          {
+            "start": [144.145, 139.7],
+            "end": [141.605, 139.7],
+            "width": 0.5,
+            "layer": "B.Cu"
+          },
+          {
+            "start": [133.35, 125.73],
+            "end": [133.35, 131.445],
+            "width": 0.5,
+            "layer": "B.Cu"
+          }
+        ],
+        "arcs": ["TODO: extract arc info. Most samples don't have arcs to help test :("],
+        "vias": ["TODO: are vias necessary for our routing interests?"]
+      },
+      "errors": []
+    },
+    "7": {
+      "name": "Net-(J4-Pad3)",
+      "class": "TODO",
+      "pads": [
+        {
+          "TerminalBlock_TE-Connectivity:TerminalBlock_TE_282834-4_1x04_P2.54mm_Horizontal pad 3": {
+            "abs_pos": [138.43, 106.68]
+          }
+        },
+        {
+          "Relay_THT:Relay_SPDT_Omron_G5V-1 pad 10": {
+            "abs_pos": [132.715, 116.84]
+          }
+        }
+      ],
+      "tracks": {
+        "segments": [
+          {
+            "start": [127.635, 111.76],
+            "end": [127.635, 109.855],
+            "width": 0.5,
+            "layer": "B.Cu"
+          },
+          {
+            "start": [127.635, 109.855],
+            "end": [128.27, 109.22],
+            "width": 0.5,
+            "layer": "B.Cu"
+          },
+          {
+            "start": [128.27, 109.22],
+            "end": [128.27, 106.68],
+            "width": 0.5,
+            "layer": "B.Cu"
+          }
+        ],
+        "arcs": ["TODO: extract arc info. Most samples don't have arcs to help test :("],
+        "vias": ["TODO: are vias necessary for our routing interests?"]
+      },
+      "errors": []
+    },
+    "8": {
+      "name": "Relay",
+      "class": "TODO",
+      "pads": [
+        {
+          "Jumper:SolderJumper-2_P1.3mm_Open_Pad1.0x1.5mm pad 1": {
+            "abs_pos": [133.335, 114.3]
+          }
+        },
+        {
+          "Package_TO_SOT_THT:TO-92_Inline pad 2": {
+            "abs_pos": [131.44500000000002, 120.65]
+          }
+        },
+        {
+          "Module:NodeMCU_Amica pad 29": {
+            "abs_pos": [144.14499999999998, 142.24]
+          }
+        }
+      ],
+      "tracks": {
+        "segments": [
+          {
+            "start": [128.905, 123.19],
+            "end": [128.905, 120.65],
+            "width": 0.5,
+            "layer": "B.Cu"
+          },
+          {
+            "start": [129.54, 132.08],
+            "end": [129.54, 123.825],
+            "width": 0.5,
+            "layer": "B.Cu"
+          },
+          {
+            "start": [129.54, 123.825],
+            "end": [128.905, 123.19],
+            "width": 0.5,
+            "layer": "B.Cu"
+          },
+          {
+            "start": [139.7, 142.24],
+            "end": [129.54, 132.08],
+            "width": 0.5,
+            "layer": "B.Cu"
+          },
+          {
+            "start": [144.145, 142.24],
+            "end": [139.7, 142.24],
+            "width": 0.5,
+            "layer": "B.Cu"
+          },
+          {
+            "start": [133.985, 115.95],
+            "end": [131.19, 118.745],
+            "width": 0.5,
+            "layer": "F.Cu"
+          },
+          {
+            "start": [133.985, 114.95],
+            "end": [133.985, 115.95],
+            "width": 0.5,
+            "layer": "F.Cu"
+          },
+          {
+            "start": [131.19, 118.745],
+            "end": [129.54, 118.745],
+            "width": 0.5,
+            "layer": "F.Cu"
+          },
+          {
+            "start": [129.54, 118.745],
+            "end": [128.905, 119.38],
+            "width": 0.5,
+            "layer": "F.Cu"
+          },
+          {
+            "start": [128.905, 119.38],
+            "end": [128.905, 120.65],
+            "width": 0.5,
+            "layer": "F.Cu"
+          }
+        ],
+        "arcs": ["TODO: extract arc info. Most samples don't have arcs to help test :("],
+        "vias": ["TODO: are vias necessary for our routing interests?"]
+      },
+      "errors": []
+    },
+    "9": {
+      "name": "Net-(D1-Pad2)",
+      "class": "TODO",
+      "pads": [
+        {
+          "Diode_THT:D_DO-35_SOD27_P7.62mm_Horizontal pad 2": {
+            "abs_pos": [131.445, 111.76]
+          }
+        },
+        {
+          "Relay_THT:Relay_SPDT_Omron_G5V-1 pad 2": {
+            "abs_pos": [127.635, 119.38000000000001]
+          }
+        },
+        {
+          "Package_TO_SOT_THT:TO-92_Inline pad 1": {
+            "abs_pos": [130.175, 120.65]
+          }
+        }
+      ],
+      "tracks": {
+        "segments": [
+          {
+            "start": [130.175, 120.65],
+            "end": [130.175, 118.745],
+            "width": 0.5,
+            "layer": "B.Cu"
+          },
+          {
+            "start": [130.175, 118.745],
+            "end": [130.175, 116.84],
+            "width": 0.5,
+            "layer": "B.Cu"
+          },
+          {
+            "start": [130.175, 118.745],
+            "end": [126.365, 118.745],
+            "width": 0.5,
+            "layer": "B.Cu"
+          },
+          {
+            "start": [126.365, 118.745],
+            "end": [125.73, 119.38],
+            "width": 0.5,
+            "layer": "B.Cu"
+          },
+          {
+            "start": [125.73, 119.38],
+            "end": [123.825, 119.38],
+            "width": 0.5,
+            "layer": "B.Cu"
+          }
+        ],
+        "arcs": ["TODO: extract arc info. Most samples don't have arcs to help test :("],
+        "vias": ["TODO: are vias necessary for our routing interests?"]
+      },
+      "errors": []
+    },
+    "10": {
+      "name": "Net-(D2-Pad1)",
+      "class": "TODO",
+      "pads": [
+        {
+          "Resistor_THT:R_Axial_DIN0204_L3.6mm_D1.6mm_P7.62mm_Horizontal pad 2": {
+            "abs_pos": [146.685, 127.0]
+          }
+        },
+        {
+          "LED_THT:LED_D5.0mm pad 1": {
+            "abs_pos": [139.7, 106.68]
+          }
+        }
+      ],
+      "tracks": {
+        "segments": [
+          {
+            "start": [139.7, 106.68],
+            "end": [139.7, 118.745],
+            "width": 0.5,
+            "layer": "B.Cu"
+          },
+          {
+            "start": [139.7, 118.745],
+            "end": [139.065, 119.38],
+            "width": 0.5,
+            "layer": "B.Cu"
+          }
+        ],
+        "arcs": ["TODO: extract arc info. Most samples don't have arcs to help test :("],
+        "vias": ["TODO: are vias necessary for our routing interests?"]
+      },
+      "errors": []
+    },
+    "11": {
+      "name": "LED",
+      "class": "TODO",
+      "pads": [
+        {
+          "Package_TO_SOT_THT:TO-92_Inline pad 2": {
+            "abs_pos": [137.16, 120.65]
+          }
+        },
+        {
+          "Module:NodeMCU_Amica pad 27": {
+            "abs_pos": [144.14499999999998, 137.16]
+          }
+        }
+      ],
+      "tracks": {
+        "segments": [
+          {
+            "start": [134.62, 127],
+            "end": [134.62, 120.65],
+            "width": 0.5,
+            "layer": "B.Cu"
+          },
+          {
+            "start": [144.145, 137.16],
+            "end": [134.62, 127.635],
+            "width": 0.5,
+            "layer": "B.Cu"
+          },
+          {
+            "start": [134.62, 127.635],
+            "end": [134.62, 127],
+            "width": 0.5,
+            "layer": "B.Cu"
+          }
+        ],
+        "arcs": ["TODO: extract arc info. Most samples don't have arcs to help test :("],
+        "vias": ["TODO: are vias necessary for our routing interests?"]
+      },
+      "errors": []
+    },
+    "12": {
+      "name": "Net-(Q1-Pad1)",
+      "class": "TODO",
+      "pads": [
+        {
+          "Resistor_THT:R_Axial_DIN0204_L3.6mm_D1.6mm_P7.62mm_Horizontal pad 1": {
+            "abs_pos": [139.065, 127.0]
+          }
+        },
+        {
+          "Package_TO_SOT_THT:TO-92_Inline pad 1": {
+            "abs_pos": [135.89, 120.65]
+          }
+        }
+      ],
+      "tracks": {
+        "segments": [
+          {
+            "start": [137.16, 120.65],
+            "end": [135.89, 120.65],
+            "width": 0.5,
+            "layer": "B.Cu"
+          },
+          {
+            "start": [137.16, 120.65],
+            "end": [139.065, 122.555],
+            "width": 0.5,
+            "layer": "B.Cu"
+          },
+          {
+            "start": [139.065, 127],
+            "end": [139.065, 122.555],
+            "width": 0.5,
+            "layer": "B.Cu"
+          }
+        ],
+        "arcs": ["TODO: extract arc info. Most samples don't have arcs to help test :("],
+        "vias": ["TODO: are vias necessary for our routing interests?"]
+      },
+      "errors": []
+    },
+    "13": {
+      "name": "Net-(TP1-Pad1)",
+      "class": "TODO",
+      "pads": [
+        {
+          "TestPoint:TestPoint_Pad_D1.5mm pad 1": {
+            "abs_pos": [141.605, 127.0]
+          }
+        },
+        {
+          "Module:NodeMCU_Amica pad 23": {
+            "abs_pos": [144.14499999999998, 127.0]
+          }
+        }
+      ],
+      "tracks": {
+        "segments": [
+          {
+            "start": [141.605, 127],
+            "end": [144.145, 127],
+            "width": 0.5,
+            "layer": "F.Cu"
+          }
+        ],
+        "arcs": ["TODO: extract arc info. Most samples don't have arcs to help test :("],
+        "vias": ["TODO: are vias necessary for our routing interests?"]
+      },
+      "errors": []
+    },
+    "14": {
+      "name": "Net-(TP2-Pad1)",
+      "class": "TODO",
+      "pads": [
+        {
+          "TestPoint:TestPoint_Pad_D1.5mm pad 1": {
+            "abs_pos": [141.605, 124.46]
+          }
+        },
+        {
+          "Module:NodeMCU_Amica pad 22": {
+            "abs_pos": [144.14499999999998, 124.46000000000001]
+          }
+        }
+      ],
+      "tracks": {
+        "segments": [
+          {
+            "start": [141.605, 124.46],
+            "end": [144.145, 124.46],
+            "width": 0.5,
+            "layer": "F.Cu"
+          }
+        ],
+        "arcs": ["TODO: extract arc info. Most samples don't have arcs to help test :("],
+        "vias": ["TODO: are vias necessary for our routing interests?"]
+      },
+      "errors": []
+    },
+    "15": {
+      "name": "Net-(TP3-Pad1)",
+      "class": "TODO",
+      "pads": [
+        {
+          "TestPoint:TestPoint_Pad_D1.5mm pad 1": {
+            "abs_pos": [141.605, 121.92]
+          }
+        },
+        {
+          "Module:NodeMCU_Amica pad 21": {
+            "abs_pos": [144.14499999999998, 121.92]
+          }
+        }
+      ],
+      "tracks": {
+        "segments": [
+          {
+            "start": [141.605, 121.92],
+            "end": [144.145, 121.92],
+            "width": 0.5,
+            "layer": "F.Cu"
+          }
+        ],
+        "arcs": ["TODO: extract arc info. Most samples don't have arcs to help test :("],
+        "vias": ["TODO: are vias necessary for our routing interests?"]
+      },
+      "errors": []
+    },
+    "16": {
+      "name": "Net-(TP4-Pad1)",
+      "class": "TODO",
+      "pads": [
+        {
+          "TestPoint:TestPoint_Pad_D1.5mm pad 1": {
+            "abs_pos": [141.605, 119.38]
+          }
+        },
+        {
+          "Module:NodeMCU_Amica pad 20": {
+            "abs_pos": [144.14499999999998, 119.38]
+          }
+        }
+      ],
+      "tracks": {
+        "segments": [
+          {
+            "start": [141.605, 119.38],
+            "end": [144.145, 119.38],
+            "width": 0.5,
+            "layer": "F.Cu"
+          }
+        ],
+        "arcs": ["TODO: extract arc info. Most samples don't have arcs to help test :("],
+        "vias": ["TODO: are vias necessary for our routing interests?"]
+      },
+      "errors": []
+    },
+    "17": {
+      "name": "Dig",
+      "class": "TODO",
+      "pads": [
+        {
+          "Connector_PinHeader_2.54mm:PinHeader_1x04_P2.54mm_Vertical pad 3": {
+            "abs_pos": [136.525, 154.305]
+          }
+        },
+        {
+          "Module:NodeMCU_Amica pad 30": {
+            "abs_pos": [144.14499999999998, 144.78]
+          }
+        }
+      ],
+      "tracks": {
+        "segments": [
+          {
+            "start": [137.795, 151.13],
+            "end": [141.2875, 147.6375],
+            "width": 0.5,
+            "layer": "B.Cu"
+          },
+          {
+            "start": [131.445, 149.225],
+            "end": [133.35, 151.13],
+            "width": 0.5,
+            "layer": "B.Cu"
+          },
+          {
+            "start": [141.2875, 147.6375],
+            "end": [144.145, 144.78],
+            "width": 0.5,
+            "layer": "B.Cu"
+          },
+          {
+            "start": [133.35, 151.13],
+            "end": [137.795, 151.13],
+            "width": 0.5,
+            "layer": "B.Cu"
+          }
+        ],
+        "arcs": ["TODO: extract arc info. Most samples don't have arcs to help test :("],
+        "vias": ["TODO: are vias necessary for our routing interests?"]
+      },
+      "errors": []
+    },
+    "18": {
+      "name": "Contact",
+      "class": "TODO",
+      "pads": [
+        {
+          "Resistor_THT:R_Axial_DIN0204_L3.6mm_D1.6mm_P7.62mm_Horizontal pad 2": {
+            "abs_pos": [149.225, 129.54]
+          }
+        },
+        {
+          "Resistor_THT:R_Axial_DIN0204_L3.6mm_D1.6mm_P7.62mm_Horizontal pad 1": {
+            "abs_pos": [141.605, 137.16]
+          }
+        },
+        {
+          "Connector_PinHeader_2.54mm:PinHeader_1x03_P2.54mm_Vertical pad 2": {
+            "abs_pos": [123.825, 137.16]
+          }
+        },
+        {
+          "Module:NodeMCU_Amica pad 26": {
+            "abs_pos": [144.14499999999998, 134.62]
+          }
+        }
+      ],
+      "tracks": {
+        "segments": [
+          {
+            "start": [123.825, 137.16],
+            "end": [141.605, 137.16],
+            "width": 0.5,
+            "layer": "F.Cu"
+          },
+          {
+            "start": [141.605, 137.16],
+            "end": [144.145, 134.62],
+            "width": 0.5,
+            "layer": "F.Cu"
+          }
+        ],
+        "arcs": ["TODO: extract arc info. Most samples don't have arcs to help test :("],
+        "vias": ["TODO: are vias necessary for our routing interests?"]
+      },
+      "errors": []
+    },
+    "19": {
+      "name": "Net-(J4-Pad4)",
+      "class": "TODO",
+      "pads": [
+        {
+          "Jumper:SolderJumper-2_P1.3mm_Open_Pad1.0x1.5mm pad 2": {
+            "abs_pos": [134.63500000000002, 114.3]
+          }
+        },
+        {
+          "TerminalBlock_TE-Connectivity:TerminalBlock_TE_282834-4_1x04_P2.54mm_Horizontal pad 4": {
+            "abs_pos": [140.97, 106.68]
+          }
+        },
+        {
+          "OptoDevice:Vishay_CAST-3Pin pad 3": {
+            "abs_pos": [140.97, 106.68]
+          }
+        },
+        {
+          "Relay_THT:Relay_SPDT_Omron_G5V-1 pad 6": {
+            "abs_pos": [132.715, 127.0]
+          }
+        },
+        {
+          "Relay_THT:Relay_SPDT_Omron_G5V-1 pad 5": {
+            "abs_pos": [127.635, 127.0]
+          }
+        }
+      ],
+      "tracks": {
+        "segments": [
+          {
+            "start": [137.795, 114.3],
+            "end": [127, 114.3],
+            "width": 0.5,
+            "layer": "B.Cu"
+          },
+          {
+            "start": [137.795, 116.84],
+            "end": [137.795, 114.3],
+            "width": 0.5,
+            "layer": "B.Cu"
+          },
+          {
+            "start": [137.795, 114.3],
+            "end": [137.795, 111.76],
+            "width": 0.5,
+            "layer": "B.Cu"
+          },
+          {
+            "start": [127, 114.3],
+            "end": [125.73, 113.03],
+            "width": 0.5,
+            "layer": "B.Cu"
+          },
+          {
+            "start": [125.73, 113.03],
+            "end": [125.73, 106.68],
+            "width": 0.5,
+            "layer": "B.Cu"
+          },
+          {
+            "start": [137.795, 111.76],
+            "end": [136.380787, 111.76],
+            "width": 0.5,
+            "layer": "F.Cu"
+          },
+          {
+            "start": [136.380787, 111.76],
+            "end": [134.62, 111.76],
+            "width": 0.5,
+            "layer": "F.Cu"
+          },
+          {
+            "start": [134.62, 111.76],
+            "end": [133.985, 112.395],
+            "width": 0.5,
+            "layer": "F.Cu"
+          },
+          {
+            "start": [133.985, 112.395],
+            "end": [133.985, 113.665],
+            "width": 0.5,
+            "layer": "F.Cu"
+          }
+        ],
+        "arcs": ["TODO: extract arc info. Most samples don't have arcs to help test :("],
+        "vias": ["TODO: are vias necessary for our routing interests?"]
+      },
+      "errors": []
+    }
+  },
+  "errors": [
+    {
+      "Connector_PinSocket_2.54mm:PinSocket_1x04_P2.54mm_Vertical at [135.89, 125.73, 270]": "pad 3 thru_hole oval at [0, 5.08] has error 357: key \"net\" not found"
+    },
+    {
+      "Relay_THT:Relay_SPDT_Omron_G5V-1 at [127.635, 116.84, 90]": "pad 1 thru_hole rect at [0, 0] has error 898: key \"net\" not found"
+    },
+    {
+      "Module:NodeMCU_Amica at [121.285, 144.78]": "pad \"\" np_thru_hole circle at [0.75, 4.25] has error 1190: key \"net\" not found"
+    },
+    {
+      "Module:NodeMCU_Amica at [121.285, 144.78]": "pad \"\" np_thru_hole circle at [22, 4.25] has error 1191: key \"net\" not found"
+    },
+    {
+      "Module:NodeMCU_Amica at [121.285, 144.78]": "pad \"\" np_thru_hole circle at [22, -39.38] has error 1192: key \"net\" not found"
+    },
+    {
+      "Module:NodeMCU_Amica at [121.285, 144.78]": "pad \"\" np_thru_hole circle at [0.8, -39.38] has error 1193: key \"net\" not found"
+    },
+    {
+      "Module:NodeMCU_Amica at [121.285, 144.78]": "pad 16 thru_hole circle at [22.86, -35.56] has error 1208: key \"net\" not found"
+    },
+    {
+      "Module:NodeMCU_Amica at [121.285, 144.78]": "pad 25 thru_hole circle at [22.86, -12.7] has error 1213: key \"net\" not found"
+    },
+    {
+      "Module:NodeMCU_Amica at [121.285, 144.78]": "pad 13 thru_hole circle at [0, -30.48] has error 1226: key \"net\" not found"
+    },
+    {
+      "Module:NodeMCU_Amica at [121.285, 144.78]": "pad 12 thru_hole circle at [0, -27.94] has error 1227: key \"net\" not found"
+    },
+    {
+      "Module:NodeMCU_Amica at [121.285, 144.78]": "pad 11 thru_hole circle at [0, -25.4] has error 1228: key \"net\" not found"
+    },
+    {
+      "Module:NodeMCU_Amica at [121.285, 144.78]": "pad 9 thru_hole circle at [0, -20.32] has error 1231: key \"net\" not found"
+    },
+    {
+      "Module:NodeMCU_Amica at [121.285, 144.78]": "pad 8 thru_hole circle at [0, -17.78] has error 1232: key \"net\" not found"
+    },
+    {
+      "Module:NodeMCU_Amica at [121.285, 144.78]": "pad 7 thru_hole circle at [0, -15.24] has error 1233: key \"net\" not found"
+    },
+    {
+      "Module:NodeMCU_Amica at [121.285, 144.78]": "pad 6 thru_hole circle at [0, -12.7] has error 1234: key \"net\" not found"
+    },
+    {
+      "Module:NodeMCU_Amica at [121.285, 144.78]": "pad 5 thru_hole circle at [0, -10.16] has error 1235: key \"net\" not found"
+    },
+    {
+      "Module:NodeMCU_Amica at [121.285, 144.78]": "pad 4 thru_hole circle at [0, -7.62] has error 1236: key \"net\" not found"
+    },
+    {
+      "Module:NodeMCU_Amica at [121.285, 144.78]": "pad 3 thru_hole circle at [0, -5.08] has error 1237: key \"net\" not found"
+    },
+    {
+      "Module:NodeMCU_Amica at [121.285, 144.78]": "pad 2 thru_hole circle at [0, -2.54] has error 1238: key \"net\" not found"
+    }
+  ]
+}

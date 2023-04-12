@@ -1,0 +1,5324 @@
+{
+  "board_settings": {},
+  "net classes": {},
+  "net routes": {
+    "0": {
+      "name": "",
+      "class": "TODO",
+      "pads": [],
+      "tracks": {
+        "segments": [],
+        "arcs": ["TODO: extract arc info. Most samples don't have arcs to help test :("],
+        "vias": ["TODO: are vias necessary for our routing interests?"]
+      },
+      "errors": []
+    },
+    "1": {
+      "name": "Net-(C1-Pad1)",
+      "class": "TODO",
+      "pads": [
+        {
+          "Capacitors_SMD:C_0402 pad 1": {
+            "abs_pos": [58.3055, 105.741]
+          }
+        },
+        {
+          "Housings_DFN_QFN:QFN-64-1EP_9x9mm_Pitch0.5mm pad 6": {
+            "abs_pos": [53.55, 97.25]
+          }
+        }
+      ],
+      "tracks": {
+        "segments": [
+          {
+            "start": [59.1555, 103.891],
+            "end": [59.6055, 103.891],
+            "width": 0.2,
+            "layer": "B.Cu"
+          },
+          {
+            "start": [59.6055, 103.891],
+            "end": [62.2055, 101.291],
+            "width": 0.2,
+            "layer": "B.Cu"
+          },
+          {
+            "start": [59.3555, 104.091],
+            "end": [59.1555, 103.891],
+            "width": 0.2,
+            "layer": "F.Cu"
+          },
+          {
+            "start": [59.3555, 105.541],
+            "end": [59.3555, 104.091],
+            "width": 0.2,
+            "layer": "F.Cu"
+          },
+          {
+            "start": [59.4055, 105.591],
+            "end": [59.3555, 105.541],
+            "width": 0.2,
+            "layer": "F.Cu"
+          },
+          {
+            "start": [59.4055, 105.741],
+            "end": [59.4055, 105.591],
+            "width": 0.2,
+            "layer": "F.Cu"
+          },
+          {
+            "start": [59.4055, 92.891],
+            "end": [61.1055, 92.891],
+            "width": 0.2,
+            "layer": "B.Cu"
+          },
+          {
+            "start": [61.1055, 92.891],
+            "end": [62.2055, 93.991],
+            "width": 0.2,
+            "layer": "B.Cu"
+          },
+          {
+            "start": [62.2055, 93.991],
+            "end": [62.2055, 101.291],
+            "width": 0.2,
+            "layer": "B.Cu"
+          },
+          {
+            "start": [59.25, 93.0465],
+            "end": [59.4055, 92.891],
+            "width": 0.2,
+            "layer": "F.Cu"
+          },
+          {
+            "start": [59.25, 94.05],
+            "end": [59.25, 93.0465],
+            "width": 0.2,
+            "layer": "F.Cu"
+          }
+        ],
+        "arcs": ["TODO: extract arc info. Most samples don't have arcs to help test :("],
+        "vias": ["TODO: are vias necessary for our routing interests?"]
+      },
+      "errors": []
+    },
+    "2": {
+      "name": "GND",
+      "class": "TODO",
+      "pads": [
+        {
+          "f-91w:SOT416 pad 2": {
+            "abs_pos": [54.255500000000005, 105.191]
+          }
+        },
+        {
+          "Capacitors_SMD:C_0402 pad 2": {
+            "abs_pos": [64.5555, 102.766]
+          }
+        },
+        {
+          "Capacitors_SMD:C_0402 pad 2": {
+            "abs_pos": [68.2805, 96.891]
+          }
+        },
+        {
+          "Capacitors_SMD:C_0402 pad 2": {
+            "abs_pos": [59.405499999999996, 105.741]
+          }
+        },
+        {
+          "Housings_DFN_QFN:QFN-64-1EP_9x9mm_Pitch0.5mm pad 17": {
+            "abs_pos": [54.25, 102.975]
+          }
+        },
+        {
+          "Housings_DFN_QFN:QFN-64-1EP_9x9mm_Pitch0.5mm pad 39": {
+            "abs_pos": [62.45, 99.25]
+          }
+        },
+        {
+          "Housings_DFN_QFN:QFN-64-1EP_9x9mm_Pitch0.5mm pad 50": {
+            "abs_pos": [61.25, 94.05]
+          }
+        },
+        {
+          "Housings_DFN_QFN:QFN-64-1EP_9x9mm_Pitch0.5mm pad 53": {
+            "abs_pos": [59.75, 94.05]
+          }
+        },
+        {
+          "Housings_DFN_QFN:QFN-64-1EP_9x9mm_Pitch0.5mm pad 56": {
+            "abs_pos": [58.25, 94.05]
+          }
+        },
+        {
+          "Housings_DFN_QFN:QFN-64-1EP_9x9mm_Pitch0.5mm pad 62": {
+            "abs_pos": [55.25, 94.05]
+          }
+        },
+        {
+          "Housings_DFN_QFN:QFN-64-1EP_9x9mm_Pitch0.5mm pad 65": {
+            "abs_pos": [60.75625, 101.25625]
+          }
+        },
+        {
+          "Housings_DFN_QFN:QFN-64-1EP_9x9mm_Pitch0.5mm pad 65": {
+            "abs_pos": [60.75625, 99.41875]
+          }
+        },
+        {
+          "Housings_DFN_QFN:QFN-64-1EP_9x9mm_Pitch0.5mm pad 65": {
+            "abs_pos": [60.75625, 97.58125]
+          }
+        },
+        {
+          "Housings_DFN_QFN:QFN-64-1EP_9x9mm_Pitch0.5mm pad 65": {
+            "abs_pos": [60.75625, 95.74375]
+          }
+        },
+        {
+          "Housings_DFN_QFN:QFN-64-1EP_9x9mm_Pitch0.5mm pad 65": {
+            "abs_pos": [58.91875, 101.25625]
+          }
+        },
+        {
+          "Housings_DFN_QFN:QFN-64-1EP_9x9mm_Pitch0.5mm pad 65": {
+            "abs_pos": [58.91875, 99.41875]
+          }
+        },
+        {
+          "Housings_DFN_QFN:QFN-64-1EP_9x9mm_Pitch0.5mm pad 65": {
+            "abs_pos": [58.91875, 97.58125]
+          }
+        },
+        {
+          "Housings_DFN_QFN:QFN-64-1EP_9x9mm_Pitch0.5mm pad 65": {
+            "abs_pos": [58.91875, 95.74375]
+          }
+        },
+        {
+          "Housings_DFN_QFN:QFN-64-1EP_9x9mm_Pitch0.5mm pad 65": {
+            "abs_pos": [57.08125, 101.25625]
+          }
+        },
+        {
+          "Housings_DFN_QFN:QFN-64-1EP_9x9mm_Pitch0.5mm pad 65": {
+            "abs_pos": [57.08125, 99.41875]
+          }
+        },
+        {
+          "Housings_DFN_QFN:QFN-64-1EP_9x9mm_Pitch0.5mm pad 65": {
+            "abs_pos": [57.08125, 97.58125]
+          }
+        },
+        {
+          "Housings_DFN_QFN:QFN-64-1EP_9x9mm_Pitch0.5mm pad 65": {
+            "abs_pos": [57.08125, 95.74375]
+          }
+        },
+        {
+          "Housings_DFN_QFN:QFN-64-1EP_9x9mm_Pitch0.5mm pad 65": {
+            "abs_pos": [55.24375, 101.25625]
+          }
+        },
+        {
+          "Housings_DFN_QFN:QFN-64-1EP_9x9mm_Pitch0.5mm pad 65": {
+            "abs_pos": [55.24375, 99.41875]
+          }
+        },
+        {
+          "Housings_DFN_QFN:QFN-64-1EP_9x9mm_Pitch0.5mm pad 65": {
+            "abs_pos": [55.24375, 97.58125]
+          }
+        },
+        {
+          "Housings_DFN_QFN:QFN-64-1EP_9x9mm_Pitch0.5mm pad 65": {
+            "abs_pos": [55.24375, 95.74375]
+          }
+        },
+        {
+          "Connect:1pin pad 1": {
+            "abs_pos": [57.96, 88.6]
+          }
+        },
+        {
+          "Capacitors_SMD:C_0402 pad 2": {
+            "abs_pos": [65.05, 101.0]
+          }
+        },
+        {
+          "Capacitors_SMD:C_0402 pad 2": {
+            "abs_pos": [58.6055, 104.691]
+          }
+        },
+        {
+          "f-91w:TSOP57xxx pad 6": {
+            "abs_pos": [48.625, 98.75]
+          }
+        },
+        {
+          "f-91w:TSOP57xxx pad 6": {
+            "abs_pos": [51.625, 98.75]
+          }
+        },
+        {
+          "Capacitors_SMD:C_0402 pad 1": {
+            "abs_pos": [66.9805, 93.266]
+          }
+        },
+        {
+          "Capacitors_SMD:C_0402 pad 2": {
+            "abs_pos": [69.8055, 95.091]
+          }
+        },
+        {
+          "Capacitors_SMD:C_0402 pad 2": {
+            "abs_pos": [69.8055, 96.941]
+          }
+        },
+        {
+          "f-91w:DFN-10-1EP_2x2mm_Pitch0.4mm pad 5": {
+            "abs_pos": [66.9055, 95.941]
+          }
+        },
+        {
+          "f-91w:DFN-10-1EP_2x2mm_Pitch0.4mm pad 10": {
+            "abs_pos": [68.60549999999999, 94.34100000000001]
+          }
+        }
+      ],
+      "tracks": {
+        "segments": [
+          {
+            "start": [58.0555, 99.591],
+            "end": [56.8555, 98.391],
+            "width": 0.2,
+            "layer": "B.Cu"
+          },
+          {
+            "start": [56.58125, 96.21675],
+            "end": [56.8555, 96.491],
+            "width": 0.2,
+            "layer": "B.Cu"
+          },
+          {
+            "start": [56.8555, 96.491],
+            "end": [56.8555, 98.391],
+            "width": 0.2,
+            "layer": "B.Cu"
+          },
+          {
+            "start": [56.58125, 95.74375],
+            "end": [56.58125, 96.21675],
+            "width": 0.2,
+            "layer": "B.Cu"
+          },
+          {
+            "start": [58.0555, 99.591],
+            "end": [58.7465, 99.591],
+            "width": 0.2,
+            "layer": "F.Cu"
+          },
+          {
+            "start": [58.7465, 99.591],
+            "end": [58.91875, 99.41875],
+            "width": 0.2,
+            "layer": "F.Cu"
+          },
+          {
+            "start": [58.91875, 99.41875],
+            "end": [57.08125, 99.41875],
+            "width": 0.2,
+            "layer": "F.Cu"
+          },
+          {
+            "start": [56.58125, 95.74375],
+            "end": [55.24375, 95.74375],
+            "width": 0.2,
+            "layer": "B.Cu"
+          },
+          {
+            "start": [53.4055, 103.941],
+            "end": [51.977986, 103.941],
+            "width": 0.2,
+            "layer": "F.Cu"
+          },
+          {
+            "start": [51.977986, 103.941],
+            "end": [51.25, 103.213014],
+            "width": 0.2,
+            "layer": "F.Cu"
+          },
+          {
+            "start": [51.25, 103.213014],
+            "end": [51.25, 102.9],
+            "width": 0.2,
+            "layer": "F.Cu"
+          },
+          {
+            "start": [51.25, 102.9],
+            "end": [51.625, 102.525],
+            "width": 0.2,
+            "layer": "F.Cu"
+          },
+          {
+            "start": [51.625, 102.525],
+            "end": [51.625, 102.3],
+            "width": 0.2,
+            "layer": "F.Cu"
+          },
+          {
+            "start": [50.8555, 102.3],
+            "end": [51.2555, 102.3],
+            "width": 0.3,
+            "layer": "F.Cu"
+          },
+          {
+            "start": [50.3, 102.3],
+            "end": [50.8555, 102.3],
+            "width": 0.3,
+            "layer": "F.Cu"
+          },
+          {
+            "start": [55.5555, 104.191],
+            "end": [55.0555, 104.191],
+            "width": 0.2,
+            "layer": "F.Cu"
+          },
+          {
+            "start": [54.95791, 104.09341],
+            "end": [53.55791, 104.09341],
+            "width": 0.2,
+            "layer": "F.Cu"
+          },
+          {
+            "start": [53.55791, 104.09341],
+            "end": [53.4055, 103.941],
+            "width": 0.2,
+            "layer": "F.Cu"
+          },
+          {
+            "start": [55.0555, 104.191],
+            "end": [54.95791, 104.09341],
+            "width": 0.2,
+            "layer": "F.Cu"
+          },
+          {
+            "start": [62.45, 101.75],
+            "end": [63.2645, 101.75],
+            "width": 0.3,
+            "layer": "F.Cu"
+          },
+          {
+            "start": [63.2645, 101.75],
+            "end": [63.616591, 102.102091],
+            "width": 0.3,
+            "layer": "F.Cu"
+          },
+          {
+            "start": [63.616591, 102.102091],
+            "end": [63.616591, 102.377091],
+            "width": 0.3,
+            "layer": "F.Cu"
+          },
+          {
+            "start": [66.9555, 94.291],
+            "end": [66.9555, 93.941],
+            "width": 0.2,
+            "layer": "F.Cu"
+          },
+          {
+            "start": [66.9555, 93.941],
+            "end": [66.6305, 93.616],
+            "width": 0.2,
+            "layer": "F.Cu"
+          },
+          {
+            "start": [66.1055, 93.616],
+            "end": [66.6305, 93.616],
+            "width": 0.3,
+            "layer": "F.Cu"
+          },
+          {
+            "start": [66.6305, 93.616],
+            "end": [66.9805, 93.266],
+            "width": 0.3,
+            "layer": "F.Cu"
+          },
+          {
+            "start": [65.2305, 93.616],
+            "end": [66.1055, 93.616],
+            "width": 0.3,
+            "layer": "B.Cu"
+          },
+          {
+            "start": [64.0055, 94.841],
+            "end": [65.2305, 93.616],
+            "width": 0.3,
+            "layer": "B.Cu"
+          },
+          {
+            "start": [67.0305, 98.266],
+            "end": [67.7055, 98.266],
+            "width": 0.3,
+            "layer": "F.Cu"
+          },
+          {
+            "start": [67.7055, 98.266],
+            "end": [68.2805, 97.691],
+            "width": 0.3,
+            "layer": "F.Cu"
+          },
+          {
+            "start": [68.2805, 97.691],
+            "end": [68.2805, 96.891],
+            "width": 0.3,
+            "layer": "F.Cu"
+          },
+          {
+            "start": [68.2805, 96.891],
+            "end": [68.5055, 96.891],
+            "width": 0.3,
+            "layer": "F.Cu"
+          },
+          {
+            "start": [68.5055, 96.891],
+            "end": [68.9055, 96.491],
+            "width": 0.3,
+            "layer": "F.Cu"
+          },
+          {
+            "start": [67.0305, 98.266],
+            "end": [64.1305, 98.266],
+            "width": 0.3,
+            "layer": "B.Cu"
+          },
+          {
+            "start": [64.1305, 98.266],
+            "end": [64.0055, 98.391],
+            "width": 0.3,
+            "layer": "B.Cu"
+          },
+          {
+            "start": [53.55, 94.75],
+            "end": [53.601, 94.801],
+            "width": 0.2,
+            "layer": "F.Cu"
+          },
+          {
+            "start": [53.601, 94.801],
+            "end": [54.301, 94.801],
+            "width": 0.2,
+            "layer": "F.Cu"
+          },
+          {
+            "start": [54.301, 94.801],
+            "end": [55.24375, 95.74375],
+            "width": 0.2,
+            "layer": "F.Cu"
+          },
+          {
+            "start": [64.0055, 98.391],
+            "end": [64.0055, 94.841],
+            "width": 0.3,
+            "layer": "B.Cu"
+          },
+          {
+            "start": [63.6465, 98.75],
+            "end": [64.0055, 98.391],
+            "width": 0.3,
+            "layer": "F.Cu"
+          },
+          {
+            "start": [62.45, 98.75],
+            "end": [63.6465, 98.75],
+            "width": 0.3,
+            "layer": "F.Cu"
+          },
+          {
+            "start": [69.2555, 96.391],
+            "end": [69.2555, 96.441],
+            "width": 0.3,
+            "layer": "F.Cu"
+          },
+          {
+            "start": [53.4055, 103.941],
+            "end": [53.4055, 103.991],
+            "width": 0.3,
+            "layer": "F.Cu"
+          },
+          {
+            "start": [55.24375, 102.10275],
+            "end": [53.4055, 103.941],
+            "width": 0.3,
+            "layer": "B.Cu"
+          },
+          {
+            "start": [55.24375, 101.25625],
+            "end": [55.24375, 102.10275],
+            "width": 0.3,
+            "layer": "B.Cu"
+          },
+          {
+            "start": [57.25, 102.95],
+            "end": [57.25, 104.4355],
+            "width": 0.3,
+            "layer": "F.Cu"
+          },
+          {
+            "start": [57.25, 104.4355],
+            "end": [57.5055, 104.691],
+            "width": 0.3,
+            "layer": "F.Cu"
+          },
+          {
+            "start": [57.5055, 104.691],
+            "end": [57.5055, 104.841],
+            "width": 0.3,
+            "layer": "F.Cu"
+          },
+          {
+            "start": [57.5055, 104.841],
+            "end": [58.3055, 105.641],
+            "width": 0.3,
+            "layer": "F.Cu"
+          },
+          {
+            "start": [58.3055, 105.641],
+            "end": [58.3055, 105.741],
+            "width": 0.3,
+            "layer": "F.Cu"
+          },
+          {
+            "start": [59.2555, 89.191],
+            "end": [59.2555, 92.191],
+            "width": 0.3,
+            "layer": "B.Cu"
+          },
+          {
+            "start": [59.2555, 92.191],
+            "end": [58.7555, 92.691],
+            "width": 0.3,
+            "layer": "B.Cu"
+          },
+          {
+            "start": [58.7555, 92.691],
+            "end": [58.7555, 95.5305],
+            "width": 0.3,
+            "layer": "B.Cu"
+          },
+          {
+            "start": [58.7555, 95.5805],
+            "end": [58.91875, 95.74375],
+            "width": 0.3,
+            "layer": "B.Cu"
+          },
+          {
+            "start": [58.6145, 88.6],
+            "end": [59.2555, 89.241],
+            "width": 0.3,
+            "layer": "F.Cu"
+          },
+          {
+            "start": [57.96, 88.6],
+            "end": [58.6145, 88.6],
+            "width": 0.3,
+            "layer": "F.Cu"
+          },
+          {
+            "start": [50.3, 102.3],
+            "end": [48.625, 102.3],
+            "width": 0.3,
+            "layer": "F.Cu"
+          },
+          {
+            "start": [51.2555, 102.3],
+            "end": [51.625, 102.3],
+            "width": 0.3,
+            "layer": "F.Cu"
+          },
+          {
+            "start": [68.9055, 96.491],
+            "end": [68.9055, 96.041],
+            "width": 0.3,
+            "layer": "F.Cu"
+          },
+          {
+            "start": [69.2555, 96.391],
+            "end": [68.9055, 96.041],
+            "width": 0.3,
+            "layer": "F.Cu"
+          },
+          {
+            "start": [68.9055, 96.041],
+            "end": [68.8555, 95.991],
+            "width": 0.3,
+            "layer": "F.Cu"
+          },
+          {
+            "start": [68.8555, 95.991],
+            "end": [68.9055, 95.991],
+            "width": 0.3,
+            "layer": "F.Cu"
+          },
+          {
+            "start": [68.5555, 95.991],
+            "end": [68.9055, 95.991],
+            "width": 0.2,
+            "layer": "F.Cu"
+          },
+          {
+            "start": [68.9055, 95.991],
+            "end": [69.2555, 95.641],
+            "width": 0.3,
+            "layer": "F.Cu"
+          },
+          {
+            "start": [62.45, 101.75],
+            "end": [61.25, 101.75],
+            "width": 0.3,
+            "layer": "F.Cu"
+          },
+          {
+            "start": [61.25, 101.75],
+            "end": [61.25, 100.5875],
+            "width": 0.3,
+            "layer": "F.Cu"
+          },
+          {
+            "start": [61.25, 100.5875],
+            "end": [61.5875, 100.25],
+            "width": 0.3,
+            "layer": "F.Cu"
+          },
+          {
+            "start": [61.5875, 100.25],
+            "end": [62.45, 100.25],
+            "width": 0.3,
+            "layer": "F.Cu"
+          },
+          {
+            "start": [61.25, 101.75],
+            "end": [60.75625, 101.25625],
+            "width": 0.3,
+            "layer": "F.Cu"
+          },
+          {
+            "start": [62.45, 100.25],
+            "end": [61.5875, 100.25],
+            "width": 0.3,
+            "layer": "F.Cu"
+          },
+          {
+            "start": [61.5875, 100.25],
+            "end": [60.75625, 99.41875],
+            "width": 0.3,
+            "layer": "F.Cu"
+          },
+          {
+            "start": [57.08125, 101.25625],
+            "end": [55.24375, 101.25625],
+            "width": 0.3,
+            "layer": "F.Cu"
+          },
+          {
+            "start": [55.24375, 99.41875],
+            "end": [55.24375, 101.25625],
+            "width": 0.3,
+            "layer": "F.Cu"
+          },
+          {
+            "start": [57.08125, 97.58125],
+            "end": [57.08125, 95.74375],
+            "width": 0.3,
+            "layer": "F.Cu"
+          },
+          {
+            "start": [55.24375, 97.58125],
+            "end": [57.08125, 97.58125],
+            "width": 0.3,
+            "layer": "F.Cu"
+          },
+          {
+            "start": [55.24375, 99.41875],
+            "end": [55.24375, 97.58125],
+            "width": 0.3,
+            "layer": "F.Cu"
+          },
+          {
+            "start": [57.08125, 99.41875],
+            "end": [55.24375, 99.41875],
+            "width": 0.3,
+            "layer": "F.Cu"
+          },
+          {
+            "start": [58.91875, 99.41875],
+            "end": [58.91875, 101.25625],
+            "width": 0.3,
+            "layer": "F.Cu"
+          },
+          {
+            "start": [60.75625, 99.41875],
+            "end": [58.91875, 99.41875],
+            "width": 0.3,
+            "layer": "F.Cu"
+          },
+          {
+            "start": [58.91875, 97.58125],
+            "end": [58.91875, 99.41875],
+            "width": 0.3,
+            "layer": "F.Cu"
+          },
+          {
+            "start": [60.75625, 97.58125],
+            "end": [58.91875, 97.58125],
+            "width": 0.3,
+            "layer": "F.Cu"
+          },
+          {
+            "start": [60.75625, 95.74375],
+            "end": [60.75625, 97.58125],
+            "width": 0.3,
+            "layer": "F.Cu"
+          },
+          {
+            "start": [58.91875, 95.74375],
+            "end": [58.91875, 97.58125],
+            "width": 0.3,
+            "layer": "F.Cu"
+          },
+          {
+            "start": [55.24375, 95.74375],
+            "end": [55.24375, 97.58125],
+            "width": 0.3,
+            "layer": "F.Cu"
+          },
+          {
+            "start": [56.568, 101.444],
+            "end": [56.39925, 101.27525],
+            "width": 0.3,
+            "layer": "F.Cu"
+          },
+          {
+            "start": [56.58125, 101.25625],
+            "end": [56.75, 101.425],
+            "width": 0.3,
+            "layer": "F.Cu"
+          },
+          {
+            "start": [58.41875, 95.74375],
+            "end": [56.58125, 95.74375],
+            "width": 0.3,
+            "layer": "F.Cu"
+          },
+          {
+            "start": [58.243, 95.769],
+            "end": [58.23675, 95.76275],
+            "width": 0.3,
+            "layer": "F.Cu"
+          },
+          {
+            "start": [61.25, 101.75],
+            "end": [60.75625, 101.25625],
+            "width": 0.3,
+            "layer": "F.Cu"
+          },
+          {
+            "start": [63.75, 100.25],
+            "end": [62.45, 100.25],
+            "width": 0.3,
+            "layer": "F.Cu"
+          },
+          {
+            "start": [64.111091, 100.611091],
+            "end": [63.75, 100.25],
+            "width": 0.3,
+            "layer": "F.Cu"
+          },
+          {
+            "start": [62.45, 95.75],
+            "end": [60.2625, 95.75],
+            "width": 0.3,
+            "layer": "F.Cu"
+          },
+          {
+            "start": [61.425, 98.75],
+            "end": [60.75625, 99.41875],
+            "width": 0.3,
+            "layer": "F.Cu"
+          },
+          {
+            "start": [62.45, 98.75],
+            "end": [61.425, 98.75],
+            "width": 0.3,
+            "layer": "F.Cu"
+          },
+          {
+            "start": [61.5875, 100.25],
+            "end": [60.75625, 99.41875],
+            "width": 0.3,
+            "layer": "F.Cu"
+          },
+          {
+            "start": [57.25, 101.425],
+            "end": [57.08125, 101.25625],
+            "width": 0.3,
+            "layer": "F.Cu"
+          },
+          {
+            "start": [57.25, 102.95],
+            "end": [57.25, 101.425],
+            "width": 0.3,
+            "layer": "F.Cu"
+          }
+        ],
+        "arcs": ["TODO: extract arc info. Most samples don't have arcs to help test :("],
+        "vias": ["TODO: are vias necessary for our routing interests?"]
+      },
+      "errors": []
+    },
+    "3": {
+      "name": "Net-(P3-Pad1)",
+      "class": "TODO",
+      "pads": [
+        {
+          "Housings_DFN_QFN:QFN-64-1EP_9x9mm_Pitch0.5mm pad 19": {
+            "abs_pos": [55.25, 102.95]
+          }
+        },
+        {
+          "Connect:1pin pad 1": {
+            "abs_pos": [53.5, 85.75]
+          }
+        }
+      ],
+      "tracks": {
+        "segments": [
+          {
+            "start": [48.7555, 96.942767],
+            "end": [48.648309, 96.942767],
+            "width": 0.2,
+            "layer": "F.Cu"
+          },
+          {
+            "start": [53.232401, 89.017599],
+            "end": [54.25, 88],
+            "width": 0.2,
+            "layer": "F.Cu"
+          },
+          {
+            "start": [54.25, 88],
+            "end": [54.25, 86.5],
+            "width": 0.2,
+            "layer": "F.Cu"
+          },
+          {
+            "start": [54.25, 86.5],
+            "end": [53.5, 85.75],
+            "width": 0.2,
+            "layer": "F.Cu"
+          },
+          {
+            "start": [47.94759, 89.724036],
+            "end": [48.654027, 89.017599],
+            "width": 0.2,
+            "layer": "F.Cu"
+          },
+          {
+            "start": [48.031553, 93.917599],
+            "end": [47.94759, 93.833636],
+            "width": 0.2,
+            "layer": "F.Cu"
+          },
+          {
+            "start": [48.654027, 89.017599],
+            "end": [53.232401, 89.017599],
+            "width": 0.2,
+            "layer": "F.Cu"
+          },
+          {
+            "start": [48.282401, 96.482401],
+            "end": [48.282401, 94.214124],
+            "width": 0.2,
+            "layer": "F.Cu"
+          },
+          {
+            "start": [47.94759, 93.833636],
+            "end": [47.94759, 89.724036],
+            "width": 0.2,
+            "layer": "F.Cu"
+          },
+          {
+            "start": [48.282401, 94.214124],
+            "end": [48.031553, 93.917599],
+            "width": 0.2,
+            "layer": "F.Cu"
+          },
+          {
+            "start": [48.282401, 96.576859],
+            "end": [48.282401, 96.482401],
+            "width": 0.2,
+            "layer": "F.Cu"
+          },
+          {
+            "start": [48.648309, 96.942767],
+            "end": [48.282401, 96.576859],
+            "width": 0.2,
+            "layer": "F.Cu"
+          },
+          {
+            "start": [53.55, 95.75],
+            "end": [51.522002, 95.75],
+            "width": 0.2,
+            "layer": "F.Cu"
+          },
+          {
+            "start": [51.522002, 95.75],
+            "end": [50.329235, 96.942767],
+            "width": 0.2,
+            "layer": "F.Cu"
+          },
+          {
+            "start": [50.329235, 96.942767],
+            "end": [48.7555, 96.942767],
+            "width": 0.2,
+            "layer": "F.Cu"
+          },
+          {
+            "start": [48.7555, 96.942767],
+            "end": [48.742767, 96.942767],
+            "width": 0.2,
+            "layer": "F.Cu"
+          }
+        ],
+        "arcs": ["TODO: extract arc info. Most samples don't have arcs to help test :("],
+        "vias": ["TODO: are vias necessary for our routing interests?"]
+      },
+      "errors": []
+    },
+    "4": {
+      "name": "Net-(P4-Pad1)",
+      "class": "TODO",
+      "pads": [
+        {
+          "Housings_DFN_QFN:QFN-64-1EP_9x9mm_Pitch0.5mm pad 20": {
+            "abs_pos": [55.75, 102.95]
+          }
+        },
+        {
+          "Connect:1pin pad 1": {
+            "abs_pos": [55.25, 85.75]
+          }
+        },
+        {
+          "Resistors_SMD:R_0402 pad 2": {
+            "abs_pos": [50.2, 93.25]
+          }
+        }
+      ],
+      "tracks": {
+        "segments": [
+          {
+            "start": [48.500009, 93],
+            "end": [48.3, 92.799991],
+            "width": 0.2,
+            "layer": "F.Cu"
+          },
+          {
+            "start": [48.3, 92.799991],
+            "end": [48.3, 89.870009],
+            "width": 0.2,
+            "layer": "F.Cu"
+          },
+          {
+            "start": [48.3, 89.870009],
+            "end": [48.8, 89.370009],
+            "width": 0.2,
+            "layer": "F.Cu"
+          },
+          {
+            "start": [47.8, 94.4],
+            "end": [47.8, 93.700009],
+            "width": 0.2,
+            "layer": "B.Cu"
+          },
+          {
+            "start": [47.787591, 96.580421],
+            "end": [47.787591, 94.479999],
+            "width": 0.2,
+            "layer": "F.Cu"
+          },
+          {
+            "start": [48.502348, 97.295178],
+            "end": [47.787591, 96.580421],
+            "width": 0.2,
+            "layer": "F.Cu"
+          },
+          {
+            "start": [51.520386, 96.25],
+            "end": [50.475208, 97.295178],
+            "width": 0.2,
+            "layer": "F.Cu"
+          },
+          {
+            "start": [50.475208, 97.295178],
+            "end": [48.502348, 97.295178],
+            "width": 0.2,
+            "layer": "F.Cu"
+          },
+          {
+            "start": [53.55, 96.25],
+            "end": [51.520386, 96.25],
+            "width": 0.2,
+            "layer": "F.Cu"
+          },
+          {
+            "start": [47.787591, 94.412409],
+            "end": [47.8, 94.4],
+            "width": 0.2,
+            "layer": "F.Cu"
+          },
+          {
+            "start": [47.787591, 94.479999],
+            "end": [47.787591, 94.412409],
+            "width": 0.2,
+            "layer": "F.Cu"
+          },
+          {
+            "start": [47.8, 93.700009],
+            "end": [48.500009, 93],
+            "width": 0.2,
+            "layer": "B.Cu"
+          },
+          {
+            "start": [49.3, 93.25],
+            "end": [48.750009, 93.25],
+            "width": 0.2,
+            "layer": "F.Cu"
+          },
+          {
+            "start": [48.750009, 93.25],
+            "end": [48.500009, 93],
+            "width": 0.2,
+            "layer": "F.Cu"
+          },
+          {
+            "start": [54.60241, 86.39759],
+            "end": [55.25, 85.75],
+            "width": 0.2,
+            "layer": "F.Cu"
+          },
+          {
+            "start": [48.8, 89.370009],
+            "end": [53.378374, 89.370009],
+            "width": 0.2,
+            "layer": "F.Cu"
+          },
+          {
+            "start": [53.378374, 89.370009],
+            "end": [54.60241, 88.145973],
+            "width": 0.2,
+            "layer": "F.Cu"
+          },
+          {
+            "start": [54.60241, 88.145973],
+            "end": [54.60241, 86.39759],
+            "width": 0.2,
+            "layer": "F.Cu"
+          }
+        ],
+        "arcs": ["TODO: extract arc info. Most samples don't have arcs to help test :("],
+        "vias": ["TODO: are vias necessary for our routing interests?"]
+      },
+      "errors": []
+    },
+    "5": {
+      "name": "/LCD_SEG2",
+      "class": "TODO",
+      "pads": [
+        {
+          "f-91w:LCD-F-91W pad 2": {
+            "abs_pos": [49.532, 90.91]
+          }
+        },
+        {
+          "Housings_DFN_QFN:QFN-64-1EP_9x9mm_Pitch0.5mm pad 32": {
+            "abs_pos": [61.75, 102.975]
+          }
+        }
+      ],
+      "tracks": {
+        "segments": [
+          {
+            "start": [49.5055, 92.141],
+            "end": [49.532, 92.1145],
+            "width": 0.2,
+            "layer": "F.Cu"
+          },
+          {
+            "start": [49.532, 92.1145],
+            "end": [49.532, 90.91],
+            "width": 0.2,
+            "layer": "F.Cu"
+          },
+          {
+            "start": [49.6555, 92.316],
+            "end": [49.5055, 92.166],
+            "width": 0.2,
+            "layer": "B.Cu"
+          },
+          {
+            "start": [49.5055, 92.166],
+            "end": [49.5055, 92.141],
+            "width": 0.2,
+            "layer": "B.Cu"
+          },
+          {
+            "start": [49.6555, 94.246118],
+            "end": [49.6555, 92.316],
+            "width": 0.2,
+            "layer": "B.Cu"
+          },
+          {
+            "start": [49.5555, 94.346118],
+            "end": [49.6555, 94.246118],
+            "width": 0.2,
+            "layer": "B.Cu"
+          },
+          {
+            "start": [52.5055, 102.341],
+            "end": [52.272543, 102.341],
+            "width": 0.2,
+            "layer": "B.Cu"
+          },
+          {
+            "start": [52.272543, 102.341],
+            "end": [48.45241, 98.520867],
+            "width": 0.2,
+            "layer": "B.Cu"
+          },
+          {
+            "start": [48.45241, 98.520867],
+            "end": [48.45241, 95.449208],
+            "width": 0.2,
+            "layer": "B.Cu"
+          },
+          {
+            "start": [48.45241, 95.449208],
+            "end": [49.5555, 94.346118],
+            "width": 0.2,
+            "layer": "B.Cu"
+          },
+          {
+            "start": [52.4965, 102.25],
+            "end": [52.5055, 102.259],
+            "width": 0.2,
+            "layer": "F.Cu"
+          },
+          {
+            "start": [52.5055, 102.259],
+            "end": [52.5055, 102.341],
+            "width": 0.2,
+            "layer": "F.Cu"
+          },
+          {
+            "start": [53.55, 102.25],
+            "end": [52.4965, 102.25],
+            "width": 0.2,
+            "layer": "F.Cu"
+          }
+        ],
+        "arcs": ["TODO: extract arc info. Most samples don't have arcs to help test :("],
+        "vias": ["TODO: are vias necessary for our routing interests?"]
+      },
+      "errors": []
+    },
+    "6": {
+      "name": "/LCD_SEG1",
+      "class": "TODO",
+      "pads": [
+        {
+          "f-91w:LCD-F-91W pad 1": {
+            "abs_pos": [48.83, 90.91]
+          }
+        },
+        {
+          "Housings_DFN_QFN:QFN-64-1EP_9x9mm_Pitch0.5mm pad 33": {
+            "abs_pos": [62.475, 102.25]
+          }
+        }
+      ],
+      "tracks": {
+        "segments": [
+          {
+            "start": [52.6555, 102.941],
+            "end": [54.241, 102.941],
+            "width": 0.2,
+            "layer": "F.Cu"
+          },
+          {
+            "start": [54.241, 102.941],
+            "end": [54.25, 102.95],
+            "width": 0.2,
+            "layer": "F.Cu"
+          },
+          {
+            "start": [52.374171, 102.941],
+            "end": [52.6555, 102.941],
+            "width": 0.2,
+            "layer": "B.Cu"
+          },
+          {
+            "start": [52.274171, 102.841],
+            "end": [52.374171, 102.941],
+            "width": 0.2,
+            "layer": "B.Cu"
+          },
+          {
+            "start": [52.274171, 102.841],
+            "end": [48.100008, 98.666837],
+            "width": 0.2,
+            "layer": "B.Cu"
+          },
+          {
+            "start": [48.100008, 98.666837],
+            "end": [48.100008, 95.303238],
+            "width": 0.2,
+            "layer": "B.Cu"
+          },
+          {
+            "start": [48.100008, 95.303238],
+            "end": [49.108873, 94.294373],
+            "width": 0.2,
+            "layer": "B.Cu"
+          },
+          {
+            "start": [49.108873, 94.294373],
+            "end": [49.108873, 92.444373],
+            "width": 0.2,
+            "layer": "B.Cu"
+          },
+          {
+            "start": [49.108873, 92.444373],
+            "end": [48.8055, 92.141],
+            "width": 0.2,
+            "layer": "B.Cu"
+          },
+          {
+            "start": [48.83, 92.1165],
+            "end": [48.83, 90.91],
+            "width": 0.2,
+            "layer": "F.Cu"
+          },
+          {
+            "start": [48.8055, 92.141],
+            "end": [48.83, 92.1165],
+            "width": 0.2,
+            "layer": "F.Cu"
+          }
+        ],
+        "arcs": ["TODO: extract arc info. Most samples don't have arcs to help test :("],
+        "vias": ["TODO: are vias necessary for our routing interests?"]
+      },
+      "errors": []
+    },
+    "7": {
+      "name": "/LCD_SEG3",
+      "class": "TODO",
+      "pads": [
+        {
+          "f-91w:LCD-F-91W pad 3": {
+            "abs_pos": [50.234, 90.91]
+          }
+        },
+        {
+          "Housings_DFN_QFN:QFN-64-1EP_9x9mm_Pitch0.5mm pad 31": {
+            "abs_pos": [61.25, 102.95]
+          }
+        }
+      ],
+      "tracks": {
+        "segments": [
+          {
+            "start": [50.2055, 94.191],
+            "end": [50.2055, 92.141],
+            "width": 0.2,
+            "layer": "B.Cu"
+          },
+          {
+            "start": [50.082401, 94.317589],
+            "end": [50.082401, 94.314099],
+            "width": 0.2,
+            "layer": "B.Cu"
+          },
+          {
+            "start": [50.082401, 94.314099],
+            "end": [50.2055, 94.191],
+            "width": 0.2,
+            "layer": "B.Cu"
+          },
+          {
+            "start": [49.682245, 94.717745],
+            "end": [50.082401, 94.317589],
+            "width": 0.2,
+            "layer": "B.Cu"
+          },
+          {
+            "start": [48.804812, 98.374897],
+            "end": [48.804812, 95.595178],
+            "width": 0.2,
+            "layer": "B.Cu"
+          },
+          {
+            "start": [51.413208, 100.983293],
+            "end": [48.804812, 98.374897],
+            "width": 0.2,
+            "layer": "B.Cu"
+          },
+          {
+            "start": [52.170915, 101.741],
+            "end": [51.413208, 100.983293],
+            "width": 0.2,
+            "layer": "B.Cu"
+          },
+          {
+            "start": [52.7555, 101.741],
+            "end": [52.170915, 101.741],
+            "width": 0.2,
+            "layer": "B.Cu"
+          },
+          {
+            "start": [48.804812, 95.595178],
+            "end": [49.682245, 94.717745],
+            "width": 0.2,
+            "layer": "B.Cu"
+          },
+          {
+            "start": [53.55, 101.75],
+            "end": [52.7645, 101.75],
+            "width": 0.2,
+            "layer": "F.Cu"
+          },
+          {
+            "start": [52.7645, 101.75],
+            "end": [52.7555, 101.741],
+            "width": 0.2,
+            "layer": "F.Cu"
+          },
+          {
+            "start": [50.234, 92.1125],
+            "end": [50.234, 90.91],
+            "width": 0.2,
+            "layer": "F.Cu"
+          },
+          {
+            "start": [50.2055, 92.141],
+            "end": [50.234, 92.1125],
+            "width": 0.2,
+            "layer": "F.Cu"
+          }
+        ],
+        "arcs": ["TODO: extract arc info. Most samples don't have arcs to help test :("],
+        "vias": ["TODO: are vias necessary for our routing interests?"]
+      },
+      "errors": []
+    },
+    "8": {
+      "name": "/LCD_SEG4",
+      "class": "TODO",
+      "pads": [
+        {
+          "f-91w:LCD-F-91W pad 4": {
+            "abs_pos": [50.936, 90.91]
+          }
+        },
+        {
+          "Housings_DFN_QFN:QFN-64-1EP_9x9mm_Pitch0.5mm pad 30": {
+            "abs_pos": [60.75, 102.95]
+          }
+        }
+      ],
+      "tracks": {
+        "segments": [
+          {
+            "start": [50.847739, 98.791],
+            "end": [50.847739, 97.826083],
+            "width": 0.2,
+            "layer": "B.Cu"
+          },
+          {
+            "start": [50.847739, 97.826083],
+            "end": [51.294161, 97.379661],
+            "width": 0.2,
+            "layer": "B.Cu"
+          },
+          {
+            "start": [50.847739, 99.919452],
+            "end": [50.847739, 98.791],
+            "width": 0.2,
+            "layer": "B.Cu"
+          },
+          {
+            "start": [51.387394, 100.459107],
+            "end": [50.847739, 99.919452],
+            "width": 0.2,
+            "layer": "B.Cu"
+          },
+          {
+            "start": [52.169287, 101.241],
+            "end": [51.387394, 100.459107],
+            "width": 0.2,
+            "layer": "B.Cu"
+          },
+          {
+            "start": [52.3555, 101.241],
+            "end": [52.169287, 101.241],
+            "width": 0.2,
+            "layer": "B.Cu"
+          },
+          {
+            "start": [51.294161, 97.379661],
+            "end": [51.38557, 97.288252],
+            "width": 0.2,
+            "layer": "B.Cu"
+          },
+          {
+            "start": [50.936, 92.4105],
+            "end": [50.936, 90.91],
+            "width": 0.2,
+            "layer": "F.Cu"
+          },
+          {
+            "start": [50.9055, 92.441],
+            "end": [50.936, 92.4105],
+            "width": 0.2,
+            "layer": "F.Cu"
+          },
+          {
+            "start": [51.38557, 92.92107],
+            "end": [50.9055, 92.441],
+            "width": 0.2,
+            "layer": "B.Cu"
+          },
+          {
+            "start": [51.38557, 97.288252],
+            "end": [51.38557, 92.92107],
+            "width": 0.2,
+            "layer": "B.Cu"
+          },
+          {
+            "start": [52.3645, 101.25],
+            "end": [52.3555, 101.241],
+            "width": 0.2,
+            "layer": "F.Cu"
+          },
+          {
+            "start": [53.55, 101.25],
+            "end": [52.3645, 101.25],
+            "width": 0.2,
+            "layer": "F.Cu"
+          },
+          {
+            "start": [51.294161, 97.379661],
+            "end": [51.244161, 97.429661],
+            "width": 0.2,
+            "layer": "B.Cu"
+          }
+        ],
+        "arcs": ["TODO: extract arc info. Most samples don't have arcs to help test :("],
+        "vias": ["TODO: are vias necessary for our routing interests?"]
+      },
+      "errors": []
+    },
+    "9": {
+      "name": "/LCD_SEG6",
+      "class": "TODO",
+      "pads": [
+        {
+          "f-91w:LCD-F-91W pad 6": {
+            "abs_pos": [52.34, 90.91]
+          }
+        },
+        {
+          "Housings_DFN_QFN:QFN-64-1EP_9x9mm_Pitch0.5mm pad 28": {
+            "abs_pos": [59.75, 102.95]
+          }
+        }
+      ],
+      "tracks": {
+        "segments": [
+          {
+            "start": [51.892533, 97.778033],
+            "end": [52.090374, 97.580192],
+            "width": 0.2,
+            "layer": "B.Cu"
+          },
+          {
+            "start": [51.552543, 99.627512],
+            "end": [51.552543, 98.441],
+            "width": 0.2,
+            "layer": "B.Cu"
+          },
+          {
+            "start": [51.552543, 98.441],
+            "end": [51.552543, 98.118023],
+            "width": 0.2,
+            "layer": "B.Cu"
+          },
+          {
+            "start": [51.552543, 98.118023],
+            "end": [51.892533, 97.778033],
+            "width": 0.2,
+            "layer": "B.Cu"
+          },
+          {
+            "start": [53.55, 100.25],
+            "end": [52.3645, 100.25],
+            "width": 0.2,
+            "layer": "F.Cu"
+          },
+          {
+            "start": [52.166031, 100.241],
+            "end": [51.685766, 99.760735],
+            "width": 0.2,
+            "layer": "B.Cu"
+          },
+          {
+            "start": [52.3555, 100.241],
+            "end": [52.166031, 100.241],
+            "width": 0.2,
+            "layer": "B.Cu"
+          },
+          {
+            "start": [52.3645, 100.25],
+            "end": [52.3555, 100.241],
+            "width": 0.2,
+            "layer": "F.Cu"
+          },
+          {
+            "start": [51.685766, 99.760735],
+            "end": [51.552543, 99.627512],
+            "width": 0.2,
+            "layer": "B.Cu"
+          },
+          {
+            "start": [52.34, 92.0565],
+            "end": [52.34, 90.91],
+            "width": 0.2,
+            "layer": "F.Cu"
+          },
+          {
+            "start": [52.2555, 92.141],
+            "end": [52.34, 92.0565],
+            "width": 0.2,
+            "layer": "F.Cu"
+          },
+          {
+            "start": [52.090374, 92.306126],
+            "end": [52.2555, 92.141],
+            "width": 0.2,
+            "layer": "B.Cu"
+          },
+          {
+            "start": [52.090374, 97.580192],
+            "end": [52.090374, 92.306126],
+            "width": 0.2,
+            "layer": "B.Cu"
+          },
+          {
+            "start": [52.328525, 90.921475],
+            "end": [52.34, 90.91],
+            "width": 0.2,
+            "layer": "F.Cu"
+          }
+        ],
+        "arcs": ["TODO: extract arc info. Most samples don't have arcs to help test :("],
+        "vias": ["TODO: are vias necessary for our routing interests?"]
+      },
+      "errors": []
+    },
+    "10": {
+      "name": "/LCD_SEG5",
+      "class": "TODO",
+      "pads": [
+        {
+          "f-91w:LCD-F-91W pad 5": {
+            "abs_pos": [51.638, 90.91]
+          }
+        },
+        {
+          "Housings_DFN_QFN:QFN-64-1EP_9x9mm_Pitch0.5mm pad 29": {
+            "abs_pos": [60.25, 102.95]
+          }
+        }
+      ],
+      "tracks": {
+        "segments": [
+          {
+            "start": [51.568347, 97.603847],
+            "end": [51.737972, 97.434222],
+            "width": 0.2,
+            "layer": "B.Cu"
+          },
+          {
+            "start": [51.737972, 97.434222],
+            "end": [51.737972, 92.473472],
+            "width": 0.2,
+            "layer": "B.Cu"
+          },
+          {
+            "start": [51.737972, 92.473472],
+            "end": [51.5555, 92.291],
+            "width": 0.2,
+            "layer": "B.Cu"
+          },
+          {
+            "start": [51.5555, 92.291],
+            "end": [51.638, 92.2085],
+            "width": 0.2,
+            "layer": "F.Cu"
+          },
+          {
+            "start": [51.638, 92.2085],
+            "end": [51.638, 90.91],
+            "width": 0.2,
+            "layer": "F.Cu"
+          },
+          {
+            "start": [51.58658, 100.159921],
+            "end": [51.200141, 99.773482],
+            "width": 0.2,
+            "layer": "B.Cu"
+          },
+          {
+            "start": [52.7555, 100.741],
+            "end": [52.167659, 100.741],
+            "width": 0.2,
+            "layer": "B.Cu"
+          },
+          {
+            "start": [52.167659, 100.741],
+            "end": [51.58658, 100.159921],
+            "width": 0.2,
+            "layer": "B.Cu"
+          },
+          {
+            "start": [51.200141, 97.972053],
+            "end": [51.568347, 97.603847],
+            "width": 0.2,
+            "layer": "B.Cu"
+          },
+          {
+            "start": [51.200141, 99.773482],
+            "end": [51.200141, 97.972053],
+            "width": 0.2,
+            "layer": "B.Cu"
+          },
+          {
+            "start": [53.55, 100.75],
+            "end": [52.7645, 100.75],
+            "width": 0.2,
+            "layer": "F.Cu"
+          },
+          {
+            "start": [52.7645, 100.75],
+            "end": [52.7555, 100.741],
+            "width": 0.2,
+            "layer": "F.Cu"
+          }
+        ],
+        "arcs": ["TODO: extract arc info. Most samples don't have arcs to help test :("],
+        "vias": ["TODO: are vias necessary for our routing interests?"]
+      },
+      "errors": []
+    },
+    "11": {
+      "name": "/LCD_COM3",
+      "class": "TODO",
+      "pads": [
+        {
+          "f-91w:LCD-F-91W pad 9": {
+            "abs_pos": [54.446, 90.91]
+          }
+        },
+        {
+          "Housings_DFN_QFN:QFN-64-1EP_9x9mm_Pitch0.5mm pad 10": {
+            "abs_pos": [53.55, 99.25]
+          }
+        }
+      ],
+      "tracks": {
+        "segments": [
+          {
+            "start": [57.25, 93.425],
+            "end": [57.25, 94.05],
+            "width": 0.2,
+            "layer": "F.Cu"
+          },
+          {
+            "start": [57.25, 92.863956],
+            "end": [57.25, 93.425],
+            "width": 0.2,
+            "layer": "F.Cu"
+          },
+          {
+            "start": [54.594276, 92.012776],
+            "end": [56.39882, 92.012776],
+            "width": 0.2,
+            "layer": "F.Cu"
+          },
+          {
+            "start": [56.39882, 92.012776],
+            "end": [57.25, 92.863956],
+            "width": 0.2,
+            "layer": "F.Cu"
+          },
+          {
+            "start": [54.446, 90.91],
+            "end": [54.446, 91.8645],
+            "width": 0.2,
+            "layer": "F.Cu"
+          },
+          {
+            "start": [54.446, 91.8645],
+            "end": [54.594276, 92.012776],
+            "width": 0.2,
+            "layer": "F.Cu"
+          }
+        ],
+        "arcs": ["TODO: extract arc info. Most samples don't have arcs to help test :("],
+        "vias": ["TODO: are vias necessary for our routing interests?"]
+      },
+      "errors": []
+    },
+    "12": {
+      "name": "/LCD_COM2",
+      "class": "TODO",
+      "pads": [
+        {
+          "f-91w:LCD-F-91W pad 8": {
+            "abs_pos": [53.744, 90.91]
+          }
+        },
+        {
+          "Housings_DFN_QFN:QFN-64-1EP_9x9mm_Pitch0.5mm pad 11": {
+            "abs_pos": [53.55, 99.75]
+          }
+        }
+      ],
+      "tracks": {
+        "segments": [
+          {
+            "start": [56.759793, 92.872133],
+            "end": [56.252847, 92.365187],
+            "width": 0.2,
+            "layer": "F.Cu"
+          },
+          {
+            "start": [53.744, 91.8645],
+            "end": [53.744, 90.91],
+            "width": 0.2,
+            "layer": "F.Cu"
+          },
+          {
+            "start": [56.252847, 92.365187],
+            "end": [54.244687, 92.365187],
+            "width": 0.2,
+            "layer": "F.Cu"
+          },
+          {
+            "start": [54.244687, 92.365187],
+            "end": [53.744, 91.8645],
+            "width": 0.2,
+            "layer": "F.Cu"
+          },
+          {
+            "start": [56.759793, 94.040207],
+            "end": [56.759793, 92.872133],
+            "width": 0.2,
+            "layer": "F.Cu"
+          },
+          {
+            "start": [56.75, 94.05],
+            "end": [56.759793, 94.040207],
+            "width": 0.2,
+            "layer": "F.Cu"
+          }
+        ],
+        "arcs": ["TODO: extract arc info. Most samples don't have arcs to help test :("],
+        "vias": ["TODO: are vias necessary for our routing interests?"]
+      },
+      "errors": []
+    },
+    "13": {
+      "name": "/LCD_COM1",
+      "class": "TODO",
+      "pads": [
+        {
+          "f-91w:LCD-F-91W pad 7": {
+            "abs_pos": [53.042, 90.91]
+          }
+        },
+        {
+          "Housings_DFN_QFN:QFN-64-1EP_9x9mm_Pitch0.5mm pad 12": {
+            "abs_pos": [53.55, 100.25]
+          }
+        }
+      ],
+      "tracks": {
+        "segments": [
+          {
+            "start": [56.25, 93.589327],
+            "end": [56.407382, 93.431945],
+            "width": 0.2,
+            "layer": "F.Cu"
+          },
+          {
+            "start": [53.895098, 92.717598],
+            "end": [53.042, 91.8645],
+            "width": 0.2,
+            "layer": "F.Cu"
+          },
+          {
+            "start": [56.25, 94.05],
+            "end": [56.25, 93.589327],
+            "width": 0.2,
+            "layer": "F.Cu"
+          },
+          {
+            "start": [56.106875, 92.717599],
+            "end": [53.895098, 92.717598],
+            "width": 0.2,
+            "layer": "F.Cu"
+          },
+          {
+            "start": [53.042, 91.8645],
+            "end": [53.042, 90.91],
+            "width": 0.2,
+            "layer": "F.Cu"
+          },
+          {
+            "start": [56.407382, 93.018106],
+            "end": [56.106875, 92.717599],
+            "width": 0.2,
+            "layer": "F.Cu"
+          },
+          {
+            "start": [56.407382, 93.431945],
+            "end": [56.407382, 93.018106],
+            "width": 0.2,
+            "layer": "F.Cu"
+          }
+        ],
+        "arcs": ["TODO: extract arc info. Most samples don't have arcs to help test :("],
+        "vias": ["TODO: are vias necessary for our routing interests?"]
+      },
+      "errors": []
+    },
+    "14": {
+      "name": "/LCD_SEG13",
+      "class": "TODO",
+      "pads": [
+        {
+          "f-91w:LCD-F-91W pad 16": {
+            "abs_pos": [59.36, 90.91]
+          }
+        },
+        {
+          "Housings_DFN_QFN:QFN-64-1EP_9x9mm_Pitch0.5mm pad 13": {
+            "abs_pos": [53.55, 100.75]
+          }
+        }
+      ],
+      "tracks": {
+        "segments": [
+          {
+            "start": [59.36, 90.91],
+            "end": [59.36, 91.9365],
+            "width": 0.2,
+            "layer": "F.Cu"
+          },
+          {
+            "start": [59.36, 91.9365],
+            "end": [58.2055, 93.091],
+            "width": 0.2,
+            "layer": "F.Cu"
+          },
+          {
+            "start": [58.2055, 93.091],
+            "end": [58.0055, 93.091],
+            "width": 0.2,
+            "layer": "F.Cu"
+          },
+          {
+            "start": [57.868279, 93.228221],
+            "end": [58.0055, 93.091],
+            "width": 0.2,
+            "layer": "B.Cu"
+          },
+          {
+            "start": [56.632001, 93.228221],
+            "end": [57.868279, 93.228221],
+            "width": 0.2,
+            "layer": "B.Cu"
+          },
+          {
+            "start": [55.916192, 93.20916],
+            "end": [56.61294, 93.20916],
+            "width": 0.2,
+            "layer": "B.Cu"
+          },
+          {
+            "start": [56.61294, 93.20916],
+            "end": [56.632001, 93.228221],
+            "width": 0.2,
+            "layer": "B.Cu"
+          },
+          {
+            "start": [55.75, 94.05],
+            "end": [55.75, 93.425],
+            "width": 0.2,
+            "layer": "F.Cu"
+          },
+          {
+            "start": [55.75, 93.425],
+            "end": [55.916192, 93.258808],
+            "width": 0.2,
+            "layer": "F.Cu"
+          },
+          {
+            "start": [55.916192, 93.258808],
+            "end": [55.916192, 93.20916],
+            "width": 0.2,
+            "layer": "F.Cu"
+          }
+        ],
+        "arcs": ["TODO: extract arc info. Most samples don't have arcs to help test :("],
+        "vias": ["TODO: are vias necessary for our routing interests?"]
+      },
+      "errors": []
+    },
+    "15": {
+      "name": "/LCD_SEG12",
+      "class": "TODO",
+      "pads": [
+        {
+          "f-91w:LCD-F-91W pad 15": {
+            "abs_pos": [58.658, 90.91]
+          }
+        },
+        {
+          "Housings_DFN_QFN:QFN-64-1EP_9x9mm_Pitch0.5mm pad 14": {
+            "abs_pos": [53.55, 101.25]
+          }
+        }
+      ],
+      "tracks": {
+        "segments": [
+          {
+            "start": [57.853883, 92.541],
+            "end": [58.0555, 92.541],
+            "width": 0.2,
+            "layer": "B.Cu"
+          },
+          {
+            "start": [58.0555, 92.541],
+            "end": [58.5555, 92.041],
+            "width": 0.2,
+            "layer": "B.Cu"
+          },
+          {
+            "start": [57.519072, 92.875811],
+            "end": [57.853883, 92.541],
+            "width": 0.2,
+            "layer": "B.Cu"
+          },
+          {
+            "start": [55.30385, 93.200018],
+            "end": [55.30385, 92.874749],
+            "width": 0.2,
+            "layer": "B.Cu"
+          },
+          {
+            "start": [55.30385, 92.874749],
+            "end": [55.518958, 92.659641],
+            "width": 0.2,
+            "layer": "B.Cu"
+          },
+          {
+            "start": [56.561805, 92.659641],
+            "end": [56.777974, 92.875811],
+            "width": 0.2,
+            "layer": "B.Cu"
+          },
+          {
+            "start": [55.518958, 92.659641],
+            "end": [56.561805, 92.659641],
+            "width": 0.2,
+            "layer": "B.Cu"
+          },
+          {
+            "start": [56.777974, 92.875811],
+            "end": [57.519072, 92.875811],
+            "width": 0.2,
+            "layer": "B.Cu"
+          },
+          {
+            "start": [58.658, 90.91],
+            "end": [58.658, 91.9385],
+            "width": 0.2,
+            "layer": "F.Cu"
+          },
+          {
+            "start": [58.658, 91.9385],
+            "end": [58.5555, 92.041],
+            "width": 0.2,
+            "layer": "F.Cu"
+          },
+          {
+            "start": [55.25, 93.253868],
+            "end": [55.30385, 93.200018],
+            "width": 0.2,
+            "layer": "F.Cu"
+          },
+          {
+            "start": [55.25, 94.05],
+            "end": [55.25, 93.253868],
+            "width": 0.2,
+            "layer": "F.Cu"
+          }
+        ],
+        "arcs": ["TODO: extract arc info. Most samples don't have arcs to help test :("],
+        "vias": ["TODO: are vias necessary for our routing interests?"]
+      },
+      "errors": []
+    },
+    "16": {
+      "name": "/LCD_SEG11",
+      "class": "TODO",
+      "pads": [
+        {
+          "f-91w:LCD-F-91W pad 14": {
+            "abs_pos": [57.956, 90.91]
+          }
+        },
+        {
+          "Housings_DFN_QFN:QFN-64-1EP_9x9mm_Pitch0.5mm pad 15": {
+            "abs_pos": [53.55, 101.75]
+          }
+        }
+      ],
+      "tracks": {
+        "segments": [
+          {
+            "start": [57.956, 90.91],
+            "end": [57.956, 91.9405],
+            "width": 0.2,
+            "layer": "F.Cu"
+          },
+          {
+            "start": [57.956, 91.9405],
+            "end": [57.8555, 92.041],
+            "width": 0.2,
+            "layer": "F.Cu"
+          },
+          {
+            "start": [57.373099, 92.523401],
+            "end": [57.8555, 92.041],
+            "width": 0.2,
+            "layer": "B.Cu"
+          },
+          {
+            "start": [55.167501, 92.30723],
+            "end": [56.707776, 92.30723],
+            "width": 0.2,
+            "layer": "B.Cu"
+          },
+          {
+            "start": [56.707776, 92.30723],
+            "end": [56.923947, 92.523401],
+            "width": 0.2,
+            "layer": "B.Cu"
+          },
+          {
+            "start": [56.923947, 92.523401],
+            "end": [57.373099, 92.523401],
+            "width": 0.2,
+            "layer": "B.Cu"
+          },
+          {
+            "start": [54.75, 94.05],
+            "end": [54.75, 93.35],
+            "width": 0.2,
+            "layer": "F.Cu"
+          },
+          {
+            "start": [54.75, 94.05],
+            "end": [54.750006, 94.049994],
+            "width": 0.2,
+            "layer": "F.Cu"
+          },
+          {
+            "start": [54.750006, 94.049994],
+            "end": [54.750006, 93.796208],
+            "width": 0.2,
+            "layer": "F.Cu"
+          },
+          {
+            "start": [54.6, 93.2],
+            "end": [54.6, 92.874731],
+            "width": 0.2,
+            "layer": "B.Cu"
+          },
+          {
+            "start": [54.6, 92.874731],
+            "end": [55.167501, 92.30723],
+            "width": 0.2,
+            "layer": "B.Cu"
+          },
+          {
+            "start": [54.75, 93.35],
+            "end": [54.6, 93.2],
+            "width": 0.2,
+            "layer": "F.Cu"
+          }
+        ],
+        "arcs": ["TODO: extract arc info. Most samples don't have arcs to help test :("],
+        "vias": ["TODO: are vias necessary for our routing interests?"]
+      },
+      "errors": []
+    },
+    "17": {
+      "name": "/LCD_SEG10",
+      "class": "TODO",
+      "pads": [
+        {
+          "f-91w:LCD-F-91W pad 13": {
+            "abs_pos": [57.254, 90.91]
+          }
+        },
+        {
+          "Housings_DFN_QFN:QFN-64-1EP_9x9mm_Pitch0.5mm pad 16": {
+            "abs_pos": [53.525, 102.25]
+          }
+        }
+      ],
+      "tracks": {
+        "segments": [
+          {
+            "start": [57.254, 90.91],
+            "end": [57.254, 91.9425],
+            "width": 0.2,
+            "layer": "F.Cu"
+          },
+          {
+            "start": [57.254, 91.9425],
+            "end": [57.1555, 92.041],
+            "width": 0.2,
+            "layer": "F.Cu"
+          },
+          {
+            "start": [57.069321, 91.954821],
+            "end": [57.1555, 92.041],
+            "width": 0.2,
+            "layer": "B.Cu"
+          },
+          {
+            "start": [54.845179, 91.954821],
+            "end": [57.069321, 91.954821],
+            "width": 0.2,
+            "layer": "B.Cu"
+          },
+          {
+            "start": [54.25, 94.05],
+            "end": [54.25, 93.563954],
+            "width": 0.2,
+            "layer": "F.Cu"
+          },
+          {
+            "start": [54.25, 93.563954],
+            "end": [53.987597, 93.301551],
+            "width": 0.2,
+            "layer": "F.Cu"
+          },
+          {
+            "start": [53.987597, 93.301551],
+            "end": [53.987597, 93.2],
+            "width": 0.2,
+            "layer": "F.Cu"
+          },
+          {
+            "start": [53.987597, 93.2],
+            "end": [53.987597, 92.812403],
+            "width": 0.2,
+            "layer": "B.Cu"
+          },
+          {
+            "start": [53.987597, 92.812403],
+            "end": [54.845179, 91.954821],
+            "width": 0.2,
+            "layer": "B.Cu"
+          },
+          {
+            "start": [54.25, 94.05],
+            "end": [54.25, 93.85],
+            "width": 0.2,
+            "layer": "F.Cu"
+          }
+        ],
+        "arcs": ["TODO: extract arc info. Most samples don't have arcs to help test :("],
+        "vias": ["TODO: are vias necessary for our routing interests?"]
+      },
+      "errors": []
+    },
+    "18": {
+      "name": "/LCD_SEG9",
+      "class": "TODO",
+      "pads": [
+        {
+          "f-91w:LCD-F-91W pad 12": {
+            "abs_pos": [56.552, 90.91]
+          }
+        },
+        {
+          "Housings_DFN_QFN:QFN-64-1EP_9x9mm_Pitch0.5mm pad 25": {
+            "abs_pos": [58.25, 102.95]
+          }
+        }
+      ],
+      "tracks": {
+        "segments": [
+          {
+            "start": [53.147612, 93.148888],
+            "end": [54.694089, 91.602411],
+            "width": 0.2,
+            "layer": "B.Cu"
+          },
+          {
+            "start": [54.694089, 91.602411],
+            "end": [55.897589, 91.602411],
+            "width": 0.2,
+            "layer": "B.Cu"
+          },
+          {
+            "start": [53.147612, 98.01809],
+            "end": [53.147612, 93.148888],
+            "width": 0.2,
+            "layer": "B.Cu"
+          },
+          {
+            "start": [56.552, 89.7945],
+            "end": [56.552, 90.948],
+            "width": 0.2,
+            "layer": "B.Cu"
+          },
+          {
+            "start": [56.552, 90.948],
+            "end": [55.897589, 91.602411],
+            "width": 0.2,
+            "layer": "B.Cu"
+          },
+          {
+            "start": [53.147612, 98.01809],
+            "end": [52.740965, 98.424737],
+            "width": 0.2,
+            "layer": "B.Cu"
+          },
+          {
+            "start": [52.740965, 98.424737],
+            "end": [52.740965, 98.750006],
+            "width": 0.2,
+            "layer": "B.Cu"
+          },
+          {
+            "start": [56.552, 90.91],
+            "end": [56.552, 89.7945],
+            "width": 0.2,
+            "layer": "F.Cu"
+          },
+          {
+            "start": [53.55, 98.75],
+            "end": [52.740971, 98.75],
+            "width": 0.2,
+            "layer": "F.Cu"
+          },
+          {
+            "start": [52.740971, 98.75],
+            "end": [52.740965, 98.750006],
+            "width": 0.2,
+            "layer": "F.Cu"
+          }
+        ],
+        "arcs": ["TODO: extract arc info. Most samples don't have arcs to help test :("],
+        "vias": ["TODO: are vias necessary for our routing interests?"]
+      },
+      "errors": []
+    },
+    "19": {
+      "name": "/LCD_SEG8",
+      "class": "TODO",
+      "pads": [
+        {
+          "f-91w:LCD-F-91W pad 11": {
+            "abs_pos": [55.85, 90.91]
+          }
+        },
+        {
+          "Housings_DFN_QFN:QFN-64-1EP_9x9mm_Pitch0.5mm pad 26": {
+            "abs_pos": [58.75, 102.95]
+          }
+        }
+      ],
+      "tracks": {
+        "segments": [
+          {
+            "start": [52.795202, 93.001298],
+            "end": [54.5465, 91.25],
+            "width": 0.2,
+            "layer": "B.Cu"
+          },
+          {
+            "start": [54.5465, 91.25],
+            "end": [55.3465, 91.25],
+            "width": 0.2,
+            "layer": "B.Cu"
+          },
+          {
+            "start": [52.795202, 97.872118],
+            "end": [52.795202, 93.001298],
+            "width": 0.2,
+            "layer": "B.Cu"
+          },
+          {
+            "start": [52.387362, 99.250005],
+            "end": [52.258564, 99.121207],
+            "width": 0.2,
+            "layer": "B.Cu"
+          },
+          {
+            "start": [52.258564, 99.121207],
+            "end": [52.258564, 98.408756],
+            "width": 0.2,
+            "layer": "B.Cu"
+          },
+          {
+            "start": [52.258564, 98.408756],
+            "end": [52.795202, 97.872118],
+            "width": 0.2,
+            "layer": "B.Cu"
+          },
+          {
+            "start": [55.85, 90.7355],
+            "end": [55.85, 89.7965],
+            "width": 0.2,
+            "layer": "B.Cu"
+          },
+          {
+            "start": [55.3465, 91.25],
+            "end": [55.8555, 90.741],
+            "width": 0.2,
+            "layer": "B.Cu"
+          },
+          {
+            "start": [55.8555, 90.741],
+            "end": [55.85, 90.7355],
+            "width": 0.2,
+            "layer": "B.Cu"
+          },
+          {
+            "start": [55.85, 90.91],
+            "end": [55.85, 89.7965],
+            "width": 0.2,
+            "layer": "F.Cu"
+          },
+          {
+            "start": [53.55, 99.25],
+            "end": [52.387367, 99.25],
+            "width": 0.2,
+            "layer": "F.Cu"
+          },
+          {
+            "start": [52.387367, 99.25],
+            "end": [52.387362, 99.250005],
+            "width": 0.2,
+            "layer": "F.Cu"
+          }
+        ],
+        "arcs": ["TODO: extract arc info. Most samples don't have arcs to help test :("],
+        "vias": ["TODO: are vias necessary for our routing interests?"]
+      },
+      "errors": []
+    },
+    "20": {
+      "name": "/LCD_SEG7",
+      "class": "TODO",
+      "pads": [
+        {
+          "f-91w:LCD-F-91W pad 10": {
+            "abs_pos": [55.148, 90.91]
+          }
+        },
+        {
+          "Housings_DFN_QFN:QFN-64-1EP_9x9mm_Pitch0.5mm pad 27": {
+            "abs_pos": [59.25, 102.95]
+          }
+        }
+      ],
+      "tracks": {
+        "segments": [
+          {
+            "start": [52.442792, 92.853708],
+            "end": [54.39891, 90.89759],
+            "width": 0.2,
+            "layer": "B.Cu"
+          },
+          {
+            "start": [54.39891, 90.89759],
+            "end": [54.85241, 90.89759],
+            "width": 0.2,
+            "layer": "B.Cu"
+          },
+          {
+            "start": [52.442792, 97.726146],
+            "end": [52.442792, 92.853708],
+            "width": 0.2,
+            "layer": "B.Cu"
+          },
+          {
+            "start": [55.148, 89.7985],
+            "end": [55.148, 90.602],
+            "width": 0.2,
+            "layer": "B.Cu"
+          },
+          {
+            "start": [52.442792, 97.726146],
+            "end": [51.904961, 98.263977],
+            "width": 0.2,
+            "layer": "B.Cu"
+          },
+          {
+            "start": [55.148, 90.602],
+            "end": [54.85241, 90.89759],
+            "width": 0.2,
+            "layer": "B.Cu"
+          },
+          {
+            "start": [51.904961, 98.263977],
+            "end": [51.904961, 99.481558],
+            "width": 0.2,
+            "layer": "B.Cu"
+          },
+          {
+            "start": [51.904961, 99.481558],
+            "end": [52.173409, 99.750006],
+            "width": 0.2,
+            "layer": "B.Cu"
+          },
+          {
+            "start": [52.173409, 99.750006],
+            "end": [52.740965, 99.750006],
+            "width": 0.2,
+            "layer": "B.Cu"
+          },
+          {
+            "start": [55.148, 90.91],
+            "end": [55.148, 89.7985],
+            "width": 0.2,
+            "layer": "F.Cu"
+          },
+          {
+            "start": [53.55, 99.75],
+            "end": [52.740971, 99.75],
+            "width": 0.2,
+            "layer": "F.Cu"
+          },
+          {
+            "start": [52.740971, 99.75],
+            "end": [52.740965, 99.750006],
+            "width": 0.2,
+            "layer": "F.Cu"
+          }
+        ],
+        "arcs": ["TODO: extract arc info. Most samples don't have arcs to help test :("],
+        "vias": ["TODO: are vias necessary for our routing interests?"]
+      },
+      "errors": []
+    },
+    "21": {
+      "name": "/LCD_SEG18",
+      "class": "TODO",
+      "pads": [
+        {
+          "f-91w:LCD-F-91W pad 21": {
+            "abs_pos": [62.87, 90.91]
+          }
+        },
+        {
+          "Housings_DFN_QFN:QFN-64-1EP_9x9mm_Pitch0.5mm pad 1": {
+            "abs_pos": [53.525, 94.75]
+          }
+        }
+      ],
+      "tracks": {
+        "segments": [
+          {
+            "start": [61.75, 94.05],
+            "end": [61.75, 92.9465],
+            "width": 0.2,
+            "layer": "F.Cu"
+          },
+          {
+            "start": [62.87, 91.8265],
+            "end": [62.87, 90.91],
+            "width": 0.2,
+            "layer": "F.Cu"
+          },
+          {
+            "start": [61.75, 92.9465],
+            "end": [62.87, 91.8265],
+            "width": 0.2,
+            "layer": "F.Cu"
+          }
+        ],
+        "arcs": ["TODO: extract arc info. Most samples don't have arcs to help test :("],
+        "vias": ["TODO: are vias necessary for our routing interests?"]
+      },
+      "errors": []
+    },
+    "22": {
+      "name": "/LCD_SEG14",
+      "class": "TODO",
+      "pads": [
+        {
+          "f-91w:LCD-F-91W pad 17": {
+            "abs_pos": [60.062, 90.91]
+          }
+        },
+        {
+          "Housings_DFN_QFN:QFN-64-1EP_9x9mm_Pitch0.5mm pad 5": {
+            "abs_pos": [53.55, 96.75]
+          }
+        }
+      ],
+      "tracks": {
+        "segments": [
+          {
+            "start": [59.75, 94.05],
+            "end": [59.75, 93.2965],
+            "width": 0.2,
+            "layer": "F.Cu"
+          },
+          {
+            "start": [59.75, 93.2965],
+            "end": [60.062, 92.9845],
+            "width": 0.2,
+            "layer": "F.Cu"
+          },
+          {
+            "start": [60.062, 92.9845],
+            "end": [60.062, 90.91],
+            "width": 0.2,
+            "layer": "F.Cu"
+          }
+        ],
+        "arcs": ["TODO: extract arc info. Most samples don't have arcs to help test :("],
+        "vias": ["TODO: are vias necessary for our routing interests?"]
+      },
+      "errors": []
+    },
+    "23": {
+      "name": "/LCD_SEG15",
+      "class": "TODO",
+      "pads": [
+        {
+          "f-91w:LCD-F-91W pad 18": {
+            "abs_pos": [60.764, 90.91]
+          }
+        },
+        {
+          "Housings_DFN_QFN:QFN-64-1EP_9x9mm_Pitch0.5mm pad 4": {
+            "abs_pos": [53.55, 96.25]
+          }
+        }
+      ],
+      "tracks": {
+        "segments": [
+          {
+            "start": [60.25, 94.05],
+            "end": [60.25, 93.294872],
+            "width": 0.2,
+            "layer": "F.Cu"
+          },
+          {
+            "start": [60.25, 93.294872],
+            "end": [60.414402, 93.13047],
+            "width": 0.2,
+            "layer": "F.Cu"
+          },
+          {
+            "start": [60.764, 91.8325],
+            "end": [60.764, 90.91],
+            "width": 0.2,
+            "layer": "F.Cu"
+          },
+          {
+            "start": [60.414402, 92.182098],
+            "end": [60.764, 91.8325],
+            "width": 0.2,
+            "layer": "F.Cu"
+          },
+          {
+            "start": [60.414402, 93.13047],
+            "end": [60.414402, 92.182098],
+            "width": 0.2,
+            "layer": "F.Cu"
+          }
+        ],
+        "arcs": ["TODO: extract arc info. Most samples don't have arcs to help test :("],
+        "vias": ["TODO: are vias necessary for our routing interests?"]
+      },
+      "errors": []
+    },
+    "24": {
+      "name": "/LCD_SEG16",
+      "class": "TODO",
+      "pads": [
+        {
+          "f-91w:LCD-F-91W pad 19": {
+            "abs_pos": [61.466, 90.91]
+          }
+        },
+        {
+          "Housings_DFN_QFN:QFN-64-1EP_9x9mm_Pitch0.5mm pad 3": {
+            "abs_pos": [53.55, 95.75]
+          }
+        }
+      ],
+      "tracks": {
+        "segments": [
+          {
+            "start": [60.75, 94.05],
+            "end": [60.75, 93.6465],
+            "width": 0.2,
+            "layer": "F.Cu"
+          },
+          {
+            "start": [60.75, 93.6465],
+            "end": [60.766804, 93.629696],
+            "width": 0.2,
+            "layer": "F.Cu"
+          },
+          {
+            "start": [60.766804, 93.629696],
+            "end": [60.766804, 92.529696],
+            "width": 0.2,
+            "layer": "F.Cu"
+          },
+          {
+            "start": [60.766804, 92.529696],
+            "end": [61.466, 91.8305],
+            "width": 0.2,
+            "layer": "F.Cu"
+          },
+          {
+            "start": [61.466, 91.8305],
+            "end": [61.466, 90.91],
+            "width": 0.2,
+            "layer": "F.Cu"
+          },
+          {
+            "start": [61.466, 91.628872],
+            "end": [61.466, 90.91],
+            "width": 0.2,
+            "layer": "F.Cu"
+          },
+          {
+            "start": [61.466, 91.628872],
+            "end": [61.466, 90.91],
+            "width": 0.2,
+            "layer": "F.Cu"
+          }
+        ],
+        "arcs": ["TODO: extract arc info. Most samples don't have arcs to help test :("],
+        "vias": ["TODO: are vias necessary for our routing interests?"]
+      },
+      "errors": []
+    },
+    "25": {
+      "name": "/LCD_SEG17",
+      "class": "TODO",
+      "pads": [
+        {
+          "f-91w:LCD-F-91W pad 20": {
+            "abs_pos": [62.168, 90.91]
+          }
+        },
+        {
+          "Housings_DFN_QFN:QFN-64-1EP_9x9mm_Pitch0.5mm pad 2": {
+            "abs_pos": [53.55, 95.25]
+          }
+        }
+      ],
+      "tracks": {
+        "segments": [
+          {
+            "start": [61.25, 94.05],
+            "end": [61.25, 92.7465],
+            "width": 0.2,
+            "layer": "F.Cu"
+          },
+          {
+            "start": [62.168, 91.8285],
+            "end": [62.168, 90.91],
+            "width": 0.2,
+            "layer": "F.Cu"
+          },
+          {
+            "start": [61.25, 92.7465],
+            "end": [62.168, 91.8285],
+            "width": 0.2,
+            "layer": "F.Cu"
+          }
+        ],
+        "arcs": ["TODO: extract arc info. Most samples don't have arcs to help test :("],
+        "vias": ["TODO: are vias necessary for our routing interests?"]
+      },
+      "errors": []
+    },
+    "26": {
+      "name": "/LCD_SEG19",
+      "class": "TODO",
+      "pads": [
+        {
+          "f-91w:LCD-F-91W pad 22": {
+            "abs_pos": [63.572, 90.91]
+          }
+        },
+        {
+          "Housings_DFN_QFN:QFN-64-1EP_9x9mm_Pitch0.5mm pad 64": {
+            "abs_pos": [54.25, 94.025]
+          }
+        }
+      ],
+      "tracks": {
+        "segments": [
+          {
+            "start": [62.45, 94.75],
+            "end": [62.45, 94.6355],
+            "width": 0.2,
+            "layer": "F.Cu"
+          },
+          {
+            "start": [62.45, 94.6355],
+            "end": [62.2055, 94.391],
+            "width": 0.2,
+            "layer": "F.Cu"
+          },
+          {
+            "start": [63.572, 91.8245],
+            "end": [63.572, 90.91],
+            "width": 0.2,
+            "layer": "F.Cu"
+          },
+          {
+            "start": [62.2055, 93.191],
+            "end": [63.572, 91.8245],
+            "width": 0.2,
+            "layer": "F.Cu"
+          },
+          {
+            "start": [62.2055, 94.391],
+            "end": [62.2055, 93.191],
+            "width": 0.2,
+            "layer": "F.Cu"
+          },
+          {
+            "start": [62.45, 94.75],
+            "end": [62.45, 94.7355],
+            "width": 0.2,
+            "layer": "F.Cu"
+          }
+        ],
+        "arcs": ["TODO: extract arc info. Most samples don't have arcs to help test :("],
+        "vias": ["TODO: are vias necessary for our routing interests?"]
+      },
+      "errors": []
+    },
+    "27": {
+      "name": "/LCD_SEG24",
+      "class": "TODO",
+      "pads": [
+        {
+          "f-91w:LCD-F-91W pad 27": {
+            "abs_pos": [67.082, 90.91]
+          }
+        },
+        {
+          "Housings_DFN_QFN:QFN-64-1EP_9x9mm_Pitch0.5mm pad 57": {
+            "abs_pos": [57.75, 94.05]
+          }
+        }
+      ],
+      "tracks": {
+        "segments": [
+          {
+            "start": [62.45, 98.25],
+            "end": [63.189988, 98.25],
+            "width": 0.2,
+            "layer": "F.Cu"
+          },
+          {
+            "start": [67.082, 91.8145],
+            "end": [67.082, 90.91],
+            "width": 0.2,
+            "layer": "F.Cu"
+          },
+          {
+            "start": [64.91751, 93.97899],
+            "end": [67.082, 91.8145],
+            "width": 0.2,
+            "layer": "F.Cu"
+          },
+          {
+            "start": [64.91751, 96.522478],
+            "end": [64.91751, 93.97899],
+            "width": 0.2,
+            "layer": "F.Cu"
+          },
+          {
+            "start": [63.189988, 98.25],
+            "end": [64.91751, 96.522478],
+            "width": 0.2,
+            "layer": "F.Cu"
+          }
+        ],
+        "arcs": ["TODO: extract arc info. Most samples don't have arcs to help test :("],
+        "vias": ["TODO: are vias necessary for our routing interests?"]
+      },
+      "errors": []
+    },
+    "28": {
+      "name": "/LCD_SEG23",
+      "class": "TODO",
+      "pads": [
+        {
+          "f-91w:LCD-F-91W pad 26": {
+            "abs_pos": [66.38, 90.91]
+          }
+        },
+        {
+          "Housings_DFN_QFN:QFN-64-1EP_9x9mm_Pitch0.5mm pad 58": {
+            "abs_pos": [57.25, 94.05]
+          }
+        }
+      ],
+      "tracks": {
+        "segments": [
+          {
+            "start": [62.45, 97.75],
+            "end": [63.191616, 97.75],
+            "width": 0.2,
+            "layer": "F.Cu"
+          },
+          {
+            "start": [66.38, 91.8165],
+            "end": [66.38, 90.91],
+            "width": 0.2,
+            "layer": "F.Cu"
+          },
+          {
+            "start": [64.565108, 93.631392],
+            "end": [66.38, 91.8165],
+            "width": 0.2,
+            "layer": "F.Cu"
+          },
+          {
+            "start": [64.565108, 96.376508],
+            "end": [64.565108, 93.631392],
+            "width": 0.2,
+            "layer": "F.Cu"
+          },
+          {
+            "start": [63.191616, 97.75],
+            "end": [64.565108, 96.376508],
+            "width": 0.2,
+            "layer": "F.Cu"
+          }
+        ],
+        "arcs": ["TODO: extract arc info. Most samples don't have arcs to help test :("],
+        "vias": ["TODO: are vias necessary for our routing interests?"]
+      },
+      "errors": []
+    },
+    "29": {
+      "name": "/LCD_SEG22",
+      "class": "TODO",
+      "pads": [
+        {
+          "f-91w:LCD-F-91W pad 25": {
+            "abs_pos": [65.678, 90.91]
+          }
+        },
+        {
+          "Housings_DFN_QFN:QFN-64-1EP_9x9mm_Pitch0.5mm pad 59": {
+            "abs_pos": [56.75, 94.05]
+          }
+        }
+      ],
+      "tracks": {
+        "segments": [
+          {
+            "start": [62.45, 97.25],
+            "end": [63.193244, 97.25],
+            "width": 0.2,
+            "layer": "F.Cu"
+          },
+          {
+            "start": [65.678, 91.8185],
+            "end": [65.678, 90.91],
+            "width": 0.2,
+            "layer": "F.Cu"
+          },
+          {
+            "start": [64.212706, 93.283794],
+            "end": [65.678, 91.8185],
+            "width": 0.2,
+            "layer": "F.Cu"
+          },
+          {
+            "start": [64.212706, 96.230538],
+            "end": [64.212706, 93.283794],
+            "width": 0.2,
+            "layer": "F.Cu"
+          },
+          {
+            "start": [63.193244, 97.25],
+            "end": [64.212706, 96.230538],
+            "width": 0.2,
+            "layer": "F.Cu"
+          }
+        ],
+        "arcs": ["TODO: extract arc info. Most samples don't have arcs to help test :("],
+        "vias": ["TODO: are vias necessary for our routing interests?"]
+      },
+      "errors": []
+    },
+    "30": {
+      "name": "/LCD_SEG21",
+      "class": "TODO",
+      "pads": [
+        {
+          "f-91w:LCD-F-91W pad 24": {
+            "abs_pos": [64.976, 90.91]
+          }
+        },
+        {
+          "Housings_DFN_QFN:QFN-64-1EP_9x9mm_Pitch0.5mm pad 60": {
+            "abs_pos": [56.25, 94.05]
+          }
+        }
+      ],
+      "tracks": {
+        "segments": [
+          {
+            "start": [62.45, 96.75],
+            "end": [63.194872, 96.75],
+            "width": 0.2,
+            "layer": "F.Cu"
+          },
+          {
+            "start": [64.976, 91.7705],
+            "end": [64.976, 90.91],
+            "width": 0.2,
+            "layer": "F.Cu"
+          },
+          {
+            "start": [63.860304, 92.886196],
+            "end": [64.976, 91.7705],
+            "width": 0.2,
+            "layer": "F.Cu"
+          },
+          {
+            "start": [63.860304, 96.084568],
+            "end": [63.860304, 92.886196],
+            "width": 0.2,
+            "layer": "F.Cu"
+          },
+          {
+            "start": [63.194872, 96.75],
+            "end": [63.860304, 96.084568],
+            "width": 0.2,
+            "layer": "F.Cu"
+          }
+        ],
+        "arcs": ["TODO: extract arc info. Most samples don't have arcs to help test :("],
+        "vias": ["TODO: are vias necessary for our routing interests?"]
+      },
+      "errors": []
+    },
+    "31": {
+      "name": "/LCD_SEG20",
+      "class": "TODO",
+      "pads": [
+        {
+          "f-91w:LCD-F-91W pad 23": {
+            "abs_pos": [64.274, 90.91]
+          }
+        },
+        {
+          "Housings_DFN_QFN:QFN-64-1EP_9x9mm_Pitch0.5mm pad 61": {
+            "abs_pos": [55.75, 94.05]
+          }
+        }
+      ],
+      "tracks": {
+        "segments": [
+          {
+            "start": [64.274, 91.8225],
+            "end": [64.274, 90.91],
+            "width": 0.2,
+            "layer": "F.Cu"
+          },
+          {
+            "start": [63.507902, 92.588598],
+            "end": [64.274, 91.8225],
+            "width": 0.2,
+            "layer": "F.Cu"
+          },
+          {
+            "start": [62.45, 96.25],
+            "end": [63.1965, 96.25],
+            "width": 0.2,
+            "layer": "F.Cu"
+          },
+          {
+            "start": [63.1965, 96.25],
+            "end": [63.507902, 95.938598],
+            "width": 0.2,
+            "layer": "F.Cu"
+          },
+          {
+            "start": [63.507902, 95.938598],
+            "end": [63.507902, 92.588598],
+            "width": 0.2,
+            "layer": "F.Cu"
+          }
+        ],
+        "arcs": ["TODO: extract arc info. Most samples don't have arcs to help test :("],
+        "vias": ["TODO: are vias necessary for our routing interests?"]
+      },
+      "errors": []
+    },
+    "32": {
+      "name": "Net-(Q1-Pad1)",
+      "class": "TODO",
+      "pads": [
+        {
+          "f-91w:SOT416 pad 1": {
+            "abs_pos": [54.255500000000005, 104.191]
+          }
+        },
+        {
+          "Resistors_SMD:R_0402 pad 2": {
+            "abs_pos": [56.9555, 104.391]
+          }
+        }
+      ],
+      "tracks": {
+        "segments": [
+          {
+            "start": [55.5555, 105.191],
+            "end": [56.1555, 105.191],
+            "width": 0.2,
+            "layer": "F.Cu"
+          },
+          {
+            "start": [56.1555, 105.191],
+            "end": [56.5055, 104.841],
+            "width": 0.2,
+            "layer": "F.Cu"
+          }
+        ],
+        "arcs": ["TODO: extract arc info. Most samples don't have arcs to help test :("],
+        "vias": ["TODO: are vias necessary for our routing interests?"]
+      },
+      "errors": []
+    },
+    "33": {
+      "name": "Net-(R2-Pad1)",
+      "class": "TODO",
+      "pads": [
+        {
+          "Housings_DFN_QFN:QFN-64-1EP_9x9mm_Pitch0.5mm pad 37": {
+            "abs_pos": [62.45, 100.25]
+          }
+        },
+        {
+          "Resistors_SMD:R_0402 pad 1": {
+            "abs_pos": [56.055499999999995, 104.391]
+          }
+        }
+      ],
+      "tracks": {
+        "segments": [
+          {
+            "start": [56.25, 102.95],
+            "end": [56.25, 103.6855],
+            "width": 0.2,
+            "layer": "F.Cu"
+          },
+          {
+            "start": [56.25, 103.6855],
+            "end": [56.5055, 103.941],
+            "width": 0.2,
+            "layer": "F.Cu"
+          }
+        ],
+        "arcs": ["TODO: extract arc info. Most samples don't have arcs to help test :("],
+        "vias": ["TODO: are vias necessary for our routing interests?"]
+      },
+      "errors": []
+    },
+    "34": {
+      "name": "/BUZ",
+      "class": "TODO",
+      "pads": [
+        {
+          "f-91w:SOT416 pad 3": {
+            "abs_pos": [55.5555, 104.691]
+          }
+        },
+        {
+          "Connect:1pin pad 1": {
+            "abs_pos": [51.3, 106.79]
+          }
+        }
+      ],
+      "tracks": {
+        "segments": [
+          {
+            "start": [53.657902, 104.593402],
+            "end": [53.7555, 104.691],
+            "width": 0.2,
+            "layer": "F.Cu"
+          },
+          {
+            "start": [53.7555, 104.691],
+            "end": [54.2555, 104.691],
+            "width": 0.2,
+            "layer": "F.Cu"
+          },
+          {
+            "start": [51.4555, 106.041],
+            "end": [52.903098, 104.593402],
+            "width": 0.2,
+            "layer": "F.Cu"
+          },
+          {
+            "start": [52.903098, 104.593402],
+            "end": [53.657902, 104.593402],
+            "width": 0.2,
+            "layer": "F.Cu"
+          },
+          {
+            "start": [52.9655, 108.321],
+            "end": [53.1655, 108.121],
+            "width": 0.2,
+            "layer": "B.Cu"
+          },
+          {
+            "start": [51.8355, 108.321],
+            "end": [52.9655, 108.321],
+            "width": 0.2,
+            "layer": "B.Cu"
+          },
+          {
+            "start": [51.3, 106.79],
+            "end": [51.3, 107.7855],
+            "width": 0.2,
+            "layer": "F.Cu"
+          },
+          {
+            "start": [51.3, 107.7855],
+            "end": [51.8355, 108.321],
+            "width": 0.2,
+            "layer": "F.Cu"
+          },
+          {
+            "start": [51.3, 106.79],
+            "end": [51.3, 106.1965],
+            "width": 0.2,
+            "layer": "F.Cu"
+          },
+          {
+            "start": [51.3, 106.1965],
+            "end": [51.4555, 106.041],
+            "width": 0.2,
+            "layer": "F.Cu"
+          },
+          {
+            "start": [51.4555, 106.041],
+            "end": [51.3, 106.79],
+            "width": 0.2,
+            "layer": "F.Cu"
+          },
+          {
+            "start": [54.1555, 104.841],
+            "end": [54.153098, 104.841],
+            "width": 0.2,
+            "layer": "F.Cu"
+          },
+          {
+            "start": [51.4555, 106.041],
+            "end": [51.3, 106.79],
+            "width": 0.2,
+            "layer": "F.Cu"
+          }
+        ],
+        "arcs": ["TODO: extract arc info. Most samples don't have arcs to help test :("],
+        "vias": ["TODO: are vias necessary for our routing interests?"]
+      },
+      "errors": []
+    },
+    "35": {
+      "name": "Net-(U1-Pad7)",
+      "class": "TODO",
+      "pads": [
+        {
+          "Housings_DFN_QFN:QFN-64-1EP_9x9mm_Pitch0.5mm pad 7": {
+            "abs_pos": [53.55, 97.75]
+          }
+        }
+      ],
+      "tracks": {
+        "segments": [],
+        "arcs": ["TODO: extract arc info. Most samples don't have arcs to help test :("],
+        "vias": ["TODO: are vias necessary for our routing interests?"]
+      },
+      "errors": []
+    },
+    "36": {
+      "name": "Net-(U1-Pad8)",
+      "class": "TODO",
+      "pads": [
+        {
+          "Housings_DFN_QFN:QFN-64-1EP_9x9mm_Pitch0.5mm pad 8": {
+            "abs_pos": [53.55, 98.25]
+          }
+        }
+      ],
+      "tracks": {
+        "segments": [],
+        "arcs": ["TODO: extract arc info. Most samples don't have arcs to help test :("],
+        "vias": ["TODO: are vias necessary for our routing interests?"]
+      },
+      "errors": []
+    },
+    "37": {
+      "name": "Net-(U1-Pad9)",
+      "class": "TODO",
+      "pads": [
+        {
+          "Housings_DFN_QFN:QFN-64-1EP_9x9mm_Pitch0.5mm pad 9": {
+            "abs_pos": [53.55, 98.75]
+          }
+        }
+      ],
+      "tracks": {
+        "segments": [],
+        "arcs": ["TODO: extract arc info. Most samples don't have arcs to help test :("],
+        "vias": ["TODO: are vias necessary for our routing interests?"]
+      },
+      "errors": []
+    },
+    "38": {
+      "name": "Net-(U1-Pad36)",
+      "class": "TODO",
+      "pads": [
+        {
+          "Housings_DFN_QFN:QFN-64-1EP_9x9mm_Pitch0.5mm pad 36": {
+            "abs_pos": [62.45, 100.75]
+          }
+        }
+      ],
+      "tracks": {
+        "segments": [],
+        "arcs": ["TODO: extract arc info. Most samples don't have arcs to help test :("],
+        "vias": ["TODO: are vias necessary for our routing interests?"]
+      },
+      "errors": []
+    },
+    "39": {
+      "name": "Net-(U1-Pad38)",
+      "class": "TODO",
+      "pads": [
+        {
+          "Housings_DFN_QFN:QFN-64-1EP_9x9mm_Pitch0.5mm pad 38": {
+            "abs_pos": [62.45, 99.75]
+          }
+        }
+      ],
+      "tracks": {
+        "segments": [],
+        "arcs": ["TODO: extract arc info. Most samples don't have arcs to help test :("],
+        "vias": ["TODO: are vias necessary for our routing interests?"]
+      },
+      "errors": []
+    },
+    "40": {
+      "name": "Net-(U1-Pad41)",
+      "class": "TODO",
+      "pads": [
+        {
+          "Housings_DFN_QFN:QFN-64-1EP_9x9mm_Pitch0.5mm pad 41": {
+            "abs_pos": [62.45, 98.25]
+          }
+        }
+      ],
+      "tracks": {
+        "segments": [],
+        "arcs": ["TODO: extract arc info. Most samples don't have arcs to help test :("],
+        "vias": ["TODO: are vias necessary for our routing interests?"]
+      },
+      "errors": []
+    },
+    "41": {
+      "name": "Net-(U1-Pad42)",
+      "class": "TODO",
+      "pads": [
+        {
+          "Housings_DFN_QFN:QFN-64-1EP_9x9mm_Pitch0.5mm pad 42": {
+            "abs_pos": [62.45, 97.75]
+          }
+        }
+      ],
+      "tracks": {
+        "segments": [],
+        "arcs": ["TODO: extract arc info. Most samples don't have arcs to help test :("],
+        "vias": ["TODO: are vias necessary for our routing interests?"]
+      },
+      "errors": []
+    },
+    "42": {
+      "name": "Net-(U1-Pad43)",
+      "class": "TODO",
+      "pads": [
+        {
+          "Housings_DFN_QFN:QFN-64-1EP_9x9mm_Pitch0.5mm pad 43": {
+            "abs_pos": [62.45, 97.25]
+          }
+        }
+      ],
+      "tracks": {
+        "segments": [],
+        "arcs": ["TODO: extract arc info. Most samples don't have arcs to help test :("],
+        "vias": ["TODO: are vias necessary for our routing interests?"]
+      },
+      "errors": []
+    },
+    "43": {
+      "name": "/IR",
+      "class": "TODO",
+      "pads": [
+        {
+          "Housings_DFN_QFN:QFN-64-1EP_9x9mm_Pitch0.5mm pad 24": {
+            "abs_pos": [57.75, 102.95]
+          }
+        },
+        {
+          "f-91w:TSOP57xxx pad 1": {
+            "abs_pos": [48.625, 102.30000000000001]
+          }
+        }
+      ],
+      "tracks": {
+        "segments": [
+          {
+            "start": [53.55, 98.25],
+            "end": [52.527017, 98.25],
+            "width": 0.2,
+            "layer": "F.Cu"
+          },
+          {
+            "start": [52.527017, 98.25],
+            "end": [52.027017, 98.75],
+            "width": 0.2,
+            "layer": "F.Cu"
+          },
+          {
+            "start": [52.027017, 98.75],
+            "end": [51.625, 98.75],
+            "width": 0.2,
+            "layer": "F.Cu"
+          }
+        ],
+        "arcs": ["TODO: extract arc info. Most samples don't have arcs to help test :("],
+        "vias": ["TODO: are vias necessary for our routing interests?"]
+      },
+      "errors": []
+    },
+    "44": {
+      "name": "Net-(U1-Pad35)",
+      "class": "TODO",
+      "pads": [
+        {
+          "Housings_DFN_QFN:QFN-64-1EP_9x9mm_Pitch0.5mm pad 35": {
+            "abs_pos": [62.45, 101.25]
+          }
+        }
+      ],
+      "tracks": {
+        "segments": [],
+        "arcs": ["TODO: extract arc info. Most samples don't have arcs to help test :("],
+        "vias": ["TODO: are vias necessary for our routing interests?"]
+      },
+      "errors": []
+    },
+    "45": {
+      "name": "Net-(P10-Pad1)",
+      "class": "TODO",
+      "pads": [
+        {
+          "Connect:1pin pad 1": {
+            "abs_pos": [46.5, 95.55]
+          }
+        },
+        {
+          "Resistors_SMD:R_0402 pad 1": {
+            "abs_pos": [49.3, 94.5]
+          }
+        }
+      ],
+      "tracks": {
+        "segments": [
+          {
+            "start": [48.549999, 93.767768],
+            "end": [48.779998, 93.997767],
+            "width": 0.2,
+            "layer": "F.Cu"
+          },
+          {
+            "start": [48.779998, 93.997767],
+            "end": [48.779998, 94.379998],
+            "width": 0.2,
+            "layer": "F.Cu"
+          },
+          {
+            "start": [48.779998, 94.379998],
+            "end": [48.9, 94.5],
+            "width": 0.2,
+            "layer": "F.Cu"
+          },
+          {
+            "start": [49.3, 94.5],
+            "end": [48.9, 94.5],
+            "width": 0.2,
+            "layer": "F.Cu"
+          },
+          {
+            "start": [46.5, 95.55],
+            "end": [47.354853, 95.55],
+            "width": 0.2,
+            "layer": "B.Cu"
+          },
+          {
+            "start": [47.354853, 95.55],
+            "end": [48.549999, 94.354854],
+            "width": 0.2,
+            "layer": "B.Cu"
+          },
+          {
+            "start": [48.549999, 94.354854],
+            "end": [48.549999, 93.767768],
+            "width": 0.2,
+            "layer": "B.Cu"
+          },
+          {
+            "start": [46.5, 95.5],
+            "end": [46.5, 96.420678],
+            "width": 0.2,
+            "layer": "F.Cu"
+          }
+        ],
+        "arcs": ["TODO: extract arc info. Most samples don't have arcs to help test :("],
+        "vias": ["TODO: are vias necessary for our routing interests?"]
+      },
+      "errors": []
+    },
+    "46": {
+      "name": "/LED_1",
+      "class": "TODO",
+      "pads": [
+        {
+          "Housings_DFN_QFN:QFN-64-1EP_9x9mm_Pitch0.5mm pad 44": {
+            "abs_pos": [62.45, 96.75]
+          }
+        },
+        {
+          "Connect:1pin pad 1": {
+            "abs_pos": [46.5, 98.6]
+          }
+        }
+      ],
+      "tracks": {
+        "segments": [
+          {
+            "start": [51.8555, 104.316897],
+            "end": [52.029603, 104.491],
+            "width": 0.2,
+            "layer": "F.Cu"
+          },
+          {
+            "start": [52.753099, 105.456153],
+            "end": [53.040347, 105.743401],
+            "width": 0.2,
+            "layer": "B.Cu"
+          },
+          {
+            "start": [52.436407, 104.491],
+            "end": [52.753099, 104.807692],
+            "width": 0.2,
+            "layer": "B.Cu"
+          },
+          {
+            "start": [52.753099, 104.807692],
+            "end": [52.753099, 105.456153],
+            "width": 0.2,
+            "layer": "B.Cu"
+          },
+          {
+            "start": [53.040347, 105.743401],
+            "end": [59.253099, 105.743401],
+            "width": 0.2,
+            "layer": "B.Cu"
+          },
+          {
+            "start": [59.253099, 105.743401],
+            "end": [59.9055, 105.091],
+            "width": 0.2,
+            "layer": "B.Cu"
+          },
+          {
+            "start": [59.75, 104.9355],
+            "end": [59.75, 102.95],
+            "width": 0.2,
+            "layer": "F.Cu"
+          },
+          {
+            "start": [59.75, 104.9355],
+            "end": [59.9055, 105.091],
+            "width": 0.2,
+            "layer": "F.Cu"
+          },
+          {
+            "start": [52.2305, 104.491],
+            "end": [52.436407, 104.491],
+            "width": 0.2,
+            "layer": "B.Cu"
+          },
+          {
+            "start": [52.029603, 104.491],
+            "end": [52.2305, 104.491],
+            "width": 0.2,
+            "layer": "F.Cu"
+          },
+          {
+            "start": [50.6055, 102.991],
+            "end": [50.6055, 103.066897],
+            "width": 0.2,
+            "layer": "F.Cu"
+          },
+          {
+            "start": [50.6055, 103.066897],
+            "end": [50.89759, 103.358987],
+            "width": 0.2,
+            "layer": "F.Cu"
+          },
+          {
+            "start": [51.832013, 104.29341],
+            "end": [51.8555, 104.316897],
+            "width": 0.2,
+            "layer": "F.Cu"
+          },
+          {
+            "start": [51.8555, 104.316897],
+            "end": [50.89759, 103.358987],
+            "width": 0.2,
+            "layer": "F.Cu"
+          },
+          {
+            "start": [47.4555, 99.291],
+            "end": [47.191, 99.291],
+            "width": 0.2,
+            "layer": "F.Cu"
+          },
+          {
+            "start": [46.5, 98.6],
+            "end": [47.191, 99.291],
+            "width": 0.2,
+            "layer": "F.Cu"
+          },
+          {
+            "start": [50.6055, 102.169073],
+            "end": [50.6055, 102.991],
+            "width": 0.2,
+            "layer": "B.Cu"
+          },
+          {
+            "start": [47.727427, 99.291],
+            "end": [50.6055, 102.169073],
+            "width": 0.2,
+            "layer": "B.Cu"
+          },
+          {
+            "start": [47.4555, 99.291],
+            "end": [47.727427, 99.291],
+            "width": 0.2,
+            "layer": "B.Cu"
+          },
+          {
+            "start": [46.6145, 98.6],
+            "end": [46.5, 98.6],
+            "width": 0.2,
+            "layer": "F.Cu"
+          }
+        ],
+        "arcs": ["TODO: extract arc info. Most samples don't have arcs to help test :("],
+        "vias": ["TODO: are vias necessary for our routing interests?"]
+      },
+      "errors": []
+    },
+    "47": {
+      "name": "Net-(P15-Pad1)",
+      "class": "TODO",
+      "pads": [
+        {
+          "Housings_DFN_QFN:QFN-64-1EP_9x9mm_Pitch0.5mm pad 46": {
+            "abs_pos": [62.45, 95.75]
+          }
+        },
+        {
+          "Connect:1pin pad 1": {
+            "abs_pos": [66.77, 104.94]
+          }
+        }
+      ],
+      "tracks": {
+        "segments": [
+          {
+            "start": [62.8055, 105.341],
+            "end": [63.6055, 105.341],
+            "width": 0.2,
+            "layer": "B.Cu"
+          },
+          {
+            "start": [63.6055, 105.341],
+            "end": [64.17809, 105.91359],
+            "width": 0.2,
+            "layer": "B.Cu"
+          },
+          {
+            "start": [64.17809, 105.91359],
+            "end": [65.35791, 105.91359],
+            "width": 0.2,
+            "layer": "B.Cu"
+          },
+          {
+            "start": [65.35791, 105.91359],
+            "end": [66.1305, 105.141],
+            "width": 0.2,
+            "layer": "B.Cu"
+          },
+          {
+            "start": [66.1305, 105.141],
+            "end": [66.1305, 104.291],
+            "width": 0.2,
+            "layer": "B.Cu"
+          },
+          {
+            "start": [66.1305, 104.291],
+            "end": [66.1555, 104.266],
+            "width": 0.2,
+            "layer": "B.Cu"
+          },
+          {
+            "start": [66.1555, 104.266],
+            "end": [66.77, 104.8805],
+            "width": 0.2,
+            "layer": "F.Cu"
+          },
+          {
+            "start": [66.77, 104.8805],
+            "end": [66.77, 104.94],
+            "width": 0.2,
+            "layer": "F.Cu"
+          },
+          {
+            "start": [66.77, 104.8555],
+            "end": [66.77, 104.94],
+            "width": 0.2,
+            "layer": "F.Cu"
+          },
+          {
+            "start": [62.4555, 105.341],
+            "end": [62.8055, 105.341],
+            "width": 0.2,
+            "layer": "F.Cu"
+          },
+          {
+            "start": [61.7555, 104.641],
+            "end": [62.4555, 105.341],
+            "width": 0.2,
+            "layer": "F.Cu"
+          },
+          {
+            "start": [60.75, 103.6355],
+            "end": [61.7555, 104.641],
+            "width": 0.2,
+            "layer": "F.Cu"
+          },
+          {
+            "start": [60.75, 102.95],
+            "end": [60.75, 103.6355],
+            "width": 0.2,
+            "layer": "F.Cu"
+          },
+          {
+            "start": [60.7555, 102.9555],
+            "end": [60.75, 102.95],
+            "width": 0.2,
+            "layer": "F.Cu"
+          },
+          {
+            "start": [66.77, 104.94],
+            "end": [66.7045, 104.94],
+            "width": 0.2,
+            "layer": "F.Cu"
+          },
+          {
+            "start": [66.6545, 104.94],
+            "end": [66.77, 104.94],
+            "width": 0.2,
+            "layer": "F.Cu"
+          },
+          {
+            "start": [66.77, 104.94],
+            "end": [67.06, 104.94],
+            "width": 0.2,
+            "layer": "F.Cu"
+          }
+        ],
+        "arcs": ["TODO: extract arc info. Most samples don't have arcs to help test :("],
+        "vias": ["TODO: are vias necessary for our routing interests?"]
+      },
+      "errors": []
+    },
+    "48": {
+      "name": "VCC",
+      "class": "TODO",
+      "pads": [
+        {
+          "Housings_DFN_QFN:QFN-64-1EP_9x9mm_Pitch0.5mm pad 18": {
+            "abs_pos": [54.75, 102.95]
+          }
+        },
+        {
+          "Housings_DFN_QFN:QFN-64-1EP_9x9mm_Pitch0.5mm pad 40": {
+            "abs_pos": [62.45, 98.75]
+          }
+        },
+        {
+          "Housings_DFN_QFN:QFN-64-1EP_9x9mm_Pitch0.5mm pad 49": {
+            "abs_pos": [61.75, 94.025]
+          }
+        },
+        {
+          "Housings_DFN_QFN:QFN-64-1EP_9x9mm_Pitch0.5mm pad 63": {
+            "abs_pos": [54.75, 94.05]
+          }
+        },
+        {
+          "Connect:1pin pad 1": {
+            "abs_pos": [56.38, 106.79]
+          }
+        },
+        {
+          "Connect:1pin pad 1": {
+            "abs_pos": [49.07, 104.89]
+          }
+        },
+        {
+          "Resistors_SMD:R_0402 pad 1": {
+            "abs_pos": [49.3, 93.25]
+          }
+        },
+        {
+          "Capacitors_SMD:C_0402 pad 1": {
+            "abs_pos": [57.505500000000005, 104.691]
+          }
+        }
+      ],
+      "tracks": {
+        "segments": [
+          {
+            "start": [49.9055, 103.941],
+            "end": [50.1555, 103.691],
+            "width": 0.3,
+            "layer": "B.Cu"
+          },
+          {
+            "start": [49.07, 104.7765],
+            "end": [49.9055, 103.941],
+            "width": 0.3,
+            "layer": "F.Cu"
+          },
+          {
+            "start": [49.6555, 103.691],
+            "end": [49.0555, 103.091],
+            "width": 0.3,
+            "layer": "B.Cu"
+          },
+          {
+            "start": [50.1555, 103.691],
+            "end": [49.6555, 103.691],
+            "width": 0.3,
+            "layer": "B.Cu"
+          },
+          {
+            "start": [51.4055, 103.691],
+            "end": [50.1555, 103.691],
+            "width": 0.3,
+            "layer": "B.Cu"
+          },
+          {
+            "start": [58.3055, 103.891],
+            "end": [58.3055, 104.541],
+            "width": 0.3,
+            "layer": "B.Cu"
+          },
+          {
+            "start": [58.3055, 104.541],
+            "end": [58.3555, 104.591],
+            "width": 0.3,
+            "layer": "B.Cu"
+          },
+          {
+            "start": [56.38, 106.79],
+            "end": [54.9045, 106.79],
+            "width": 0.3,
+            "layer": "F.Cu"
+          },
+          {
+            "start": [54.9045, 106.79],
+            "end": [53.3055, 105.191],
+            "width": 0.3,
+            "layer": "F.Cu"
+          },
+          {
+            "start": [53.630022, 93.791],
+            "end": [52.9445, 93.791],
+            "width": 0.3,
+            "layer": "F.Cu"
+          },
+          {
+            "start": [52.9445, 93.791],
+            "end": [52.8945, 93.841],
+            "width": 0.3,
+            "layer": "F.Cu"
+          },
+          {
+            "start": [52.2055, 103.691],
+            "end": [52.7055, 103.691],
+            "width": 0.3,
+            "layer": "B.Cu"
+          },
+          {
+            "start": [52.7055, 103.691],
+            "end": [53.550022, 102.846478],
+            "width": 0.3,
+            "layer": "B.Cu"
+          },
+          {
+            "start": [53.550022, 102.846478],
+            "end": [53.550022, 93.871],
+            "width": 0.3,
+            "layer": "B.Cu"
+          },
+          {
+            "start": [53.550022, 93.871],
+            "end": [53.630022, 93.791],
+            "width": 0.3,
+            "layer": "B.Cu"
+          },
+          {
+            "start": [62.9965, 95.25],
+            "end": [63.155492, 95.091008],
+            "width": 0.2,
+            "layer": "F.Cu"
+          },
+          {
+            "start": [63.155492, 95.091008],
+            "end": [63.155492, 94.290992],
+            "width": 0.2,
+            "layer": "F.Cu"
+          },
+          {
+            "start": [62.45, 95.25],
+            "end": [62.9965, 95.25],
+            "width": 0.2,
+            "layer": "F.Cu"
+          },
+          {
+            "start": [63.155492, 94.290992],
+            "end": [62.8555, 93.991],
+            "width": 0.2,
+            "layer": "F.Cu"
+          },
+          {
+            "start": [62.6555, 94.191],
+            "end": [62.8555, 93.991],
+            "width": 0.3,
+            "layer": "B.Cu"
+          },
+          {
+            "start": [62.6555, 100.441],
+            "end": [62.6555, 94.191],
+            "width": 0.3,
+            "layer": "B.Cu"
+          },
+          {
+            "start": [65.4055, 102.591],
+            "end": [67.0555, 102.591],
+            "width": 0.3,
+            "layer": "B.Cu"
+          },
+          {
+            "start": [63.8555, 104.141],
+            "end": [65.4055, 102.591],
+            "width": 0.3,
+            "layer": "B.Cu"
+          },
+          {
+            "start": [63.3055, 104.141],
+            "end": [63.8555, 104.141],
+            "width": 0.3,
+            "layer": "B.Cu"
+          },
+          {
+            "start": [62.45, 103.2855],
+            "end": [63.3055, 104.141],
+            "width": 0.3,
+            "layer": "B.Cu"
+          },
+          {
+            "start": [62.45, 102.8965],
+            "end": [62.45, 103.2855],
+            "width": 0.3,
+            "layer": "B.Cu"
+          },
+          {
+            "start": [52.8945, 93.841],
+            "end": [52.5, 94.2355],
+            "width": 0.3,
+            "layer": "F.Cu"
+          },
+          {
+            "start": [52.5, 94.25],
+            "end": [52.5, 94.2355],
+            "width": 0.3,
+            "layer": "F.Cu"
+          },
+          {
+            "start": [52.5, 94.2355],
+            "end": [51.5145, 93.25],
+            "width": 0.3,
+            "layer": "F.Cu"
+          },
+          {
+            "start": [51.5145, 93.25],
+            "end": [50.2, 93.25],
+            "width": 0.3,
+            "layer": "F.Cu"
+          },
+          {
+            "start": [52.5, 94.25],
+            "end": [52.5, 94.1965],
+            "width": 0.3,
+            "layer": "F.Cu"
+          },
+          {
+            "start": [56.38, 106.79],
+            "end": [55.9045, 106.79],
+            "width": 0.3,
+            "layer": "F.Cu"
+          },
+          {
+            "start": [53.3055, 105.141],
+            "end": [53.3055, 105.191],
+            "width": 0.3,
+            "layer": "F.Cu"
+          },
+          {
+            "start": [53.3055, 105.191],
+            "end": [53.3055, 104.791],
+            "width": 0.3,
+            "layer": "B.Cu"
+          },
+          {
+            "start": [53.3055, 104.791],
+            "end": [53.1055, 104.591],
+            "width": 0.3,
+            "layer": "B.Cu"
+          },
+          {
+            "start": [59.5555, 104.591],
+            "end": [58.3555, 104.591],
+            "width": 0.3,
+            "layer": "B.Cu"
+          },
+          {
+            "start": [58.3555, 104.591],
+            "end": [53.1055, 104.591],
+            "width": 0.3,
+            "layer": "B.Cu"
+          },
+          {
+            "start": [52.2055, 103.691],
+            "end": [51.4055, 103.691],
+            "width": 0.3,
+            "layer": "B.Cu"
+          },
+          {
+            "start": [61.8055, 102.341],
+            "end": [59.5555, 104.591],
+            "width": 0.3,
+            "layer": "B.Cu"
+          },
+          {
+            "start": [53.1055, 104.591],
+            "end": [52.2055, 103.691],
+            "width": 0.3,
+            "layer": "B.Cu"
+          },
+          {
+            "start": [49.07, 104.89],
+            "end": [49.07, 104.7765],
+            "width": 0.3,
+            "layer": "F.Cu"
+          },
+          {
+            "start": [57.75, 103.8355],
+            "end": [58.0555, 104.141],
+            "width": 0.3,
+            "layer": "F.Cu"
+          },
+          {
+            "start": [58.0555, 104.141],
+            "end": [58.6055, 104.691],
+            "width": 0.3,
+            "layer": "F.Cu"
+          },
+          {
+            "start": [58.3055, 103.891],
+            "end": [58.0555, 104.141],
+            "width": 0.3,
+            "layer": "F.Cu"
+          },
+          {
+            "start": [57.75, 102.95],
+            "end": [57.75, 103.8355],
+            "width": 0.3,
+            "layer": "F.Cu"
+          },
+          {
+            "start": [62.45, 102.8965],
+            "end": [61.8945, 102.341],
+            "width": 0.3,
+            "layer": "B.Cu"
+          },
+          {
+            "start": [61.8945, 102.341],
+            "end": [61.8055, 102.341],
+            "width": 0.3,
+            "layer": "B.Cu"
+          },
+          {
+            "start": [62.45, 102.25],
+            "end": [62.45, 102.8965],
+            "width": 0.3,
+            "layer": "F.Cu"
+          },
+          {
+            "start": [62.6555, 101.491],
+            "end": [61.8055, 102.341],
+            "width": 0.3,
+            "layer": "B.Cu"
+          },
+          {
+            "start": [62.6555, 100.441],
+            "end": [62.6555, 101.491],
+            "width": 0.3,
+            "layer": "B.Cu"
+          },
+          {
+            "start": [52.5, 94.25],
+            "end": [52.5, 95],
+            "width": 0.3,
+            "layer": "F.Cu"
+          },
+          {
+            "start": [52.5, 95],
+            "end": [52.75, 95.25],
+            "width": 0.3,
+            "layer": "F.Cu"
+          },
+          {
+            "start": [52.75, 95.25],
+            "end": [53.55, 95.25],
+            "width": 0.3,
+            "layer": "F.Cu"
+          }
+        ],
+        "arcs": ["TODO: extract arc info. Most samples don't have arcs to help test :("],
+        "vias": ["TODO: are vias necessary for our routing interests?"]
+      },
+      "errors": []
+    },
+    "49": {
+      "name": "Net-(C6-Pad1)",
+      "class": "TODO",
+      "pads": [
+        {
+          "Capacitors_SMD:C_0402 pad 1": {
+            "abs_pos": [68.7055, 95.091]
+          }
+        },
+        {
+          "f-91w:DFN-10-1EP_2x2mm_Pitch0.4mm pad 4": {
+            "abs_pos": [66.9055, 95.54100000000001]
+          }
+        }
+      ],
+      "tracks": {
+        "segments": [
+          {
+            "start": [68.1555, 95.991],
+            "end": [68.1555, 95.441],
+            "width": 0.2,
+            "layer": "F.Cu"
+          },
+          {
+            "start": [68.6055, 95.191],
+            "end": [69.2555, 94.541],
+            "width": 0.2,
+            "layer": "F.Cu"
+          },
+          {
+            "start": [68.4055, 95.191],
+            "end": [68.6055, 95.191],
+            "width": 0.2,
+            "layer": "F.Cu"
+          },
+          {
+            "start": [68.1555, 95.441],
+            "end": [68.4055, 95.191],
+            "width": 0.2,
+            "layer": "F.Cu"
+          }
+        ],
+        "arcs": ["TODO: extract arc info. Most samples don't have arcs to help test :("],
+        "vias": ["TODO: are vias necessary for our routing interests?"]
+      },
+      "errors": []
+    },
+    "50": {
+      "name": "Net-(C7-Pad1)",
+      "class": "TODO",
+      "pads": [
+        {
+          "Capacitors_SMD:C_0402 pad 1": {
+            "abs_pos": [68.7055, 96.941]
+          }
+        },
+        {
+          "f-91w:DFN-10-1EP_2x2mm_Pitch0.4mm pad 1": {
+            "abs_pos": [66.9055, 94.34100000000001]
+          }
+        }
+      ],
+      "tracks": {
+        "segments": [
+          {
+            "start": [69.2555, 97.491],
+            "end": [69.2555, 97.516],
+            "width": 0.2,
+            "layer": "F.Cu"
+          },
+          {
+            "start": [69.2555, 97.516],
+            "end": [67.9055, 98.866],
+            "width": 0.2,
+            "layer": "F.Cu"
+          },
+          {
+            "start": [67.9055, 98.866],
+            "end": [66.7555, 98.866],
+            "width": 0.2,
+            "layer": "F.Cu"
+          },
+          {
+            "start": [66.7555, 98.866],
+            "end": [66.4055, 98.516],
+            "width": 0.2,
+            "layer": "F.Cu"
+          },
+          {
+            "start": [66.4055, 98.516],
+            "end": [66.4055, 96.541],
+            "width": 0.2,
+            "layer": "F.Cu"
+          },
+          {
+            "start": [66.4055, 96.541],
+            "end": [66.9555, 95.991],
+            "width": 0.2,
+            "layer": "F.Cu"
+          }
+        ],
+        "arcs": ["TODO: extract arc info. Most samples don't have arcs to help test :("],
+        "vias": ["TODO: are vias necessary for our routing interests?"]
+      },
+      "errors": []
+    },
+    "51": {
+      "name": "/INT1",
+      "class": "TODO",
+      "pads": [
+        {
+          "Housings_DFN_QFN:QFN-64-1EP_9x9mm_Pitch0.5mm pad 55": {
+            "abs_pos": [58.75, 94.05]
+          }
+        },
+        {
+          "f-91w:DFN-10-1EP_2x2mm_Pitch0.4mm pad 9": {
+            "abs_pos": [68.60549999999999, 94.741]
+          }
+        }
+      ],
+      "tracks": {
+        "segments": [
+          {
+            "start": [65.1555, 94.591],
+            "end": [66.1555, 94.591],
+            "width": 0.2,
+            "layer": "B.Cu"
+          },
+          {
+            "start": [66.5055, 94.941],
+            "end": [66.1555, 94.591],
+            "width": 0.2,
+            "layer": "B.Cu"
+          },
+          {
+            "start": [67.1555, 94.991],
+            "end": [66.5555, 94.991],
+            "width": 0.2,
+            "layer": "F.Cu"
+          },
+          {
+            "start": [66.5555, 94.991],
+            "end": [66.5055, 94.941],
+            "width": 0.2,
+            "layer": "F.Cu"
+          },
+          {
+            "start": [67.3555, 94.791],
+            "end": [67.1555, 94.991],
+            "width": 0.2,
+            "layer": "F.Cu"
+          },
+          {
+            "start": [67.3555, 94.291],
+            "end": [67.3555, 94.791],
+            "width": 0.2,
+            "layer": "F.Cu"
+          },
+          {
+            "start": [64.6055, 95.141],
+            "end": [65.1555, 94.591],
+            "width": 0.2,
+            "layer": "B.Cu"
+          },
+          {
+            "start": [64.6055, 97.691],
+            "end": [64.6055, 95.141],
+            "width": 0.2,
+            "layer": "B.Cu"
+          },
+          {
+            "start": [64.6055, 98.741],
+            "end": [64.6055, 97.691],
+            "width": 0.2,
+            "layer": "F.Cu"
+          },
+          {
+            "start": [64.0965, 99.25],
+            "end": [64.6055, 98.741],
+            "width": 0.2,
+            "layer": "F.Cu"
+          },
+          {
+            "start": [62.45, 99.25],
+            "end": [64.0965, 99.25],
+            "width": 0.2,
+            "layer": "F.Cu"
+          }
+        ],
+        "arcs": ["TODO: extract arc info. Most samples don't have arcs to help test :("],
+        "vias": ["TODO: are vias necessary for our routing interests?"]
+      },
+      "errors": []
+    },
+    "52": {
+      "name": "/SCL",
+      "class": "TODO",
+      "pads": [
+        {
+          "Housings_DFN_QFN:QFN-64-1EP_9x9mm_Pitch0.5mm pad 48": {
+            "abs_pos": [62.475, 94.75]
+          }
+        },
+        {
+          "f-91w:DFN-10-1EP_2x2mm_Pitch0.4mm pad 7": {
+            "abs_pos": [68.60549999999999, 95.54100000000001]
+          }
+        }
+      ],
+      "tracks": {
+        "segments": [
+          {
+            "start": [67.7055, 95.141],
+            "end": [68.1555, 95.591],
+            "width": 0.2,
+            "layer": "B.Cu"
+          },
+          {
+            "start": [68.1555, 95.591],
+            "end": [68.1555, 97.941],
+            "width": 0.2,
+            "layer": "B.Cu"
+          },
+          {
+            "start": [68.1555, 97.941],
+            "end": [63.1555, 102.941],
+            "width": 0.2,
+            "layer": "B.Cu"
+          },
+          {
+            "start": [63.1555, 102.941],
+            "end": [63.1555, 103.141],
+            "width": 0.2,
+            "layer": "B.Cu"
+          },
+          {
+            "start": [63.1555, 103.141],
+            "end": [62.616, 103.6805],
+            "width": 0.2,
+            "layer": "F.Cu"
+          },
+          {
+            "start": [62.616, 103.6805],
+            "end": [61.995, 103.6805],
+            "width": 0.2,
+            "layer": "F.Cu"
+          },
+          {
+            "start": [61.995, 103.6805],
+            "end": [61.75, 103.4355],
+            "width": 0.2,
+            "layer": "F.Cu"
+          },
+          {
+            "start": [61.75, 103.4355],
+            "end": [61.75, 102.95],
+            "width": 0.2,
+            "layer": "F.Cu"
+          },
+          {
+            "start": [68.1555, 94.941],
+            "end": [67.9555, 95.141],
+            "width": 0.2,
+            "layer": "F.Cu"
+          },
+          {
+            "start": [67.9555, 95.141],
+            "end": [67.7055, 95.141],
+            "width": 0.2,
+            "layer": "F.Cu"
+          },
+          {
+            "start": [68.1555, 94.941],
+            "end": [68.1555, 94.291],
+            "width": 0.2,
+            "layer": "F.Cu"
+          }
+        ],
+        "arcs": ["TODO: extract arc info. Most samples don't have arcs to help test :("],
+        "vias": ["TODO: are vias necessary for our routing interests?"]
+      },
+      "errors": []
+    },
+    "53": {
+      "name": "/SDA",
+      "class": "TODO",
+      "pads": [
+        {
+          "Housings_DFN_QFN:QFN-64-1EP_9x9mm_Pitch0.5mm pad 47": {
+            "abs_pos": [62.45, 95.25]
+          }
+        },
+        {
+          "f-91w:DFN-10-1EP_2x2mm_Pitch0.4mm pad 6": {
+            "abs_pos": [68.60549999999999, 95.941]
+          }
+        }
+      ],
+      "tracks": {
+        "segments": [
+          {
+            "start": [68.6555, 93.791],
+            "end": [68.5555, 93.891],
+            "width": 0.2,
+            "layer": "F.Cu"
+          },
+          {
+            "start": [68.5555, 93.891],
+            "end": [68.5555, 94.291],
+            "width": 0.2,
+            "layer": "F.Cu"
+          },
+          {
+            "start": [69.1055, 93.791],
+            "end": [68.6555, 93.791],
+            "width": 0.2,
+            "layer": "F.Cu"
+          },
+          {
+            "start": [69.0055, 93.891],
+            "end": [69.1055, 93.791],
+            "width": 0.2,
+            "layer": "B.Cu"
+          },
+          {
+            "start": [69.0055, 97.641],
+            "end": [69.0055, 93.891],
+            "width": 0.2,
+            "layer": "B.Cu"
+          },
+          {
+            "start": [69.0055, 97.641],
+            "end": [63.6555, 102.991],
+            "width": 0.2,
+            "layer": "B.Cu"
+          },
+          {
+            "start": [63.6555, 103.541],
+            "end": [63.6055, 103.591],
+            "width": 0.2,
+            "layer": "B.Cu"
+          },
+          {
+            "start": [63.6555, 102.991],
+            "end": [63.6555, 103.541],
+            "width": 0.2,
+            "layer": "B.Cu"
+          },
+          {
+            "start": [63.1055, 104.091],
+            "end": [63.6055, 103.591],
+            "width": 0.2,
+            "layer": "F.Cu"
+          },
+          {
+            "start": [63.6555, 103.541],
+            "end": [63.6055, 103.591],
+            "width": 0.2,
+            "layer": "F.Cu"
+          },
+          {
+            "start": [61.8055, 104.091],
+            "end": [63.1055, 104.091],
+            "width": 0.2,
+            "layer": "F.Cu"
+          },
+          {
+            "start": [61.25, 103.5355],
+            "end": [61.8055, 104.091],
+            "width": 0.2,
+            "layer": "F.Cu"
+          },
+          {
+            "start": [61.25, 102.95],
+            "end": [61.25, 103.5355],
+            "width": 0.2,
+            "layer": "F.Cu"
+          },
+          {
+            "start": [68.5555, 94.291],
+            "end": [68.5555, 94.091],
+            "width": 0.2,
+            "layer": "F.Cu"
+          }
+        ],
+        "arcs": ["TODO: extract arc info. Most samples don't have arcs to help test :("],
+        "vias": ["TODO: are vias necessary for our routing interests?"]
+      },
+      "errors": []
+    },
+    "54": {
+      "name": "/Q-1",
+      "class": "TODO",
+      "pads": [
+        {
+          "Capacitors_SMD:C_0402 pad 1": {
+            "abs_pos": [63.4555, 102.766]
+          }
+        },
+        {
+          "Housings_DFN_QFN:QFN-64-1EP_9x9mm_Pitch0.5mm pad 51": {
+            "abs_pos": [60.75, 94.05]
+          }
+        },
+        {
+          "Connect:1pin pad 1": {
+            "abs_pos": [64.5, 106.541]
+          }
+        }
+      ],
+      "tracks": {
+        "segments": [
+          {
+            "start": [63.5555, 104.391],
+            "end": [64.146922, 103.799578],
+            "width": 0.2,
+            "layer": "F.Cu"
+          },
+          {
+            "start": [64.146922, 103.799578],
+            "end": [64.146922, 103.402396],
+            "width": 0.2,
+            "layer": "F.Cu"
+          },
+          {
+            "start": [64.146922, 103.402396],
+            "end": [64.394409, 103.154909],
+            "width": 0.2,
+            "layer": "F.Cu"
+          },
+          {
+            "start": [62.45, 101.25],
+            "end": [63.416118, 101.25],
+            "width": 0.2,
+            "layer": "F.Cu"
+          },
+          {
+            "start": [63.416118, 101.25],
+            "end": [64.394409, 102.228291],
+            "width": 0.2,
+            "layer": "F.Cu"
+          },
+          {
+            "start": [64.394409, 102.228291],
+            "end": [64.394409, 103.154909],
+            "width": 0.2,
+            "layer": "F.Cu"
+          },
+          {
+            "start": [64.5, 106.541],
+            "end": [64.441, 106.541],
+            "width": 0.2,
+            "layer": "F.Cu"
+          },
+          {
+            "start": [64.441, 106.541],
+            "end": [63.5555, 105.6555],
+            "width": 0.2,
+            "layer": "F.Cu"
+          },
+          {
+            "start": [64.444409, 103.279909],
+            "end": [64.466591, 103.279909],
+            "width": 0.2,
+            "layer": "F.Cu"
+          },
+          {
+            "start": [63.5555, 104.391],
+            "end": [63.5555, 105.6555],
+            "width": 0.2,
+            "layer": "F.Cu"
+          }
+        ],
+        "arcs": ["TODO: extract arc info. Most samples don't have arcs to help test :("],
+        "vias": ["TODO: are vias necessary for our routing interests?"]
+      },
+      "errors": []
+    },
+    "55": {
+      "name": "/Q-2",
+      "class": "TODO",
+      "pads": [
+        {
+          "Housings_DFN_QFN:QFN-64-1EP_9x9mm_Pitch0.5mm pad 52": {
+            "abs_pos": [60.25, 94.05]
+          }
+        },
+        {
+          "Connect:1pin pad 1": {
+            "abs_pos": [64.5, 107.54]
+          }
+        },
+        {
+          "Capacitors_SMD:C_0402 pad 1": {
+            "abs_pos": [63.95, 101.0]
+          }
+        }
+      ],
+      "tracks": {
+        "segments": [
+          {
+            "start": [64.5, 107.54],
+            "end": [65.1065, 107.54],
+            "width": 0.2,
+            "layer": "F.Cu"
+          },
+          {
+            "start": [65.1065, 107.54],
+            "end": [65.5555, 107.091],
+            "width": 0.2,
+            "layer": "F.Cu"
+          },
+          {
+            "start": [65.5555, 107.091],
+            "end": [65.5555, 102.891],
+            "width": 0.2,
+            "layer": "F.Cu"
+          },
+          {
+            "start": [65.5555, 102.891],
+            "end": [65.2055, 102.541],
+            "width": 0.2,
+            "layer": "F.Cu"
+          },
+          {
+            "start": [65.2055, 102.541],
+            "end": [64.4555, 101.791],
+            "width": 0.2,
+            "layer": "F.Cu"
+          },
+          {
+            "start": [64.486818, 101.791],
+            "end": [64.4555, 101.791],
+            "width": 0.2,
+            "layer": "F.Cu"
+          },
+          {
+            "start": [64.888909, 101.388909],
+            "end": [64.486818, 101.791],
+            "width": 0.2,
+            "layer": "F.Cu"
+          },
+          {
+            "start": [63.4145, 100.75],
+            "end": [64.4555, 101.791],
+            "width": 0.2,
+            "layer": "F.Cu"
+          },
+          {
+            "start": [62.45, 100.75],
+            "end": [63.4145, 100.75],
+            "width": 0.2,
+            "layer": "F.Cu"
+          },
+          {
+            "start": [65.0065, 107.54],
+            "end": [64.5, 107.54],
+            "width": 0.2,
+            "layer": "F.Cu"
+          }
+        ],
+        "arcs": ["TODO: extract arc info. Most samples don't have arcs to help test :("],
+        "vias": ["TODO: are vias necessary for our routing interests?"]
+      },
+      "errors": []
+    },
+    "56": {
+      "name": "/MAG_PWR",
+      "class": "TODO",
+      "pads": [
+        {
+          "Capacitors_SMD:C_0402 pad 1": {
+            "abs_pos": [67.18050000000001, 96.891]
+          }
+        },
+        {
+          "Housings_DFN_QFN:QFN-64-1EP_9x9mm_Pitch0.5mm pad 54": {
+            "abs_pos": [59.25, 94.05]
+          }
+        },
+        {
+          "Capacitors_SMD:C_0402 pad 2": {
+            "abs_pos": [68.0805, 93.266]
+          }
+        },
+        {
+          "f-91w:DFN-10-1EP_2x2mm_Pitch0.4mm pad 2": {
+            "abs_pos": [66.9055, 94.741]
+          }
+        },
+        {
+          "f-91w:DFN-10-1EP_2x2mm_Pitch0.4mm pad 8": {
+            "abs_pos": [68.60549999999999, 95.141]
+          }
+        }
+      ],
+      "tracks": {
+        "segments": [
+          {
+            "start": [67.6805, 92.691],
+            "end": [68.0805, 93.091],
+            "width": 0.2,
+            "layer": "F.Cu"
+          },
+          {
+            "start": [68.0805, 93.091],
+            "end": [68.0805, 93.266],
+            "width": 0.2,
+            "layer": "F.Cu"
+          },
+          {
+            "start": [67.1055, 93.166],
+            "end": [67.5805, 92.691],
+            "width": 0.2,
+            "layer": "B.Cu"
+          },
+          {
+            "start": [67.5805, 92.691],
+            "end": [67.6805, 92.691],
+            "width": 0.2,
+            "layer": "B.Cu"
+          },
+          {
+            "start": [67.1055, 93.691],
+            "end": [67.1055, 93.166],
+            "width": 0.2,
+            "layer": "B.Cu"
+          },
+          {
+            "start": [67.7555, 94.291],
+            "end": [67.7555, 93.591],
+            "width": 0.2,
+            "layer": "F.Cu"
+          },
+          {
+            "start": [67.7555, 93.591],
+            "end": [68.0805, 93.266],
+            "width": 0.2,
+            "layer": "F.Cu"
+          },
+          {
+            "start": [67.5305, 97.591],
+            "end": [65.9555, 97.591],
+            "width": 0.2,
+            "layer": "B.Cu"
+          },
+          {
+            "start": [65.9555, 97.591],
+            "end": [65.9055, 97.641],
+            "width": 0.2,
+            "layer": "B.Cu"
+          },
+          {
+            "start": [65.9055, 97.641],
+            "end": [66.7305, 96.816],
+            "width": 0.2,
+            "layer": "B.Cu"
+          },
+          {
+            "start": [66.7305, 96.816],
+            "end": [67.1055, 96.441],
+            "width": 0.2,
+            "layer": "B.Cu"
+          },
+          {
+            "start": [67.1055, 96.441],
+            "end": [67.1055, 93.691],
+            "width": 0.2,
+            "layer": "B.Cu"
+          },
+          {
+            "start": [67.1805, 97.241],
+            "end": [67.5305, 97.591],
+            "width": 0.2,
+            "layer": "F.Cu"
+          },
+          {
+            "start": [67.1805, 96.891],
+            "end": [67.1805, 97.241],
+            "width": 0.2,
+            "layer": "F.Cu"
+          },
+          {
+            "start": [67.3555, 95.991],
+            "end": [67.3555, 96.716],
+            "width": 0.2,
+            "layer": "F.Cu"
+          },
+          {
+            "start": [67.3555, 96.716],
+            "end": [67.1805, 96.891],
+            "width": 0.2,
+            "layer": "F.Cu"
+          },
+          {
+            "start": [64.2965, 99.75],
+            "end": [65.9055, 98.141],
+            "width": 0.2,
+            "layer": "F.Cu"
+          },
+          {
+            "start": [65.9055, 98.141],
+            "end": [65.9055, 97.641],
+            "width": 0.2,
+            "layer": "F.Cu"
+          },
+          {
+            "start": [62.45, 99.75],
+            "end": [64.2965, 99.75],
+            "width": 0.2,
+            "layer": "F.Cu"
+          }
+        ],
+        "arcs": ["TODO: extract arc info. Most samples don't have arcs to help test :("],
+        "vias": ["TODO: are vias necessary for our routing interests?"]
+      },
+      "errors": []
+    },
+    "57": {
+      "name": "/B_LIGHT",
+      "class": "TODO",
+      "pads": [
+        {
+          "Housings_DFN_QFN:QFN-64-1EP_9x9mm_Pitch0.5mm pad 21": {
+            "abs_pos": [56.25, 102.95]
+          }
+        },
+        {
+          "Connect:1pin pad 1": {
+            "abs_pos": [45.6, 92.3]
+          }
+        }
+      ],
+      "tracks": {
+        "segments": [
+          {
+            "start": [45.6, 92.3],
+            "end": [47.317599, 94.017599],
+            "width": 0.2,
+            "layer": "F.Cu"
+          },
+          {
+            "start": [47.317599, 94.017599],
+            "end": [47.317599, 96.608812],
+            "width": 0.2,
+            "layer": "F.Cu"
+          },
+          {
+            "start": [47.317599, 96.608812],
+            "end": [48.356376, 97.647589],
+            "width": 0.2,
+            "layer": "F.Cu"
+          },
+          {
+            "start": [48.356376, 97.647589],
+            "end": [50.621181, 97.647589],
+            "width": 0.2,
+            "layer": "F.Cu"
+          },
+          {
+            "start": [50.621181, 97.647589],
+            "end": [51.51877, 96.75],
+            "width": 0.2,
+            "layer": "F.Cu"
+          },
+          {
+            "start": [51.51877, 96.75],
+            "end": [53.55, 96.75],
+            "width": 0.2,
+            "layer": "F.Cu"
+          }
+        ],
+        "arcs": ["TODO: extract arc info. Most samples don't have arcs to help test :("],
+        "vias": ["TODO: are vias necessary for our routing interests?"]
+      },
+      "errors": []
+    },
+    "58": {
+      "name": "/B_MODE",
+      "class": "TODO",
+      "pads": [
+        {
+          "Housings_DFN_QFN:QFN-64-1EP_9x9mm_Pitch0.5mm pad 23": {
+            "abs_pos": [57.25, 102.95]
+          }
+        },
+        {
+          "Connect:1pin pad 1": {
+            "abs_pos": [45.6, 101.9]
+          }
+        }
+      ],
+      "tracks": {
+        "segments": [
+          {
+            "start": [53.55, 97.75],
+            "end": [51.515533, 97.75],
+            "width": 0.2,
+            "layer": "F.Cu"
+          },
+          {
+            "start": [51.515533, 97.75],
+            "end": [47.365533, 101.9],
+            "width": 0.2,
+            "layer": "F.Cu"
+          },
+          {
+            "start": [47.365533, 101.9],
+            "end": [45.6, 101.9],
+            "width": 0.2,
+            "layer": "F.Cu"
+          },
+          {
+            "start": [46.3, 101.2],
+            "end": [45.6, 101.9],
+            "width": 0.2,
+            "layer": "F.Cu"
+          },
+          {
+            "start": [45.7, 101.9],
+            "end": [46.85, 100.75],
+            "width": 0.2,
+            "layer": "F.Cu"
+          }
+        ],
+        "arcs": ["TODO: extract arc info. Most samples don't have arcs to help test :("],
+        "vias": ["TODO: are vias necessary for our routing interests?"]
+      },
+      "errors": []
+    },
+    "59": {
+      "name": "/B_ALARM",
+      "class": "TODO",
+      "pads": [
+        {
+          "Housings_DFN_QFN:QFN-64-1EP_9x9mm_Pitch0.5mm pad 45": {
+            "abs_pos": [62.45, 96.25]
+          }
+        },
+        {
+          "Connect:1pin pad 1": {
+            "abs_pos": [70.2, 102.1]
+          }
+        }
+      ],
+      "tracks": {
+        "segments": [
+          {
+            "start": [70.2, 102.1],
+            "end": [66.034, 106.266],
+            "width": 0.2,
+            "layer": "B.Cu"
+          },
+          {
+            "start": [66.034, 106.266],
+            "end": [64.032118, 106.266],
+            "width": 0.2,
+            "layer": "B.Cu"
+          },
+          {
+            "start": [64.032118, 106.266],
+            "end": [63.631816, 105.865698],
+            "width": 0.2,
+            "layer": "B.Cu"
+          },
+          {
+            "start": [63.631816, 105.865698],
+            "end": [63.121298, 105.865698],
+            "width": 0.2,
+            "layer": "B.Cu"
+          },
+          {
+            "start": [63.121298, 105.865698],
+            "end": [62.380198, 105.865698],
+            "width": 0.2,
+            "layer": "F.Cu"
+          },
+          {
+            "start": [62.380198, 105.865698],
+            "end": [60.25, 103.7355],
+            "width": 0.2,
+            "layer": "F.Cu"
+          },
+          {
+            "start": [60.25, 103.7355],
+            "end": [60.25, 102.95],
+            "width": 0.2,
+            "layer": "F.Cu"
+          },
+          {
+            "start": [63.148099, 105.823401],
+            "end": [63.121298, 105.850202],
+            "width": 0.2,
+            "layer": "F.Cu"
+          },
+          {
+            "start": [63.121298, 105.850202],
+            "end": [63.121298, 105.865698],
+            "width": 0.2,
+            "layer": "F.Cu"
+          }
+        ],
+        "arcs": ["TODO: extract arc info. Most samples don't have arcs to help test :("],
+        "vias": ["TODO: are vias necessary for our routing interests?"]
+      },
+      "errors": []
+    },
+    "60": {
+      "name": "/LED_2",
+      "class": "TODO",
+      "pads": [
+        {
+          "Housings_DFN_QFN:QFN-64-1EP_9x9mm_Pitch0.5mm pad 22": {
+            "abs_pos": [56.75, 102.95]
+          }
+        },
+        {
+          "Resistors_SMD:R_0402 pad 2": {
+            "abs_pos": [50.2, 94.5]
+          }
+        }
+      ],
+      "tracks": {
+        "segments": [
+          {
+            "start": [50.365321, 98.13],
+            "end": [50.37, 98.13],
+            "width": 0.2,
+            "layer": "B.Cu"
+          },
+          {
+            "start": [50.37, 98.13],
+            "end": [50.495321, 98.004679],
+            "width": 0.2,
+            "layer": "B.Cu"
+          },
+          {
+            "start": [50.495321, 98.004679],
+            "end": [50.495321, 97.680085],
+            "width": 0.2,
+            "layer": "B.Cu"
+          },
+          {
+            "start": [50.495321, 97.680085],
+            "end": [51.033152, 97.142255],
+            "width": 0.2,
+            "layer": "B.Cu"
+          },
+          {
+            "start": [51.033152, 97.142255],
+            "end": [51.033152, 94.765562],
+            "width": 0.2,
+            "layer": "B.Cu"
+          },
+          {
+            "start": [51.033152, 94.765562],
+            "end": [50.76759, 94.5],
+            "width": 0.2,
+            "layer": "B.Cu"
+          },
+          {
+            "start": [50.365321, 98.13],
+            "end": [50.637151, 98.13],
+            "width": 0.2,
+            "layer": "F.Cu"
+          },
+          {
+            "start": [50.2, 94.5],
+            "end": [50.76759, 94.5],
+            "width": 0.2,
+            "layer": "F.Cu"
+          },
+          {
+            "start": [50.637151, 98.13],
+            "end": [51.517151, 97.25],
+            "width": 0.2,
+            "layer": "F.Cu"
+          },
+          {
+            "start": [51.517151, 97.25],
+            "end": [51.75, 97.25],
+            "width": 0.2,
+            "layer": "F.Cu"
+          },
+          {
+            "start": [51.75, 97.25],
+            "end": [53.55, 97.25],
+            "width": 0.2,
+            "layer": "F.Cu"
+          }
+        ],
+        "arcs": ["TODO: extract arc info. Most samples don't have arcs to help test :("],
+        "vias": ["TODO: are vias necessary for our routing interests?"]
+      },
+      "errors": []
+    },
+    "61": {
+      "name": "/IR_PWR",
+      "class": "TODO",
+      "pads": [
+        {
+          "Housings_DFN_QFN:QFN-64-1EP_9x9mm_Pitch0.5mm pad 34": {
+            "abs_pos": [62.45, 101.75]
+          }
+        },
+        {
+          "f-91w:TSOP57xxx pad 5": {
+            "abs_pos": [51.625, 102.30000000000001]
+          }
+        }
+      ],
+      "tracks": {
+        "segments": [
+          {
+            "start": [51.883039, 103.132099],
+            "end": [51.8555, 103.10456],
+            "width": 0.2,
+            "layer": "B.Cu"
+          },
+          {
+            "start": [51.8555, 103.10456],
+            "end": [51.8555, 102.920701],
+            "width": 0.2,
+            "layer": "B.Cu"
+          },
+          {
+            "start": [51.8555, 102.920701],
+            "end": [47.625799, 98.691],
+            "width": 0.2,
+            "layer": "B.Cu"
+          },
+          {
+            "start": [47.625799, 98.691],
+            "end": [47.6055, 98.691],
+            "width": 0.2,
+            "layer": "B.Cu"
+          },
+          {
+            "start": [52.9555, 103.441],
+            "end": [52.19194, 103.441],
+            "width": 0.2,
+            "layer": "F.Cu"
+          },
+          {
+            "start": [52.19194, 103.441],
+            "end": [51.883039, 103.132099],
+            "width": 0.2,
+            "layer": "F.Cu"
+          },
+          {
+            "start": [53.6555, 103.341],
+            "end": [54.0555, 103.741],
+            "width": 0.2,
+            "layer": "F.Cu"
+          },
+          {
+            "start": [54.0555, 103.741],
+            "end": [54.5555, 103.741],
+            "width": 0.2,
+            "layer": "F.Cu"
+          },
+          {
+            "start": [53.0555, 103.341],
+            "end": [53.6555, 103.341],
+            "width": 0.2,
+            "layer": "F.Cu"
+          },
+          {
+            "start": [52.9555, 103.441],
+            "end": [53.0555, 103.341],
+            "width": 0.2,
+            "layer": "F.Cu"
+          },
+          {
+            "start": [54.75, 103.5465],
+            "end": [54.5555, 103.741],
+            "width": 0.2,
+            "layer": "F.Cu"
+          },
+          {
+            "start": [54.75, 103.5465],
+            "end": [54.75, 102.95],
+            "width": 0.2,
+            "layer": "F.Cu"
+          },
+          {
+            "start": [47.625799, 98.691],
+            "end": [47.6055, 98.691],
+            "width": 0.2,
+            "layer": "B.Cu"
+          },
+          {
+            "start": [48.625, 98.75],
+            "end": [47.6645, 98.75],
+            "width": 0.2,
+            "layer": "F.Cu"
+          },
+          {
+            "start": [47.6645, 98.75],
+            "end": [47.6055, 98.691],
+            "width": 0.2,
+            "layer": "F.Cu"
+          }
+        ],
+        "arcs": ["TODO: extract arc info. Most samples don't have arcs to help test :("],
+        "vias": ["TODO: are vias necessary for our routing interests?"]
+      },
+      "errors": []
+    }
+  },
+  "errors": [
+    {
+      "Connect:1pin at [64.555, 104.886]": "pad \"\" np_thru_hole circle at [0, 0] has error 633: key \"net\" not found"
+    },
+    {
+      "Connect:1pin at [55.65, 108.37]": "pad \"\" np_thru_hole circle at [0, 0] has error 706: key \"net\" not found"
+    },
+    {
+      "Connect:1pin at [50.754, 104.846]": "pad \"\" np_thru_hole circle at [0, 0] has error 734: key \"net\" not found"
+    },
+    {
+      "Connect:1pin at [50.01, 95.93]": "pad \"\" np_thru_hole circle at [0, 0] has error 762: key \"net\" not found"
+    },
+    {
+      "Connect:1pin at [51.448, 87.25]": "pad \"\" np_thru_hole circle at [0, 0] has error 836: key \"net\" not found"
+    },
+    {
+      "Connect:1pin at [64.422, 87.319]": "pad \"\" np_thru_hole circle at [0, 0] has error 894: key \"net\" not found"
+    },
+    {
+      "Connect:1pin at [65.782, 95.646]": "pad \"\" np_thru_hole circle at [0, 0] has error 907: key \"net\" not found"
+    },
+    {
+      "f-91w:DFN-10-1EP_2x2mm_Pitch0.4mm at [67.7555, 95.141, 90]": "pad 3 smd rect at [-0.85, 0] has error 1189: key \"net\" not found"
+    }
+  ]
+}

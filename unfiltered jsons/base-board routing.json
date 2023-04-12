@@ -1,0 +1,343 @@
+{
+  "board_settings": {},
+  "net classes": {},
+  "net routes": {
+    "0": {
+      "name": "",
+      "class": "TODO",
+      "pads": [],
+      "tracks": {
+        "segments": [],
+        "arcs": ["TODO: extract arc info. Most samples don't have arcs to help test :("],
+        "vias": ["TODO: are vias necessary for our routing interests?"]
+      },
+      "errors": []
+    },
+    "1": {
+      "name": "+",
+      "class": "TODO",
+      "pads": [
+        {
+          "KiCad/kicad-footprints/Diode_SMD.pretty:D_SOD-123 pad 1": {
+            "abs_pos": [164.286, 116.959]
+          }
+        },
+        {
+          "KiCad/kicad-footprints/Diode_SMD.pretty:D_SOD-123 pad 1": {
+            "abs_pos": [164.286, 119.79]
+          }
+        },
+        {
+          "KiCad/kicad-footprints/Diode_SMD.pretty:D_SOD-123 pad 1": {
+            "abs_pos": [164.286, 114.128]
+          }
+        }
+      ],
+      "tracks": {
+        "segments": [
+          {
+            "start": [167.586, 118.69],
+            "end": [167.575, 118.679],
+            "width": 0.5,
+            "layer": "F.Cu"
+          },
+          {
+            "start": [167.586, 119.79],
+            "end": [167.586, 118.69],
+            "width": 0.5,
+            "layer": "F.Cu"
+          },
+          {
+            "start": [167.586, 119.79],
+            "end": [167.586, 114.256],
+            "width": 0.5,
+            "layer": "F.Cu"
+          },
+          {
+            "start": [167.586, 114.256],
+            "end": [167.563, 114.233],
+            "width": 0.5,
+            "layer": "F.Cu"
+          },
+          {
+            "start": [167.563, 114.233],
+            "end": [167.563, 114.167],
+            "width": 0.5,
+            "layer": "F.Cu"
+          },
+          {
+            "start": [167.586, 114.128],
+            "end": [167.586, 113.028],
+            "width": 0.5,
+            "layer": "F.Cu"
+          },
+          {
+            "start": [165.704, 112.295],
+            "end": [162.257, 108.848],
+            "width": 0.5,
+            "layer": "F.Cu"
+          },
+          {
+            "start": [166.853, 112.295],
+            "end": [165.704, 112.295],
+            "width": 0.5,
+            "layer": "F.Cu"
+          },
+          {
+            "start": [167.586, 113.028],
+            "end": [166.853, 112.295],
+            "width": 0.5,
+            "layer": "F.Cu"
+          }
+        ],
+        "arcs": ["TODO: extract arc info. Most samples don't have arcs to help test :("],
+        "vias": ["TODO: are vias necessary for our routing interests?"]
+      },
+      "errors": []
+    },
+    "2": {
+      "name": "-",
+      "class": "TODO",
+      "pads": [
+        {
+          "KiCad/kicad-footprints/Connector_PinHeader_1.27mm.pretty:PinHeader_1x02_P1.27mm_Vertical_SMD_Pin1Right pad 2": {
+            "abs_pos": [158.171, 119.0]
+          }
+        },
+        {
+          "mcous/kicad-lib/footprints/connect-sm.pretty:CUI-PJ-002AH-SMT_dc-barrel-jack pad 2": {
+            "abs_pos": [145.117, 122.033]
+          }
+        }
+      ],
+      "tracks": {
+        "segments": [
+          {
+            "start": [154.917, 118.733],
+            "end": [157.906, 121.722],
+            "width": 0.5,
+            "layer": "F.Cu"
+          },
+          {
+            "start": [153.217, 118.733],
+            "end": [154.917, 118.733],
+            "width": 0.5,
+            "layer": "F.Cu"
+          },
+          {
+            "start": [170.609, 121.722],
+            "end": [173.537, 118.794],
+            "width": 0.5,
+            "layer": "F.Cu"
+          },
+          {
+            "start": [173.537, 118.794],
+            "end": [173.537, 107.573],
+            "width": 0.5,
+            "layer": "F.Cu"
+          },
+          {
+            "start": [161.216, 121.722],
+            "end": [170.609, 121.722],
+            "width": 0.5,
+            "layer": "F.Cu"
+          },
+          {
+            "start": [159.321, 120.938],
+            "end": [159.321, 121.722],
+            "width": 0.5,
+            "layer": "F.Cu"
+          },
+          {
+            "start": [158.208, 119.825],
+            "end": [159.321, 120.938],
+            "width": 0.5,
+            "layer": "F.Cu"
+          },
+          {
+            "start": [158.208, 119],
+            "end": [158.208, 119.825],
+            "width": 0.5,
+            "layer": "F.Cu"
+          },
+          {
+            "start": [157.906, 121.722],
+            "end": [159.321, 121.722],
+            "width": 0.5,
+            "layer": "F.Cu"
+          },
+          {
+            "start": [159.321, 121.722],
+            "end": [161.216, 121.722],
+            "width": 0.5,
+            "layer": "F.Cu"
+          }
+        ],
+        "arcs": ["TODO: extract arc info. Most samples don't have arcs to help test :("],
+        "vias": ["TODO: are vias necessary for our routing interests?"]
+      },
+      "errors": []
+    },
+    "3": {
+      "name": "Net-(D1-Pad2)",
+      "class": "TODO",
+      "pads": [
+        {
+          "KiCad/kicad-footprints/Fuse.pretty:Fuse_1206_3216Metric pad 1": {
+            "abs_pos": [158.56799999999998, 114.128]
+          }
+        },
+        {
+          "KiCad/kicad-footprints/Diode_SMD.pretty:D_SOD-123 pad 2": {
+            "abs_pos": [167.586, 116.959]
+          }
+        },
+        {
+          "KiCad/kicad-footprints/Diode_SMD.pretty:D_SOD-123 pad 2": {
+            "abs_pos": [167.586, 119.79]
+          }
+        },
+        {
+          "KiCad/kicad-footprints/Diode_SMD.pretty:D_SOD-123 pad 2": {
+            "abs_pos": [167.586, 114.128]
+          }
+        }
+      ],
+      "tracks": {
+        "segments": [
+          {
+            "start": [161.368, 114.128],
+            "end": [164.203, 114.128],
+            "width": 0.5,
+            "layer": "F.Cu"
+          },
+          {
+            "start": [164.286, 114.128],
+            "end": [164.286, 119.794],
+            "width": 0.5,
+            "layer": "F.Cu"
+          },
+          {
+            "start": [164.286, 119.794],
+            "end": [164.261, 119.819],
+            "width": 0.5,
+            "layer": "F.Cu"
+          }
+        ],
+        "arcs": ["TODO: extract arc info. Most samples don't have arcs to help test :("],
+        "vias": ["TODO: are vias necessary for our routing interests?"]
+      },
+      "errors": []
+    },
+    "4": {
+      "name": "Net-(F1-Pad2)",
+      "class": "TODO",
+      "pads": [
+        {
+          "KiCad/kicad-footprints/Connector_PinHeader_1.27mm.pretty:PinHeader_1x02_P1.27mm_Vertical_SMD_Pin1Right pad 1": {
+            "abs_pos": [161.171, 117.72999999999999]
+          }
+        },
+        {
+          "mcous/kicad-lib/footprints/connect-sm.pretty:CUI-PJ-002AH-SMT_dc-barrel-jack pad 1": {
+            "abs_pos": [145.117, 110.633]
+          }
+        },
+        {
+          "mcous/kicad-lib/footprints/connect-sm.pretty:CUI-PJ-002AH-SMT_dc-barrel-jack pad 1": {
+            "abs_pos": [151.21699999999998, 110.633]
+          }
+        },
+        {
+          "KiCad/kicad-footprints/Fuse.pretty:Fuse_1206_3216Metric pad 2": {
+            "abs_pos": [161.368, 114.128]
+          }
+        }
+      ],
+      "tracks": {
+        "segments": [
+          {
+            "start": [141.817, 116.833],
+            "end": [141.755, 116.771],
+            "width": 0.5,
+            "layer": "F.Cu"
+          },
+          {
+            "start": [141.817, 118.733],
+            "end": [141.817, 116.833],
+            "width": 0.5,
+            "layer": "F.Cu"
+          },
+          {
+            "start": [141.755, 116.771],
+            "end": [141.755, 112.384],
+            "width": 0.5,
+            "layer": "F.Cu"
+          },
+          {
+            "start": [141.755, 112.384],
+            "end": [141.617, 112.384],
+            "width": 0.5,
+            "layer": "F.Cu"
+          },
+          {
+            "start": [158.568, 114.128],
+            "end": [156.515, 116.181],
+            "width": 0.5,
+            "layer": "F.Cu"
+          },
+          {
+            "start": [156.515, 116.181],
+            "end": [145.142, 116.181],
+            "width": 0.5,
+            "layer": "F.Cu"
+          },
+          {
+            "start": [145.142, 116.181],
+            "end": [142.005, 113.044],
+            "width": 0.5,
+            "layer": "F.Cu"
+          },
+          {
+            "start": [161.208, 116.905],
+            "end": [158.515, 114.212],
+            "width": 0.5,
+            "layer": "F.Cu"
+          },
+          {
+            "start": [161.208, 117.73],
+            "end": [161.208, 116.905],
+            "width": 0.5,
+            "layer": "F.Cu"
+          },
+          {
+            "start": [158.515, 114.212],
+            "end": [158.51, 114.212],
+            "width": 0.5,
+            "layer": "F.Cu"
+          },
+          {
+            "start": [158.51, 114.212],
+            "end": [158.497, 114.199],
+            "width": 0.5,
+            "layer": "F.Cu"
+          }
+        ],
+        "arcs": ["TODO: extract arc info. Most samples don't have arcs to help test :("],
+        "vias": ["TODO: are vias necessary for our routing interests?"]
+      },
+      "errors": []
+    }
+  },
+  "errors": [
+    {
+      "mcous/kicad-lib/footprints/connect-sm.pretty:CUI-PJ-002AH-SMT_dc-barrel-jack at [147.517, 116.333, 90]": "pad 3 smd rect at [3.7, 5.7] has error 189: key \"net\" not found"
+    },
+    {
+      "mcous/kicad-lib/footprints/connect-sm.pretty:CUI-PJ-002AH-SMT_dc-barrel-jack at [147.517, 116.333, 90]": "pad \"\" thru_hole circle at [-2.4, 0] has error 192: key \"net\" not found"
+    },
+    {
+      "mcous/kicad-lib/footprints/connect-sm.pretty:CUI-PJ-002AH-SMT_dc-barrel-jack at [147.517, 116.333, 90]": "pad \"\" thru_hole circle at [2.1, 0] has error 193: key \"net\" not found"
+    }
+  ]
+}

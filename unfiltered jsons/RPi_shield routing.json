@@ -1,0 +1,828 @@
+{
+  "board_settings": {},
+  "net classes": {},
+  "net routes": {
+    "0": {
+      "name": "",
+      "class": "TODO",
+      "pads": [],
+      "tracks": {
+        "segments": [],
+        "arcs": ["TODO: extract arc info. Most samples don't have arcs to help test :("],
+        "vias": ["TODO: are vias necessary for our routing interests?"]
+      },
+      "errors": []
+    },
+    "1": {
+      "name": "jack3",
+      "class": "TODO",
+      "pads": [
+        {
+          "Connector_Audio:Jack_3.5mm_CUI_SJ1-3533NG_Horizontal pad R": {
+            "abs_pos": [101.822, 90.70400000000001]
+          }
+        },
+        {
+          "Connector_Audio:Jack_3.5mm_CUI_SJ1-3533NG_Horizontal pad T": {
+            "abs_pos": [101.822, 85.20400000000001]
+          }
+        },
+        {
+          "raspberrypi:RASPBERRYPI4B4GB pad 21": {
+            "abs_pos": [82.804, 37.338]
+          }
+        }
+      ],
+      "tracks": {
+        "segments": [
+          {
+            "start": [82.804, 58.362],
+            "end": [97.822, 73.38],
+            "width": 0.25,
+            "layer": "F.Cu"
+          },
+          {
+            "start": [82.804, 37.338],
+            "end": [82.804, 58.362],
+            "width": 0.25,
+            "layer": "F.Cu"
+          },
+          {
+            "start": [97.822, 78.88],
+            "end": [97.822, 80.404],
+            "width": 0.25,
+            "layer": "F.Cu"
+          },
+          {
+            "start": [97.822, 74.904],
+            "end": [97.822, 73.692],
+            "width": 0.25,
+            "layer": "F.Cu"
+          },
+          {
+            "start": [97.822, 73.692],
+            "end": [97.822, 78.88],
+            "width": 0.25,
+            "layer": "F.Cu"
+          },
+          {
+            "start": [97.822, 73.38],
+            "end": [97.822, 73.692],
+            "width": 0.25,
+            "layer": "F.Cu"
+          }
+        ],
+        "arcs": ["TODO: extract arc info. Most samples don't have arcs to help test :("],
+        "vias": ["TODO: are vias necessary for our routing interests?"]
+      },
+      "errors": []
+    },
+    "2": {
+      "name": "GND",
+      "class": "TODO",
+      "pads": [
+        {
+          "Connector_Audio:Jack_3.5mm_CUI_SJ1-3533NG_Horizontal pad S": {
+            "abs_pos": [99.822, 82.804]
+          }
+        },
+        {
+          "Connector_Audio:Jack_3.5mm_CUI_SJ1-3533NG_Horizontal pad S": {
+            "abs_pos": [77.978, 82.804]
+          }
+        },
+        {
+          "Connector_Audio:Jack_3.5mm_CUI_SJ1-3533NG_Horizontal pad S": {
+            "abs_pos": [88.9, 82.804]
+          }
+        },
+        {
+          "Connector_Audio:Jack_3.5mm_CUI_SJ1-3533NG_Horizontal pad S": {
+            "abs_pos": [67.056, 82.804]
+          }
+        },
+        {
+          "raspberrypi:RASPBERRYPI4B4GB pad 6": {
+            "abs_pos": [103.124, 34.798]
+          }
+        },
+        {
+          "raspberrypi:RASPBERRYPI4B4GB pad 9": {
+            "abs_pos": [98.044, 37.338]
+          }
+        },
+        {
+          "raspberrypi:RASPBERRYPI4B4GB pad 14": {
+            "abs_pos": [92.964, 34.798]
+          }
+        },
+        {
+          "raspberrypi:RASPBERRYPI4B4GB pad 20": {
+            "abs_pos": [85.344, 34.798]
+          }
+        },
+        {
+          "raspberrypi:RASPBERRYPI4B4GB pad 25": {
+            "abs_pos": [77.72399999999999, 37.338]
+          }
+        },
+        {
+          "raspberrypi:RASPBERRYPI4B4GB pad 30": {
+            "abs_pos": [72.64399999999999, 34.798]
+          }
+        },
+        {
+          "raspberrypi:RASPBERRYPI4B4GB pad 34": {
+            "abs_pos": [67.564, 34.798]
+          }
+        },
+        {
+          "raspberrypi:RASPBERRYPI4B4GB pad 39": {
+            "abs_pos": [59.943999999999996, 37.338]
+          }
+        },
+        {
+          "Connector_PinHeader_2.54mm:PinHeader_1x02_P2.54mm_Horizontal pad 2": {
+            "abs_pos": [104.648, 44.196]
+          }
+        }
+      ],
+      "tracks": {
+        "segments": [],
+        "arcs": ["TODO: extract arc info. Most samples don't have arcs to help test :("],
+        "vias": ["TODO: are vias necessary for our routing interests?"]
+      },
+      "errors": []
+    },
+    "3": {
+      "name": "jack2",
+      "class": "TODO",
+      "pads": [
+        {
+          "Connector_Audio:Jack_3.5mm_CUI_SJ1-3533NG_Horizontal pad T": {
+            "abs_pos": [79.978, 85.20400000000001]
+          }
+        },
+        {
+          "Connector_Audio:Jack_3.5mm_CUI_SJ1-3533NG_Horizontal pad R": {
+            "abs_pos": [79.978, 90.70400000000001]
+          }
+        },
+        {
+          "raspberrypi:RASPBERRYPI4B4GB pad 29": {
+            "abs_pos": [72.64399999999999, 37.338]
+          }
+        }
+      ],
+      "tracks": {
+        "segments": [
+          {
+            "start": [72.644, 70.046],
+            "end": [75.978, 73.38],
+            "width": 0.25,
+            "layer": "F.Cu"
+          },
+          {
+            "start": [72.644, 37.338],
+            "end": [72.644, 70.046],
+            "width": 0.25,
+            "layer": "F.Cu"
+          },
+          {
+            "start": [75.978, 78.88],
+            "end": [75.978, 73.38],
+            "width": 0.25,
+            "layer": "F.Cu"
+          },
+          {
+            "start": [75.978, 78.88],
+            "end": [75.978, 80.404],
+            "width": 0.25,
+            "layer": "F.Cu"
+          }
+        ],
+        "arcs": ["TODO: extract arc info. Most samples don't have arcs to help test :("],
+        "vias": ["TODO: are vias necessary for our routing interests?"]
+      },
+      "errors": []
+    },
+    "4": {
+      "name": "jack1",
+      "class": "TODO",
+      "pads": [
+        {
+          "Connector_Audio:Jack_3.5mm_CUI_SJ1-3533NG_Horizontal pad R": {
+            "abs_pos": [90.9, 90.70400000000001]
+          }
+        },
+        {
+          "Connector_Audio:Jack_3.5mm_CUI_SJ1-3533NG_Horizontal pad T": {
+            "abs_pos": [90.9, 85.20400000000001]
+          }
+        },
+        {
+          "raspberrypi:RASPBERRYPI4B4GB pad 28": {
+            "abs_pos": [75.184, 34.798]
+          }
+        }
+      ],
+      "tracks": {
+        "segments": [
+          {
+            "start": [74.038999, 60.518999],
+            "end": [86.9, 73.38],
+            "width": 0.25,
+            "layer": "F.Cu"
+          },
+          {
+            "start": [74.038999, 35.943001],
+            "end": [74.038999, 60.518999],
+            "width": 0.25,
+            "layer": "F.Cu"
+          },
+          {
+            "start": [75.184, 34.798],
+            "end": [74.038999, 35.943001],
+            "width": 0.25,
+            "layer": "F.Cu"
+          },
+          {
+            "start": [86.9, 73.38],
+            "end": [86.9, 78.88],
+            "width": 0.25,
+            "layer": "F.Cu"
+          },
+          {
+            "start": [86.9, 78.88],
+            "end": [86.9, 80.404],
+            "width": 0.25,
+            "layer": "F.Cu"
+          }
+        ],
+        "arcs": ["TODO: extract arc info. Most samples don't have arcs to help test :("],
+        "vias": ["TODO: are vias necessary for our routing interests?"]
+      },
+      "errors": []
+    },
+    "5": {
+      "name": "jack4",
+      "class": "TODO",
+      "pads": [
+        {
+          "Connector_Audio:Jack_3.5mm_CUI_SJ1-3533NG_Horizontal pad T": {
+            "abs_pos": [69.056, 85.20400000000001]
+          }
+        },
+        {
+          "Connector_Audio:Jack_3.5mm_CUI_SJ1-3533NG_Horizontal pad R": {
+            "abs_pos": [69.056, 90.70400000000001]
+          }
+        },
+        {
+          "raspberrypi:RASPBERRYPI4B4GB pad 33": {
+            "abs_pos": [67.564, 37.338]
+          }
+        }
+      ],
+      "tracks": {
+        "segments": [
+          {
+            "start": [67.564, 70.872],
+            "end": [65.056, 73.38],
+            "width": 0.25,
+            "layer": "F.Cu"
+          },
+          {
+            "start": [67.564, 37.338],
+            "end": [67.564, 70.872],
+            "width": 0.25,
+            "layer": "F.Cu"
+          },
+          {
+            "start": [65.056, 73.38],
+            "end": [65.056, 78.88],
+            "width": 0.25,
+            "layer": "F.Cu"
+          },
+          {
+            "start": [65.056, 78.88],
+            "end": [65.056, 80.404],
+            "width": 0.25,
+            "layer": "F.Cu"
+          }
+        ],
+        "arcs": ["TODO: extract arc info. Most samples don't have arcs to help test :("],
+        "vias": ["TODO: are vias necessary for our routing interests?"]
+      },
+      "errors": []
+    },
+    "6": {
+      "name": "Net-(J5-Pad1)",
+      "class": "TODO",
+      "pads": [
+        {
+          "raspberrypi:RASPBERRYPI4B4GB pad 1": {
+            "abs_pos": [108.204, 37.338]
+          }
+        }
+      ],
+      "tracks": {
+        "segments": [],
+        "arcs": ["TODO: extract arc info. Most samples don't have arcs to help test :("],
+        "vias": ["TODO: are vias necessary for our routing interests?"]
+      },
+      "errors": []
+    },
+    "7": {
+      "name": "+5V",
+      "class": "TODO",
+      "pads": [
+        {
+          "raspberrypi:RASPBERRYPI4B4GB pad 2": {
+            "abs_pos": [108.204, 34.798]
+          }
+        },
+        {
+          "raspberrypi:RASPBERRYPI4B4GB pad 4": {
+            "abs_pos": [105.66399999999999, 34.798]
+          }
+        },
+        {
+          "Connector_PinHeader_2.54mm:PinHeader_1x02_P2.54mm_Horizontal pad 1": {
+            "abs_pos": [104.648, 41.656]
+          }
+        }
+      ],
+      "tracks": {
+        "segments": [
+          {
+            "start": [105.664, 34.798],
+            "end": [108.204, 34.798],
+            "width": 0.25,
+            "layer": "F.Cu"
+          },
+          {
+            "start": [104.518999, 41.526999],
+            "end": [104.648, 41.656],
+            "width": 0.25,
+            "layer": "F.Cu"
+          },
+          {
+            "start": [104.518999, 35.943001],
+            "end": [104.518999, 41.526999],
+            "width": 0.25,
+            "layer": "F.Cu"
+          },
+          {
+            "start": [105.664, 34.798],
+            "end": [104.518999, 35.943001],
+            "width": 0.25,
+            "layer": "F.Cu"
+          }
+        ],
+        "arcs": ["TODO: extract arc info. Most samples don't have arcs to help test :("],
+        "vias": ["TODO: are vias necessary for our routing interests?"]
+      },
+      "errors": []
+    },
+    "8": {
+      "name": "Net-(J5-Pad3)",
+      "class": "TODO",
+      "pads": [
+        {
+          "raspberrypi:RASPBERRYPI4B4GB pad 3": {
+            "abs_pos": [105.66399999999999, 37.338]
+          }
+        }
+      ],
+      "tracks": {
+        "segments": [],
+        "arcs": ["TODO: extract arc info. Most samples don't have arcs to help test :("],
+        "vias": ["TODO: are vias necessary for our routing interests?"]
+      },
+      "errors": []
+    },
+    "9": {
+      "name": "Net-(J5-Pad5)",
+      "class": "TODO",
+      "pads": [
+        {
+          "raspberrypi:RASPBERRYPI4B4GB pad 5": {
+            "abs_pos": [103.124, 37.338]
+          }
+        }
+      ],
+      "tracks": {
+        "segments": [],
+        "arcs": ["TODO: extract arc info. Most samples don't have arcs to help test :("],
+        "vias": ["TODO: are vias necessary for our routing interests?"]
+      },
+      "errors": []
+    },
+    "10": {
+      "name": "Net-(J5-Pad7)",
+      "class": "TODO",
+      "pads": [
+        {
+          "raspberrypi:RASPBERRYPI4B4GB pad 7": {
+            "abs_pos": [100.58399999999999, 37.338]
+          }
+        }
+      ],
+      "tracks": {
+        "segments": [],
+        "arcs": ["TODO: extract arc info. Most samples don't have arcs to help test :("],
+        "vias": ["TODO: are vias necessary for our routing interests?"]
+      },
+      "errors": []
+    },
+    "11": {
+      "name": "Net-(J5-Pad8)",
+      "class": "TODO",
+      "pads": [
+        {
+          "raspberrypi:RASPBERRYPI4B4GB pad 8": {
+            "abs_pos": [100.58399999999999, 34.798]
+          }
+        }
+      ],
+      "tracks": {
+        "segments": [],
+        "arcs": ["TODO: extract arc info. Most samples don't have arcs to help test :("],
+        "vias": ["TODO: are vias necessary for our routing interests?"]
+      },
+      "errors": []
+    },
+    "12": {
+      "name": "Net-(J5-Pad10)",
+      "class": "TODO",
+      "pads": [
+        {
+          "raspberrypi:RASPBERRYPI4B4GB pad 10": {
+            "abs_pos": [98.044, 34.798]
+          }
+        }
+      ],
+      "tracks": {
+        "segments": [],
+        "arcs": ["TODO: extract arc info. Most samples don't have arcs to help test :("],
+        "vias": ["TODO: are vias necessary for our routing interests?"]
+      },
+      "errors": []
+    },
+    "13": {
+      "name": "Net-(J5-Pad11)",
+      "class": "TODO",
+      "pads": [
+        {
+          "raspberrypi:RASPBERRYPI4B4GB pad 11": {
+            "abs_pos": [95.50399999999999, 37.338]
+          }
+        }
+      ],
+      "tracks": {
+        "segments": [],
+        "arcs": ["TODO: extract arc info. Most samples don't have arcs to help test :("],
+        "vias": ["TODO: are vias necessary for our routing interests?"]
+      },
+      "errors": []
+    },
+    "14": {
+      "name": "Net-(J5-Pad12)",
+      "class": "TODO",
+      "pads": [
+        {
+          "raspberrypi:RASPBERRYPI4B4GB pad 12": {
+            "abs_pos": [95.50399999999999, 34.798]
+          }
+        }
+      ],
+      "tracks": {
+        "segments": [],
+        "arcs": ["TODO: extract arc info. Most samples don't have arcs to help test :("],
+        "vias": ["TODO: are vias necessary for our routing interests?"]
+      },
+      "errors": []
+    },
+    "15": {
+      "name": "Net-(J5-Pad13)",
+      "class": "TODO",
+      "pads": [
+        {
+          "raspberrypi:RASPBERRYPI4B4GB pad 13": {
+            "abs_pos": [92.964, 37.338]
+          }
+        }
+      ],
+      "tracks": {
+        "segments": [],
+        "arcs": ["TODO: extract arc info. Most samples don't have arcs to help test :("],
+        "vias": ["TODO: are vias necessary for our routing interests?"]
+      },
+      "errors": []
+    },
+    "16": {
+      "name": "Net-(J5-Pad15)",
+      "class": "TODO",
+      "pads": [
+        {
+          "raspberrypi:RASPBERRYPI4B4GB pad 15": {
+            "abs_pos": [90.42399999999999, 37.338]
+          }
+        }
+      ],
+      "tracks": {
+        "segments": [],
+        "arcs": ["TODO: extract arc info. Most samples don't have arcs to help test :("],
+        "vias": ["TODO: are vias necessary for our routing interests?"]
+      },
+      "errors": []
+    },
+    "17": {
+      "name": "Net-(J5-Pad16)",
+      "class": "TODO",
+      "pads": [
+        {
+          "raspberrypi:RASPBERRYPI4B4GB pad 16": {
+            "abs_pos": [90.42399999999999, 34.798]
+          }
+        }
+      ],
+      "tracks": {
+        "segments": [],
+        "arcs": ["TODO: extract arc info. Most samples don't have arcs to help test :("],
+        "vias": ["TODO: are vias necessary for our routing interests?"]
+      },
+      "errors": []
+    },
+    "18": {
+      "name": "Net-(J5-Pad17)",
+      "class": "TODO",
+      "pads": [
+        {
+          "raspberrypi:RASPBERRYPI4B4GB pad 17": {
+            "abs_pos": [87.88399999999999, 37.338]
+          }
+        }
+      ],
+      "tracks": {
+        "segments": [],
+        "arcs": ["TODO: extract arc info. Most samples don't have arcs to help test :("],
+        "vias": ["TODO: are vias necessary for our routing interests?"]
+      },
+      "errors": []
+    },
+    "19": {
+      "name": "Net-(J5-Pad18)",
+      "class": "TODO",
+      "pads": [
+        {
+          "raspberrypi:RASPBERRYPI4B4GB pad 18": {
+            "abs_pos": [87.88399999999999, 34.798]
+          }
+        }
+      ],
+      "tracks": {
+        "segments": [],
+        "arcs": ["TODO: extract arc info. Most samples don't have arcs to help test :("],
+        "vias": ["TODO: are vias necessary for our routing interests?"]
+      },
+      "errors": []
+    },
+    "20": {
+      "name": "Net-(J5-Pad19)",
+      "class": "TODO",
+      "pads": [
+        {
+          "raspberrypi:RASPBERRYPI4B4GB pad 19": {
+            "abs_pos": [85.344, 37.338]
+          }
+        }
+      ],
+      "tracks": {
+        "segments": [],
+        "arcs": ["TODO: extract arc info. Most samples don't have arcs to help test :("],
+        "vias": ["TODO: are vias necessary for our routing interests?"]
+      },
+      "errors": []
+    },
+    "21": {
+      "name": "Net-(J5-Pad22)",
+      "class": "TODO",
+      "pads": [
+        {
+          "raspberrypi:RASPBERRYPI4B4GB pad 22": {
+            "abs_pos": [82.804, 34.798]
+          }
+        }
+      ],
+      "tracks": {
+        "segments": [],
+        "arcs": ["TODO: extract arc info. Most samples don't have arcs to help test :("],
+        "vias": ["TODO: are vias necessary for our routing interests?"]
+      },
+      "errors": []
+    },
+    "22": {
+      "name": "Net-(J5-Pad23)",
+      "class": "TODO",
+      "pads": [
+        {
+          "raspberrypi:RASPBERRYPI4B4GB pad 23": {
+            "abs_pos": [80.264, 37.338]
+          }
+        }
+      ],
+      "tracks": {
+        "segments": [],
+        "arcs": ["TODO: extract arc info. Most samples don't have arcs to help test :("],
+        "vias": ["TODO: are vias necessary for our routing interests?"]
+      },
+      "errors": []
+    },
+    "23": {
+      "name": "Net-(J5-Pad24)",
+      "class": "TODO",
+      "pads": [
+        {
+          "raspberrypi:RASPBERRYPI4B4GB pad 24": {
+            "abs_pos": [80.264, 34.798]
+          }
+        }
+      ],
+      "tracks": {
+        "segments": [],
+        "arcs": ["TODO: extract arc info. Most samples don't have arcs to help test :("],
+        "vias": ["TODO: are vias necessary for our routing interests?"]
+      },
+      "errors": []
+    },
+    "24": {
+      "name": "Net-(J5-Pad26)",
+      "class": "TODO",
+      "pads": [
+        {
+          "raspberrypi:RASPBERRYPI4B4GB pad 26": {
+            "abs_pos": [77.72399999999999, 34.798]
+          }
+        }
+      ],
+      "tracks": {
+        "segments": [],
+        "arcs": ["TODO: extract arc info. Most samples don't have arcs to help test :("],
+        "vias": ["TODO: are vias necessary for our routing interests?"]
+      },
+      "errors": []
+    },
+    "25": {
+      "name": "Net-(J5-Pad27)",
+      "class": "TODO",
+      "pads": [
+        {
+          "raspberrypi:RASPBERRYPI4B4GB pad 27": {
+            "abs_pos": [75.184, 37.338]
+          }
+        }
+      ],
+      "tracks": {
+        "segments": [],
+        "arcs": ["TODO: extract arc info. Most samples don't have arcs to help test :("],
+        "vias": ["TODO: are vias necessary for our routing interests?"]
+      },
+      "errors": []
+    },
+    "26": {
+      "name": "Net-(J5-Pad31)",
+      "class": "TODO",
+      "pads": [
+        {
+          "raspberrypi:RASPBERRYPI4B4GB pad 31": {
+            "abs_pos": [70.10399999999998, 37.338]
+          }
+        }
+      ],
+      "tracks": {
+        "segments": [],
+        "arcs": ["TODO: extract arc info. Most samples don't have arcs to help test :("],
+        "vias": ["TODO: are vias necessary for our routing interests?"]
+      },
+      "errors": []
+    },
+    "27": {
+      "name": "Net-(J5-Pad32)",
+      "class": "TODO",
+      "pads": [
+        {
+          "raspberrypi:RASPBERRYPI4B4GB pad 32": {
+            "abs_pos": [70.10399999999998, 34.798]
+          }
+        }
+      ],
+      "tracks": {
+        "segments": [],
+        "arcs": ["TODO: extract arc info. Most samples don't have arcs to help test :("],
+        "vias": ["TODO: are vias necessary for our routing interests?"]
+      },
+      "errors": []
+    },
+    "28": {
+      "name": "Net-(J5-Pad35)",
+      "class": "TODO",
+      "pads": [
+        {
+          "raspberrypi:RASPBERRYPI4B4GB pad 35": {
+            "abs_pos": [65.024, 37.338]
+          }
+        }
+      ],
+      "tracks": {
+        "segments": [],
+        "arcs": ["TODO: extract arc info. Most samples don't have arcs to help test :("],
+        "vias": ["TODO: are vias necessary for our routing interests?"]
+      },
+      "errors": []
+    },
+    "29": {
+      "name": "Net-(J5-Pad36)",
+      "class": "TODO",
+      "pads": [
+        {
+          "raspberrypi:RASPBERRYPI4B4GB pad 36": {
+            "abs_pos": [65.024, 34.798]
+          }
+        }
+      ],
+      "tracks": {
+        "segments": [],
+        "arcs": ["TODO: extract arc info. Most samples don't have arcs to help test :("],
+        "vias": ["TODO: are vias necessary for our routing interests?"]
+      },
+      "errors": []
+    },
+    "30": {
+      "name": "Net-(J5-Pad37)",
+      "class": "TODO",
+      "pads": [
+        {
+          "raspberrypi:RASPBERRYPI4B4GB pad 37": {
+            "abs_pos": [62.483999999999995, 37.338]
+          }
+        }
+      ],
+      "tracks": {
+        "segments": [],
+        "arcs": ["TODO: extract arc info. Most samples don't have arcs to help test :("],
+        "vias": ["TODO: are vias necessary for our routing interests?"]
+      },
+      "errors": []
+    },
+    "31": {
+      "name": "Net-(J5-Pad38)",
+      "class": "TODO",
+      "pads": [
+        {
+          "raspberrypi:RASPBERRYPI4B4GB pad 38": {
+            "abs_pos": [62.483999999999995, 34.798]
+          }
+        }
+      ],
+      "tracks": {
+        "segments": [],
+        "arcs": ["TODO: extract arc info. Most samples don't have arcs to help test :("],
+        "vias": ["TODO: are vias necessary for our routing interests?"]
+      },
+      "errors": []
+    },
+    "32": {
+      "name": "Net-(J5-Pad40)",
+      "class": "TODO",
+      "pads": [
+        {
+          "raspberrypi:RASPBERRYPI4B4GB pad 40": {
+            "abs_pos": [59.943999999999996, 34.798]
+          }
+        }
+      ],
+      "tracks": {
+        "segments": [],
+        "arcs": ["TODO: extract arc info. Most samples don't have arcs to help test :("],
+        "vias": ["TODO: are vias necessary for our routing interests?"]
+      },
+      "errors": []
+    }
+  },
+  "errors": [
+    {
+      "raspberrypi:RASPBERRYPI4B4GB at [108.204, 37.338]": "pad 41 np_thru_hole circle at [4.87, -1.27] has error 621: key \"net\" not found"
+    },
+    {
+      "raspberrypi:RASPBERRYPI4B4GB at [108.204, 37.338]": "pad 42 np_thru_hole circle at [-53.13, -1.27] has error 622: key \"net\" not found"
+    },
+    {
+      "raspberrypi:RASPBERRYPI4B4GB at [108.204, 37.338]": "pad 43 np_thru_hole circle at [-53.13, 47.73] has error 623: key \"net\" not found"
+    },
+    {
+      "raspberrypi:RASPBERRYPI4B4GB at [108.204, 37.338]": "pad 44 np_thru_hole circle at [4.87, 47.73] has error 624: key \"net\" not found"
+    }
+  ]
+}

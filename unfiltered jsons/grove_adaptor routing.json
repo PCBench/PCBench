@@ -1,0 +1,164 @@
+{
+  "board_settings": {},
+  "net classes": {},
+  "net routes": {
+    "0": {
+      "name": "",
+      "class": "TODO",
+      "pads": [],
+      "tracks": {
+        "segments": [],
+        "arcs": ["TODO: extract arc info. Most samples don't have arcs to help test :("],
+        "vias": ["TODO: are vias necessary for our routing interests?"]
+      },
+      "errors": []
+    },
+    "1": {
+      "name": "GND",
+      "class": "TODO",
+      "pads": [
+        {
+          "Grove-Gas Sensor v1.4:4P-LEADED-2.0 pad 4": {
+            "abs_pos": [182.5, 93.5]
+          }
+        },
+        {
+          "Connector_JST:JST_XH_B4B-XH-A_1x04_P2.50mm_Vertical pad 4": {
+            "abs_pos": [183.5, 97.5]
+          }
+        }
+      ],
+      "tracks": {
+        "segments": [
+          {
+            "start": [183, 93.5],
+            "end": [182.5, 93.5],
+            "width": 1,
+            "layer": "F.Cu"
+          },
+          {
+            "start": [183.25, 93.75],
+            "end": [183, 93.5],
+            "width": 1,
+            "layer": "F.Cu"
+          },
+          {
+            "start": [183.25, 97.25],
+            "end": [183.25, 93.75],
+            "width": 1,
+            "layer": "F.Cu"
+          },
+          {
+            "start": [183.5, 97.5],
+            "end": [183.25, 97.25],
+            "width": 1,
+            "layer": "F.Cu"
+          }
+        ],
+        "arcs": ["TODO: extract arc info. Most samples don't have arcs to help test :("],
+        "vias": ["TODO: are vias necessary for our routing interests?"]
+      },
+      "errors": []
+    },
+    "2": {
+      "name": "+5V",
+      "class": "TODO",
+      "pads": [
+        {
+          "Grove-Gas Sensor v1.4:4P-LEADED-2.0 pad 3": {
+            "abs_pos": [180.5, 93.5]
+          }
+        },
+        {
+          "Connector_JST:JST_XH_B4B-XH-A_1x04_P2.50mm_Vertical pad 3": {
+            "abs_pos": [181.0, 97.5]
+          }
+        }
+      ],
+      "tracks": {
+        "segments": [
+          {
+            "start": [180.5, 97],
+            "end": [181, 97.5],
+            "width": 0.5,
+            "layer": "F.Cu"
+          },
+          {
+            "start": [180.5, 93.5],
+            "end": [180.5, 97],
+            "width": 0.5,
+            "layer": "F.Cu"
+          }
+        ],
+        "arcs": ["TODO: extract arc info. Most samples don't have arcs to help test :("],
+        "vias": ["TODO: are vias necessary for our routing interests?"]
+      },
+      "errors": []
+    },
+    "3": {
+      "name": "Net-(J1-Pad2)",
+      "class": "TODO",
+      "pads": [
+        {
+          "Grove-Gas Sensor v1.4:4P-LEADED-2.0 pad 2": {
+            "abs_pos": [178.5, 93.5]
+          }
+        },
+        {
+          "Connector_JST:JST_XH_B4B-XH-A_1x04_P2.50mm_Vertical pad 2": {
+            "abs_pos": [178.5, 97.5]
+          }
+        }
+      ],
+      "tracks": {
+        "segments": [
+          {
+            "start": [178.5, 93.5],
+            "end": [178.5, 97.5],
+            "width": 0.5,
+            "layer": "F.Cu"
+          }
+        ],
+        "arcs": ["TODO: extract arc info. Most samples don't have arcs to help test :("],
+        "vias": ["TODO: are vias necessary for our routing interests?"]
+      },
+      "errors": []
+    },
+    "4": {
+      "name": "Net-(J1-Pad1)",
+      "class": "TODO",
+      "pads": [
+        {
+          "Grove-Gas Sensor v1.4:4P-LEADED-2.0 pad 1": {
+            "abs_pos": [176.5, 93.5]
+          }
+        },
+        {
+          "Connector_JST:JST_XH_B4B-XH-A_1x04_P2.50mm_Vertical pad 1": {
+            "abs_pos": [176.0, 97.5]
+          }
+        }
+      ],
+      "tracks": {
+        "segments": [
+          {
+            "start": [176.5, 97],
+            "end": [176.5, 93.5],
+            "width": 0.5,
+            "layer": "F.Cu"
+          },
+          {
+            "start": [176, 97.5],
+            "end": [176.5, 97],
+            "width": 0.5,
+            "layer": "F.Cu"
+          }
+        ],
+        "arcs": ["TODO: extract arc info. Most samples don't have arcs to help test :("],
+        "vias": ["TODO: are vias necessary for our routing interests?"]
+      },
+      "errors": []
+    }
+  },
+  "errors": []
+}

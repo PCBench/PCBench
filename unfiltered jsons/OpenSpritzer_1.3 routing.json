@@ -1,0 +1,2051 @@
+{
+  "board_settings": {},
+  "net classes": {},
+  "net routes": {
+    "0": {
+      "name": "",
+      "class": "TODO",
+      "pads": [],
+      "tracks": {
+        "segments": [],
+        "arcs": ["TODO: extract arc info. Most samples don't have arcs to help test :("],
+        "vias": ["TODO: are vias necessary for our routing interests?"]
+      },
+      "errors": []
+    },
+    "1": {
+      "name": "Net-(A1-Pad16)",
+      "class": "TODO",
+      "pads": [
+        {
+          "Modules:Arduino_Nano_WithMountingHoles pad 16": {
+            "abs_pos": [152.44, 135.56]
+          }
+        }
+      ],
+      "tracks": {
+        "segments": [],
+        "arcs": ["TODO: extract arc info. Most samples don't have arcs to help test :("],
+        "vias": ["TODO: are vias necessary for our routing interests?"]
+      },
+      "errors": []
+    },
+    "2": {
+      "name": "Net-(A1-Pad15)",
+      "class": "TODO",
+      "pads": [
+        {
+          "Modules:Arduino_Nano_WithMountingHoles pad 15": {
+            "abs_pos": [137.2, 135.56]
+          }
+        }
+      ],
+      "tracks": {
+        "segments": [],
+        "arcs": ["TODO: extract arc info. Most samples don't have arcs to help test :("],
+        "vias": ["TODO: are vias necessary for our routing interests?"]
+      },
+      "errors": []
+    },
+    "3": {
+      "name": "Net-(A1-Pad30)",
+      "class": "TODO",
+      "pads": [
+        {
+          "Inductors_THT:L_Radial_D6.0mm_P4.00mm pad 1": {
+            "abs_pos": [146.175, 122.95]
+          }
+        },
+        {
+          "Modules:Arduino_Nano_WithMountingHoles pad 30": {
+            "abs_pos": [152.44, 100.0]
+          }
+        },
+        {
+          "Capacitors_THT:CP_Radial_D8.0mm_P3.50mm pad 1": {
+            "abs_pos": [130.0, 134.95]
+          }
+        },
+        {
+          "TO_SOT_Packages_THT:TO-220-5_Vertical_StaggeredType1 pad 4": {
+            "abs_pos": [117.5, 137.45000000000002]
+          }
+        }
+      ],
+      "tracks": {
+        "segments": [
+          {
+            "start": [128, 134.95],
+            "end": [130, 134.95],
+            "width": 0.25,
+            "layer": "F.Cu"
+          },
+          {
+            "start": [126.5, 136.45],
+            "end": [128, 134.95],
+            "width": 0.25,
+            "layer": "F.Cu"
+          },
+          {
+            "start": [126.5, 139.5],
+            "end": [126.5, 136.45],
+            "width": 0.25,
+            "layer": "F.Cu"
+          },
+          {
+            "start": [122.9, 143.1],
+            "end": [126.5, 139.5],
+            "width": 0.25,
+            "layer": "F.Cu"
+          },
+          {
+            "start": [107.3, 144.85],
+            "end": [109.05, 143.1],
+            "width": 0.25,
+            "layer": "F.Cu"
+          },
+          {
+            "start": [109.05, 143.1],
+            "end": [122.9, 143.1],
+            "width": 0.25,
+            "layer": "F.Cu"
+          },
+          {
+            "start": [130, 134.95],
+            "end": [133.5, 134.95],
+            "width": 0.25,
+            "layer": "F.Cu"
+          },
+          {
+            "start": [133.5, 134.95],
+            "end": [135.25, 133.2],
+            "width": 0.25,
+            "layer": "F.Cu"
+          },
+          {
+            "start": [135.25, 133.2],
+            "end": [143.5, 133.2],
+            "width": 0.25,
+            "layer": "F.Cu"
+          },
+          {
+            "start": [143.5, 133.2],
+            "end": [144.5, 132.2],
+            "width": 0.25,
+            "layer": "F.Cu"
+          },
+          {
+            "start": [144.5, 132.2],
+            "end": [144.5, 128.95],
+            "width": 0.25,
+            "layer": "F.Cu"
+          },
+          {
+            "start": [146.175, 127.275],
+            "end": [146.175, 122.95],
+            "width": 0.25,
+            "layer": "F.Cu"
+          },
+          {
+            "start": [144.5, 128.95],
+            "end": [146.175, 127.275],
+            "width": 0.25,
+            "layer": "F.Cu"
+          },
+          {
+            "start": [137.2, 116.37137],
+            "end": [139.77863, 118.95],
+            "width": 0.25,
+            "layer": "B.Cu"
+          },
+          {
+            "start": [137.2, 115.24],
+            "end": [137.2, 116.37137],
+            "width": 0.25,
+            "layer": "B.Cu"
+          },
+          {
+            "start": [142.175, 118.95],
+            "end": [146.175, 122.95],
+            "width": 0.25,
+            "layer": "B.Cu"
+          },
+          {
+            "start": [139.77863, 118.95],
+            "end": [142.175, 118.95],
+            "width": 0.25,
+            "layer": "B.Cu"
+          }
+        ],
+        "arcs": ["TODO: extract arc info. Most samples don't have arcs to help test :("],
+        "vias": ["TODO: are vias necessary for our routing interests?"]
+      },
+      "errors": []
+    },
+    "4": {
+      "name": "Net-(A1-Pad14)",
+      "class": "TODO",
+      "pads": [
+        {
+          "Modules:Arduino_Nano_WithMountingHoles pad 14": {
+            "abs_pos": [137.2, 133.02]
+          }
+        }
+      ],
+      "tracks": {
+        "segments": [],
+        "arcs": ["TODO: extract arc info. Most samples don't have arcs to help test :("],
+        "vias": ["TODO: are vias necessary for our routing interests?"]
+      },
+      "errors": []
+    },
+    "5": {
+      "name": "GNDREF",
+      "class": "TODO",
+      "pads": [
+        {
+          "Maxime:JST_XH_B03B-XH-A_03x2.50mm_Straight pad 3": {
+            "abs_pos": [159.5, 81.7]
+          }
+        },
+        {
+          "Maxime:JST_XH_B02B-XH-A_02x2.50mm_Straight pad 1": {
+            "abs_pos": [154.5, 131.95]
+          }
+        },
+        {
+          "Maxime:Potentiometer pad 1": {
+            "abs_pos": [142.73, 145.99]
+          }
+        },
+        {
+          "Maxime:R_Axial_DIN0309_L9.0mm_D3.2mm_P15.24mm_Horizontal pad 2": {
+            "abs_pos": [148.68, 90.95]
+          }
+        },
+        {
+          "Maxime:R_Axial_DIN0309_L9.0mm_D3.2mm_P15.24mm_Horizontal pad 1": {
+            "abs_pos": [136.5, 95.95]
+          }
+        },
+        {
+          "Modules:Arduino_Nano_WithMountingHoles pad 4": {
+            "abs_pos": [137.2, 107.62]
+          }
+        },
+        {
+          "Modules:Arduino_Nano_WithMountingHoles pad 29": {
+            "abs_pos": [152.44, 102.54]
+          }
+        },
+        {
+          "Package_TO_SOT_THT:TO-92L_Inline_Wide pad 1": {
+            "abs_pos": [144.75, 99.95]
+          }
+        },
+        {
+          "Maxime:BarrelJack_Horizontal_maxime pad 3": {
+            "abs_pos": [163.95, 65.95]
+          }
+        },
+        {
+          "Maxime:BarrelJack_Horizontal_maxime pad 2": {
+            "abs_pos": [160.4, 60.95]
+          }
+        },
+        {
+          "Diodes_THT:D_DO-201AD_P12.70mm_Horizontal pad 2": {
+            "abs_pos": [150.5, 122.95]
+          }
+        },
+        {
+          "Capacitors_THT:CP_Radial_D8.0mm_P3.50mm pad 2": {
+            "abs_pos": [133.7, 146.05]
+          }
+        },
+        {
+          "Capacitors_THT:CP_Radial_D8.0mm_P3.50mm pad 2": {
+            "abs_pos": [133.5, 134.95]
+          }
+        },
+        {
+          "TO_SOT_Packages_THT:TO-220-5_Vertical_StaggeredType1 pad 3": {
+            "abs_pos": [115.80000000000001, 141.15]
+          }
+        },
+        {
+          "TO_SOT_Packages_THT:TO-220-5_Vertical_StaggeredType1 pad 5": {
+            "abs_pos": [119.2, 141.15]
+          }
+        },
+        {
+          "Maxime:BNC_Socket_TYCO-AMP_LargePads pad 2": {
+            "abs_pos": [104.80064, 135.00126]
+          }
+        },
+        {
+          "Maxime:BNC_Socket_TYCO-AMP_LargePads pad 2": {
+            "abs_pos": [112.40032, 130.7366]
+          }
+        },
+        {
+          "Maxime:BNC_Socket_TYCO-AMP_LargePads pad 2": {
+            "abs_pos": [102.20222, 130.7366]
+          }
+        }
+      ],
+      "tracks": {
+        "segments": [
+          {
+            "start": [129.58, 99.63],
+            "end": [129.58, 100],
+            "width": 0.25,
+            "layer": "F.Cu"
+          }
+        ],
+        "arcs": ["TODO: extract arc info. Most samples don't have arcs to help test :("],
+        "vias": ["TODO: are vias necessary for our routing interests?"]
+      },
+      "errors": []
+    },
+    "6": {
+      "name": "Net-(A1-Pad13)",
+      "class": "TODO",
+      "pads": [
+        {
+          "Modules:Arduino_Nano_WithMountingHoles pad 13": {
+            "abs_pos": [137.2, 130.48]
+          }
+        },
+        {
+          "Maxime:maxi_DPDT_Angled pad 3": {
+            "abs_pos": [122.54, 137.93]
+          }
+        }
+      ],
+      "tracks": {
+        "segments": [
+          {
+            "start": [139.25, 108.95],
+            "end": [114.53863, 108.95],
+            "width": 0.25,
+            "layer": "F.Cu"
+          },
+          {
+            "start": [142.75, 115.95],
+            "end": [142.75, 112.45],
+            "width": 0.25,
+            "layer": "F.Cu"
+          },
+          {
+            "start": [122.54, 135.99],
+            "end": [112, 125.45],
+            "width": 0.25,
+            "layer": "F.Cu"
+          },
+          {
+            "start": [122.54, 137.93],
+            "end": [122.54, 135.99],
+            "width": 0.25,
+            "layer": "F.Cu"
+          },
+          {
+            "start": [142.75, 112.45],
+            "end": [139.25, 108.95],
+            "width": 0.25,
+            "layer": "F.Cu"
+          },
+          {
+            "start": [112, 125.45],
+            "end": [112, 119.45],
+            "width": 0.25,
+            "layer": "F.Cu"
+          },
+          {
+            "start": [114.53863, 108.95],
+            "end": [106.72, 101.13137],
+            "width": 0.25,
+            "layer": "F.Cu"
+          },
+          {
+            "start": [112, 119.45],
+            "end": [114.25, 117.2],
+            "width": 0.25,
+            "layer": "F.Cu"
+          },
+          {
+            "start": [114.25, 117.2],
+            "end": [141.5, 117.2],
+            "width": 0.25,
+            "layer": "F.Cu"
+          },
+          {
+            "start": [106.72, 101.13137],
+            "end": [106.72, 100],
+            "width": 0.25,
+            "layer": "F.Cu"
+          },
+          {
+            "start": [141.5, 117.2],
+            "end": [142.75, 115.95],
+            "width": 0.25,
+            "layer": "F.Cu"
+          }
+        ],
+        "arcs": ["TODO: extract arc info. Most samples don't have arcs to help test :("],
+        "vias": ["TODO: are vias necessary for our routing interests?"]
+      },
+      "errors": []
+    },
+    "7": {
+      "name": "Net-(A1-Pad28)",
+      "class": "TODO",
+      "pads": [
+        {
+          "Modules:Arduino_Nano_WithMountingHoles pad 28": {
+            "abs_pos": [152.44, 105.08]
+          }
+        }
+      ],
+      "tracks": {
+        "segments": [],
+        "arcs": ["TODO: extract arc info. Most samples don't have arcs to help test :("],
+        "vias": ["TODO: are vias necessary for our routing interests?"]
+      },
+      "errors": []
+    },
+    "8": {
+      "name": "Net-(A1-Pad12)",
+      "class": "TODO",
+      "pads": [
+        {
+          "Modules:Arduino_Nano_WithMountingHoles pad 12": {
+            "abs_pos": [137.2, 127.94]
+          }
+        }
+      ],
+      "tracks": {
+        "segments": [],
+        "arcs": ["TODO: extract arc info. Most samples don't have arcs to help test :("],
+        "vias": ["TODO: are vias necessary for our routing interests?"]
+      },
+      "errors": []
+    },
+    "9": {
+      "name": "Net-(A1-Pad27)",
+      "class": "TODO",
+      "pads": [
+        {
+          "Maxime:Potentiometer pad 3": {
+            "abs_pos": [142.73, 140.99]
+          }
+        },
+        {
+          "Modules:Arduino_Nano_WithMountingHoles pad 27": {
+            "abs_pos": [152.44, 107.62]
+          }
+        },
+        {
+          "Maxime:BNC_Socket_TYCO-AMP_LargePads pad 2": {
+            "abs_pos": [102.27722, 85.7366]
+          }
+        },
+        {
+          "Maxime:BNC_Socket_TYCO-AMP_LargePads pad 2": {
+            "abs_pos": [112.47532, 85.7366]
+          }
+        },
+        {
+          "Maxime:BNC_Socket_TYCO-AMP_LargePads pad 2": {
+            "abs_pos": [104.87564, 90.00126]
+          }
+        }
+      ],
+      "tracks": {
+        "segments": [
+          {
+            "start": [108.1116, 79.89968],
+            "end": [108.1116, 81.89974],
+            "width": 0.25,
+            "layer": "B.Cu"
+          },
+          {
+            "start": [110.37732, 85.95],
+            "end": [108.1116, 85.95],
+            "width": 0.25,
+            "layer": "B.Cu"
+          },
+          {
+            "start": [111.92668, 87.49936],
+            "end": [110.37732, 85.95],
+            "width": 0.25,
+            "layer": "B.Cu"
+          },
+          {
+            "start": [112.37626, 87.49936],
+            "end": [111.92668, 87.49936],
+            "width": 0.25,
+            "layer": "B.Cu"
+          },
+          {
+            "start": [108.1116, 81.89974],
+            "end": [108.1116, 85.95],
+            "width": 0.25,
+            "layer": "B.Cu"
+          },
+          {
+            "start": [108.1116, 85.95],
+            "end": [108.1116, 90.09778],
+            "width": 0.25,
+            "layer": "B.Cu"
+          },
+          {
+            "start": [140.75, 130.7],
+            "end": [129.58, 119.53],
+            "width": 0.25,
+            "layer": "B.Cu"
+          },
+          {
+            "start": [129.58, 119.53],
+            "end": [129.58, 115.24],
+            "width": 0.25,
+            "layer": "B.Cu"
+          },
+          {
+            "start": [136.25, 141.95],
+            "end": [140.75, 137.45],
+            "width": 0.25,
+            "layer": "B.Cu"
+          },
+          {
+            "start": [136.25, 144.7],
+            "end": [136.25, 141.95],
+            "width": 0.25,
+            "layer": "B.Cu"
+          },
+          {
+            "start": [145.26, 143.48],
+            "end": [145.26, 144.752792],
+            "width": 0.25,
+            "layer": "B.Cu"
+          },
+          {
+            "start": [140.75, 137.45],
+            "end": [140.75, 130.7],
+            "width": 0.25,
+            "layer": "B.Cu"
+          },
+          {
+            "start": [145.25, 144.762792],
+            "end": [145.25, 145.2],
+            "width": 0.25,
+            "layer": "B.Cu"
+          },
+          {
+            "start": [145.25, 145.2],
+            "end": [144.25, 146.2],
+            "width": 0.25,
+            "layer": "B.Cu"
+          },
+          {
+            "start": [145.26, 144.752792],
+            "end": [145.25, 144.762792],
+            "width": 0.25,
+            "layer": "B.Cu"
+          },
+          {
+            "start": [144.25, 146.2],
+            "end": [137.75, 146.2],
+            "width": 0.25,
+            "layer": "B.Cu"
+          },
+          {
+            "start": [137.75, 146.2],
+            "end": [136.25, 144.7],
+            "width": 0.25,
+            "layer": "B.Cu"
+          },
+          {
+            "start": [129.58, 115.24],
+            "end": [121.54, 107.2],
+            "width": 0.25,
+            "layer": "B.Cu"
+          },
+          {
+            "start": [108.1116, 92.09784],
+            "end": [108.1116, 90.09778],
+            "width": 0.25,
+            "layer": "B.Cu"
+          },
+          {
+            "start": [112.925001, 96.911241],
+            "end": [108.1116, 92.09784],
+            "width": 0.25,
+            "layer": "B.Cu"
+          },
+          {
+            "start": [112.925001, 100.250003],
+            "end": [112.925001, 96.911241],
+            "width": 0.25,
+            "layer": "B.Cu"
+          },
+          {
+            "start": [119.874998, 107.2],
+            "end": [112.925001, 100.250003],
+            "width": 0.25,
+            "layer": "B.Cu"
+          },
+          {
+            "start": [121.54, 107.2],
+            "end": [119.874998, 107.2],
+            "width": 0.25,
+            "layer": "B.Cu"
+          }
+        ],
+        "arcs": ["TODO: extract arc info. Most samples don't have arcs to help test :("],
+        "vias": ["TODO: are vias necessary for our routing interests?"]
+      },
+      "errors": []
+    },
+    "10": {
+      "name": "Net-(A1-Pad11)",
+      "class": "TODO",
+      "pads": [
+        {
+          "Modules:Arduino_Nano_WithMountingHoles pad 11": {
+            "abs_pos": [137.2, 125.4]
+          }
+        }
+      ],
+      "tracks": {
+        "segments": [],
+        "arcs": ["TODO: extract arc info. Most samples don't have arcs to help test :("],
+        "vias": ["TODO: are vias necessary for our routing interests?"]
+      },
+      "errors": []
+    },
+    "11": {
+      "name": "Net-(A1-Pad26)",
+      "class": "TODO",
+      "pads": [
+        {
+          "Modules:Arduino_Nano_WithMountingHoles pad 26": {
+            "abs_pos": [152.44, 110.16]
+          }
+        }
+      ],
+      "tracks": {
+        "segments": [],
+        "arcs": ["TODO: extract arc info. Most samples don't have arcs to help test :("],
+        "vias": ["TODO: are vias necessary for our routing interests?"]
+      },
+      "errors": []
+    },
+    "12": {
+      "name": "Net-(A1-Pad10)",
+      "class": "TODO",
+      "pads": [
+        {
+          "Modules:Arduino_Nano_WithMountingHoles pad 10": {
+            "abs_pos": [137.2, 122.86]
+          }
+        }
+      ],
+      "tracks": {
+        "segments": [],
+        "arcs": ["TODO: extract arc info. Most samples don't have arcs to help test :("],
+        "vias": ["TODO: are vias necessary for our routing interests?"]
+      },
+      "errors": []
+    },
+    "13": {
+      "name": "Net-(A1-Pad25)",
+      "class": "TODO",
+      "pads": [
+        {
+          "Modules:Arduino_Nano_WithMountingHoles pad 25": {
+            "abs_pos": [152.44, 112.7]
+          }
+        }
+      ],
+      "tracks": {
+        "segments": [],
+        "arcs": ["TODO: extract arc info. Most samples don't have arcs to help test :("],
+        "vias": ["TODO: are vias necessary for our routing interests?"]
+      },
+      "errors": []
+    },
+    "14": {
+      "name": "Net-(A1-Pad9)",
+      "class": "TODO",
+      "pads": [
+        {
+          "Modules:Arduino_Nano_WithMountingHoles pad 9": {
+            "abs_pos": [137.2, 120.32]
+          }
+        }
+      ],
+      "tracks": {
+        "segments": [],
+        "arcs": ["TODO: extract arc info. Most samples don't have arcs to help test :("],
+        "vias": ["TODO: are vias necessary for our routing interests?"]
+      },
+      "errors": []
+    },
+    "15": {
+      "name": "Net-(A1-Pad24)",
+      "class": "TODO",
+      "pads": [
+        {
+          "Modules:Arduino_Nano_WithMountingHoles pad 24": {
+            "abs_pos": [152.44, 115.24]
+          }
+        }
+      ],
+      "tracks": {
+        "segments": [],
+        "arcs": ["TODO: extract arc info. Most samples don't have arcs to help test :("],
+        "vias": ["TODO: are vias necessary for our routing interests?"]
+      },
+      "errors": []
+    },
+    "16": {
+      "name": "Net-(A1-Pad8)",
+      "class": "TODO",
+      "pads": [
+        {
+          "Modules:Arduino_Nano_WithMountingHoles pad 8": {
+            "abs_pos": [137.2, 117.78]
+          }
+        },
+        {
+          "Maxime:maxi_DPDT_Angled pad 6": {
+            "abs_pos": [122.54, 140.47]
+          }
+        }
+      ],
+      "tracks": {
+        "segments": [
+          {
+            "start": [144, 112.2],
+            "end": [138.13, 106.33],
+            "width": 0.25,
+            "layer": "F.Cu"
+          },
+          {
+            "start": [142.25, 118.2],
+            "end": [144, 116.45],
+            "width": 0.25,
+            "layer": "F.Cu"
+          },
+          {
+            "start": [114.5, 118.2],
+            "end": [142.25, 118.2],
+            "width": 0.25,
+            "layer": "F.Cu"
+          },
+          {
+            "start": [125.75, 106.33],
+            "end": [119.42, 100],
+            "width": 0.25,
+            "layer": "F.Cu"
+          },
+          {
+            "start": [123.165, 140.47],
+            "end": [124.9, 138.735],
+            "width": 0.25,
+            "layer": "F.Cu"
+          },
+          {
+            "start": [122.54, 140.47],
+            "end": [123.165, 140.47],
+            "width": 0.25,
+            "layer": "F.Cu"
+          },
+          {
+            "start": [124.9, 138.735],
+            "end": [124.9, 136.6],
+            "width": 0.25,
+            "layer": "F.Cu"
+          },
+          {
+            "start": [124.9, 136.6],
+            "end": [113, 124.7],
+            "width": 0.25,
+            "layer": "F.Cu"
+          },
+          {
+            "start": [144, 116.45],
+            "end": [144, 112.2],
+            "width": 0.25,
+            "layer": "F.Cu"
+          },
+          {
+            "start": [113, 124.7],
+            "end": [113, 119.7],
+            "width": 0.25,
+            "layer": "F.Cu"
+          },
+          {
+            "start": [138.13, 106.33],
+            "end": [125.75, 106.33],
+            "width": 0.25,
+            "layer": "F.Cu"
+          },
+          {
+            "start": [113, 119.7],
+            "end": [114.5, 118.2],
+            "width": 0.25,
+            "layer": "F.Cu"
+          }
+        ],
+        "arcs": ["TODO: extract arc info. Most samples don't have arcs to help test :("],
+        "vias": ["TODO: are vias necessary for our routing interests?"]
+      },
+      "errors": []
+    },
+    "17": {
+      "name": "Net-(A1-Pad23)",
+      "class": "TODO",
+      "pads": [
+        {
+          "Modules:Arduino_Nano_WithMountingHoles pad 23": {
+            "abs_pos": [152.44, 117.78]
+          }
+        }
+      ],
+      "tracks": {
+        "segments": [],
+        "arcs": ["TODO: extract arc info. Most samples don't have arcs to help test :("],
+        "vias": ["TODO: are vias necessary for our routing interests?"]
+      },
+      "errors": []
+    },
+    "18": {
+      "name": "Net-(A1-Pad7)",
+      "class": "TODO",
+      "pads": [
+        {
+          "Modules:Arduino_Nano_WithMountingHoles pad 7": {
+            "abs_pos": [137.2, 115.24]
+          }
+        }
+      ],
+      "tracks": {
+        "segments": [],
+        "arcs": ["TODO: extract arc info. Most samples don't have arcs to help test :("],
+        "vias": ["TODO: are vias necessary for our routing interests?"]
+      },
+      "errors": []
+    },
+    "19": {
+      "name": "Net-(A1-Pad22)",
+      "class": "TODO",
+      "pads": [
+        {
+          "Modules:Arduino_Nano_WithMountingHoles pad 22": {
+            "abs_pos": [152.44, 120.32]
+          }
+        }
+      ],
+      "tracks": {
+        "segments": [],
+        "arcs": ["TODO: extract arc info. Most samples don't have arcs to help test :("],
+        "vias": ["TODO: are vias necessary for our routing interests?"]
+      },
+      "errors": []
+    },
+    "20": {
+      "name": "Net-(A1-Pad6)",
+      "class": "TODO",
+      "pads": [
+        {
+          "Modules:Arduino_Nano_WithMountingHoles pad 6": {
+            "abs_pos": [137.2, 112.7]
+          }
+        }
+      ],
+      "tracks": {
+        "segments": [],
+        "arcs": ["TODO: extract arc info. Most samples don't have arcs to help test :("],
+        "vias": ["TODO: are vias necessary for our routing interests?"]
+      },
+      "errors": []
+    },
+    "21": {
+      "name": "Net-(A1-Pad21)",
+      "class": "TODO",
+      "pads": [
+        {
+          "Modules:Arduino_Nano_WithMountingHoles pad 21": {
+            "abs_pos": [152.44, 122.86]
+          }
+        }
+      ],
+      "tracks": {
+        "segments": [],
+        "arcs": ["TODO: extract arc info. Most samples don't have arcs to help test :("],
+        "vias": ["TODO: are vias necessary for our routing interests?"]
+      },
+      "errors": []
+    },
+    "22": {
+      "name": "Net-(A1-Pad5)",
+      "class": "TODO",
+      "pads": [
+        {
+          "Maxime:R_Axial_DIN0309_L9.0mm_D3.2mm_P15.24mm_Horizontal pad 2": {
+            "abs_pos": [133.43, 90.95]
+          }
+        },
+        {
+          "Modules:Arduino_Nano_WithMountingHoles pad 5": {
+            "abs_pos": [137.2, 110.16]
+          }
+        }
+      ],
+      "tracks": {
+        "segments": [
+          {
+            "start": [127.04, 98.86863],
+            "end": [127.04, 100],
+            "width": 0.25,
+            "layer": "F.Cu"
+          },
+          {
+            "start": [127.04, 96.20863],
+            "end": [127.04, 98.86863],
+            "width": 0.25,
+            "layer": "F.Cu"
+          },
+          {
+            "start": [132.29863, 90.95],
+            "end": [127.04, 96.20863],
+            "width": 0.25,
+            "layer": "F.Cu"
+          },
+          {
+            "start": [133.43, 90.95],
+            "end": [132.29863, 90.95],
+            "width": 0.25,
+            "layer": "F.Cu"
+          }
+        ],
+        "arcs": ["TODO: extract arc info. Most samples don't have arcs to help test :("],
+        "vias": ["TODO: are vias necessary for our routing interests?"]
+      },
+      "errors": []
+    },
+    "23": {
+      "name": "Net-(A1-Pad20)",
+      "class": "TODO",
+      "pads": [
+        {
+          "Modules:Arduino_Nano_WithMountingHoles pad 20": {
+            "abs_pos": [152.44, 125.4]
+          }
+        }
+      ],
+      "tracks": {
+        "segments": [],
+        "arcs": ["TODO: extract arc info. Most samples don't have arcs to help test :("],
+        "vias": ["TODO: are vias necessary for our routing interests?"]
+      },
+      "errors": []
+    },
+    "24": {
+      "name": "Net-(A1-Pad19)",
+      "class": "TODO",
+      "pads": [
+        {
+          "Maxime:R_Axial_DIN0309_L9.0mm_D3.2mm_P15.24mm_Horizontal pad 2": {
+            "abs_pos": [160.18, 130.95]
+          }
+        },
+        {
+          "Modules:Arduino_Nano_WithMountingHoles pad 19": {
+            "abs_pos": [152.44, 127.94]
+          }
+        }
+      ],
+      "tracks": {
+        "segments": [
+          {
+            "start": [135.82, 129.81863],
+            "end": [133.70137, 127.7],
+            "width": 0.25,
+            "layer": "F.Cu"
+          },
+          {
+            "start": [135.82, 130.95],
+            "end": [135.82, 129.81863],
+            "width": 0.25,
+            "layer": "F.Cu"
+          },
+          {
+            "start": [133.70137, 127.7],
+            "end": [118.75, 127.7],
+            "width": 0.25,
+            "layer": "F.Cu"
+          },
+          {
+            "start": [118.75, 127.7],
+            "end": [114, 122.95],
+            "width": 0.25,
+            "layer": "F.Cu"
+          },
+          {
+            "start": [114, 122.95],
+            "end": [114, 120.7],
+            "width": 0.25,
+            "layer": "F.Cu"
+          },
+          {
+            "start": [114, 120.7],
+            "end": [114, 120.7],
+            "width": 0.25,
+            "layer": "F.Cu"
+          },
+          {
+            "start": [114, 119.98],
+            "end": [114, 120.7],
+            "width": 0.25,
+            "layer": "B.Cu"
+          },
+          {
+            "start": [109.26, 115.24],
+            "end": [114, 119.98],
+            "width": 0.25,
+            "layer": "B.Cu"
+          }
+        ],
+        "arcs": ["TODO: extract arc info. Most samples don't have arcs to help test :("],
+        "vias": ["TODO: are vias necessary for our routing interests?"]
+      },
+      "errors": []
+    },
+    "25": {
+      "name": "Net-(A1-Pad3)",
+      "class": "TODO",
+      "pads": [
+        {
+          "Modules:Arduino_Nano_WithMountingHoles pad 3": {
+            "abs_pos": [137.2, 105.08]
+          }
+        }
+      ],
+      "tracks": {
+        "segments": [],
+        "arcs": ["TODO: extract arc info. Most samples don't have arcs to help test :("],
+        "vias": ["TODO: are vias necessary for our routing interests?"]
+      },
+      "errors": []
+    },
+    "26": {
+      "name": "Net-(A1-Pad18)",
+      "class": "TODO",
+      "pads": [
+        {
+          "Modules:Arduino_Nano_WithMountingHoles pad 18": {
+            "abs_pos": [152.44, 130.48]
+          }
+        }
+      ],
+      "tracks": {
+        "segments": [],
+        "arcs": ["TODO: extract arc info. Most samples don't have arcs to help test :("],
+        "vias": ["TODO: are vias necessary for our routing interests?"]
+      },
+      "errors": []
+    },
+    "27": {
+      "name": "Net-(A1-Pad2)",
+      "class": "TODO",
+      "pads": [
+        {
+          "Modules:Arduino_Nano_WithMountingHoles pad 2": {
+            "abs_pos": [137.2, 102.54]
+          }
+        }
+      ],
+      "tracks": {
+        "segments": [],
+        "arcs": ["TODO: extract arc info. Most samples don't have arcs to help test :("],
+        "vias": ["TODO: are vias necessary for our routing interests?"]
+      },
+      "errors": []
+    },
+    "28": {
+      "name": "Net-(A1-Pad17)",
+      "class": "TODO",
+      "pads": [
+        {
+          "Modules:Arduino_Nano_WithMountingHoles pad 17": {
+            "abs_pos": [152.44, 133.02]
+          }
+        }
+      ],
+      "tracks": {
+        "segments": [],
+        "arcs": ["TODO: extract arc info. Most samples don't have arcs to help test :("],
+        "vias": ["TODO: are vias necessary for our routing interests?"]
+      },
+      "errors": []
+    },
+    "29": {
+      "name": "Net-(A1-Pad1)",
+      "class": "TODO",
+      "pads": [
+        {
+          "Modules:Arduino_Nano_WithMountingHoles pad 1": {
+            "abs_pos": [137.2, 100.0]
+          }
+        }
+      ],
+      "tracks": {
+        "segments": [],
+        "arcs": ["TODO: extract arc info. Most samples don't have arcs to help test :("],
+        "vias": ["TODO: are vias necessary for our routing interests?"]
+      },
+      "errors": []
+    },
+    "30": {
+      "name": "Net-(D1-Pad2)",
+      "class": "TODO",
+      "pads": [
+        {
+          "Maxime:JST_XH_B02B-XH-A_02x2.50mm_Straight pad 2": {
+            "abs_pos": [157.0, 131.95]
+          }
+        },
+        {
+          "Maxime:R_Axial_DIN0309_L9.0mm_D3.2mm_P15.24mm_Horizontal pad 1": {
+            "abs_pos": [148.0, 135.45]
+          }
+        }
+      ],
+      "tracks": {
+        "segments": [
+          {
+            "start": [153.5, 135.45],
+            "end": [154.5, 134.45],
+            "width": 0.25,
+            "layer": "B.Cu"
+          },
+          {
+            "start": [148, 135.45],
+            "end": [153.5, 135.45],
+            "width": 0.25,
+            "layer": "B.Cu"
+          }
+        ],
+        "arcs": ["TODO: extract arc info. Most samples don't have arcs to help test :("],
+        "vias": ["TODO: are vias necessary for our routing interests?"]
+      },
+      "errors": []
+    },
+    "31": {
+      "name": "Net-(D2-Pad2)",
+      "class": "TODO",
+      "pads": [
+        {
+          "Maxime:maxi_DPDT_Angled pad 5": {
+            "abs_pos": [120.0, 140.47]
+          }
+        },
+        {
+          "Diodes_THT:D_DO-35_SOD27_P7.62mm_Horizontal pad 2": {
+            "abs_pos": [153.12, 108.7]
+          }
+        }
+      ],
+      "tracks": {
+        "segments": [
+          {
+            "start": [120, 140.97],
+            "end": [118.22, 142.75],
+            "width": 0.25,
+            "layer": "B.Cu"
+          },
+          {
+            "start": [120, 140.47],
+            "end": [120, 140.97],
+            "width": 0.25,
+            "layer": "B.Cu"
+          },
+          {
+            "start": [118.22, 142.75],
+            "end": [116.75, 142.75],
+            "width": 0.25,
+            "layer": "B.Cu"
+          },
+          {
+            "start": [116.75, 142.75],
+            "end": [115.2, 141.2],
+            "width": 0.25,
+            "layer": "B.Cu"
+          },
+          {
+            "start": [115.2, 141.2],
+            "end": [115.2, 122.03],
+            "width": 0.25,
+            "layer": "B.Cu"
+          },
+          {
+            "start": [115.2, 122.03],
+            "end": [117.74, 119.49],
+            "width": 0.25,
+            "layer": "B.Cu"
+          },
+          {
+            "start": [117.74, 119.49],
+            "end": [127.75, 119.49],
+            "width": 0.25,
+            "layer": "B.Cu"
+          },
+          {
+            "start": [127.75, 119.49],
+            "end": [127.96, 119.49],
+            "width": 0.25,
+            "layer": "B.Cu"
+          },
+          {
+            "start": [127.75, 119.49],
+            "end": [143.71, 119.49],
+            "width": 0.25,
+            "layer": "F.Cu"
+          },
+          {
+            "start": [143.71, 119.49],
+            "end": [145.5, 117.7],
+            "width": 0.25,
+            "layer": "F.Cu"
+          },
+          {
+            "start": [145.5, 117.7],
+            "end": [145.5, 116.32],
+            "width": 0.25,
+            "layer": "F.Cu"
+          }
+        ],
+        "arcs": ["TODO: extract arc info. Most samples don't have arcs to help test :("],
+        "vias": ["TODO: are vias necessary for our routing interests?"]
+      },
+      "errors": []
+    },
+    "32": {
+      "name": "Net-(D2-Pad1)",
+      "class": "TODO",
+      "pads": [
+        {
+          "Maxime:R_Axial_DIN0309_L9.0mm_D3.2mm_P15.24mm_Horizontal pad 2": {
+            "abs_pos": [145.68, 95.95]
+          }
+        },
+        {
+          "Diodes_THT:D_DO-35_SOD27_P7.62mm_Horizontal pad 1": {
+            "abs_pos": [145.5, 108.7]
+          }
+        }
+      ],
+      "tracks": {
+        "segments": [
+          {
+            "start": [143.75, 108.7],
+            "end": [145.5, 108.7],
+            "width": 0.25,
+            "layer": "B.Cu"
+          },
+          {
+            "start": [141.5, 106.45],
+            "end": [143.75, 108.7],
+            "width": 0.25,
+            "layer": "B.Cu"
+          },
+          {
+            "start": [141.5, 98.95],
+            "end": [141.5, 106.45],
+            "width": 0.25,
+            "layer": "B.Cu"
+          },
+          {
+            "start": [140.5, 97.95],
+            "end": [141.5, 98.95],
+            "width": 0.25,
+            "layer": "B.Cu"
+          },
+          {
+            "start": [121.32, 95.95],
+            "end": [123.32, 97.95],
+            "width": 0.25,
+            "layer": "B.Cu"
+          },
+          {
+            "start": [123.32, 97.95],
+            "end": [140.5, 97.95],
+            "width": 0.25,
+            "layer": "B.Cu"
+          }
+        ],
+        "arcs": ["TODO: extract arc info. Most samples don't have arcs to help test :("],
+        "vias": ["TODO: are vias necessary for our routing interests?"]
+      },
+      "errors": []
+    },
+    "33": {
+      "name": "Net-(D3-Pad2)",
+      "class": "TODO",
+      "pads": [
+        {
+          "Maxime:JST_XH_B02B-XH-A_02x2.50mm_Straight pad 2": {
+            "abs_pos": [157.0, 141.7]
+          }
+        },
+        {
+          "Diodes_THT:D_DO-201_P15.24mm_Horizontal pad 2": {
+            "abs_pos": [168.58, 115.87]
+          }
+        },
+        {
+          "Package_TO_SOT_THT:TO-92L_Inline_Wide pad 3": {
+            "abs_pos": [149.83, 99.95]
+          }
+        }
+      ],
+      "tracks": {
+        "segments": [
+          {
+            "start": [152.040001, 101.929999],
+            "end": [153.34, 100.63],
+            "width": 1,
+            "layer": "B.Cu"
+          },
+          {
+            "start": [150.53499, 103.43501],
+            "end": [152.040001, 101.929999],
+            "width": 1,
+            "layer": "B.Cu"
+          },
+          {
+            "start": [150.53499, 109.264988],
+            "end": [150.53499, 110.7],
+            "width": 1,
+            "layer": "B.Cu"
+          },
+          {
+            "start": [146.300002, 105.03],
+            "end": [150.53499, 109.264988],
+            "width": 1,
+            "layer": "B.Cu"
+          },
+          {
+            "start": [144.75, 105.03],
+            "end": [146.300002, 105.03],
+            "width": 1,
+            "layer": "B.Cu"
+          },
+          {
+            "start": [150.53499, 110.7],
+            "end": [150.53499, 110.2],
+            "width": 1,
+            "layer": "B.Cu"
+          },
+          {
+            "start": [150.53499, 110.2],
+            "end": [150.53499, 103.43501],
+            "width": 1,
+            "layer": "B.Cu"
+          },
+          {
+            "start": [155.737436, 144.2],
+            "end": [154.5, 144.2],
+            "width": 1,
+            "layer": "B.Cu"
+          },
+          {
+            "start": [156.49999, 143.437446],
+            "end": [155.737436, 144.2],
+            "width": 1,
+            "layer": "B.Cu"
+          },
+          {
+            "start": [156.49999, 129.19999],
+            "end": [156.49999, 143.437446],
+            "width": 1,
+            "layer": "B.Cu"
+          },
+          {
+            "start": [150.5, 123.2],
+            "end": [156.49999, 129.19999],
+            "width": 1,
+            "layer": "B.Cu"
+          },
+          {
+            "start": [150.5, 110.23499],
+            "end": [150.5, 123.2],
+            "width": 1,
+            "layer": "B.Cu"
+          },
+          {
+            "start": [150.53499, 110.2],
+            "end": [150.5, 110.23499],
+            "width": 1,
+            "layer": "B.Cu"
+          }
+        ],
+        "arcs": ["TODO: extract arc info. Most samples don't have arcs to help test :("],
+        "vias": ["TODO: are vias necessary for our routing interests?"]
+      },
+      "errors": []
+    },
+    "34": {
+      "name": "Net-(J1-Pad1)",
+      "class": "TODO",
+      "pads": [
+        {
+          "Maxime:R_Axial_DIN0309_L9.0mm_D3.2mm_P15.24mm_Horizontal pad 1": {
+            "abs_pos": [136.5, 90.95]
+          }
+        },
+        {
+          "Maxime:R_Axial_DIN0309_L9.0mm_D3.2mm_P15.24mm_Horizontal pad 1": {
+            "abs_pos": [121.25, 90.95]
+          }
+        },
+        {
+          "Maxime:BNC_Socket_TYCO-AMP_LargePads pad 1": {
+            "abs_pos": [107.375, 90.00126]
+          }
+        }
+      ],
+      "tracks": {
+        "segments": [
+          {
+            "start": [115.3, 85],
+            "end": [121.25, 90.95],
+            "width": 0.25,
+            "layer": "F.Cu"
+          },
+          {
+            "start": [112.37626, 85],
+            "end": [115.3, 85],
+            "width": 0.25,
+            "layer": "F.Cu"
+          },
+          {
+            "start": [134.5, 88.95],
+            "end": [136.5, 90.95],
+            "width": 0.25,
+            "layer": "F.Cu"
+          },
+          {
+            "start": [121.25, 90.95],
+            "end": [123.25, 88.95],
+            "width": 0.25,
+            "layer": "F.Cu"
+          },
+          {
+            "start": [123.25, 88.95],
+            "end": [134.5, 88.95],
+            "width": 0.25,
+            "layer": "F.Cu"
+          }
+        ],
+        "arcs": ["TODO: extract arc info. Most samples don't have arcs to help test :("],
+        "vias": ["TODO: are vias necessary for our routing interests?"]
+      },
+      "errors": []
+    },
+    "35": {
+      "name": "Net-(Q1-Pad2)",
+      "class": "TODO",
+      "pads": [
+        {
+          "Maxime:R_Axial_DIN0309_L9.0mm_D3.2mm_P15.24mm_Horizontal pad 2": {
+            "abs_pos": [148.68, 95.95]
+          }
+        },
+        {
+          "Maxime:R_Axial_DIN0309_L9.0mm_D3.2mm_P15.24mm_Horizontal pad 1": {
+            "abs_pos": [133.5, 95.95]
+          }
+        },
+        {
+          "Package_TO_SOT_THT:TO-92L_Inline_Wide pad 2": {
+            "abs_pos": [147.29, 99.95]
+          }
+        }
+      ],
+      "tracks": {
+        "segments": [
+          {
+            "start": [146.07, 102.49],
+            "end": [144.75, 102.49],
+            "width": 0.25,
+            "layer": "F.Cu"
+          },
+          {
+            "start": [148.68, 95.95],
+            "end": [148.68, 99.88],
+            "width": 0.25,
+            "layer": "F.Cu"
+          },
+          {
+            "start": [148.68, 99.88],
+            "end": [146.07, 102.49],
+            "width": 0.25,
+            "layer": "F.Cu"
+          },
+          {
+            "start": [146.18, 93.45],
+            "end": [148.68, 95.95],
+            "width": 0.25,
+            "layer": "F.Cu"
+          },
+          {
+            "start": [133.5, 95.95],
+            "end": [136, 93.45],
+            "width": 0.25,
+            "layer": "F.Cu"
+          },
+          {
+            "start": [136, 93.45],
+            "end": [146.18, 93.45],
+            "width": 0.25,
+            "layer": "F.Cu"
+          }
+        ],
+        "arcs": ["TODO: extract arc info. Most samples don't have arcs to help test :("],
+        "vias": ["TODO: are vias necessary for our routing interests?"]
+      },
+      "errors": []
+    },
+    "36": {
+      "name": "Net-(R1-Pad1)",
+      "class": "TODO",
+      "pads": [
+        {
+          "Maxime:Potentiometer pad 2": {
+            "abs_pos": [142.73, 143.49]
+          }
+        },
+        {
+          "Maxime:R_Axial_DIN0309_L9.0mm_D3.2mm_P15.24mm_Horizontal pad 1": {
+            "abs_pos": [148.0, 130.95]
+          }
+        }
+      ],
+      "tracks": {
+        "segments": [
+          {
+            "start": [142.76, 136.19],
+            "end": [148, 130.95],
+            "width": 0.25,
+            "layer": "B.Cu"
+          },
+          {
+            "start": [142.76, 143.48],
+            "end": [142.76, 136.19],
+            "width": 0.25,
+            "layer": "B.Cu"
+          }
+        ],
+        "arcs": ["TODO: extract arc info. Most samples don't have arcs to help test :("],
+        "vias": ["TODO: are vias necessary for our routing interests?"]
+      },
+      "errors": []
+    },
+    "37": {
+      "name": "Net-(R2-Pad2)",
+      "class": "TODO",
+      "pads": [
+        {
+          "Maxime:R_Axial_DIN0309_L9.0mm_D3.2mm_P15.24mm_Horizontal pad 2": {
+            "abs_pos": [160.18, 135.45]
+          }
+        },
+        {
+          "Maxime:maxi_DPDT_Angled pad 2": {
+            "abs_pos": [120.0, 137.93]
+          }
+        }
+      ],
+      "tracks": {
+        "segments": [
+          {
+            "start": [132.57, 138.7],
+            "end": [135.82, 135.45],
+            "width": 0.25,
+            "layer": "B.Cu"
+          },
+          {
+            "start": [129.5, 138.7],
+            "end": [132.57, 138.7],
+            "width": 0.25,
+            "layer": "B.Cu"
+          },
+          {
+            "start": [126.5, 135.7],
+            "end": [129.5, 138.7],
+            "width": 0.25,
+            "layer": "B.Cu"
+          },
+          {
+            "start": [121.25, 135.7],
+            "end": [126.5, 135.7],
+            "width": 0.25,
+            "layer": "B.Cu"
+          },
+          {
+            "start": [120, 137.93],
+            "end": [120, 136.95],
+            "width": 0.25,
+            "layer": "B.Cu"
+          },
+          {
+            "start": [120, 136.95],
+            "end": [121.25, 135.7],
+            "width": 0.25,
+            "layer": "B.Cu"
+          }
+        ],
+        "arcs": ["TODO: extract arc info. Most samples don't have arcs to help test :("],
+        "vias": ["TODO: are vias necessary for our routing interests?"]
+      },
+      "errors": []
+    },
+    "38": {
+      "name": "Net-(C1-Pad1)",
+      "class": "TODO",
+      "pads": [
+        {
+          "Maxime:JST_XH_B03B-XH-A_03x2.50mm_Straight pad 2": {
+            "abs_pos": [157.0, 81.7]
+          }
+        },
+        {
+          "Maxime:JST_XH_B03B-XH-A_03x2.50mm_Straight pad 1": {
+            "abs_pos": [154.5, 81.7]
+          }
+        },
+        {
+          "Maxime:JST_XH_B02B-XH-A_02x2.50mm_Straight pad 1": {
+            "abs_pos": [154.5, 141.7]
+          }
+        },
+        {
+          "Diodes_THT:D_DO-201_P15.24mm_Horizontal pad 1": {
+            "abs_pos": [153.34, 115.87]
+          }
+        },
+        {
+          "Maxime:BarrelJack_Horizontal_maxime pad 1": {
+            "abs_pos": [167.0, 60.95]
+          }
+        },
+        {
+          "Capacitors_THT:CP_Radial_D8.0mm_P3.50mm pad 1": {
+            "abs_pos": [130.2, 146.05]
+          }
+        },
+        {
+          "TO_SOT_Packages_THT:TO-220-5_Vertical_StaggeredType1 pad 1": {
+            "abs_pos": [112.4, 141.15]
+          }
+        }
+      ],
+      "tracks": {
+        "segments": [
+          {
+            "start": [112.375, 144.1],
+            "end": [112.375, 141.125],
+            "width": 1,
+            "layer": "B.Cu"
+          },
+          {
+            "start": [116.7, 148.425],
+            "end": [112.4, 144.125],
+            "width": 1,
+            "layer": "B.Cu"
+          },
+          {
+            "start": [126.775, 148.425],
+            "end": [116.7, 148.425],
+            "width": 1,
+            "layer": "B.Cu"
+          },
+          {
+            "start": [130.2, 146.05],
+            "end": [129.15, 146.05],
+            "width": 1,
+            "layer": "B.Cu"
+          },
+          {
+            "start": [129.15, 146.05],
+            "end": [126.775, 148.425],
+            "width": 1,
+            "layer": "B.Cu"
+          },
+          {
+            "start": [130.2, 147.1],
+            "end": [131.7, 148.6],
+            "width": 1,
+            "layer": "F.Cu"
+          },
+          {
+            "start": [130.2, 146.05],
+            "end": [130.2, 147.1],
+            "width": 1,
+            "layer": "F.Cu"
+          },
+          {
+            "start": [151, 111.98],
+            "end": [153.34, 114.32],
+            "width": 1,
+            "layer": "F.Cu"
+          },
+          {
+            "start": [151, 90.45],
+            "end": [151, 111.98],
+            "width": 1,
+            "layer": "F.Cu"
+          },
+          {
+            "start": [153.34, 114.32],
+            "end": [153.34, 115.87],
+            "width": 1,
+            "layer": "F.Cu"
+          },
+          {
+            "start": [150, 140.205],
+            "end": [150, 120.76],
+            "width": 1,
+            "layer": "F.Cu"
+          },
+          {
+            "start": [150, 120.76],
+            "end": [150, 119.45],
+            "width": 1,
+            "layer": "F.Cu"
+          },
+          {
+            "start": [150, 117.66],
+            "end": [150, 118.7],
+            "width": 1,
+            "layer": "F.Cu"
+          },
+          {
+            "start": [151.79, 115.87],
+            "end": [150, 117.66],
+            "width": 1,
+            "layer": "F.Cu"
+          },
+          {
+            "start": [153.34, 115.87],
+            "end": [151.79, 115.87],
+            "width": 0.25,
+            "layer": "F.Cu"
+          },
+          {
+            "start": [150, 119.45],
+            "end": [150, 118.7],
+            "width": 1,
+            "layer": "F.Cu"
+          },
+          {
+            "start": [150, 118.7],
+            "end": [150, 118.2],
+            "width": 0.25,
+            "layer": "F.Cu"
+          },
+          {
+            "start": [145.1, 148.6],
+            "end": [131.7, 148.6],
+            "width": 1,
+            "layer": "F.Cu"
+          },
+          {
+            "start": [151.495, 141.7],
+            "end": [154.5, 141.7],
+            "width": 1,
+            "layer": "F.Cu"
+          },
+          {
+            "start": [150, 140.205],
+            "end": [151.495, 141.7],
+            "width": 1,
+            "layer": "F.Cu"
+          },
+          {
+            "start": [152, 141.7],
+            "end": [154.5, 141.7],
+            "width": 0.25,
+            "layer": "F.Cu"
+          },
+          {
+            "start": [145.1, 148.6],
+            "end": [152, 141.7],
+            "width": 1,
+            "layer": "F.Cu"
+          },
+          {
+            "start": [153.375, 81.7],
+            "end": [154.5, 81.7],
+            "width": 0.25,
+            "layer": "F.Cu"
+          },
+          {
+            "start": [152.5, 80.825],
+            "end": [153.375, 81.7],
+            "width": 1,
+            "layer": "F.Cu"
+          },
+          {
+            "start": [152.5, 75.45],
+            "end": [152.5, 80.825],
+            "width": 1,
+            "layer": "F.Cu"
+          },
+          {
+            "start": [151, 87.7],
+            "end": [154.5, 84.2],
+            "width": 1,
+            "layer": "F.Cu"
+          },
+          {
+            "start": [151, 90.45],
+            "end": [151, 87.7],
+            "width": 1,
+            "layer": "F.Cu"
+          }
+        ],
+        "arcs": ["TODO: extract arc info. Most samples don't have arcs to help test :("],
+        "vias": ["TODO: are vias necessary for our routing interests?"]
+      },
+      "errors": []
+    },
+    "39": {
+      "name": "Net-(D4-Pad1)",
+      "class": "TODO",
+      "pads": [
+        {
+          "Inductors_THT:L_Radial_D6.0mm_P4.00mm pad 2": {
+            "abs_pos": [150.175, 122.95]
+          }
+        },
+        {
+          "Diodes_THT:D_DO-201AD_P12.70mm_Horizontal pad 1": {
+            "abs_pos": [137.8, 122.95]
+          }
+        },
+        {
+          "TO_SOT_Packages_THT:TO-220-5_Vertical_StaggeredType1 pad 2": {
+            "abs_pos": [114.10000000000001, 137.45000000000002]
+          }
+        }
+      ],
+      "tracks": {
+        "segments": [
+          {
+            "start": [111.599999, 143.950001],
+            "end": [110.7, 144.85],
+            "width": 0.25,
+            "layer": "F.Cu"
+          },
+          {
+            "start": [123.999999, 143.950001],
+            "end": [111.599999, 143.950001],
+            "width": 0.25,
+            "layer": "F.Cu"
+          },
+          {
+            "start": [139.65, 122.95],
+            "end": [142.175, 122.95],
+            "width": 0.25,
+            "layer": "F.Cu"
+          },
+          {
+            "start": [137.8, 122.95],
+            "end": [139.65, 122.95],
+            "width": 0.25,
+            "layer": "F.Cu"
+          },
+          {
+            "start": [123.999999, 143.950001],
+            "end": [129, 138.95],
+            "width": 0.25,
+            "layer": "F.Cu"
+          },
+          {
+            "start": [129, 138.95],
+            "end": [129.25, 139.2],
+            "width": 0.25,
+            "layer": "F.Cu"
+          },
+          {
+            "start": [129.25, 139.2],
+            "end": [135.25, 139.2],
+            "width": 0.25,
+            "layer": "F.Cu"
+          },
+          {
+            "start": [135.25, 139.2],
+            "end": [138.75, 135.7],
+            "width": 0.25,
+            "layer": "F.Cu"
+          },
+          {
+            "start": [138.75, 135.7],
+            "end": [138.75, 135.7],
+            "width": 0.25,
+            "layer": "F.Cu"
+          },
+          {
+            "start": [138.75, 123.9],
+            "end": [137.8, 122.95],
+            "width": 0.25,
+            "layer": "F.Cu"
+          },
+          {
+            "start": [138.75, 135.7],
+            "end": [138.75, 131.45],
+            "width": 0.25,
+            "layer": "B.Cu"
+          },
+          {
+            "start": [138.75, 131.45],
+            "end": [138.75, 131.45],
+            "width": 0.25,
+            "layer": "B.Cu"
+          },
+          {
+            "start": [138.75, 131.45],
+            "end": [138.75, 130.45],
+            "width": 0.25,
+            "layer": "F.Cu"
+          },
+          {
+            "start": [138.75, 130.45],
+            "end": [138.75, 129.95],
+            "width": 0.25,
+            "layer": "F.Cu"
+          },
+          {
+            "start": [138.75, 130.2],
+            "end": [138.75, 129.95],
+            "width": 0.25,
+            "layer": "F.Cu"
+          },
+          {
+            "start": [138.75, 129.95],
+            "end": [138.75, 123.9],
+            "width": 0.25,
+            "layer": "F.Cu"
+          }
+        ],
+        "arcs": ["TODO: extract arc info. Most samples don't have arcs to help test :("],
+        "vias": ["TODO: are vias necessary for our routing interests?"]
+      },
+      "errors": []
+    },
+    "40": {
+      "name": "Net-(J4-Pad1)",
+      "class": "TODO",
+      "pads": [
+        {
+          "Maxime:maxi_DPDT_Angled pad 1": {
+            "abs_pos": [117.46, 137.93]
+          }
+        },
+        {
+          "Maxime:maxi_DPDT_Angled pad 4": {
+            "abs_pos": [117.46, 140.47]
+          }
+        },
+        {
+          "Maxime:BNC_Socket_TYCO-AMP_LargePads pad 1": {
+            "abs_pos": [107.3, 135.00126]
+          }
+        }
+      ],
+      "tracks": {
+        "segments": [
+          {
+            "start": [117.46, 136.805],
+            "end": [117.46, 137.93],
+            "width": 0.25,
+            "layer": "F.Cu"
+          },
+          {
+            "start": [117.46, 133.65906],
+            "end": [117.46, 136.805],
+            "width": 0.25,
+            "layer": "F.Cu"
+          },
+          {
+            "start": [113.80094, 130],
+            "end": [117.46, 133.65906],
+            "width": 0.25,
+            "layer": "F.Cu"
+          },
+          {
+            "start": [112.30126, 130],
+            "end": [113.80094, 130],
+            "width": 0.25,
+            "layer": "F.Cu"
+          },
+          {
+            "start": [117.46, 137.93],
+            "end": [117.46, 140.47],
+            "width": 0.25,
+            "layer": "F.Cu"
+          }
+        ],
+        "arcs": ["TODO: extract arc info. Most samples don't have arcs to help test :("],
+        "vias": ["TODO: are vias necessary for our routing interests?"]
+      },
+      "errors": []
+    }
+  },
+  "errors": [
+    {
+      "Modules:Arduino_Nano_WithMountingHoles at [137.2, 100, 270]": "pad \"\" np_thru_hole circle at [0, -2.54] has error 864: key \"net\" not found"
+    },
+    {
+      "Modules:Arduino_Nano_WithMountingHoles at [137.2, 100, 270]": "pad \"\" np_thru_hole circle at [15.24, -2.54] has error 865: key \"net\" not found"
+    },
+    {
+      "Modules:Arduino_Nano_WithMountingHoles at [137.2, 100, 270]": "pad \"\" np_thru_hole circle at [15.24, 38.1] has error 866: key \"net\" not found"
+    },
+    {
+      "Modules:Arduino_Nano_WithMountingHoles at [137.2, 100, 270]": "pad \"\" np_thru_hole circle at [0, 38.1] has error 867: key \"net\" not found"
+    },
+    {
+      "Maxime:BarrelJack_Horizontal_maxime at [152.5, 60.95, 270]": "pad 4 thru_hole circle at [4.1, 0] has error 972: key \"net\" not found"
+    },
+    {
+      "MountingHole:MountingHole_6.4mm_M6 at [100, 65]": "pad 1 np_thru_hole circle at [0, 0] has error 1001: key \"net\" not found"
+    },
+    {
+      "Maxime:maxi_DPDT_Angled at [120, 149.65]": "pad 7 thru_hole circle at [-2.7, -4.1] has error 1096: key \"net\" not found"
+    },
+    {
+      "Maxime:maxi_DPDT_Angled at [120, 149.65]": "pad 8 thru_hole circle at [2.7, -4.1] has error 1097: key \"net\" not found"
+    },
+    {
+      "Mounting_Holes:MountingHole_3.2mm_M3 at [118, 93.5]": "pad \"\" np_thru_hole circle at [0, 0] has error 1495: key \"net\" not found"
+    },
+    {
+      "Mounting_Holes:MountingHole_3.2mm_M3 at [118, 122.5, 90]": "pad \"\" np_thru_hole circle at [0, 0] has error 1514: key \"net\" not found"
+    },
+    {
+      "Mounting_Holes:MountingHole_3.2mm_M3 at [154, 93.5]": "pad \"\" np_thru_hole circle at [0, 0] has error 1629: key \"net\" not found"
+    },
+    {
+      "Mounting_Holes:MountingHole_3.2mm_M3 at [154, 122.5]": "pad \"\" np_thru_hole circle at [0, 0] has error 1712: key \"net\" not found"
+    },
+    {
+      "MountingHole:MountingHole_6.4mm_M6 at [100, 150]": "pad 1 np_thru_hole circle at [0, 0] has error 3339: key \"net\" not found"
+    }
+  ]
+}

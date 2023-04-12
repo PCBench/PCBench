@@ -1,0 +1,213 @@
+{
+  "board_settings": {},
+  "net classes": {},
+  "net routes": {
+    "0": {
+      "name": "",
+      "class": "TODO",
+      "pads": [],
+      "tracks": {
+        "segments": [],
+        "arcs": ["TODO: extract arc info. Most samples don't have arcs to help test :("],
+        "vias": ["TODO: are vias necessary for our routing interests?"]
+      },
+      "errors": []
+    },
+    "1": {
+      "name": "Net-(D1-Pad2)",
+      "class": "TODO",
+      "pads": [
+        {
+          "Resistor_THT:R_Box_L13.0mm_W4.0mm_P9.00mm pad 2": {
+            "abs_pos": [165.75, 29.66]
+          }
+        },
+        {
+          "LED_THT:LED_D5.0mm pad 2": {
+            "abs_pos": [159.29, 37.28]
+          }
+        }
+      ],
+      "tracks": {
+        "segments": [
+          {
+            "start": [159.29, 36.12],
+            "end": [159.29, 37.28],
+            "width": 0.5,
+            "layer": "F.Cu"
+          },
+          {
+            "start": [165.75, 29.66],
+            "end": [159.29, 36.12],
+            "width": 0.5,
+            "layer": "F.Cu"
+          }
+        ],
+        "arcs": ["TODO: extract arc info. Most samples don't have arcs to help test :("],
+        "vias": ["TODO: are vias necessary for our routing interests?"]
+      },
+      "errors": []
+    },
+    "2": {
+      "name": "GND",
+      "class": "TODO",
+      "pads": [
+        {
+          "LED_THT:OP505A pad 2": {
+            "abs_pos": [158.635, 123.175]
+          }
+        },
+        {
+          "Connector_JST:JST_XH_B4B-XH-A_1x04_P2.50mm_Vertical pad 4": {
+            "abs_pos": [150.28, 29.66]
+          }
+        },
+        {
+          "LED_THT:LED_D5.0mm pad 1": {
+            "abs_pos": [156.75, 37.28]
+          }
+        }
+      ],
+      "tracks": {
+        "segments": [],
+        "arcs": ["TODO: extract arc info. Most samples don't have arcs to help test :("],
+        "vias": ["TODO: are vias necessary for our routing interests?"]
+      },
+      "errors": []
+    },
+    "3": {
+      "name": "+5V",
+      "class": "TODO",
+      "pads": [
+        {
+          "Resistor_THT:R_Box_L13.0mm_W4.0mm_P9.00mm pad 1": {
+            "abs_pos": [151.67, 38.55]
+          }
+        },
+        {
+          "Resistor_THT:R_Box_L13.0mm_W4.0mm_P9.00mm pad 1": {
+            "abs_pos": [156.75, 29.66]
+          }
+        },
+        {
+          "Connector_JST:JST_XH_B4B-XH-A_1x04_P2.50mm_Vertical pad 3": {
+            "abs_pos": [147.78, 29.66]
+          }
+        }
+      ],
+      "tracks": {
+        "segments": [
+          {
+            "start": [147.78, 29.66],
+            "end": [147.78, 28.22],
+            "width": 0.5,
+            "layer": "F.Cu"
+          },
+          {
+            "start": [147.78, 28.22],
+            "end": [149, 27],
+            "width": 0.5,
+            "layer": "F.Cu"
+          },
+          {
+            "start": [154.09, 27],
+            "end": [156.75, 29.66],
+            "width": 0.5,
+            "layer": "F.Cu"
+          },
+          {
+            "start": [149, 27],
+            "end": [154.09, 27],
+            "width": 0.5,
+            "layer": "F.Cu"
+          },
+          {
+            "start": [147.78, 34.66],
+            "end": [151.67, 38.55],
+            "width": 0.5,
+            "layer": "F.Cu"
+          },
+          {
+            "start": [147.78, 29.66],
+            "end": [147.78, 34.66],
+            "width": 0.5,
+            "layer": "F.Cu"
+          }
+        ],
+        "arcs": ["TODO: extract arc info. Most samples don't have arcs to help test :("],
+        "vias": ["TODO: are vias necessary for our routing interests?"]
+      },
+      "errors": []
+    },
+    "4": {
+      "name": "Net-(J1-Pad2)",
+      "class": "TODO",
+      "pads": [
+        {
+          "Connector_JST:JST_XH_B4B-XH-A_1x04_P2.50mm_Vertical pad 2": {
+            "abs_pos": [145.28, 29.66]
+          }
+        }
+      ],
+      "tracks": {
+        "segments": [],
+        "arcs": ["TODO: extract arc info. Most samples don't have arcs to help test :("],
+        "vias": ["TODO: are vias necessary for our routing interests?"]
+      },
+      "errors": []
+    },
+    "5": {
+      "name": "data",
+      "class": "TODO",
+      "pads": [
+        {
+          "Resistor_THT:R_Box_L13.0mm_W4.0mm_P9.00mm pad 2": {
+            "abs_pos": [160.67, 38.55]
+          }
+        },
+        {
+          "LED_THT:OP505A pad 1": {
+            "abs_pos": [157.365, 123.175]
+          }
+        },
+        {
+          "Connector_JST:JST_XH_B4B-XH-A_1x04_P2.50mm_Vertical pad 1": {
+            "abs_pos": [142.78, 29.66]
+          }
+        }
+      ],
+      "tracks": {
+        "segments": [
+          {
+            "start": [142.78, 38.44],
+            "end": [142.67, 38.55],
+            "width": 0.5,
+            "layer": "F.Cu"
+          },
+          {
+            "start": [142.78, 29.66],
+            "end": [142.78, 38.44],
+            "width": 0.5,
+            "layer": "F.Cu"
+          },
+          {
+            "start": [142.67, 108.48],
+            "end": [157.365, 123.175],
+            "width": 0.5,
+            "layer": "F.Cu"
+          },
+          {
+            "start": [142.67, 38.55],
+            "end": [142.67, 108.48],
+            "width": 0.5,
+            "layer": "F.Cu"
+          }
+        ],
+        "arcs": ["TODO: extract arc info. Most samples don't have arcs to help test :("],
+        "vias": ["TODO: are vias necessary for our routing interests?"]
+      },
+      "errors": []
+    }
+  },
+  "errors": []
+}
