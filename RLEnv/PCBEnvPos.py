@@ -10,10 +10,19 @@ import random
 import os
 
 class PCBEnvPos(gym.Env):
-    def __init__(self, resolution: float, pcb_folder: str, pcb_names: List[str]) -> None:
+    def __init__(
+            self, 
+            resolution: float, 
+            pcb_folder: str, 
+            pcb_names: List[str], 
+            termination_rule: str,
+            DRV_penalty_coef: float=10.0
+        ) -> None:
         self.resolution = resolution
         self.pcb_names = pcb_names
         self.pcb_folder = pcb_folder
+        self.termination_rule = termination_rule
+        self.DRV_penalty_coef = DRV_penalty_coef
         n_actions = 6
         self._action_to_direction = {
             0: np.array([1, 0, 0]),
@@ -51,6 +60,7 @@ class PCBEnvPos(gym.Env):
         
         self.path_length = 0
         self.DRVs = 0
+        self.num_connected_pairs = 0
         self.nets_path = defaultdict(list)
         self.current_path = [tuple(self._agent_location)]
 
@@ -73,6 +83,7 @@ class PCBEnvPos(gym.Env):
         direction = self._action_to_direction[action]
         new_location = self._agent_location + direction
         if np.array_equal(new_location, self._target_location):
+            self.num_connected_pairs += 1
             self.nets_path[self.current_net].append(self.current_path)
             if len(self.nets[self.current_net]) == 0:
                 if len(self.nets_indices) == 0:
@@ -94,16 +105,19 @@ class PCBEnvPos(gym.Env):
             )
         
         matrix_value = self.pcb_matrix[tuple(self._agent_location)]
-        if matrix_value != 0 and matrix_value != self.current_net and tuple(new_location) in self.current_path:
+        if (matrix_value != 0 and matrix_value != self.current_net) or tuple(new_location) in self.current_path:
             self.DRVs += 1
         else:
             self.pcb_matrix[tuple(self._agent_location)] = self.current_net
         
         self.current_path.append(tuple(self._agent_location))
         self.path_length += 1
+        if self.termination_rule == "v" and self.DRVs > 0:
+            self.terminated = True 
 
     def _get_reward(self) -> float:
-        return -self.DRVs - self.path_length if self.terminated else 0
+    
+        return -self.DRV_penalty_coef * self.DRVs - self.path_length if self.terminated else 0
 
     def render(self):
         pass

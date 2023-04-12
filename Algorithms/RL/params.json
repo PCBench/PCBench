@@ -2,7 +2,9 @@
     "env": {
         "resolution": 0.5,
         "benchmark_folder": "./benchmarks/processed_kicad",
-        "pcb_names": ["1bitsy.kicad_pcb"]
+        "pcb_names": ["1bitsy.kicad_pcb"],
+        "termination_rule": "r",
+        "design_rule_violate_penalty_coef": 10
     },
     "rl":{
         "rl_model_name": "ppo",
