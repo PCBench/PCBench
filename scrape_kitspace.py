@@ -8,7 +8,7 @@ from selenium.webdriver.chrome.service import Service
 from webdriver_manager.chrome import ChromeDriverManager
 
 def get_license(gh):
-    license_names = ['MIT', 'CERN', 'CC', 'Creative Commons', 'Apache', 'Zlib']
+    license_names = ['MIT', 'CERN', 'CC', 'Creative Commons', 'Apache', 'Zlib', 'GPL', 'GNU']
     license_list = []
     results = search_repo(gh, 'licen')
     for res in results:
@@ -128,9 +128,9 @@ metadata = []
 start = time.time()
 
 for card in cards:
-    if i > 15:      # Temp break to test functionality
-        break       #
-    i+=1            #
+    # if i > 15:      # Temp break to test functionality
+    #     break       #
+    # i+=1            #
     source, gh = get_repo(card)
     if gh != False:
         if gh in seen_repos:
