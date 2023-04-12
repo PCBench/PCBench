@@ -1,0 +1,1 @@
+This folder contains circuit source files from Adafruit. Note that if the souce file is from KiCAD version 5, please put `.kicad_pcb` file in this folder, and if the source file is from KiCAD version 6, please put `.kicad_pcb` and `.pro` file in this folder.
