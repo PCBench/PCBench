@@ -1,6 +1,6 @@
 from typing import Any, Dict, List
 from thirdparty.kicad_parser.kicad_pcb import *
-
+import os
 
 def delete_segment_via(pcb: KicadPCB) -> None:
 
@@ -29,7 +29,6 @@ def dump_wires(
         via_str = f"""(via (at {via.at[0]} {via.at[1]}) (size {via.size}) (layers {via.layers[0]} {via.layers[1]}) (net {via.net}))"""
         pcb.via = SexpParser(parseSexp(via_str))
     
-    file_path = origianl_kicad_file.split("/")
-    file_path[file_path.index("real_world")] = "processed_kicad"
-    output_filename = '/'.join(file_path)
+    file_path = os.getcwd() + "/benchmarks/processed_kicad/"
+    output_filename = file_path + origianl_kicad_file.split('/')[-1]
     pcb.export(output_filename)

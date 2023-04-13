@@ -1,4 +1,0 @@
-This folder contains circuit source files from Adafruit. Note that if the souce file is from KiCAD version 5, please put `.kicad_pcb` file in this folder, and if the source file is from KiCAD version 6, please put `.kicad_pcb` and `.pro` file in this folder. 
-To upload the circuit to this folder, please
-1. upload the found circuit from Adafruit to this folder. Please refer this [doc](https://docs.google.com/document/d/10nzUBFvauhISvmaXDbtiUpjhvJx0_DutUYc8_EI8eA8/edit) about where to find the circuit.
-2. add the meta information of the uploaded circuit to `metadata.json`, you can find the requirement and example for this meta info [here](https://pcbench.slab.com/posts/json-for-board-metadata-wqa2wdrc). 
