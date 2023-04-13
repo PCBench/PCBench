@@ -9,7 +9,7 @@ A usage demonstration is available in `test.py`
 '''
 
 import json
-from .sexp_parser import *
+from sexp_parser import *
 
 __author__ = "Zheng, Lei"
 __copyright__ = "Copyright 2016, Zheng, Lei"
@@ -88,38 +88,29 @@ class KicadPCB(SexpParser):
         ret = None
         with open(filename,'r') as f:               # v5 or v6 
             ret = KicadPCB(parseSexp(f.read()))
-        if len(ret.net_class) == 0 :                # if v6, extract net_class from project file
-            circuitname = filename.replace(".kicad_pcb", ".kicad_pro")
+            version = ret.version
+        if (version) > 20211000:  # if v6, extract net_class from project file. 
+            circuitname = filename[0:len(filename)-10]   # assumes project file and pcb file have same name & in same dir
             try:
-                with open(circuitname) as f:
+                with open(circuitname+'.kicad_pro') as f:
                     ret.net_class = json.load(f)['net_settings']['classes']
                     ret.V6ToV5Naming()
             except FileNotFoundError:
-                print(f"ERROR: kicad_pcb.py detected a kicad v6 file format, but\
-                    \n could not find {circuitname} in the directory of {circuitname} file\
-                    Returning KicadPCB instance with empty net class list")
+                print(f"Warrning: kicad_pcb.py detected a kicad v6 file format, but\
+                    \n could not find {circuitname}.kicad_pro in the directory of {circuitname}.kicad_pcb file\
+                    Returning KicadPCB without getting .net_class attribute from project file")
             except KeyError:
-                print(f"ERROR: {circuitname} did not contain key 'net_settings'\
+                print(f"Warning: {circuitname}.kicad_pro did not contain key 'net_settings'\
                     \nand/or its subkey 'classes'\
-                    Returning KicadPCB instance with empty net class list")
-
+                    Returning KicadPCB without getting .net_class attribute from project file")
+        if len(ret.net_class) == 0:
+            print(f"Warning: {filename} has been initialized with an empty net_class attribute")
+        
         return ret
 
     def V6ToV5Naming(self):
-        for net_class in self.net_class[0]:     # TODO: net_class is currently singular instead of plural. Why?
-                                                # Also, is it just me or is the KicadPCB class miserable?
+        for net_class in self.net_class[0]:     
             net_class['via_dia'] = net_class['via_diameter']
             net_class['trace_width'] = net_class['wire_width']
-            net_class['uvia_dia'] = net_class['microvia_diameter']
-            net_class['uvia_drill'] = net_class['microvia_drill']
-            if "nets" in net_class:
-                net_class['add_net'] = net_class['nets']
-                del net_class['nets']
             del net_class['wire_width']
             del net_class['via_diameter']
-            del net_class['microvia_diameter']
-            del net_class['microvia_drill']
-        tmp = self.net_class[0]
-        del self.net_class[0]
-        for net_class in tmp:
-            self.net_class = net_class
