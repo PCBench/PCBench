@@ -1,7 +1,7 @@
 from typing import Any, Dict, Iterable, List, Optional, Set, Tuple, Union
 import numpy as np
 import collections
-from kicad_pcb_v6nc import *
+from kicad_pcb import *
 from sexp_parser import *
 import json, re
 from utils.pad_rotation import calculate_pad_pos_size
