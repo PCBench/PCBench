@@ -1,11 +1,12 @@
 import os
 import json
-from typing import Any, Dict, List
+from typing import Any, Dict, List, Optional
 from torch import nn
 
 
 class EnvParams:
 
+    env_name: str = "basic_pos"  # "basic_pos" or "vlsi-dat"
     resolution: float = 0.5
     benchmark_folder: str = None
     pcb_names: str = None
@@ -13,6 +14,7 @@ class EnvParams:
     DRV_penalty_coef: float=10
 
     def __init__(self, env_params: Dict[str, Any]) -> None:
+        self.env_name = env_params["env_name"]
         self.resolution = env_params["resolution"]
         self.benchmark_folder = env_params["benchmark_folder"]
         self.pcb_names = env_params["pcb_names"]
@@ -36,6 +38,8 @@ class RLParams:
     actor_net_structure: List = [64, 64]  # policy network
     critic_net_structure: List = [64, 64]   # value network
     activation_function: nn.Module = nn.ReLU
+    save_model_name: Optional[str] = None
+    load_model_name: Optional[str] = None
     
     def __init__(self, RL_params: Dict[str, Any]) -> None:
         self.rl_model_name = RL_params["rl_model_name"]
@@ -60,6 +64,8 @@ class RLParams:
         self.ent_coef = RL_params["ent_coef"]
         self.vf_coef = RL_params["vf_coef"]
         self.device = RL_params["device"]
+        self.save_model_name = RL_params["save_model_name"]
+        self.load_model_name = RL_params["load_model_name"]
 
 
 class Params:

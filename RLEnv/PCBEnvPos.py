@@ -101,7 +101,7 @@ class PCBEnvPos(gym.Env):
             self._agent_location = np.clip(
                 new_location,
                 [0, 0, 0], 
-                [self.pcb_matrix.shape[0]-1, self.pcb_matrix.shape[1], len(self.pcb.layers)-1],
+                [self.pcb_matrix.shape[0]-1, self.pcb_matrix.shape[1]-1, len(self.pcb.layers)-1],
             )
         
         matrix_value = self.pcb_matrix[tuple(self._agent_location)]

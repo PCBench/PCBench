@@ -1,5 +1,6 @@
 {
     "env": {
+        "env_name": "vlsi-dat",
         "resolution": 0.5,
         "benchmark_folder": "./benchmarks/processed_kicad",
         "pcb_names": ["1bitsy.kicad_pcb"],
@@ -21,6 +22,8 @@
         "policy_network": "MlpPolicy",
         "actor_net_structure": [64, 64],
         "critic_net_structure": [64, 64],
-        "activation_function": "Relu"
+        "activation_function": "Relu",
+        "save_model_name": "test",
+        "load_model_name": "test"
     }
 }
