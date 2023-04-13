@@ -39,7 +39,6 @@ class PCB:
         self.obs_pad_value = -1
         self.via_obs_pad_value = -2
         self.pcb = KicadPCB.load(kicad_file)
-
         self.layers = extract_layer(pcb=self.pcb)
 
         # extract boundary info: circuit region and boundary lines with width
@@ -60,6 +59,7 @@ class PCB:
         # TODO: self.pcb.arcs?
         self.wires = self.pcb.segment if "segment" in self.pcb else []
         self.vias = self.pcb.via if "via" in self.pcb else []
+
 
 
     @property
@@ -99,7 +99,7 @@ class PCB:
             # JSON formatting helper
             return " ".join(match.group().split())
         dump = {
-                "pcbname": self.file, # pcb file name
+                "pcbname": self.file[self.file.rindex("/")+1:], # pcb file name
                 "circuit_region": self.circuit_range,  # this is is region of circuit, expressed by xy coordinates 
 
                 # this is a list containing all the boundaries lines
@@ -112,8 +112,9 @@ class PCB:
                     'net_classes': extract_net_classes(self.pcb) # TODO: is there a better way than extract_netclasses?
                 },
                 'solution': {
-                    'wires': extract_wires(self),
-                    'vias': [extract_recursive(via) for via in self._vias]
+                    'wires': extract_track_pieces(self._wires),
+                    'arcs': extract_track_pieces(self.pcb.arc),
+                    'vias': extract_track_pieces(self._vias)
                 }
             }
         with open(f'{target_dir}{self.file[self.file.rindex("/")+1:-10]}_RDL.json', 'w') as fd:
@@ -145,6 +146,7 @@ def extract_net_info(pcb: KicadPCB, net_indices: Set[int]) -> Tuple[Dict[int, An
             else:
                 net_names = netname2idx.keys()
             for netname in net_names:
+            
                 netidx = netname2idx[str(netname)]
                 nets_info[netidx]["clearance"] = net_class['clearance']
                 nets_info[netidx]["trace_width"] = net_class['trace_width']
@@ -155,6 +157,8 @@ def extract_net_info(pcb: KicadPCB, net_indices: Set[int]) -> Tuple[Dict[int, An
                     nets_info[netidx]["uvia_drill"] = net_class['uvia_drill']
                 except:
                     print("There is no uvia in the net class!!!")
+            
+
     else:
         print(f"there is no default net class, setting clearance manually!!")
         for netidx in net_indices:
@@ -320,12 +324,12 @@ def extract_net_classes(pcb: PCB):
         del net_class['add_net']
     return net_classes
     
-def extract_wires(pcb:PCB):
-    wires = [extract_recursive(wire) for wire in pcb._wires]
-    for wire in wires:
+def extract_track_pieces(track_list:list):
+    pieces = [extract_recursive(piece) for piece in track_list]
+    for piece in pieces:
         try:
-            del wire['tstamp']
+            del piece['tstamp']
         except KeyError:
             continue
-    return wires
+    return pieces
 
