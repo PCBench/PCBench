@@ -6,11 +6,13 @@ from sexp_parser import *
 import json, re
 from utils.pad_rotation import calculate_pad_pos_size
 
+# TODO: maybe no longer necessary?
 def extract_recursive(sexp_obj: Sexp, 
                       exclude:list = [], only:list = None, 
                       parents:list = None):
     ret_dict = {}
-    if not isinstance(sexp_obj._value,str):
+    if (not isinstance(sexp_obj._value,str)) and \
+        (any(isinstance(item,(Sexp)) for item in sexp_obj._value) or (isinstance(sexp_obj._value,OrderedDict))):
         for item in sexp_obj._value:
             if item not in exclude:
                 if isinstance(item, Sexp):
@@ -22,7 +24,7 @@ def extract_recursive(sexp_obj: Sexp,
                                             else extract_recursive(curr_val, exclude=exclude) if not isinstance(curr_val, Iterable)\
                                             else [extract_recursive(sub_item) for sub_item in curr_val]           
     else: 
-        ret_dict[sexp_obj._key] = sexp_obj._value if not isinstance(sexp_obj._value,str) else sexp_obj._value.strip('"')
+        ret_dict[sexp_obj._key] = sexp_obj._value
 
     return ret_dict
 
@@ -33,7 +35,7 @@ class PCB:
             kicad_file: str="benchmarks/real_world/1bitsy.kicad_pcb", 
             delete_nets: Optional[Set[str]]=None
         ) -> None:
-
+        self.file = kicad_file
         self.obs_pad_value = -1
         self.via_obs_pad_value = -2
         self.pcb = KicadPCB.load(kicad_file)
@@ -55,8 +57,10 @@ class PCB:
             obs_pad_value=self.obs_pad_value
         )
         self.nets_info, self.differential_pairs = extract_net_info(pcb=self.pcb, net_indices=self.net_indices)
+        # TODO: self.pcb.arcs?
         self.wires = self.pcb.segment if "segment" in self.pcb else []
         self.vias = self.pcb.via if "via" in self.pcb else []
+
 
     @property
     def net_pads(self):
@@ -89,6 +93,33 @@ class PCB:
     @nets_info.setter
     def nets_info(self, value):
         self._nets_info = value
+
+    def dump_to_PBCRDL_json(self, target_dir):
+        def repl_func(match: re.Match):
+            # JSON formatting helper
+            return " ".join(match.group().split())
+        dump = {
+                "pcbname": self.file, # pcb file name
+                "circuit_region": self.circuit_range,  # this is is region of circuit, expressed by xy coordinates 
+
+                # this is a list containing all the boundaries lines
+                "boundaries": self.boundary_lines,
+                "net_indices": list(self.net_indices),
+                'layers':len(self.layers),
+                'unit': 'mm STATIC',
+                'nets': self._net_pads,
+                'rules':{
+                    'net_classes': extract_net_classes(self.pcb) # TODO: is there a better way than extract_netclasses?
+                },
+                'solution': {
+                    'wires': extract_wires(self),
+                    'vias': [extract_recursive(via) for via in self._vias]
+                }
+            }
+        with open(f'{target_dir}{self.file[self.file.rindex("/")+1:-10]}_RDL.json', 'w') as fd:
+            s = json.dumps(dump,indent=2)
+            s = re.sub("(?<=\[)[^\[\]]+(?=])", repl_func, s)
+            fd.write(s)
 
 
 def extract_net_info(pcb: KicadPCB, net_indices: Set[int]) -> Tuple[Dict[int, Any], List[Tuple[int, int]]]:
@@ -273,31 +304,28 @@ def extract_single_via_pad(via_info: Dict[str, Any]) -> List[Any]:
         ret_pads.append([via_info["net"], pad_info])
     return ret_pads
 
-def extract_net_classes(self):
-    net_classes = [extract_recursive(net_class) for net_class in self.pcb.net_class]
+# TODO: maybe unnecessary?
+def extract_net_classes(pcb: PCB):
+    net_classes = [extract_recursive(net_class) for net_class in pcb.net_class]
+    name_and_index = [extract_recursive(net) for net in pcb.net]
+    nameKey_indexVal = {net['net'][1]:net['net'][0] for net in name_and_index}
     # Loop to deal with kinda silly add net structure of old files.
     for net_class in net_classes:
         nets = []
+        net_class['class_name'] = net_class.pop(0)
+        net_class['class_desc'] = net_class.pop(1)
         for net in net_class['add_net']:
             nets.append(net['add_net'])
-        net_class['add_net'] = nets
+        net_class['indices'] = [nameKey_indexVal[net] for net in nets]
+        del net_class['add_net']
     return net_classes
     
-    def dump_to_PBCRDL_json(self):
-        def repl_func(match: re.Match):
-            # JSON formatting helper
-            return " ".join(match.group().split())
-        dump = {
-                'layers':len(self.layers),
-                'unit': 'mm STATIC',
-                'border': self.boundary_lines,
-                'nets': self.nets,
-                'rules':{
-                    'net_classes':self.net_classes
-                }
-            }
-        with open('test.json', 'w') as fd:
-            s = json.dumps(dump,indent=2)
-            s = re.sub("(?<=\[)[^\[\]]+(?=])", repl_func, s)
-            fd.write(s)
+def extract_wires(pcb:PCB):
+    wires = [extract_recursive(wire) for wire in pcb._wires]
+    for wire in wires:
+        try:
+            del wire['tstamp']
+        except KeyError:
+            continue
+    return wires
 
