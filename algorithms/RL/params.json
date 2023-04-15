@@ -4,7 +4,7 @@
         "resolution": 0.5,
         "benchmark_folder": "./benchmarks/processed_kicad",
         "pcb_names": ["1bitsy.kicad_pcb"],
-        "termination_rule": "r",
+        "termination_rule": "v",
         "design_rule_violate_penalty_coef": 10
     },
     "rl":{
@@ -23,7 +23,7 @@
         "actor_net_structure": [64, 64],
         "critic_net_structure": [64, 64],
         "activation_function": "Relu",
-        "save_model_name": "test",
-        "load_model_name": "test"
+        "save_model_name": null,
+        "load_model_name": null
     }
 }

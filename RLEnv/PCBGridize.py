@@ -1,4 +1,3 @@
-from typing import Any, Dict, List, Set, Tuple
 from extract_kicad import PCB
 import math
 import numpy as np
@@ -10,7 +9,7 @@ def PCBGridize(pcb: PCB, resolution: float) -> None:
     min_x, min_y, max_x, max_y = tuple(pcb.circuit_range)
     x_grid = int((max_x - min_x) / resolution) + 1
     y_grid = int((max_y - min_y) / resolution) + 1
-    pcb_matrix = np.zeros((y_grid, x_grid, len(pcb.layers)))
+    pcb_matrix = np.zeros((x_grid, y_grid, len(pcb.layers)))
     layer_name2ID = {pcb.layers[i]: i for i in range(len(pcb.layers))}
 
     nets = defaultdict(list)
