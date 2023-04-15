@@ -138,10 +138,8 @@ def is_pad_node(
 
 if __name__ == "__main__":
     import sys
-    if len(sys.argv) > 1:
-        kicad_filename = sys.argv[1]
-    else:
-        kicad_filename = "./circuits_sources/other_sources/candleLight.kicad_pcb"
+    kicad_filename = sys.argv[1]
+
     pcb = PCB(kicad_filename)
 
     PCB_cleaner(pcb=pcb)

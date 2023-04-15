@@ -29,6 +29,6 @@ def dump_wires(
         via_str = f"""(via (at {via.at[0]} {via.at[1]}) (size {via.size}) (layers {via.layers[0]} {via.layers[1]}) (net {via.net}))"""
         pcb.via = SexpParser(parseSexp(via_str))
     
-    file_path = os.getcwd() + "/benchmarks/processed_kicad/"
+    file_path = os.getcwd() + "/PCBs/cleaned/"
     output_filename = file_path + origianl_kicad_file.split('/')[-1]
     pcb.export(output_filename)
