@@ -8,10 +8,10 @@ from selenium.webdriver.chrome.service import Service
 from webdriver_manager.chrome import ChromeDriverManager
 
 def get_license(gh):
-    license_names = ['MIT', 'CERN', 'CC', 'Creative Commons', 'Apache', 'Zlib', 'GPL', 'GNU', 'TAPR']
+    license_names = ['MIT', 'CERN', 'Creative Commons', 'Apache', 'Zlib', 'GPL', 'GNU', 'TAPR', 'BSD']
     license_list = []
     results = search_repo(gh, 'licen')
-    for res in results:
+    for res in results[0:5]:
         license = {}
         f = res.get_attribute('href').split('blob')[1]
         file_link = RAW + gh.split('.com')[1].split('/find')[0] + f
@@ -24,7 +24,7 @@ def get_license(gh):
                 license_names.remove(name)
             elif file_link.endswith(('.txt', '.md')) or file_link.lower().__contains__('licen'):
                 soup = BeautifulSoup(data.content, features='lxml')
-                if soup(text=lambda t: name + ' ' in t.text):
+                if soup(text=lambda t: name + ' ' in t.text[0:min(200,len(t.text))]):
                     license['name'] = name
                     license['link'] = file_link
                     license_list.append(license)
@@ -43,19 +43,29 @@ def get_version(source):
             return version.get_text()
     return ''
 
-def get_meta(metadata, source, filename, version, license):
+def get_meta(source, filename, version, license):
     board = {}
-    board['source'] = source
-    board['name'] = filename.split('.kicad')[0]
-    board['version'] = version
-    board['license'] = license
-    board['made_in'] = ''
-    board['authors'] = ''
-    board['retrieved_at'] = str(datetime.datetime.now())
-    board['layers'] = ''
-    board['comments'] = ''
-    metadata.append(board)
-    return metadata
+    if filename.endswith('.kicad_pro'):
+        board['source'] = source
+        board['name'] = filename.split('_kitspace')[0]
+        board['retrieved_at'] = str(datetime.datetime.now())
+        supp_meta.append(board)
+    else:
+        board['source'] = source
+        board['name'] = filename.split('_kitspace')[0]
+        board['raw'] = filename
+        board['cleaned'] = filename.split('raw')[0] + 'cleaned' + filename.split('raw')[1]
+        board['json'] = filename.split('_kitspace')[0] + '.json'
+        board['version'] = version
+        board['license'] = license
+        board['made_in'] = ''
+        board['authors'] = ''
+        board['retrieved_at'] = str(datetime.datetime.now())
+        board['layers'] = ''
+        if license[0]['name'] == '':
+            board['comments'] = 'License not found'
+        else: board['comments'] = ''
+        metadata.append(board)
 
 def get_repo(card):
     # Get project github URL and check
@@ -93,17 +103,18 @@ def write_files(source, gh, results, term, count, version, license, write_kicad=
         data = requests.get(file_link)
         # Write data to folder
         if data.ok:
-            filename = file_link[file_link.rindex('/') + 1:]
+            ext = file_link[file_link.rindex('.') :]
+            filename = file_link[file_link.rindex('/') + 1: file_link.rindex('.')] + '_kitspace_raw' + ext
             count += 1
             if write_kicad == True:
-                with open(f"kicad files/{filename}","w", encoding='utf-8') as f:
+                with open(f"PCBs/raw/{filename}","w", encoding='utf-8') as f:
                     try:
                         (f.write(bytes.decode(data.content)))
                         f.flush()
                     except Exception as e:
                         print(f"Error for file {filename}\nfrom {file_link}:\n{e}")
                         continue
-            get_meta(metadata, source, filename, version, license)
+            get_meta(source, filename, version, license)
     return count
 
 ### MAIN
@@ -125,10 +136,11 @@ seen_repos = set()
 repo_count = 0
 file_count = i = 0
 metadata = []
+supp_meta = []
 start = time.time()
 
 for card in cards:
-    # if i > 15:      # Temp break to test functionality
+    # if i > 3:      # Temp break to test functionality
     #     break       #
     # i+=1            #
     source, gh = get_repo(card)
@@ -141,10 +153,11 @@ for card in cards:
         license = get_license(gh)
         for term in search_terms:
             results = search_repo(gh, term)
-            file_count = write_files(source, gh, results, term, file_count, version, license, False) # write_kicad = False
+            file_count = write_files(source, gh, results, term, file_count, version, license, True) # write_kicad = False
 
 with open("metadata.json","w", encoding='utf-8') as f:
-    data = json.dumps(metadata, indent=2)
+    meta = {'primary_files': metadata, 'supplementary_files': supp_meta}
+    data = json.dumps(meta, indent=2)
     f.write(data)
             
 print(f'Repos found: {repo_count}')
