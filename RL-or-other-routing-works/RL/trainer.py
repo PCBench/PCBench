@@ -75,8 +75,10 @@ class Trainer:
 
     def save(self) -> None:
         models_folder = os.path.dirname(os.path.abspath(__file__)) + "/models/"
+        if not os.path.exists(models_folder):
+            os.mkdir(models_folder)
         self.model.save(models_folder + self.params.rl.save_model_name)
-
+        self.model.policy.save(models_folder + "policy_" + self.params.rl.save_model_name)
 
 if __name__ == "__main__":
     trainer = Trainer()

@@ -8,7 +8,6 @@ from scipy.spatial import distance
 from astar import Astar
 import random
 
-
 def draw_board(paths_x, paths_y, board, save_name):
     
     import matplotlib.pyplot as plt
@@ -144,21 +143,20 @@ def prob_DFS(state, model=None, deterministic=False):
     while DFS_state.pairs_idx==pair_index:
         
         obs_vec = np.expand_dims(DFS_state.board_embedding(), axis=0)
-        obs_vis = None
         mask = DFS_state.compute_mask()
         # print(mask, len(states_queue))
         if not all(mask==0):
             if model is not None:
+                probs = model.get_distribution(obs_vec)
+                new_dist = probs.numpy()*mask
+                # print(new_dist)
+                if sum(new_dist)==0:
+                    new_dist = mask
+                new_dist = new_dist/sum(new_dist)
                 if deterministic:
-                    probs = model.p_all({"vec_obs": obs_vec, "vis_obs": obs_vis})[0]
-                    new_dist = probs.numpy()*mask
-                    # print(new_dist)
-                    if sum(new_dist)==0:
-                        new_dist = mask
-                    new_dist = new_dist/sum(new_dist)
-                    action = np.argmax(new_dist)
+                    action = DFS_state.directions[np.argmax(new_dist)]
                 else:
-                    action, _, _ = model.get_action_logp_value({"vec_obs": obs_vec, "vis_obs": obs_vis}, mask=mask)
+                    action = random.choices(DFS_state.directions, weights=new_dist, k=1)[0]
             else:
                 action = random.choice(DFS_state.getPossibleActions())
                 # let's try random action
