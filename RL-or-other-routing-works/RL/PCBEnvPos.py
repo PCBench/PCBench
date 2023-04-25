@@ -6,7 +6,7 @@ import gymnasium as gym
 from gymnasium import spaces
 import numpy as np
 from load_data.extract_kicad import PCB
-from PCBGridize import PCBGridize
+from load_data.PCBGridize import PCBGridize
 from load_data.geometry import closest_point_idx
 from collections import defaultdict
 import random

@@ -102,7 +102,8 @@ def mcts_DFS_rollout(state, model):
             return -100, [ini_state.head]
 
         path.append(ini_state.end[ini_state.pairs_idx])
-        print(path)
+        # print(path)
+        # print(ini_state.head, ini_state.end[ini_state.pairs_idx], path)
         paths += path
         for node in path[1:]:
             action = tuple(np.array(node)-np.array(ini_state.head))
@@ -159,7 +160,7 @@ def prob_DFS(state, model=None, deterministic=False):
                 else:
                     action, _, _ = model.get_action_logp_value({"vec_obs": obs_vec, "vis_obs": obs_vis}, mask=mask)
             else:
-                action = random.choice(state.getPossibleActions())
+                action = random.choice(DFS_state.getPossibleActions())
                 # let's try random action
                 # actions = DFS.state.getPossibleActions()
 
@@ -191,7 +192,7 @@ def MCTS_search(env, model, fig_idx=0, board_ID='II4', rollout_times=50):
     # print(state.finish)
     pin_indices = list(range(len(state.start)))
     pin_indices.sort()
-    board = copy(state.board)
+    # board = copy(state.board)
 
     reward_type = 'best'
     node_select = 'best'
@@ -210,6 +211,7 @@ def MCTS_search(env, model, fig_idx=0, board_ID='II4', rollout_times=50):
         pin_idx = int(pin_idx)
 
         state.reset(state.board, pin_idx)
+        print(np.count_nonzero(state.board == 1))
         net_path = [state.start[pin_idx]]
         net_path += MCTS.search(initialState=state)
 
@@ -229,24 +231,24 @@ def MCTS_search(env, model, fig_idx=0, board_ID='II4', rollout_times=50):
             action = tuple(np.array(node)-np.array(state.head))
             state = state.takeAction(action, is_tuple=True)
 
-    paths_x, paths_y = separate_paths(env.start, routed_paths)
+    # paths_x, paths_y = separate_paths(env.start, routed_paths)
 
-    board = env.original_board
+    # board = env.original_board
 
-    visual_folder_name = "visual_results_{}".format(rollout_times)
-    if not os.path.isdir(visual_folder_name):
-        os.mkdir(visual_folder_name)
+    # visual_folder_name = "visual_results_{}".format(rollout_times)
+    # if not os.path.isdir(visual_folder_name):
+    #     os.mkdir(visual_folder_name)
 
-    len_folder_name = "path_length_results_{}".format(rollout_times)
-    if not os.path.isdir(len_folder_name):
-        os.mkdir(len_folder_name)
-    # saving path length and distance
-    len_save_folder = os.path.join(len_folder_name, "length_{}.csv".format(board_ID))
-    np.savetxt(len_save_folder, [path_length, nets_distance], delimiter=",")
+    # len_folder_name = "path_length_results_{}".format(rollout_times)
+    # if not os.path.isdir(len_folder_name):
+    #     os.mkdir(len_folder_name)
+    # # saving path length and distance
+    # len_save_folder = os.path.join(len_folder_name, "length_{}.csv".format(board_ID))
+    # np.savetxt(len_save_folder, [path_length, nets_distance], delimiter=",")
     
-    saved_fig_name = os.path.join(visual_folder_name, "{}.eps".format(board_ID))
+    # saved_fig_name = os.path.join(visual_folder_name, "{}.eps".format(board_ID))
 
-    draw_board(paths_x, paths_y, board, saved_fig_name)
+    # draw_board(paths_x, paths_y, board, saved_fig_name)
 
     return routed_paths
 

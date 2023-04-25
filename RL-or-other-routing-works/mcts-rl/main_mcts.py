@@ -54,5 +54,5 @@ if __name__ == "__main__":
     # #     test_policy(env_mcts, model, i)
 
     # paths = simulation.MCTS_search(env_mcts, model, board_ID=board_ID, rollout_times=1000)
-    paths = simulation.MCTS_search(env_mcts, None, board_ID=board_path, rollout_times=1000)
+    paths = simulation.MCTS_search(env_mcts, None, board_ID=board_path, rollout_times=10)
     # print(paths)

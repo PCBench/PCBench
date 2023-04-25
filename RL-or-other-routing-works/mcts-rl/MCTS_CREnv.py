@@ -1,4 +1,5 @@
-from __future__ import division
+import sys
+sys.path.append('..')
 
 from copy import copy
 from copy import deepcopy
@@ -9,8 +10,8 @@ import os, random
 
 from astar import Astar
 
-from RLEnv.PCBGridize import PCBGridize
-from extract_kicad import PCB
+from load_data.PCBGridize import PCBGridize
+from load_data.extract_kicad import PCB
 
 ####    Environment for MCTS    ####
 
@@ -44,6 +45,8 @@ class MCTS_CREnv():
             path_t = self.find_shortest_path(pair_id)
             self.short_net_path[pair_id] = path_t
 
+        self.path_length = 0
+
     def reset(self, board=None, pin_idx=2):
 
         if board is None:
@@ -51,8 +54,7 @@ class MCTS_CREnv():
             self.board, self.nets = PCBGridize(pcb=pcb, resolution=self.resolution)
         else:
             self.board = board
-
-        self.path_length = 0
+        
         self.connection = False
         self.collide = False
 
@@ -102,7 +104,7 @@ class MCTS_CREnv():
         return newState
 
     def goto_new_net(self, connection_sign, out_range=False):
-
+        # print(f"here? {connection_sign} {self.head} {self.start[self.pairs_idx]} {self.end[self.pairs_idx]}")
         self.board[self.pre_head] = 1
         self.connection = connection_sign
         self.pairs_idx += 1
