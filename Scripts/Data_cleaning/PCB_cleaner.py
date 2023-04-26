@@ -143,7 +143,8 @@ if __name__ == "__main__":
     pcb = PCB(kicad_filename)
 
     PCB_cleaner(pcb=pcb)
+    del_pads = pcb.net_pads[pcb.obs_pad_value]
 
     from dump_wires2kicad_segments import dump_wires
 
-    dump_wires(kicad_filename, pcb.wires, pcb.vias)
+    dump_wires(kicad_filename, pcb.wires, pcb.vias, del_pads)

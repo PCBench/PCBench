@@ -251,7 +251,6 @@
       (size 0.5 0.5)
       (drill 0.3)
       (layers *.Cu)
-      (net 2 GND)
       (zone_connect 2)))
   (module pkl_misc:via0305
     (layer F.Cu)
@@ -277,7 +276,6 @@
       (size 0.5 0.5)
       (drill 0.3)
       (layers *.Cu)
-      (net 2 GND)
       (zone_connect 2)))
   (module pkl_misc:via0305
     (layer F.Cu)
@@ -303,7 +301,6 @@
       (size 0.5 0.5)
       (drill 0.3)
       (layers *.Cu)
-      (net 2 GND)
       (zone_connect 2)))
   (module pkl_jumpers:J_0603
     (layer B.Cu)
@@ -372,13 +369,11 @@
     (pad 1 smd rect
       (at -0.575 0)
       (size 0.95 0.9)
-      (layers B.Cu B.Paste B.Mask)
-      (net 10 /USB_VBUS))
+      (layers B.Cu B.Paste B.Mask))
     (pad 2 smd rect
       (at 0.575 0)
       (size 0.95 0.9)
-      (layers B.Cu B.Paste B.Mask)
-      (net 59 "Net-(C15-Pad1)")))
+      (layers B.Cu B.Paste B.Mask)))
   (module pkl_misc:via0305
     (layer F.Cu)
     (tedit 578819F7)
@@ -403,7 +398,6 @@
       (size 0.5 0.5)
       (drill 0.3)
       (layers *.Cu)
-      (net 2 GND)
       (zone_connect 2)))
   (module pkl_misc:via0305
     (layer F.Cu)
@@ -429,7 +423,6 @@
       (size 0.5 0.5)
       (drill 0.3)
       (layers *.Cu)
-      (net 2 GND)
       (zone_connect 2)))
   (module pkl_dipol:C_0603
     (layer F.Cu)
@@ -497,8 +490,7 @@
     (pad 2 smd rect
       (at 0.75 0 270)
       (size 0.6 0.9)
-      (layers F.Cu F.Paste F.Mask)
-      (net 2 GND))
+      (layers F.Cu F.Paste F.Mask))
     (model Capacitors_SMD.3dshapes/C_0603.wrl
       (at
         (xyz 0 0 0))
@@ -572,8 +564,7 @@
     (pad 2 smd rect
       (at 0.5 0)
       (size 0.5 0.6)
-      (layers F.Cu F.Paste F.Mask)
-      (net 2 GND))
+      (layers F.Cu F.Paste F.Mask))
     (model Capacitors_SMD.3dshapes/C_0402.wrl
       (at
         (xyz 0 0 0))
@@ -647,8 +638,7 @@
     (pad 2 smd rect
       (at 0.5 0)
       (size 0.5 0.6)
-      (layers F.Cu F.Paste F.Mask)
-      (net 2 GND))
+      (layers F.Cu F.Paste F.Mask))
     (model Capacitors_SMD.3dshapes/C_0402.wrl
       (at
         (xyz 0 0 0))
@@ -722,8 +712,7 @@
     (pad 2 smd rect
       (at 0.5 0)
       (size 0.5 0.6)
-      (layers F.Cu F.Paste F.Mask)
-      (net 2 GND))
+      (layers F.Cu F.Paste F.Mask))
     (model Capacitors_SMD.3dshapes/C_0402.wrl
       (at
         (xyz 0 0 0))
@@ -797,8 +786,7 @@
     (pad 2 smd rect
       (at 0.75 0)
       (size 0.6 0.9)
-      (layers F.Cu F.Paste F.Mask)
-      (net 2 GND))
+      (layers F.Cu F.Paste F.Mask))
     (model Capacitors_SMD.3dshapes/C_0603.wrl
       (at
         (xyz 0 0 0))
@@ -942,8 +930,7 @@
     (pad 1 smd rect
       (at -0.5 0 90)
       (size 0.5 0.6)
-      (layers F.Cu F.Paste F.Mask)
-      (net 2 GND))
+      (layers F.Cu F.Paste F.Mask))
     (pad 2 smd rect
       (at 0.5 0 90)
       (size 0.5 0.6)
@@ -1022,8 +1009,7 @@
     (pad 2 smd rect
       (at 0.5 0)
       (size 0.5 0.6)
-      (layers F.Cu F.Paste F.Mask)
-      (net 2 GND))
+      (layers F.Cu F.Paste F.Mask))
     (model Capacitors_SMD.3dshapes/C_0402.wrl
       (at
         (xyz 0 0 0))
@@ -1097,8 +1083,7 @@
     (pad 2 smd rect
       (at 0.5 0 180)
       (size 0.5 0.6)
-      (layers F.Cu F.Paste F.Mask)
-      (net 2 GND))
+      (layers F.Cu F.Paste F.Mask))
     (model Capacitors_SMD.3dshapes/C_0402.wrl
       (at
         (xyz 0 0 0))
@@ -1172,8 +1157,7 @@
     (pad 2 smd rect
       (at 0.5 0 270)
       (size 0.5 0.6)
-      (layers F.Cu F.Paste F.Mask)
-      (net 2 GND))
+      (layers F.Cu F.Paste F.Mask))
     (model Capacitors_SMD.3dshapes/C_0402.wrl
       (at
         (xyz 0 0 0))
@@ -1247,8 +1231,7 @@
     (pad 2 smd rect
       (at 0.75 0)
       (size 0.6 0.9)
-      (layers F.Cu F.Paste F.Mask)
-      (net 2 GND))
+      (layers F.Cu F.Paste F.Mask))
     (model Capacitors_SMD.3dshapes/C_0603.wrl
       (at
         (xyz 0 0 0))
@@ -1322,8 +1305,7 @@
     (pad 2 smd rect
       (at 0.5 0)
       (size 0.5 0.6)
-      (layers F.Cu F.Paste F.Mask)
-      (net 2 GND))
+      (layers F.Cu F.Paste F.Mask))
     (model Capacitors_SMD.3dshapes/C_0402.wrl
       (at
         (xyz 0 0 0))
@@ -1472,8 +1454,7 @@
     (pad 2 smd rect
       (at 0.5 0 180)
       (size 0.5 0.6)
-      (layers F.Cu F.Paste F.Mask)
-      (net 2 GND))
+      (layers F.Cu F.Paste F.Mask))
     (model Capacitors_SMD.3dshapes/C_0402.wrl
       (at
         (xyz 0 0 0))
@@ -1547,8 +1528,7 @@
     (pad 2 smd rect
       (at 0.5 0 180)
       (size 0.5 0.6)
-      (layers F.Cu F.Paste F.Mask)
-      (net 2 GND))
+      (layers F.Cu F.Paste F.Mask))
     (model Capacitors_SMD.3dshapes/C_0402.wrl
       (at
         (xyz 0 0 0))
@@ -1622,8 +1602,7 @@
     (pad 2 smd rect
       (at 0.5 0 180)
       (size 0.5 0.6)
-      (layers F.Cu F.Paste F.Mask)
-      (net 2 GND))
+      (layers F.Cu F.Paste F.Mask))
     (model Capacitors_SMD.3dshapes/C_0402.wrl
       (at
         (xyz 0 0 0))
@@ -1939,8 +1918,7 @@
       (at 0 0 180)
       (size 1.524 1.524)
       (drill 0.9652)
-      (layers *.Cu *.Mask)
-      (net 16 /PA0)))
+      (layers *.Cu *.Mask)))
   (module pkl_pin_headers:Pin_Header_Straight_Round_1x01
     (layer F.Cu)
     (tedit 579076F7)
@@ -1987,8 +1965,7 @@
       (at 0 0 180)
       (size 1.524 1.524)
       (drill 0.9652)
-      (layers *.Cu *.Mask)
-      (net 17 /PA1)))
+      (layers *.Cu *.Mask)))
   (module pkl_pin_headers:Pin_Header_Straight_Round_1x01
     (layer F.Cu)
     (tedit 579076F7)
@@ -2035,8 +2012,7 @@
       (at 0 0 180)
       (size 1.524 1.524)
       (drill 0.9652)
-      (layers *.Cu *.Mask)
-      (net 18 /PA2)))
+      (layers *.Cu *.Mask)))
   (module pkl_pin_headers:Pin_Header_Straight_Round_1x01
     (layer F.Cu)
     (tedit 579076F7)
@@ -2083,8 +2059,7 @@
       (at 0 0 180)
       (size 1.524 1.524)
       (drill 0.9652)
-      (layers *.Cu *.Mask)
-      (net 19 /PA3)))
+      (layers *.Cu *.Mask)))
   (module pkl_pin_headers:Pin_Header_Straight_Round_1x01
     (layer F.Cu)
     (tedit 579076F7)
@@ -2131,8 +2106,7 @@
       (at 0 0 180)
       (size 1.524 1.524)
       (drill 0.9652)
-      (layers *.Cu *.Mask)
-      (net 20 /PA4)))
+      (layers *.Cu *.Mask)))
   (module pkl_pin_headers:Pin_Header_Straight_Round_1x01
     (layer F.Cu)
     (tedit 579076F7)
@@ -2179,8 +2153,7 @@
       (at 0 0)
       (size 1.524 1.524)
       (drill 0.9652)
-      (layers *.Cu *.Mask)
-      (net 21 /PA5)))
+      (layers *.Cu *.Mask)))
   (module pkl_pin_headers:Pin_Header_Straight_Round_1x01
     (layer F.Cu)
     (tedit 579076F7)
@@ -2227,8 +2200,7 @@
       (at 0 0 180)
       (size 1.524 1.524)
       (drill 0.9652)
-      (layers *.Cu *.Mask)
-      (net 22 /PA6)))
+      (layers *.Cu *.Mask)))
   (module pkl_pin_headers:Pin_Header_Straight_Round_1x01
     (layer F.Cu)
     (tedit 579076F7)
@@ -2275,8 +2247,7 @@
       (at 0 0 180)
       (size 1.524 1.524)
       (drill 0.9652)
-      (layers *.Cu *.Mask)
-      (net 23 /PA7)))
+      (layers *.Cu *.Mask)))
   (module pkl_pin_headers:Pin_Header_Straight_Round_1x01
     (layer F.Cu)
     (tedit 579076F7)
@@ -2323,8 +2294,7 @@
       (at 0 0)
       (size 1.524 1.524)
       (drill 0.9652)
-      (layers *.Cu *.Mask)
-      (net 24 /PA8)))
+      (layers *.Cu *.Mask)))
   (module pkl_pin_headers:Pin_Header_Straight_Round_1x01
     (layer F.Cu)
     (tedit 579076F7)
@@ -2371,8 +2341,7 @@
       (at 0 0)
       (size 1.524 1.524)
       (drill 0.9652)
-      (layers *.Cu *.Mask)
-      (net 25 /PC0)))
+      (layers *.Cu *.Mask)))
   (module pkl_pin_headers:Pin_Header_Straight_Round_1x01
     (layer F.Cu)
     (tedit 579076F7)
@@ -2419,8 +2388,7 @@
       (at 0 0)
       (size 1.524 1.524)
       (drill 0.9652)
-      (layers *.Cu *.Mask)
-      (net 63 /PD2)))
+      (layers *.Cu *.Mask)))
   (module pkl_pin_headers:Pin_Header_Straight_Round_1x01
     (layer F.Cu)
     (tedit 579076F7)
@@ -2467,8 +2435,7 @@
       (at 0 0)
       (size 1.524 1.524)
       (drill 0.9652)
-      (layers *.Cu *.Mask)
-      (net 26 /PC2)))
+      (layers *.Cu *.Mask)))
   (module pkl_pin_headers:Pin_Header_Straight_Round_1x01
     (layer F.Cu)
     (tedit 579076F7)
@@ -2515,8 +2482,7 @@
       (at 0 0 180)
       (size 1.524 1.524)
       (drill 0.9652)
-      (layers *.Cu *.Mask)
-      (net 27 /PC3)))
+      (layers *.Cu *.Mask)))
   (module pkl_pin_headers:Pin_Header_Straight_Round_1x01
     (layer F.Cu)
     (tedit 579076F7)
@@ -2563,8 +2529,7 @@
       (at 0 0)
       (size 1.524 1.524)
       (drill 0.9652)
-      (layers *.Cu *.Mask)
-      (net 28 /PC4)))
+      (layers *.Cu *.Mask)))
   (module pkl_pin_headers:Pin_Header_Straight_Round_1x01
     (layer F.Cu)
     (tedit 579076F7)
@@ -2611,8 +2576,7 @@
       (at 0 0 180)
       (size 1.524 1.524)
       (drill 0.9652)
-      (layers *.Cu *.Mask)
-      (net 29 /PC5)))
+      (layers *.Cu *.Mask)))
   (module pkl_pin_headers:Pin_Header_Straight_Round_1x01
     (layer F.Cu)
     (tedit 579076F7)
@@ -2659,8 +2623,7 @@
       (at 0 0)
       (size 1.524 1.524)
       (drill 0.9652)
-      (layers *.Cu *.Mask)
-      (net 30 /PC6)))
+      (layers *.Cu *.Mask)))
   (module pkl_pin_headers:Pin_Header_Straight_Round_1x01
     (layer F.Cu)
     (tedit 579076F7)
@@ -2707,8 +2670,7 @@
       (at 0 0)
       (size 1.524 1.524)
       (drill 0.9652)
-      (layers *.Cu *.Mask)
-      (net 31 /PC7)))
+      (layers *.Cu *.Mask)))
   (module pkl_pin_headers:Pin_Header_Straight_Round_1x01
     (layer F.Cu)
     (tedit 579076F7)
@@ -2755,8 +2717,7 @@
       (at 0 0)
       (size 1.524 1.524)
       (drill 0.9652)
-      (layers *.Cu *.Mask)
-      (net 32 /PC8)))
+      (layers *.Cu *.Mask)))
   (module pkl_pin_headers:Pin_Header_Straight_Round_1x01
     (layer F.Cu)
     (tedit 579076F7)
@@ -2803,8 +2764,7 @@
       (at 0 0)
       (size 1.524 1.524)
       (drill 0.9652)
-      (layers *.Cu *.Mask)
-      (net 33 /PC9)))
+      (layers *.Cu *.Mask)))
   (module pkl_pin_headers:Pin_Header_Straight_Round_1x01
     (layer F.Cu)
     (tedit 579076F7)
@@ -2851,8 +2811,7 @@
       (at 0 0)
       (size 1.524 1.524)
       (drill 0.9652)
-      (layers *.Cu *.Mask)
-      (net 34 /PC10)))
+      (layers *.Cu *.Mask)))
   (module pkl_pin_headers:Pin_Header_Straight_Round_1x01
     (layer F.Cu)
     (tedit 579076F7)
@@ -2899,8 +2858,7 @@
       (at 0 0 180)
       (size 1.524 1.524)
       (drill 0.9652)
-      (layers *.Cu *.Mask)
-      (net 35 /PC11)))
+      (layers *.Cu *.Mask)))
   (module pkl_pin_headers:Pin_Header_Straight_Round_1x01
     (layer F.Cu)
     (tedit 579076F7)
@@ -2947,8 +2905,7 @@
       (at 0 0)
       (size 1.524 1.524)
       (drill 0.9652)
-      (layers *.Cu *.Mask)
-      (net 36 /PC12)))
+      (layers *.Cu *.Mask)))
   (module pkl_pin_headers:Pin_Header_Straight_Round_1x01
     (layer F.Cu)
     (tedit 579076F7)
@@ -2995,8 +2952,7 @@
       (at 0 0)
       (size 1.524 1.524)
       (drill 0.9652)
-      (layers *.Cu *.Mask)
-      (net 37 /PC13)))
+      (layers *.Cu *.Mask)))
   (module pkl_connectors:Connector_USB_Micro_B_SMD
     (layer F.Cu)
     (tedit 5753D636)
@@ -3156,33 +3112,27 @@
     (pad GND smd rect
       (at 0 1.2 270)
       (size 1.9 1.9)
-      (layers F.Cu F.Paste F.Mask)
-      (net 2 GND))
+      (layers F.Cu F.Paste F.Mask))
     (pad GND smd rect
       (at 0 -1.2 270)
       (size 1.9 1.9)
-      (layers F.Cu F.Paste F.Mask)
-      (net 2 GND))
+      (layers F.Cu F.Paste F.Mask))
     (pad GND smd rect
       (at 0 -3.8 270)
       (size 1.8 1.9)
-      (layers F.Cu F.Paste F.Mask)
-      (net 2 GND))
+      (layers F.Cu F.Paste F.Mask))
     (pad GND smd rect
       (at 0 3.8 270)
       (size 1.8 1.9)
-      (layers F.Cu F.Paste F.Mask)
-      (net 2 GND))
+      (layers F.Cu F.Paste F.Mask))
     (pad GND smd rect
       (at -2.55 -3.1 270)
       (size 2.1 1.6)
-      (layers F.Cu F.Paste F.Mask)
-      (net 2 GND))
+      (layers F.Cu F.Paste F.Mask))
     (pad GND smd rect
       (at -2.55 3.1 270)
       (size 2.1 1.6)
-      (layers F.Cu F.Paste F.Mask)
-      (net 2 GND))
+      (layers F.Cu F.Paste F.Mask))
     (pad 1 smd rect
       (at -2.675 1.3 270)
       (size 0.4 1.35)
@@ -3206,8 +3156,7 @@
     (pad 5 smd rect
       (at -2.675 -1.3 270)
       (size 0.4 1.35)
-      (layers F.Cu F.Paste F.Mask)
-      (net 2 GND))
+      (layers F.Cu F.Paste F.Mask))
     (model walter/conn_pc/usb_B_micro_smd-2.wrl
       (at
         (xyz 0 0 0))
@@ -3261,8 +3210,7 @@
       (at 0 0)
       (size 1.524 1.524)
       (drill 0.9652)
-      (layers *.Cu *.Mask)
-      (net 41 /PB0)))
+      (layers *.Cu *.Mask)))
   (module pkl_pin_headers:Pin_Header_Straight_Round_1x01
     (layer F.Cu)
     (tedit 579076F7)
@@ -3309,8 +3257,7 @@
       (at 0 0)
       (size 1.524 1.524)
       (drill 0.9652)
-      (layers *.Cu *.Mask)
-      (net 42 /PB1)))
+      (layers *.Cu *.Mask)))
   (module pkl_pin_headers:Pin_Header_Straight_Round_1x01
     (layer F.Cu)
     (tedit 579076F7)
@@ -3357,8 +3304,7 @@
       (at 0 0)
       (size 1.524 1.524)
       (drill 0.9652)
-      (layers *.Cu *.Mask)
-      (net 60 /PB2)))
+      (layers *.Cu *.Mask)))
   (module pkl_pin_headers:Pin_Header_Straight_Round_1x01
     (layer F.Cu)
     (tedit 579076F7)
@@ -3405,8 +3351,7 @@
       (at 0 0)
       (size 1.524 1.524)
       (drill 0.9652)
-      (layers *.Cu *.Mask)
-      (net 43 /PB4)))
+      (layers *.Cu *.Mask)))
   (module pkl_pin_headers:Pin_Header_Straight_Round_1x01
     (layer F.Cu)
     (tedit 579076F7)
@@ -3453,8 +3398,7 @@
       (at 0 0 180)
       (size 1.524 1.524)
       (drill 0.9652)
-      (layers *.Cu *.Mask)
-      (net 44 /PB5)))
+      (layers *.Cu *.Mask)))
   (module pkl_pin_headers:Pin_Header_Straight_Round_1x01
     (layer F.Cu)
     (tedit 579076F7)
@@ -3501,8 +3445,7 @@
       (at 0 0 180)
       (size 1.524 1.524)
       (drill 0.9652)
-      (layers *.Cu *.Mask)
-      (net 45 /PB6)))
+      (layers *.Cu *.Mask)))
   (module pkl_pin_headers:Pin_Header_Straight_Round_1x01
     (layer F.Cu)
     (tedit 579076F7)
@@ -3549,8 +3492,7 @@
       (at 0 0 180)
       (size 1.524 1.524)
       (drill 0.9652)
-      (layers *.Cu *.Mask)
-      (net 46 /PB7)))
+      (layers *.Cu *.Mask)))
   (module pkl_pin_headers:Pin_Header_Straight_Round_1x01
     (layer F.Cu)
     (tedit 579076F7)
@@ -3597,8 +3539,7 @@
       (at 0 0 180)
       (size 1.524 1.524)
       (drill 0.9652)
-      (layers *.Cu *.Mask)
-      (net 47 /PB8)))
+      (layers *.Cu *.Mask)))
   (module pkl_pin_headers:Pin_Header_Straight_Round_1x01
     (layer F.Cu)
     (tedit 579076F7)
@@ -3645,8 +3586,7 @@
       (at 0 0)
       (size 1.524 1.524)
       (drill 0.9652)
-      (layers *.Cu *.Mask)
-      (net 48 /PB9)))
+      (layers *.Cu *.Mask)))
   (module pkl_pin_headers:Pin_Header_Straight_Round_1x01
     (layer F.Cu)
     (tedit 579076F7)
@@ -3693,8 +3633,7 @@
       (at 0 0 180)
       (size 1.524 1.524)
       (drill 0.9652)
-      (layers *.Cu *.Mask)
-      (net 49 /PB10)))
+      (layers *.Cu *.Mask)))
   (module pkl_pin_headers:Pin_Header_Straight_Round_1x01
     (layer F.Cu)
     (tedit 579076F7)
@@ -3741,8 +3680,7 @@
       (at 0 0)
       (size 1.524 1.524)
       (drill 0.9652)
-      (layers *.Cu *.Mask)
-      (net 50 /PB11)))
+      (layers *.Cu *.Mask)))
   (module pkl_pin_headers:Pin_Header_Straight_Round_1x01
     (layer F.Cu)
     (tedit 579076F7)
@@ -3789,8 +3727,7 @@
       (at 0 0)
       (size 1.524 1.524)
       (drill 0.9652)
-      (layers *.Cu *.Mask)
-      (net 51 /PB12)))
+      (layers *.Cu *.Mask)))
   (module pkl_pin_headers:Pin_Header_Straight_Round_1x01
     (layer F.Cu)
     (tedit 579076F7)
@@ -3837,8 +3774,7 @@
       (at 0 0)
       (size 1.524 1.524)
       (drill 0.9652)
-      (layers *.Cu *.Mask)
-      (net 52 /PB13)))
+      (layers *.Cu *.Mask)))
   (module pkl_pin_headers:Pin_Header_Straight_Round_1x01
     (layer F.Cu)
     (tedit 579076F7)
@@ -3885,8 +3821,7 @@
       (at 0 0)
       (size 1.524 1.524)
       (drill 0.9652)
-      (layers *.Cu *.Mask)
-      (net 53 /PB14)))
+      (layers *.Cu *.Mask)))
   (module pkl_pin_headers:Pin_Header_Straight_Round_1x01
     (layer F.Cu)
     (tedit 579076F7)
@@ -3933,8 +3868,7 @@
       (at 0 0 180)
       (size 1.524 1.524)
       (drill 0.9652)
-      (layers *.Cu *.Mask)
-      (net 54 /PB15)))
+      (layers *.Cu *.Mask)))
   (module pkl_dipol:R_0402
     (layer F.Cu)
     (tedit 552C709B)
@@ -4005,8 +3939,7 @@
     (pad 2 smd rect
       (at 0.5 0)
       (size 0.5 0.6)
-      (layers F.Cu F.Paste F.Mask)
-      (net 2 GND))
+      (layers F.Cu F.Paste F.Mask))
     (model Resistors_SMD.3dshapes/R_0402.wrl
       (at
         (xyz 0 0 0))
@@ -4084,8 +4017,7 @@
     (pad 2 smd rect
       (at 0.5 0 180)
       (size 0.5 0.6)
-      (layers F.Cu F.Paste F.Mask)
-      (net 2 GND))
+      (layers F.Cu F.Paste F.Mask))
     (model Resistors_SMD.3dshapes/R_0402.wrl
       (at
         (xyz 0 0 0))
@@ -4163,8 +4095,7 @@
     (pad 2 smd rect
       (at 0.5 0 180)
       (size 0.5 0.6)
-      (layers F.Cu F.Paste F.Mask)
-      (net 2 GND))
+      (layers F.Cu F.Paste F.Mask))
     (model Resistors_SMD.3dshapes/R_0402.wrl
       (at
         (xyz 0 0 0))
@@ -4237,8 +4168,7 @@
     (pad 1 smd rect
       (at -0.5 0)
       (size 0.5 0.6)
-      (layers F.Cu F.Paste F.Mask)
-      (net 5 +3V3))
+      (layers F.Cu F.Paste F.Mask))
     (pad 2 smd rect
       (at 0.5 0)
       (size 0.5 0.6)
@@ -4316,8 +4246,7 @@
     (pad 1 smd rect
       (at -0.5 0 180)
       (size 0.5 0.6)
-      (layers F.Cu F.Paste F.Mask)
-      (net 5 +3V3))
+      (layers F.Cu F.Paste F.Mask))
     (pad 2 smd rect
       (at 0.5 0 180)
       (size 0.5 0.6)
@@ -4406,8 +4335,7 @@
     (pad 2 smd rect
       (at 1.1 0)
       (size 1.06 0.65)
-      (layers F.Cu F.Paste F.Mask)
-      (net 2 GND))
+      (layers F.Cu F.Paste F.Mask))
     (pad 3 smd rect
       (at 1.1 -0.95)
       (size 1.06 0.65)
@@ -4576,8 +4504,7 @@
     (pad 12 smd rect
       (at -5.7 1.75 180)
       (size 1 0.25)
-      (layers F.Cu F.Paste F.Mask)
-      (net 2 GND))
+      (layers F.Cu F.Paste F.Mask))
     (pad 13 smd rect
       (at -5.7 2.25 180)
       (size 1 0.25)
@@ -4606,8 +4533,7 @@
     (pad 18 smd rect
       (at -3.25 5.7 270)
       (size 1 0.25)
-      (layers F.Cu F.Paste F.Mask)
-      (net 2 GND))
+      (layers F.Cu F.Paste F.Mask))
     (pad 19 smd rect
       (at -2.75 5.7 270)
       (size 1 0.25)
@@ -4831,8 +4757,7 @@
     (pad 63 smd rect
       (at -3.25 -5.7 270)
       (size 1 0.25)
-      (layers F.Cu F.Paste F.Mask)
-      (net 2 GND))
+      (layers F.Cu F.Paste F.Mask))
     (pad 64 smd rect
       (at -3.75 -5.7 270)
       (size 1 0.25)
@@ -4934,8 +4859,7 @@
     (pad GND smd rect
       (at 1.15 0.925)
       (size 1.3 1.05)
-      (layers F.Cu F.Paste F.Mask)
-      (net 2 GND))
+      (layers F.Cu F.Paste F.Mask))
     (model walter/crystal/crystal_fa-128.wrl
       (at
         (xyz 0 0 0))
@@ -5052,8 +4976,7 @@
     (pad 1 smd rect
       (at 2.54 -2 270)
       (size 0.74 2.8)
-      (layers F.Cu F.Paste F.Mask)
-      (net 5 +3V3))
+      (layers F.Cu F.Paste F.Mask))
     (pad 2 smd rect
       (at 2.54 2 270)
       (size 0.74 2.8)
@@ -5062,8 +4985,7 @@
     (pad 3 smd rect
       (at 1.27 -2 270)
       (size 0.74 2.8)
-      (layers F.Cu F.Paste F.Mask)
-      (net 2 GND))
+      (layers F.Cu F.Paste F.Mask))
     (pad 4 smd rect
       (at 1.27 2 270)
       (size 0.74 2.8)
@@ -5072,8 +4994,7 @@
     (pad 5 smd rect
       (at 0 -2 270)
       (size 0.74 2.8)
-      (layers F.Cu F.Paste F.Mask)
-      (net 2 GND))
+      (layers F.Cu F.Paste F.Mask))
     (pad 6 smd rect
       (at 0 2 270)
       (size 0.74 2.8)
@@ -5082,8 +5003,7 @@
     (pad 7 smd rect
       (at -1.27 -2 270)
       (size 0.74 2.8)
-      (layers F.Cu F.Paste F.Mask)
-      (net 2 GND))
+      (layers F.Cu F.Paste F.Mask))
     (pad 8 smd rect
       (at -1.27 2 270)
       (size 0.74 2.8)
@@ -5092,8 +5012,7 @@
     (pad 9 smd rect
       (at -2.54 -2 270)
       (size 0.74 2.8)
-      (layers F.Cu F.Paste F.Mask)
-      (net 2 GND))
+      (layers F.Cu F.Paste F.Mask))
     (pad 10 smd rect
       (at -2.54 2 270)
       (size 0.74 2.8)
@@ -5152,8 +5071,7 @@
       (at 0 0)
       (size 1.524 1.524)
       (drill 0.9652)
-      (layers *.Cu *.Mask)
-      (net 1 /VIN)))
+      (layers *.Cu *.Mask)))
   (module pkl_pin_headers:Pin_Header_Straight_Round_1x01
     (layer F.Cu)
     (tedit 579076F7)
@@ -5200,8 +5118,7 @@
       (at 0 0)
       (size 1.524 1.524)
       (drill 0.9652)
-      (layers *.Cu *.Mask)
-      (net 2 GND)))
+      (layers *.Cu *.Mask)))
   (module pkl_buttons_switches:Tact_Switch_Top_B3U-1000P
     (layer F.Cu)
     (tedit 57E1DBBD)
@@ -5281,8 +5198,7 @@
     (pad 1 smd rect
       (at 0 -1.7 180)
       (size 0.8 1.7)
-      (layers F.Cu F.Paste F.Mask)
-      (net 2 GND))
+      (layers F.Cu F.Paste F.Mask))
     (pad 2 smd rect
       (at 0 1.7 180)
       (size 0.8 1.7)
@@ -5479,8 +5395,7 @@
       (at 0 0)
       (size 1.524 1.524)
       (drill 0.9652)
-      (layers *.Cu *.Mask)
-      (net 5 +3V3)))
+      (layers *.Cu *.Mask)))
   (module pkl_pin_headers:Pin_Header_Straight_Round_1x01
     (layer F.Cu)
     (tedit 579076F7)
@@ -5527,8 +5442,7 @@
       (at 0 0)
       (size 1.524 1.524)
       (drill 0.9652)
-      (layers *.Cu *.Mask)
-      (net 62 /VBAT)))
+      (layers *.Cu *.Mask)))
   (module pkl_misc:ABS07
     (layer B.Cu)
     (tedit 57C1FB24)
@@ -5803,8 +5717,7 @@
     (pad 1 smd rect
       (at 0 0)
       (size 2.65 1)
-      (layers B.Cu B.Mask)
-      (net 38 /USB_D-)))
+      (layers B.Cu B.Mask)))
   (module pkl_pads:PAD_SMD_1x2.65
     (layer B.Cu)
     (tedit 57C1FA8B)
@@ -5830,8 +5743,7 @@
     (pad 1 smd rect
       (at 0 0)
       (size 2.65 1)
-      (layers B.Cu B.Mask)
-      (net 39 /USB_D+)))
+      (layers B.Cu B.Mask)))
   (module pkl_pads:PAD_SMD_1x2.65
     (layer B.Cu)
     (tedit 57C1FB5A)
@@ -5857,8 +5769,7 @@
     (pad 1 smd rect
       (at 0 0)
       (size 2.65 1)
-      (layers B.Cu B.Mask)
-      (net 40 /USB_ID)))
+      (layers B.Cu B.Mask)))
   (module pkl_pads:PAD_SMD_1x2.65
     (layer B.Cu)
     (tedit 57C1FAAF)
@@ -5884,8 +5795,7 @@
     (pad 1 smd rect
       (at 0 0)
       (size 2.65 1)
-      (layers B.Cu B.Mask)
-      (net 2 GND)))
+      (layers B.Cu B.Mask)))
   (module pkl_pin_headers:Pin_Header_Straight_Round_1x01
     (layer F.Cu)
     (tedit 579076F7)
@@ -5932,8 +5842,7 @@
       (at 0 0)
       (size 1.524 1.524)
       (drill 0.9652)
-      (layers *.Cu *.Mask)
-      (net 5 +3V3)))
+      (layers *.Cu *.Mask)))
   (module pkl_pin_headers:Pin_Header_Straight_Round_1x01
     (layer F.Cu)
     (tedit 579076F7)
@@ -5980,8 +5889,7 @@
       (at 0 0)
       (size 1.524 1.524)
       (drill 0.9652)
-      (layers *.Cu *.Mask)
-      (net 2 GND)))
+      (layers *.Cu *.Mask)))
   (module pkl_misc:via0305
     (layer F.Cu)
     (tedit 578819F7)
@@ -6006,7 +5914,6 @@
       (size 0.5 0.5)
       (drill 0.3)
       (layers *.Cu)
-      (net 2 GND)
       (zone_connect 2)))
   (module pkl_misc:via0305
     (layer F.Cu)
@@ -6032,7 +5939,6 @@
       (size 0.5 0.5)
       (drill 0.3)
       (layers *.Cu)
-      (net 2 GND)
       (zone_connect 2)))
   (module pkl_misc:via0305
     (layer F.Cu)
@@ -6058,7 +5964,6 @@
       (size 0.5 0.5)
       (drill 0.3)
       (layers *.Cu)
-      (net 2 GND)
       (zone_connect 2)))
   (module pkl_misc:via0305
     (layer F.Cu)
@@ -6084,7 +5989,6 @@
       (size 0.5 0.5)
       (drill 0.3)
       (layers *.Cu)
-      (net 2 GND)
       (zone_connect 2)))
   (module pkl_misc:via0305
     (layer F.Cu)
@@ -6110,7 +6014,6 @@
       (size 0.5 0.5)
       (drill 0.3)
       (layers *.Cu)
-      (net 2 GND)
       (zone_connect 2)))
   (module pkl_misc:via0305
     (layer F.Cu)
@@ -6136,7 +6039,6 @@
       (size 0.5 0.5)
       (drill 0.3)
       (layers *.Cu)
-      (net 2 GND)
       (zone_connect 2)))
   (module pkl_misc:via0305
     (layer F.Cu)
@@ -6162,7 +6064,6 @@
       (size 0.5 0.5)
       (drill 0.3)
       (layers *.Cu)
-      (net 2 GND)
       (zone_connect 2)))
   (module pkl_misc:via0305
     (layer F.Cu)
@@ -6188,7 +6089,6 @@
       (size 0.5 0.5)
       (drill 0.3)
       (layers *.Cu)
-      (net 2 GND)
       (zone_connect 2)))
   (module pkl_misc:via0305
     (layer F.Cu)
@@ -6214,7 +6114,6 @@
       (size 0.5 0.5)
       (drill 0.3)
       (layers *.Cu)
-      (net 2 GND)
       (zone_connect 2)))
   (module pkl_misc:via0305
     (layer F.Cu)
@@ -6240,7 +6139,6 @@
       (size 0.5 0.5)
       (drill 0.3)
       (layers *.Cu)
-      (net 2 GND)
       (zone_connect 2)))
   (module pkl_misc:via0305
     (layer F.Cu)
@@ -6266,7 +6164,6 @@
       (size 0.5 0.5)
       (drill 0.3)
       (layers *.Cu)
-      (net 2 GND)
       (zone_connect 2)))
   (module pkl_misc:via0305
     (layer F.Cu)
@@ -6292,7 +6189,6 @@
       (size 0.5 0.5)
       (drill 0.3)
       (layers *.Cu)
-      (net 2 GND)
       (zone_connect 2)))
   (module pkl_logos:1bitsy_silk_025grid
     (layer B.Cu)

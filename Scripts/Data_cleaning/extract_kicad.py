@@ -152,11 +152,12 @@ def extract_net_pads(pcb: KicadPCB,
 
     net2pads = collections.defaultdict(list)
 
-    for module in pcb.module:
+    for i_m, module in enumerate(pcb.module):
         module_pos = tuple(module.at)
-        for p in module.pad:
+        for i_p, p in enumerate(module.pad):
             pads_info = extract_pad(p, module_pos, layers, net_indices, obs_pad_value)
             for p_info in pads_info:
+                p_info[1]["m_p_index"] = (i_m, i_p)  # record module index and pad index for cleaning up
                 net2pads[p_info[0]].append(p_info[1])
 
     new_net2pads = calculate_pad_pos_size(net2pads, exclude_nets)
@@ -253,5 +254,5 @@ def extract_single_via_pad(via_info: Dict[str, Any]) -> List[Any]:
 
 
 if __name__ == "__main__":
-    kicad_filename = "./benchmarks/real_world/1bitsy.kicad_pcb"
+    kicad_filename = "../../PCBs/1Bitsy_1bitsy_v5/raw.kicad_pcb"
     pcb = PCB(kicad_filename)

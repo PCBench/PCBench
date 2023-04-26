@@ -822,14 +822,12 @@
       (at 3.65 2.4 180)
       (size 1.5 4)
       (drill oval 0.7 3.2)
-      (layers *.Cu *.Mask F.Paste)
-      (net 38 GND))
+      (layers *.Cu *.Mask F.Paste))
     (pad 6 thru_hole oval
       (at -3.65 2.4 180)
       (size 1.5 4)
       (drill oval 0.7 3.2)
-      (layers *.Cu *.Mask F.Paste)
-      (net 38 GND))
+      (layers *.Cu *.Mask F.Paste))
     (pad 5 smd rect
       (at 1.6 0 180)
       (size 0.5 1.4)
@@ -838,8 +836,7 @@
     (pad 4 smd rect
       (at 0.8 0 180)
       (size 0.5 1.4)
-      (layers F.Cu F.Paste F.Mask)
-      (net 57 "Net-(J1-Pad4)"))
+      (layers F.Cu F.Paste F.Mask))
     (pad 3 smd rect
       (at 0 0 180)
       (size 0.5 1.4)
@@ -942,8 +939,7 @@
       (at 2.25 0 180)
       (size 1.7 1.7)
       (drill 1)
-      (layers *.Cu *.Mask F.SilkS)
-      (net 38 GND)))
+      (layers *.Cu *.Mask F.SilkS)))
   (module HHKB_JP_HRS_DF14_15P
     (layer F.Cu)
     (tedit 59086BE9)
@@ -1120,8 +1116,7 @@
     (pad 2 smd rect
       (at 1.65 0 180)
       (size 1.8 3)
-      (layers F.Cu F.Paste F.Mask)
-      (net 38 GND))
+      (layers F.Cu F.Paste F.Mask))
     (model smd/chip_cms_pol.wrl
       (at
         (xyz 0 0 0))
@@ -1190,8 +1185,7 @@
     (pad 2 smd rect
       (at 1.65 0)
       (size 1.8 3)
-      (layers F.Cu F.Paste F.Mask)
-      (net 38 GND))
+      (layers F.Cu F.Paste F.Mask))
     (model smd/chip_cms_pol.wrl
       (at
         (xyz 0 0 0))
@@ -1332,8 +1326,7 @@
     (pad 3 smd rect
       (at 0.95 1.3 90)
       (size 0.6 1.2)
-      (layers F.Cu F.Paste F.Mask)
-      (net 61 "Net-(U3-Pad3)"))
+      (layers F.Cu F.Paste F.Mask))
     (pad 2 smd rect
       (at 0 1.3 90)
       (size 0.6 1.2)
@@ -1347,8 +1340,7 @@
     (pad 4 smd rect
       (at 0.95 -1.3 90)
       (size 0.6 1.2)
-      (layers F.Cu F.Paste F.Mask)
-      (net 38 GND))
+      (layers F.Cu F.Paste F.Mask))
     (model smd/smd_transistors/sot23.wrl
       (at
         (xyz 0 0 0))
@@ -1519,38 +1511,31 @@
     (pad 12 smd rect
       (at 0 13.2 270)
       (size 1.5 0.8)
-      (layers F.Cu F.Paste F.Mask)
-      (net 38 GND))
+      (layers F.Cu F.Paste F.Mask))
     (pad 10 smd rect
       (at 0 10.8 270)
       (size 1.5 0.8)
-      (layers F.Cu F.Paste F.Mask)
-      (net 62 "Net-(U5-Pad10)"))
+      (layers F.Cu F.Paste F.Mask))
     (pad 9 smd rect
       (at 0 9.6 270)
       (size 1.5 0.8)
-      (layers F.Cu F.Paste F.Mask)
-      (net 63 "Net-(U5-Pad9)"))
+      (layers F.Cu F.Paste F.Mask))
     (pad 5 smd rect
       (at 0 4.8 270)
       (size 1.5 0.8)
-      (layers F.Cu F.Paste F.Mask)
-      (net 64 /bluetooth/RN42_RST))
+      (layers F.Cu F.Paste F.Mask))
     (pad 6 smd rect
       (at 0 6 270)
       (size 1.5 0.8)
-      (layers F.Cu F.Paste F.Mask)
-      (net 65 /bluetooth/SPI_SCK))
+      (layers F.Cu F.Paste F.Mask))
     (pad 8 smd rect
       (at 0 8.4 270)
       (size 1.5 0.8)
-      (layers F.Cu F.Paste F.Mask)
-      (net 66 "Net-(U5-Pad8)"))
+      (layers F.Cu F.Paste F.Mask))
     (pad 7 smd rect
       (at 0 7.2 270)
       (size 1.5 0.8)
-      (layers F.Cu F.Paste F.Mask)
-      (net 67 "Net-(U5-Pad7)"))
+      (layers F.Cu F.Paste F.Mask))
     (pad 3 smd rect
       (at 0 2.4 270)
       (size 1.5 0.8)
@@ -1559,13 +1544,11 @@
     (pad 4 smd rect
       (at 0 3.6 270)
       (size 1.5 0.8)
-      (layers F.Cu F.Paste F.Mask)
-      (net 68 "Net-(U5-Pad4)"))
+      (layers F.Cu F.Paste F.Mask))
     (pad 2 smd rect
       (at 0 1.2 270)
       (size 1.5 0.8)
-      (layers F.Cu F.Paste F.Mask)
-      (net 69 /bluetooth/SPI_MOSI))
+      (layers F.Cu F.Paste F.Mask))
     (pad 1 smd rect
       (at 0 0 270)
       (size 1.5 0.8)
@@ -1594,13 +1577,11 @@
     (pad 17 smd rect
       (at 13.4 8.4 270)
       (size 1.5 0.8)
-      (layers F.Cu F.Paste F.Mask)
-      (net 70 "Net-(U5-Pad17)"))
+      (layers F.Cu F.Paste F.Mask))
     (pad 18 smd rect
       (at 13.4 7.2 270)
       (size 1.5 0.8)
-      (layers F.Cu F.Paste F.Mask)
-      (net 71 "Net-(U5-Pad18)"))
+      (layers F.Cu F.Paste F.Mask))
     (pad 19 smd rect
       (at 13.4 6 270)
       (size 1.5 0.8)
@@ -1609,8 +1590,7 @@
     (pad 20 smd rect
       (at 13.4 4.8 270)
       (size 1.5 0.8)
-      (layers F.Cu F.Paste F.Mask)
-      (net 72 "Net-(U5-Pad20)"))
+      (layers F.Cu F.Paste F.Mask))
     (pad 21 smd rect
       (at 13.4 3.6 270)
       (size 1.5 0.8)
@@ -1624,18 +1604,15 @@
     (pad 23 smd rect
       (at 13.4 1.2 270)
       (size 1.5 0.8)
-      (layers F.Cu F.Paste F.Mask)
-      (net 73 /bluetooth/SPI_SS))
+      (layers F.Cu F.Paste F.Mask))
     (pad 24 smd rect
       (at 13.4 0 270)
       (size 1.5 0.8)
-      (layers F.Cu F.Paste F.Mask)
-      (net 74 /bluetooth/SPI_MISO))
+      (layers F.Cu F.Paste F.Mask))
     (pad 35 smd rect
       (at 2.6 16 270)
       (size 0.8 1.5)
       (layers F.Cu F.Paste F.Mask)
-      (net 75 "Net-(U5-Pad35)")
       (clearance 0.1778))
     (pad 29 smd rect
       (at 3.6 16 270)
@@ -1646,23 +1623,19 @@
     (pad 34 smd rect
       (at 4.9 16 270)
       (size 0.8 1.5)
-      (layers F.Cu F.Paste F.Mask)
-      (net 76 "Net-(U5-Pad34)"))
+      (layers F.Cu F.Paste F.Mask))
     (pad 33 smd rect
       (at 6.1 16 270)
       (size 0.8 1.5)
-      (layers F.Cu F.Paste F.Mask)
-      (net 77 "Net-(U5-Pad33)"))
+      (layers F.Cu F.Paste F.Mask))
     (pad 32 smd rect
       (at 7.3 16 270)
       (size 0.8 1.5)
-      (layers F.Cu F.Paste F.Mask)
-      (net 78 "Net-(U5-Pad32)"))
+      (layers F.Cu F.Paste F.Mask))
     (pad 31 smd rect
       (at 8.5 16 270)
       (size 0.8 1.5)
-      (layers F.Cu F.Paste F.Mask)
-      (net 79 /bluetooth/LED_ACT))
+      (layers F.Cu F.Paste F.Mask))
     (pad 28 smd rect
       (at 9.8 16 270)
       (size 0.8 1.5)
@@ -1673,7 +1646,6 @@
       (at 10.8 16 270)
       (size 0.8 1.5)
       (layers F.Cu F.Paste F.Mask)
-      (net 80 "Net-(U5-Pad30)")
       (clearance 0.1778)))
   (module keyboard_parts:QFP44
     (layer F.Cu)
@@ -1869,8 +1841,7 @@
     (pad 9 smd rect
       (at -5.715 2.4003 180)
       (size 1.524 0.4064)
-      (layers F.Cu F.Paste F.Mask)
-      (net 7 /PB1))
+      (layers F.Cu F.Paste F.Mask))
     (pad 25 smd rect
       (at 5.715 2.4003 180)
       (size 1.524 0.4064)
@@ -1971,8 +1942,7 @@
       (at 0 0)
       (size 1.7 1.7)
       (drill 1.016)
-      (layers *.Cu *.Mask F.SilkS)
-      (net 17 /PD1)))
+      (layers *.Cu *.Mask F.SilkS)))
   (module keyboard_parts:R_1608
     (layer F.Cu)
     (tedit 5418F61B)
@@ -2019,7 +1989,6 @@
       (at 0.85 0)
       (size 1.1 1.1)
       (layers F.Cu F.Paste F.Mask)
-      (net 38 GND)
       (clearance 0.1))
     (pad 1 smd rect
       (at -0.85 0)
@@ -2080,7 +2049,6 @@
       (at 0.85 0 180)
       (size 1.1 1.1)
       (layers F.Cu F.Paste F.Mask)
-      (net 38 GND)
       (clearance 0.1))
     (pad 1 smd rect
       (at -0.85 0 180)
@@ -2269,7 +2237,6 @@
       (at -0.85 0 90)
       (size 1.1 1.1)
       (layers F.Cu F.Paste F.Mask)
-      (net 38 GND)
       (clearance 0.1))
     (model smd/capacitors/c_0603.wrl
       (at
@@ -2690,7 +2657,6 @@
       (at 0.85 0)
       (size 1.1 1.1)
       (layers F.Cu F.Paste F.Mask)
-      (net 38 GND)
       (clearance 0.1))
     (pad 1 smd rect
       (at -0.85 0)
@@ -2995,7 +2961,6 @@
       (at 0.85 0)
       (size 1.1 1.1)
       (layers F.Cu F.Paste F.Mask)
-      (net 38 GND)
       (clearance 0.1))
     (pad 1 smd rect
       (at -0.85 0)
@@ -3178,7 +3143,6 @@
       (at 0.85 0 90)
       (size 1.1 1.1)
       (layers F.Cu F.Paste F.Mask)
-      (net 38 GND)
       (clearance 0.1))
     (pad 1 smd rect
       (at -0.85 0 90)
@@ -3239,13 +3203,11 @@
       (at 0.85 0)
       (size 1.1 1.1)
       (layers F.Cu F.Paste F.Mask)
-      (net 4 /D-)
       (clearance 0.1))
     (pad 1 smd rect
       (at -0.85 0)
       (size 1.1 1.1)
       (layers F.Cu F.Paste F.Mask)
-      (net 48 "Net-(R2-Pad1)")
       (clearance 0.1))
     (model smd/capacitors/c_0603.wrl
       (at
@@ -3300,13 +3262,11 @@
       (at 0.85 0)
       (size 1.1 1.1)
       (layers F.Cu F.Paste F.Mask)
-      (net 3 /D+)
       (clearance 0.1))
     (pad 1 smd rect
       (at -0.85 0)
       (size 1.1 1.1)
       (layers F.Cu F.Paste F.Mask)
-      (net 49 "Net-(R3-Pad1)")
       (clearance 0.1))
     (model smd/capacitors/c_0603.wrl
       (at
@@ -3422,7 +3382,6 @@
       (at 0.85 0 180)
       (size 1.1 1.1)
       (layers F.Cu F.Paste F.Mask)
-      (net 38 GND)
       (clearance 0.1))
     (pad 1 smd rect
       (at -0.85 0 180)
@@ -3483,13 +3442,11 @@
       (at 0.85 0)
       (size 1.1 1.1)
       (layers F.Cu F.Paste F.Mask)
-      (net 38 GND)
       (clearance 0.1))
     (pad 1 smd rect
       (at -0.85 0)
       (size 1.1 1.1)
       (layers F.Cu F.Paste F.Mask)
-      (net 51 "Net-(R11-Pad1)")
       (clearance 0.1))
     (model smd/capacitors/c_0603.wrl
       (at
@@ -3671,8 +3628,7 @@
     (pad 2 smd rect
       (at 1.5 0 180)
       (size 1.8 2)
-      (layers F.Cu F.Paste F.Mask)
-      (net 38 GND))
+      (layers F.Cu F.Paste F.Mask))
     (model smd/chip_cms_pol.wrl
       (at
         (xyz 0 0 0))
@@ -3726,7 +3682,6 @@
       (at 0.85 0)
       (size 1.1 1.1)
       (layers F.Cu F.Paste F.Mask)
-      (net 38 GND)
       (clearance 0.1))
     (pad 1 smd rect
       (at -0.85 0)
@@ -3787,7 +3742,6 @@
       (at 0.85 0 180)
       (size 1.1 1.1)
       (layers F.Cu F.Paste F.Mask)
-      (net 38 GND)
       (clearance 0.1))
     (pad 1 smd rect
       (at -0.85 0 180)
@@ -3857,8 +3811,7 @@
     (pad S smd rect
       (at 0.95 1.3 90)
       (size 0.8 1.2)
-      (layers F.Cu F.Paste F.Mask)
-      (net 38 GND))
+      (layers F.Cu F.Paste F.Mask))
     (model smd/smd_transistors/sot23.wrl
       (at
         (xyz 0 0 0))
@@ -3917,8 +3870,7 @@
     (pad 2 smd rect
       (at 1.5 0 270)
       (size 1.8 2)
-      (layers F.Cu F.Paste F.Mask)
-      (net 38 GND))
+      (layers F.Cu F.Paste F.Mask))
     (model smd/chip_cms_pol.wrl
       (at
         (xyz 0 0 0))
@@ -4079,8 +4031,7 @@
       (at 0 0)
       (size 1.7 1.7)
       (drill 1.016)
-      (layers *.Cu *.Mask F.SilkS)
-      (net 16 /PD0)))
+      (layers *.Cu *.Mask F.SilkS)))
   (module keyboard_parts:C_3216
     (layer F.Cu)
     (tedit 5418F903)
@@ -4132,8 +4083,7 @@
     (pad 2 smd rect
       (at 1.5 0 270)
       (size 1.8 2)
-      (layers F.Cu F.Paste F.Mask)
-      (net 38 GND))
+      (layers F.Cu F.Paste F.Mask))
     (model smd/chip_cms_pol.wrl
       (at
         (xyz 0 0 0))
@@ -4192,8 +4142,7 @@
     (pad 2 smd rect
       (at 1.5 0 270)
       (size 1.8 2)
-      (layers F.Cu F.Paste F.Mask)
-      (net 38 GND))
+      (layers F.Cu F.Paste F.Mask))
     (model smd/chip_cms_pol.wrl
       (at
         (xyz 0 0 0))
@@ -4256,13 +4205,11 @@
     (pad 2 smd rect
       (at 0 1.3 90)
       (size 0.6 1.2)
-      (layers F.Cu F.Paste F.Mask)
-      (net 38 GND))
+      (layers F.Cu F.Paste F.Mask))
     (pad 5 smd rect
       (at -0.95 -1.3 90)
       (size 0.6 1.2)
-      (layers F.Cu F.Paste F.Mask)
-      (net 51 "Net-(R11-Pad1)"))
+      (layers F.Cu F.Paste F.Mask))
     (pad 4 smd rect
       (at 0.95 -1.3 90)
       (size 0.6 1.2)
@@ -4330,8 +4277,7 @@
     (pad 2 smd rect
       (at 0 1.3 270)
       (size 0.6 1.2)
-      (layers F.Cu F.Paste F.Mask)
-      (net 38 GND))
+      (layers F.Cu F.Paste F.Mask))
     (pad 5 smd rect
       (at -0.95 -1.3 270)
       (size 0.6 1.2)
@@ -4340,8 +4286,7 @@
     (pad 4 smd rect
       (at 0.95 -1.3 270)
       (size 0.6 1.2)
-      (layers F.Cu F.Paste F.Mask)
-      (net 87 "Net-(U2-Pad4)"))
+      (layers F.Cu F.Paste F.Mask))
     (model smd/smd_transistors/sot23.wrl
       (at
         (xyz 0 0 0))
@@ -4417,14 +4362,12 @@
       (at 2 2)
       (size 1.2 1.7)
       (drill 0.7)
-      (layers *.Cu *.Mask F.SilkS)
-      (net 38 GND))
+      (layers *.Cu *.Mask F.SilkS))
     (pad 1 thru_hole oval
       (at 0 2)
       (size 1.2 1.7)
       (drill 0.7)
-      (layers *.Cu *.Mask F.SilkS)
-      (net 25 /bluetooth/LIPO_RAW)))
+      (layers *.Cu *.Mask F.SilkS)))
   (module keyboard_parts:C_3216
     (layer F.Cu)
     (tedit 5418F7AC)
@@ -4476,8 +4419,7 @@
     (pad 2 smd rect
       (at 1.5 0 270)
       (size 1.8 2)
-      (layers F.Cu F.Paste F.Mask)
-      (net 38 GND))
+      (layers F.Cu F.Paste F.Mask))
     (model smd/chip_cms_pol.wrl
       (at
         (xyz 0 0 0))
@@ -4531,7 +4473,6 @@
       (at 0.85 0 180)
       (size 1.1 1.1)
       (layers F.Cu F.Paste F.Mask)
-      (net 38 GND)
       (clearance 0.1))
     (pad 1 smd rect
       (at -0.85 0 180)
@@ -4714,7 +4655,6 @@
       (at 0.85 0 180)
       (size 1.1 1.1)
       (layers F.Cu F.Paste F.Mask)
-      (net 38 GND)
       (clearance 0.1))
     (pad 1 smd rect
       (at -0.85 0 180)
@@ -4775,7 +4715,6 @@
       (at 0.85 0)
       (size 1.1 1.1)
       (layers F.Cu F.Paste F.Mask)
-      (net 38 GND)
       (clearance 0.1))
     (pad 1 smd rect
       (at -0.85 0)
@@ -5019,8 +4958,7 @@
     (pad 4 smd rect
       (at -1.35 0.825 180)
       (size 1.7 1.05)
-      (layers F.Cu F.Paste F.Mask)
-      (net 38 GND)))
+      (layers F.Cu F.Paste F.Mask)))
   (module keyboard_parts:SOLDER_JUMPER_2
     (layer F.Cu)
     (tedit 54B5EB3D)
@@ -5175,7 +5113,6 @@
       (at -0.4 0 270)
       (size 0.6 1.2)
       (layers F.Cu F.Mask)
-      (net 38 GND)
       (clearance 0.1)))
   (module keyboard_parts:PIN_1
     (layer F.Cu)
@@ -5202,8 +5139,7 @@
       (at 0 0)
       (size 1.7 1.7)
       (drill 1.016)
-      (layers *.Cu *.Mask F.SilkS)
-      (net 38 GND)))
+      (layers *.Cu *.Mask F.SilkS)))
   (module keyboard_parts:AVR_ICSP_3x2
     (layer F.Cu)
     (tedit 548557AE)
@@ -5265,38 +5201,32 @@
       (at -2.54 1.27 270)
       (size 1.7 1.7)
       (drill 1.016)
-      (layers *.Cu *.Mask F.SilkS)
-      (net 9 /PB3))
+      (layers *.Cu *.Mask F.SilkS))
     (pad 2 thru_hole circle
       (at -2.54 -1.27 270)
       (size 1.7 1.7)
       (drill 1.016)
-      (layers *.Cu *.Mask F.SilkS)
-      (net 32 5V_BOOST))
+      (layers *.Cu *.Mask F.SilkS))
     (pad 3 thru_hole circle
       (at 0 1.27 270)
       (size 1.7 1.7)
       (drill 1.016)
-      (layers *.Cu *.Mask F.SilkS)
-      (net 7 /PB1))
+      (layers *.Cu *.Mask F.SilkS))
     (pad 4 thru_hole circle
       (at 0 -1.27 270)
       (size 1.7 1.7)
       (drill 1.016)
-      (layers *.Cu *.Mask F.SilkS)
-      (net 8 /PB2))
+      (layers *.Cu *.Mask F.SilkS))
     (pad 5 thru_hole circle
       (at 2.54 1.27 270)
       (size 1.7 1.7)
       (drill 1.016)
-      (layers *.Cu *.Mask F.SilkS)
-      (net 31 /~RESET))
+      (layers *.Cu *.Mask F.SilkS))
     (pad 6 thru_hole circle
       (at 2.54 -1.27 270)
       (size 1.7 1.7)
       (drill 1.016)
-      (layers *.Cu *.Mask F.SilkS)
-      (net 38 GND))
+      (layers *.Cu *.Mask F.SilkS))
     (model pin_array/pins_array_3x2.wrl
       (at
         (xyz 0 0 0))
@@ -5356,8 +5286,7 @@
       (at 0 0)
       (size 1.7 1.7)
       (drill 1.016)
-      (layers *.Cu *.Mask F.SilkS)
-      (net 29 /bluetooth/RX_33)))
+      (layers *.Cu *.Mask F.SilkS)))
   (module keyboard_parts:PIN_1
     (layer F.Cu)
     (tedit 5485571A)
@@ -5383,8 +5312,7 @@
       (at 0 0)
       (size 1.7 1.7)
       (drill 1.016)
-      (layers *.Cu *.Mask F.SilkS)
-      (net 30 /bluetooth/TX_33)))
+      (layers *.Cu *.Mask F.SilkS)))
   (module keyboard_parts:PIN_1
     (layer F.Cu)
     (tedit 54855731)
@@ -5410,8 +5338,7 @@
       (at 0 0)
       (size 1.7 1.7)
       (drill 1.016)
-      (layers *.Cu *.Mask F.SilkS)
-      (net 38 GND)))
+      (layers *.Cu *.Mask F.SilkS)))
   (module keyboard_parts:PIN_1
     (layer F.Cu)
     (tedit 54855725)
@@ -5437,8 +5364,7 @@
       (at 0 0)
       (size 1.7 1.7)
       (drill 1.016)
-      (layers *.Cu *.Mask F.SilkS)
-      (net 22 /bluetooth/CTS_33)))
+      (layers *.Cu *.Mask F.SilkS)))
   (module keyboard_parts:PIN_1
     (layer F.Cu)
     (tedit 54855720)
@@ -5464,8 +5390,7 @@
       (at 0 0)
       (size 1.7 1.7)
       (drill 1.016)
-      (layers *.Cu *.Mask F.SilkS)
-      (net 28 /bluetooth/RTS_33)))
+      (layers *.Cu *.Mask F.SilkS)))
   (module keyboard_parts:PPTC_nano
     (layer F.Cu)
     (tedit 54521561)
@@ -5630,8 +5555,7 @@
       (at 0 0)
       (size 1.7 1.7)
       (drill 1.016)
-      (layers *.Cu *.Mask F.SilkS)
-      (net 85 /VUSB_RAW)))
+      (layers *.Cu *.Mask F.SilkS)))
   (module keyboard_parts:PIN_1
     (layer F.Cu)
     (tedit 548557BC)
@@ -5657,8 +5581,7 @@
       (at 0 0)
       (size 1.7 1.7)
       (drill 1.016)
-      (layers *.Cu *.Mask F.SilkS)
-      (net 4 /D-)))
+      (layers *.Cu *.Mask F.SilkS)))
   (module keyboard_parts:PIN_1
     (layer F.Cu)
     (tedit 548557C7)
@@ -5684,8 +5607,7 @@
       (at 0 0)
       (size 1.7 1.7)
       (drill 1.016)
-      (layers *.Cu *.Mask F.SilkS)
-      (net 3 /D+)))
+      (layers *.Cu *.Mask F.SilkS)))
   (module keyboard_parts:PIN_1
     (layer F.Cu)
     (tedit 548557CC)
@@ -5711,8 +5633,7 @@
       (at 0 0)
       (size 1.7 1.7)
       (drill 1.016)
-      (layers *.Cu *.Mask F.SilkS)
-      (net 38 GND)))
+      (layers *.Cu *.Mask F.SilkS)))
   (module keyboard_parts:MOS_FET_SOT23-3_HSOL
     (layer F.Cu)
     (tedit 54528179)
@@ -5905,38 +5826,32 @@
       (at -2.54 -1.27)
       (size 1.4 1.4)
       (drill 0.7)
-      (layers *.Cu *.Mask F.SilkS)
-      (net 59 "Net-(SW2-Pad3)"))
+      (layers *.Cu *.Mask F.SilkS))
     (pad 2 thru_hole circle
       (at 2.54 -1.27)
       (size 1.4 1.4)
       (drill 0.7)
-      (layers *.Cu *.Mask F.SilkS)
-      (net 25 /bluetooth/LIPO_RAW))
+      (layers *.Cu *.Mask F.SilkS))
     (pad 1 thru_hole circle
       (at 0 -1.27)
       (size 1.4 1.4)
       (drill 0.7)
-      (layers *.Cu *.Mask F.SilkS)
-      (net 26 /bluetooth/LIPO_SW))
+      (layers *.Cu *.Mask F.SilkS))
     (pad 4 thru_hole circle
       (at 0 1.27)
       (size 1.4 1.4)
       (drill 0.7)
-      (layers *.Cu *.Mask F.SilkS)
-      (net 21 /bluetooth/3.3V_OUT))
+      (layers *.Cu *.Mask F.SilkS))
     (pad 5 thru_hole circle
       (at 2.54 1.27)
       (size 1.4 1.4)
       (drill 0.7)
-      (layers *.Cu *.Mask F.SilkS)
-      (net 1 +3.3V))
+      (layers *.Cu *.Mask F.SilkS))
     (pad 6 thru_hole circle
       (at -2.54 1.27)
       (size 1.4 1.4)
       (drill 0.7)
-      (layers *.Cu *.Mask F.SilkS)
-      (net 60 "Net-(SW2-Pad6)")))
+      (layers *.Cu *.Mask F.SilkS)))
   (module keyboard_parts:MOS_FET_SOT23-3_HSOL
     (layer F.Cu)
     (tedit 54527F3C)
@@ -6032,8 +5947,7 @@
       (at -1.27 0)
       (size 1.9 1.9)
       (drill 1.0922)
-      (layers *.Cu *.Mask F.SilkS)
-      (net 45 "Net-(D3-Pad1)"))
+      (layers *.Cu *.Mask F.SilkS))
     (pad 2 thru_hole circle
       (at 1.27 0)
       (size 1.9 1.9)
@@ -6084,8 +5998,7 @@
       (at -1.27 0)
       (size 1.9 1.9)
       (drill 1.0922)
-      (layers *.Cu *.Mask F.SilkS)
-      (net 46 "Net-(D10-Pad1)"))
+      (layers *.Cu *.Mask F.SilkS))
     (model discret/leds/led3_vertical_verde.wrl
       (at
         (xyz 0 0 0))
@@ -6118,8 +6031,7 @@
       (at 0 0)
       (size 1.7 1.7)
       (drill 1.016)
-      (layers *.Cu *.Mask F.SilkS)
-      (net 32 5V_BOOST)))
+      (layers *.Cu *.Mask F.SilkS)))
   (module keyboard_parts:PIN_1
     (layer F.Cu)
     (tedit 548557DA)
@@ -6145,8 +6057,7 @@
       (at 0 0)
       (size 1.7 1.7)
       (drill 1.016)
-      (layers *.Cu *.Mask F.SilkS)
-      (net 32 5V_BOOST)))
+      (layers *.Cu *.Mask F.SilkS)))
   (module keyboard_parts:PIN_1
     (layer F.Cu)
     (tedit 54855825)
@@ -6172,8 +6083,7 @@
       (at 0 0)
       (size 1.7 1.7)
       (drill 1.016)
-      (layers *.Cu *.Mask F.SilkS)
-      (net 85 /VUSB_RAW)))
+      (layers *.Cu *.Mask F.SilkS)))
   (module keyboard_parts:PIN_1
     (layer F.Cu)
     (tedit 54855825)
@@ -6199,8 +6109,7 @@
       (at 0 0)
       (size 1.7 1.7)
       (drill 1.016)
-      (layers *.Cu *.Mask F.SilkS)
-      (net 32 5V_BOOST)))
+      (layers *.Cu *.Mask F.SilkS)))
   (module keyboard_parts:PIN_1
     (layer F.Cu)
     (tedit 54855825)
@@ -6226,8 +6135,7 @@
       (at 0 0)
       (size 1.7 1.7)
       (drill 1.016)
-      (layers *.Cu *.Mask F.SilkS)
-      (net 1 +3.3V)))
+      (layers *.Cu *.Mask F.SilkS)))
   (module keyboard_parts:PIN_1
     (layer F.Cu)
     (tedit 54855825)
@@ -6253,8 +6161,7 @@
       (at 0 0)
       (size 1.7 1.7)
       (drill 1.016)
-      (layers *.Cu *.Mask F.SilkS)
-      (net 32 5V_BOOST)))
+      (layers *.Cu *.Mask F.SilkS)))
   (module keyboard_parts:PIN_1
     (layer F.Cu)
     (tedit 54855825)
@@ -6280,8 +6187,7 @@
       (at 0 0)
       (size 1.7 1.7)
       (drill 1.016)
-      (layers *.Cu *.Mask F.SilkS)
-      (net 1 +3.3V)))
+      (layers *.Cu *.Mask F.SilkS)))
   (module keyboard_parts:HHKB_PRO2_ZH13
     (layer F.Cu)
     (tedit 5485C3B3)
@@ -6505,8 +6411,7 @@
     (pad 1 smd rect
       (at 1.7 0 270)
       (size 1.2 1.4)
-      (layers F.Cu F.Paste F.Mask)
-      (net 38 GND))
+      (layers F.Cu F.Paste F.Mask))
     (pad 2 smd rect
       (at -1.7 0 270)
       (size 1.2 1.4)
