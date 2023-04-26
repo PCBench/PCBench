@@ -84,7 +84,9 @@ class mcts():
         node, select_by_node = self.selectNode(self.root)
         # print("path in selection part: {}".format(select_by_node))
         # rollout
+        time1 = time.time()
         reward_total, route_paths = self.rollout(node.state, self.policy_model)
+        print(f"rollout run time {time.time() - time1}")
         # update the best paths
 
         # from simulation import visualize_path

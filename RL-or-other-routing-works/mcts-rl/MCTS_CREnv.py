@@ -6,7 +6,7 @@ from copy import deepcopy
 from scipy.spatial import distance
 
 import numpy as np
-import os, random
+from multiprocessing import Pool
 
 from astar import Astar
 

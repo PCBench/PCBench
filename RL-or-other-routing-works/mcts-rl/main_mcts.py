@@ -17,6 +17,5 @@ if __name__ == "__main__":
 
     policy = MlpPolicy.load(load_model, device='cpu')
 
-    paths = simulation.MCTS_search(env_mcts, policy, board_ID=board_path, rollout_times=100)
-    # paths = simulation.MCTS_search(env_mcts, None, board_ID=board_path, rollout_times=100)
+    paths = simulation.MCTS_search(env_mcts, policy, board_ID=board_path, rollout_times=10)
     # print(paths)

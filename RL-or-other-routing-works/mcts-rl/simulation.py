@@ -218,8 +218,8 @@ def MCTS_search(env, model, fig_idx=0, board_ID='II4', rollout_times=50):
 
         routed_paths += net_path
         # checking if the path of this net block any other nets
-        if block_other_nets(state, net_path):
-            print("MCTS did not find a good path to connect net {}".format(pin_idx))
+        # if block_other_nets(state, net_path):
+        #     print("MCTS did not find a good path to connect net {}".format(pin_idx))
             # break
 
         nets_distance.append(distance.cityblock(state.start[pin_idx], state.end[pin_idx]))
