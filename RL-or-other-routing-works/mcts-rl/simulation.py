@@ -7,6 +7,8 @@ from scipy.spatial import distance
 
 from astar import Astar
 import random
+import torch
+import math
 
 def draw_board(paths_x, paths_y, board, save_name):
     
@@ -147,8 +149,9 @@ def prob_DFS(state, model=None, deterministic=False):
         # print(mask, len(states_queue))
         if not all(mask==0):
             if model is not None:
-                probs = model.get_distribution(obs_vec)
-                new_dist = probs.numpy()*mask
+                dist = model.get_distribution(torch.tensor(obs_vec))
+                probs = np.array([math.exp(dist.log_prob(torch.tensor(i)).tolist()[0]) for i in range(len(state.directions))])
+                new_dist = probs * mask
                 # print(new_dist)
                 if sum(new_dist)==0:
                     new_dist = mask

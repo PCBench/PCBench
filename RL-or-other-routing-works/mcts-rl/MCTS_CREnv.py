@@ -177,11 +177,13 @@ class MCTS_CREnv():
     def board_embedding(self):
 
         if self.pairs_idx<=self.max_pair:
-            dist_to_target = [i-j for i, j in zip(self.head, self.end[self.pairs_idx])]
+            # dist_to_target = [i-j for i, j in zip(self.head, self.end[self.pairs_idx])]
+            target = self.end[self.pairs_idx]
         else:
-            dist_to_target = [i-j for i, j in zip(self.head, self.end[self.pairs_idx-1])]
-        # state = np.array(list(self.head)+list(self.end[self.pairs_idx]))
-        state = np.array(list(self.head)+dist_to_target)
+            # dist_to_target = [i-j for i, j in zip(self.head, self.end[self.pairs_idx-1])]
+            target = self.end[self.pairs_idx - 1]
+        state = np.array(list(self.head)+list(target))
+        # state = np.array(list(self.head)+dist_to_target)
         # state = np.concatenate(( state, np.array(nets_vector.tolist()+obs_vector.tolist()) ), axis=0)
 
         return state
