@@ -4,8 +4,9 @@ sys.path.append('..')
 from load_data.extract_kicad import PCB
 import math
 import numpy as np
-from load_data.geometry import is_point_inside_quadrilateral
+from load_data.geometry import is_point_inside_quadrilateral, sort_quadrilateral_clockwise
 from collections import defaultdict
+
 
 def PCBGridize(pcb: PCB, resolution: float) -> None:
 
@@ -23,10 +24,12 @@ def PCBGridize(pcb: PCB, resolution: float) -> None:
             pad_max_x = math.ceil((max([xy[0] for xy in pad["pad_vertices"]]) - min_x) / resolution)
             pad_min_y = math.floor((min([xy[1] for xy in pad["pad_vertices"]]) - min_y) / resolution)
             pad_max_y = math.ceil((max([xy[1] for xy in pad["pad_vertices"]]) - min_y) / resolution)
+            pad_rect = pad["pad_vertices"]
+            sorted_pad_rect = [pad_rect[i] for i in sort_quadrilateral_clockwise(pad_rect)]
             for x in range(pad_min_x, pad_max_x + 1):
                 for y in range(pad_min_y, pad_max_y + 1):
-                    pad_rect = pad["pad_vertices"]
-                    if is_point_inside_quadrilateral(point=(x,y), quadrilateral=pad_rect):
+                    real_x, real_y = x * resolution + min_x, y * resolution + min_y
+                    if is_point_inside_quadrilateral(point=(real_x, real_y), quadrilateral=sorted_pad_rect):
                         pcb_matrix[(x,y,layer_name2ID[pad["pad_layer"]])] = net_idx
             
             if net_idx > 0:
@@ -35,5 +38,3 @@ def PCBGridize(pcb: PCB, resolution: float) -> None:
                 nets[net_idx].append((pad_center_grid_x, pad_center_grid_y, layer_name2ID[pad["pad_layer"]]))
 
     return pcb_matrix, nets
-
-

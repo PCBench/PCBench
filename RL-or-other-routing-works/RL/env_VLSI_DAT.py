@@ -18,7 +18,7 @@ class VLSIDATEnv(PCBEnvPos):
         self.connect_coef = connect_coef
         self.dist_coef = dist_coef
         self.path_coef = path_coef
-                
+
     def _get_reward(self) -> float:
         return self.connect_coef * self.num_connected_pairs - \
                self.dist_coef * cityblock(self._agent_location, self._target_location) - \

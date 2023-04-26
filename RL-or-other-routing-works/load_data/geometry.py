@@ -12,6 +12,17 @@ def rotate(pos, theta):
     return np.matmul(R, pos)
 
 
+def closest_point_idx(points: List[Tuple[int, int, int]], given_point: Tuple[int, int, int]) -> int:
+    # Convert list of points to a numpy array
+    points = np.array(points)
+    # Calculate Euclidean distance from given_point to each point in points
+    distances = np.sqrt(np.sum((points - given_point)**2, axis=1))
+    # Find the index of the closest point
+    closest_idx = np.argmin(distances)
+    # Return the closest point
+    return closest_idx
+
+
 def sort_quadrilateral_clockwise(vertices: List[Tuple[float, float]]) -> List[int]:
     p1, p2, p3, p4 = vertices[0], vertices[1], vertices[2], vertices[3]
     # Calculate the centroid of the quadrilateral
@@ -29,22 +40,8 @@ def sort_quadrilateral_clockwise(vertices: List[Tuple[float, float]]) -> List[in
 
 def is_point_inside_quadrilateral(point: Tuple[float, float], quadrilateral: List[Tuple[float, float]]) -> bool:
     """
-    Check if a 2D point is inside a quadrilateral.
+    Check if a 2D point is inside a quadrilateral. quadrilateral must be sorted clockwise or counter-clockwise
     """
-    quadrilateral = [quadrilateral[i] for i in sort_quadrilateral_clockwise(quadrilateral)]
     polygon = Polygon(quadrilateral)
     point = Point(point)
     return polygon.contains(point)
-
-
-def closest_point_idx(points: List[Tuple[int, int, int]], given_point: Tuple[int, int, int]) -> int:
-    # Convert list of points to a numpy array
-    points = np.array(points)
-    # Calculate Euclidean distance from given_point to each point in points
-    distances = np.sqrt(np.sum((points - given_point)**2, axis=1))
-    # Find the index of the closest point
-    closest_idx = np.argmin(distances)
-    # Return the closest point
-    return closest_idx
-
-
