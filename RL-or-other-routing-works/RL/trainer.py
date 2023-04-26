@@ -2,6 +2,7 @@ from stable_baselines3 import PPO, A2C
 import os
 from PCBEnvPos import PCBEnvPos
 from params import Params
+from stable_baselines3.common.logger import configure
 
 class Trainer:
     def __init__(self, env=None) -> None:
@@ -67,6 +68,12 @@ class Trainer:
                     device=self.params.rl.device
                 )
 
+        logger_path = os.path.dirname(os.path.abspath(__file__)) + "/logs/"
+        if not os.path.exists(logger_path):
+            os.mkdir(logger_path)
+        # set up logger
+        new_logger = configure(logger_path, ["stdout", "csv", "tensorboard"])
+        self.model.set_logger(new_logger)
     
     def learn(self) -> None:
         self.model.learn(total_timesteps=self.params.rl.total_timesteps, progress_bar=True)
