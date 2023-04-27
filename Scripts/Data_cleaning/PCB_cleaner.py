@@ -49,12 +49,12 @@ def del_incomplete_segments(pcb: PCB) -> None:
                 next_node = seg_graph[curr_node].pop()
                 seg_graph[next_node].pop(seg_graph[next_node].index(curr_node))
                 curr_node = next_node
-        
+
         all_nodes = list(seg_graph.keys())
         for node in all_nodes:
             if len(seg_graph[node]) == 0 and not is_pad_node(node, pcb.net_pads[net], pcb.layers):
                 del seg_graph[node]
-        
+
         if is_graph_fully_connected(seg_graph):
             net2seggraph[net] = seg_graph
         else:
@@ -62,8 +62,10 @@ def del_incomplete_segments(pcb: PCB) -> None:
     
     new_segments = []
     for seg in pcb.wires:
+        start_node = tuple(seg.start + [pcb.layers.index(seg.layer)])
+        end_node = tuple(seg.end + [pcb.layers.index(seg.layer)])
         net_idx = seg.net
-        if len(net2seggraph[net_idx]) > 0:
+        if len(net2seggraph[net_idx]) > 0 and len(net2seggraph[net_idx][start_node]) > 0 and len(net2seggraph[net_idx][end_node]) > 0:
             new_segments.append(seg)
 
     pcb.wires = new_segments
