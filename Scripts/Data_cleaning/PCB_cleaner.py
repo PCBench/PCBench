@@ -23,6 +23,8 @@ def PCB_cleaner(
 
 
 def del_incomplete_segments(pcb: PCB) -> None:
+    """ delete all segments for a net if its connections use fill zones or there are some incomplete connections
+    """
     # extract net segments
     net2segs = defaultdict(list)
     for seg in pcb.wires:
@@ -48,14 +50,20 @@ def del_incomplete_segments(pcb: PCB) -> None:
                 seg_graph[next_node].pop(seg_graph[next_node].index(curr_node))
                 curr_node = next_node
         
-        net2seggraph[net] = seg_graph
+        all_nodes = list(seg_graph.keys())
+        for node in all_nodes:
+            if len(seg_graph[node]) == 0 and not is_pad_node(node, pcb.net_pads[net], pcb.layers):
+                del seg_graph[node]
+        
+        if is_graph_fully_connected(seg_graph):
+            net2seggraph[net] = seg_graph
+        else:
+            net2seggraph[net] = []
     
     new_segments = []
     for seg in pcb.wires:
-        start_node = tuple(seg.start + [pcb.layers.index(seg.layer)])
-        end_node = tuple(seg.end + [pcb.layers.index(seg.layer)])
         net_idx = seg.net
-        if len(net2seggraph[net_idx][start_node]) > 0 and len(net2seggraph[net_idx][end_node]) > 0:
+        if len(net2seggraph[net_idx]) > 0:
             new_segments.append(seg)
 
     pcb.wires = new_segments
@@ -86,12 +94,29 @@ def del_isolate_pads(pcb: PCB) -> None:
     obs_pads = []
     for net, pads in pcb.net_pads.items():
         new_pads = []
+        drill_holes = defaultdict(list)
+        single_layer_pads = []
         for pad_info in pads:
+            if pad_info["drill_hole"]:
+                drill_holes[pad_info['m_p_index']].append(pad_info)
+            else:
+                single_layer_pads.append(pad_info)
+        for pad_info in single_layer_pads:
             pad_pos = pad_info["pad_center_xy"] + (pcb.layers.index(pad_info["pad_layer"]),)
             if is_path_end_node(pad_pos, seg_nodes):
                 new_pads.append(pad_info)
             else:
                 obs_pads.append(pad_info)
+        for _, dhs in drill_holes.items():
+            dh0, dh1 = dhs[0], dhs[1]
+            dh0_pos = dh0["pad_center_xy"] + (pcb.layers.index(dh0["pad_layer"]),)
+            dh1_pos = dh1["pad_center_xy"] + (pcb.layers.index(dh1["pad_layer"]),)
+            if is_path_end_node(dh0_pos, seg_nodes) or is_path_end_node(dh1_pos, seg_nodes):
+                new_pads.append(dh0)
+                new_pads.append(dh1)
+            else:
+                obs_pads.append(dh0)
+                obs_pads.append(dh1)
         pcb.net_pads[net] = new_pads
 
     if pcb.obs_pad_value not in pcb.net_pads:
@@ -135,6 +160,23 @@ def is_pad_node(
     
     return False
 
+
+def is_graph_fully_connected(
+        graph: Dict[Tuple[float, float, float], List[Tuple[float, float, float]]]
+    ) -> bool:
+
+    node_count = len(graph.keys())
+    num_node = 0
+    visited = set([])
+    stack = [list(graph.keys())[0]]
+    while stack and num_node < node_count:
+        curr = stack.pop(0)
+        num_node += 1
+        visited.add(curr)
+        for node in graph[curr]:
+            if node not in visited:
+                stack.append(node)
+    return num_node == node_count
 
 if __name__ == "__main__":
     import sys

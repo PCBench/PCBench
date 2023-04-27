@@ -35,7 +35,8 @@ def dump_wires(
             m_i, p_i = del_pad_info["m_p_index"]
             if "net" in pcb.module[m_i].pad[p_i]:
                 del pcb.module[m_i].pad[p_i]["net"]
-
+    # delete zones
+    del pcb.zone
     file_path = origianl_kicad_file.split('/')
     file_path[-1] = 'processed.kicad_pcb'
     output_filename = '/'.join(file_path)
