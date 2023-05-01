@@ -4,7 +4,6 @@ from kicad_pcb import *
 from sexp_parser import *
 from pad_rotation import calculate_pad_pos_size
 
-
 class PCB:
     def __init__(
             self, 
@@ -15,8 +14,8 @@ class PCB:
         self.obs_pad_value = -1
         self.via_obs_pad_value = -2
         self.pcb = KicadPCB.load(kicad_file)
-
-        self.layers = extract_layer(pcb=self.pcb)
+        self.max_layer_index = 16 if self.pcb.version == 3 else 32
+        self.layers = extract_layer(pcb=self.pcb, max_layer_index=self.max_layer_index)
 
         # extract boundary info: circuit region and boundary lines with width
         min_x, min_y, max_x, max_y, lines = extract_bound(self.pcb.gr_line, self.pcb.gr_arc)
@@ -133,15 +132,16 @@ def extract_nets_indices(pcb: KicadPCB, delete_nets: Optional[Set[str]]=None) ->
 
     return all_net_indices
 
-def extract_layer(pcb: KicadPCB) -> List[str]:
-
+def extract_layer(pcb: KicadPCB, max_layer_index: int) -> List[str]:
+    
     layers = list()
-
-    for k in sorted(pcb.layers):
-        if "signal" == pcb.layers[k][-1]:
+    layer_indices = []
+    for k in pcb.layers:
+        if int(k) < max_layer_index:
+            layer_indices.append(int(k))
             layers.append(pcb.layers[k][0])
-
-    return layers
+    
+    return [x for _, x in sorted(zip(layer_indices, layers))]
 
 def extract_net_pads(pcb: KicadPCB, 
                      layers: List[str], 

@@ -2,6 +2,8 @@ from typing import Any, Dict, List, Set, Tuple
 from extract_kicad import PCB
 from collections import defaultdict
 import math
+import networkx as nx
+from copy import deepcopy
 
 PAD_NODE_DIST_THRESHOLD = 0.001
 
@@ -21,7 +23,6 @@ def PCB_cleaner(
     if clean_pads:
         del_isolate_pads(pcb)
 
-
 def del_incomplete_segments(pcb: PCB) -> None:
     """ delete all segments for a net if its connections use fill zones or there are some incomplete connections
     """
@@ -33,15 +34,24 @@ def del_incomplete_segments(pcb: PCB) -> None:
     # need to treat vias as a segment to create a graph for wires/paths
     for via in pcb.vias:
         l1, l2 = pcb.layers.index(via.layers[0]), pcb.layers.index(via.layers[1])
-        net2segs[via.net].append([tuple(via.at + [l1]), tuple(via.at + [l2])])
+        ls, le = min(l1, l2), max(l1, l2)
+        for l in range(ls, le):
+            net2segs[via.net].append([tuple(via.at + [l]), tuple(via.at + [l+1])])
 
+    failed_graphs, graphs = dict(), dict()
     net2seggraph = dict()
     for net, segs in net2segs.items():
         # convert a net segments into a graph
+        if net not in pcb.net_pads:
+            net2seggraph[net] = []
+            continue
         seg_graph = defaultdict(list)
         for seg in segs:
-            seg_graph[seg[0]].append(seg[1])
-            seg_graph[seg[1]].append(seg[0])
+            if seg[0] != seg[1]:
+                seg_graph[seg[0]].append(seg[1])
+                seg_graph[seg[1]].append(seg[0])
+        graphs[net] = deepcopy(seg_graph)
+
         # delete unconnected segments/edges from graph
         for node in seg_graph:
             curr_node = node
@@ -54,11 +64,13 @@ def del_incomplete_segments(pcb: PCB) -> None:
         for node in all_nodes:
             if len(seg_graph[node]) == 0 and not is_pad_node(node, pcb.net_pads[net], pcb.layers):
                 del seg_graph[node]
-
+        
         if is_graph_fully_connected(seg_graph):
             net2seggraph[net] = seg_graph
         else:
+            print(f"failed net is: {net}")
             net2seggraph[net] = []
+        failed_graphs[net] = seg_graph
     
     new_segments = []
     for seg in pcb.wires:
@@ -70,6 +82,8 @@ def del_incomplete_segments(pcb: PCB) -> None:
 
     pcb.wires = new_segments
 
+    return failed_graphs, graphs
+
 
 def del_unconnected_vias(pcb: PCB) -> None:
     """ If a via is not connected by any given paths/wires of the given routed circuits, 
@@ -78,12 +92,13 @@ def del_unconnected_vias(pcb: PCB) -> None:
     seg_nodes = get_segment_end_nodes(pcb.wires, pcb.layers)
     new_vias = []
     for via in pcb.vias:
-        l1 = pcb.layers.index(via.layers[0])
-        l2 = pcb.layers.index(via.layers[1])
-        via_node_l1 = tuple(via.at + [l1])
-        via_node_l2 = tuple(via.at + [l2])
-        if via_node_l1 in seg_nodes or via_node_l2 in seg_nodes:
-            new_vias.append(via)
+        l1, l2 = pcb.layers.index(via.layers[0]), pcb.layers.index(via.layers[1])
+        ls, le = min(l1, l2), max(l1, l2)
+        for l in range(ls, le+1):
+            via_node_l = tuple(via.at + [l])
+            if via_node_l in seg_nodes:
+                new_vias.append(via)
+                break
 
     pcb.vias = new_vias
 
@@ -105,20 +120,21 @@ def del_isolate_pads(pcb: PCB) -> None:
                 single_layer_pads.append(pad_info)
         for pad_info in single_layer_pads:
             pad_pos = pad_info["pad_center_xy"] + (pcb.layers.index(pad_info["pad_layer"]),)
-            if is_path_end_node(pad_pos, seg_nodes):
+            if is_path_end_node(pad_pos, min(pad_info["pad_size"]), seg_nodes):
                 new_pads.append(pad_info)
             else:
                 obs_pads.append(pad_info)
         for _, dhs in drill_holes.items():
-            dh0, dh1 = dhs[0], dhs[1]
-            dh0_pos = dh0["pad_center_xy"] + (pcb.layers.index(dh0["pad_layer"]),)
-            dh1_pos = dh1["pad_center_xy"] + (pcb.layers.index(dh1["pad_layer"]),)
-            if is_path_end_node(dh0_pos, seg_nodes) or is_path_end_node(dh1_pos, seg_nodes):
-                new_pads.append(dh0)
-                new_pads.append(dh1)
+            dh_obs = True
+            for dh in dhs:
+                dh_pos = dh["pad_center_xy"] + (pcb.layers.index(dh["pad_layer"]),)
+                if is_path_end_node(dh_pos, min(pad_info["pad_size"]), seg_nodes):
+                    dh_obs = False
+            if dh_obs:
+                obs_pads += dhs
             else:
-                obs_pads.append(dh0)
-                obs_pads.append(dh1)
+                new_pads += dhs
+
         pcb.net_pads[net] = new_pads
 
     if pcb.obs_pad_value not in pcb.net_pads:
@@ -140,11 +156,12 @@ def get_segment_end_nodes(segments: List[Dict[str, Any]], layers: List[str]) -> 
 
 def is_path_end_node(
         node_xyz: Tuple[float, float, float], 
+        pad_size: float,
         seg_nodes: Set[Tuple[float, float, float]]
     ) -> bool:
 
     for node in seg_nodes:
-        if math.dist(node, node_xyz) < PAD_NODE_DIST_THRESHOLD:
+        if node_xyz[-1] == node[-1] and math.dist([node[0], node[1]], [node_xyz[0], node_xyz[1]]) < PAD_NODE_DIST_THRESHOLD:
             return True
     return False
 
@@ -155,8 +172,11 @@ def is_pad_node(
         layers: List[str]
     ) -> bool:
     for pad_info in net_pads:
-        pad_pos = pad_info["pad_center_xy"] + (layers.index(pad_info["pad_layer"]),)
-        dist = math.dist(node_xyz, pad_pos)
+        if node_xyz[-1] != layers.index(pad_info["pad_layer"]):
+            continue
+        pad_xy = pad_info["pad_center_xy"]
+        pad_size = min(pad_info["pad_size"])
+        dist = math.dist([node_xyz[0], node_xyz[1]], pad_xy)
         if dist < PAD_NODE_DIST_THRESHOLD:
             return True
     
@@ -164,28 +184,25 @@ def is_pad_node(
 
 
 def is_graph_fully_connected(
-        graph: Dict[Tuple[float, float, float], List[Tuple[float, float, float]]]
+        graph: Dict[Tuple[float, float, float], List[Tuple[float, float, float]]],
     ) -> bool:
 
-    node_count = len(graph.keys())
-    num_node = 0
-    visited = set([])
-    stack = [list(graph.keys())[0]]
-    while stack and num_node < node_count:
-        curr = stack.pop(0)
-        num_node += 1
-        visited.add(curr)
-        for node in graph[curr]:
-            if node not in visited:
-                stack.append(node)
-    return num_node == node_count
+    edges = []
+    for node in graph:
+        for next_node in graph[node]:
+            edges.append([node, next_node])
+    if len(edges) == 0:
+        return False
+    G = nx.Graph()
+    G.add_edges_from(edges)
+    return nx.is_connected(G)
+
 
 if __name__ == "__main__":
     import sys
     kicad_filename = sys.argv[1]
 
     pcb = PCB(kicad_filename)
-
     PCB_cleaner(pcb=pcb)
     del_pads = pcb.net_pads[pcb.obs_pad_value]
 
