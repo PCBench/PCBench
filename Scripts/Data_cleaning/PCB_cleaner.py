@@ -3,7 +3,7 @@ from extract_kicad import PCB
 from collections import defaultdict
 import math
 import networkx as nx
-from copy import deepcopy
+
 
 PAD_NODE_DIST_THRESHOLD = 0.001
 
@@ -38,7 +38,6 @@ def del_incomplete_segments(pcb: PCB) -> None:
         for l in range(ls, le):
             net2segs[via.net].append([tuple(via.at + [l]), tuple(via.at + [l+1])])
 
-    failed_graphs, graphs = dict(), dict()
     net2seggraph = dict()
     for net, segs in net2segs.items():
         # convert a net segments into a graph
@@ -50,7 +49,6 @@ def del_incomplete_segments(pcb: PCB) -> None:
             if seg[0] != seg[1]:
                 seg_graph[seg[0]].append(seg[1])
                 seg_graph[seg[1]].append(seg[0])
-        graphs[net] = deepcopy(seg_graph)
 
         # delete unconnected segments/edges from graph
         for node in seg_graph:
@@ -64,13 +62,11 @@ def del_incomplete_segments(pcb: PCB) -> None:
         for node in all_nodes:
             if len(seg_graph[node]) == 0 and not is_pad_node(node, pcb.net_pads[net], pcb.layers):
                 del seg_graph[node]
-        
+        # check if the cleaned graph is fully connected, if not, delete this net
         if is_graph_fully_connected(seg_graph):
             net2seggraph[net] = seg_graph
         else:
-            print(f"failed net is: {net}")
             net2seggraph[net] = []
-        failed_graphs[net] = seg_graph
     
     new_segments = []
     for seg in pcb.wires:
@@ -81,8 +77,6 @@ def del_incomplete_segments(pcb: PCB) -> None:
             new_segments.append(seg)
 
     pcb.wires = new_segments
-
-    return failed_graphs, graphs
 
 
 def del_unconnected_vias(pcb: PCB) -> None:
