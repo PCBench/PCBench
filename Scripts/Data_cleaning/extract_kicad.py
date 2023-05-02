@@ -182,6 +182,8 @@ def extract_pad(
     m_rotation = module_pos[2] if len(module_pos)==3 else 0
 
     ret_pads = []   # return 2 pads info if it is a drill hole
+    if "layers" not in module_pad:
+        return ret_pads
     for pl in module_pad.layers:
         if pl in layers:
             pad_info = {}

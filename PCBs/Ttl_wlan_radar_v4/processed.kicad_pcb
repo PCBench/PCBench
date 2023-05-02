@@ -1026,7 +1026,8 @@
     (pad 1 smd rect
       (at -0.44958 0)
       (size 0.39878 0.59944)
-      (layers B.Cu B.Paste B.Mask))
+      (layers B.Cu B.Paste B.Mask)
+      (net 28 /mcu/3V3A))
     (pad 2 smd rect
       (at 0.44958 0)
       (size 0.39878 0.59944)
@@ -1094,7 +1095,8 @@
     (pad 1 smd rect
       (at -0.44958 0 90)
       (size 0.39878 0.59944)
-      (layers B.Cu B.Paste B.Mask))
+      (layers B.Cu B.Paste B.Mask)
+      (net 18 /mcu/ADC_DP))
     (pad 2 smd rect
       (at 0.44958 0 90)
       (size 0.39878 0.59944)
@@ -1234,7 +1236,8 @@
     (pad 2 smd rect
       (at 0.44958 0 90)
       (size 0.39878 0.59944)
-      (layers F.Cu F.Paste F.Mask))
+      (layers F.Cu F.Paste F.Mask)
+      (net 21 /mcu/ADC_DM))
     (model smd/capacitors/C0402.wrl
       (at
         (xyz 0 0 0))
@@ -1296,7 +1299,8 @@
     (pad 1 smd rect
       (at -0.44958 0 270)
       (size 0.39878 0.59944)
-      (layers F.Cu F.Paste F.Mask))
+      (layers F.Cu F.Paste F.Mask)
+      (net 21 /mcu/ADC_DM))
     (pad 2 smd rect
       (at 0.44958 0 270)
       (size 0.39878 0.59944)
@@ -1439,7 +1443,8 @@
     (pad 2 smd rect
       (at 0.44958 0 270)
       (size 0.39878 0.59944)
-      (layers B.Cu B.Paste B.Mask))
+      (layers B.Cu B.Paste B.Mask)
+      (net 24 /VG))
     (model smd/capacitors/C0402.wrl
       (at
         (xyz 0 0 0))
@@ -1503,7 +1508,8 @@
     (pad 1 smd rect
       (at -0.762 0 90)
       (size 0.635 1.143)
-      (layers B.Cu B.Paste B.Mask))
+      (layers B.Cu B.Paste B.Mask)
+      (net 25 /mcu/VBUS))
     (pad 2 smd rect
       (at 0.762 0 90)
       (size 0.635 1.143)
@@ -1773,7 +1779,8 @@
     (pad 1 smd rect
       (at -0.44958 0)
       (size 0.39878 0.59944)
-      (layers F.Cu F.Paste F.Mask))
+      (layers F.Cu F.Paste F.Mask)
+      (net 28 /mcu/3V3A))
     (pad 2 smd rect
       (at 0.44958 0)
       (size 0.39878 0.59944)
@@ -2070,23 +2077,28 @@
     (pad 6 smd rect
       (at -3.39852 -0.24892 90)
       (size 0.59944 0.24892)
-      (layers F.Cu F.Paste F.Mask))
+      (layers F.Cu F.Paste F.Mask)
+      (net 25 /mcu/VBUS))
     (pad 7 smd rect
       (at -3.39852 0.25146 90)
       (size 0.59944 0.24892)
-      (layers F.Cu F.Paste F.Mask))
+      (layers F.Cu F.Paste F.Mask)
+      (net 18 /mcu/ADC_DP))
     (pad 8 smd rect
       (at -3.39852 0.75184 90)
       (size 0.59944 0.24892)
-      (layers F.Cu F.Paste F.Mask))
+      (layers F.Cu F.Paste F.Mask)
+      (net 21 /mcu/ADC_DM))
     (pad 9 smd rect
       (at -3.39852 1.25222 90)
       (size 0.59944 0.24892)
-      (layers F.Cu F.Paste F.Mask))
+      (layers F.Cu F.Paste F.Mask)
+      (net 28 /mcu/3V3A))
     (pad 10 smd rect
       (at -3.39852 1.7526 90)
       (size 0.59944 0.24892)
-      (layers F.Cu F.Paste F.Mask))
+      (layers F.Cu F.Paste F.Mask)
+      (net 28 /mcu/3V3A))
     (pad 11 smd rect
       (at -3.39852 2.25298 90)
       (size 0.59944 0.24892)
@@ -2098,7 +2110,8 @@
     (pad 33 smd rect
       (at 3.39852 -1.25222 90)
       (size 0.59944 0.24892)
-      (layers F.Cu F.Paste F.Mask))
+      (layers F.Cu F.Paste F.Mask)
+      (net 40 /mcu/PA_DET))
     (pad 34 smd rect
       (at 3.39852 -1.75006 90)
       (size 0.59944 0.24892)
@@ -2115,19 +2128,23 @@
     (pad 17 smd rect
       (at -0.7493 3.40106 90)
       (size 0.24892 0.59944)
-      (layers F.Cu F.Paste F.Mask))
+      (layers F.Cu F.Paste F.Mask)
+      (net 44 /mcu/SWD_CLK))
     (pad 18 smd rect
       (at -0.25 3.4 90)
       (size 0.24892 0.59944)
-      (layers F.Cu F.Paste F.Mask))
+      (layers F.Cu F.Paste F.Mask)
+      (net 45 /mcu/UART_RX))
     (pad 19 smd rect
       (at 0.24892 3.40106 90)
       (size 0.24892 0.59944)
-      (layers F.Cu F.Paste F.Mask))
+      (layers F.Cu F.Paste F.Mask)
+      (net 46 /mcu/UART_TX))
     (pad 20 smd rect
       (at 0.7493 3.40106 90)
       (size 0.24892 0.59944)
-      (layers F.Cu F.Paste F.Mask))
+      (layers F.Cu F.Paste F.Mask)
+      (net 47 /mcu/SWD_DIO))
     (pad 21 smd rect
       (at 1.24968 3.40106 90)
       (size 0.24892 0.59944)
@@ -2153,7 +2170,8 @@
     (pad 14 smd rect
       (at -2.2479 3.40106 90)
       (size 0.24892 0.59944)
-      (layers F.Cu F.Paste F.Mask))
+      (layers F.Cu F.Paste F.Mask)
+      (net 41 /mcu/DAC_OUT))
     (pad 15 smd rect
       (at -1.74752 3.40106 90)
       (size 0.24892 0.59944)
@@ -2170,19 +2188,23 @@
     (pad 26 smd rect
       (at 3.40106 2.2479 90)
       (size 0.59944 0.24892)
-      (layers F.Cu F.Paste F.Mask))
+      (layers F.Cu F.Paste F.Mask)
+      (net 38 /mcu/~RESET))
     (pad 27 smd rect
       (at 3.40106 1.75006 90)
       (size 0.59944 0.24892)
-      (layers F.Cu F.Paste F.Mask))
+      (layers F.Cu F.Paste F.Mask)
+      (net 52 /mcu/I2C_SCL))
     (pad 28 smd rect
       (at 3.40106 1.24968 90)
       (size 0.59944 0.24892)
-      (layers F.Cu F.Paste F.Mask))
+      (layers F.Cu F.Paste F.Mask)
+      (net 33 /mcu/I2C_SDA))
     (pad 29 smd rect
       (at 3.40106 0.7493 90)
       (size 0.59944 0.24892)
-      (layers F.Cu F.Paste F.Mask))
+      (layers F.Cu F.Paste F.Mask)
+      (net 39 /mcu/PA_EN))
     (pad 30 smd rect
       (at 3.40106 0.24892 90)
       (size 0.59944 0.24892)
@@ -2854,7 +2876,8 @@
     (pad 1 smd rect
       (at -0.44958 0 180)
       (size 0.39878 0.59944)
-      (layers B.Cu B.Paste B.Mask))
+      (layers B.Cu B.Paste B.Mask)
+      (net 28 /mcu/3V3A))
     (pad 2 smd rect
       (at 0.44958 0 180)
       (size 0.39878 0.59944)
@@ -3067,7 +3090,8 @@
     (pad 2 smd rect
       (at 0.762 0)
       (size 0.635 1.143)
-      (layers B.Cu B.Paste B.Mask))
+      (layers B.Cu B.Paste B.Mask)
+      (net 24 /VG))
     (model smd\capacitors\C0603.wrl
       (at
         (xyz 0 0 0.001))
@@ -3134,7 +3158,8 @@
     (pad 2 smd rect
       (at 0.762 0)
       (size 0.635 1.143)
-      (layers F.Cu F.Paste F.Mask))
+      (layers F.Cu F.Paste F.Mask)
+      (net 24 /VG))
     (model smd\capacitors\C0603.wrl
       (at
         (xyz 0 0 0.001))
@@ -3198,7 +3223,8 @@
     (pad 1 smd rect
       (at -0.44958 0 270)
       (size 0.39878 0.59944)
-      (layers B.Cu B.Paste B.Mask))
+      (layers B.Cu B.Paste B.Mask)
+      (net 28 /mcu/3V3A))
     (pad 2 smd rect
       (at 0.44958 0 270)
       (size 0.39878 0.59944)
@@ -3548,7 +3574,8 @@
     (pad 1 smd rect
       (at -0.762 0 270)
       (size 0.635 1.143)
-      (layers B.Cu B.Paste B.Mask))
+      (layers B.Cu B.Paste B.Mask)
+      (net 28 /mcu/3V3A))
     (pad 2 smd rect
       (at 0.762 0 270)
       (size 0.635 1.143)
@@ -3701,7 +3728,8 @@
     (pad 2 smd rect
       (at 0.44958 0 180)
       (size 0.39878 0.59944)
-      (layers F.Cu F.Paste F.Mask))
+      (layers F.Cu F.Paste F.Mask)
+      (net 41 /mcu/DAC_OUT))
     (model smd/resistors/R0402.wrl
       (at
         (xyz 0 0 0))
@@ -3770,7 +3798,8 @@
     (pad 2 smd rect
       (at 0.44958 0)
       (size 0.39878 0.59944)
-      (layers B.Cu B.Paste B.Mask))
+      (layers B.Cu B.Paste B.Mask)
+      (net 81 /VTUNE))
     (model smd/resistors/R0402.wrl
       (at
         (xyz 0 0 0))
@@ -3976,7 +4005,8 @@
     (pad 2 smd rect
       (at 0.44958 0 90)
       (size 0.39878 0.59944)
-      (layers F.Cu F.Paste F.Mask))
+      (layers F.Cu F.Paste F.Mask)
+      (net 24 /VG))
     (model smd/resistors/R0402.wrl
       (at
         (xyz 0 0 0))
@@ -4043,7 +4073,8 @@
     (pad 2 smd rect
       (at 0.762 0)
       (size 0.635 1.143)
-      (layers F.Cu F.Paste F.Mask))
+      (layers F.Cu F.Paste F.Mask)
+      (net 79 "Net-(R22-Pad2)"))
     (model smd\resistors\R0603.wrl
       (at
         (xyz 0 0 0.001))
@@ -4314,7 +4345,8 @@
     (pad 2 smd rect
       (at 0.762 0 180)
       (size 0.635 1.143)
-      (layers F.Cu F.Paste F.Mask))
+      (layers F.Cu F.Paste F.Mask)
+      (net 24 /VG))
     (model smd\resistors\R0603.wrl
       (at
         (xyz 0 0 0.001))
@@ -4376,7 +4408,8 @@
     (pad 1 smd rect
       (at -0.762 0 180)
       (size 0.635 1.143)
-      (layers F.Cu F.Paste F.Mask))
+      (layers F.Cu F.Paste F.Mask)
+      (net 24 /VG))
     (pad 2 smd rect
       (at 0.762 0 180)
       (size 0.635 1.143)
@@ -4590,7 +4623,8 @@
     (pad 2 smd rect
       (at 0.762 0 270)
       (size 0.635 1.143)
-      (layers B.Cu B.Paste B.Mask))
+      (layers B.Cu B.Paste B.Mask)
+      (net 24 /VG))
     (model smd\resistors\R0603.wrl
       (at
         (xyz 0 0 0.001))
@@ -4659,7 +4693,8 @@
     (pad 2 smd rect
       (at 0.762 0)
       (size 0.635 1.143)
-      (layers B.Cu B.Paste B.Mask))
+      (layers B.Cu B.Paste B.Mask)
+      (net 24 /VG))
     (model smd\resistors\R0603.wrl
       (at
         (xyz 0 0 0.001))
@@ -4723,7 +4758,8 @@
     (pad 1 smd rect
       (at -0.44958 0 270)
       (size 0.39878 0.59944)
-      (layers B.Cu B.Paste B.Mask))
+      (layers B.Cu B.Paste B.Mask)
+      (net 28 /mcu/3V3A))
     (pad 2 smd rect
       (at 0.44958 0 270)
       (size 0.39878 0.59944)
@@ -4790,7 +4826,8 @@
     (pad 1 smd rect
       (at -0.44958 0 270)
       (size 0.39878 0.59944)
-      (layers F.Cu F.Paste F.Mask))
+      (layers F.Cu F.Paste F.Mask)
+      (net 24 /VG))
     (pad 2 smd rect
       (at 0.44958 0 270)
       (size 0.39878 0.59944)
@@ -4995,7 +5032,8 @@
     (pad 1 smd rect
       (at -0.44958 0 270)
       (size 0.39878 0.59944)
-      (layers F.Cu F.Paste F.Mask))
+      (layers F.Cu F.Paste F.Mask)
+      (net 28 /mcu/3V3A))
     (pad 2 smd rect
       (at 0.44958 0 270)
       (size 0.39878 0.59944)
@@ -5051,7 +5089,8 @@
     (pad 1 smd rect
       (at 0 0 180)
       (size 0.6 1.05)
-      (layers F.Cu F.Paste F.Mask))
+      (layers F.Cu F.Paste F.Mask)
+      (net 81 /VTUNE))
     (pad 2 smd rect
       (at 0.95 0 180)
       (size 0.6 1.05)
@@ -5128,11 +5167,13 @@
     (pad 4 smd rect
       (at 1.9 -2.7)
       (size 0.6 1.05)
-      (layers F.Cu F.Paste F.Mask))
+      (layers F.Cu F.Paste F.Mask)
+      (net 24 /VG))
     (pad 5 smd rect
       (at 0 -2.7)
       (size 0.6 1.05)
-      (layers F.Cu F.Paste F.Mask)))
+      (layers F.Cu F.Paste F.Mask)
+      (net 28 /mcu/3V3A)))
   (module wlan_radar:SOT-23-5
     (layer F.Cu)
     (tedit 541404AC)
@@ -5248,7 +5289,8 @@
     (pad 2 smd rect
       (at 0.9525 1.09982)
       (size 0.8001 1.00076)
-      (layers F.Cu F.Paste F.Mask))
+      (layers F.Cu F.Paste F.Mask)
+      (net 28 /mcu/3V3A))
     (pad 1 smd rect
       (at -0.9525 1.09982)
       (size 0.8001 1.00076)
@@ -5363,27 +5405,32 @@
       (at -6.35 0 180)
       (size 1.397 1.397)
       (drill 0.8128)
-      (layers *.Cu *.Mask F.SilkS))
+      (layers *.Cu *.Mask F.SilkS)
+      (net 44 /mcu/SWD_CLK))
     (pad 2 thru_hole circle
       (at -3.81 0 180)
       (size 1.397 1.397)
       (drill 0.8128)
-      (layers *.Cu *.Mask F.SilkS))
+      (layers *.Cu *.Mask F.SilkS)
+      (net 47 /mcu/SWD_DIO))
     (pad 3 thru_hole circle
       (at -1.27 0 180)
       (size 1.397 1.397)
       (drill 0.8128)
-      (layers *.Cu *.Mask F.SilkS))
+      (layers *.Cu *.Mask F.SilkS)
+      (net 38 /mcu/~RESET))
     (pad 4 thru_hole circle
       (at 1.27 0 180)
       (size 1.397 1.397)
       (drill 0.8128)
-      (layers *.Cu *.Mask F.SilkS))
+      (layers *.Cu *.Mask F.SilkS)
+      (net 45 /mcu/UART_RX))
     (pad 5 thru_hole circle
       (at 3.81 0 180)
       (size 1.397 1.397)
       (drill 0.8128)
-      (layers *.Cu *.Mask F.SilkS))
+      (layers *.Cu *.Mask F.SilkS)
+      (net 46 /mcu/UART_TX))
     (pad 6 thru_hole circle
       (at 6.35 0 180)
       (size 1.397 1.397)
@@ -5452,7 +5499,8 @@
     (pad 4 smd rect
       (at 1.905 0 90)
       (size 0.4191 1.143)
-      (layers F.Cu F.Paste F.Mask))
+      (layers F.Cu F.Paste F.Mask)
+      (net 28 /mcu/3V3A))
     (pad 5 smd rect
       (at 2.54 0 90)
       (size 0.4191 1.143)
@@ -5479,7 +5527,8 @@
     (pad 10 smd rect
       (at 3.81 -5.334 90)
       (size 0.4191 1.143)
-      (layers F.Cu F.Paste F.Mask))
+      (layers F.Cu F.Paste F.Mask)
+      (net 21 /mcu/ADC_DM))
     (pad 11 smd rect
       (at 3.175 -5.334 90)
       (size 0.4191 1.143)
@@ -5497,7 +5546,8 @@
     (pad 14 smd rect
       (at 1.27 -5.334 90)
       (size 0.4191 1.143)
-      (layers F.Cu F.Paste F.Mask))
+      (layers F.Cu F.Paste F.Mask)
+      (net 24 /VG))
     (pad 15 smd rect
       (at 0.635 -5.334 90)
       (size 0.4191 1.143)
@@ -5506,7 +5556,8 @@
     (pad 16 smd rect
       (at 0 -5.334 90)
       (size 0.4191 1.143)
-      (layers F.Cu F.Paste F.Mask)))
+      (layers F.Cu F.Paste F.Mask)
+      (net 18 /mcu/ADC_DP)))
   (module wlan_radar:SOT-23-6
     (layer F.Cu)
     (tedit 53F4C8CF)
@@ -5639,7 +5690,8 @@
     (pad 1 smd rect
       (at 0 0)
       (size 0.62 1.22)
-      (layers F.Cu F.Paste F.Mask))
+      (layers F.Cu F.Paste F.Mask)
+      (net 79 "Net-(R22-Pad2)"))
     (pad 2 smd rect
       (at 0.95 0)
       (size 0.62 1.22)
@@ -5652,7 +5704,8 @@
     (pad 4 smd rect
       (at 1.9 -2.62)
       (size 0.62 1.22)
-      (layers F.Cu F.Paste F.Mask))
+      (layers F.Cu F.Paste F.Mask)
+      (net 74 "Net-(C41-Pad1)"))
     (pad 5 smd rect
       (at 0.95 -2.62)
       (size 0.62 1.22)
@@ -5660,7 +5713,8 @@
     (pad 6 smd rect
       (at 0 -2.62)
       (size 0.62 1.22)
-      (layers F.Cu F.Paste F.Mask)))
+      (layers F.Cu F.Paste F.Mask)
+      (net 28 /mcu/3V3A)))
   (module wlan_radar:L2520
     (layer F.Cu)
     (tedit 5414279B)
@@ -5834,7 +5888,8 @@
     (pad 1 smd rect
       (at -0.44958 0 270)
       (size 0.39878 0.59944)
-      (layers B.Cu B.Paste B.Mask))
+      (layers B.Cu B.Paste B.Mask)
+      (net 24 /VG))
     (pad 2 smd rect
       (at 0.44958 0 270)
       (size 0.39878 0.59944)
@@ -5903,7 +5958,8 @@
     (pad 1 smd rect
       (at -0.44958 0 90)
       (size 0.39878 0.59944)
-      (layers B.Cu B.Paste B.Mask))
+      (layers B.Cu B.Paste B.Mask)
+      (net 18 /mcu/ADC_DP))
     (pad 2 smd rect
       (at 0.44958 0 90)
       (size 0.39878 0.59944)
@@ -5970,7 +6026,8 @@
     (pad 1 smd rect
       (at -0.44958 0 180)
       (size 0.39878 0.59944)
-      (layers F.Cu F.Paste F.Mask))
+      (layers F.Cu F.Paste F.Mask)
+      (net 79 "Net-(R22-Pad2)"))
     (pad 2 smd rect
       (at 0.44958 0 180)
       (size 0.39878 0.59944)
@@ -6044,7 +6101,8 @@
     (pad 2 smd rect
       (at 0.44958 0 90)
       (size 0.39878 0.59944)
-      (layers B.Cu B.Paste B.Mask))
+      (layers B.Cu B.Paste B.Mask)
+      (net 21 /mcu/ADC_DM))
     (model smd/resistors/R0402.wrl
       (at
         (xyz 0 0 0))
@@ -6176,7 +6234,8 @@
     (pad 1 smd rect
       (at -0.44958 0 90)
       (size 0.39878 0.59944)
-      (layers F.Cu F.Paste F.Mask))
+      (layers F.Cu F.Paste F.Mask)
+      (net 18 /mcu/ADC_DP))
     (pad 2 smd rect
       (at 0.44958 0 90)
       (size 0.39878 0.59944)
@@ -6243,11 +6302,13 @@
     (pad 1 smd rect
       (at -0.44958 0 90)
       (size 0.39878 0.59944)
-      (layers F.Cu F.Paste F.Mask))
+      (layers F.Cu F.Paste F.Mask)
+      (net 74 "Net-(C41-Pad1)"))
     (pad 2 smd rect
       (at 0.44958 0 90)
       (size 0.39878 0.59944)
-      (layers F.Cu F.Paste F.Mask))
+      (layers F.Cu F.Paste F.Mask)
+      (net 24 /VG))
     (model smd/resistors/R0402.wrl
       (at
         (xyz 0 0 0))
@@ -6313,7 +6374,8 @@
     (pad 2 smd rect
       (at 0.44958 0 180)
       (size 0.39878 0.59944)
-      (layers F.Cu F.Paste F.Mask))
+      (layers F.Cu F.Paste F.Mask)
+      (net 25 /mcu/VBUS))
     (model smd/resistors/R0402.wrl
       (at
         (xyz 0 0 0))
@@ -6447,7 +6509,8 @@
     (pad 2 smd rect
       (at 0.44958 0 270)
       (size 0.39878 0.59944)
-      (layers F.Cu F.Paste F.Mask))
+      (layers F.Cu F.Paste F.Mask)
+      (net 33 /mcu/I2C_SDA))
     (model smd/resistors/R0402.wrl
       (at
         (xyz 0 0 0))
@@ -6514,7 +6577,8 @@
     (pad 2 smd rect
       (at 0.44958 0 270)
       (size 0.39878 0.59944)
-      (layers F.Cu F.Paste F.Mask))
+      (layers F.Cu F.Paste F.Mask)
+      (net 52 /mcu/I2C_SCL))
     (model smd/resistors/R0402.wrl
       (at
         (xyz 0 0 0))
@@ -6714,7 +6778,8 @@
     (pad 1 smd rect
       (at -0.44958 0 270)
       (size 0.39878 0.59944)
-      (layers B.Cu B.Paste B.Mask))
+      (layers B.Cu B.Paste B.Mask)
+      (net 38 /mcu/~RESET))
     (pad 2 smd rect
       (at 0.44958 0 270)
       (size 0.39878 0.59944)
@@ -6849,15 +6914,18 @@
     (pad 3 smd rect
       (at 0 1.3 270)
       (size 0.9 0.4)
-      (layers F.Cu F.Paste F.Mask))
+      (layers F.Cu F.Paste F.Mask)
+      (net 52 /mcu/I2C_SCL))
     (pad 4 smd rect
       (at 2.2 1.3 270)
       (size 0.9 0.4)
-      (layers F.Cu F.Paste F.Mask))
+      (layers F.Cu F.Paste F.Mask)
+      (net 33 /mcu/I2C_SDA))
     (pad 5 smd rect
       (at 2.2 0.65 270)
       (size 0.9 0.4)
-      (layers F.Cu F.Paste F.Mask))
+      (layers F.Cu F.Paste F.Mask)
+      (net 74 "Net-(C41-Pad1)"))
     (pad 6 smd rect
       (at 2.2 0 270)
       (size 0.9 0.4)
@@ -6978,7 +7046,8 @@
     (pad 1 smd rect
       (at -1.3 0 270)
       (size 0.4 1.35)
-      (layers F.Cu F.Paste F.Mask))
+      (layers F.Cu F.Paste F.Mask)
+      (net 25 /mcu/VBUS))
     (pad 5 smd rect
       (at 1.3 0 270)
       (size 0.4 1.35)
@@ -7550,7 +7619,8 @@
     (pad 1 smd rect
       (at -0.44958 0 270)
       (size 0.39878 0.59944)
-      (layers F.Cu F.Paste F.Mask))
+      (layers F.Cu F.Paste F.Mask)
+      (net 40 /mcu/PA_DET))
     (pad 2 smd rect
       (at 0.44958 0 270)
       (size 0.39878 0.59944)
@@ -7949,11 +8019,13 @@
     (pad 2 smd rect
       (at 0.9525 1.09982)
       (size 0.8001 1.00076)
-      (layers F.Cu F.Paste F.Mask))
+      (layers F.Cu F.Paste F.Mask)
+      (net 96 "Net-(Q1-Pad2)"))
     (pad 1 smd rect
       (at -0.9525 1.09982)
       (size 0.8001 1.00076)
-      (layers F.Cu F.Paste F.Mask))
+      (layers F.Cu F.Paste F.Mask)
+      (net 39 /mcu/PA_EN))
     (model smd\SOT23_3.wrl
       (at
         (xyz 0 0 0))
@@ -8020,7 +8092,8 @@
     (pad 2 smd rect
       (at 0.44958 0 270)
       (size 0.39878 0.59944)
-      (layers F.Cu F.Paste F.Mask))
+      (layers F.Cu F.Paste F.Mask)
+      (net 39 /mcu/PA_EN))
     (model smd/resistors/R0402.wrl
       (at
         (xyz 0 0 0))
@@ -8087,7 +8160,8 @@
     (pad 2 smd rect
       (at 0.44958 0 180)
       (size 0.39878 0.59944)
-      (layers F.Cu F.Paste F.Mask))
+      (layers F.Cu F.Paste F.Mask)
+      (net 96 "Net-(Q1-Pad2)"))
     (model smd/resistors/R0402.wrl
       (at
         (xyz 0 0 0))
@@ -8754,7 +8828,8 @@
     (pad 9 smd rect
       (at 1.35 0.75 90)
       (size 0.25 0.5)
-      (layers F.Cu F.Paste F.Mask))
+      (layers F.Cu F.Paste F.Mask)
+      (net 40 /mcu/PA_DET))
     (pad 10 smd rect
       (at 1.35 0.25 90)
       (size 0.25 0.5)
@@ -9018,7 +9093,8 @@
     (pad 22 smd rect
       (at -1.9 0.25)
       (size 0.25 0.7)
-      (layers F.Cu F.Paste F.Mask))
+      (layers F.Cu F.Paste F.Mask)
+      (net 81 /VTUNE))
     (pad 23 smd rect
       (at -1.9 0.75)
       (size 0.25 0.7)
@@ -9189,7 +9265,8 @@
     (pad 1 smd rect
       (at -0.44958 0 180)
       (size 0.39878 0.59944)
-      (layers B.Cu B.Paste B.Mask))
+      (layers B.Cu B.Paste B.Mask)
+      (net 38 /mcu/~RESET))
     (pad 2 smd rect
       (at 0.44958 0 180)
       (size 0.39878 0.59944)
@@ -9260,7 +9337,8 @@
     (pad 1 smd rect
       (at -0.9525 0 90)
       (size 0.889 1.397)
-      (layers F.Cu F.Paste F.Mask))
+      (layers F.Cu F.Paste F.Mask)
+      (net 74 "Net-(C41-Pad1)"))
     (pad 2 smd rect
       (at 0.9525 0 90)
       (size 0.889 1.397)
@@ -9334,7 +9412,8 @@
     (pad 2 smd rect
       (at 0.44958 0 270)
       (size 0.39878 0.59944)
-      (layers B.Cu B.Paste B.Mask))
+      (layers B.Cu B.Paste B.Mask)
+      (net 24 /VG))
     (model smd/resistors/R0402.wrl
       (at
         (xyz 0 0 0))
@@ -9657,6 +9736,18 @@
     (end 155.98 104.45)
     (width 0.256)
     (layer F.Cu)
+    (net 1))
+  (segment
+    (start 155.98 104.95)
+    (end 156.37 105.34)
+    (width 0.256)
+    (layer Inner2.Cu)
+    (net 1))
+  (segment
+    (start 155.98 104.95)
+    (end 155.98 104.45)
+    (width 0.256)
+    (layer Inner2.Cu)
     (net 1))
   (segment
     (start 156.37 105.29958)
@@ -10001,6 +10092,78 @@
     (layer F.Cu)
     (net 16))
   (segment
+    (start 125.28 103.61958)
+    (end 125.23 103.56958)
+    (width 0.16)
+    (layer B.Cu)
+    (net 18))
+  (segment
+    (start 125.23 103.56958)
+    (end 123.63 103.56958)
+    (width 0.16)
+    (layer B.Cu)
+    (net 18))
+  (segment
+    (start 123.63 103.56958)
+    (end 122.75958 103.56958)
+    (width 0.16)
+    (layer B.Cu)
+    (net 18))
+  (segment
+    (start 122.75958 103.56958)
+    (end 122.4 103.21)
+    (width 0.16)
+    (layer B.Cu)
+    (net 18))
+  (segment
+    (start 119.33 96.98)
+    (end 122.4 100.05)
+    (width 0.16)
+    (layer Inner2.Cu)
+    (net 18))
+  (segment
+    (start 119.35146 96.95854)
+    (end 119.33 96.98)
+    (width 0.16)
+    (layer F.Cu)
+    (net 18))
+  (segment
+    (start 119.35146 94.47852)
+    (end 119.35146 96.95854)
+    (width 0.16)
+    (layer F.Cu)
+    (net 18))
+  (segment
+    (start 122.4 103.21)
+    (end 123.30958 103.21)
+    (width 0.16)
+    (layer F.Cu)
+    (net 18))
+  (segment
+    (start 122.4 100.05)
+    (end 122.4 103.21)
+    (width 0.16)
+    (layer Inner2.Cu)
+    (net 18))
+  (segment
+    (start 123.30958 103.21)
+    (end 123.33 103.18958)
+    (width 0.16)
+    (layer F.Cu)
+    (net 18))
+  (segment
+    (start 123.33 103.18958)
+    (end 124.64558 103.18958)
+    (width 0.256)
+    (layer F.Cu)
+    (net 18))
+  (segment
+    (start 124.64558 103.18958)
+    (end 124.666 103.21)
+    (width 0.256)
+    (layer F.Cu)
+    (net 18))
+  (segment
     (start 121.45958 100.55958)
     (end 124.69 100.55958)
     (width 0.16)
@@ -10115,6 +10278,108 @@
     (layer B.Cu)
     (net 20))
   (segment
+    (start 119.95 96.37)
+    (end 119.95 97.05)
+    (width 0.16)
+    (layer Inner2.Cu)
+    (net 21))
+  (segment
+    (start 119.85184 96.27184)
+    (end 119.95 96.37)
+    (width 0.16)
+    (layer F.Cu)
+    (net 21))
+  (segment
+    (start 119.85184 94.47852)
+    (end 119.85184 96.27184)
+    (width 0.16)
+    (layer F.Cu)
+    (net 21))
+  (segment
+    (start 123.34 98.39)
+    (end 123.34 99.13042)
+    (width 0.16)
+    (layer F.Cu)
+    (net 21))
+  (segment
+    (start 123.29 98.34)
+    (end 123.34 98.39)
+    (width 0.16)
+    (layer F.Cu)
+    (net 21))
+  (segment
+    (start 122.42 99.21)
+    (end 123.29 98.34)
+    (width 0.16)
+    (layer Inner2.Cu)
+    (net 21))
+  (segment
+    (start 122.11 99.21)
+    (end 122.42 99.21)
+    (width 0.16)
+    (layer Inner2.Cu)
+    (net 21))
+  (segment
+    (start 119.95 97.05)
+    (end 122.11 99.21)
+    (width 0.16)
+    (layer Inner2.Cu)
+    (net 21))
+  (segment
+    (start 123.34 99.13042)
+    (end 123.59042 99.13042)
+    (width 0.256)
+    (layer F.Cu)
+    (net 21))
+  (segment
+    (start 123.59042 99.13042)
+    (end 123.86 99.4)
+    (width 0.256)
+    (layer F.Cu)
+    (net 21))
+  (segment
+    (start 123.86 99.4)
+    (end 124.666 99.4)
+    (width 0.256)
+    (layer F.Cu)
+    (net 21))
+  (segment
+    (start 122.23 99.15042)
+    (end 123.32 99.15042)
+    (width 0.256)
+    (layer F.Cu)
+    (net 21))
+  (segment
+    (start 123.32 99.15042)
+    (end 123.34 99.13042)
+    (width 0.256)
+    (layer F.Cu)
+    (net 21))
+  (segment
+    (start 125.31958 99.66042)
+    (end 125.89 99.09)
+    (width 0.16)
+    (layer B.Cu)
+    (net 21))
+  (segment
+    (start 125.89 99.09)
+    (end 125.58 99.4)
+    (width 0.16)
+    (layer F.Cu)
+    (net 21))
+  (segment
+    (start 125.58 99.4)
+    (end 124.666 99.4)
+    (width 0.16)
+    (layer F.Cu)
+    (net 21))
+  (segment
+    (start 124.69 99.66042)
+    (end 125.31958 99.66042)
+    (width 0.16)
+    (layer B.Cu)
+    (net 21))
+  (segment
     (start 124.666 100.035)
     (end 126.395 100.035)
     (width 0.16)
@@ -10210,6 +10475,414 @@
     (width 0.16)
     (layer F.Cu)
     (net 23))
+  (segment
+    (start 126.575 102.275)
+    (end 127.675 102.275)
+    (width 0.256)
+    (layer Inner2.Cu)
+    (net 24))
+  (segment
+    (start 127.675 102.275)
+    (end 130.74 105.34)
+    (width 0.256)
+    (layer Inner2.Cu)
+    (net 24))
+  (segment
+    (start 124.666 101.94)
+    (end 126.24 101.94)
+    (width 0.16)
+    (layer F.Cu)
+    (net 24))
+  (segment
+    (start 126.24 101.94)
+    (end 126.575 102.275)
+    (width 0.16)
+    (layer F.Cu)
+    (net 24))
+  (segment
+    (start 126.45 101.59958)
+    (end 125.575 101.59958)
+    (width 0.16)
+    (layer B.Cu)
+    (net 24))
+  (segment
+    (start 126.45 102.15)
+    (end 126.45 101.59958)
+    (width 0.16)
+    (layer B.Cu)
+    (net 24))
+  (segment
+    (start 126.575 102.275)
+    (end 126.45 102.15)
+    (width 0.16)
+    (layer B.Cu)
+    (net 24))
+  (segment
+    (start 140.97 101.22)
+    (end 138.8 103.39)
+    (width 0.256)
+    (layer Inner2.Cu)
+    (net 24))
+  (segment
+    (start 138.8 103.39)
+    (end 138.13 103.39)
+    (width 0.256)
+    (layer Inner2.Cu)
+    (net 24))
+  (segment
+    (start 140.84 99.53)
+    (end 140.97 99.66)
+    (width 0.256)
+    (layer Inner2.Cu)
+    (net 24))
+  (segment
+    (start 140.97 99.66)
+    (end 140.97 101.22)
+    (width 0.256)
+    (layer Inner2.Cu)
+    (net 24))
+  (segment
+    (start 130.74 105.34)
+    (end 133.98 105.34)
+    (width 0.256)
+    (layer Inner2.Cu)
+    (net 24))
+  (segment
+    (start 133.98 105.34)
+    (end 134.87 105.34)
+    (width 0.256)
+    (layer Inner2.Cu)
+    (net 24))
+  (segment
+    (start 134.87 105.34)
+    (end 136.82 103.39)
+    (width 0.256)
+    (layer Inner2.Cu)
+    (net 24))
+  (segment
+    (start 136.82 103.39)
+    (end 138.13 103.39)
+    (width 0.256)
+    (layer Inner2.Cu)
+    (net 24))
+  (segment
+    (start 137.362 103.41)
+    (end 138.11 103.41)
+    (width 0.256)
+    (layer F.Cu)
+    (net 24))
+  (segment
+    (start 138.11 103.41)
+    (end 138.13 103.39)
+    (width 0.256)
+    (layer F.Cu)
+    (net 24))
+  (segment
+    (start 138.2 103.46)
+    (end 138.2 104.66)
+    (width 0.256)
+    (layer Inner2.Cu)
+    (net 24))
+  (segment
+    (start 141.1 104.65)
+    (end 144.6 104.65)
+    (width 0.256)
+    (layer Inner2.Cu)
+    (net 24))
+  (segment
+    (start 146.04958 102.83042)
+    (end 146.52 102.83042)
+    (width 0.256)
+    (layer B.Cu)
+    (net 24))
+  (segment
+    (start 145.88 103)
+    (end 146.04958 102.83042)
+    (width 0.256)
+    (layer B.Cu)
+    (net 24))
+  (segment
+    (start 145.88 103.37)
+    (end 145.88 103)
+    (width 0.256)
+    (layer B.Cu)
+    (net 24))
+  (segment
+    (start 145.69 103.56)
+    (end 145.88 103.37)
+    (width 0.256)
+    (layer B.Cu)
+    (net 24))
+  (segment
+    (start 144.6 104.65)
+    (end 145.69 103.56)
+    (width 0.256)
+    (layer Inner2.Cu)
+    (net 24))
+  (segment
+    (start 138.82 105.28)
+    (end 138.2 104.66)
+    (width 0.256)
+    (layer Inner2.Cu)
+    (net 24))
+  (segment
+    (start 140.47 105.28)
+    (end 138.82 105.28)
+    (width 0.256)
+    (layer Inner2.Cu)
+    (net 24))
+  (segment
+    (start 141.1 104.65)
+    (end 140.47 105.28)
+    (width 0.256)
+    (layer Inner2.Cu)
+    (net 24))
+  (segment
+    (start 138.13 103.39)
+    (end 138.2 103.46)
+    (width 0.256)
+    (layer Inner2.Cu)
+    (net 24))
+  (segment
+    (start 143.12 95.61)
+    (end 143.23958 95.49042)
+    (width 0.16)
+    (layer F.Cu)
+    (net 24))
+  (segment
+    (start 143.23958 95.49042)
+    (end 144.38 95.49042)
+    (width 0.16)
+    (layer F.Cu)
+    (net 24))
+  (segment
+    (start 140.84 99.53)
+    (end 140.84 97.11)
+    (width 0.256)
+    (layer Inner2.Cu)
+    (net 24))
+  (segment
+    (start 142.34 95.61)
+    (end 143.12 95.61)
+    (width 0.256)
+    (layer F.Cu)
+    (net 24))
+  (segment
+    (start 142.33 95.62)
+    (end 142.34 95.61)
+    (width 0.256)
+    (layer F.Cu)
+    (net 24))
+  (segment
+    (start 140.84 97.11)
+    (end 142.33 95.62)
+    (width 0.256)
+    (layer Inner2.Cu)
+    (net 24))
+  (segment
+    (start 139.83 102.12042)
+    (end 138.95042 102.12042)
+    (width 0.16)
+    (layer F.Cu)
+    (net 24))
+  (segment
+    (start 138.53 101.7)
+    (end 137.362 101.7)
+    (width 0.16)
+    (layer F.Cu)
+    (net 24))
+  (segment
+    (start 138.95042 102.12042)
+    (end 138.53 101.7)
+    (width 0.16)
+    (layer F.Cu)
+    (net 24))
+  (segment
+    (start 137.362 103.41)
+    (end 137.362 101.7)
+    (width 0.256)
+    (layer F.Cu)
+    (net 24))
+  (segment
+    (start 133.018 105.21)
+    (end 130.87 105.21)
+    (width 0.16)
+    (layer F.Cu)
+    (net 24))
+  (segment
+    (start 130.87 105.21)
+    (end 130.74 105.34)
+    (width 0.16)
+    (layer F.Cu)
+    (net 24))
+  (segment
+    (start 130.69 105.29)
+    (end 130.69 104.282)
+    (width 0.256)
+    (layer B.Cu)
+    (net 24))
+  (segment
+    (start 130.74 105.34)
+    (end 130.69 105.29)
+    (width 0.256)
+    (layer B.Cu)
+    (net 24))
+  (segment
+    (start 137.562 101.922)
+    (end 138.13 102.49)
+    (width 0.16)
+    (layer B.Cu)
+    (net 24))
+  (segment
+    (start 138.13 102.49)
+    (end 138.13 103.39)
+    (width 0.16)
+    (layer B.Cu)
+    (net 24))
+  (segment
+    (start 137.562 101.31)
+    (end 137.562 101.922)
+    (width 0.16)
+    (layer B.Cu)
+    (net 24))
+  (segment
+    (start 133.832 106.968)
+    (end 133.83 106.97)
+    (width 0.16)
+    (layer B.Cu)
+    (net 24))
+  (segment
+    (start 133.832 105.51)
+    (end 133.832 106.968)
+    (width 0.16)
+    (layer B.Cu)
+    (net 24))
+  (segment
+    (start 133.83 105.49)
+    (end 133.98 105.34)
+    (width 0.16)
+    (layer Inner2.Cu)
+    (net 24))
+  (segment
+    (start 133.83 106.97)
+    (end 133.83 105.49)
+    (width 0.16)
+    (layer Inner2.Cu)
+    (net 24))
+  (segment
+    (start 144.615 95.49042)
+    (end 144.38 95.49042)
+    (width 0.16)
+    (layer F.Cu)
+    (net 24))
+  (segment
+    (start 145.75 96.62542)
+    (end 144.615 95.49042)
+    (width 0.16)
+    (layer F.Cu)
+    (net 24))
+  (segment
+    (start 116.45 97.08)
+    (end 114.85 95.48)
+    (width 0.16)
+    (layer Inner2.Cu)
+    (net 25))
+  (segment
+    (start 114.85 95.48)
+    (end 114.85 88.28)
+    (width 0.16)
+    (layer Inner2.Cu)
+    (net 25))
+  (segment
+    (start 118.29 97.08)
+    (end 116.45 97.08)
+    (width 0.16)
+    (layer Inner2.Cu)
+    (net 25))
+  (segment
+    (start 118.85108 96.51892)
+    (end 118.29 97.08)
+    (width 0.16)
+    (layer F.Cu)
+    (net 25))
+  (segment
+    (start 118.85108 94.47852)
+    (end 118.85108 96.51892)
+    (width 0.16)
+    (layer F.Cu)
+    (net 25))
+  (segment
+    (start 113.6 88.262)
+    (end 114.832 88.262)
+    (width 0.256)
+    (layer B.Cu)
+    (net 25))
+  (segment
+    (start 114.83 88.26)
+    (end 114.77 88.26)
+    (width 0.256)
+    (layer F.Cu)
+    (net 25))
+  (segment
+    (start 114.85 88.28)
+    (end 114.83 88.26)
+    (width 0.256)
+    (layer F.Cu)
+    (net 25))
+  (segment
+    (start 114.832 88.262)
+    (end 114.85 88.28)
+    (width 0.256)
+    (layer B.Cu)
+    (net 25))
+  (segment
+    (start 113.63042 85.16)
+    (end 113.63042 85.66042)
+    (width 0.256)
+    (layer F.Cu)
+    (net 25))
+  (segment
+    (start 114.59 89.34)
+    (end 113.66 89.34)
+    (width 0.256)
+    (layer F.Cu)
+    (net 25))
+  (segment
+    (start 114.77 89.16)
+    (end 114.59 89.34)
+    (width 0.256)
+    (layer F.Cu)
+    (net 25))
+  (segment
+    (start 114.77 86.05)
+    (end 114.77 88.26)
+    (width 0.256)
+    (layer F.Cu)
+    (net 25))
+  (segment
+    (start 114.77 88.26)
+    (end 114.77 89.16)
+    (width 0.256)
+    (layer F.Cu)
+    (net 25))
+  (segment
+    (start 114.63 85.91)
+    (end 114.77 86.05)
+    (width 0.256)
+    (layer F.Cu)
+    (net 25))
+  (segment
+    (start 113.88 85.91)
+    (end 114.63 85.91)
+    (width 0.256)
+    (layer F.Cu)
+    (net 25))
+  (segment
+    (start 113.63042 85.66042)
+    (end 113.88 85.91)
+    (width 0.256)
+    (layer F.Cu)
+    (net 25))
   (segment
     (start 122.50106 89.32994)
     (end 123.28006 89.32994)
@@ -11039,6 +11712,378 @@
     (layer F.Cu)
     (net 27))
   (segment
+    (start 130.39 97.67)
+    (end 129.14 97.67)
+    (width 0.256)
+    (layer Inner2.Cu)
+    (net 28))
+  (segment
+    (start 123.98 97.75)
+    (end 128.19 97.75)
+    (width 0.256)
+    (layer F.Cu)
+    (net 28))
+  (segment
+    (start 128.19 97.75)
+    (end 128.54 98.1)
+    (width 0.256)
+    (layer F.Cu)
+    (net 28))
+  (segment
+    (start 128.54 98.1)
+    (end 128.97 97.67)
+    (width 0.256)
+    (layer Inner2.Cu)
+    (net 28))
+  (segment
+    (start 128.97 97.67)
+    (end 129.07 97.67)
+    (width 0.256)
+    (layer Inner2.Cu)
+    (net 28))
+  (segment
+    (start 129.07 97.67)
+    (end 129.14 97.74)
+    (width 0.256)
+    (layer Inner2.Cu)
+    (net 28))
+  (segment
+    (start 129.14 97.74)
+    (end 129.14 97.67)
+    (width 0.256)
+    (layer Inner2.Cu)
+    (net 28))
+  (segment
+    (start 122.47 95.02)
+    (end 121.85 94.4)
+    (width 0.256)
+    (layer Inner2.Cu)
+    (net 28))
+  (segment
+    (start 122.47 96.24)
+    (end 122.47 95.02)
+    (width 0.256)
+    (layer Inner2.Cu)
+    (net 28))
+  (segment
+    (start 123.22 96.99)
+    (end 122.47 96.24)
+    (width 0.256)
+    (layer Inner2.Cu)
+    (net 28))
+  (segment
+    (start 123.98 97.75)
+    (end 123.22 96.99)
+    (width 0.256)
+    (layer F.Cu)
+    (net 28))
+  (segment
+    (start 121.85 94.4)
+    (end 121.11 94.4)
+    (width 0.256)
+    (layer Inner2.Cu)
+    (net 28))
+  (segment
+    (start 120.63 95.32)
+    (end 120.63 94.88)
+    (width 0.256)
+    (layer Inner2.Cu)
+    (net 28))
+  (segment
+    (start 121.11 94.4)
+    (end 120.63 94.88)
+    (width 0.256)
+    (layer Inner2.Cu)
+    (net 28))
+  (segment
+    (start 137.2 98.47042)
+    (end 136.80042 98.47042)
+    (width 0.256)
+    (layer F.Cu)
+    (net 28))
+  (segment
+    (start 130.14 100.51)
+    (end 130.14 97.92)
+    (width 0.256)
+    (layer Inner2.Cu)
+    (net 28))
+  (segment
+    (start 130.14 97.92)
+    (end 130.39 97.67)
+    (width 0.256)
+    (layer Inner2.Cu)
+    (net 28))
+  (segment
+    (start 130.39 97.67)
+    (end 133.8 97.67)
+    (width 0.256)
+    (layer Inner2.Cu)
+    (net 28))
+  (segment
+    (start 130.14 100.51)
+    (end 131.06 101.43)
+    (width 0.256)
+    (layer Inner2.Cu)
+    (net 28))
+  (segment
+    (start 134.465 98.335)
+    (end 133.8 97.67)
+    (width 0.256)
+    (layer Inner2.Cu)
+    (net 28))
+  (segment
+    (start 134.45 98.35)
+    (end 134.465 98.335)
+    (width 0.256)
+    (layer Inner2.Cu)
+    (net 28))
+  (segment
+    (start 136.68 98.35)
+    (end 134.45 98.35)
+    (width 0.256)
+    (layer F.Cu)
+    (net 28))
+  (segment
+    (start 136.80042 98.47042)
+    (end 136.68 98.35)
+    (width 0.256)
+    (layer F.Cu)
+    (net 28))
+  (segment
+    (start 137.2 98.47042)
+    (end 137.2 97.92)
+    (width 0.256)
+    (layer F.Cu)
+    (net 28))
+  (segment
+    (start 137.8725 97.2475)
+    (end 137.8725 96.55982)
+    (width 0.256)
+    (layer F.Cu)
+    (net 28))
+  (segment
+    (start 137.2 97.92)
+    (end 137.8725 97.2475)
+    (width 0.256)
+    (layer F.Cu)
+    (net 28))
+  (segment
+    (start 143.42042 101.76)
+    (end 143.42042 101.02042)
+    (width 0.256)
+    (layer B.Cu)
+    (net 28))
+  (segment
+    (start 143.42042 101.02042)
+    (end 143.36 100.96)
+    (width 0.256)
+    (layer B.Cu)
+    (net 28))
+  (segment
+    (start 143.38 99.31)
+    (end 143.38 100.94)
+    (width 0.256)
+    (layer Inner2.Cu)
+    (net 28))
+  (segment
+    (start 143.38 100.94)
+    (end 143.36 100.96)
+    (width 0.256)
+    (layer Inner2.Cu)
+    (net 28))
+  (segment
+    (start 143.38 99.31)
+    (end 142.88 98.81)
+    (width 0.256)
+    (layer Inner2.Cu)
+    (net 28))
+  (segment
+    (start 142.88 98.81)
+    (end 142.88 95.98)
+    (width 0.256)
+    (layer Inner2.Cu)
+    (net 28))
+  (segment
+    (start 142.88 95.98)
+    (end 142.97 95.89)
+    (width 0.256)
+    (layer Inner2.Cu)
+    (net 28))
+  (segment
+    (start 142.97 95.89)
+    (end 142.97 95.03)
+    (width 0.256)
+    (layer Inner2.Cu)
+    (net 28))
+  (segment
+    (start 142.97 95.03)
+    (end 142.76 94.82)
+    (width 0.256)
+    (layer Inner2.Cu)
+    (net 28))
+  (segment
+    (start 141.2 94.82)
+    (end 142.76 94.82)
+    (width 0.256)
+    (layer Inner2.Cu)
+    (net 28))
+  (segment
+    (start 143.37 100.97)
+    (end 143.37 102.06)
+    (width 0.256)
+    (layer F.Cu)
+    (net 28))
+  (segment
+    (start 143.36 100.96)
+    (end 143.37 100.97)
+    (width 0.256)
+    (layer F.Cu)
+    (net 28))
+  (segment
+    (start 141.99 96.99042)
+    (end 141.99 96.63)
+    (width 0.16)
+    (layer B.Cu)
+    (net 28))
+  (segment
+    (start 140.87042 95.51042)
+    (end 140.38 95.51042)
+    (width 0.16)
+    (layer B.Cu)
+    (net 28))
+  (segment
+    (start 141.99 96.63)
+    (end 140.87042 95.51042)
+    (width 0.16)
+    (layer B.Cu)
+    (net 28))
+  (segment
+    (start 138.66 96.03)
+    (end 139.03084 96.03)
+    (width 0.16)
+    (layer B.Cu)
+    (net 28))
+  (segment
+    (start 139.55042 95.51042)
+    (end 140.38 95.51042)
+    (width 0.16)
+    (layer B.Cu)
+    (net 28))
+  (segment
+    (start 139.03084 96.03)
+    (end 139.55042 95.51042)
+    (width 0.16)
+    (layer B.Cu)
+    (net 28))
+  (segment
+    (start 137.8725 96.55982)
+    (end 138.13018 96.55982)
+    (width 0.16)
+    (layer F.Cu)
+    (net 28))
+  (segment
+    (start 138.13018 96.55982)
+    (end 138.66 96.03)
+    (width 0.16)
+    (layer F.Cu)
+    (net 28))
+  (segment
+    (start 138.538 95.908)
+    (end 137.63 95.908)
+    (width 0.16)
+    (layer B.Cu)
+    (net 28))
+  (segment
+    (start 138.66 96.03)
+    (end 138.538 95.908)
+    (width 0.16)
+    (layer B.Cu)
+    (net 28))
+  (segment
+    (start 141.22 95.61)
+    (end 141.22 94.84)
+    (width 0.16)
+    (layer F.Cu)
+    (net 28))
+  (segment
+    (start 141.22 94.84)
+    (end 141.2 94.82)
+    (width 0.16)
+    (layer F.Cu)
+    (net 28))
+  (segment
+    (start 141.2 94.82)
+    (end 140.50958 95.51042)
+    (width 0.16)
+    (layer B.Cu)
+    (net 28))
+  (segment
+    (start 140.50958 95.51042)
+    (end 140.38 95.51042)
+    (width 0.16)
+    (layer B.Cu)
+    (net 28))
+  (segment
+    (start 131.06 101.43)
+    (end 130.95 101.32)
+    (width 0.16)
+    (layer B.Cu)
+    (net 28))
+  (segment
+    (start 130.95 101.32)
+    (end 129.36958 101.32)
+    (width 0.16)
+    (layer B.Cu)
+    (net 28))
+  (segment
+    (start 130.935 101.305)
+    (end 131.06 101.43)
+    (width 0.16)
+    (layer F.Cu)
+    (net 28))
+  (segment
+    (start 130 101.305)
+    (end 130.935 101.305)
+    (width 0.16)
+    (layer F.Cu)
+    (net 28))
+  (segment
+    (start 120.85042 96.06)
+    (end 120.85042 95.54042)
+    (width 0.16)
+    (layer F.Cu)
+    (net 28))
+  (segment
+    (start 120.85042 95.54042)
+    (end 120.63 95.32)
+    (width 0.16)
+    (layer F.Cu)
+    (net 28))
+  (segment
+    (start 120.8526 94.47852)
+    (end 120.8526 95.0974)
+    (width 0.16)
+    (layer F.Cu)
+    (net 28))
+  (segment
+    (start 120.8526 95.0974)
+    (end 120.63 95.32)
+    (width 0.16)
+    (layer F.Cu)
+    (net 28))
+  (segment
+    (start 120.35222 95.04222)
+    (end 120.63 95.32)
+    (width 0.16)
+    (layer F.Cu)
+    (net 28))
+  (segment
+    (start 120.35222 95.04222)
+    (end 120.35222 94.47852)
+    (width 0.16)
+    (layer F.Cu)
+    (net 28))
+  (segment
     (start 118.3507 94.47852)
     (end 118.3507 95.9393)
     (width 0.16)
@@ -11164,6 +12209,180 @@
     (width 0.16)
     (layer F.Cu)
     (net 32))
+  (segment
+    (start 125.33 96.25)
+    (end 125.33 89.37)
+    (width 0.16)
+    (layer Inner2.Cu)
+    (net 33))
+  (segment
+    (start 125.33 89.37)
+    (end 123.91 87.95)
+    (width 0.16)
+    (layer Inner2.Cu)
+    (net 33))
+  (segment
+    (start 126.08 97)
+    (end 125.33 96.25)
+    (width 0.16)
+    (layer Inner2.Cu)
+    (net 33))
+  (segment
+    (start 120.11 86.98)
+    (end 120.11 86.43)
+    (width 0.16)
+    (layer Inner2.Cu)
+    (net 33))
+  (segment
+    (start 120.56 87.43)
+    (end 120.11 86.98)
+    (width 0.16)
+    (layer Inner2.Cu)
+    (net 33))
+  (segment
+    (start 123.55 87.43)
+    (end 120.56 87.43)
+    (width 0.16)
+    (layer Inner2.Cu)
+    (net 33))
+  (segment
+    (start 123.91 87.79)
+    (end 123.55 87.43)
+    (width 0.16)
+    (layer Inner2.Cu)
+    (net 33))
+  (segment
+    (start 123.91 87.95)
+    (end 123.91 87.79)
+    (width 0.16)
+    (layer Inner2.Cu)
+    (net 33))
+  (segment
+    (start 120.34968 87.67894)
+    (end 120.34 87.66926)
+    (width 0.16)
+    (layer F.Cu)
+    (net 33))
+  (segment
+    (start 120.34 87.66926)
+    (end 120.34 86.66)
+    (width 0.16)
+    (layer F.Cu)
+    (net 33))
+  (segment
+    (start 120.34 86.66)
+    (end 120.11 86.43)
+    (width 0.16)
+    (layer F.Cu)
+    (net 33))
+  (segment
+    (start 137.59 100.23)
+    (end 135.99 100.23)
+    (width 0.16)
+    (layer F.Cu)
+    (net 33))
+  (segment
+    (start 135.99 100.23)
+    (end 135.61 99.85)
+    (width 0.16)
+    (layer F.Cu)
+    (net 33))
+  (segment
+    (start 135.61 99.85)
+    (end 133.76 99.85)
+    (width 0.16)
+    (layer F.Cu)
+    (net 33))
+  (segment
+    (start 133.76 99.85)
+    (end 132.88 98.97)
+    (width 0.16)
+    (layer F.Cu)
+    (net 33))
+  (segment
+    (start 132.88 98.97)
+    (end 132.88 97.74)
+    (width 0.16)
+    (layer F.Cu)
+    (net 33))
+  (segment
+    (start 132.88 97.74)
+    (end 132.46 97.32)
+    (width 0.16)
+    (layer F.Cu)
+    (net 33))
+  (segment
+    (start 132.46 97.32)
+    (end 126.4 97.32)
+    (width 0.16)
+    (layer F.Cu)
+    (net 33))
+  (segment
+    (start 126.4 97.32)
+    (end 126.08 97)
+    (width 0.16)
+    (layer F.Cu)
+    (net 33))
+  (segment
+    (start 140.06 100.69)
+    (end 139.68 101.07)
+    (width 0.16)
+    (layer Inner2.Cu)
+    (net 33))
+  (segment
+    (start 138.6 101.07)
+    (end 138.43 101.07)
+    (width 0.16)
+    (layer F.Cu)
+    (net 33))
+  (segment
+    (start 139.68 101.07)
+    (end 138.6 101.07)
+    (width 0.16)
+    (layer Inner2.Cu)
+    (net 33))
+  (segment
+    (start 138.43 101.07)
+    (end 137.59 100.23)
+    (width 0.16)
+    (layer F.Cu)
+    (net 33))
+  (segment
+    (start 139.65 99.54958)
+    (end 139.65 100.28)
+    (width 0.16)
+    (layer F.Cu)
+    (net 33))
+  (segment
+    (start 140.27 100.9)
+    (end 140.27 104.16)
+    (width 0.16)
+    (layer B.Cu)
+    (net 33))
+  (segment
+    (start 140.06 100.69)
+    (end 140.27 100.9)
+    (width 0.16)
+    (layer B.Cu)
+    (net 33))
+  (segment
+    (start 139.65 100.28)
+    (end 140.06 100.69)
+    (width 0.16)
+    (layer F.Cu)
+    (net 33))
+  (segment
+    (start 140.64 104.53)
+    (end 140.27 104.16)
+    (width 0.16)
+    (layer F.Cu)
+    (net 33))
+  (segment
+    (start 140.64 104.53)
+    (end 140.93 104.53)
+    (width 0.16)
+    (layer F.Cu)
+    (net 33))
   (segment
     (start 114.66958 96.13)
     (end 116.5 96.13)
@@ -11296,6 +12515,876 @@
     (width 0.16)
     (layer F.Cu)
     (net 37))
+  (segment
+    (start 123.18 90)
+    (end 123.56 90)
+    (width 0.16)
+    (layer B.Cu)
+    (net 38))
+  (segment
+    (start 122.5 90.68)
+    (end 123.18 90)
+    (width 0.16)
+    (layer B.Cu)
+    (net 38))
+  (segment
+    (start 122.5 96.49)
+    (end 122.5 90.68)
+    (width 0.16)
+    (layer B.Cu)
+    (net 38))
+  (segment
+    (start 119.93 99.06)
+    (end 122.5 96.49)
+    (width 0.16)
+    (layer B.Cu)
+    (net 38))
+  (segment
+    (start 119.93 99.99)
+    (end 119.93 99.06)
+    (width 0.16)
+    (layer B.Cu)
+    (net 38))
+  (segment
+    (start 119.93 105.35)
+    (end 119.93 99.99)
+    (width 0.16)
+    (layer Inner2.Cu)
+    (net 38))
+  (segment
+    (start 121.33 87.6)
+    (end 121.33 87.85042)
+    (width 0.16)
+    (layer B.Cu)
+    (net 38))
+  (segment
+    (start 121.73 87.2)
+    (end 121.33 87.6)
+    (width 0.16)
+    (layer B.Cu)
+    (net 38))
+  (segment
+    (start 123.62 87.2)
+    (end 121.73 87.2)
+    (width 0.16)
+    (layer B.Cu)
+    (net 38))
+  (segment
+    (start 124.1 87.68)
+    (end 123.62 87.2)
+    (width 0.16)
+    (layer B.Cu)
+    (net 38))
+  (segment
+    (start 124.1 89.46)
+    (end 124.1 87.68)
+    (width 0.16)
+    (layer B.Cu)
+    (net 38))
+  (segment
+    (start 123.56 90)
+    (end 124.1 89.46)
+    (width 0.16)
+    (layer B.Cu)
+    (net 38))
+  (segment
+    (start 119.6 105.68)
+    (end 119.93 105.35)
+    (width 0.16)
+    (layer Inner2.Cu)
+    (net 38))
+  (segment
+    (start 121.32958 87.85)
+    (end 120.44958 87.85)
+    (width 0.16)
+    (layer B.Cu)
+    (net 38))
+  (segment
+    (start 121.33 87.85042)
+    (end 121.32958 87.85)
+    (width 0.16)
+    (layer B.Cu)
+    (net 38))
+  (segment
+    (start 121.3479 87.67894)
+    (end 121.4 87.62684)
+    (width 0.16)
+    (layer F.Cu)
+    (net 38))
+  (segment
+    (start 121.4 87.62684)
+    (end 121.4 86.25)
+    (width 0.16)
+    (layer F.Cu)
+    (net 38))
+  (segment
+    (start 121.4 86.25)
+    (end 121.33 86.32)
+    (width 0.16)
+    (layer B.Cu)
+    (net 38))
+  (segment
+    (start 121.33 86.32)
+    (end 121.33 87.85042)
+    (width 0.16)
+    (layer B.Cu)
+    (net 38))
+  (segment
+    (start 139.77982 86.01982)
+    (end 139.41 85.65)
+    (width 0.256)
+    (layer F.Cu)
+    (net 39))
+  (segment
+    (start 139.41 85.65)
+    (end 139.41 85.31958)
+    (width 0.256)
+    (layer F.Cu)
+    (net 39))
+  (segment
+    (start 140.4675 86.01982)
+    (end 139.77982 86.01982)
+    (width 0.256)
+    (layer F.Cu)
+    (net 39))
+  (segment
+    (start 119.8493 87.2193)
+    (end 119.8493 87.67894)
+    (width 0.16)
+    (layer F.Cu)
+    (net 39))
+  (segment
+    (start 139.41 85.31958)
+    (end 138.66042 85.31958)
+    (width 0.16)
+    (layer F.Cu)
+    (net 39))
+  (segment
+    (start 138.63 85.35)
+    (end 138.66042 85.31958)
+    (width 0.16)
+    (layer F.Cu)
+    (net 39))
+  (segment
+    (start 138.63 84.99)
+    (end 138.63 85.35)
+    (width 0.16)
+    (layer Inner2.Cu)
+    (net 39))
+  (segment
+    (start 137.300002 83.660002)
+    (end 138.63 84.99)
+    (width 0.16)
+    (layer Inner2.Cu)
+    (net 39))
+  (segment
+    (start 119.05255 83.660002)
+    (end 137.300002 83.660002)
+    (width 0.16)
+    (layer Inner2.Cu)
+    (net 39))
+  (segment
+    (start 118.43 84.282552)
+    (end 119.05255 83.660002)
+    (width 0.16)
+    (layer Inner2.Cu)
+    (net 39))
+  (segment
+    (start 118.43 86.07)
+    (end 118.43 84.282552)
+    (width 0.16)
+    (layer Inner2.Cu)
+    (net 39))
+  (segment
+    (start 118.61 86.25)
+    (end 118.43 86.07)
+    (width 0.16)
+    (layer Inner2.Cu)
+    (net 39))
+  (segment
+    (start 119.8493 87.2193)
+    (end 118.88 86.25)
+    (width 0.16)
+    (layer F.Cu)
+    (net 39))
+  (segment
+    (start 118.88 86.25)
+    (end 118.61 86.25)
+    (width 0.16)
+    (layer F.Cu)
+    (net 39))
+  (segment
+    (start 147.84 90.84)
+    (end 148.42 91.42)
+    (width 0.256)
+    (layer F.Cu)
+    (net 40))
+  (segment
+    (start 148.42 91.42)
+    (end 148.42 91.84042)
+    (width 0.256)
+    (layer F.Cu)
+    (net 40))
+  (segment
+    (start 147.84 90.38)
+    (end 147.84 90.84)
+    (width 0.256)
+    (layer F.Cu)
+    (net 40))
+  (segment
+    (start 148.94 92.1)
+    (end 147.77 90.93)
+    (width 0.16)
+    (layer B.Cu)
+    (net 40))
+  (segment
+    (start 147.18 84.88)
+    (end 145.64 83.34)
+    (width 0.16)
+    (layer Inner2.Cu)
+    (net 40))
+  (segment
+    (start 145.64 83.34)
+    (end 118.92 83.34)
+    (width 0.16)
+    (layer Inner2.Cu)
+    (net 40))
+  (segment
+    (start 118.92 83.34)
+    (end 118.03 84.23)
+    (width 0.16)
+    (layer Inner2.Cu)
+    (net 40))
+  (segment
+    (start 118.03 84.23)
+    (end 118.03 85.77)
+    (width 0.16)
+    (layer Inner2.Cu)
+    (net 40))
+  (segment
+    (start 118.03 85.77)
+    (end 117.58 86.22)
+    (width 0.16)
+    (layer Inner2.Cu)
+    (net 40))
+  (segment
+    (start 117.58 86.22)
+    (end 117.84778 86.48778)
+    (width 0.16)
+    (layer F.Cu)
+    (net 40))
+  (segment
+    (start 117.84778 86.48778)
+    (end 117.84778 87.68148)
+    (width 0.16)
+    (layer F.Cu)
+    (net 40))
+  (segment
+    (start 148.42 91.84042)
+    (end 148.81042 91.84042)
+    (width 0.16)
+    (layer F.Cu)
+    (net 40))
+  (segment
+    (start 148.81042 91.84042)
+    (end 149.07 92.1)
+    (width 0.16)
+    (layer F.Cu)
+    (net 40))
+  (segment
+    (start 149.07 92.1)
+    (end 148.94 92.1)
+    (width 0.16)
+    (layer B.Cu)
+    (net 40))
+  (segment
+    (start 147.77 90.93)
+    (end 147.77 88.83)
+    (width 0.16)
+    (layer B.Cu)
+    (net 40))
+  (segment
+    (start 147.87 84.88)
+    (end 147.18 84.88)
+    (width 0.16)
+    (layer B.Cu)
+    (net 40))
+  (segment
+    (start 149.07 86.08)
+    (end 147.87 84.88)
+    (width 0.16)
+    (layer B.Cu)
+    (net 40))
+  (segment
+    (start 149.07 87.53)
+    (end 149.07 86.08)
+    (width 0.16)
+    (layer B.Cu)
+    (net 40))
+  (segment
+    (start 147.77 88.83)
+    (end 149.07 87.53)
+    (width 0.16)
+    (layer B.Cu)
+    (net 40))
+  (segment
+    (start 122.50106 93.3279)
+    (end 125.0321 93.3279)
+    (width 0.256)
+    (layer F.Cu)
+    (net 41))
+  (segment
+    (start 125.44 88.56)
+    (end 125.87 88.13)
+    (width 0.256)
+    (layer F.Cu)
+    (net 41))
+  (segment
+    (start 125.44 92.92)
+    (end 125.44 88.56)
+    (width 0.256)
+    (layer F.Cu)
+    (net 41))
+  (segment
+    (start 125.0321 93.3279)
+    (end 125.44 92.92)
+    (width 0.256)
+    (layer F.Cu)
+    (net 41))
+  (segment
+    (start 125.87 88.13)
+    (end 125.87 88.15)
+    (width 0.256)
+    (layer Inner2.Cu)
+    (net 41))
+  (segment
+    (start 130.93042 85.74958)
+    (end 130.94 85.74)
+    (width 0.256)
+    (layer F.Cu)
+    (net 41))
+  (segment
+    (start 130.93042 85.74958)
+    (end 130.93042 86.68)
+    (width 0.256)
+    (layer F.Cu)
+    (net 41))
+  (segment
+    (start 130.94 86.68)
+    (end 130.94 85.74)
+    (width 0.256)
+    (layer Inner2.Cu)
+    (net 41))
+  (segment
+    (start 129.8 87.82)
+    (end 130.94 86.68)
+    (width 0.256)
+    (layer Inner2.Cu)
+    (net 41))
+  (segment
+    (start 126.2 87.82)
+    (end 129.8 87.82)
+    (width 0.256)
+    (layer Inner2.Cu)
+    (net 41))
+  (segment
+    (start 125.87 88.15)
+    (end 126.2 87.82)
+    (width 0.256)
+    (layer Inner2.Cu)
+    (net 41))
+  (segment
+    (start 124.68 105.68)
+    (end 125.24 105.12)
+    (width 0.16)
+    (layer Inner2.Cu)
+    (net 44))
+  (segment
+    (start 125.24 105.12)
+    (end 125.24 103.91)
+    (width 0.16)
+    (layer Inner2.Cu)
+    (net 44))
+  (segment
+    (start 125.24 103.91)
+    (end 124.83 103.5)
+    (width 0.16)
+    (layer Inner2.Cu)
+    (net 44))
+  (segment
+    (start 124.83 103.5)
+    (end 124.83 97.16)
+    (width 0.16)
+    (layer Inner2.Cu)
+    (net 44))
+  (segment
+    (start 124.83 97.16)
+    (end 124.55 96.88)
+    (width 0.16)
+    (layer Inner2.Cu)
+    (net 44))
+  (segment
+    (start 124.55 96.88)
+    (end 124.55 93.78)
+    (width 0.16)
+    (layer Inner2.Cu)
+    (net 44))
+  (segment
+    (start 124.55 93.78)
+    (end 123.39 92.62)
+    (width 0.16)
+    (layer Inner2.Cu)
+    (net 44))
+  (segment
+    (start 122.50106 91.8293)
+    (end 122.9693 91.8293)
+    (width 0.16)
+    (layer F.Cu)
+    (net 44))
+  (segment
+    (start 123.39 92.25)
+    (end 123.39 92.62)
+    (width 0.16)
+    (layer F.Cu)
+    (net 44))
+  (segment
+    (start 122.9693 91.8293)
+    (end 123.39 92.25)
+    (width 0.16)
+    (layer F.Cu)
+    (net 44))
+  (segment
+    (start 113.92 95.34)
+    (end 116.57 97.99)
+    (width 0.16)
+    (layer Inner2.Cu)
+    (net 45))
+  (segment
+    (start 123.92 91.91)
+    (end 123.1 91.91)
+    (width 0.16)
+    (layer Inner2.Cu)
+    (net 45))
+  (segment
+    (start 123.1 91.91)
+    (end 118.76 87.57)
+    (width 0.16)
+    (layer Inner2.Cu)
+    (net 45))
+  (segment
+    (start 118.76 87.57)
+    (end 114.52 87.57)
+    (width 0.16)
+    (layer Inner2.Cu)
+    (net 45))
+  (segment
+    (start 114.52 87.57)
+    (end 113.92 88.17)
+    (width 0.16)
+    (layer Inner2.Cu)
+    (net 45))
+  (segment
+    (start 113.92 88.17)
+    (end 113.92 95.34)
+    (width 0.16)
+    (layer Inner2.Cu)
+    (net 45))
+  (segment
+    (start 122.5 91.33)
+    (end 123.34 91.33)
+    (width 0.16)
+    (layer F.Cu)
+    (net 45))
+  (segment
+    (start 123.34 91.33)
+    (end 124.13 92.12)
+    (width 0.16)
+    (layer F.Cu)
+    (net 45))
+  (segment
+    (start 124.13 92.12)
+    (end 123.92 91.91)
+    (width 0.16)
+    (layer Inner2.Cu)
+    (net 45))
+  (segment
+    (start 117.06 104.22)
+    (end 117.06 105.68)
+    (width 0.16)
+    (layer Inner2.Cu)
+    (net 45))
+  (segment
+    (start 118.88 102.4)
+    (end 117.06 104.22)
+    (width 0.16)
+    (layer Inner2.Cu)
+    (net 45))
+  (segment
+    (start 118.88 98.76)
+    (end 118.88 102.4)
+    (width 0.16)
+    (layer Inner2.Cu)
+    (net 45))
+  (segment
+    (start 118.11 97.99)
+    (end 118.88 98.76)
+    (width 0.16)
+    (layer Inner2.Cu)
+    (net 45))
+  (segment
+    (start 116.57 97.99)
+    (end 118.11 97.99)
+    (width 0.16)
+    (layer Inner2.Cu)
+    (net 45))
+  (segment
+    (start 123.27 91.2)
+    (end 119.21 87.14)
+    (width 0.16)
+    (layer Inner2.Cu)
+    (net 46))
+  (segment
+    (start 122.50106 90.83108)
+    (end 123.84108 90.83108)
+    (width 0.16)
+    (layer F.Cu)
+    (net 46))
+  (segment
+    (start 123.84108 90.83108)
+    (end 124.21 91.2)
+    (width 0.16)
+    (layer F.Cu)
+    (net 46))
+  (segment
+    (start 124.21 91.2)
+    (end 123.27 91.2)
+    (width 0.16)
+    (layer Inner2.Cu)
+    (net 46))
+  (segment
+    (start 114.52 104.49)
+    (end 114.52 105.68)
+    (width 0.16)
+    (layer Inner2.Cu)
+    (net 46))
+  (segment
+    (start 116.39 102.62)
+    (end 114.52 104.49)
+    (width 0.16)
+    (layer Inner2.Cu)
+    (net 46))
+  (segment
+    (start 117.84 102.62)
+    (end 116.39 102.62)
+    (width 0.16)
+    (layer Inner2.Cu)
+    (net 46))
+  (segment
+    (start 118.49 101.97)
+    (end 117.84 102.62)
+    (width 0.16)
+    (layer Inner2.Cu)
+    (net 46))
+  (segment
+    (start 118.49 100.13)
+    (end 118.49 101.97)
+    (width 0.16)
+    (layer Inner2.Cu)
+    (net 46))
+  (segment
+    (start 118.05 99.69)
+    (end 118.49 100.13)
+    (width 0.16)
+    (layer Inner2.Cu)
+    (net 46))
+  (segment
+    (start 117.99 99.69)
+    (end 118.05 99.69)
+    (width 0.16)
+    (layer Inner2.Cu)
+    (net 46))
+  (segment
+    (start 117.92 99.62)
+    (end 117.99 99.69)
+    (width 0.16)
+    (layer Inner2.Cu)
+    (net 46))
+  (segment
+    (start 117.52 99.62)
+    (end 117.92 99.62)
+    (width 0.16)
+    (layer Inner2.Cu)
+    (net 46))
+  (segment
+    (start 117.46 99.68)
+    (end 117.52 99.62)
+    (width 0.16)
+    (layer Inner2.Cu)
+    (net 46))
+  (segment
+    (start 115.79 99.68)
+    (end 117.46 99.68)
+    (width 0.16)
+    (layer Inner2.Cu)
+    (net 46))
+  (segment
+    (start 113.55 97.44)
+    (end 115.79 99.68)
+    (width 0.16)
+    (layer Inner2.Cu)
+    (net 46))
+  (segment
+    (start 113.55 87.94)
+    (end 113.55 97.44)
+    (width 0.16)
+    (layer Inner2.Cu)
+    (net 46))
+  (segment
+    (start 114.35 87.14)
+    (end 113.55 87.94)
+    (width 0.16)
+    (layer Inner2.Cu)
+    (net 46))
+  (segment
+    (start 119.21 87.14)
+    (end 114.35 87.14)
+    (width 0.16)
+    (layer Inner2.Cu)
+    (net 46))
+  (segment
+    (start 124.73 90.27)
+    (end 124.92 90.46)
+    (width 0.16)
+    (layer Inner2.Cu)
+    (net 47))
+  (segment
+    (start 124.92 90.46)
+    (end 124.92 96.71)
+    (width 0.16)
+    (layer Inner2.Cu)
+    (net 47))
+  (segment
+    (start 122.50106 90.3307)
+    (end 124.1893 90.3307)
+    (width 0.16)
+    (layer F.Cu)
+    (net 47))
+  (segment
+    (start 124.1893 90.3307)
+    (end 124.25 90.27)
+    (width 0.16)
+    (layer F.Cu)
+    (net 47))
+  (segment
+    (start 124.25 90.27)
+    (end 124.73 90.27)
+    (width 0.16)
+    (layer Inner2.Cu)
+    (net 47))
+  (segment
+    (start 123.26 106.8)
+    (end 122.14 105.68)
+    (width 0.16)
+    (layer Inner2.Cu)
+    (net 47))
+  (segment
+    (start 126 106.8)
+    (end 123.26 106.8)
+    (width 0.16)
+    (layer Inner2.Cu)
+    (net 47))
+  (segment
+    (start 126.4 106.4)
+    (end 126 106.8)
+    (width 0.16)
+    (layer Inner2.Cu)
+    (net 47))
+  (segment
+    (start 126.4 104.43)
+    (end 126.4 106.4)
+    (width 0.16)
+    (layer Inner2.Cu)
+    (net 47))
+  (segment
+    (start 125.21 103.24)
+    (end 126.4 104.43)
+    (width 0.16)
+    (layer Inner2.Cu)
+    (net 47))
+  (segment
+    (start 125.21 97)
+    (end 125.21 103.24)
+    (width 0.16)
+    (layer Inner2.Cu)
+    (net 47))
+  (segment
+    (start 124.92 96.71)
+    (end 125.21 97)
+    (width 0.16)
+    (layer Inner2.Cu)
+    (net 47))
+  (segment
+    (start 126.93 96.7)
+    (end 125.73 95.5)
+    (width 0.16)
+    (layer Inner2.Cu)
+    (net 52))
+  (segment
+    (start 127.21 96.98)
+    (end 126.93 96.7)
+    (width 0.16)
+    (layer F.Cu)
+    (net 52))
+  (segment
+    (start 136.11 99.88)
+    (end 135.73 99.5)
+    (width 0.16)
+    (layer F.Cu)
+    (net 52))
+  (segment
+    (start 135.73 99.5)
+    (end 133.94 99.5)
+    (width 0.16)
+    (layer F.Cu)
+    (net 52))
+  (segment
+    (start 133.94 99.5)
+    (end 133.22 98.78)
+    (width 0.16)
+    (layer F.Cu)
+    (net 52))
+  (segment
+    (start 133.22 98.78)
+    (end 133.22 97.59)
+    (width 0.16)
+    (layer F.Cu)
+    (net 52))
+  (segment
+    (start 133.22 97.59)
+    (end 132.61 96.98)
+    (width 0.16)
+    (layer F.Cu)
+    (net 52))
+  (segment
+    (start 138.45 99.53958)
+    (end 138.14042 99.53958)
+    (width 0.16)
+    (layer F.Cu)
+    (net 52))
+  (segment
+    (start 138.14042 99.53958)
+    (end 137.8 99.88)
+    (width 0.16)
+    (layer F.Cu)
+    (net 52))
+  (segment
+    (start 137.8 99.88)
+    (end 136.11 99.88)
+    (width 0.16)
+    (layer F.Cu)
+    (net 52))
+  (segment
+    (start 132.61 96.98)
+    (end 127.21 96.98)
+    (width 0.16)
+    (layer F.Cu)
+    (net 52))
+  (segment
+    (start 125.73 95.5)
+    (end 125.73 89.12)
+    (width 0.16)
+    (layer Inner2.Cu)
+    (net 52))
+  (segment
+    (start 120.85006 87.25006)
+    (end 120.85006 87.67894)
+    (width 0.16)
+    (layer F.Cu)
+    (net 52))
+  (segment
+    (start 120.74 87.14)
+    (end 120.85006 87.25006)
+    (width 0.16)
+    (layer F.Cu)
+    (net 52))
+  (segment
+    (start 120.74 85.74)
+    (end 120.74 87.14)
+    (width 0.16)
+    (layer F.Cu)
+    (net 52))
+  (segment
+    (start 120.72 85.72)
+    (end 120.74 85.74)
+    (width 0.16)
+    (layer F.Cu)
+    (net 52))
+  (segment
+    (start 120.72 86.57)
+    (end 120.72 85.72)
+    (width 0.16)
+    (layer Inner2.Cu)
+    (net 52))
+  (segment
+    (start 121.22 87.07)
+    (end 120.72 86.57)
+    (width 0.16)
+    (layer Inner2.Cu)
+    (net 52))
+  (segment
+    (start 123.68 87.07)
+    (end 121.22 87.07)
+    (width 0.16)
+    (layer Inner2.Cu)
+    (net 52))
+  (segment
+    (start 125.73 89.12)
+    (end 123.68 87.07)
+    (width 0.16)
+    (layer Inner2.Cu)
+    (net 52))
+  (segment
+    (start 140.47 101.32)
+    (end 139.74 101.32)
+    (width 0.16)
+    (layer F.Cu)
+    (net 52))
+  (segment
+    (start 140.93 101.78)
+    (end 140.47 101.32)
+    (width 0.16)
+    (layer F.Cu)
+    (net 52))
+  (segment
+    (start 140.93 102.33)
+    (end 140.93 101.78)
+    (width 0.16)
+    (layer F.Cu)
+    (net 52))
+  (segment
+    (start 139.2 100.33)
+    (end 138.45 99.58)
+    (width 0.16)
+    (layer F.Cu)
+    (net 52))
+  (segment
+    (start 139.2 100.78)
+    (end 139.2 100.33)
+    (width 0.16)
+    (layer F.Cu)
+    (net 52))
+  (segment
+    (start 139.74 101.32)
+    (end 139.2 100.78)
+    (width 0.16)
+    (layer F.Cu)
+    (net 52))
+  (segment
+    (start 138.45 99.58)
+    (end 138.45 99.53958)
+    (width 0.16)
+    (layer F.Cu)
+    (net 52))
   (segment
     (start 129.45 88.84)
     (end 129.27 89.02)
@@ -11795,6 +13884,72 @@
     (layer F.Cu)
     (net 73))
   (segment
+    (start 141.59 103.8)
+    (end 141.07 103.8)
+    (width 0.16)
+    (layer F.Cu)
+    (net 74))
+  (segment
+    (start 140.28958 103.01958)
+    (end 139.83 103.01958)
+    (width 0.16)
+    (layer F.Cu)
+    (net 74))
+  (segment
+    (start 141.07 103.8)
+    (end 140.28958 103.01958)
+    (width 0.16)
+    (layer F.Cu)
+    (net 74))
+  (segment
+    (start 141.58 104.53)
+    (end 141.59 104.52)
+    (width 0.16)
+    (layer F.Cu)
+    (net 74))
+  (segment
+    (start 145.27 103.06)
+    (end 145.27 102.06)
+    (width 0.16)
+    (layer F.Cu)
+    (net 74))
+  (segment
+    (start 141.59 103.8)
+    (end 144.53 103.8)
+    (width 0.16)
+    (layer Inner2.Cu)
+    (net 74))
+  (segment
+    (start 141.59 104.52)
+    (end 141.59 103.8)
+    (width 0.16)
+    (layer F.Cu)
+    (net 74))
+  (segment
+    (start 144.53 103.8)
+    (end 144.76 103.57)
+    (width 0.16)
+    (layer Inner2.Cu)
+    (net 74))
+  (segment
+    (start 144.76 103.57)
+    (end 145.27 103.06)
+    (width 0.16)
+    (layer F.Cu)
+    (net 74))
+  (segment
+    (start 145.27 100.7325)
+    (end 145.27 102.06)
+    (width 0.16)
+    (layer F.Cu)
+    (net 74))
+  (segment
+    (start 145.525 100.4775)
+    (end 145.27 100.7325)
+    (width 0.16)
+    (layer F.Cu)
+    (net 74))
+  (segment
     (start 131.97 101.89)
     (end 132.18 102.1)
     (width 0.16)
@@ -11987,6 +14142,78 @@
     (layer F.Cu)
     (net 78))
   (segment
+    (start 137.362 105.22)
+    (end 137.362 105.242)
+    (width 0.16)
+    (layer F.Cu)
+    (net 79))
+  (segment
+    (start 137.362 105.242)
+    (end 138.02 105.9)
+    (width 0.16)
+    (layer F.Cu)
+    (net 79))
+  (segment
+    (start 143.38 105.37)
+    (end 143.37 105.37)
+    (width 0.16)
+    (layer F.Cu)
+    (net 79))
+  (segment
+    (start 143.37 105.38)
+    (end 143.38 105.37)
+    (width 0.16)
+    (layer F.Cu)
+    (net 79))
+  (segment
+    (start 143.37 105.85)
+    (end 143.37 105.38)
+    (width 0.16)
+    (layer F.Cu)
+    (net 79))
+  (segment
+    (start 143.46 105.94)
+    (end 143.37 105.85)
+    (width 0.16)
+    (layer F.Cu)
+    (net 79))
+  (segment
+    (start 138.06 105.94)
+    (end 143.46 105.94)
+    (width 0.16)
+    (layer Inner2.Cu)
+    (net 79))
+  (segment
+    (start 138.02 105.9)
+    (end 138.06 105.94)
+    (width 0.16)
+    (layer Inner2.Cu)
+    (net 79))
+  (segment
+    (start 143.37 104.68)
+    (end 143.37 105.37)
+    (width 0.16)
+    (layer F.Cu)
+    (net 79))
+  (segment
+    (start 143.37 105.37)
+    (end 143.37 105.45)
+    (width 0.16)
+    (layer F.Cu)
+    (net 79))
+  (segment
+    (start 143.37 105.45)
+    (end 143.02 105.8)
+    (width 0.16)
+    (layer F.Cu)
+    (net 79))
+  (segment
+    (start 143.02 105.8)
+    (end 142.51958 105.8)
+    (width 0.16)
+    (layer F.Cu)
+    (net 79))
+  (segment
     (start 130.85 90.07)
     (end 131.05042 90.07)
     (width 0.16)
@@ -12016,6 +14243,54 @@
     (width 0.16)
     (layer B.Cu)
     (net 80))
+  (segment
+    (start 133.97 86.91)
+    (end 133.58 87.3)
+    (width 0.256)
+    (layer Inner2.Cu)
+    (net 81))
+  (segment
+    (start 136.26 86.91)
+    (end 136.45 87.1)
+    (width 0.256)
+    (layer F.Cu)
+    (net 81))
+  (segment
+    (start 136.45 87.1)
+    (end 136.45 87.73)
+    (width 0.256)
+    (layer F.Cu)
+    (net 81))
+  (segment
+    (start 136.26 86.91)
+    (end 133.97 86.91)
+    (width 0.256)
+    (layer Inner2.Cu)
+    (net 81))
+  (segment
+    (start 132.05958 88.31)
+    (end 132.57 88.31)
+    (width 0.256)
+    (layer B.Cu)
+    (net 81))
+  (segment
+    (start 132.57 88.31)
+    (end 133.58 87.3)
+    (width 0.256)
+    (layer B.Cu)
+    (net 81))
+  (segment
+    (start 133.05 87.83)
+    (end 133.58 87.3)
+    (width 0.256)
+    (layer F.Cu)
+    (net 81))
+  (segment
+    (start 133.05 88.24)
+    (end 133.05 87.83)
+    (width 0.256)
+    (layer F.Cu)
+    (net 81))
   (segment
     (start 131.94958 90.07)
     (end 131.94958 90.21042)
@@ -12377,6 +14652,54 @@
     (layer F.Cu)
     (net 95))
   (segment
+    (start 144.74 93.05)
+    (end 143.78 92.09)
+    (width 0.256)
+    (layer Inner2.Cu)
+    (net 96))
+  (segment
+    (start 143.78 92.09)
+    (end 142.55 92.09)
+    (width 0.256)
+    (layer Inner2.Cu)
+    (net 96))
+  (segment
+    (start 142.55 92.09)
+    (end 142.2 91.74)
+    (width 0.256)
+    (layer B.Cu)
+    (net 96))
+  (segment
+    (start 142.2 91.74)
+    (end 142.2 87.09)
+    (width 0.256)
+    (layer B.Cu)
+    (net 96))
+  (segment
+    (start 142.2 87.09)
+    (end 142.3725 86.9175)
+    (width 0.256)
+    (layer F.Cu)
+    (net 96))
+  (segment
+    (start 142.3725 86.9175)
+    (end 142.3725 86.01982)
+    (width 0.256)
+    (layer F.Cu)
+    (net 96))
+  (segment
+    (start 145.39042 93.05)
+    (end 144.96 93.05)
+    (width 0.256)
+    (layer F.Cu)
+    (net 96))
+  (segment
+    (start 144.96 93.05)
+    (end 144.74 93.05)
+    (width 0.256)
+    (layer Inner2.Cu)
+    (net 96))
+  (segment
     (start 145.75 98.3475)
     (end 145.75 97.52458)
     (width 0.16)
@@ -12429,6 +14752,16 @@
     (layers F.Cu B.Cu)
     (net 1))
   (via
+    (at 119.33 96.98)
+    (size 0.69)
+    (layers F.Cu B.Cu)
+    (net 18))
+  (via
+    (at 122.4 103.21)
+    (size 0.69)
+    (layers F.Cu B.Cu)
+    (net 18))
+  (via
     (at 121.35 100.45)
     (size 0.69)
     (layers F.Cu B.Cu)
@@ -12444,6 +14777,21 @@
     (layers F.Cu B.Cu)
     (net 20))
   (via
+    (at 119.95 96.37)
+    (size 0.69)
+    (layers F.Cu B.Cu)
+    (net 21))
+  (via
+    (at 123.29 98.34)
+    (size 0.69)
+    (layers F.Cu B.Cu)
+    (net 21))
+  (via
+    (at 125.89 99.09)
+    (size 0.69)
+    (layers F.Cu B.Cu)
+    (net 21))
+  (via
     (at 126.51 99.92)
     (size 0.69)
     (layers F.Cu B.Cu)
@@ -12453,6 +14801,46 @@
     (size 0.69)
     (layers F.Cu B.Cu)
     (net 23))
+  (via
+    (at 126.575 102.275)
+    (size 0.69)
+    (layers F.Cu B.Cu)
+    (net 24))
+  (via
+    (at 138.13 103.39)
+    (size 0.69)
+    (layers F.Cu B.Cu)
+    (net 24))
+  (via
+    (at 145.69 103.56)
+    (size 0.69)
+    (layers F.Cu B.Cu)
+    (net 24))
+  (via
+    (at 142.33 95.62)
+    (size 0.69)
+    (layers F.Cu B.Cu)
+    (net 24))
+  (via
+    (at 130.74 105.34)
+    (size 0.69)
+    (layers F.Cu B.Cu)
+    (net 24))
+  (via
+    (at 133.83 106.97)
+    (size 0.69)
+    (layers F.Cu B.Cu)
+    (net 24))
+  (via
+    (at 118.29 97.08)
+    (size 0.69)
+    (layers F.Cu B.Cu)
+    (net 25))
+  (via
+    (at 114.85 88.28)
+    (size 0.69)
+    (layers F.Cu B.Cu)
+    (net 25))
   (via
     (at 123.34 89.27)
     (size 0.69)
@@ -12539,6 +14927,46 @@
     (layers F.Cu B.Cu)
     (net 26))
   (via
+    (at 128.54 98.1)
+    (size 0.69)
+    (layers F.Cu B.Cu)
+    (net 28))
+  (via
+    (at 123.22 96.99)
+    (size 0.69)
+    (layers F.Cu B.Cu)
+    (net 28))
+  (via
+    (at 120.63 95.32)
+    (size 0.69)
+    (layers F.Cu B.Cu)
+    (net 28))
+  (via
+    (at 134.45 98.35)
+    (size 0.69)
+    (layers F.Cu B.Cu)
+    (net 28))
+  (via
+    (at 143.36 100.96)
+    (size 0.69)
+    (layers F.Cu B.Cu)
+    (net 28))
+  (via
+    (at 138.66 96.03)
+    (size 0.69)
+    (layers F.Cu B.Cu)
+    (net 28))
+  (via
+    (at 141.2 94.82)
+    (size 0.69)
+    (layers F.Cu B.Cu)
+    (net 28))
+  (via
+    (at 131.06 101.43)
+    (size 0.69)
+    (layers F.Cu B.Cu)
+    (net 28))
+  (via
     (at 118.17 96.12)
     (size 0.69)
     (layers F.Cu B.Cu)
@@ -12553,6 +14981,106 @@
     (size 0.69)
     (layers F.Cu B.Cu)
     (net 31))
+  (via
+    (at 120.11 86.43)
+    (size 0.69)
+    (layers F.Cu B.Cu)
+    (net 33))
+  (via
+    (at 126.08 97)
+    (size 0.69)
+    (layers F.Cu B.Cu)
+    (net 33))
+  (via
+    (at 138.6 101.07)
+    (size 0.69)
+    (layers F.Cu B.Cu)
+    (net 33))
+  (via
+    (at 140.06 100.69)
+    (size 0.69)
+    (layers F.Cu B.Cu)
+    (net 33))
+  (via
+    (at 140.27 104.16)
+    (size 0.69)
+    (layers F.Cu B.Cu)
+    (net 33))
+  (via
+    (at 119.93 99.99)
+    (size 0.69)
+    (layers F.Cu B.Cu)
+    (net 38))
+  (via
+    (at 121.4 86.25)
+    (size 0.69)
+    (layers F.Cu B.Cu)
+    (net 38))
+  (via
+    (at 138.63 85.35)
+    (size 0.69)
+    (layers F.Cu B.Cu)
+    (net 39))
+  (via
+    (at 118.61 86.25)
+    (size 0.69)
+    (layers F.Cu B.Cu)
+    (net 39))
+  (via
+    (at 147.18 84.88)
+    (size 0.69)
+    (layers F.Cu B.Cu)
+    (net 40))
+  (via
+    (at 117.58 86.22)
+    (size 0.69)
+    (layers F.Cu B.Cu)
+    (net 40))
+  (via
+    (at 149.07 92.1)
+    (size 0.69)
+    (layers F.Cu B.Cu)
+    (net 40))
+  (via
+    (at 125.87 88.13)
+    (size 0.69)
+    (layers F.Cu B.Cu)
+    (net 41))
+  (via
+    (at 130.94 85.74)
+    (size 0.69)
+    (layers F.Cu B.Cu)
+    (net 41))
+  (via
+    (at 123.39 92.62)
+    (size 0.69)
+    (layers F.Cu B.Cu)
+    (net 44))
+  (via
+    (at 124.13 92.12)
+    (size 0.69)
+    (layers F.Cu B.Cu)
+    (net 45))
+  (via
+    (at 124.21 91.2)
+    (size 0.69)
+    (layers F.Cu B.Cu)
+    (net 46))
+  (via
+    (at 124.25 90.27)
+    (size 0.69)
+    (layers F.Cu B.Cu)
+    (net 47))
+  (via
+    (at 126.93 96.7)
+    (size 0.69)
+    (layers F.Cu B.Cu)
+    (net 52))
+  (via
+    (at 120.72 85.72)
+    (size 0.69)
+    (layers F.Cu B.Cu)
+    (net 52))
   (via
     (at 132.05 91.52)
     (size 0.69)
@@ -12599,6 +15127,16 @@
     (layers F.Cu B.Cu)
     (net 73))
   (via
+    (at 141.59 103.8)
+    (size 0.69)
+    (layers F.Cu B.Cu)
+    (net 74))
+  (via
+    (at 144.76 103.57)
+    (size 0.69)
+    (layers F.Cu B.Cu)
+    (net 74))
+  (via
     (at 131.97 101.89)
     (size 0.69)
     (layers F.Cu B.Cu)
@@ -12608,6 +15146,26 @@
     (size 0.69)
     (layers F.Cu B.Cu)
     (net 77))
+  (via
+    (at 143.46 105.94)
+    (size 0.69)
+    (layers F.Cu B.Cu)
+    (net 79))
+  (via
+    (at 138.02 105.9)
+    (size 0.69)
+    (layers F.Cu B.Cu)
+    (net 79))
+  (via
+    (at 133.58 87.3)
+    (size 0.69)
+    (layers F.Cu B.Cu)
+    (net 81))
+  (via
+    (at 136.26 86.91)
+    (size 0.69)
+    (layers F.Cu B.Cu)
+    (net 81))
   (via
     (at 130.81 91.17)
     (size 0.69)
@@ -12627,4 +15185,19 @@
     (at 116.44 86.47)
     (size 0.69)
     (layers F.Cu B.Cu)
-    (net 89)))
+    (net 89))
+  (via
+    (at 142.55 92.09)
+    (size 0.69)
+    (layers F.Cu B.Cu)
+    (net 96))
+  (via
+    (at 142.2 87.09)
+    (size 0.69)
+    (layers F.Cu B.Cu)
+    (net 96))
+  (via
+    (at 144.96 93.05)
+    (size 0.69)
+    (layers F.Cu B.Cu)
+    (net 96)))

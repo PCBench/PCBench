@@ -12,6 +12,7 @@ from collections import defaultdict
 import random
 import os
 from copy import copy, deepcopy
+from scipy.spatial.distance import cityblock
 
 class PCBEnvPos(gym.Env):
     def __init__(
@@ -40,11 +41,11 @@ class PCBEnvPos(gym.Env):
         self.action_space = spaces.Discrete(n_actions)
         self.observation_space = spaces.Box(low=0, high=30, shape=self.state_shape, dtype=np.float32)
 
-        pcb_name = random.choice(self.pcb_names)
-        pcb_file_path = os.path.join(self.pcb_folder, pcb_name + '/processed.kicad_pcb')
+        self.pcb_name = random.choice(self.pcb_names)
+        pcb_file_path = os.path.join(self.pcb_folder, self.pcb_name + '/processed.kicad_pcb')
         self.pcb = PCB(pcb_file_path)
         pcb_matrix_b, nets_b = PCBGridize(pcb=self.pcb, resolution=self.resolution)
-        self.pcb_matrix_net_dict = {pcb_name: [pcb_matrix_b, nets_b]}
+        self.pcb_matrix_net_dict = {self.pcb_name: [pcb_matrix_b, nets_b]}
     
     def _get_obs(self) -> np.ndarray:
         return np.array(np.concatenate((self._agent_location, self._target_location)))
@@ -79,6 +80,7 @@ class PCBEnvPos(gym.Env):
         self.current_path = [tuple(self._agent_location)]
 
         self.terminated = False
+        self.conflict = False
 
         return self._get_obs(), self._get_info()
 
@@ -92,24 +94,32 @@ class PCBEnvPos(gym.Env):
 
         return observation, reward, self.terminated, False, info
     
+    def _to_next_pair(self) -> None:
+
+        self.num_connected_pairs += 1
+        self.nets_path[self.current_net].append(self.current_path)
+        if len(self.nets[self.current_net]) == 0:
+            if len(self.nets_indices) == 0:
+                self.terminated = True
+                return
+            else:
+                self.current_net = self.nets_indices.pop(0)
+            self._agent_location = np.array(self.nets[self.current_net].pop(0))
+        else:
+            self._agent_location = self._target_location
+
+        self._target_location = np.array(self.nets[self.current_net].pop(closest_point_idx(self._agent_location, self.nets[self.current_net])))
+        self.current_path.append(tuple(self._agent_location))
+        self.path_length += 1
+
     def _update_state(self, action: int) -> None:
 
         direction = self._action_to_direction[action]
         new_location = self._agent_location + direction
+        self.current_path.append(tuple(self._agent_location))
+        self.path_length += 1
         if np.array_equal(new_location, self._target_location):
-            self.num_connected_pairs += 1
-            self.nets_path[self.current_net].append(self.current_path)
-            if len(self.nets[self.current_net]) == 0:
-                if len(self.nets_indices) == 0:
-                    self.terminated = True
-                    return
-                else:
-                    self.current_net = self.nets_indices.pop(0)
-                self._agent_location = np.array(self.nets[self.current_net].pop(0))
-            else:
-                self._agent_location = self._target_location
-
-            self._target_location = np.array(self.nets[self.current_net].pop(closest_point_idx(self._agent_location, self.nets[self.current_net])))
+            self._to_next_pair()
         # We use `np.clip` to make sure we don't leave the grid
         else:
             self._agent_location = np.clip(
@@ -117,17 +127,17 @@ class PCBEnvPos(gym.Env):
                 [0, 0, 0], 
                 [self.pcb_matrix.shape[0]-1, self.pcb_matrix.shape[1]-1, len(self.pcb.layers)-1],
             )
+            matrix_value = self.pcb_matrix[tuple(self._agent_location)]
+            if (matrix_value != 0 and matrix_value != self.current_net) or tuple(new_location) in self.current_path:
+                if self.termination_rule == "vr":
+                    self._to_next_pair()
+                self.DRVs += 1
+                self.conflict = True
+            else:
+                self.pcb_matrix[tuple(self._agent_location)] = self.current_net
         
-        matrix_value = self.pcb_matrix[tuple(self._agent_location)]
-        if (matrix_value != 0 and matrix_value != self.current_net) or tuple(new_location) in self.current_path:
-            self.DRVs += 1
-        else:
-            self.pcb_matrix[tuple(self._agent_location)] = self.current_net
-        
-        self.current_path.append(tuple(self._agent_location))
-        self.path_length += 1
         if self.termination_rule == "v" and self.DRVs > 0:
-            self.terminated = True 
+            self.terminated = True
 
     def _get_reward(self) -> float:
     

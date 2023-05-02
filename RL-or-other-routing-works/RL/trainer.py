@@ -68,7 +68,7 @@ class Trainer:
                     device=self.params.rl.device
                 )
 
-        logger_path = os.path.dirname(os.path.abspath(__file__)) + "/logs/"
+        logger_path = os.path.dirname(os.path.abspath(__file__)) + "/logs/" + self.env.pcb_name + "/"
         if not os.path.exists(logger_path):
             os.mkdir(logger_path)
         # set up logger
