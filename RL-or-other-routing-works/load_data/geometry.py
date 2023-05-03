@@ -16,7 +16,10 @@ def closest_point_idx(points: List[Tuple[int, int, int]], given_point: Tuple[int
     # Convert list of points to a numpy array
     points = np.array(points)
     # Calculate Euclidean distance from given_point to each point in points
-    distances = np.sqrt(np.sum((points - given_point)**2, axis=1))
+    try:
+        distances = np.sqrt(np.sum((points - given_point)**2, axis=1))
+    except:
+        print(points, given_point)
     # Find the index of the closest point
     closest_idx = np.argmin(distances)
     # Return the closest point

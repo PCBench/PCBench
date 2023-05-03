@@ -7,7 +7,7 @@ from torch import nn
 class EnvParams:
 
     env_name: str = "basic_pos"  # "basic_pos" or "vlsi-dat"
-    resolution: float = 0.5
+    resolution: float = 0.1
     benchmark_folder: str = None
     pcb_names: str = None
     termination_rule: str="r"  # "r" for terminating when all nets are routed, 'v' for terminating when there is a DRV  

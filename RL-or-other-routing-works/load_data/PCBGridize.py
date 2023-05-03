@@ -17,7 +17,6 @@ def PCBGridize(pcb: PCB, resolution: float) -> None:
     layer_name2ID = {pcb.layers[i]: i for i in range(len(pcb.layers))}
 
     nets = defaultdict(list)
-
     for net_idx, pads in pcb.net_pads.items():
         for pad in pads:
             pad_min_x = math.floor((min([xy[0] for xy in pad["pad_vertices"]]) - min_x) / resolution)

@@ -5,21 +5,26 @@ from params import Params
 from stable_baselines3.common.logger import configure
 
 class Trainer:
-    def __init__(self, env=None) -> None:
+    def __init__(self, env=None, pcb_names=None) -> None:
         self.params = Params()
         if self.params.rl.load_model_name is not None:
             self.load_model_name = os.path.dirname(os.path.abspath(__file__)) + "/models/" + self.params.rl.load_model_name
         else:
             self.load_model_name = None
+        self.pcb_names = pcb_names
         self._build_env(env)
         self._build_model()
 
     def _build_env(self, env=None) -> None:
+        if self.pcb_names is None:
+            self.pcb_names = self.params.env.pcb_names
+        else:
+            self.pcb_names = [self.pcb_names]
         if self.params.env.env_name == "basic_pos":
             self.env = PCBEnvPos(
                 resolution=self.params.env.resolution, 
                 pcb_folder=self.params.env.benchmark_folder,
-                pcb_names=self.params.env.pcb_names,
+                pcb_names=self.pcb_names,
                 termination_rule=self.params.env.termination_rule
             )
         elif self.params.env.env_name == "vlsi-dat":
@@ -27,11 +32,13 @@ class Trainer:
             self.env = VLSIDATEnv(
                 resolution=self.params.env.resolution, 
                 pcb_folder=self.params.env.benchmark_folder,
-                pcb_names=self.params.env.pcb_names,
+                pcb_names=self.pcb_names,
                 termination_rule=self.params.env.termination_rule
             )
         else:
             self.env = env
+        
+        self.env.reset()
 
     def _build_model(self) -> None:
 
@@ -84,9 +91,14 @@ class Trainer:
         models_folder = os.path.dirname(os.path.abspath(__file__)) + "/models/"
         if not os.path.exists(models_folder):
             os.mkdir(models_folder)
-        self.model.save(models_folder + self.params.rl.save_model_name)
-        self.model.policy.save(models_folder + "policy_" + self.params.rl.save_model_name)
+        self.model.save(models_folder + self.params.rl.save_model_name + self.env.pcb_name)
+        self.model.policy.save(models_folder + "policy_" + self.env.pcb_name)
 
 if __name__ == "__main__":
-    trainer = Trainer()
+    import sys
+    if len(sys.argv) > 1:
+        pcb_name = sys.argv[1].split('/')[-2]
+    else:
+        pcb_name = None
+    trainer = Trainer(pcb_names=pcb_name)
     trainer.learn()

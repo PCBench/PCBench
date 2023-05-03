@@ -4,7 +4,6 @@ from .kicad_pcb import *
 from .sexp_parser import *
 from .pad_rotation import calculate_pad_pos_size
 
-
 class PCB:
     def __init__(
             self, 
@@ -15,8 +14,8 @@ class PCB:
         self.obs_pad_value = -1
         self.via_obs_pad_value = -2
         self.pcb = KicadPCB.load(kicad_file)
-
-        self.layers = extract_layer(pcb=self.pcb)
+        self.max_layer_index = 16 if self.pcb.version == 3 else 32
+        self.layers = extract_layer(pcb=self.pcb, max_layer_index=self.max_layer_index)
 
         # extract boundary info: circuit region and boundary lines with width
         min_x, min_y, max_x, max_y, lines = extract_bound(self.pcb.gr_line, self.pcb.gr_arc)
@@ -133,15 +132,15 @@ def extract_nets_indices(pcb: KicadPCB, delete_nets: Optional[Set[str]]=None) ->
 
     return all_net_indices
 
-def extract_layer(pcb: KicadPCB) -> List[str]:
-
+def extract_layer(pcb: KicadPCB, max_layer_index: int) -> List[str]:
+    
     layers = list()
-
-    for k in sorted(pcb.layers):
-        if "signal" == pcb.layers[k][-1]:
+    layer_indices = []
+    for k in pcb.layers:
+        if int(k) < max_layer_index:
+            layer_indices.append(int(k))
             layers.append(pcb.layers[k][0])
-
-    return layers
+    return [x for _, x in sorted(zip(layer_indices, layers))]
 
 def extract_net_pads(pcb: KicadPCB, 
                      layers: List[str], 
@@ -152,11 +151,12 @@ def extract_net_pads(pcb: KicadPCB,
 
     net2pads = collections.defaultdict(list)
 
-    for module in pcb.module:
+    for i_m, module in enumerate(pcb.module):
         module_pos = tuple(module.at)
-        for p in module.pad:
+        for i_p, p in enumerate(module.pad):
             pads_info = extract_pad(p, module_pos, layers, net_indices, obs_pad_value)
             for p_info in pads_info:
+                p_info[1]["m_p_index"] = (i_m, i_p)  # record module index and pad index for cleaning up
                 net2pads[p_info[0]].append(p_info[1])
 
     new_net2pads = calculate_pad_pos_size(net2pads, exclude_nets)
@@ -181,6 +181,8 @@ def extract_pad(
     m_rotation = module_pos[2] if len(module_pos)==3 else 0
 
     ret_pads = []   # return 2 pads info if it is a drill hole
+    if "layers" not in module_pad:
+        return ret_pads
     for pl in module_pad.layers:
         if pl in layers:
             pad_info = {}
@@ -235,7 +237,7 @@ def extract_bound(
             max_x = max([max_x, arcs.start[0]-width, arcs.end[0]-width])
             max_y = max([max_y, arcs.start[1]-width, arcs.end[1]-width])
             lines.append([tuple(arcs.start), tuple(arcs.end), arcs.angle, width])
-    
+    print(min_x, min_y, max_x, max_y)
     return min_x, min_y, max_x, max_y, lines
 
 def extract_single_via_pad(via_info: Dict[str, Any]) -> List[Any]:
@@ -253,5 +255,5 @@ def extract_single_via_pad(via_info: Dict[str, Any]) -> List[Any]:
 
 
 if __name__ == "__main__":
-    kicad_filename = "./benchmarks/real_world/1bitsy.kicad_pcb"
+    kicad_filename = "../../PCBs/1Bitsy_1bitsy_v5/raw.kicad_pcb"
     pcb = PCB(kicad_filename)

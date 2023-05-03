@@ -41,11 +41,7 @@ class PCBEnvPos(gym.Env):
         self.action_space = spaces.Discrete(n_actions)
         self.observation_space = spaces.Box(low=0, high=30, shape=self.state_shape, dtype=np.float32)
 
-        self.pcb_name = random.choice(self.pcb_names)
-        pcb_file_path = os.path.join(self.pcb_folder, self.pcb_name + '/processed.kicad_pcb')
-        self.pcb = PCB(pcb_file_path)
-        pcb_matrix_b, nets_b = PCBGridize(pcb=self.pcb, resolution=self.resolution)
-        self.pcb_matrix_net_dict = {self.pcb_name: [pcb_matrix_b, nets_b]}
+        self.pcb_matrix_net_dict = {}
     
     def _get_obs(self) -> np.ndarray:
         return np.array(np.concatenate((self._agent_location, self._target_location)))
@@ -59,14 +55,14 @@ class PCBEnvPos(gym.Env):
 
     def reset(self):
 
-        pcb_name = random.choice(self.pcb_names)
-        if pcb_name in self.pcb_matrix_net_dict:
-            self.pcb_matrix, self.nets = copy(self.pcb_matrix_net_dict[pcb_name][0]), deepcopy(self.pcb_matrix_net_dict[pcb_name][1])
+        self.pcb_name = random.choice(self.pcb_names)
+        if self.pcb_name in self.pcb_matrix_net_dict:
+            self.pcb_matrix, self.nets = deepcopy(self.pcb_matrix_net_dict[self.pcb_name][0]), deepcopy(self.pcb_matrix_net_dict[self.pcb_name][1])
         else:
-            pcb_file_path = os.path.join(self.pcb_folder, pcb_name + '/processed.kicad_pcb')
+            pcb_file_path = os.path.join(self.pcb_folder, self.pcb_name + '/processed.kicad_pcb')
             self.pcb = PCB(pcb_file_path)
-            pcb_matrix, nets = PCBGridize(pcb=self.pcb, resolution=self.resolution)
-            self.pcb_matrix_net_dict[pcb_name] = [pcb_matrix, nets]
+            self.pcb_matrix, self.nets = PCBGridize(pcb=self.pcb, resolution=self.resolution)
+            self.pcb_matrix_net_dict[self.pcb_name] = [deepcopy(self.pcb_matrix), deepcopy(self.nets)]
        
         self.nets_indices = list(self.nets.keys())
         self.current_net = self.nets_indices.pop(0)
@@ -104,6 +100,8 @@ class PCBEnvPos(gym.Env):
                 return
             else:
                 self.current_net = self.nets_indices.pop(0)
+                # if len(self.nets[self.current_net]) == 1:
+                #     print(f'why does this happen? {self.current_net}')
             self._agent_location = np.array(self.nets[self.current_net].pop(0))
         else:
             self._agent_location = self._target_location
@@ -120,6 +118,8 @@ class PCBEnvPos(gym.Env):
         self.path_length += 1
         if np.array_equal(new_location, self._target_location):
             self._to_next_pair()
+            if self.terminated:
+                return
         # We use `np.clip` to make sure we don't leave the grid
         else:
             self._agent_location = np.clip(
@@ -131,6 +131,8 @@ class PCBEnvPos(gym.Env):
             if (matrix_value != 0 and matrix_value != self.current_net) or tuple(new_location) in self.current_path:
                 if self.termination_rule == "vr":
                     self._to_next_pair()
+                    if self.terminated:
+                        return
                 self.DRVs += 1
                 self.conflict = True
             else:
