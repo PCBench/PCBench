@@ -307,7 +307,6 @@ def extract_single_via_pad(via_info: Dict[str, Any]) -> List[Any]:
         ret_pads.append([via_info["net"], pad_info])
     return ret_pads
 
-# TODO: maybe unnecessary?
 def extract_net_classes(pcb: PCB):
     net_classes = [extract_recursive(net_class) for net_class in pcb.net_class]
     name_and_index = [extract_recursive(net) for net in pcb.net]
