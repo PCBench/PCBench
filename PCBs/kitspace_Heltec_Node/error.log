@@ -1,0 +1,8 @@
+Traceback (most recent call last):
+  File "C:\Users\abbaj\Desktop\PCBench\Scripts\Data_cleaning\PCB_cleaner.py", line 199, in <module>
+    pcb = PCB(kicad_filename)
+  File "C:\Users\abbaj\Desktop\PCBench\Scripts\Data_cleaning\extract_kicad.py", line 34, in __init__
+    self.nets_info, self.differential_pairs = extract_net_info(pcb=self.pcb, net_indices=self.net_indices)
+  File "C:\Users\abbaj\Desktop\PCBench\Scripts\Data_cleaning\extract_kicad.py", line 83, in extract_net_info
+    if "-" == name[-1] and name[:-1] + "+" in netname2idx:
+TypeError: 'int' object is not subscriptable
