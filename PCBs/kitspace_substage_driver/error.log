@@ -1,0 +1,10 @@
+Traceback (most recent call last):
+  File "C:\Users\abbaj\Desktop\PCBench\Scripts\Data_cleaning\PCB_cleaner.py", line 199, in <module>
+    pcb = PCB(kicad_filename)
+  File "C:\Users\abbaj\Desktop\PCBench\Scripts\Data_cleaning\extract_kicad.py", line 18, in __init__
+    self.layers = extract_layer(pcb=self.pcb, max_layer_index=self.max_layer_index)
+  File "C:\Users\abbaj\Desktop\PCBench\Scripts\Data_cleaning\extract_kicad.py", line 139, in extract_layer
+    for k in pcb.layers:
+  File "C:\Users\abbaj\Desktop\PCBench\Scripts\Data_cleaning\sexp_parser.py", line 178, in __getattr__
+    raise AttributeError('{}: key "{}" not found'.format(self._line,name))
+AttributeError: 1: key "layers" not found

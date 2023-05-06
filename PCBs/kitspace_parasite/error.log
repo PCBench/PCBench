@@ -1,0 +1,10 @@
+Traceback (most recent call last):
+  File "C:\Users\abbaj\Desktop\PCBench\Scripts\Data_cleaning\PCB_cleaner.py", line 199, in <module>
+    pcb = PCB(kicad_filename)
+  File "C:\Users\abbaj\Desktop\PCBench\Scripts\Data_cleaning\extract_kicad.py", line 21, in __init__
+    min_x, min_y, max_x, max_y, lines = extract_bound(self.pcb.gr_line, self.pcb.gr_arc)
+  File "C:\Users\abbaj\Desktop\PCBench\Scripts\Data_cleaning\extract_kicad.py", line 240, in extract_bound
+    lines.append([tuple(arcs.start), tuple(arcs.end), arcs.angle, width])
+  File "C:\Users\abbaj\Desktop\PCBench\Scripts\Data_cleaning\sexp_parser.py", line 178, in __getattr__
+    raise AttributeError('{}: key "{}" not found'.format(self._line,name))
+AttributeError: 5808: key "angle" not found

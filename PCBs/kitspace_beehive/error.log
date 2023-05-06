@@ -1,0 +1,8 @@
+Traceback (most recent call last):
+  File "C:\Users\abbaj\Desktop\PCBench\Scripts\Data_cleaning\PCB_cleaner.py", line 199, in <module>
+    pcb = PCB(kicad_filename)
+  File "C:\Users\abbaj\Desktop\PCBench\Scripts\Data_cleaning\extract_kicad.py", line 34, in __init__
+    self.nets_info, self.differential_pairs = extract_net_info(pcb=self.pcb, net_indices=self.net_indices)
+  File "C:\Users\abbaj\Desktop\PCBench\Scripts\Data_cleaning\extract_kicad.py", line 94, in extract_net_info
+    netidx = netname2idx[str(netname)]
+KeyError: 'Net-(C1-Pad1)'
