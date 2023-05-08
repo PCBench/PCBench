@@ -116,7 +116,7 @@ class PCB:
                     'vias': extract_track_pieces(self._vias)
                 }
             }
-        with open(f'{target_dir}{self.file[self.file.rindex("/")+1:-10]}_RDL.json', 'w') as fd:
+        with open(f'{target_dir}final.json', 'w') as fd:
             s = json.dumps(dump,indent=2)
             s = re.sub("(?<=\[)[^\[\]]+(?=])", repl_func, s)
             fd.write(s)
