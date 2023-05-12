@@ -1,10 +1,10 @@
-Traceback (most recent call last):
-  File "C:\Users\abbaj\Desktop\PCBench\Scripts\Data_cleaning\PCB_cleaner.py", line 199, in <module>
-    pcb = PCB(kicad_filename)
-  File "C:\Users\abbaj\Desktop\PCBench\Scripts\Data_cleaning\extract_kicad.py", line 16, in __init__
-    self.pcb = KicadPCB.load(kicad_file)
-  File "C:\Users\abbaj\Desktop\PCBench\Scripts\Data_cleaning\kicad_pcb.py", line 90, in load
-    ret = KicadPCB(parseSexp(f.read()))
-  File "C:\Users\abbaj\Desktop\PCBench\Scripts\Data_cleaning\sexp_parser.py", line 764, in parseSexp
-    assert stack, "Trouble with nesting of brackets"
-AssertionError: Trouble with nesting of brackets
+Traceback (most recent call last):
+  File "PCB_cleaner.py", line 203, in <module>
+    pcb = PCB(kicad_filename)
+  File "/home/youbiao/PCBench/Scripts/Data_cleaning/../Data_extraction/extract_kicad.py", line 40, in __init__
+    self.pcb = KicadPCB.load(kicad_file)
+  File "/home/youbiao/PCBench/Scripts/Data_cleaning/../Data_extraction/thirdparty/kicad_parser/kicad_pcb.py", line 90, in load
+    ret = KicadPCB(parseSexp(f.read()))
+  File "/home/youbiao/PCBench/Scripts/Data_cleaning/../Data_extraction/thirdparty/kicad_parser/sexp_parser.py", line 764, in parseSexp
+    assert stack, "Trouble with nesting of brackets"
+AssertionError: Trouble with nesting of brackets

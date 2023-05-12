@@ -1,0 +1,10 @@
+Traceback (most recent call last):
+  File "PCB_cleaner.py", line 203, in <module>
+    pcb = PCB(kicad_filename)
+  File "/home/youbiao/PCBench/Scripts/Data_cleaning/../Data_extraction/extract_kicad.py", line 58, in __init__
+    self.nets_info, self.differential_pairs = extract_net_info(pcb=self.pcb, net_indices=self.net_indices)
+  File "/home/youbiao/PCBench/Scripts/Data_cleaning/../Data_extraction/extract_kicad.py", line 153, in extract_net_info
+    nets_info[netidx]["clearance"] = net_class['clearance']
+  File "/home/youbiao/PCBench/Scripts/Data_cleaning/../Data_extraction/thirdparty/kicad_parser/sexp_parser.py", line 146, in __getitem__
+    v = self._value[key]
+TypeError: list indices must be integers or slices, not str
