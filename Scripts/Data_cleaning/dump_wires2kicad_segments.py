@@ -1,5 +1,8 @@
+import sys
+sys.path.append('..')
+
 from typing import Any, Dict, List, Optional
-from kicad_pcb import *
+from Data_extraction.thirdparty.kicad_parser.kicad_pcb import *
 import os
 
 def delete_segment_via(pcb: KicadPCB) -> None:
