@@ -23,8 +23,12 @@ if __name__ == "__main__":
     for file in tqdm(files):
         # Attempt to run the cleaner on all files
         error_log_Path = file.replace('raw.kicad_pcb', "error.log")
+        processed_path = file.replace('raw.kicad_pcb', 'processed.kicad_pcb')
         if os.path.exists(error_log_Path):
             os.remove(error_log_Path)
+        if os.path.exists(processed_path):
+            print(f"removing file: {processed_path}")
+            os.remove(processed_path)
         try:
             # os.chdir(file.replace("/raw.kicad_pcb", ''))
             result = subprocess.check_output(["python", "PCB_cleaner.py", file], stderr=subprocess.STDOUT) 

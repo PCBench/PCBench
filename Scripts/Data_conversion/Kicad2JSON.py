@@ -91,7 +91,6 @@ def extract_net_pads(pcb: PCB) -> Dict[str, Any]:
 
 
 if __name__ == "__main__":
-    kicad_dir = "../../PCBs/tmk_HHKB_controller/"
-    kicad_file = kicad_dir + "processed.kicad_pcb"
-    pcb = PCB(kicad_file)
+
+    kicad_dir = sys.argv[1]
     dump_to_PBCRDL_json(target_dir=kicad_dir)
