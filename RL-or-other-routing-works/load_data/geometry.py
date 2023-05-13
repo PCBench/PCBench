@@ -4,13 +4,6 @@ import numpy as np
 from shapely.geometry import Polygon, Point
 import math
 
-def rotate(pos, theta):
-    theta = radians(theta)
-    c, s = np.cos(theta), np.sin(theta)
-    R = np.array(((c, -s), (s, c)))
-    
-    return np.matmul(R, pos)
-
 
 def closest_point_idx(points: List[Tuple[int, int, int]], given_point: Tuple[int, int, int]) -> int:
     # Convert list of points to a numpy array
@@ -24,6 +17,16 @@ def closest_point_idx(points: List[Tuple[int, int, int]], given_point: Tuple[int
     closest_idx = np.argmin(distances)
     # Return the closest point
     return closest_idx
+
+
+def rotatePoint(centerPoint: Tuple[float, float], point: Tuple[float, float], angle: float) -> Tuple[float, float]:
+    """Rotates a point around another centerPoint. Angle is in degrees.
+    Rotation is counter-clockwise"""
+    angle = math.radians(angle)
+    temp_point = point[0]-centerPoint[0] , point[1]-centerPoint[1]
+    temp_point = ( temp_point[0]*math.cos(angle)-temp_point[1]*math.sin(angle) , temp_point[0]*math.sin(angle)+temp_point[1]*math.cos(angle))
+    temp_point = temp_point[0]+centerPoint[0] , temp_point[1]+centerPoint[1]
+    return temp_point
 
 
 def sort_quadrilateral_clockwise(vertices: List[Tuple[float, float]]) -> List[int]:

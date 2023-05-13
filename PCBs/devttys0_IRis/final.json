@@ -1,7 +1,14 @@
 {
   "layers": ["F.Cu", "B.Cu"],
   "unit": "mm",
-  "border": [],
+  "border": [
+    {
+      "type": "circle",
+      "center": [142.24, 99.568],
+      "radius": 15.649368549561345,
+      "width": 0.15
+    }
+  ],
   "nets": {
     "1": [
       {
@@ -10,7 +17,7 @@
         "shape": "rect",
         "center": [137.16, 92.268],
         "radii": [1.2, 0.75],
-        "rotation": 0
+        "rotation": 90
       },
       {
         "type": "smd",
@@ -18,7 +25,7 @@
         "shape": "rect",
         "center": [135.128, 95.57],
         "radii": [1.2, 0.75],
-        "rotation": 180
+        "rotation": 90
       },
       {
         "type": "smd",
@@ -26,7 +33,7 @@
         "shape": "rect",
         "center": [139.192, 92.11800000000001],
         "radii": [1.2, 0.9],
-        "rotation": 0
+        "rotation": 90
       },
       {
         "type": "smd",
@@ -34,7 +41,7 @@
         "shape": "rect",
         "center": [148.59, 90.34],
         "radii": [1.2, 0.9],
-        "rotation": 180
+        "rotation": 90
       },
       {
         "type": "smd",
@@ -42,7 +49,7 @@
         "shape": "rect",
         "center": [143.19, 89.32400000000001],
         "radii": [1.06, 0.65],
-        "rotation": 0
+        "rotation": 90
       },
       {
         "type": "thru_hole",
@@ -50,7 +57,7 @@
         "shape": "rect",
         "center": [131.826, 92.456],
         "radii": [2.2352, 2.2352],
-        "rotation": 90
+        "rotation": 0
       }
     ],
     "2": [
@@ -60,7 +67,7 @@
         "shape": "rect",
         "center": [137.16, 94.168],
         "radii": [1.2, 0.75],
-        "rotation": 0
+        "rotation": 90
       },
       {
         "type": "thru_hole",
@@ -68,7 +75,7 @@
         "shape": "rect",
         "center": [142.24, 94.56674],
         "radii": [4.50088, 3.29946],
-        "rotation": 0
+        "rotation": 90
       },
       {
         "type": "smd",
@@ -76,7 +83,7 @@
         "shape": "rect",
         "center": [146.82724, 94.3],
         "radii": [0.8001, 0.8001],
-        "rotation": 90
+        "rotation": 0
       },
       {
         "type": "smd",
@@ -84,7 +91,7 @@
         "shape": "rect",
         "center": [146.82724, 96.2],
         "radii": [0.8001, 0.8001],
-        "rotation": 90
+        "rotation": 0
       },
       {
         "type": "smd",
@@ -92,7 +99,7 @@
         "shape": "rect",
         "center": [141.29000000000002, 91.524],
         "radii": [1.06, 0.65],
-        "rotation": 0
+        "rotation": 90
       }
     ],
     "3": [
@@ -102,7 +109,7 @@
         "shape": "rect",
         "center": [143.068, 85.852],
         "radii": [1.2, 0.75],
-        "rotation": 90
+        "rotation": 0
       },
       {
         "type": "smd",
@@ -110,7 +117,7 @@
         "shape": "rect",
         "center": [141.054, 87.63],
         "radii": [1.2, 0.9],
-        "rotation": 90
+        "rotation": 0
       },
       {
         "type": "smd",
@@ -118,7 +125,7 @@
         "shape": "rect",
         "center": [141.054, 85.852],
         "radii": [1.2, 0.9],
-        "rotation": 90
+        "rotation": 0
       },
       {
         "type": "smd",
@@ -126,7 +133,7 @@
         "shape": "rect",
         "center": [141.29000000000002, 89.32400000000001],
         "radii": [1.06, 0.65],
-        "rotation": 0
+        "rotation": 90
       }
     ],
     "-1": [
@@ -136,7 +143,7 @@
         "shape": "rect",
         "center": [144.968, 85.852],
         "radii": [1.2, 0.75],
-        "rotation": 90
+        "rotation": 0
       },
       {
         "type": "smd",
@@ -144,7 +151,7 @@
         "shape": "rect",
         "center": [145.034, 89.474],
         "radii": [1.2, 0.75],
-        "rotation": 0
+        "rotation": 90
       },
       {
         "type": "smd",
@@ -152,7 +159,7 @@
         "shape": "rect",
         "center": [141.29000000000002, 112.014],
         "radii": [1.2, 0.75],
-        "rotation": 90
+        "rotation": 0
       },
       {
         "type": "smd",
@@ -160,7 +167,7 @@
         "shape": "rect",
         "center": [138.36399999999998, 107.95],
         "radii": [1.2, 0.75],
-        "rotation": 90
+        "rotation": 0
       },
       {
         "type": "smd",
@@ -168,7 +175,7 @@
         "shape": "rect",
         "center": [132.842, 101.534],
         "radii": [1.2, 0.75],
-        "rotation": 0
+        "rotation": 90
       },
       {
         "type": "thru_hole",
@@ -176,7 +183,7 @@
         "shape": "rect",
         "center": [142.24, 104.56926],
         "radii": [4.50088, 3.29946],
-        "rotation": 180
+        "rotation": 90
       },
       {
         "type": "smd",
@@ -184,7 +191,7 @@
         "shape": "rect",
         "center": [139.192, 94.318],
         "radii": [1.2, 0.9],
-        "rotation": 0
+        "rotation": 90
       },
       {
         "type": "smd",
@@ -192,7 +199,7 @@
         "shape": "rect",
         "center": [138.854, 87.63],
         "radii": [1.2, 0.9],
-        "rotation": 90
+        "rotation": 0
       },
       {
         "type": "smd",
@@ -200,7 +207,7 @@
         "shape": "rect",
         "center": [138.854, 85.852],
         "radii": [1.2, 0.9],
-        "rotation": 90
+        "rotation": 0
       },
       {
         "type": "smd",
@@ -208,7 +215,7 @@
         "shape": "rect",
         "center": [146.812, 89.32400000000001],
         "radii": [1.2, 0.9],
-        "rotation": 180
+        "rotation": 90
       },
       {
         "type": "smd",
@@ -216,7 +223,7 @@
         "shape": "rect",
         "center": [132.842, 95.42],
         "radii": [1.2, 0.9],
-        "rotation": 0
+        "rotation": 90
       },
       {
         "type": "smd",
@@ -224,7 +231,7 @@
         "shape": "rect",
         "center": [147.15, 109.982],
         "radii": [1.2, 0.9],
-        "rotation": 90
+        "rotation": 0
       },
       {
         "type": "smd",
@@ -232,7 +239,7 @@
         "shape": "rect",
         "center": [138.684, 112.098],
         "radii": [1.2, 0.9],
-        "rotation": 180
+        "rotation": 90
       },
       {
         "type": "smd",
@@ -240,7 +247,7 @@
         "shape": "rect",
         "center": [136.398, 112.098],
         "radii": [1.2, 0.9],
-        "rotation": 180
+        "rotation": 90
       },
       {
         "type": "smd",
@@ -248,7 +255,7 @@
         "shape": "rect",
         "center": [142.24, 89.32400000000001],
         "radii": [1.06, 0.65],
-        "rotation": 0
+        "rotation": 90
       },
       {
         "type": "smd",
@@ -256,7 +263,7 @@
         "shape": "rect",
         "center": [142.24, 107.866],
         "radii": [1.06, 0.65],
-        "rotation": 0
+        "rotation": 90
       },
       {
         "type": "thru_hole",
@@ -264,7 +271,7 @@
         "shape": "circle",
         "center": [150.49, 99.568],
         "radii": [1.524, 1.524],
-        "rotation": 90
+        "rotation": 0
       },
       {
         "type": "thru_hole",
@@ -272,7 +279,7 @@
         "shape": "oval",
         "center": [155.448, 101.09200000000001],
         "radii": [2.032, 2.032],
-        "rotation": 0
+        "rotation": 90
       },
       {
         "type": "smd",
@@ -280,7 +287,7 @@
         "shape": "rect",
         "center": [137.414, 100.473],
         "radii": [0.91, 1.22],
-        "rotation": 90
+        "rotation": 0
       }
     ],
     "5": [
@@ -290,7 +297,7 @@
         "shape": "rect",
         "center": [145.034, 91.37400000000001],
         "radii": [1.2, 0.75],
-        "rotation": 0
+        "rotation": 90
       },
       {
         "type": "smd",
@@ -298,7 +305,7 @@
         "shape": "rect",
         "center": [146.812, 91.524],
         "radii": [1.2, 0.9],
-        "rotation": 180
+        "rotation": 90
       },
       {
         "type": "smd",
@@ -306,7 +313,7 @@
         "shape": "rect",
         "center": [143.19, 91.524],
         "radii": [1.06, 0.65],
-        "rotation": 0
+        "rotation": 90
       }
     ],
     "6": [
@@ -316,7 +323,7 @@
         "shape": "rect",
         "center": [135.128, 97.47],
         "radii": [1.2, 0.75],
-        "rotation": 180
+        "rotation": 90
       },
       {
         "type": "smd",
@@ -324,7 +331,7 @@
         "shape": "rect",
         "center": [132.842, 97.61999999999999],
         "radii": [1.2, 0.9],
-        "rotation": 0
+        "rotation": 90
       },
       {
         "type": "smd",
@@ -332,7 +339,7 @@
         "shape": "rect",
         "center": [135.128, 101.516],
         "radii": [1.2, 0.9],
-        "rotation": 0
+        "rotation": 90
       },
       {
         "type": "thru_hole",
@@ -340,7 +347,7 @@
         "shape": "rect",
         "center": [131.572, 106.426],
         "radii": [2.2352, 2.2352],
-        "rotation": 90
+        "rotation": 0
       }
     ],
     "7": [
@@ -350,7 +357,7 @@
         "shape": "rect",
         "center": [143.19, 112.014],
         "radii": [1.2, 0.75],
-        "rotation": 90
+        "rotation": 0
       },
       {
         "type": "smd",
@@ -358,7 +365,7 @@
         "shape": "rect",
         "center": [144.95000000000002, 109.982],
         "radii": [1.2, 0.9],
-        "rotation": 90
+        "rotation": 0
       },
       {
         "type": "smd",
@@ -366,7 +373,7 @@
         "shape": "rect",
         "center": [143.19, 110.06599999999999],
         "radii": [1.06, 0.65],
-        "rotation": 0
+        "rotation": 90
       }
     ],
     "8": [
@@ -376,7 +383,7 @@
         "shape": "rect",
         "center": [136.464, 107.95],
         "radii": [1.2, 0.75],
-        "rotation": 90
+        "rotation": 0
       },
       {
         "type": "smd",
@@ -384,7 +391,7 @@
         "shape": "rect",
         "center": [138.684, 109.89800000000001],
         "radii": [1.2, 0.9],
-        "rotation": 180
+        "rotation": 90
       },
       {
         "type": "smd",
@@ -392,7 +399,7 @@
         "shape": "rect",
         "center": [136.398, 109.89800000000001],
         "radii": [1.2, 0.9],
-        "rotation": 180
+        "rotation": 90
       },
       {
         "type": "smd",
@@ -400,7 +407,7 @@
         "shape": "rect",
         "center": [141.29000000000002, 110.06599999999999],
         "radii": [1.06, 0.65],
-        "rotation": 0
+        "rotation": 90
       }
     ],
     "9": [
@@ -410,7 +417,7 @@
         "shape": "rect",
         "center": [132.842, 99.634],
         "radii": [1.2, 0.75],
-        "rotation": 0
+        "rotation": 90
       },
       {
         "type": "thru_hole",
@@ -418,7 +425,7 @@
         "shape": "circle",
         "center": [130.49, 99.568],
         "radii": [1.524, 1.524],
-        "rotation": 90
+        "rotation": 0
       }
     ],
     "10": [
@@ -428,7 +435,7 @@
         "shape": "rect",
         "center": [148.82622, 95.25],
         "radii": [0.8001, 0.8001],
-        "rotation": 0
+        "rotation": 90
       },
       {
         "type": "smd",
@@ -436,7 +443,7 @@
         "shape": "rect",
         "center": [150.12923999999998, 95.316],
         "radii": [0.8001, 0.8001],
-        "rotation": 90
+        "rotation": 0
       },
       {
         "type": "smd",
@@ -444,7 +451,7 @@
         "shape": "rect",
         "center": [150.12923999999998, 97.21600000000001],
         "radii": [0.8001, 0.8001],
-        "rotation": 90
+        "rotation": 0
       }
     ],
     "13": [
@@ -454,7 +461,7 @@
         "shape": "rect",
         "center": [148.59, 92.53999999999999],
         "radii": [1.2, 0.9],
-        "rotation": 180
+        "rotation": 90
       },
       {
         "type": "smd",
@@ -462,7 +469,7 @@
         "shape": "rect",
         "center": [150.13178, 92.964],
         "radii": [0.8001, 0.8001],
-        "rotation": 90
+        "rotation": 0
       }
     ],
     "14": [
@@ -472,7 +479,7 @@
         "shape": "rect",
         "center": [135.128, 103.716],
         "radii": [1.2, 0.9],
-        "rotation": 0
+        "rotation": 90
       },
       {
         "type": "smd",
@@ -480,7 +487,7 @@
         "shape": "rect",
         "center": [141.29000000000002, 107.866],
         "radii": [1.06, 0.65],
-        "rotation": 0
+        "rotation": 90
       },
       {
         "type": "smd",
@@ -488,7 +495,7 @@
         "shape": "rect",
         "center": [137.414, 103.74300000000001],
         "radii": [0.91, 1.22],
-        "rotation": 90
+        "rotation": 0
       },
       {
         "type": "smd",
@@ -496,7 +503,7 @@
         "shape": "rect",
         "center": [146.8042, 106.0958],
         "radii": [1.2, 0.9],
-        "rotation": 90
+        "rotation": 0
       }
     ],
     "15": [
@@ -506,7 +513,7 @@
         "shape": "rect",
         "center": [143.19, 107.866],
         "radii": [1.06, 0.65],
-        "rotation": 0
+        "rotation": 90
       },
       {
         "type": "smd",
@@ -514,7 +521,7 @@
         "shape": "rect",
         "center": [149.014, 107.95],
         "radii": [1.2, 0.9],
-        "rotation": 90
+        "rotation": 0
       },
       {
         "type": "smd",
@@ -522,7 +529,7 @@
         "shape": "rect",
         "center": [149.0042, 106.0958],
         "radii": [1.2, 0.9],
-        "rotation": 90
+        "rotation": 0
       }
     ],
     "11": [
@@ -532,7 +539,7 @@
         "shape": "rect",
         "center": [155.448, 98.552],
         "radii": [2.032, 2.032],
-        "rotation": 0
+        "rotation": 90
       },
       {
         "type": "smd",
@@ -540,7 +547,7 @@
         "shape": "rect",
         "center": [151.214, 107.95],
         "radii": [1.2, 0.9],
-        "rotation": 90
+        "rotation": 0
       }
     ],
     "12": [
@@ -550,7 +557,7 @@
         "shape": "rect",
         "center": [152.12822, 96.266],
         "radii": [0.8001, 0.8001],
-        "rotation": 0
+        "rotation": 90
       },
       {
         "type": "smd",
@@ -558,7 +565,7 @@
         "shape": "rect",
         "center": [152.13076, 93.914],
         "radii": [0.8001, 0.8001],
-        "rotation": 90
+        "rotation": 0
       },
       {
         "type": "smd",
@@ -566,7 +573,7 @@
         "shape": "rect",
         "center": [152.13076, 92.014],
         "radii": [0.8001, 0.8001],
-        "rotation": 90
+        "rotation": 0
       }
     ]
   },
