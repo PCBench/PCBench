@@ -44,11 +44,14 @@ def calculate_pad_pos_size(net2pads_raw: Dict[float, List[Any]], exclude_nets: L
                 pad_xy = cal_xy(pad["module_pos"], pad["relative_pos"], pad["m_rotation"])
                 pad_vertices = cal_real_pad_vertices(pad)
                 net2pads_new[netidx].append({
+                    "type": pad["type"],
+                    "shape": pad["shape"],
                     "pad_center_xy": pad_xy, 
                     "pad_vertices": pad_vertices,
                     "pad_size": pad["size"],
                     "pad_layer": pad["layer"],
-                    "drill_hole": pad["drill_hole"]})
+                    "drill_hole": pad["drill_hole"],
+                    "m_p_index": pad['m_p_index']})
         else:
             net2pads_new[netidx] = pads
     return net2pads_new 

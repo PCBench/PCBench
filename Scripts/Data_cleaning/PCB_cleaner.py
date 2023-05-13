@@ -1,5 +1,8 @@
+import sys
+sys.path.append('..')
+
 from typing import Any, Dict, List, Set, Tuple
-from extract_kicad import PCB
+from Data_extraction.extract_kicad import PCB
 from collections import defaultdict
 import math
 import networkx as nx
@@ -105,11 +108,11 @@ def del_isolate_pads(pcb: PCB) -> None:
     obs_pads = []
     for net, pads in pcb.net_pads.items():
         new_pads = []
-        drill_holes = defaultdict(list)
+        drill_holes = dict()
         single_layer_pads = []
         for pad_info in pads:
             if pad_info["drill_hole"]:
-                drill_holes[pad_info['m_p_index']].append(pad_info)
+                drill_holes[pad_info['m_p_index']] = pad_info
             else:
                 single_layer_pads.append(pad_info)
         for pad_info in single_layer_pads:
@@ -120,14 +123,14 @@ def del_isolate_pads(pcb: PCB) -> None:
                 obs_pads.append(pad_info)
         for _, dhs in drill_holes.items():
             dh_obs = True
-            for dh in dhs:
-                dh_pos = dh["pad_center_xy"] + (pcb.layers.index(dh["pad_layer"]),)
+            for l in dhs["pad_layer"]:
+                dh_pos = dhs["pad_center_xy"] + (pcb.layers.index(l),)
                 if is_path_end_node(dh_pos, min(pad_info["pad_size"]), seg_nodes):
                     dh_obs = False
             if dh_obs:
-                obs_pads += dhs
+                obs_pads.append(dhs)
             else:
-                new_pads += dhs
+                new_pads.append(dhs)
 
         pcb.net_pads[net] = new_pads
 
@@ -166,7 +169,8 @@ def is_pad_node(
         layers: List[str]
     ) -> bool:
     for pad_info in net_pads:
-        if node_xyz[-1] != layers.index(pad_info["pad_layer"]):
+        pad_layers = [layers.index(pl) for pl in pad_info["pad_layer"]]
+        if node_xyz[-1] not in pad_layers:
             continue
         pad_xy = pad_info["pad_center_xy"]
         pad_size = min(pad_info["pad_size"])
