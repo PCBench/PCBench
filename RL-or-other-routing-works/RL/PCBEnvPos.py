@@ -5,14 +5,13 @@ from typing import List
 import gymnasium as gym
 from gymnasium import spaces
 import numpy as np
-from load_data.extract_kicad import PCB
 from load_data.PCBGridize import PCBGridize
 from load_data.geometry import closest_point_idx
 from collections import defaultdict
 import random
 import os
-from copy import copy, deepcopy
-from scipy.spatial.distance import cityblock
+import json
+from copy import deepcopy
 
 class PCBEnvPos(gym.Env):
     def __init__(
@@ -59,11 +58,13 @@ class PCBEnvPos(gym.Env):
         if self.pcb_name in self.pcb_matrix_net_dict:
             self.pcb_matrix, self.nets = deepcopy(self.pcb_matrix_net_dict[self.pcb_name][0]), deepcopy(self.pcb_matrix_net_dict[self.pcb_name][1])
         else:
-            pcb_file_path = os.path.join(self.pcb_folder, self.pcb_name + '/processed.kicad_pcb')
-            self.pcb = PCB(pcb_file_path)
-            self.pcb_matrix, self.nets = PCBGridize(pcb=self.pcb, resolution=self.resolution)
+            pcb_file_path = os.path.join(self.pcb_folder, self.pcb_name + '/final.json')
+            with open(pcb_file_path) as jf:
+                pcb_dict = json.load(jf)
+            self.pcb_matrix, self.nets = PCBGridize(pcb=pcb_dict, resolution=self.resolution)
             self.pcb_matrix_net_dict[self.pcb_name] = [deepcopy(self.pcb_matrix), deepcopy(self.nets)]
-       
+        
+        self.layers = pcb_dict["layers"]
         self.nets_indices = list(self.nets.keys())
         self.current_net = self.nets_indices.pop(0)
         self._agent_location = np.array(self.nets[self.current_net].pop(0))
@@ -125,7 +126,7 @@ class PCBEnvPos(gym.Env):
             self._agent_location = np.clip(
                 new_location,
                 [0, 0, 0], 
-                [self.pcb_matrix.shape[0]-1, self.pcb_matrix.shape[1]-1, len(self.pcb.layers)-1],
+                [self.pcb_matrix.shape[0]-1, self.pcb_matrix.shape[1]-1, len(self.layers)-1],
             )
             matrix_value = self.pcb_matrix[tuple(self._agent_location)]
             if (matrix_value != 0 and matrix_value != self.current_net) or tuple(new_location) in self.current_path:

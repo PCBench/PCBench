@@ -1,10 +1,9 @@
-from typing import Any, Dict, Iterable, List, Optional, Set, Tuple, Union
-import numpy as np
+from typing import Any, Dict, Iterable, List, Optional, Set, Tuple
 import collections
 from .thirdparty.kicad_parser.kicad_pcb import *
 from .thirdparty.kicad_parser.sexp_parser import *
-import json, re
 from .utils.pad_rotation import calculate_pad_pos_size
+from scipy.spatial import distance
 
 def extract_recursive(sexp_obj: Sexp, 
                       exclude:list = [], only:list = None, 
@@ -42,8 +41,7 @@ class PCB:
         self.layers = extract_layer(pcb=self.pcb, max_layer_index=self.max_layer_index)
 
         # extract boundary info: circuit region and boundary lines with width
-        min_x, min_y, max_x, max_y, lines = extract_bound(self.pcb.gr_line, self.pcb.gr_arc)
-        self.circuit_range = [min_x, min_y, max_x, max_y]
+        lines = extract_bound(self.pcb.gr_line, self.pcb.gr_arc, self.pcb.gr_circle)
         self.boundary_lines = lines
 
         # extract net info: net indices, pads with their regions
@@ -93,37 +91,6 @@ class PCB:
     @nets_info.setter
     def nets_info(self, value):
         self._nets_info = value
-
-    # def dump_to_PBCRDL_json(self, target_dir):
-    #     def repl_func(match: re.Match):
-    #         # JSON formatting helper
-    #         return " ".join(match.group().split())
-
-    #     dump = {
-    #             "layers": self.layers, 
-    #             "unit": "mm", # TODO: check where this is defined in kicad files
-                
-    #             "circuit_region": self.circuit_range,  # this is is region of circuit, expressed by xy coordinates 
-
-    #             # this is a list containing all the boundaries lines
-    #             "boundaries": self.boundary_lines,
-    #             "net_indices": list(self.net_indices),
-    #             'layers':len(self.layers),
-    #             'unit': 'mm STATIC',
-    #             'nets': self._net_pads,
-    #             'rules':{
-    #                 'net_classes': extract_net_classes(self.pcb) # TODO: is there a better way than extract_netclasses?
-    #             },
-    #             'solution': {
-    #                 'wires': extract_track_pieces(self._wires),
-    #                 'arcs': extract_track_pieces(self.pcb.arc),
-    #                 'vias': extract_track_pieces(self._vias)
-    #             }
-    #         }
-    #     with open(f'{target_dir}final.json', 'w') as fd:
-    #         s = json.dumps(dump,indent=2)
-    #         s = re.sub("(?<=\[)[^\[\]]+(?=])", repl_func, s)
-    #         fd.write(s)
 
 
 def extract_net_info(pcb: KicadPCB, net_indices: Set[int]) -> Tuple[Dict[int, Any], List[Tuple[int, int]]]:
@@ -266,31 +233,28 @@ def extract_pad(
 
 def extract_bound(
         gr_lines: List[Dict[str, Any]], 
-        gr_arcs: List[Dict[str, Any]]
+        gr_arcs: List[Dict[str, Any]],
+        gr_circles: List[Dict[str, Any]]
     ) -> Tuple[float, float, float, float, List[Any]]:
 
     lines = []
-    min_x, min_y = float("inf"), float("inf")
-    max_x, max_y = float("-inf"), float("-inf") 
     width = 0
     for line in gr_lines:
         if line["layer"][1:-1] == "Edge.Cuts" or line["layer"] == "Edge.Cuts":
             width = line.width if "width" in line else line.stroke.width  # kicad v5 vs v6
-            min_x = min([min_x, line.start[0]+width, line.end[0]+width])
-            min_y = min([min_y, line.start[1]+width, line.end[1]+width])
-            max_x = max([max_x, line.start[0]-width, line.end[0]-width])
-            max_y = max([max_y, line.start[1]-width, line.end[1]-width])
             lines.append({"type":"polyline", "start":tuple(line.start), "end":tuple(line.end), "width":width})
     for arcs in gr_arcs:
         if arcs["layer"][1:-1] == "Edge.Cuts" or arcs["layer"] == "Edge.Cuts":
             width = arcs.width if "width" in arcs else arcs.stroke.width
-            min_x = min([min_x, arcs.start[0]+width, arcs.end[0]+width])
-            min_y = min([min_y, arcs.start[1]+width, arcs.end[1]+width])
-            max_x = max([max_x, arcs.start[0]-width, arcs.end[0]-width])
-            max_y = max([max_y, arcs.start[1]-width, arcs.end[1]-width])
-            lines.append({"type":"arc", "start":tuple(arcs.start), "end":tuple(arcs.end), "clockwise_angle": arcs.angle, "width":width})
+            lines.append({"type":"arc", "start":tuple(arcs.start), "center":tuple(arcs.end), "clockwise_angle":arcs.angle, "width":width})
     
-    return min_x, min_y, max_x, max_y, lines
+    for circle in gr_circles:
+        if circle["layer"][1:-1] == "Edge.Cuts" or circle["layer"] == "Edge.Cuts":
+            width = circle.width if "width" in circle else circle.stroke.width  # kicad v5 vs v6
+            radius = distance.euclidean(tuple(circle.end), tuple(circle.center))
+            lines.append({"type":"circle", "center":tuple(circle.center), "radius":radius, "width":width})
+
+    return lines
 
 def extract_single_via_pad(via_info: Dict[str, Any]) -> List[Any]:
     ret_pads = []

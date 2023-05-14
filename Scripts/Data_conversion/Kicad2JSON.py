@@ -81,7 +81,7 @@ def extract_net_pads(pcb: PCB) -> Dict[str, Any]:
                     (np.linalg.norm(v3, 2), tuple(v3))                    
                 ])[1][1]
                 longest_edge = - np.array(longest_edge) if longest_edge[0] < 0 else np.array(longest_edge)
-                rotation = round(math.degrees(math.atan2(longest_edge[0],longest_edge[1])))
+                rotation = round(math.degrees(math.atan2(longest_edge[1],longest_edge[0])))
                 rotation = rotation + 180 if rotation < 0 else rotation
             tmp_pad_dict["rotation"] = rotation
             new_pads.append(tmp_pad_dict)
