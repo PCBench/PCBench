@@ -105,6 +105,8 @@ def extract_net_info(pcb: KicadPCB, net_indices: Set[int]) -> Tuple[Dict[int, An
     differential_pairs = []
     # extract differential pairs
     for name in netname2idx:
+        if not isinstance(name, str):
+            name = str(name)
         if "-" == name[-1] and name[:-1] + "+" in netname2idx:
             differential_pairs.append((netname2idx[name], netname2idx[name[:-1]+"+"]))
     
