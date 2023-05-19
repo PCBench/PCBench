@@ -43,9 +43,11 @@ def PCBGridize(pcb: Dict[str, Any], resolution: Tuple[float, float]) -> None:
     pcb_matrix = np.zeros((x_grid, y_grid, len(pcb["layers"])))
     layer_name2ID = {pcb['layers'][i]: i for i in range(len(pcb["layers"]))}
     nets = defaultdict(list)
+    pad2region = dict()
     for net_idx, pads in pcb["nets"].items():
         net_idx = int(net_idx)
         for pad in pads:
+            pad_region = set([])
             pad_min_x = max(math.floor((pad["center"][0] - max(pad["radii"]) - min_x) / x_res), 0)
             pad_max_x = min(math.ceil((pad["center"][0] + max(pad["radii"]) - min_x) / x_res), x_grid-1)
             pad_min_y = max(math.floor((pad["center"][1] - max(pad["radii"]) - min_y) / y_res), 0)
@@ -56,11 +58,13 @@ def PCBGridize(pcb: Dict[str, Any], resolution: Tuple[float, float]) -> None:
                     if is_point_inside_pad(point=(real_x, real_y), pad=pad):
                         for ly in pad["layer"]:
                             pcb_matrix[(x,y,layer_name2ID[ly])] = net_idx
+                            pad_region.add((x,y,layer_name2ID[ly]))
             
             if net_idx > 0:
                 pad_center_grid_x = int((pad["center"][0] - min_x) / x_res)
                 pad_center_grid_y = int((pad["center"][1] - min_y) / y_res)
                 for ly in pad["layer"]:
                     nets[net_idx].append((pad_center_grid_x, pad_center_grid_y, layer_name2ID[ly]))
+                    pad2region[(pad_center_grid_x, pad_center_grid_y, layer_name2ID[ly])] = pad_region
 
-    return pcb_matrix, nets
+    return pcb_matrix, nets, pad2region

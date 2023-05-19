@@ -9,7 +9,7 @@ def extract_recursive(sexp_obj: Sexp,
                       exclude:list = [], only:list = None, 
                       parents:list = None):
     ret_dict = {}
-    if (not isinstance(sexp_obj._value,str)) and \
+    if (not isinstance(sexp_obj._value,str)) and not isinstance(sexp_obj._value,int) and \
         (any(isinstance(item,(Sexp)) for item in sexp_obj._value) or (isinstance(sexp_obj._value,OrderedDict))):
         for item in sexp_obj._value:
             if item not in exclude:
@@ -100,13 +100,11 @@ def extract_net_info(pcb: KicadPCB, net_indices: Set[int]) -> Tuple[Dict[int, An
     for net_idx_name in pcb.net:
         nets_info[net_idx_name[0]] = dict()
         nets_info[net_idx_name[0]]["net_name"] = net_idx_name[1]
-        netname2idx[net_idx_name[1]] = net_idx_name[0]
+        netname2idx[str(net_idx_name[1])] = net_idx_name[0]
     
     differential_pairs = []
     # extract differential pairs
     for name in netname2idx:
-        if not isinstance(name, str):
-            name = str(name)
         if "-" == name[-1] and name[:-1] + "+" in netname2idx:
             differential_pairs.append((netname2idx[name], netname2idx[name[:-1]+"+"]))
     

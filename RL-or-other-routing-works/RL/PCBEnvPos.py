@@ -5,7 +5,7 @@ from typing import List
 import gymnasium as gym
 from gymnasium import spaces
 import numpy as np
-from load_data.PCBGridize import PCBGridize
+from load_data.RLoader import PCBLoader
 from load_data.geometry import closest_point_idx
 from collections import defaultdict
 import random
@@ -40,7 +40,7 @@ class PCBEnvPos(gym.Env):
         self.action_space = spaces.Discrete(n_actions)
         self.observation_space = spaces.Box(low=0, high=30, shape=self.state_shape, dtype=np.float32)
 
-        self.pcb_matrix_net_dict = {}
+        self.pcb_holder = {}
     
     def _get_obs(self) -> np.ndarray:
         return np.array(np.concatenate((self._agent_location, self._target_location)))
@@ -55,17 +55,19 @@ class PCBEnvPos(gym.Env):
     def reset(self):
 
         self.pcb_name = random.choice(self.pcb_names)
-        pcb_file_path = os.path.join(self.pcb_folder, self.pcb_name + '/final.json')
-        with open(pcb_file_path) as jf:
-            pcb_dict = json.load(jf)
-        
-        if self.pcb_name in self.pcb_matrix_net_dict:
-            self.pcb_matrix, self.nets = deepcopy(self.pcb_matrix_net_dict[self.pcb_name][0]), deepcopy(self.pcb_matrix_net_dict[self.pcb_name][1])
+
+        if self.pcb_name in self.pcb_holder:
+            pcb = self.pcb_holder[self.pcb_name]
         else:
-            self.pcb_matrix, self.nets = PCBGridize(pcb=pcb_dict, resolution=self.resolution)
-            self.pcb_matrix_net_dict[self.pcb_name] = [deepcopy(self.pcb_matrix), deepcopy(self.nets)]
+            pcb_file_path = os.path.join(self.pcb_folder, self.pcb_name + '/final.json')
+            pcb = PCBLoader(pcb_file_path, self.resolution)
+            self.pcb_holder[self.pcb_name] = pcb
+
+        self.pcb_matrix, self.nets = deepcopy(pcb.routing_matrix), deepcopy(pcb.net_pads)
+        self.pad_region = pcb.pad_regions
+        self.layers = pcb.layers
+        self.net_meta = pcb.net_meta
         
-        self.layers = pcb_dict["layers"]
         self.nets_indices = list(self.nets.keys())
         self.current_net = self.nets_indices.pop(0)
         self._agent_location = np.array(self.nets[self.current_net].pop(0))
@@ -109,7 +111,7 @@ class PCBEnvPos(gym.Env):
             self._agent_location = self._target_location
 
         self._target_location = np.array(self.nets[self.current_net].pop(closest_point_idx(self._agent_location, self.nets[self.current_net])))
-        self.current_path.append(tuple(self._agent_location))
+        self.current_path = [tuple(self._agent_location)]
         self.path_length += 1
 
     def _update_state(self, action: int) -> None:
@@ -118,18 +120,19 @@ class PCBEnvPos(gym.Env):
         new_location = self._agent_location + direction
         self.current_path.append(tuple(self._agent_location))
         self.path_length += 1
-        if np.array_equal(new_location, self._target_location):
-            self._to_next_pair()
-            if self.terminated:
-                return
         # We use `np.clip` to make sure we don't leave the grid
-        else:
-            self._agent_location = np.clip(
+        self._agent_location = np.clip(
                 new_location,
                 [0, 0, 0], 
                 [self.pcb_matrix.shape[0]-1, self.pcb_matrix.shape[1]-1, len(self.layers)-1],
             )
-            matrix_value = self.pcb_matrix[tuple(self._agent_location)]
+        matrix_value = self.pcb_matrix[tuple(self._agent_location)]
+        # if np.array_equal(new_location, self._target_location):
+        if tuple(self._agent_location) in self.pad_region[tuple(self._target_location)]:
+            self._to_next_pair()
+            if self.terminated:
+                return
+        else:
             if (matrix_value != 0 and matrix_value != self.current_net) or tuple(new_location) in self.current_path:
                 if self.termination_rule == "vr":
                     self._to_next_pair()
@@ -138,6 +141,7 @@ class PCBEnvPos(gym.Env):
                 self.DRVs += 1
                 self.conflict = True
             else:
+                # TODO: add wire width
                 self.pcb_matrix[tuple(self._agent_location)] = self.current_net
         
         if self.termination_rule == "v" and self.DRVs > 0:
