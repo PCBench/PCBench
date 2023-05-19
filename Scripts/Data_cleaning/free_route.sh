@@ -1,7 +1,7 @@
 #!/bin/bash
 
 freerouting_exe=./freerouting-1.7.0.jar
-circuit_folder=./deleted_fill_zones/
+circuit_folder=./good_raws/
 
 for cir_file in "$circuit_folder"*.dsn
 do
