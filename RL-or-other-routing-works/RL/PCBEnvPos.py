@@ -55,12 +55,13 @@ class PCBEnvPos(gym.Env):
     def reset(self):
 
         self.pcb_name = random.choice(self.pcb_names)
+        pcb_file_path = os.path.join(self.pcb_folder, self.pcb_name + '/final.json')
+        with open(pcb_file_path) as jf:
+            pcb_dict = json.load(jf)
+        
         if self.pcb_name in self.pcb_matrix_net_dict:
             self.pcb_matrix, self.nets = deepcopy(self.pcb_matrix_net_dict[self.pcb_name][0]), deepcopy(self.pcb_matrix_net_dict[self.pcb_name][1])
         else:
-            pcb_file_path = os.path.join(self.pcb_folder, self.pcb_name + '/final.json')
-            with open(pcb_file_path) as jf:
-                pcb_dict = json.load(jf)
             self.pcb_matrix, self.nets = PCBGridize(pcb=pcb_dict, resolution=self.resolution)
             self.pcb_matrix_net_dict[self.pcb_name] = [deepcopy(self.pcb_matrix), deepcopy(self.nets)]
         
