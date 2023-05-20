@@ -2,7 +2,7 @@ import sys
 from typing import Any, Dict, List, Tuple
 sys.path.append('..')
 
-from load_data.geometry import rotatePoint
+from utils.geometry import rotatePoint
 import math
 import numpy as np
 from collections import defaultdict

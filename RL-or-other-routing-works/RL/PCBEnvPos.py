@@ -1,17 +1,29 @@
 import sys
 sys.path.append('..')
 
-from typing import List
+from typing import List, Tuple
 import gymnasium as gym
 from gymnasium import spaces
 import numpy as np
-from load_data.RLoader import PCBLoader
-from load_data.geometry import closest_point_idx
+from load_data.RLoader import PCBLoader, NetMeta
+from utils.geometry import closest_point_idx, rotatePoint
 from collections import defaultdict
 import random
 import os
-import json
 from copy import deepcopy
+
+
+def is_wire_intersect(
+        routing_matrix: np.ndarray, 
+        start: Tuple[int, int, int],
+        end: Tuple[int, int, int],
+        net_meta: NetMeta,
+        resolution: Tuple[float, float]
+    ) -> bool:
+    wire_width = net_meta.wire_width + net_meta.clearance
+    via_width = net_meta.via_diameter + net_meta.clearance
+    
+
 
 class PCBEnvPos(gym.Env):
     def __init__(
@@ -127,12 +139,13 @@ class PCBEnvPos(gym.Env):
                 [self.pcb_matrix.shape[0]-1, self.pcb_matrix.shape[1]-1, len(self.layers)-1],
             )
         matrix_value = self.pcb_matrix[tuple(self._agent_location)]
-        # if np.array_equal(new_location, self._target_location):
+
         if tuple(self._agent_location) in self.pad_region[tuple(self._target_location)]:
             self._to_next_pair()
             if self.terminated:
                 return
         else:
+            # TODO: check if every node inside the rectangle of wire is 0
             if (matrix_value != 0 and matrix_value != self.current_net) or tuple(new_location) in self.current_path:
                 if self.termination_rule == "vr":
                     self._to_next_pair()

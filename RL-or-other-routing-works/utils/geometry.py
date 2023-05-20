@@ -28,6 +28,8 @@ def rotatePoint(centerPoint: Tuple[float, float], point: Tuple[float, float], an
     temp_point = temp_point[0]+centerPoint[0] , temp_point[1]+centerPoint[1]
     return temp_point
 
+def nodes_inside_rectangle():
+    pass
 
 def sort_quadrilateral_clockwise(vertices: List[Tuple[float, float]]) -> List[int]:
     p1, p2, p3, p4 = vertices[0], vertices[1], vertices[2], vertices[3]
