@@ -5,24 +5,12 @@ from typing import List, Tuple
 import gymnasium as gym
 from gymnasium import spaces
 import numpy as np
-from load_data.RLoader import PCBLoader, NetMeta
-from utils.geometry import closest_point_idx, rotatePoint
+from load_data.RLoader import PCBLoader
+from utils.geometry import closest_point_idx, nodes_inside_rectangle, nodes_inside_circle
 from collections import defaultdict
 import random
 import os
 from copy import deepcopy
-
-
-def is_wire_intersect(
-        routing_matrix: np.ndarray, 
-        start: Tuple[int, int, int],
-        end: Tuple[int, int, int],
-        net_meta: NetMeta,
-        resolution: Tuple[float, float]
-    ) -> bool:
-    wire_width = net_meta.wire_width + net_meta.clearance
-    via_width = net_meta.via_diameter + net_meta.clearance
-    
 
 
 class PCBEnvPos(gym.Env):
@@ -80,7 +68,7 @@ class PCBEnvPos(gym.Env):
         self.layers = pcb.layers
         self.net_meta = pcb.net_meta
         
-        self.nets_indices = list(self.nets.keys())
+        self.nets_indices = sorted(list(self.nets.keys()))
         self.current_net = self.nets_indices.pop(0)
         self._agent_location = np.array(self.nets[self.current_net].pop(0))
         self._target_location = np.array(self.nets[self.current_net].pop(closest_point_idx(self._agent_location, self.nets[self.current_net])))
@@ -107,7 +95,6 @@ class PCBEnvPos(gym.Env):
         return observation, reward, self.terminated, False, info
     
     def _to_next_pair(self) -> None:
-
         self.num_connected_pairs += 1
         self.nets_path[self.current_net].append(self.current_path)
         if len(self.nets[self.current_net]) == 0:
@@ -133,20 +120,20 @@ class PCBEnvPos(gym.Env):
         self.current_path.append(tuple(self._agent_location))
         self.path_length += 1
         # We use `np.clip` to make sure we don't leave the grid
-        self._agent_location = np.clip(
-                new_location,
-                [0, 0, 0], 
-                [self.pcb_matrix.shape[0]-1, self.pcb_matrix.shape[1]-1, len(self.layers)-1],
-            )
-        matrix_value = self.pcb_matrix[tuple(self._agent_location)]
 
-        if tuple(self._agent_location) in self.pad_region[tuple(self._target_location)]:
+        next_location = self._clip_position(new_location)
+        self._agent_location = next_location
+
+        if tuple(next_location) in self.pad_region[tuple(self._target_location)]:
             self._to_next_pair()
             if self.terminated:
                 return
         else:
-            # TODO: check if every node inside the rectangle of wire is 0
-            if (matrix_value != 0 and matrix_value != self.current_net) or tuple(new_location) in self.current_path:
+            wire_intersect = self._is_wire_intersect(
+                start=tuple(self.current_path[-1]), 
+                end=tuple(next_location)
+            )
+            if wire_intersect or tuple(next_location) in self.current_path:
                 if self.termination_rule == "vr":
                     self._to_next_pair()
                     if self.terminated:
@@ -154,11 +141,65 @@ class PCBEnvPos(gym.Env):
                 self.DRVs += 1
                 self.conflict = True
             else:
-                # TODO: add wire width
-                self.pcb_matrix[tuple(self._agent_location)] = self.current_net
+                self._add_wires(self.current_path[-1], self._agent_location)
         
         if self.termination_rule == "v" and self.DRVs > 0:
             self.terminated = True
+
+    def _is_wire_intersect(self, start: Tuple[int, int, int], end: Tuple[int, int, int]) -> bool:
+        curr_net_meta = self.net_meta[self.current_net]
+        wire_width = curr_net_meta.wire_width + 2 * curr_net_meta.clearance
+        via_width = curr_net_meta.via_diameter + 2 * curr_net_meta.clearance
+        if start[-1] == end[-1]:
+            inside_nodes = nodes_inside_rectangle(
+                start=(start[0], start[1]), 
+                end=(end[0], end[1]), 
+                width=wire_width, 
+                resolution=self.resolution
+            )
+        else:
+            inside_nodes = nodes_inside_circle(
+                center=(start[0], start[1]), 
+                diameter=via_width, 
+                resolution=self.resolution
+            )
+        for layer in set([start[-1], end[-1]]):
+            for node in inside_nodes:
+                pos = tuple(self._clip_position(node + (layer,)))
+                if self.pcb_matrix[pos] != 0 and self.pcb_matrix[pos] != curr_net_meta.net_index:
+                    return True
+        return False
+
+    def _add_wires(self, start: np.ndarray, end: np.ndarray) -> None:
+        # print(f"add wires?{start}, {end}")
+        wire_width = self.net_meta[self.current_net].wire_width
+        via_width = self.net_meta[self.current_net].via_diameter
+        if start[-1] == end[-1]:
+            inside_nodes = nodes_inside_rectangle(
+                start=(start[0], start[1]), 
+                end=(end[0], end[1]), 
+                width=wire_width, 
+                resolution=self.resolution
+            )
+        else:
+            inside_nodes = nodes_inside_circle(
+                center=(start[0], start[1]), 
+                diameter=via_width, 
+                resolution=self.resolution
+            )
+        # print(inside_nodes, wire_width, via_width)
+        for layer in set([start[-1], end[-1]]):
+            for node in inside_nodes:
+                pos = self._clip_position(node + (layer,))
+                self.pcb_matrix[tuple(pos)] = self.current_net
+                # print(pos, self.pcb_matrix[tuple(pos)])
+
+    def _clip_position(self, position: np.ndarray) -> np.ndarray:
+        return np.clip(
+                position,
+                [0, 0, 0], 
+                [self.pcb_matrix.shape[0]-1, self.pcb_matrix.shape[1]-1, self.pcb_matrix.shape[2]-1],
+            )
 
     def _get_reward(self) -> float:
     

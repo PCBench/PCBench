@@ -1,9 +1,10 @@
 from math import radians
 from typing import List, Tuple
 import numpy as np
-from shapely.geometry import Polygon, Point
 import math
+from scipy.spatial.distance import euclidean
 
+ACCURACY_COMPENSATION = 1e-4
 
 def closest_point_idx(points: List[Tuple[int, int, int]], given_point: Tuple[int, int, int]) -> int:
     # Convert list of points to a numpy array
@@ -13,6 +14,7 @@ def closest_point_idx(points: List[Tuple[int, int, int]], given_point: Tuple[int
         distances = np.sqrt(np.sum((points - given_point)**2, axis=1))
     except:
         print(points, given_point)
+
     # Find the index of the closest point
     closest_idx = np.argmin(distances)
     # Return the closest point
@@ -22,34 +24,55 @@ def closest_point_idx(points: List[Tuple[int, int, int]], given_point: Tuple[int
 def rotatePoint(centerPoint: Tuple[float, float], point: Tuple[float, float], angle: float) -> Tuple[float, float]:
     """Rotates a point around another centerPoint. Angle is in degrees.
     Rotation is counter-clockwise"""
-    angle = math.radians(angle)
+    angle = radians(angle)
     temp_point = point[0]-centerPoint[0] , point[1]-centerPoint[1]
     temp_point = ( temp_point[0]*math.cos(angle)-temp_point[1]*math.sin(angle) , temp_point[0]*math.sin(angle)+temp_point[1]*math.cos(angle))
     temp_point = temp_point[0]+centerPoint[0] , temp_point[1]+centerPoint[1]
     return temp_point
 
-def nodes_inside_rectangle():
-    pass
 
-def sort_quadrilateral_clockwise(vertices: List[Tuple[float, float]]) -> List[int]:
-    p1, p2, p3, p4 = vertices[0], vertices[1], vertices[2], vertices[3]
-    # Calculate the centroid of the quadrilateral
-    cx = (p1[0] + p2[0] + p3[0] + p4[0]) / 4
-    cy = (p1[1] + p2[1] + p3[1] + p4[1]) / 4
-
-    # Calculate the angle of each point with respect to the centroid
-    angles = [(i, (math.atan2(p[1] - cy, p[0] - cx) + 2 * math.pi) % (2 * math.pi)) for i, p in enumerate([p1, p2, p3, p4])]
-    # Sort the points by angle in ascending order
-    angles.sort(key=lambda x: x[1])
-
-    # Sort the points in clockwise order
-    return [angles[i][0] for i in [0, 1, 2, 3]]
-
-
-def is_point_inside_quadrilateral(point: Tuple[float, float], quadrilateral: List[Tuple[float, float]]) -> bool:
+def nodes_inside_rectangle(
+        start: Tuple[int, int], 
+        end: Tuple[int, int], 
+        width: float,
+        resolution: Tuple[float, float]
+    ) -> List[Tuple[int, int]]:
+    """ To find grid nodes inside a rectangle
+        start: start point of a wire segment
+        end: end point of a wire segment
+        width: wire width + clearance (mm)
     """
-    Check if a 2D point is inside a quadrilateral. quadrilateral must be sorted clockwise or counter-clockwise
-    """
-    polygon = Polygon(quadrilateral)
-    point = Point(point)
-    return polygon.contains(point)
+    inside_nodes = []
+    half_width = width / 2 / min(resolution)
+    min_x = int(min(start[0] - half_width, end[0] - half_width))
+    max_x = int(max(start[0] + half_width, end[0] + half_width))
+    min_y = int(min(start[1] - half_width, end[1] - half_width))
+    max_y = int(max(start[1] + half_width, end[1] + half_width))
+
+    angle = math.degrees(math.atan2(end[1] - start[1], end[0] - start[0]))
+    center = ((start[0] + end[0]) / 2 * resolution[0], (start[1] + end[1]) / 2 * resolution[1])
+    for x in range(min_x, max_x + 1):
+        for y in range(min_y, max_y + 1):
+            rp = rotatePoint(centerPoint=center, point=(x * resolution[0], y * resolution[1]), angle=angle)
+            if abs(rp[0] - center[0]) <= abs(euclidean(start, end) / 2 * resolution[0]) + ACCURACY_COMPENSATION and abs(rp[1] - center[1]) <= width / 2:
+                inside_nodes.append((x,y))
+
+    return inside_nodes
+
+def nodes_inside_circle(
+        center: Tuple[int, int], 
+        diameter: float, 
+        resolution: Tuple[float, float]
+    ) -> List[Tuple[int, int]]:
+    inside_nodes = []
+    semi_dia = diameter / 2 / min(resolution)
+    min_x = int(center[0] - semi_dia)
+    max_x = int(center[0] + semi_dia)
+    min_y = int(center[1] - semi_dia)
+    max_y = int(center[1] + semi_dia)
+
+    for x in range(min_x, max_x + 1):
+        for y in range(min_y, max_y + 1):
+            if euclidean((x * resolution[0], y * resolution[1]), (center[0] * resolution[0], center[1] * resolution[1])) <= diameter / 2:
+                inside_nodes.append((x,y))
+    return inside_nodes
