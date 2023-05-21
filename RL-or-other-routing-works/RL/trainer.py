@@ -97,7 +97,7 @@ class Trainer:
 if __name__ == "__main__":
     import sys
     if len(sys.argv) > 1:
-        pcb_name = sys.argv[1].split('/')[-2]
+        pcb_name = sys.argv[1].split('/')[-1]
     else:
         pcb_name = None
     trainer = Trainer(pcb_names=pcb_name)

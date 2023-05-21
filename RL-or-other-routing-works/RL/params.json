@@ -1,15 +1,15 @@
 {
     "env": {
         "env_name": "vlsi-dat",
-        "resolution": 0.1,
+        "resolution": [0.2, 0.2],
         "benchmark_folder": "../../PCBs",
-        "pcb_names": ["1Bitsy_1bitsy_v5"],
+        "pcb_names": ["1Bitsy_1bitsy"],
         "termination_rule": "vr",
         "design_rule_violate_penalty_coef": 10
     },
     "rl":{
         "rl_model_name": "ppo",
-        "total_timesteps": 4e3,
+        "total_timesteps": 3e3,
         "n_epochs": 10,
         "learning_rate": 0.0001,
         "n_steps": 1000,
