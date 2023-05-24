@@ -1,0 +1,11 @@
+(module FOUR_LAYER_WARNING (layer F.Cu) (tedit 0)
+  (fp_text reference U$4 (at 0 0) (layer F.SilkS) hide
+    (effects (font (size 1.27 1.27) (thickness 0.15)))
+  )
+  (fp_text value FOUR_LAYER_WARNING (at 0 0) (layer F.SilkS) hide
+    (effects (font (size 1.27 1.27) (thickness 0.15)))
+  )
+  (fp_text user "THIS IS A FOUR-LAYER BOARD!" (at 0 0) (layer F.Fab)
+    (effects (font (size 1.2065 1.2065) (thickness 0.1016)) (justify left bottom))
+  )
+)

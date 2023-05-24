@@ -1,0 +1,11 @@
+(module FIDUCIAL-MICRO (layer F.Cu) (tedit 0)
+  (descr "<h3>Fiducial - Circle, 0.25in</h3>\n<p>Point-of-reference for pick-and-place machines and other optical instruments.</p>\n<p>Devices using:\n<ul><li>FIDUCIAL</li></ul></p>")
+  (fp_text reference FD4 (at 0 0) (layer F.SilkS) hide
+    (effects (font (size 1.27 1.27) (thickness 0.15)))
+  )
+  (fp_text value FIDUCIALUFIDUCIAL (at 0 0) (layer F.SilkS) hide
+    (effects (font (size 1.27 1.27) (thickness 0.15)))
+  )
+  (pad 1 smd roundrect (at 0 0) (size 0.635 0.635) (layers F.Cu F.Mask) (roundrect_rratio 0.5)
+    (solder_mask_margin 0.1016))
+)
