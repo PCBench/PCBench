@@ -41,7 +41,7 @@ class PCB:
         self.layers = extract_layer(pcb=self.pcb, max_layer_index=self.max_layer_index)
 
         # extract boundary info: circuit region and boundary lines with width
-        lines = extract_bound(self.pcb.gr_line, self.pcb.gr_arc, self.pcb.gr_circle)
+        lines = extract_bound(self.pcb)
         self.boundary_lines = lines
 
         # extract net info: net indices, pads with their regions
@@ -231,11 +231,11 @@ def extract_pad(
 
     return ret_pads
 
-def extract_bound(
-        gr_lines: List[Dict[str, Any]], 
-        gr_arcs: List[Dict[str, Any]],
-        gr_circles: List[Dict[str, Any]]
-    ) -> Tuple[float, float, float, float, List[Any]]:
+def extract_bound(pcb: KicadPCB) -> Tuple[float, float, float, float, List[Any]]:
+
+    gr_lines = pcb.gr_line
+    gr_arcs = pcb.gr_arc
+    gr_circles = pcb.gr_circle
 
     lines = []
     width = 0
@@ -243,6 +243,12 @@ def extract_bound(
         if line["layer"][1:-1] == "Edge.Cuts" or line["layer"] == "Edge.Cuts":
             width = line.width if "width" in line else line.stroke.width  # kicad v5 vs v6
             lines.append({"type":"polyline", "start":tuple(line.start), "end":tuple(line.end), "width":width})
+    for module in pcb.module:
+        if "fp_line" in module:
+            for line in module.fp_line:
+                if not isinstance(line, str) and line.layer == "Edge.Cuts":
+                    width = line.width if "width" in line else line.stroke.width  # kicad v5 vs v6
+                    lines.append({"type":"polyline", "start":tuple(line.start), "end":tuple(line.end), "width":width})
     for arcs in gr_arcs:
         if arcs["layer"][1:-1] == "Edge.Cuts" or arcs["layer"] == "Edge.Cuts":
             width = arcs.width if "width" in arcs else arcs.stroke.width

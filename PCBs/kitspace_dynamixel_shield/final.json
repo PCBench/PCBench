@@ -1,7 +1,62 @@
 {
   "layers": ["F.Cu", "B.Cu"],
   "unit": "mm",
-  "border": [],
+  "border": [
+    {
+      "type": "polyline",
+      "start": [66.04, -51.816],
+      "end": [64.516, -53.34],
+      "width": 0.15
+    },
+    {
+      "type": "polyline",
+      "start": [66.04, -40.386],
+      "end": [66.04, -51.816],
+      "width": 0.15
+    },
+    {
+      "type": "polyline",
+      "start": [68.58, -37.846],
+      "end": [66.04, -40.386],
+      "width": 0.15
+    },
+    {
+      "type": "polyline",
+      "start": [68.58, -5.08],
+      "end": [68.58, -37.846],
+      "width": 0.15
+    },
+    {
+      "type": "polyline",
+      "start": [66.04, -2.54],
+      "end": [68.58, -5.08],
+      "width": 0.15
+    },
+    {
+      "type": "polyline",
+      "start": [66.04, -1.27],
+      "end": [66.04, -2.54],
+      "width": 0.15
+    },
+    {
+      "type": "polyline",
+      "start": [64.77, 0],
+      "end": [1.27, 0],
+      "width": 0.15
+    },
+    {
+      "type": "polyline",
+      "start": [0, -1.27],
+      "end": [0, -52.07],
+      "width": 0.15
+    },
+    {
+      "type": "polyline",
+      "start": [1.27, -53.34],
+      "end": [64.516, -53.34],
+      "width": 0.15
+    }
+  ],
   "nets": {
     "-1": [
       {
