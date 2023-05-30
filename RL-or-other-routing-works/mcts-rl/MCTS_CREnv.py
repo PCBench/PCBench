@@ -49,8 +49,10 @@ class MCTS_CREnv():
             self.short_net_path[pair_id] = path_t
 
         self.path_length = 0
+        # self.pairs_idx = 0
+        # self.max_pair = len(self.start) - 1 
 
-    def reset(self, board=None, pin_idx=2):
+    def reset(self, board=None, pin_idx=0):
 
         if board is None:
             self.board = deepcopy(self.original_board)
@@ -63,7 +65,7 @@ class MCTS_CREnv():
         # initialize the action node
         self.pairs_idx = pin_idx
         self.max_pair = self.pairs_idx
-        # self.max_pair = max(self.start.keys())
+        # self.max_pair = len(self.start) - 1 
         self.head = self.start[self.pairs_idx]
 
         self.total_reward = 0
@@ -90,6 +92,7 @@ class MCTS_CREnv():
         z = newState.head[2]
 
         if 0 <= x < newState.board.shape[0] and 0 <= y < newState.board.shape[1] and 0<= z < newState.board.shape[2]:
+            # print(newState.pairs_idx, len(newState.end))
             if newState.head == newState.end[newState.pairs_idx]:
                 newState.goto_new_net(True)
             elif newState.board[newState.head]!=0:
@@ -117,7 +120,6 @@ class MCTS_CREnv():
             self.head = self.start[self.pairs_idx]
 
     def isTerminal(self):
-
         if self.pairs_idx>self.max_pair:
             return True
 
