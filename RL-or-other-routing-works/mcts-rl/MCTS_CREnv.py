@@ -3,15 +3,13 @@ sys.path.append('..')
 
 from copy import copy
 from copy import deepcopy
-from scipy.spatial import distance
 
 import numpy as np
 from multiprocessing import Pool
 
 from astar import Astar
 
-from load_data.PCBGridize import PCBGridize
-from load_data.extract_kicad import PCB
+from load_data.RLoader import PCBLoader
 
 ####    Environment for MCTS    ####
 
@@ -24,16 +22,21 @@ class MCTS_CREnv():
 
         self.resolution = resolution
         self.pcb_path = pcb_path
-        pcb = PCB(kicad_file=pcb_path)
-        self.board, self.nets = PCBGridize(pcb=pcb, resolution=self.resolution)
+        pcb = PCBLoader(self.pcb_path, self.resolution)
+        self.nets = deepcopy(pcb.net_pads)
+        self.board = np.zeros(pcb.routing_matrix.shape) 
 
         self.pin_pair2net = []
         self.start, self.end = [], []
         for nidx, net in self.nets.items():
-            for pidx in range(len(net)-1):
-                self.start.append(net[pidx])
-                self.end.append(net[pidx + 1])
-                self.pin_pair2net.append(nidx)
+            print(net, self.board.shape)
+            if nidx != -1:
+                for pidx in range(len(net)-1):
+                    self.board[tuple(net[pidx])] = nidx
+                    self.board[tuple(net[pidx + 1])] = nidx
+                    self.start.append(net[pidx])
+                    self.end.append(net[pidx + 1])
+                    self.pin_pair2net.append(nidx)
 
         if len(self.start)!=len(self.end):
             print("Number of pads in nets is not correct!!!!")
@@ -50,8 +53,7 @@ class MCTS_CREnv():
     def reset(self, board=None, pin_idx=2):
 
         if board is None:
-            pcb = PCB(kicad_file=self.pcb_path)
-            self.board, self.nets = PCBGridize(pcb=pcb, resolution=self.resolution)
+            self.board = deepcopy(self.original_board)
         else:
             self.board = board
         

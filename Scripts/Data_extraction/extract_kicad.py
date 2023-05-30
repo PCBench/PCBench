@@ -2,7 +2,7 @@ from typing import Any, Dict, Iterable, List, Optional, Set, Tuple
 import collections
 from .thirdparty.kicad_parser.kicad_pcb import *
 from .thirdparty.kicad_parser.sexp_parser import *
-from .utils.pad_rotation import calculate_pad_pos_size
+from .utils.pad_rotation import calculate_pad_pos_size, cal_xy
 from scipy.spatial import distance
 
 def extract_recursive(sexp_obj: Sexp, 
@@ -244,11 +244,14 @@ def extract_bound(pcb: KicadPCB) -> Tuple[float, float, float, float, List[Any]]
             width = line.width if "width" in line else line.stroke.width  # kicad v5 vs v6
             lines.append({"type":"polyline", "start":tuple(line.start), "end":tuple(line.end), "width":width})
     for module in pcb.module:
+        m_x, m_y = module.at[0], module.at[1]
+        angle = module.at[2] if len(module.at) == 3 else 0
         if "fp_line" in module:
             for line in module.fp_line:
                 if not isinstance(line, str) and line.layer == "Edge.Cuts":
                     width = line.width if "width" in line else line.stroke.width  # kicad v5 vs v6
-                    lines.append({"type":"polyline", "start":tuple(line.start), "end":tuple(line.end), "width":width})
+                    lines.append({"type":"polyline", "start":cal_xy([m_x, m_y], line.start, angle), "end":cal_xy([m_x, m_y], line.end, angle), "width":width})
+                    print({"type":"polyline", "start":(line.start[0] + m_x, line.start[1] + m_y), "end":(line.end[0] + m_x, line.end[1] + m_y), "width":width})
     for arcs in gr_arcs:
         if arcs["layer"][1:-1] == "Edge.Cuts" or arcs["layer"] == "Edge.Cuts":
             width = arcs.width if "width" in arcs else arcs.stroke.width
