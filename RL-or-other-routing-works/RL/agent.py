@@ -1,6 +1,6 @@
 from stable_baselines3 import PPO, A2C
 import os
-from PCBEnvPos import PCBEnvPos
+from PCBRoutingEnv import PCBRoutingEnv
 from params import Params
 from stable_baselines3.common.logger import configure
 
@@ -21,7 +21,7 @@ class Trainer:
         else:
             self.pcb_names = [self.pcb_names]
         if self.params.env.env_name == "basic_pos":
-            self.env = PCBEnvPos(
+            self.env = PCBRoutingEnv(
                 resolution=self.params.env.resolution, 
                 pcb_folder=self.params.env.benchmark_folder,
                 pcb_names=self.pcb_names,

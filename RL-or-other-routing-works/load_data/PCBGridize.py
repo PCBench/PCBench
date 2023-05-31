@@ -34,7 +34,7 @@ def is_point_inside_pad(point: Tuple[float, float], pad: Dict[str, Any]) -> bool
         return True 
     return False
 
-def PCBGridize(pcb: Dict[str, Any], resolution: Tuple[float, float]) -> None:
+def PCBGridize(pcb: Dict[str, Any], resolution: Tuple[float, float]):
 
     x_res, y_res = resolution
     min_x, max_x, min_y, max_y = pcb_range(pcb["border"])

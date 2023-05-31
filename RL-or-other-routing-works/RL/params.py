@@ -18,8 +18,6 @@ class EnvParams:
         self.resolution = env_params["resolution"]
         self.benchmark_folder = env_params["benchmark_folder"]
         self.pcb_names = env_params["pcb_names"]
-        self.termination_rule = env_params["termination_rule"]
-        self.DRV_penalty_coef = env_params["design_rule_violate_penalty_coef"]
 
 
 class RLParams:

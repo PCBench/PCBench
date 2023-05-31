@@ -13,20 +13,16 @@ import os
 from copy import deepcopy
 
 
-class PCBEnvPos(gym.Env):
+class PCBRoutingEnv(gym.Env):
     def __init__(
             self, 
             resolution: float, 
             pcb_folder: str, 
             pcb_names: List[str], 
-            termination_rule: str,
-            DRV_penalty_coef: float=10.0
         ) -> None:
         self.resolution = resolution
         self.pcb_names = pcb_names
         self.pcb_folder = pcb_folder
-        self.termination_rule = termination_rule
-        self.DRV_penalty_coef = DRV_penalty_coef
         n_actions = 6
         self._action_to_direction = {
             0: np.array([1, 0, 0]),
@@ -43,13 +39,15 @@ class PCBEnvPos(gym.Env):
         self.pcb_holder = {}
     
     def _get_obs(self) -> np.ndarray:
-        return np.array(np.concatenate((self._agent_location, self._target_location)))
+        agent_location = self.PCB_state.agent_location
+        target_location = self.PCB_state.target_location
+        return np.array(np.concatenate((agent_location, target_location)))
 
     def _get_info(self):
         return {
-            "distance": np.linalg.norm(
-                self._agent_location - self._target_location, ord=1
-            )
+            "agent_location": self.PCB_state.agent_location,
+            "target_location": self.PCB_state.target_location,
+            "current_paths": self.current_path
         }
 
     def reset(self):
@@ -57,27 +55,32 @@ class PCBEnvPos(gym.Env):
         self.pcb_name = random.choice(self.pcb_names)
 
         if self.pcb_name in self.pcb_holder:
-            pcb = self.pcb_holder[self.pcb_name]
+            matrix_tmp, stat_tmp, layers_tmp = self.pcb_holder[self.pcb_name]
         else:
             pcb_file_path = os.path.join(self.pcb_folder, self.pcb_name + '/final.json')
-            pcb = PCBLoader(pcb_file_path, self.resolution)
-            self.pcb_holder[self.pcb_name] = pcb
-
-        self.pcb_matrix, self.nets = deepcopy(pcb.routing_matrix), deepcopy(pcb.net_pads)
-        self.pad_region = pcb.pad_regions
-        self.layers = pcb.layers
-        self.net_meta = pcb.net_meta
+            pcb_loader = PCBLoader(pcb_file_path, self.resolution)
+            matrix_tmp, stat_tmp, layers_tmp = pcb_loader.load()
+            self.pcb_holder[self.pcb_name] = matrix_tmp, stat_tmp, layers_tmp
+        
+        self.pcb_matrix, self.nets = deepcopy(matrix_tmp), deepcopy(stat_tmp.nets)
+        self.pad_region = stat_tmp.pad_regions
+        self.layers = layers_tmp
+        self.net_meta = stat_tmp.rules
         
         self.nets_indices = sorted(list(self.nets.keys()))
         self.current_net = self.nets_indices.pop(0)
         self._agent_location = np.array(self.nets[self.current_net].pop(0))
         self._target_location = np.array(self.nets[self.current_net].pop(closest_point_idx(self._agent_location, self.nets[self.current_net])))
-        
+
         self.path_length = 0
-        self.DRVs = 0
         self.num_connected_pairs = 0
         self.nets_path = defaultdict(list)
         self.current_path = [tuple(self._agent_location)]
+
+        self.PCB_state = deepcopy(stat_tmp)
+        self.PCB_state.paths[self.current_net].append(self.current_path)
+        self.PCB_state.agent_location = self._agent_location
+        self.PCB_state.target_location = self._target_location
 
         self.terminated = False
         self.conflict = False
@@ -88,7 +91,7 @@ class PCBEnvPos(gym.Env):
 
         self._update_state(action=action)
         
-        reward = self._get_reward()
+        reward = self.reward()
         observation = self._get_obs()
         info = self._get_info()
 
@@ -112,19 +115,26 @@ class PCBEnvPos(gym.Env):
         self._target_location = np.array(self.nets[self.current_net].pop(closest_point_idx(self._agent_location, self.nets[self.current_net])))
         self.current_path = [tuple(self._agent_location)]
         self.path_length += 1
+        self.PCB_state.paths[self.current_net].append(self.current_path)
+        self.PCB_state.agent_location = self._agent_location
+        self.PCB_state.target_location = self._target_location
 
     def _update_state(self, action: int) -> None:
 
         direction = self._action_to_direction[action]
         new_location = self._agent_location + direction
         self.current_path.append(tuple(self._agent_location))
+        self.PCB_state.paths[self.current_net][-1] = self.current_path
         self.path_length += 1
         # We use `np.clip` to make sure we don't leave the grid
 
         next_location = self._clip_position(new_location)
         self._agent_location = next_location
+        self.PCB_state.agent_location = self._agent_location
 
         if tuple(next_location) in self.pad_region[tuple(self._target_location)]:
+            self.PCB_state.paths[self.current_net][-1].append(self._agent_location)
+            self._add_wires(self.current_path[-1], self._agent_location)
             self._to_next_pair()
             if self.terminated:
                 return
@@ -134,17 +144,13 @@ class PCBEnvPos(gym.Env):
                 end=tuple(next_location)
             )
             if wire_intersect or tuple(next_location) in self.current_path:
-                if self.termination_rule == "vr":
-                    self._to_next_pair()
-                    if self.terminated:
-                        return
-                self.DRVs += 1
+                self._to_next_pair()
+                if self.terminated:
+                    return
                 self.conflict = True
             else:
                 self._add_wires(self.current_path[-1], self._agent_location)
-        
-        if self.termination_rule == "v" and self.DRVs > 0:
-            self.terminated = True
+
 
     def _is_wire_intersect(self, start: Tuple[int, int, int], end: Tuple[int, int, int]) -> bool:
         curr_net_meta = self.net_meta[self.current_net]
@@ -166,7 +172,7 @@ class PCBEnvPos(gym.Env):
         for layer in set([start[-1], end[-1]]):
             for node in inside_nodes:
                 pos = tuple(self._clip_position(node + (layer,)))
-                if self.pcb_matrix[pos] != 0 and self.pcb_matrix[pos] != curr_net_meta.net_index:
+                if self.pcb_matrix[pos] != 0 and self.pcb_matrix[pos] != self.current_net:
                     return True
         return False
 
@@ -201,9 +207,9 @@ class PCBEnvPos(gym.Env):
                 [self.pcb_matrix.shape[0]-1, self.pcb_matrix.shape[1]-1, self.pcb_matrix.shape[2]-1],
             )
 
-    def _get_reward(self) -> float:
+    def reward(self) -> float:
     
-        return -self.DRV_penalty_coef * self.DRVs - self.path_length if self.terminated else 0
+        return -1
 
     def render(self):
         pass

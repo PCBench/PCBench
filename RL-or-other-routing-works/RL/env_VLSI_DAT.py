@@ -1,9 +1,9 @@
 from typing import List
-from PCBEnvPos import PCBEnvPos
+from PCBRoutingEnv import PCBRoutingEnv
 from scipy.spatial.distance import cityblock
 import numpy as np
 
-class VLSIDATEnv(PCBEnvPos):
+class VLSIDATEnv(PCBRoutingEnv):
     def __init__(
         self, 
         resolution: float, 
@@ -20,7 +20,7 @@ class VLSIDATEnv(PCBEnvPos):
         self.dist_coef = dist_coef
         self.path_coef = path_coef
 
-    def _get_reward(self) -> float:
+    def reward(self) -> float:
         if np.array_equal(self._agent_location, self._target_location):
             return -self.connect_coef
         if self.conflict:
