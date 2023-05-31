@@ -114,7 +114,9 @@ def mcts_DFS_rollout(state, model):
 
     if len(paths)==0:
         paths=[state.head]
-    return ini_state.getReward(), paths
+    rew = ini_state.getReward()
+    del ini_state
+    return rew, paths
 
 def block_other_nets(check_state, path):
 

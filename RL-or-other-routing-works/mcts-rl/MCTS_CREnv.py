@@ -216,4 +216,6 @@ class MCTS_CREnv():
         astar = Astar(maze)
         path = astar.run(s_node, t_node)
 
+        del maze
+
         return path

@@ -6,11 +6,18 @@ import simulation
 import json
 import time
 
+import resource
+  
+def limit_memory(maxsize):
+    soft, hard = resource.getrlimit(resource.RLIMIT_AS)
+    resource.setrlimit(resource.RLIMIT_AS, (maxsize, hard))
+
 if __name__ == "__main__":
 
     # params = EnvParams
     # load_model = params.load_model
     # board_path = params.pcb_path
+    limit_memory(32212254720)
 
     t1 = time.time()
 
