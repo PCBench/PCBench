@@ -1,3 +1,4 @@
+from collections import defaultdict
 import numpy as np
 from copy import copy
 from copy import deepcopy
@@ -113,7 +114,9 @@ def mcts_DFS_rollout(state, model):
 
     if len(paths)==0:
         paths=[state.head]
-    return ini_state.getReward(), paths
+    rew = ini_state.getReward()
+    del ini_state
+    return rew, paths
 
 def block_other_nets(check_state, path):
 
@@ -199,7 +202,7 @@ def MCTS_search(env, model, fig_idx=0, board_ID='II4', rollout_times=50):
     node_select = 'best'
     # rollout_times = 20
 
-    routed_paths = []
+    routed_paths = defaultdict(list)
 
     MCTS = mcts(iterationLimit=rollout_times, rolloutPolicy=mcts_DFS_rollout, nn_model=model,
             rewardType=reward_type, nodeSelect=node_select, explorationConstant=5)
@@ -210,13 +213,12 @@ def MCTS_search(env, model, fig_idx=0, board_ID='II4', rollout_times=50):
     for pin_idx in pin_indices:
     # for pin_idx in [2]:
         pin_idx = int(pin_idx)
-
         state.reset(state.board, pin_idx)
         print(np.count_nonzero(state.board == 1))
         net_path = [state.start[pin_idx]]
         net_path += MCTS.search(initialState=state)
 
-        routed_paths += net_path
+        routed_paths[state.pin_pair2net[pin_idx]].append(net_path)
         # checking if the path of this net block any other nets
         # if block_other_nets(state, net_path):
         #     print("MCTS did not find a good path to connect net {}".format(pin_idx))
@@ -229,8 +231,11 @@ def MCTS_search(env, model, fig_idx=0, board_ID='II4', rollout_times=50):
             path_length.append(0)
 
         for node in net_path[1:]:
-            action = tuple(np.array(node)-np.array(state.head))
-            state = state.takeAction(action, is_tuple=True)
+            try:
+                action = tuple(np.array(node)-np.array(state.head))
+                state = state.takeAction(action, is_tuple=True)
+            except:
+                print("Duplicate path nodes in paths!")
 
     # paths_x, paths_y = separate_paths(env.start, routed_paths)
 
@@ -239,7 +244,7 @@ def MCTS_search(env, model, fig_idx=0, board_ID='II4', rollout_times=50):
     # visual_folder_name = "visual_results_{}".format(rollout_times)
     # if not os.path.isdir(visual_folder_name):
     #     os.mkdir(visual_folder_name)
-
+    
     # len_folder_name = "path_length_results_{}".format(rollout_times)
     # if not os.path.isdir(len_folder_name):
     #     os.mkdir(len_folder_name)

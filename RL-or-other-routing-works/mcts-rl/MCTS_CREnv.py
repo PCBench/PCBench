@@ -3,15 +3,13 @@ sys.path.append('..')
 
 from copy import copy
 from copy import deepcopy
-from scipy.spatial import distance
 
 import numpy as np
 from multiprocessing import Pool
 
 from astar import Astar
 
-from load_data.PCBGridize import PCBGridize
-from load_data.extract_kicad import PCB
+from load_data.RLoader import PCBLoader
 
 ####    Environment for MCTS    ####
 
@@ -24,16 +22,21 @@ class MCTS_CREnv():
 
         self.resolution = resolution
         self.pcb_path = pcb_path
-        pcb = PCB(kicad_file=pcb_path)
-        self.board, self.nets = PCBGridize(pcb=pcb, resolution=self.resolution)
+        pcb = PCBLoader(self.pcb_path, self.resolution)
+        self.nets = deepcopy(pcb.net_pads)
+        self.board = np.zeros(pcb.routing_matrix.shape) 
 
         self.pin_pair2net = []
         self.start, self.end = [], []
         for nidx, net in self.nets.items():
-            for pidx in range(len(net)-1):
-                self.start.append(net[pidx])
-                self.end.append(net[pidx + 1])
-                self.pin_pair2net.append(nidx)
+            print(net, self.board.shape)
+            if nidx != -1:
+                for pidx in range(len(net)-1):
+                    self.board[tuple(net[pidx])] = nidx
+                    self.board[tuple(net[pidx + 1])] = nidx
+                    self.start.append(net[pidx])
+                    self.end.append(net[pidx + 1])
+                    self.pin_pair2net.append(nidx)
 
         if len(self.start)!=len(self.end):
             print("Number of pads in nets is not correct!!!!")
@@ -46,12 +49,13 @@ class MCTS_CREnv():
             self.short_net_path[pair_id] = path_t
 
         self.path_length = 0
+        # self.pairs_idx = 0
+        # self.max_pair = len(self.start) - 1 
 
-    def reset(self, board=None, pin_idx=2):
+    def reset(self, board=None, pin_idx=0):
 
         if board is None:
-            pcb = PCB(kicad_file=self.pcb_path)
-            self.board, self.nets = PCBGridize(pcb=pcb, resolution=self.resolution)
+            self.board = deepcopy(self.original_board)
         else:
             self.board = board
         
@@ -61,7 +65,7 @@ class MCTS_CREnv():
         # initialize the action node
         self.pairs_idx = pin_idx
         self.max_pair = self.pairs_idx
-        # self.max_pair = max(self.start.keys())
+        # self.max_pair = len(self.start) - 1 
         self.head = self.start[self.pairs_idx]
 
         self.total_reward = 0
@@ -88,6 +92,7 @@ class MCTS_CREnv():
         z = newState.head[2]
 
         if 0 <= x < newState.board.shape[0] and 0 <= y < newState.board.shape[1] and 0<= z < newState.board.shape[2]:
+            # print(newState.pairs_idx, len(newState.end))
             if newState.head == newState.end[newState.pairs_idx]:
                 newState.goto_new_net(True)
             elif newState.board[newState.head]!=0:
@@ -115,7 +120,6 @@ class MCTS_CREnv():
             self.head = self.start[self.pairs_idx]
 
     def isTerminal(self):
-
         if self.pairs_idx>self.max_pair:
             return True
 
@@ -211,5 +215,7 @@ class MCTS_CREnv():
         maze[t_node] = 0
         astar = Astar(maze)
         path = astar.run(s_node, t_node)
+
+        del maze
 
         return path
