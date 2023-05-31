@@ -24,16 +24,14 @@ class Trainer:
             self.env = PCBRoutingEnv(
                 resolution=self.params.env.resolution, 
                 pcb_folder=self.params.env.benchmark_folder,
-                pcb_names=self.pcb_names,
-                termination_rule=self.params.env.termination_rule
+                pcb_names=self.pcb_names
             )
         elif self.params.env.env_name == "vlsi-dat":
             from env_VLSI_DAT import VLSIDATEnv
             self.env = VLSIDATEnv(
                 resolution=self.params.env.resolution, 
                 pcb_folder=self.params.env.benchmark_folder,
-                pcb_names=self.pcb_names,
-                termination_rule=self.params.env.termination_rule
+                pcb_names=self.pcb_names
             )
         else:
             self.env = env

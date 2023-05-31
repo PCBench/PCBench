@@ -11,5 +11,5 @@ input="./rerun_pcb.txt"
 while IFS= read -r line
 do
     echo "Processing $line"
-    python3 trainer.py "../../PCBs/$line" &>> run_log_$line.txt
+    python3 agent.py "../../PCBs/$line" &>> run_log_$line.txt
 done < "$input"
