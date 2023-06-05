@@ -11,5 +11,5 @@ do
 		echo "$out_file exists."
 		continue
 	fi
-	timeout 10m java -jar $freerouting_exe -de $cir_file -do $out_file -mp 100
+	timeout 60m java -jar $freerouting_exe -de $cir_file -do $out_file
 done
