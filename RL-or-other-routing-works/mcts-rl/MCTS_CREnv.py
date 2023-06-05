@@ -23,8 +23,9 @@ class MCTS_CREnv():
         self.resolution = resolution
         self.pcb_path = pcb_path
         pcb = PCBLoader(self.pcb_path, self.resolution)
-        self.nets = deepcopy(pcb.net_pads)
-        self.board = np.zeros(pcb.routing_matrix.shape) 
+        routing_matrix, pcb_state, _ = pcb.load()
+        self.nets = deepcopy(pcb_state.nets)
+        self.board = np.zeros(routing_matrix.shape) 
 
         self.pin_pair2net = []
         self.start, self.end = [], []

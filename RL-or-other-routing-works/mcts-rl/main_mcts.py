@@ -33,7 +33,7 @@ if __name__ == "__main__":
 
     policy = MlpPolicy.load(load_model, device='cpu')
 
-    paths = simulation.MCTS_search(env_mcts, policy, board_ID=board_path)
+    paths = simulation.MCTS_search(env_mcts, policy, board_ID=board_path, rollout_times=1000)
     print(paths)
 
     print(f"running time is: {time.time() - t1}")

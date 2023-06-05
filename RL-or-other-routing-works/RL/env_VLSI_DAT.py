@@ -20,7 +20,7 @@ class VLSIDATEnv(PCBRoutingEnv):
 
     def reward(self) -> float:
         if np.array_equal(self._agent_location, self._target_location):
-            return -self.connect_coef
+            return self.connect_coef
         if self.conflict:
             return -self.dist_coef * cityblock(self._agent_location, self._target_location)
         
