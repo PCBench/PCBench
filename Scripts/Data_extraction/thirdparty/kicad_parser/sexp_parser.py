@@ -735,7 +735,14 @@ def parseSexp(sexp):
                     \s*(?:
                     (?P<l>\()|
                     (?P<r>\))|
-                    (?P<q>"(\\"|[^"])*")|
+                    # Case: kitspace_key-ripper
+                    # Failed test case: '(fp_text value "\\" (at 0 8) (layer "F.Fab"))'
+                    # (?P<q>"(\\"|[^"])*")|
+                    #
+                    # Case: kitspace_Unifying
+                    # Failed test case: '(property "Buck 5A (0.154\\", 3.90mm Width) Pad")'
+                    # (?P<q>"([^"])*")|
+                    (?P<q>"((?:\\.|[^"\\])*)")|
                     (?P<s>[^(^)\s]+)
                 )''')
 
