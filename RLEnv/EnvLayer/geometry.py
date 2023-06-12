@@ -6,6 +6,15 @@ from scipy.spatial.distance import euclidean
 
 ACCURACY_COMPENSATION = 1e-4
 
+def rotatePoint(centerPoint: Tuple[float, float], point: Tuple[float, float], angle: float) -> Tuple[float, float]:
+    """Rotates a point around another centerPoint. Angle is in degrees.
+    Rotation is counter-clockwise"""
+    angle = radians(angle)
+    temp_point = point[0]-centerPoint[0] , point[1]-centerPoint[1]
+    temp_point = ( temp_point[0]*math.cos(angle)-temp_point[1]*math.sin(angle) , temp_point[0]*math.sin(angle)+temp_point[1]*math.cos(angle))
+    temp_point = temp_point[0]+centerPoint[0] , temp_point[1]+centerPoint[1]
+    return temp_point
+
 def closest_point_idx(points: List[Tuple[int, int, int]], given_point: Tuple[int, int, int]) -> int:
     # Convert list of points to a numpy array
     points = np.array(points)
@@ -19,17 +28,6 @@ def closest_point_idx(points: List[Tuple[int, int, int]], given_point: Tuple[int
     closest_idx = np.argmin(distances)
     # Return the closest point
     return closest_idx
-
-
-def rotatePoint(centerPoint: Tuple[float, float], point: Tuple[float, float], angle: float) -> Tuple[float, float]:
-    """Rotates a point around another centerPoint. Angle is in degrees.
-    Rotation is counter-clockwise"""
-    angle = radians(angle)
-    temp_point = point[0]-centerPoint[0] , point[1]-centerPoint[1]
-    temp_point = ( temp_point[0]*math.cos(angle)-temp_point[1]*math.sin(angle) , temp_point[0]*math.sin(angle)+temp_point[1]*math.cos(angle))
-    temp_point = temp_point[0]+centerPoint[0] , temp_point[1]+centerPoint[1]
-    return temp_point
-
 
 def nodes_inside_rectangle(
         start: Tuple[int, int], 

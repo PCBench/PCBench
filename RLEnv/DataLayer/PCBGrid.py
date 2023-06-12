@@ -1,13 +1,18 @@
-import sys
 from typing import Any, Dict, List, Tuple
-sys.path.append('..')
-
-from utils.geometry import rotatePoint
 import math
 import numpy as np
 from collections import defaultdict
 from scipy.spatial.distance import euclidean
 
+
+def rotatePoint(centerPoint: Tuple[float, float], point: Tuple[float, float], angle: float) -> Tuple[float, float]:
+    """Rotates a point around another centerPoint. Angle is in degrees.
+    Rotation is counter-clockwise"""
+    angle = math.radians(angle)
+    temp_point = point[0]-centerPoint[0] , point[1]-centerPoint[1]
+    temp_point = ( temp_point[0]*math.cos(angle)-temp_point[1]*math.sin(angle) , temp_point[0]*math.sin(angle)+temp_point[1]*math.cos(angle))
+    temp_point = temp_point[0]+centerPoint[0] , temp_point[1]+centerPoint[1]
+    return temp_point
 
 def pcb_range(border: List[Dict[str, Any]]) -> Tuple[float, float, float, float]:
     if len(border) == 0:

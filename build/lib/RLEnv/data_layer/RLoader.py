@@ -1,13 +1,12 @@
 import json
 from typing import Any, Dict, Tuple, List
-from .PCBGridize import PCBGridize
+from .PCBGrid import PCBGridize
 import numpy as np
 from collections import defaultdict
 
 def load_json(pcb_file_path: str) -> Dict[str, Any]:
     with open(pcb_file_path) as jf:
         pcb_dict = json.load(jf)
-
     return pcb_dict
 
 
