@@ -1,9 +1,9 @@
 from typing import List
-from PCBRoutingEnv import PCBRoutingEnv
+from RLEnv.EnvLayer.PCBRoutingEnv import PCBRoutingEnv
 from scipy.spatial.distance import cityblock
 import numpy as np
 
-class VLSIDATEnv(PCBRoutingEnv):
+class rl_env(PCBRoutingEnv):
     def __init__(
         self, 
         resolution: float, 

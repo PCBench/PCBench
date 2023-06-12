@@ -1,6 +1,6 @@
 from stable_baselines3 import PPO, A2C
 import os
-from PCBRoutingEnv import PCBRoutingEnv
+from RLEnv.EnvLayer.PCBRoutingEnv import PCBRoutingEnv
 from params import Params
 from stable_baselines3.common.logger import configure
 
@@ -27,8 +27,8 @@ class Trainer:
                 pcb_names=self.pcb_names
             )
         elif self.params.env.env_name == "vlsi-dat":
-            from env_VLSI_DAT import VLSIDATEnv
-            self.env = VLSIDATEnv(
+            from rl_env import rl_env
+            self.env = rl_env(
                 resolution=self.params.env.resolution, 
                 pcb_folder=self.params.env.benchmark_folder,
                 pcb_names=self.pcb_names

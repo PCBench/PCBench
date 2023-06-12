@@ -1,6 +1,3 @@
-import sys
-sys.path.append('..')
-
 from copy import copy
 from copy import deepcopy
 
@@ -9,7 +6,7 @@ from multiprocessing import Pool
 
 from astar import Astar
 
-from load_data.RLoader import PCBLoader
+from RLEnv.DataLayer.RLoader import PCBLoader
 
 ####    Environment for MCTS    ####
 
