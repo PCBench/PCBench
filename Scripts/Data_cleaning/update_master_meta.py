@@ -41,4 +41,4 @@ def update_master_meta(root_folder: str):
         f.write(metaf)
 
 if __name__ == "__main__":
-    update_master_meta("../../")
+    update_master_meta("../../PCBs/")
