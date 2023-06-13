@@ -32,7 +32,8 @@ def augmentation(num, ratio, file_name):
             }
 
             # Define the output directory and file
-            output_dir = "../../PCBs/" + file_name + "/augmented_data/"
+            augment_folder = 'augmented_data'
+            output_dir = os.path.join(augment_folder, file_name)
             output_file = str(i) + ".json"
 
             # Create the directory if it does not exist
@@ -49,9 +50,9 @@ def augmentation(num, ratio, file_name):
 
 if __name__ == "__main__":
     parser = argparse.ArgumentParser(description='Process JSON files.')
-    parser.add_argument('num', type=int, help='The number of sampled data.')
-    parser.add_argument('ratio', type=float, help='The proportion you want to randomly select.')
-    parser.add_argument('file_name', type=str, help='The name of the dataset.')
+    parser.add_argument('-n', '--num_samples', type=int, help='The number of generated samples from selected PCB.')
+    parser.add_argument('-r', '--net_ratio', type=float, help='The proportion of nets to be sampled from selected PCB.')
+    parser.add_argument('-p', '--pcb_name', type=str, help='The name of the PCB.')
 
     args = parser.parse_args()
-    augmentation(args.num, args.ratio, args.file_name)
+    augmentation(args.num_samples, args.net_ratio, args.pcb_name)
