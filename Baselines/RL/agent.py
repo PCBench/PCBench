@@ -4,7 +4,7 @@ from RLEnv.EnvLayer.PCBRoutingEnv import PCBRoutingEnv
 from params import Params
 from stable_baselines3.common.logger import configure
 
-class Trainer:
+class Agent:
     def __init__(self, env=None, pcb_names=None) -> None:
         self.params = Params()
         if self.params.rl.load_model_name is not None:
@@ -98,5 +98,7 @@ if __name__ == "__main__":
         pcb_name = sys.argv[1].split('/')[-1]
     else:
         pcb_name = None
-    trainer = Trainer(pcb_names=pcb_name)
-    trainer.learn()
+    if not os.path.exists("logs"):
+        os.mkdir("logs")
+    agent = Agent(pcb_names=pcb_name)
+    agent.learn()
