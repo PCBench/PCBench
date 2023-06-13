@@ -30,7 +30,7 @@ We propose a JSON specification (`final.json` for each PCB design) called the PC
 
 ## Data Augmentation
 ### Run
-The augmentation data can be generated with the script `Scripts/Data_augmentation/augmentation.py`.  To generate 3 samples by randomly extracting 50% nets from the PCB `1Bitsy_1bitsy`, please run the following command
+The augmentation data can be generated with the script [`Scripts/Data_augmentation/augmentation.py`](https://github.com/PCBench/PCBench/blob/main/Scripts/Data_augmentation/augmentation.py).  To generate 3 samples by randomly extracting 50% nets from the PCB `1Bitsy_1bitsy`, please run the following command
 ```
 cd Scripts/Data_augmentation/
 python augmentation.py --num_samples 3 --net_ratio 0.5 --pcb_name 1Bitsy_1bitsy
