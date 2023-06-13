@@ -78,4 +78,4 @@ for _ in range(iters):
     if terminal:
         env.reset()
 ```
-You can find more examples of customizing functions of reward and state observation from [RLEnv/examples.ipynb](https://github.com/PCBench/PCBench/RLEnv/examples.ipynb).
+You can find more examples of customizing functions of reward and state observation from [RLEnv/examples.ipynb](https://github.com/PCBench/PCBench/blob/main/RLEnv/examples.ipynb).
