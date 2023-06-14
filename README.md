@@ -1,5 +1,5 @@
 # PCBench: A Dataset for Printed Circuit Board Routing
-PCBenchis a dataset for PCB routing task, it includes a dataset consisting of 164 printed circuit boards (PCB) designs, a data augmentation script  to expand the dataset for supervised learning (SL) tasks, and a reinforcement learning (RL) environment.
+PCBench is a dataset for PCB routing task, it includes a dataset consisting of 164 printed circuit boards (PCB), a data augmentation script  to expand the dataset for supervised learning (SL) tasks, and a reinforcement learning (RL) environment.
   
  
 ## Dataset
