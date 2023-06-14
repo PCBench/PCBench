@@ -1,6 +1,6 @@
 # Benchmarking the SOTA
 
-We benchmark three PCB routers using our dataset: [RL-MCTS router](https://ieeexplore.ieee.org/document/9768074), [FreeRouting](https://github.com/freerouting/freerouting), and [PcbRouter](https://github.com/The-OpenROAD-Project/PcbRouter). The first one is a ML-based approach, and the other two are heuristic approaches.
+We benchmark three PCB routers using our dataset: [RL-MCTS router](https://ieeexplore.ieee.org/document/9768074), [FreeRouting](https://github.com/freerouting/freerouting), and [PcbRouter](https://github.com/The-OpenROAD-Project/PcbRouter). The first one is a ML-based approach, and the other two are heuristic approaches. The detailed results of these approaches can be found [here](https://docs.google.com/spreadsheets/d/1P1y3hfvNfsB1HC0W9c6N1bXTP7QoEg7tjmHyZq8PSmM/edit#gid=0).
 
 ## ML-based approach: RL-MCTS
 ### Prerequisites
