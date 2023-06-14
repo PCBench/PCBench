@@ -22,7 +22,7 @@ class PCBState:
             self,
             nets: Dict[int, List[Tuple[int, int, int]]]=None,
             pad_regions: Dict[Tuple[int, int, int], List[Tuple[int, int, int]]]=None,
-            obstacles: List[Tuple[int, int, int]]=None,
+            keepouts: List[Tuple[int, int, int]]=None,
             grid_dim: Tuple[int, int, int]=None,
             paths: Dict[int, List[List[Tuple[int, int, int]]]]=None,
             rules: Rules=None, 
@@ -31,7 +31,7 @@ class PCBState:
         ) -> None:
         self.nets = nets
         self.pad_regions = pad_regions
-        self.obstacles = obstacles
+        self.keepouts = keepouts
         self.grid_dim = grid_dim
         self.paths = paths if paths is not None else defaultdict(list)
         self.rules = rules
@@ -53,16 +53,17 @@ class PCBLoader:
             self.resolution = [self.pcb["rules"]["net_classes"][0]["clearance"], self.pcb["rules"]["net_classes"][0]["clearance"]]
         routing_matrix, nets, pad_regions = PCBGridize(self.pcb, self.resolution)
 
-        obstacles = []
-        if -1 in nets:
-            obs_pads = nets.pop(-1)
-            for obs in obs_pads:
-                obstacles += pad_regions.pop(obs)
+        keepouts = self.pcb["keepouts"]
+        # keepouts = []
+        # if -1 in nets:
+        #     obs_pads = nets.pop(-1)
+        #     for obs in obs_pads:
+        #         keepouts += pad_regions.pop(obs)
 
         pcb_state = PCBState(
             nets=nets,
             pad_regions=pad_regions,
-            obstacles=obstacles,
+            keepouts=keepouts,
             grid_dim=routing_matrix.shape,
             rules=rules
         )

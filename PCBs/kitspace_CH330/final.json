@@ -27,8 +27,8 @@
       "width": 0.2
     }
   ],
-  "nets": {
-    "4": [
+  "nets": [
+    [
       {
         "type": "thru_hole",
         "layer": ["F.Cu", "B.Cu"],
@@ -118,7 +118,7 @@
         "rotation": 0
       }
     ],
-    "7": [
+    [
       {
         "type": "thru_hole",
         "layer": ["F.Cu", "B.Cu"],
@@ -144,7 +144,7 @@
         "rotation": 90
       }
     ],
-    "6": [
+    [
       {
         "type": "thru_hole",
         "layer": ["F.Cu", "B.Cu"],
@@ -170,7 +170,7 @@
         "rotation": 90
       }
     ],
-    "1": [
+    [
       {
         "type": "thru_hole",
         "layer": ["F.Cu", "B.Cu"],
@@ -220,7 +220,7 @@
         "rotation": 0
       }
     ],
-    "8": [
+    [
       {
         "type": "smd",
         "layer": ["B.Cu"],
@@ -238,7 +238,7 @@
         "rotation": 0
       }
     ],
-    "3": [
+    [
       {
         "type": "smd",
         "layer": ["B.Cu"],
@@ -256,7 +256,7 @@
         "rotation": 0
       }
     ],
-    "2": [
+    [
       {
         "type": "smd",
         "layer": ["B.Cu"],
@@ -274,25 +274,7 @@
         "rotation": 0
       }
     ],
-    "-1": [
-      {
-        "type": "smd",
-        "layer": ["B.Cu"],
-        "shape": "rect",
-        "center": [189.21, 79.35],
-        "radii": [0.45, 1.38],
-        "rotation": 0
-      },
-      {
-        "type": "smd",
-        "layer": ["F.Cu"],
-        "shape": "rect",
-        "center": [186.20000000000002, 81.905],
-        "radii": [1.55, 0.6],
-        "rotation": 0
-      }
-    ],
-    "11": [
+    [
       {
         "type": "smd",
         "layer": ["F.Cu"],
@@ -310,7 +292,7 @@
         "rotation": 90
       }
     ],
-    "10": [
+    [
       {
         "type": "smd",
         "layer": ["F.Cu"],
@@ -328,11 +310,29 @@
         "rotation": 90
       }
     ]
-  },
+  ],
+  "keepouts": [
+    {
+      "type": "smd",
+      "layer": ["B.Cu"],
+      "shape": "rect",
+      "center": [189.21, 79.35],
+      "radii": [0.45, 1.38],
+      "rotation": 0
+    },
+    {
+      "type": "smd",
+      "layer": ["F.Cu"],
+      "shape": "rect",
+      "center": [186.20000000000002, 81.905],
+      "radii": [1.55, 0.6],
+      "rotation": 0
+    }
+  ],
   "rules": {
     "net_classes": [
       {
-        "indices": [2, 3, 5, 7, 6, 8, 4, 10, 11, 9, 1],
+        "indices": [6, 5, 1, 2, 4, 0, 8, 7, 3],
         "width": 0.25,
         "clearance": 0.2,
         "via_diameter": 0.6

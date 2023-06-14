@@ -9,7 +9,7 @@ def extract_recursive(sexp_obj: Sexp,
                       exclude:list = [], only:list = None, 
                       parents:list = None):
     ret_dict = {}
-    if (not isinstance(sexp_obj._value,str)) and not isinstance(sexp_obj._value,int) and \
+    if (not isinstance(sexp_obj._value,str)) and not isinstance(sexp_obj._value,int) and not isinstance(sexp_obj._value,float) and \
         (any(isinstance(item,(Sexp)) for item in sexp_obj._value) or (isinstance(sexp_obj._value,OrderedDict))):
         for item in sexp_obj._value:
             if item not in exclude:

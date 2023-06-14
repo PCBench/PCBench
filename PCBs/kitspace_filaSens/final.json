@@ -55,8 +55,8 @@
       "width": 0.1524
     }
   ],
-  "nets": {
-    "7": [
+  "nets": [
+    [
       {
         "type": "thru_hole",
         "layer": ["Top", "Bottom"],
@@ -74,7 +74,7 @@
         "rotation": 0
       }
     ],
-    "2": [
+    [
       {
         "type": "thru_hole",
         "layer": ["Top", "Bottom"],
@@ -172,7 +172,7 @@
         "rotation": 90
       }
     ],
-    "1": [
+    [
       {
         "type": "thru_hole",
         "layer": ["Top", "Bottom"],
@@ -230,7 +230,7 @@
         "rotation": 0
       }
     ],
-    "3": [
+    [
       {
         "type": "thru_hole",
         "layer": ["Top", "Bottom"],
@@ -264,7 +264,7 @@
         "rotation": 0
       }
     ],
-    "4": [
+    [
       {
         "type": "thru_hole",
         "layer": ["Top", "Bottom"],
@@ -314,7 +314,7 @@
         "rotation": 0
       }
     ],
-    "5": [
+    [
       {
         "type": "thru_hole",
         "layer": ["Top", "Bottom"],
@@ -348,7 +348,7 @@
         "rotation": 90
       }
     ],
-    "6": [
+    [
       {
         "type": "thru_hole",
         "layer": ["Top", "Bottom"],
@@ -382,7 +382,7 @@
         "rotation": 90
       }
     ],
-    "8": [
+    [
       {
         "type": "thru_hole",
         "layer": ["Top", "Bottom"],
@@ -400,7 +400,7 @@
         "rotation": 90
       }
     ],
-    "9": [
+    [
       {
         "type": "thru_hole",
         "layer": ["Top", "Bottom"],
@@ -426,7 +426,7 @@
         "rotation": 0
       }
     ],
-    "10": [
+    [
       {
         "type": "smd",
         "layer": ["Top"],
@@ -452,7 +452,7 @@
         "rotation": 90
       }
     ],
-    "11": [
+    [
       {
         "type": "smd",
         "layer": ["Top"],
@@ -469,30 +469,30 @@
         "radii": [0.6118, 0.9118],
         "rotation": 0
       }
-    ],
-    "-1": [
-      {
-        "type": "smd",
-        "layer": ["Top"],
-        "shape": "rect",
-        "center": [125.6961, 112.62859999999999],
-        "radii": [1.3, 1.55],
-        "rotation": 90
-      },
-      {
-        "type": "smd",
-        "layer": ["Top"],
-        "shape": "rect",
-        "center": [130.1961, 112.62859999999999],
-        "radii": [1.3, 1.55],
-        "rotation": 90
-      }
     ]
-  },
+  ],
+  "keepouts": [
+    {
+      "type": "smd",
+      "layer": ["Top"],
+      "shape": "rect",
+      "center": [125.6961, 112.62859999999999],
+      "radii": [1.3, 1.55],
+      "rotation": 90
+    },
+    {
+      "type": "smd",
+      "layer": ["Top"],
+      "shape": "rect",
+      "center": [130.1961, 112.62859999999999],
+      "radii": [1.3, 1.55],
+      "rotation": 90
+    }
+  ],
   "rules": {
     "net_classes": [
       {
-        "indices": [1, 3, 10, 9, 4, 8, 6, 5, 2, 7, 11],
+        "indices": [2, 3, 9, 8, 4, 7, 6, 5, 1, 0, 10],
         "width": 0.25,
         "clearance": 0.127,
         "via_diameter": 0.8

@@ -58,13 +58,14 @@ class PCBRoutingEnv(gym.Env):
             pcb_loader = PCBLoader(pcb_file_path, self.resolution)
             matrix_tmp, stat_tmp, layers_tmp = pcb_loader.load()
             self.pcb_holder[self.pcb_name] = matrix_tmp, stat_tmp, layers_tmp
-        
+
         self.pcb_matrix, self.nets = deepcopy(matrix_tmp), deepcopy(stat_tmp.nets)
         self.pad_region = stat_tmp.pad_regions
         self.layers = layers_tmp
         self.net_meta = stat_tmp.rules
         
-        self.nets_indices = sorted(list(self.nets.keys()))
+        # self.nets_indices = sorted(list(self.nets.keys()))
+        self.nets_indices = list(range(len(self.nets)))
         self.current_net = self.nets_indices.pop(0)
         self._agent_location = np.array(self.nets[self.current_net].pop(0))
         self._target_location = np.array(self.nets[self.current_net].pop(closest_point_idx(self._agent_location, self.nets[self.current_net])))

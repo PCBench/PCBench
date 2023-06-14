@@ -27,8 +27,8 @@
       "width": 0.2
     }
   ],
-  "nets": {
-    "19": [
+  "nets": [
+    [
       {
         "type": "smd",
         "layer": ["F.Cu"],
@@ -46,7 +46,7 @@
         "rotation": 90
       }
     ],
-    "1": [
+    [
       {
         "type": "smd",
         "layer": ["F.Cu"],
@@ -200,7 +200,7 @@
         "rotation": 90
       }
     ],
-    "2": [
+    [
       {
         "type": "smd",
         "layer": ["F.Cu"],
@@ -258,217 +258,7 @@
         "rotation": 0
       }
     ],
-    "-1": [
-      {
-        "type": "np_thru_hole",
-        "layer": ["F.Cu", "B.Cu"],
-        "shape": "circle",
-        "center": [103.5, 103.5],
-        "radii": [3.5, 3.5],
-        "rotation": 0
-      },
-      {
-        "type": "np_thru_hole",
-        "layer": ["F.Cu", "B.Cu"],
-        "shape": "circle",
-        "center": [161.5, 103.5],
-        "radii": [3.5, 3.5],
-        "rotation": 0
-      },
-      {
-        "type": "thru_hole",
-        "layer": ["F.Cu", "B.Cu"],
-        "shape": "oval",
-        "center": [110.91000000000001, 104.77000000000001],
-        "radii": [1.7272, 1.7272],
-        "rotation": 90
-      },
-      {
-        "type": "thru_hole",
-        "layer": ["F.Cu", "B.Cu"],
-        "shape": "oval",
-        "center": [113.45, 104.77000000000001],
-        "radii": [1.7272, 1.7272],
-        "rotation": 0
-      },
-      {
-        "type": "thru_hole",
-        "layer": ["F.Cu", "B.Cu"],
-        "shape": "oval",
-        "center": [115.99000000000001, 102.23],
-        "radii": [1.7272, 1.7272],
-        "rotation": 90
-      },
-      {
-        "type": "thru_hole",
-        "layer": ["F.Cu", "B.Cu"],
-        "shape": "oval",
-        "center": [118.53, 102.23],
-        "radii": [1.7272, 1.7272],
-        "rotation": 90
-      },
-      {
-        "type": "thru_hole",
-        "layer": ["F.Cu", "B.Cu"],
-        "shape": "oval",
-        "center": [121.07000000000001, 102.23],
-        "radii": [1.7272, 1.7272],
-        "rotation": 90
-      },
-      {
-        "type": "thru_hole",
-        "layer": ["F.Cu", "B.Cu"],
-        "shape": "oval",
-        "center": [121.07000000000001, 104.77000000000001],
-        "radii": [1.7272, 1.7272],
-        "rotation": 90
-      },
-      {
-        "type": "thru_hole",
-        "layer": ["F.Cu", "B.Cu"],
-        "shape": "oval",
-        "center": [123.61, 104.77000000000001],
-        "radii": [1.7272, 1.7272],
-        "rotation": 90
-      },
-      {
-        "type": "thru_hole",
-        "layer": ["F.Cu", "B.Cu"],
-        "shape": "oval",
-        "center": [126.15, 102.23],
-        "radii": [1.7272, 1.7272],
-        "rotation": 0
-      },
-      {
-        "type": "thru_hole",
-        "layer": ["F.Cu", "B.Cu"],
-        "shape": "oval",
-        "center": [126.15, 104.77000000000001],
-        "radii": [1.7272, 1.7272],
-        "rotation": 0
-      },
-      {
-        "type": "thru_hole",
-        "layer": ["F.Cu", "B.Cu"],
-        "shape": "oval",
-        "center": [128.69, 102.23],
-        "radii": [1.7272, 1.7272],
-        "rotation": 0
-      },
-      {
-        "type": "thru_hole",
-        "layer": ["F.Cu", "B.Cu"],
-        "shape": "oval",
-        "center": [141.39000000000001, 102.23],
-        "radii": [1.7272, 1.7272],
-        "rotation": 90
-      },
-      {
-        "type": "thru_hole",
-        "layer": ["F.Cu", "B.Cu"],
-        "shape": "oval",
-        "center": [141.39000000000001, 104.77000000000001],
-        "radii": [1.7272, 1.7272],
-        "rotation": 90
-      },
-      {
-        "type": "thru_hole",
-        "layer": ["F.Cu", "B.Cu"],
-        "shape": "oval",
-        "center": [143.93, 104.77000000000001],
-        "radii": [1.7272, 1.7272],
-        "rotation": 90
-      },
-      {
-        "type": "thru_hole",
-        "layer": ["F.Cu", "B.Cu"],
-        "shape": "oval",
-        "center": [146.47, 102.23],
-        "radii": [1.7272, 1.7272],
-        "rotation": 90
-      },
-      {
-        "type": "thru_hole",
-        "layer": ["F.Cu", "B.Cu"],
-        "shape": "oval",
-        "center": [146.47, 104.77000000000001],
-        "radii": [1.7272, 1.7272],
-        "rotation": 90
-      },
-      {
-        "type": "thru_hole",
-        "layer": ["F.Cu", "B.Cu"],
-        "shape": "oval",
-        "center": [149.01, 104.77000000000001],
-        "radii": [1.7272, 1.7272],
-        "rotation": 90
-      },
-      {
-        "type": "thru_hole",
-        "layer": ["F.Cu", "B.Cu"],
-        "shape": "oval",
-        "center": [151.55, 102.23000000000002],
-        "radii": [1.7272, 1.7272],
-        "rotation": 0
-      },
-      {
-        "type": "thru_hole",
-        "layer": ["F.Cu", "B.Cu"],
-        "shape": "oval",
-        "center": [151.55, 104.77000000000001],
-        "radii": [1.7272, 1.7272],
-        "rotation": 0
-      },
-      {
-        "type": "thru_hole",
-        "layer": ["F.Cu", "B.Cu"],
-        "shape": "oval",
-        "center": [154.09, 102.23000000000002],
-        "radii": [1.7272, 1.7272],
-        "rotation": 90
-      },
-      {
-        "type": "thru_hole",
-        "layer": ["F.Cu", "B.Cu"],
-        "shape": "oval",
-        "center": [154.09, 104.77000000000001],
-        "radii": [1.7272, 1.7272],
-        "rotation": 90
-      },
-      {
-        "type": "thru_hole",
-        "layer": ["F.Cu", "B.Cu"],
-        "shape": "oval",
-        "center": [156.63, 102.23000000000002],
-        "radii": [1.7272, 1.7272],
-        "rotation": 0
-      },
-      {
-        "type": "thru_hole",
-        "layer": ["F.Cu", "B.Cu"],
-        "shape": "oval",
-        "center": [135.54, 123.0],
-        "radii": [2.3, 1.6],
-        "rotation": 90
-      },
-      {
-        "type": "thru_hole",
-        "layer": ["F.Cu", "B.Cu"],
-        "shape": "oval",
-        "center": [140.62, 123.0],
-        "radii": [2.3, 1.6],
-        "rotation": 90
-      },
-      {
-        "type": "thru_hole",
-        "layer": ["F.Cu", "B.Cu"],
-        "shape": "circle",
-        "center": [105.88, 125.1],
-        "radii": [2, 2],
-        "rotation": 90
-      }
-    ],
-    "3": [
+    [
       {
         "type": "thru_hole",
         "layer": ["F.Cu", "B.Cu"],
@@ -518,7 +308,7 @@
         "rotation": 0
       }
     ],
-    "12": [
+    [
       {
         "type": "thru_hole",
         "layer": ["F.Cu", "B.Cu"],
@@ -536,7 +326,7 @@
         "rotation": 90
       }
     ],
-    "16": [
+    [
       {
         "type": "thru_hole",
         "layer": ["F.Cu", "B.Cu"],
@@ -554,7 +344,7 @@
         "rotation": 90
       }
     ],
-    "18": [
+    [
       {
         "type": "thru_hole",
         "layer": ["F.Cu", "B.Cu"],
@@ -572,7 +362,7 @@
         "rotation": 90
       }
     ],
-    "15": [
+    [
       {
         "type": "thru_hole",
         "layer": ["F.Cu", "B.Cu"],
@@ -590,7 +380,7 @@
         "rotation": 90
       }
     ],
-    "14": [
+    [
       {
         "type": "thru_hole",
         "layer": ["F.Cu", "B.Cu"],
@@ -608,7 +398,7 @@
         "rotation": 90
       }
     ],
-    "17": [
+    [
       {
         "type": "thru_hole",
         "layer": ["F.Cu", "B.Cu"],
@@ -626,7 +416,7 @@
         "rotation": 90
       }
     ],
-    "13": [
+    [
       {
         "type": "thru_hole",
         "layer": ["F.Cu", "B.Cu"],
@@ -644,7 +434,7 @@
         "rotation": 90
       }
     ],
-    "10": [
+    [
       {
         "type": "thru_hole",
         "layer": ["F.Cu", "B.Cu"],
@@ -662,7 +452,7 @@
         "rotation": 90
       }
     ],
-    "11": [
+    [
       {
         "type": "thru_hole",
         "layer": ["F.Cu", "B.Cu"],
@@ -680,7 +470,7 @@
         "rotation": 90
       }
     ],
-    "4": [
+    [
       {
         "type": "thru_hole",
         "layer": ["F.Cu", "B.Cu"],
@@ -698,7 +488,7 @@
         "rotation": 90
       }
     ],
-    "5": [
+    [
       {
         "type": "thru_hole",
         "layer": ["F.Cu", "B.Cu"],
@@ -716,7 +506,7 @@
         "rotation": 90
       }
     ],
-    "6": [
+    [
       {
         "type": "thru_hole",
         "layer": ["F.Cu", "B.Cu"],
@@ -734,7 +524,7 @@
         "rotation": 90
       }
     ],
-    "7": [
+    [
       {
         "type": "thru_hole",
         "layer": ["F.Cu", "B.Cu"],
@@ -752,7 +542,7 @@
         "rotation": 90
       }
     ],
-    "8": [
+    [
       {
         "type": "thru_hole",
         "layer": ["F.Cu", "B.Cu"],
@@ -770,7 +560,7 @@
         "rotation": 90
       }
     ],
-    "9": [
+    [
       {
         "type": "thru_hole",
         "layer": ["F.Cu", "B.Cu"],
@@ -788,11 +578,221 @@
         "rotation": 90
       }
     ]
-  },
+  ],
+  "keepouts": [
+    {
+      "type": "np_thru_hole",
+      "layer": ["F.Cu", "B.Cu"],
+      "shape": "circle",
+      "center": [103.5, 103.5],
+      "radii": [3.5, 3.5],
+      "rotation": 0
+    },
+    {
+      "type": "np_thru_hole",
+      "layer": ["F.Cu", "B.Cu"],
+      "shape": "circle",
+      "center": [161.5, 103.5],
+      "radii": [3.5, 3.5],
+      "rotation": 0
+    },
+    {
+      "type": "thru_hole",
+      "layer": ["F.Cu", "B.Cu"],
+      "shape": "oval",
+      "center": [110.91000000000001, 104.77000000000001],
+      "radii": [1.7272, 1.7272],
+      "rotation": 90
+    },
+    {
+      "type": "thru_hole",
+      "layer": ["F.Cu", "B.Cu"],
+      "shape": "oval",
+      "center": [113.45, 104.77000000000001],
+      "radii": [1.7272, 1.7272],
+      "rotation": 0
+    },
+    {
+      "type": "thru_hole",
+      "layer": ["F.Cu", "B.Cu"],
+      "shape": "oval",
+      "center": [115.99000000000001, 102.23],
+      "radii": [1.7272, 1.7272],
+      "rotation": 90
+    },
+    {
+      "type": "thru_hole",
+      "layer": ["F.Cu", "B.Cu"],
+      "shape": "oval",
+      "center": [118.53, 102.23],
+      "radii": [1.7272, 1.7272],
+      "rotation": 90
+    },
+    {
+      "type": "thru_hole",
+      "layer": ["F.Cu", "B.Cu"],
+      "shape": "oval",
+      "center": [121.07000000000001, 102.23],
+      "radii": [1.7272, 1.7272],
+      "rotation": 90
+    },
+    {
+      "type": "thru_hole",
+      "layer": ["F.Cu", "B.Cu"],
+      "shape": "oval",
+      "center": [121.07000000000001, 104.77000000000001],
+      "radii": [1.7272, 1.7272],
+      "rotation": 90
+    },
+    {
+      "type": "thru_hole",
+      "layer": ["F.Cu", "B.Cu"],
+      "shape": "oval",
+      "center": [123.61, 104.77000000000001],
+      "radii": [1.7272, 1.7272],
+      "rotation": 90
+    },
+    {
+      "type": "thru_hole",
+      "layer": ["F.Cu", "B.Cu"],
+      "shape": "oval",
+      "center": [126.15, 102.23],
+      "radii": [1.7272, 1.7272],
+      "rotation": 0
+    },
+    {
+      "type": "thru_hole",
+      "layer": ["F.Cu", "B.Cu"],
+      "shape": "oval",
+      "center": [126.15, 104.77000000000001],
+      "radii": [1.7272, 1.7272],
+      "rotation": 0
+    },
+    {
+      "type": "thru_hole",
+      "layer": ["F.Cu", "B.Cu"],
+      "shape": "oval",
+      "center": [128.69, 102.23],
+      "radii": [1.7272, 1.7272],
+      "rotation": 0
+    },
+    {
+      "type": "thru_hole",
+      "layer": ["F.Cu", "B.Cu"],
+      "shape": "oval",
+      "center": [141.39000000000001, 102.23],
+      "radii": [1.7272, 1.7272],
+      "rotation": 90
+    },
+    {
+      "type": "thru_hole",
+      "layer": ["F.Cu", "B.Cu"],
+      "shape": "oval",
+      "center": [141.39000000000001, 104.77000000000001],
+      "radii": [1.7272, 1.7272],
+      "rotation": 90
+    },
+    {
+      "type": "thru_hole",
+      "layer": ["F.Cu", "B.Cu"],
+      "shape": "oval",
+      "center": [143.93, 104.77000000000001],
+      "radii": [1.7272, 1.7272],
+      "rotation": 90
+    },
+    {
+      "type": "thru_hole",
+      "layer": ["F.Cu", "B.Cu"],
+      "shape": "oval",
+      "center": [146.47, 102.23],
+      "radii": [1.7272, 1.7272],
+      "rotation": 90
+    },
+    {
+      "type": "thru_hole",
+      "layer": ["F.Cu", "B.Cu"],
+      "shape": "oval",
+      "center": [146.47, 104.77000000000001],
+      "radii": [1.7272, 1.7272],
+      "rotation": 90
+    },
+    {
+      "type": "thru_hole",
+      "layer": ["F.Cu", "B.Cu"],
+      "shape": "oval",
+      "center": [149.01, 104.77000000000001],
+      "radii": [1.7272, 1.7272],
+      "rotation": 90
+    },
+    {
+      "type": "thru_hole",
+      "layer": ["F.Cu", "B.Cu"],
+      "shape": "oval",
+      "center": [151.55, 102.23000000000002],
+      "radii": [1.7272, 1.7272],
+      "rotation": 0
+    },
+    {
+      "type": "thru_hole",
+      "layer": ["F.Cu", "B.Cu"],
+      "shape": "oval",
+      "center": [151.55, 104.77000000000001],
+      "radii": [1.7272, 1.7272],
+      "rotation": 0
+    },
+    {
+      "type": "thru_hole",
+      "layer": ["F.Cu", "B.Cu"],
+      "shape": "oval",
+      "center": [154.09, 102.23000000000002],
+      "radii": [1.7272, 1.7272],
+      "rotation": 90
+    },
+    {
+      "type": "thru_hole",
+      "layer": ["F.Cu", "B.Cu"],
+      "shape": "oval",
+      "center": [154.09, 104.77000000000001],
+      "radii": [1.7272, 1.7272],
+      "rotation": 90
+    },
+    {
+      "type": "thru_hole",
+      "layer": ["F.Cu", "B.Cu"],
+      "shape": "oval",
+      "center": [156.63, 102.23000000000002],
+      "radii": [1.7272, 1.7272],
+      "rotation": 0
+    },
+    {
+      "type": "thru_hole",
+      "layer": ["F.Cu", "B.Cu"],
+      "shape": "oval",
+      "center": [135.54, 123.0],
+      "radii": [2.3, 1.6],
+      "rotation": 90
+    },
+    {
+      "type": "thru_hole",
+      "layer": ["F.Cu", "B.Cu"],
+      "shape": "oval",
+      "center": [140.62, 123.0],
+      "radii": [2.3, 1.6],
+      "rotation": 90
+    },
+    {
+      "type": "thru_hole",
+      "layer": ["F.Cu", "B.Cu"],
+      "shape": "circle",
+      "center": [105.88, 125.1],
+      "radii": [2, 2],
+      "rotation": 90
+    }
+  ],
   "rules": {
     "net_classes": [
       {
-        "indices": [5, 6, 7, 8, 9, 10, 19, 11, 1, 16, 17, 18, 12, 13, 14, 15, 4, 3, 2],
+        "indices": [14, 15, 16, 17, 18, 11, 0, 12, 1, 5, 9, 6, 4, 10, 8, 7, 13, 3, 2],
         "width": 0.35,
         "clearance": 0.25,
         "via_diameter": 1

@@ -33,8 +33,8 @@
       "width": 0.1
     }
   ],
-  "nets": {
-    "1": [
+  "nets": [
+    [
       {
         "type": "thru_hole",
         "layer": ["F.Cu", "B.Cu"],
@@ -52,7 +52,7 @@
         "rotation": 0
       }
     ],
-    "2": [
+    [
       {
         "type": "thru_hole",
         "layer": ["F.Cu", "B.Cu"],
@@ -70,7 +70,7 @@
         "rotation": 0
       }
     ],
-    "3": [
+    [
       {
         "type": "thru_hole",
         "layer": ["F.Cu", "B.Cu"],
@@ -88,7 +88,7 @@
         "rotation": 0
       }
     ],
-    "4": [
+    [
       {
         "type": "thru_hole",
         "layer": ["F.Cu", "B.Cu"],
@@ -106,7 +106,7 @@
         "rotation": 0
       }
     ],
-    "8": [
+    [
       {
         "type": "thru_hole",
         "layer": ["F.Cu", "B.Cu"],
@@ -124,7 +124,7 @@
         "rotation": 0
       }
     ],
-    "7": [
+    [
       {
         "type": "thru_hole",
         "layer": ["F.Cu", "B.Cu"],
@@ -142,7 +142,7 @@
         "rotation": 0
       }
     ],
-    "6": [
+    [
       {
         "type": "thru_hole",
         "layer": ["F.Cu", "B.Cu"],
@@ -160,7 +160,7 @@
         "rotation": 0
       }
     ],
-    "5": [
+    [
       {
         "type": "thru_hole",
         "layer": ["F.Cu", "B.Cu"],
@@ -178,11 +178,12 @@
         "rotation": 0
       }
     ]
-  },
+  ],
+  "keepouts": [],
   "rules": {
     "net_classes": [
       {
-        "indices": [1, 2, 3, 4, 5, 6, 7, 8],
+        "indices": [0, 1, 2, 3, 7, 6, 5, 4],
         "width": 0.25,
         "clearance": 0.2,
         "via_diameter": 0.6

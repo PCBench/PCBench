@@ -17,15 +17,15 @@ def dump_to_PBCRDL_json(target_dir):
     
     kicad_file = os.path.join(target_dir, "processed.kicad_pcb")
     pcb = PCB(kicad_file)
-    net_pads = extract_net_pads(pcb)
-    net_classes = adjust_net_class(extract_net_classes(pcb.pcb))
+    net_pads, keepouts, net_indices = extract_net_pads(pcb)
+    net_classes = adjust_net_class(extract_net_classes(pcb.pcb), net_indices)
     vias = extract_track_pieces(pcb.vias)
     dump = {
             "layers": pcb.layers, 
             "unit": "mm", # TODO: check where this is defined in kicad files
-            "border": pcb.boundary_lines,
-            # this is a list containing all the boundaries lines
+            "border": pcb.boundary_lines, # this is a list containing all the boundaries lines
             'nets': net_pads,
+            'keepouts': keepouts,
             'rules':{
                 'net_classes': net_classes # TODO: is there a better way than extract_netclasses?
             },
@@ -44,11 +44,11 @@ def dump_to_PBCRDL_json(target_dir):
         s = re.sub("(?<=\[)[^\[\]]+(?=])", repl_func, s)
         fd.write(s)
 
-def adjust_net_class(net_classes: List[Dict[str, Any]]) -> List[Dict[str, Any]]:
+def adjust_net_class(net_classes: List[Dict[str, Any]], net_indices: List[int]) -> List[Dict[str, Any]]:
     new_net_classes = []
     for nc in net_classes:
         new_nc = dict()
-        new_nc["indices"] = nc["indices"]
+        new_nc["indices"] = [net_indices.index(i) for i in nc["indices"] if i in net_indices]
         new_nc["width"] = nc["trace_width"]
         new_nc["clearance"] = nc["clearance"]
         new_nc["via_diameter"] = nc["via_dia"]
@@ -56,8 +56,10 @@ def adjust_net_class(net_classes: List[Dict[str, Any]]) -> List[Dict[str, Any]]:
     return new_net_classes
 
 def extract_net_pads(pcb: PCB) -> Dict[str, Any]:
-    new_net_pads = dict()
-
+    # new_net_pads = dict()
+    net_indices = []
+    new_net_pads = []
+    keepouts = []
     for net_idx, pads in pcb.net_pads.items():
         new_pads = []
         for pad_info in pads:
@@ -85,9 +87,14 @@ def extract_net_pads(pcb: PCB) -> Dict[str, Any]:
                 rotation = rotation + 180 if rotation < 0 else rotation
             tmp_pad_dict["rotation"] = rotation
             new_pads.append(tmp_pad_dict)
-        new_net_pads[net_idx] = new_pads
+        # new_net_pads[net_idx] = new_pads
+        if net_idx == -1:
+            keepouts = new_pads
+        else:
+            new_net_pads.append(new_pads)
+            net_indices.append(net_idx)
     
-    return new_net_pads
+    return new_net_pads, keepouts, net_indices
 
 
 if __name__ == "__main__":

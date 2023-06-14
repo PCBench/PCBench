@@ -26,7 +26,8 @@ class MCTS_CREnv():
 
         self.pin_pair2net = []
         self.start, self.end = [], []
-        for nidx, net in self.nets.items():
+        # for nidx, net in self.nets.items():
+        for nidx, net in enumerate(self.nets):
             print(net, self.board.shape)
             if nidx != -1:
                 for pidx in range(len(net)-1):

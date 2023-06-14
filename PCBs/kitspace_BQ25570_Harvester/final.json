@@ -55,8 +55,8 @@
       "width": 0.127
     }
   ],
-  "nets": {
-    "12": [
+  "nets": [
+    [
       {
         "type": "smd",
         "layer": ["F.Cu"],
@@ -98,7 +98,7 @@
         "rotation": 90
       }
     ],
-    "1": [
+    [
       {
         "type": "smd",
         "layer": ["F.Cu"],
@@ -324,7 +324,7 @@
         "rotation": 0
       }
     ],
-    "2": [
+    [
       {
         "type": "smd",
         "layer": ["F.Cu"],
@@ -342,7 +342,7 @@
         "rotation": 90
       }
     ],
-    "3": [
+    [
       {
         "type": "smd",
         "layer": ["F.Cu"],
@@ -384,7 +384,7 @@
         "rotation": 0
       }
     ],
-    "13": [
+    [
       {
         "type": "smd",
         "layer": ["F.Cu"],
@@ -426,7 +426,7 @@
         "rotation": 0
       }
     ],
-    "6": [
+    [
       {
         "type": "thru_hole",
         "layer": ["F.Cu", "B.Cu"],
@@ -444,7 +444,7 @@
         "rotation": 0
       }
     ],
-    "10": [
+    [
       {
         "type": "smd",
         "layer": ["F.Cu"],
@@ -470,7 +470,7 @@
         "rotation": 0
       }
     ],
-    "11": [
+    [
       {
         "type": "smd",
         "layer": ["F.Cu"],
@@ -496,17 +496,7 @@
         "rotation": 0
       }
     ],
-    "-1": [
-      {
-        "type": "smd",
-        "layer": ["F.Cu"],
-        "shape": "oval",
-        "center": [129.54, 87.25],
-        "radii": [0.28, 0.8],
-        "rotation": 90
-      }
-    ],
-    "8": [
+    [
       {
         "type": "smd",
         "layer": ["F.Cu"],
@@ -532,7 +522,7 @@
         "rotation": 0
       }
     ],
-    "7": [
+    [
       {
         "type": "smd",
         "layer": ["F.Cu"],
@@ -566,7 +556,7 @@
         "rotation": 0
       }
     ],
-    "9": [
+    [
       {
         "type": "smd",
         "layer": ["F.Cu"],
@@ -592,7 +582,7 @@
         "rotation": 0
       }
     ],
-    "5": [
+    [
       {
         "type": "smd",
         "layer": ["F.Cu"],
@@ -610,7 +600,7 @@
         "rotation": 0
       }
     ],
-    "4": [
+    [
       {
         "type": "smd",
         "layer": ["F.Cu"],
@@ -628,11 +618,21 @@
         "rotation": 90
       }
     ]
-  },
+  ],
+  "keepouts": [
+    {
+      "type": "smd",
+      "layer": ["F.Cu"],
+      "shape": "oval",
+      "center": [129.54, 87.25],
+      "radii": [0.28, 0.8],
+      "rotation": 90
+    }
+  ],
   "rules": {
     "net_classes": [
       {
-        "indices": [6, 12, 13, 1, 2, 3, 4, 5, 7, 8, 9, 10, 11],
+        "indices": [5, 0, 4, 1, 2, 3, 12, 11, 9, 8, 10, 6, 7],
         "width": 0.225,
         "clearance": 0.2,
         "via_diameter": 0.6858

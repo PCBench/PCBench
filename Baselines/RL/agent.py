@@ -26,7 +26,7 @@ class Agent:
                 pcb_folder=self.params.env.benchmark_folder,
                 pcb_names=self.pcb_names
             )
-        elif self.params.env.env_name == "vlsi-dat":
+        elif self.params.env.env_name == "rl-mcts":
             from rl_env import rl_env
             self.env = rl_env(
                 resolution=self.params.env.resolution, 

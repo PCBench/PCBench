@@ -27,8 +27,8 @@
       "width": 0.15
     }
   ],
-  "nets": {
-    "4": [
+  "nets": [
+    [
       {
         "type": "smd",
         "layer": ["F.Cu"],
@@ -78,7 +78,7 @@
         "rotation": 0
       }
     ],
-    "2": [
+    [
       {
         "type": "smd",
         "layer": ["F.Cu"],
@@ -112,7 +112,7 @@
         "rotation": 0
       }
     ],
-    "1": [
+    [
       {
         "type": "thru_hole",
         "layer": ["F.Cu", "B.Cu"],
@@ -130,7 +130,7 @@
         "rotation": 90
       }
     ],
-    "5": [
+    [
       {
         "type": "thru_hole",
         "layer": ["F.Cu", "B.Cu"],
@@ -148,7 +148,7 @@
         "rotation": 0
       }
     ],
-    "6": [
+    [
       {
         "type": "thru_hole",
         "layer": ["F.Cu", "B.Cu"],
@@ -166,25 +166,7 @@
         "rotation": 0
       }
     ],
-    "-1": [
-      {
-        "type": "thru_hole",
-        "layer": ["F.Cu", "B.Cu"],
-        "shape": "circle",
-        "center": [95.10776, 79.10068],
-        "radii": [1.30048, 1.30048],
-        "rotation": 90
-      },
-      {
-        "type": "thru_hole",
-        "layer": ["F.Cu", "B.Cu"],
-        "shape": "circle",
-        "center": [99.71024, 79.10068],
-        "radii": [1.30048, 1.30048],
-        "rotation": 90
-      }
-    ],
-    "3": [
+    [
       {
         "type": "thru_hole",
         "layer": ["F.Cu", "B.Cu"],
@@ -218,11 +200,29 @@
         "rotation": 0
       }
     ]
-  },
+  ],
+  "keepouts": [
+    {
+      "type": "thru_hole",
+      "layer": ["F.Cu", "B.Cu"],
+      "shape": "circle",
+      "center": [95.10776, 79.10068],
+      "radii": [1.30048, 1.30048],
+      "rotation": 90
+    },
+    {
+      "type": "thru_hole",
+      "layer": ["F.Cu", "B.Cu"],
+      "shape": "circle",
+      "center": [99.71024, 79.10068],
+      "radii": [1.30048, 1.30048],
+      "rotation": 90
+    }
+  ],
   "rules": {
     "net_classes": [
       {
-        "indices": [1, 2, 3, 4, 5, 6],
+        "indices": [2, 1, 5, 0, 3, 4],
         "width": 0.508,
         "clearance": 0.2032,
         "via_diameter": 0.889
