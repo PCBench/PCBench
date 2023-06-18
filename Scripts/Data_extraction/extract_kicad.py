@@ -4,6 +4,7 @@ from .thirdparty.kicad_parser.kicad_pcb import *
 from .thirdparty.kicad_parser.sexp_parser import *
 from .utils.pad_rotation import calculate_pad_pos_size, cal_xy
 from scipy.spatial import distance
+import math
 
 def extract_recursive(sexp_obj: Sexp, 
                       exclude:list = [], only:list = None, 
@@ -231,6 +232,22 @@ def extract_pad(
 
     return ret_pads
 
+def calculate_arc_end_point(start_point, center, angle):
+    # Convert angle from degrees to radians
+    angle_rad = math.radians(angle)
+    
+    # Translate start point and center to origin
+    translated_start = start_point[0] - center[0], start_point[1] - center[1]
+    
+    # Calculate the end point coordinates
+    end_x = translated_start[0] * math.cos(angle_rad) - translated_start[1] * math.sin(angle_rad)
+    end_y = translated_start[0] * math.sin(angle_rad) + translated_start[1] * math.cos(angle_rad)
+    
+    # Translate the end point back to the original coordinate system
+    end_point = end_x + center[0], end_y + center[1]
+    
+    return end_point
+
 def extract_bound(pcb: KicadPCB) -> Tuple[float, float, float, float, List[Any]]:
 
     gr_lines = pcb.gr_line
@@ -242,7 +259,7 @@ def extract_bound(pcb: KicadPCB) -> Tuple[float, float, float, float, List[Any]]
     for line in gr_lines:
         if line["layer"][1:-1] == "Edge.Cuts" or line["layer"] == "Edge.Cuts":
             width = line.width if "width" in line else line.stroke.width  # kicad v5 vs v6
-            lines.append({"type":"polyline", "start":tuple(line.start), "end":tuple(line.end), "width":width})
+            lines.append({"type":"polyline", "vertices":[tuple(line.start), tuple(line.end)]})
     for module in pcb.module:
         m_x, m_y = module.at[0], module.at[1]
         angle = module.at[2] if len(module.at) == 3 else 0
@@ -250,18 +267,31 @@ def extract_bound(pcb: KicadPCB) -> Tuple[float, float, float, float, List[Any]]
             for line in module.fp_line:
                 if not isinstance(line, str) and line.layer == "Edge.Cuts":
                     width = line.width if "width" in line else line.stroke.width  # kicad v5 vs v6
-                    lines.append({"type":"polyline", "start":cal_xy([m_x, m_y], line.start, angle), "end":cal_xy([m_x, m_y], line.end, angle), "width":width})
-                    print({"type":"polyline", "start":(line.start[0] + m_x, line.start[1] + m_y), "end":(line.end[0] + m_x, line.end[1] + m_y), "width":width})
+                    lines.append({"type":"polyline", "start":cal_xy([m_x, m_y], line.start, angle), "end":cal_xy([m_x, m_y], line.end, angle)})
+                    print({"type":"polyline", "vertices":[(line.start[0] + m_x, line.start[1] + m_y), (line.end[0] + m_x, line.end[1] + m_y)]})
+    # for arcs in gr_arcs:
+    #     if arcs["layer"][1:-1] == "Edge.Cuts" or arcs["layer"] == "Edge.Cuts":
+    #         width = arcs.width if "width" in arcs else arcs.stroke.width
+    #         lines.append({"type":"arc", "start":tuple(arcs.start), "center":tuple(arcs.end), "clockwise_angle":arcs.angle})
+    
+    # for circle in gr_circles:
+    #     if circle["layer"][1:-1] == "Edge.Cuts" or circle["layer"] == "Edge.Cuts":
+    #         width = circle.width if "width" in circle else circle.stroke.width  # kicad v5 vs v6
+    #         radius = distance.euclidean(tuple(circle.end), tuple(circle.center))
+    #         lines.append({"type":"circle", "center":tuple(circle.center), "radius":radius})
+
     for arcs in gr_arcs:
         if arcs["layer"][1:-1] == "Edge.Cuts" or arcs["layer"] == "Edge.Cuts":
             width = arcs.width if "width" in arcs else arcs.stroke.width
-            lines.append({"type":"arc", "start":tuple(arcs.start), "center":tuple(arcs.end), "clockwise_angle":arcs.angle, "width":width})
+            radius = distance.euclidean(tuple(arcs.end), tuple(arcs.start))
+            end = calculate_arc_end_point(tuple(arcs.start), tuple(arcs.end), arcs.angle)
+            lines.append({"type":"arc", "vertices":[tuple(arcs.start), end], "radius":radius})
     
     for circle in gr_circles:
         if circle["layer"][1:-1] == "Edge.Cuts" or circle["layer"] == "Edge.Cuts":
             width = circle.width if "width" in circle else circle.stroke.width  # kicad v5 vs v6
             radius = distance.euclidean(tuple(circle.end), tuple(circle.center))
-            lines.append({"type":"circle", "center":tuple(circle.center), "radius":radius, "width":width})
+            lines.append({"type":"circle", "vertices":[tuple(circle.end), tuple(circle.center)], "radius":radius})
 
     return lines
 

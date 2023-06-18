@@ -4,55 +4,63 @@
   "border": [
     {
       "type": "polyline",
-      "start": [156, 153],
-      "end": [156, 103],
-      "width": 0.05
+      "vertices": [
+        [156, 153],
+        [156, 103]
+      ]
     },
     {
       "type": "polyline",
-      "start": [103, 156],
-      "end": [153, 156],
-      "width": 0.05
+      "vertices": [
+        [103, 156],
+        [153, 156]
+      ]
     },
     {
       "type": "polyline",
-      "start": [103, 100],
-      "end": [153, 100],
-      "width": 0.05
+      "vertices": [
+        [103, 100],
+        [153, 100]
+      ]
     },
     {
       "type": "polyline",
-      "start": [100, 103],
-      "end": [100, 153],
-      "width": 0.05
+      "vertices": [
+        [100, 103],
+        [100, 153]
+      ]
     },
     {
       "type": "arc",
-      "start": [153, 103],
-      "center": [156, 103],
-      "clockwise_angle": -90,
-      "width": 0.05
+      "vertices": [
+        [153, 103],
+        [156.0, 106.0]
+      ],
+      "radius": 3.0
     },
     {
       "type": "arc",
-      "start": [153, 153],
-      "center": [153, 156],
-      "clockwise_angle": -90,
-      "width": 0.05
+      "vertices": [
+        [153, 153],
+        [150.0, 156.0]
+      ],
+      "radius": 3.0
     },
     {
       "type": "arc",
-      "start": [103, 103],
-      "center": [103, 100],
-      "clockwise_angle": -90,
-      "width": 0.05
+      "vertices": [
+        [103, 103],
+        [106.0, 100.0]
+      ],
+      "radius": 3.0
     },
     {
       "type": "arc",
-      "start": [103, 153],
-      "center": [100, 153],
-      "clockwise_angle": -90,
-      "width": 0.05
+      "vertices": [
+        [103, 153],
+        [100.0, 150.0]
+      ],
+      "radius": 3.0
     }
   ],
   "nets": [

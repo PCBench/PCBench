@@ -4,42 +4,48 @@
   "border": [
     {
       "type": "polyline",
-      "start": [65, 140],
-      "end": [70, 80],
-      "width": 0.15
+      "vertices": [
+        [65, 140],
+        [70, 80]
+      ]
     },
     {
       "type": "polyline",
-      "start": [105, 140],
-      "end": [100, 80],
-      "width": 0.15
+      "vertices": [
+        [105, 140],
+        [100, 80]
+      ]
     },
     {
       "type": "polyline",
-      "start": [70, 145],
-      "end": [100, 145],
-      "width": 0.15
+      "vertices": [
+        [70, 145],
+        [100, 145]
+      ]
     },
     {
       "type": "arc",
-      "start": [85, 80],
-      "center": [70, 80],
-      "clockwise_angle": 180,
-      "width": 0.15
+      "vertices": [
+        [85, 80],
+        [55.0, 80.0]
+      ],
+      "radius": 15.0
     },
     {
       "type": "arc",
-      "start": [100, 140],
-      "center": [105, 140],
-      "clockwise_angle": 90,
-      "width": 0.15
+      "vertices": [
+        [100, 140],
+        [105.0, 135.0]
+      ],
+      "radius": 5.0
     },
     {
       "type": "arc",
-      "start": [70, 140],
-      "center": [70, 145],
-      "clockwise_angle": 90,
-      "width": 0.15
+      "vertices": [
+        [70, 140],
+        [75.0, 145.0]
+      ],
+      "radius": 5.0
     }
   ],
   "nets": [

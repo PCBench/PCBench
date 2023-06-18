@@ -20,15 +20,19 @@ def pcb_range(border: List[Dict[str, Any]]) -> Tuple[float, float, float, float]
     xs, ys = [], []
     for line in border:
         if line["type"] == "polyline":
-            xs += [line["start"][0], line["end"][0]]
-            ys += [line["start"][1], line["end"][1]]
+            xs += [line["vertices"][0][0], line["vertices"][1][0]]
+            ys += [line["vertices"][0][1], line["vertices"][1][1]]
+        # elif line["type"] == "arc":
+        #     radius = euclidean(line["start"], line["center"])
+        #     xs += [line["center"][0] - radius, line["center"][0] + radius]
+        #     ys += [line["center"][1] - radius, line["center"][1] + radius]
         elif line["type"] == "arc":
-            radius = euclidean(line["start"], line["center"])
-            xs += [line["center"][0] - radius, line["center"][0] + radius]
-            ys += [line["center"][1] - radius, line["center"][1] + radius]
+            center = (np.array(line["vertices"][0]) + np.array(line["vertices"][1])) / 2
+            xs += [center[0] - line["radius"], center[0] + line["radius"]]
+            ys += [center[1] - line["radius"], center[1] + line["radius"]]
         elif line["type"] == "circle":
-            xs += [line["center"][0] - line["radius"], line["center"][0] + line["radius"]]
-            ys += [line["center"][1] - line["radius"], line["center"][1] + line["radius"]]
+            xs += [line["vertices"][1][0] - line["radius"], line["vertices"][1][0] + line["radius"]]
+            ys += [line["vertices"][1][1] - line["radius"], line["vertices"][1][1] + line["radius"]]
     
     return min(xs), max(xs), min(ys), max(ys)
 

@@ -4,7 +4,7 @@ PCBench is a dataset for PCB routing task, it includes a dataset consisting of 1
  
 ## Dataset
 ### Folder Structure
-All teh PCB designs in our dataset are stored in the folder `PCBs`, where each PCB design is stored in a subfolder named `{author/org}_{PCB_name}_{design_version(optional)}`. Below is the folder structure of the dataset.
+All the PCB designs in our dataset are stored in the folder `PCBs`, where each PCB design is stored in a subfolder named `{author/org}_{PCB_name}_{design_version(optional)}`. Below is the folder structure of the dataset.
 ```
 ├── PCBs
 │   ├── master_metadata.json
