@@ -13,7 +13,7 @@ def augmentation(num, ratio, file_name):
             # print(len(data['nets']))
             # Select random nets
             random_nets_indices = random.sample(range(len(data['nets'])-1), int((len(data['nets'])-1)*ratio))  # select 5 random nets
-            random_nets = [data['nets'][str(index+1)] for index in random_nets_indices]
+            random_nets = [data['nets'][index+1] for index in random_nets_indices]
 
             # Select corresponding wires
             random_wires = [wire for wire in data['solution']['wires'] if wire['net']-1 in random_nets_indices]
