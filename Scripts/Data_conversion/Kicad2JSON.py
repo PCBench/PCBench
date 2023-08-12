@@ -8,6 +8,7 @@ import re
 import os
 import numpy as np
 import math
+import copy
 
 
 def dump_to_PBCRDL_json(target_dir):
@@ -18,6 +19,8 @@ def dump_to_PBCRDL_json(target_dir):
     kicad_file = os.path.join(target_dir, "processed.kicad_pcb")
     pcb = PCB(kicad_file)
     net_pads, keepouts, net_indices = extract_net_pads(pcb)
+    differential_pairs = copy.copy(pcb.differential_pairs)
+    differential_pairs = [[net_indices.index(dp[0]), net_indices.index(dp[1])] for dp in differential_pairs]
     net_classes = adjust_net_class(extract_net_classes(pcb.pcb), net_indices)
     vias = extract_track_pieces(pcb.vias)
     dump = {
@@ -25,6 +28,7 @@ def dump_to_PBCRDL_json(target_dir):
             "unit": "mm", # TODO: check where this is defined in kicad files
             "border": pcb.boundary_lines, # this is a list containing all the boundaries lines
             'nets': net_pads,
+            'differential_pairs': differential_pairs,
             'keepouts': keepouts,
             'rules':{
                 'net_classes': net_classes # TODO: is there a better way than extract_netclasses?
