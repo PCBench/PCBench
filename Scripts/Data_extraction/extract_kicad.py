@@ -267,8 +267,9 @@ def extract_bound(pcb: KicadPCB) -> Tuple[float, float, float, float, List[Any]]
             for line in module.fp_line:
                 if not isinstance(line, str) and line.layer == "Edge.Cuts":
                     width = line.width if "width" in line else line.stroke.width  # kicad v5 vs v6
-                    lines.append({"type":"polyline", "start":cal_xy([m_x, m_y], line.start, angle), "end":cal_xy([m_x, m_y], line.end, angle)})
-                    print({"type":"polyline", "vertices":[(line.start[0] + m_x, line.start[1] + m_y), (line.end[0] + m_x, line.end[1] + m_y)]})
+                    lines.append({"type":"polyline", "vertices":[cal_xy([m_x, m_y], line.start, angle), cal_xy([m_x, m_y], line.end, angle)]})
+                    # lines.append({"type":"polyline", "start":cal_xy([m_x, m_y], line.start, angle), "end":cal_xy([m_x, m_y], line.end, angle)})
+                    # print({"type":"polyline", "vertices":[(line.start[0] + m_x, line.start[1] + m_y), (line.end[0] + m_x, line.end[1] + m_y)]})
     # for arcs in gr_arcs:
     #     if arcs["layer"][1:-1] == "Edge.Cuts" or arcs["layer"] == "Edge.Cuts":
     #         width = arcs.width if "width" in arcs else arcs.stroke.width
