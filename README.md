@@ -28,6 +28,8 @@ The meta data information can be found [here](https://pcbench.slab.com/posts/jso
 ### PCB Routing Description Language (PCB-RDL)
 We propose a JSON specification (`final.json` for each PCB design) called the PCB Routing Description  Language (PCB-RDL) that expresses a PCB routing problem and its solutions intuitively using basic concepts in order to facilitate research into automated PCB routing using ML. The details of PCB-RDL can be found [here](https://pcbench.slab.com/posts/pcb-routing-description-language-pcb-rdl-merz04kq).
 
+![Test Image 4](https://github.com/PCBench/PCBench/tree/main/Images/PCB_example.png)
+
 ## Data Augmentation
 ### Run
 The augmentation data can be generated with the script [`Scripts/Data_augmentation/augmentation.py`](https://github.com/PCBench/PCBench/blob/main/Scripts/Data_augmentation/augmentation.py).  To generate 3 samples by randomly extracting 50% nets from the PCB `1Bitsy_1bitsy`, please run the following command
