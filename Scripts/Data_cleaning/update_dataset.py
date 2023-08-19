@@ -6,6 +6,7 @@ import sys
 sys.path.append('..')
 from Data_extraction.thirdparty.kicad_parser.kicad_pcb import *
 
+PCB_folder = "../../new_PCBs"
 
 def extract_layer(pcb: KicadPCB, max_layer_index: int):
     
@@ -20,9 +21,9 @@ def extract_layer(pcb: KicadPCB, max_layer_index: int):
 
 
 def update_meta_data(pcb_name: str):
-    source = os.path.join("../../PCBs", pcb_name, "raw.kicad_pcb")
+    source = os.path.join(PCB_folder, pcb_name, "raw.kicad_pcb")
     pcb = KicadPCB.load(source)
-    meta_path = os.path.join("../../PCBs", pcb_name, "metadata.json")
+    meta_path = os.path.join(PCB_folder, pcb_name, "metadata.json")
     with open(meta_path) as f:
         meta = json.load(f)
 
@@ -38,12 +39,12 @@ def update_meta_data(pcb_name: str):
 
 if __name__ == "__main__":
 
-    clean_pcb_folder = 'Cleaning_PCBs'
+    clean_pcb_folder = 'clean_PCBs'
     for pcb in os.listdir(clean_pcb_folder):
         if ".kicad_pcb" in pcb:
             pcb_name = ".".join(pcb.split(".")[:-1])
             source = os.path.join(clean_pcb_folder, pcb)
-            target = os.path.join('../../PCBs', pcb_name, 'processed.kicad_pcb')
+            target = os.path.join(PCB_folder, pcb_name, 'processed.kicad_pcb')
             shutil.copy(source, target)
             update_meta_data(pcb_name)
     shutil.rmtree(clean_pcb_folder)

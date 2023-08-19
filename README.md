@@ -26,9 +26,9 @@ The `raw.kicad_pcb` is the raw PCB design file, `process.kicad_pcb` is the file 
 The meta data information can be found [here](https://pcbench.slab.com/posts/json-for-board-metadata-wqa2wdrc).
 
 ### PCB Routing Description Language (PCB-RDL)
-We propose a JSON specification (`final.json` for each PCB design) called the PCB Routing Description  Language (PCB-RDL) that expresses a PCB routing problem and its solutions intuitively using basic concepts in order to facilitate research into automated PCB routing using ML. The details of PCB-RDL can be found [here](https://pcbench.slab.com/posts/pcb-routing-description-language-pcb-rdl-merz04kq).
+We propose a JSON specification (`final.json` for each PCB design) called the PCB Routing Description  Language (PCB-RDL) that expresses a PCB routing problem and its solutions intuitively using basic concepts in order to facilitate research into automated PCB routing using ML. The details of PCB-RDL can be found [here](https://pcbench.slab.com/posts/pcb-routing-description-language-pcb-rdl-merz04kq). Below is an example of PCB with marked components in PCB-RDL.
 
-![Test Image 4](https://github.com/PCBench/PCBench/blob/main/Images/PCB_example.png)
+![PCB example](https://github.com/PCBench/PCBench/blob/main/Images/PCB_example.png)
 
 ## Data Augmentation
 ### Run

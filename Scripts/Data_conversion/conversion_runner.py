@@ -6,12 +6,13 @@ from glob2 import glob
 from tqdm import tqdm
 
 DEBUG = True
+PCB_folder_name = "new_PCBs"
 
 if __name__ == "__main__":
     # Fetch all KiCad files
-    files: List[str] = glob("../../PCBs/**/processed.kicad_pcb")
+    files: List[str] = glob(f"../../{PCB_folder_name}/**/processed.kicad_pcb")
     if DEBUG:
-        print(f"Discovered {len(files)} files:", [file.replace('../../PCBs/', '').replace('/processed.kicad_pcb', '') for file in files])
+        print(f"Discovered {len(files)} files:", [file.replace(f'../../{PCB_folder_name}/', '').replace('/processed.kicad_pcb', '') for file in files])
 
     # Lists to save successful and not successful files
     success_files: List[str] = list()
@@ -28,7 +29,7 @@ if __name__ == "__main__":
             result = subprocess.check_output(["python", "Kicad2JSON.py", file.replace("processed.kicad_pcb", '')], stderr=subprocess.STDOUT) 
         # If running the cleaner on the file results in an error, report it
         except subprocess.CalledProcessError as e:
-            error_files.append(file.replace('../../PCBs/', '').replace('/processed.kicad_pcb', ''))
+            error_files.append(file.replace(f'../../{PCB_folder_name}/', '').replace('/processed.kicad_pcb', ''))
             
             f = open(error_log_Path, "w")
             f.write(str(e.output, "UTF-8"))
@@ -36,7 +37,7 @@ if __name__ == "__main__":
             print(error_files)
         # If running the cleaner on the file is successful, report it
         else:
-            success_files.append(file.replace('../../PCBs/', '').replace('/processed.kicad_pcb', ''))
+            success_files.append(file.replace(f'../../{PCB_folder_name}/', '').replace('/processed.kicad_pcb', ''))
         # os.chdir("../../Scripts/Data_cleaning")
 
     # Log the successful files and the non-successful ones

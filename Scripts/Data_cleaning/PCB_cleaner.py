@@ -7,7 +7,7 @@ from Data_extraction.thirdparty.kicad_parser.kicad_pcb import *
 
 import os
 
-
+PCB_folder = "new_PCBs"
 
 def read_csv(file_name):
     with open(file_name, "r") as f:
@@ -55,6 +55,7 @@ def delete_segment_via(pcb, delete_nets):
             bc += 1
 
     bc = 0
+
     for i in via_idx:
         del_i = i - bc
         if pcb.via[del_i].net in delete_nets:
@@ -68,7 +69,7 @@ def delete_fill_zone(pcb_names):
         os.mkdir(fill_zone_folder)
 
     for name in pcb_names:
-        pcb_file_path = "../../PCBs/" + name + "/raw.kicad_pcb"
+        pcb_file_path = f"../../{PCB_folder}/" + name + "/raw.kicad_pcb"
         new_pcb_name = name + ".kicad_pcb"
         pcb = KicadPCB.load(pcb_file_path)
         fill_zone_nets = set([])
