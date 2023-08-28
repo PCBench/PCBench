@@ -13,14 +13,16 @@ All the PCB designs in our dataset are stored in the folder `PCBs`, where each P
 │   │   ├── processed.kicad_pcb
 │   │   ├── final.json
 │   │   ├── metadata.json
+│   │   ├── visual.png
 │   ├── subfolder2
 │   │   ├── raw.kicad_pcb
 │   │   ├── processed.kicad_pcb
 │   │   ├── final.json
 │   │   ├── metadata.json
+│   │   ├── visual.png
 │   ├── ...
 ```
-The `raw.kicad_pcb` is the raw PCB design file, `process.kicad_pcb` is the file after cleaning up, `final.json` stores only  routing-related information used for ML tasks. `metadata.json` stores the meta information for each single PCB design. `master_meta.json` contains metadata of all PCBs and global-level information.
+The `raw.kicad_pcb` is the raw PCB design file, `process.kicad_pcb` is the file after cleaning up, `final.json` stores only  routing-related information used for ML tasks. `metadata.json` stores the meta information for each single PCB design. `visual.png` is a visualization of each single PCB design. `master_meta.json` contains metadata of all PCBs and global-level information.
 
 ### Meta Data
 The meta data information can be found [here](https://pcbench.slab.com/posts/json-for-board-metadata-wqa2wdrc).
