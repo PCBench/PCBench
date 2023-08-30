@@ -7,6 +7,7 @@
 
 ## PCB cleaning
 1. Put all PCBs need to be cleaned in the folder `new_PCBs` and check if they are valid. If they are not valid, then drop it (no need to clean and we will not use it). The criteria of judging if a PCB is valid are:
+* Please open each PCB using KiCAD 5, and if KiCAD 5 can not open it, then the PCB is NOT valid. (It can be from KiCAD 6 or 7, let's view it as invalid for now.)
 * If a PCB does not contain any nets, then the PCB is NOT valid.
 * If a PCB does not contain boundaries (on edge.cut layer), then the PCB is NOT valid.
 * If a PCB is not routed (does not contain any wires), then the PCB is NOT valid.
