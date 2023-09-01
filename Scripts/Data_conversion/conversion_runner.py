@@ -6,7 +6,7 @@ from glob2 import glob
 from tqdm import tqdm
 
 DEBUG = True
-PCB_folder_name = "new_PCBs"
+PCB_folder_name = "new_ready_PCBs"
 
 if __name__ == "__main__":
     # Fetch all KiCad files
