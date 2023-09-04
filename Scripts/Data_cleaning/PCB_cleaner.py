@@ -82,6 +82,10 @@ def delete_fill_zone(pcb_names):
 
 if __name__ == "__main__":
 
-    pcb_names = read_csv("clean_list.csv")
+    argv = sys.argv[1]
+    if ".csv" in argv:
+        pcb_names = read_csv(argv)
+    else:
+        pcb_names = [argv]
     delete_fill_zone(pcb_names)
 

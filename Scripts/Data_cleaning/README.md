@@ -2,7 +2,7 @@
 
 ## Prerequisites
 + KiCAD 5
-+ FreeRouting>=1.7
++ FreeRouting=1.7
 + Python 3
 
 ## PCB cleaning
