@@ -1,0 +1,229 @@
+{
+  "layers": ["F.Cu", "B.Cu"],
+  "unit": "mm",
+  "border": [
+    {
+      "type": "polyline",
+      "vertices": [
+        [19, 57.5],
+        [19, 56.5]
+      ]
+    },
+    {
+      "type": "polyline",
+      "vertices": [
+        [43, 57.5],
+        [19, 57.5]
+      ]
+    },
+    {
+      "type": "polyline",
+      "vertices": [
+        [55.5, 57.5],
+        [53, 57.5]
+      ]
+    },
+    {
+      "type": "polyline",
+      "vertices": [
+        [55.5, 40],
+        [55.5, 57.5]
+      ]
+    },
+    {
+      "type": "polyline",
+      "vertices": [
+        [42, 57.5],
+        [54.5, 57.5]
+      ]
+    },
+    {
+      "type": "polyline",
+      "vertices": [
+        [55.5, 20],
+        [53, 20]
+      ]
+    },
+    {
+      "type": "polyline",
+      "vertices": [
+        [55.5, 40],
+        [55.5, 20]
+      ]
+    },
+    {
+      "type": "polyline",
+      "vertices": [
+        [19, 23.5],
+        [19, 56.5]
+      ]
+    },
+    {
+      "type": "polyline",
+      "vertices": [
+        [19, 20],
+        [20, 20]
+      ]
+    },
+    {
+      "type": "polyline",
+      "vertices": [
+        [19, 24],
+        [19, 20]
+      ]
+    },
+    {
+      "type": "polyline",
+      "vertices": [
+        [53.5, 20],
+        [19.5, 20]
+      ]
+    },
+    {
+      "type": "polyline",
+      "vertices": [
+        [23.5, 20],
+        [53.5, 20]
+      ]
+    }
+  ],
+  "nets": [
+    [
+      {
+        "type": "thru_hole",
+        "layer": ["F.Cu", "B.Cu"],
+        "shape": "circle",
+        "center": [23.5, 50.0],
+        "radii": [1.4, 1.4],
+        "rotation": 90
+      },
+      {
+        "type": "thru_hole",
+        "layer": ["F.Cu", "B.Cu"],
+        "shape": "rect",
+        "center": [23.5, 43.77],
+        "radii": [2.032, 2.032],
+        "rotation": 90
+      }
+    ],
+    [
+      {
+        "type": "thru_hole",
+        "layer": ["F.Cu", "B.Cu"],
+        "shape": "circle",
+        "center": [23.5, 52.5],
+        "radii": [1.4, 1.4],
+        "rotation": 90
+      },
+      {
+        "type": "thru_hole",
+        "layer": ["F.Cu", "B.Cu"],
+        "shape": "circle",
+        "center": [43.5, 54.5],
+        "radii": [2, 2],
+        "rotation": 0
+      }
+    ],
+    [
+      {
+        "type": "thru_hole",
+        "layer": ["F.Cu", "B.Cu"],
+        "shape": "circle",
+        "center": [23.5, 41.23],
+        "radii": [2.032, 2.032],
+        "rotation": 90
+      },
+      {
+        "type": "thru_hole",
+        "layer": ["F.Cu", "B.Cu"],
+        "shape": "circle",
+        "center": [43.5, 34.5],
+        "radii": [2, 2],
+        "rotation": 0
+      }
+    ]
+  ],
+  "differential_pairs": [],
+  "keepouts": [
+    {
+      "type": "thru_hole",
+      "layer": ["F.Cu", "B.Cu"],
+      "shape": "circle",
+      "center": [23.5, 55.0],
+      "radii": [1.4, 1.4],
+      "rotation": 90
+    },
+    {
+      "type": "thru_hole",
+      "layer": ["F.Cu", "B.Cu"],
+      "shape": "circle",
+      "center": [43.5, 24.5],
+      "radii": [5.3, 5.3],
+      "rotation": 0
+    },
+    {
+      "type": "thru_hole",
+      "layer": ["F.Cu", "B.Cu"],
+      "shape": "circle",
+      "center": [23.5, 24.5],
+      "radii": [5.3, 5.3],
+      "rotation": 0
+    }
+  ],
+  "rules": {
+    "net_classes": [
+      {
+        "indices": [],
+        "width": 0.254,
+        "clearance": 0.254,
+        "via_diameter": 0.889
+      },
+      {
+        "indices": [2, 0, 1],
+        "width": 1.524,
+        "clearance": 0.254,
+        "via_diameter": 1.143
+      }
+    ]
+  },
+  "solution": {
+    "wires": [
+      {
+        "start": [43.5, 34.5],
+        "end": [30.23, 34.5],
+        "width": 1.524,
+        "layer": "B.Cu",
+        "net": 1
+      },
+      {
+        "start": [30.23, 34.5],
+        "end": [23.5, 41.23],
+        "width": 1.524,
+        "layer": "B.Cu",
+        "net": 1
+      },
+      {
+        "start": [23.5, 43.77],
+        "end": [23.5, 50],
+        "width": 1.524,
+        "layer": "F.Cu",
+        "net": 2
+      },
+      {
+        "start": [23.5, 52.5],
+        "end": [41.5, 52.5],
+        "width": 1.524,
+        "layer": "F.Cu",
+        "net": 3
+      },
+      {
+        "start": [41.5, 52.5],
+        "end": [43.5, 54.5],
+        "width": 1.524,
+        "layer": "F.Cu",
+        "net": 3
+      }
+    ],
+    "vias": []
+  }
+}

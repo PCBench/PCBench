@@ -1,0 +1,444 @@
+{
+  "layers": ["F.Cu", "B.Cu"],
+  "unit": "mm",
+  "border": [
+    {
+      "type": "polyline",
+      "vertices": [
+        [140.0175, 77.6825],
+        [175.4075, 77.6825]
+      ]
+    },
+    {
+      "type": "polyline",
+      "vertices": [
+        [140.0175, 108.9025],
+        [140.0175, 77.6825]
+      ]
+    },
+    {
+      "type": "polyline",
+      "vertices": [
+        [175.4075, 108.9025],
+        [140.0175, 108.9025]
+      ]
+    },
+    {
+      "type": "polyline",
+      "vertices": [
+        [175.4075, 77.6825],
+        [175.4075, 108.9025]
+      ]
+    },
+    {
+      "type": "circle",
+      "vertices": [
+        [172.9575, 104.9525],
+        [172.9575, 106.4525]
+      ],
+      "radius": 1.5
+    },
+    {
+      "type": "circle",
+      "vertices": [
+        [142.4675, 104.9525],
+        [142.4675, 106.4525]
+      ],
+      "radius": 1.5
+    },
+    {
+      "type": "circle",
+      "vertices": [
+        [172.9575, 78.6325],
+        [172.9575, 80.1325]
+      ],
+      "radius": 1.5
+    },
+    {
+      "type": "circle",
+      "vertices": [
+        [142.4675, 78.6325],
+        [142.4675, 80.1325]
+      ],
+      "radius": 1.5
+    }
+  ],
+  "nets": [
+    [
+      {
+        "type": "thru_hole",
+        "layer": ["F.Cu", "B.Cu"],
+        "shape": "circle",
+        "center": [153.416, 91.948],
+        "radii": [1.524, 1.524],
+        "rotation": 0
+      },
+      {
+        "type": "thru_hole",
+        "layer": ["F.Cu", "B.Cu"],
+        "shape": "rect",
+        "center": [155.321, 86.995],
+        "radii": [2.032, 1.7272],
+        "rotation": 90
+      },
+      {
+        "type": "thru_hole",
+        "layer": ["F.Cu", "B.Cu"],
+        "shape": "oval",
+        "center": [147.701, 86.995],
+        "radii": [2.032, 1.7272],
+        "rotation": 90
+      }
+    ],
+    [
+      {
+        "type": "thru_hole",
+        "layer": ["F.Cu", "B.Cu"],
+        "shape": "circle",
+        "center": [152.146, 94.488],
+        "radii": [1.524, 1.524],
+        "rotation": 0
+      },
+      {
+        "type": "thru_hole",
+        "layer": ["F.Cu", "B.Cu"],
+        "shape": "oval",
+        "center": [152.781, 86.995],
+        "radii": [2.032, 1.7272],
+        "rotation": 90
+      },
+      {
+        "type": "thru_hole",
+        "layer": ["F.Cu", "B.Cu"],
+        "shape": "oval",
+        "center": [150.24099999999999, 86.995],
+        "radii": [2.032, 1.7272],
+        "rotation": 90
+      }
+    ],
+    [
+      {
+        "type": "thru_hole",
+        "layer": ["F.Cu", "B.Cu"],
+        "shape": "rect",
+        "center": [167.767, 86.995],
+        "radii": [2.032, 1.7272],
+        "rotation": 90
+      },
+      {
+        "type": "thru_hole",
+        "layer": ["F.Cu", "B.Cu"],
+        "shape": "circle",
+        "center": [165.862, 91.948],
+        "radii": [1.524, 1.524],
+        "rotation": 0
+      }
+    ],
+    [
+      {
+        "type": "thru_hole",
+        "layer": ["F.Cu", "B.Cu"],
+        "shape": "oval",
+        "center": [165.227, 86.995],
+        "radii": [2.032, 1.7272],
+        "rotation": 90
+      },
+      {
+        "type": "thru_hole",
+        "layer": ["F.Cu", "B.Cu"],
+        "shape": "circle",
+        "center": [164.59199999999998, 94.488],
+        "radii": [1.524, 1.524],
+        "rotation": 0
+      }
+    ],
+    [
+      {
+        "type": "thru_hole",
+        "layer": ["F.Cu", "B.Cu"],
+        "shape": "oval",
+        "center": [162.68699999999998, 86.995],
+        "radii": [2.032, 1.7272],
+        "rotation": 90
+      },
+      {
+        "type": "thru_hole",
+        "layer": ["F.Cu", "B.Cu"],
+        "shape": "circle",
+        "center": [163.322, 91.948],
+        "radii": [1.524, 1.524],
+        "rotation": 0
+      }
+    ],
+    [
+      {
+        "type": "thru_hole",
+        "layer": ["F.Cu", "B.Cu"],
+        "shape": "oval",
+        "center": [160.147, 86.995],
+        "radii": [2.032, 1.7272],
+        "rotation": 90
+      },
+      {
+        "type": "thru_hole",
+        "layer": ["F.Cu", "B.Cu"],
+        "shape": "circle",
+        "center": [162.052, 94.488],
+        "radii": [1.524, 1.524],
+        "rotation": 0
+      }
+    ]
+  ],
+  "differential_pairs": [],
+  "keepouts": [
+    {
+      "type": "thru_hole",
+      "layer": ["F.Cu", "B.Cu"],
+      "shape": "circle",
+      "center": [150.876, 91.948],
+      "radii": [1.524, 1.524],
+      "rotation": 0
+    },
+    {
+      "type": "thru_hole",
+      "layer": ["F.Cu", "B.Cu"],
+      "shape": "circle",
+      "center": [149.606, 94.488],
+      "radii": [1.524, 1.524],
+      "rotation": 0
+    },
+    {
+      "type": "thru_hole",
+      "layer": ["F.Cu", "B.Cu"],
+      "shape": "circle",
+      "center": [147.701, 100.838],
+      "radii": [3.6, 3.6],
+      "rotation": 0
+    },
+    {
+      "type": "thru_hole",
+      "layer": ["F.Cu", "B.Cu"],
+      "shape": "circle",
+      "center": [155.321, 100.838],
+      "radii": [3.6, 3.6],
+      "rotation": 0
+    },
+    {
+      "type": "thru_hole",
+      "layer": ["F.Cu", "B.Cu"],
+      "shape": "circle",
+      "center": [160.147, 100.838],
+      "radii": [3.6, 3.6],
+      "rotation": 0
+    },
+    {
+      "type": "thru_hole",
+      "layer": ["F.Cu", "B.Cu"],
+      "shape": "circle",
+      "center": [167.767, 100.838],
+      "radii": [3.6, 3.6],
+      "rotation": 0
+    },
+    {
+      "type": "thru_hole",
+      "layer": ["F.Cu", "B.Cu"],
+      "shape": "circle",
+      "center": [142.494, 80.137],
+      "radii": [2.49936, 2.49936],
+      "rotation": 0
+    },
+    {
+      "type": "thru_hole",
+      "layer": ["F.Cu", "B.Cu"],
+      "shape": "circle",
+      "center": [172.974, 80.137],
+      "radii": [2.49936, 2.49936],
+      "rotation": 0
+    },
+    {
+      "type": "thru_hole",
+      "layer": ["F.Cu", "B.Cu"],
+      "shape": "circle",
+      "center": [172.974, 106.426],
+      "radii": [2.49936, 2.49936],
+      "rotation": 0
+    },
+    {
+      "type": "thru_hole",
+      "layer": ["F.Cu", "B.Cu"],
+      "shape": "circle",
+      "center": [142.494, 106.426],
+      "radii": [2.49936, 2.49936],
+      "rotation": 0
+    }
+  ],
+  "rules": {
+    "net_classes": [
+      {
+        "indices": [2, 3, 4, 5, 1, 0],
+        "width": 0.6,
+        "clearance": 0.2,
+        "via_diameter": 0.6
+      }
+    ]
+  },
+  "solution": {
+    "wires": [
+      {
+        "start": [167.767, 86.995],
+        "end": [167.767, 89.916],
+        "width": 0.6,
+        "layer": "B.Cu",
+        "net": 1
+      },
+      {
+        "start": [167.767, 89.916],
+        "end": [165.862, 91.821],
+        "width": 0.6,
+        "layer": "B.Cu",
+        "net": 1
+      },
+      {
+        "start": [165.862, 91.821],
+        "end": [165.862, 91.948],
+        "width": 0.6,
+        "layer": "B.Cu",
+        "net": 1
+      },
+      {
+        "start": [164.592, 94.488],
+        "end": [164.592, 88.138],
+        "width": 0.6,
+        "layer": "B.Cu",
+        "net": 2
+      },
+      {
+        "start": [164.592, 88.138],
+        "end": [165.227, 87.503],
+        "width": 0.6,
+        "layer": "B.Cu",
+        "net": 2
+      },
+      {
+        "start": [165.227, 87.503],
+        "end": [165.227, 86.995],
+        "width": 0.6,
+        "layer": "B.Cu",
+        "net": 2
+      },
+      {
+        "start": [162.687, 86.995],
+        "end": [162.687, 91.313],
+        "width": 0.6,
+        "layer": "B.Cu",
+        "net": 3
+      },
+      {
+        "start": [162.687, 91.313],
+        "end": [163.322, 91.948],
+        "width": 0.6,
+        "layer": "B.Cu",
+        "net": 3
+      },
+      {
+        "start": [160.147, 86.995],
+        "end": [160.147, 92.583],
+        "width": 0.6,
+        "layer": "B.Cu",
+        "net": 4
+      },
+      {
+        "start": [160.147, 92.583],
+        "end": [162.052, 94.488],
+        "width": 0.6,
+        "layer": "B.Cu",
+        "net": 4
+      },
+      {
+        "start": [147.701, 86.995],
+        "end": [147.701, 85.852],
+        "width": 0.6,
+        "layer": "B.Cu",
+        "net": 5
+      },
+      {
+        "start": [147.701, 85.852],
+        "end": [148.59, 84.963],
+        "width": 0.6,
+        "layer": "B.Cu",
+        "net": 5
+      },
+      {
+        "start": [148.59, 84.963],
+        "end": [154.432, 84.963],
+        "width": 0.6,
+        "layer": "B.Cu",
+        "net": 5
+      },
+      {
+        "start": [154.432, 84.963],
+        "end": [155.321, 85.852],
+        "width": 0.6,
+        "layer": "B.Cu",
+        "net": 5
+      },
+      {
+        "start": [155.321, 85.852],
+        "end": [155.321, 86.995],
+        "width": 0.6,
+        "layer": "B.Cu",
+        "net": 5
+      },
+      {
+        "start": [153.416, 91.948],
+        "end": [154.686, 91.948],
+        "width": 0.6,
+        "layer": "B.Cu",
+        "net": 5
+      },
+      {
+        "start": [154.686, 91.948],
+        "end": [155.321, 91.313],
+        "width": 0.6,
+        "layer": "B.Cu",
+        "net": 5
+      },
+      {
+        "start": [155.321, 91.313],
+        "end": [155.321, 86.995],
+        "width": 0.6,
+        "layer": "B.Cu",
+        "net": 5
+      },
+      {
+        "start": [152.781, 86.995],
+        "end": [152.781, 88.611],
+        "width": 0.6,
+        "layer": "B.Cu",
+        "net": 6
+      },
+      {
+        "start": [152.781, 88.611],
+        "end": [152.146, 89.246],
+        "width": 0.6,
+        "layer": "B.Cu",
+        "net": 6
+      },
+      {
+        "start": [152.146, 89.246],
+        "end": [152.146, 94.488],
+        "width": 0.6,
+        "layer": "B.Cu",
+        "net": 6
+      },
+      {
+        "start": [150.241, 86.995],
+        "end": [152.781, 86.995],
+        "width": 0.6,
+        "layer": "F.Cu",
+        "net": 6
+      }
+    ],
+    "vias": []
+  }
+}

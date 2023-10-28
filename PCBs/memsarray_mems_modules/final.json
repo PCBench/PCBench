@@ -1,0 +1,466 @@
+{
+  "layers": ["F.Cu", "B.Cu"],
+  "unit": "mm",
+  "border": [
+    {
+      "type": "polyline",
+      "vertices": [
+        [29.74848, 28.07716],
+        [40.41648, 28.07716]
+      ]
+    },
+    {
+      "type": "polyline",
+      "vertices": [
+        [40.386, 39.56812],
+        [29.718, 39.56812]
+      ]
+    },
+    {
+      "type": "polyline",
+      "vertices": [
+        [29.718, 39.56812],
+        [29.74848, 28.07716]
+      ]
+    },
+    {
+      "type": "polyline",
+      "vertices": [
+        [40.41648, 28.07716],
+        [40.386, 39.56812]
+      ]
+    }
+  ],
+  "nets": [
+    [
+      {
+        "type": "thru_hole",
+        "layer": ["F.Cu", "B.Cu"],
+        "shape": "rect",
+        "center": [37.084, 39.116],
+        "radii": [1.524, 2],
+        "rotation": 90
+      },
+      {
+        "type": "smd",
+        "layer": ["F.Cu"],
+        "shape": "rect",
+        "center": [35.727, 34.206999999999994],
+        "radii": [0.45, 0.95],
+        "rotation": 0
+      }
+    ],
+    [
+      {
+        "type": "smd",
+        "layer": ["F.Cu"],
+        "shape": "rect",
+        "center": [34.377, 34.206999999999994],
+        "radii": [0.45, 0.95],
+        "rotation": 0
+      },
+      {
+        "type": "thru_hole",
+        "layer": ["F.Cu", "B.Cu"],
+        "shape": "rect",
+        "center": [33.02, 39.116],
+        "radii": [1.524, 2],
+        "rotation": 90
+      }
+    ],
+    [
+      {
+        "type": "smd",
+        "layer": ["F.Cu"],
+        "shape": "rect",
+        "center": [34.377, 33.357],
+        "radii": [0.45, 0.95],
+        "rotation": 0
+      },
+      {
+        "type": "smd",
+        "layer": ["F.Cu"],
+        "shape": "rect",
+        "center": [35.727, 33.357],
+        "radii": [0.45, 0.95],
+        "rotation": 0
+      },
+      {
+        "type": "thru_hole",
+        "layer": ["F.Cu", "B.Cu"],
+        "shape": "rect",
+        "center": [33.02, 28.448],
+        "radii": [1.524, 2],
+        "rotation": 90
+      },
+      {
+        "type": "smd",
+        "layer": ["F.Cu"],
+        "shape": "rect",
+        "center": [31.242, 32.782],
+        "radii": [1, 1.25],
+        "rotation": 0
+      }
+    ],
+    [
+      {
+        "type": "smd",
+        "layer": ["F.Cu"],
+        "shape": "rect",
+        "center": [35.052, 32.556999999999995],
+        "radii": [0.45, 2.3],
+        "rotation": 0
+      },
+      {
+        "type": "smd",
+        "layer": ["F.Cu"],
+        "shape": "rect",
+        "center": [35.052, 35.056999999999995],
+        "radii": [0.45, 2.3],
+        "rotation": 0
+      },
+      {
+        "type": "smd",
+        "layer": ["F.Cu"],
+        "shape": "rect",
+        "center": [36.827, 33.782],
+        "radii": [1.3, 0.45],
+        "rotation": 90
+      },
+      {
+        "type": "smd",
+        "layer": ["F.Cu"],
+        "shape": "rect",
+        "center": [33.277, 33.782],
+        "radii": [1.3, 0.45],
+        "rotation": 90
+      },
+      {
+        "type": "smd",
+        "layer": ["F.Cu"],
+        "shape": "rect",
+        "center": [31.242, 34.782],
+        "radii": [1, 1.25],
+        "rotation": 0
+      },
+      {
+        "type": "thru_hole",
+        "layer": ["F.Cu", "B.Cu"],
+        "shape": "rect",
+        "center": [37.084, 28.448],
+        "radii": [1.524, 2],
+        "rotation": 90
+      }
+    ]
+  ],
+  "differential_pairs": [],
+  "keepouts": [],
+  "rules": {
+    "net_classes": [
+      {
+        "indices": [1, 0, 3, 2],
+        "width": 0.254,
+        "clearance": 0.1524,
+        "via_diameter": 0.6
+      }
+    ]
+  },
+  "solution": {
+    "wires": [
+      {
+        "start": [34.377, 33.357],
+        "end": [34.127, 33.357],
+        "width": 0.254,
+        "layer": "F.Cu",
+        "net": 1
+      },
+      {
+        "start": [34.127, 33.357],
+        "end": [33.909, 33.139],
+        "width": 0.254,
+        "layer": "F.Cu",
+        "net": 1
+      },
+      {
+        "start": [34.377, 33.357],
+        "end": [35.727, 33.357],
+        "width": 0.254,
+        "layer": "F.Cu",
+        "net": 1
+      },
+      {
+        "start": [33.274, 32.512],
+        "end": [33.282, 32.512],
+        "width": 0.1524,
+        "layer": "F.Cu",
+        "net": 1
+      },
+      {
+        "start": [33.282, 32.512],
+        "end": [33.909, 33.139],
+        "width": 0.1524,
+        "layer": "F.Cu",
+        "net": 1
+      },
+      {
+        "start": [33.274, 32.512],
+        "end": [32.875, 32.512],
+        "width": 0.254,
+        "layer": "F.Cu",
+        "net": 1
+      },
+      {
+        "start": [32.875, 32.512],
+        "end": [32.605, 32.782],
+        "width": 0.254,
+        "layer": "F.Cu",
+        "net": 1
+      },
+      {
+        "start": [32.605, 32.782],
+        "end": [31.242, 32.782],
+        "width": 0.254,
+        "layer": "F.Cu",
+        "net": 1
+      },
+      {
+        "start": [33.02, 28.448],
+        "end": [33.02, 28.686],
+        "width": 0.508,
+        "layer": "F.Cu",
+        "net": 1
+      },
+      {
+        "start": [33.02, 28.686],
+        "end": [31.242, 30.464],
+        "width": 0.508,
+        "layer": "F.Cu",
+        "net": 1
+      },
+      {
+        "start": [31.242, 30.464],
+        "end": [31.242, 32.782],
+        "width": 0.508,
+        "layer": "F.Cu",
+        "net": 1
+      },
+      {
+        "start": [36.827, 32.557],
+        "end": [36.827, 29.9845],
+        "width": 0.254,
+        "layer": "F.Cu",
+        "net": 2
+      },
+      {
+        "start": [36.827, 29.9845],
+        "end": [37.084, 29.7275],
+        "width": 0.254,
+        "layer": "F.Cu",
+        "net": 2
+      },
+      {
+        "start": [36.827, 33.782],
+        "end": [36.827, 32.557],
+        "width": 0.254,
+        "layer": "F.Cu",
+        "net": 2
+      },
+      {
+        "start": [35.052, 32.557],
+        "end": [36.827, 32.557],
+        "width": 0.254,
+        "layer": "F.Cu",
+        "net": 2
+      },
+      {
+        "start": [35.052, 35.057],
+        "end": [35.052, 35.7584],
+        "width": 0.254,
+        "layer": "F.Cu",
+        "net": 2
+      },
+      {
+        "start": [30.3374, 31.622],
+        "end": [34.4738, 35.7584],
+        "width": 0.254,
+        "layer": "B.Cu",
+        "net": 2
+      },
+      {
+        "start": [34.4738, 35.7584],
+        "end": [35.052, 35.7584],
+        "width": 0.254,
+        "layer": "B.Cu",
+        "net": 2
+      },
+      {
+        "start": [37.084, 28.448],
+        "end": [37.084, 29.7275],
+        "width": 0.254,
+        "layer": "F.Cu",
+        "net": 2
+      },
+      {
+        "start": [37.084, 28.448],
+        "end": [36.0425, 28.448],
+        "width": 0.254,
+        "layer": "B.Cu",
+        "net": 2
+      },
+      {
+        "start": [31.7595, 34.782],
+        "end": [31.6646, 34.782],
+        "width": 0.254,
+        "layer": "F.Cu",
+        "net": 2
+      },
+      {
+        "start": [31.6646, 34.782],
+        "end": [30.3374, 33.4548],
+        "width": 0.254,
+        "layer": "F.Cu",
+        "net": 2
+      },
+      {
+        "start": [30.3374, 33.4548],
+        "end": [30.3374, 31.622],
+        "width": 0.254,
+        "layer": "F.Cu",
+        "net": 2
+      },
+      {
+        "start": [36.0425, 28.448],
+        "end": [32.8685, 31.622],
+        "width": 0.254,
+        "layer": "B.Cu",
+        "net": 2
+      },
+      {
+        "start": [32.8685, 31.622],
+        "end": [30.3374, 31.622],
+        "width": 0.254,
+        "layer": "B.Cu",
+        "net": 2
+      },
+      {
+        "start": [31.7595, 34.782],
+        "end": [32.277, 34.782],
+        "width": 0.254,
+        "layer": "F.Cu",
+        "net": 2
+      },
+      {
+        "start": [32.277, 34.782],
+        "end": [33.277, 33.782],
+        "width": 0.254,
+        "layer": "F.Cu",
+        "net": 2
+      },
+      {
+        "start": [31.242, 34.782],
+        "end": [31.7595, 34.782],
+        "width": 0.254,
+        "layer": "F.Cu",
+        "net": 2
+      },
+      {
+        "start": [35.727, 34.207],
+        "end": [35.977, 34.207],
+        "width": 0.254,
+        "layer": "F.Cu",
+        "net": 3
+      },
+      {
+        "start": [35.977, 34.207],
+        "end": [36.314, 34.544],
+        "width": 0.254,
+        "layer": "F.Cu",
+        "net": 3
+      },
+      {
+        "start": [36.83, 35.052],
+        "end": [36.822, 35.052],
+        "width": 0.1524,
+        "layer": "F.Cu",
+        "net": 3
+      },
+      {
+        "start": [36.822, 35.052],
+        "end": [36.314, 34.544],
+        "width": 0.1524,
+        "layer": "F.Cu",
+        "net": 3
+      },
+      {
+        "start": [36.83, 35.052],
+        "end": [37.084, 35.306],
+        "width": 0.254,
+        "layer": "F.Cu",
+        "net": 3
+      },
+      {
+        "start": [37.084, 35.306],
+        "end": [37.084, 39.116],
+        "width": 0.254,
+        "layer": "F.Cu",
+        "net": 3
+      },
+      {
+        "start": [34.377, 34.207],
+        "end": [34.127, 34.207],
+        "width": 0.254,
+        "layer": "F.Cu",
+        "net": 4
+      },
+      {
+        "start": [34.127, 34.207],
+        "end": [33.782, 34.552],
+        "width": 0.254,
+        "layer": "F.Cu",
+        "net": 4
+      },
+      {
+        "start": [33.401, 34.925],
+        "end": [33.401, 34.933],
+        "width": 0.1524,
+        "layer": "F.Cu",
+        "net": 4
+      },
+      {
+        "start": [33.401, 34.933],
+        "end": [33.782, 34.552],
+        "width": 0.1524,
+        "layer": "F.Cu",
+        "net": 4
+      },
+      {
+        "start": [33.401, 34.925],
+        "end": [33.02, 35.306],
+        "width": 0.254,
+        "layer": "F.Cu",
+        "net": 4
+      },
+      {
+        "start": [33.02, 35.306],
+        "end": [33.02, 39.116],
+        "width": 0.254,
+        "layer": "F.Cu",
+        "net": 4
+      }
+    ],
+    "vias": [
+      {
+        "position": [35.052, 35.7584],
+        "diameter": 0.6,
+        "layers": ["F.Cu", "B.Cu"],
+        "net": 2
+      },
+      {
+        "position": [30.3374, 31.622],
+        "diameter": 0.6,
+        "layers": ["F.Cu", "B.Cu"],
+        "net": 2
+      }
+    ]
+  }
+}
