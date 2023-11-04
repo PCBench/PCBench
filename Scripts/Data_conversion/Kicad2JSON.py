@@ -20,7 +20,7 @@ def dump_to_PBCRDL_json(target_dir):
     pcb = PCB(kicad_file)
     net_pads, keepouts, net_indices = extract_net_pads(pcb)
     differential_pairs = copy.copy(pcb.differential_pairs)
-    differential_pairs = [[net_indices.index(dp[0]), net_indices.index(dp[1])] for dp in differential_pairs]
+    differential_pairs = [[net_indices.index(dp[0]), net_indices.index(dp[1])] for dp in differential_pairs if dp[0] in net_indices and dp[1] in net_indices]
     net_classes = adjust_net_class(extract_net_classes(pcb.pcb), net_indices)
     vias = extract_track_pieces(pcb.vias)
     dump = {

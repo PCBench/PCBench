@@ -16,7 +16,7 @@
 2. Create `clean_list.csv`. List names of PCBs to be cleaned in `new_PCBs` folder in the `.csv` file named `clean_list.csv`, where each row contains one PCB name.  An example `clean_list.csv` is provided in this folder.
 3. Run `PCB_cleaner.py` to delete fill zones and adjust `fp_text` names in `.kicad_pcb` file.
 	```
-	python PCB_clean.py
+	python PCB_cleaner.py
 	```
 	This will generate a folder named `Cleaning_PCBs` containing all PCBs after deleting fill zones. In the folder, each PCB has a name `pcb_name.kicad_pcb` where `pcb_name` is the named listed in `clean_list.csv`.
 4. Use [FreeRouting](https://github.com/freerouting/freerouting) to route nets that are originally connected by fill zones. To do this, first open a `pcb_name.kicad_pcb` file in folder `Cleaning_PCBs` using KiCAD 5 and export it as `pcb_name.dsn` file. Then run FreeRouting by

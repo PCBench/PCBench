@@ -15,7 +15,7 @@ def update_master_meta(root_folder: str):
             "Unique Repos": ["https://github.com/owner_or_org/repo",...]
         }
     master_meta["Global Info"] = global_info
-    pcb_folder = os.path.join(root_folder, "PCBs")
+    pcb_folder = os.path.join(root_folder, "new_PCBs")
     unique_repos = set([])
     count_kitspace = 0
     count_kicad = 0
@@ -41,4 +41,4 @@ def update_master_meta(root_folder: str):
         f.write(metaf)
 
 if __name__ == "__main__":
-    update_master_meta("../../PCBs/")
+    update_master_meta("../../")
