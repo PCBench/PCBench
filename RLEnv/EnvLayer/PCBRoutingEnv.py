@@ -47,7 +47,7 @@ class PCBRoutingEnv(gym.Env):
             "current_paths": self.current_path
         }
 
-    def reset(self):
+    def reset(self, seed=0):
 
         self.pcb_name = random.choice(self.pcb_names)
 
