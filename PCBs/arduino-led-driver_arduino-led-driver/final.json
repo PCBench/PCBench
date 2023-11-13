@@ -1,7 +1,36 @@
 {
   "layers": ["F.Cu", "B.Cu"],
   "unit": "mm",
-  "border": [],
+  "border": [
+    {
+      "type": "polyline",
+      "vertices": [
+        [113.792, 117.622],
+        [113.78946, 73.6292]
+      ]
+    },
+    {
+      "type": "polyline",
+      "vertices": [
+        [183.79694, 117.62708],
+        [113.792, 117.622]
+      ]
+    },
+    {
+      "type": "polyline",
+      "vertices": [
+        [183.78678, 73.63428],
+        [183.79694, 117.62708]
+      ]
+    },
+    {
+      "type": "polyline",
+      "vertices": [
+        [113.78946, 73.6292],
+        [183.78678, 73.63428]
+      ]
+    }
+  ],
   "nets": [
     [
       {
@@ -10335,12 +10364,6 @@
     ],
     "vias": [
       {
-        "position": [125.40996, 86.54764],
-        "diameter": 0.6,
-        "layers": ["F.Cu", "B.Cu"],
-        "net": 2
-      },
-      {
         "position": [176.7649, 89.5201],
         "diameter": 0.6,
         "layers": ["F.Cu", "B.Cu"],
@@ -10351,6 +10374,12 @@
         "diameter": 0.6,
         "layers": ["F.Cu", "B.Cu"],
         "net": 1
+      },
+      {
+        "position": [125.40996, 86.54764],
+        "diameter": 0.6,
+        "layers": ["F.Cu", "B.Cu"],
+        "net": 2
       },
       {
         "position": [148.648, 108.3387],
