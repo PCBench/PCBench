@@ -31,8 +31,8 @@
       ]
     }
   ],
-  "nets": [
-    [
+  "nets": {
+    "2": [
       {
         "type": "thru_hole",
         "layer": ["F.Cu", "B.Cu"],
@@ -58,7 +58,7 @@
         "rotation": 0
       }
     ],
-    [
+    "1": [
       {
         "type": "thru_hole",
         "layer": ["F.Cu", "B.Cu"],
@@ -116,7 +116,7 @@
         "rotation": 0
       }
     ],
-    [
+    "3": [
       {
         "type": "thru_hole",
         "layer": ["F.Cu", "B.Cu"],
@@ -134,7 +134,7 @@
         "rotation": 0
       }
     ],
-    [
+    "8": [
       {
         "type": "thru_hole",
         "layer": ["F.Cu", "B.Cu"],
@@ -152,7 +152,7 @@
         "rotation": 0
       }
     ],
-    [
+    "4": [
       {
         "type": "thru_hole",
         "layer": ["F.Cu", "B.Cu"],
@@ -170,7 +170,7 @@
         "rotation": 0
       }
     ],
-    [
+    "9": [
       {
         "type": "thru_hole",
         "layer": ["F.Cu", "B.Cu"],
@@ -188,7 +188,7 @@
         "rotation": 0
       }
     ],
-    [
+    "10": [
       {
         "type": "thru_hole",
         "layer": ["F.Cu", "B.Cu"],
@@ -222,7 +222,7 @@
         "rotation": 90
       }
     ]
-  ],
+  },
   "differential_pairs": [],
   "keepouts": [
     {
@@ -269,7 +269,7 @@
   "rules": {
     "net_classes": [
       {
-        "indices": [0, 1, 4, 2, 3, 5, 6],
+        "indices": [1, 2, 3, 4, 5, 6, 7, 8, 9, 10, 11],
         "width": 0.5,
         "clearance": 0.5,
         "via_diameter": 1.2
@@ -388,32 +388,28 @@
         "end": [132.08, 101.06],
         "width": 0.5,
         "layer": "B.Cu",
-        "net": 1,
-        "status": 20
+        "net": 1
       },
       {
         "start": [132.08, 101.06],
         "end": [132.46, 100.68],
         "width": 0.5,
         "layer": "B.Cu",
-        "net": 1,
-        "status": 30
+        "net": 1
       },
       {
         "start": [135.16, 107.95],
         "end": [132.08, 111.76],
         "width": 0.5,
         "layer": "B.Cu",
-        "net": 1,
-        "status": 10
+        "net": 1
       },
       {
         "start": [132.08, 112.14],
         "end": [132.08, 112.68],
         "width": 0.5,
         "layer": "B.Cu",
-        "net": 1,
-        "status": 20
+        "net": 1
       },
       {
         "start": [132.08, 111.76],
@@ -427,8 +423,7 @@
         "end": [132.05, 112.68],
         "width": 0.5,
         "layer": "B.Cu",
-        "net": 1,
-        "status": 30
+        "net": 1
       },
       {
         "start": [142.24, 134.62],
@@ -526,8 +521,7 @@
         "end": [129.54, 133.35],
         "width": 0.5,
         "layer": "B.Cu",
-        "net": 4,
-        "status": 20
+        "net": 4
       },
       {
         "start": [140.97, 129.54],
@@ -604,14 +598,12 @@
       {
         "position": [125.73, 118.11],
         "diameter": 1.2,
-        "layers": ["F.Cu", "B.Cu"],
-        "net": 1
+        "layers": ["F.Cu", "B.Cu"]
       },
       {
         "position": [132.08, 118.11],
         "diameter": 1.2,
-        "layers": ["F.Cu", "B.Cu"],
-        "net": 1
+        "layers": ["F.Cu", "B.Cu"]
       }
     ]
   }

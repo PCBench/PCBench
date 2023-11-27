@@ -31,8 +31,8 @@
       ]
     }
   ],
-  "nets": [
-    [
+  "nets": {
+    "1": [
       {
         "type": "smd",
         "layer": ["F.Cu"],
@@ -90,7 +90,7 @@
         "rotation": 90
       }
     ],
-    [
+    "2": [
       {
         "type": "smd",
         "layer": ["F.Cu"],
@@ -124,7 +124,7 @@
         "rotation": 90
       }
     ],
-    [
+    "3": [
       {
         "type": "smd",
         "layer": ["F.Cu"],
@@ -158,7 +158,7 @@
         "rotation": 90
       }
     ],
-    [
+    "4": [
       {
         "type": "smd",
         "layer": ["F.Cu"],
@@ -184,13 +184,13 @@
         "rotation": 90
       }
     ]
-  ],
+  },
   "differential_pairs": [],
   "keepouts": [],
   "rules": {
     "net_classes": [
       {
-        "indices": [0, 1, 2, 3],
+        "indices": [1, 2, 3, 4],
         "width": 0.7,
         "clearance": 0.2,
         "via_diameter": 0.6

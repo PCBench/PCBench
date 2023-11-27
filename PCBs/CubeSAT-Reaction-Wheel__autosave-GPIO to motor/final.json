@@ -149,8 +149,8 @@
       "radius": 1.9050000000000011
     }
   ],
-  "nets": [
-    [
+  "nets": {
+    "29": [
       {
         "type": "thru_hole",
         "layer": ["F.Cu", "B.Cu"],
@@ -200,7 +200,7 @@
         "rotation": 0
       }
     ],
-    [
+    "31": [
       {
         "type": "thru_hole",
         "layer": ["F.Cu", "B.Cu"],
@@ -226,7 +226,7 @@
         "rotation": 90
       }
     ],
-    [
+    "24": [
       {
         "type": "thru_hole",
         "layer": ["F.Cu", "B.Cu"],
@@ -244,7 +244,7 @@
         "rotation": 0
       }
     ],
-    [
+    "16": [
       {
         "type": "thru_hole",
         "layer": ["F.Cu", "B.Cu"],
@@ -262,7 +262,7 @@
         "rotation": 0
       }
     ],
-    [
+    "25": [
       {
         "type": "thru_hole",
         "layer": ["F.Cu", "B.Cu"],
@@ -280,7 +280,7 @@
         "rotation": 0
       }
     ],
-    [
+    "17": [
       {
         "type": "thru_hole",
         "layer": ["F.Cu", "B.Cu"],
@@ -298,7 +298,7 @@
         "rotation": 0
       }
     ],
-    [
+    "13": [
       {
         "type": "thru_hole",
         "layer": ["F.Cu", "B.Cu"],
@@ -324,7 +324,7 @@
         "rotation": 90
       }
     ],
-    [
+    "27": [
       {
         "type": "thru_hole",
         "layer": ["F.Cu", "B.Cu"],
@@ -342,7 +342,7 @@
         "rotation": 90
       }
     ],
-    [
+    "28": [
       {
         "type": "thru_hole",
         "layer": ["F.Cu", "B.Cu"],
@@ -360,7 +360,7 @@
         "rotation": 90
       }
     ],
-    [
+    "1": [
       {
         "type": "thru_hole",
         "layer": ["F.Cu", "B.Cu"],
@@ -378,7 +378,7 @@
         "rotation": 90
       }
     ],
-    [
+    "2": [
       {
         "type": "thru_hole",
         "layer": ["F.Cu", "B.Cu"],
@@ -396,7 +396,7 @@
         "rotation": 90
       }
     ],
-    [
+    "3": [
       {
         "type": "thru_hole",
         "layer": ["F.Cu", "B.Cu"],
@@ -414,7 +414,7 @@
         "rotation": 90
       }
     ],
-    [
+    "4": [
       {
         "type": "thru_hole",
         "layer": ["F.Cu", "B.Cu"],
@@ -432,7 +432,7 @@
         "rotation": 90
       }
     ],
-    [
+    "5": [
       {
         "type": "thru_hole",
         "layer": ["F.Cu", "B.Cu"],
@@ -450,7 +450,7 @@
         "rotation": 90
       }
     ],
-    [
+    "6": [
       {
         "type": "thru_hole",
         "layer": ["F.Cu", "B.Cu"],
@@ -468,7 +468,7 @@
         "rotation": 90
       }
     ],
-    [
+    "7": [
       {
         "type": "thru_hole",
         "layer": ["F.Cu", "B.Cu"],
@@ -486,7 +486,7 @@
         "rotation": 90
       }
     ],
-    [
+    "8": [
       {
         "type": "thru_hole",
         "layer": ["F.Cu", "B.Cu"],
@@ -504,7 +504,7 @@
         "rotation": 90
       }
     ],
-    [
+    "14": [
       {
         "type": "thru_hole",
         "layer": ["F.Cu", "B.Cu"],
@@ -522,7 +522,7 @@
         "rotation": 90
       }
     ],
-    [
+    "15": [
       {
         "type": "thru_hole",
         "layer": ["F.Cu", "B.Cu"],
@@ -540,7 +540,7 @@
         "rotation": 90
       }
     ],
-    [
+    "30": [
       {
         "type": "thru_hole",
         "layer": ["F.Cu", "B.Cu"],
@@ -566,7 +566,7 @@
         "rotation": 0
       }
     ]
-  ],
+  },
   "differential_pairs": [],
   "keepouts": [
     {
@@ -661,37 +661,31 @@
   "rules": {
     "net_classes": [
       {
-        "indices": [],
+        "indices": [31],
         "width": 0.25,
         "clearance": 0.2,
         "via_diameter": 0.6
       },
       {
-        "indices": [1],
-        "width": 0.25,
-        "clearance": 0.2,
-        "via_diameter": 0.6
-      },
-      {
-        "indices": [19],
+        "indices": [30],
         "width": 1.5,
         "clearance": 0.2,
         "via_diameter": 0.6
       },
       {
-        "indices": [0],
+        "indices": [29],
         "width": 0.25,
         "clearance": 0.2,
         "via_diameter": 0.6
       },
       {
-        "indices": [9, 10, 11, 12, 13, 14, 15, 16],
+        "indices": [1, 2, 3, 4, 5, 6, 7, 8],
         "width": 0.75,
         "clearance": 0.2,
         "via_diameter": 0.6
       },
       {
-        "indices": [5, 6, 17, 18, 3, 2, 4, 7, 8],
+        "indices": [17, 9, 10, 11, 12, 13, 14, 15, 16, 23, 24, 25, 26, 27, 28, 18, 19, 20, 21, 22],
         "width": 0.25,
         "clearance": 0.2,
         "via_diameter": 0.6

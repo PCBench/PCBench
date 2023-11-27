@@ -153,8 +153,8 @@
       "radius": 3.0
     }
   ],
-  "nets": [
-    [
+  "nets": {
+    "1": [
       {
         "type": "smd",
         "layer": ["F.Cu"],
@@ -196,7 +196,7 @@
         "rotation": 0
       }
     ],
-    [
+    "2": [
       {
         "type": "smd",
         "layer": ["F.Cu"],
@@ -358,7 +358,7 @@
         "rotation": 90
       }
     ],
-    [
+    "3": [
       {
         "type": "smd",
         "layer": ["F.Cu"],
@@ -376,7 +376,7 @@
         "rotation": 0
       }
     ],
-    [
+    "4": [
       {
         "type": "smd",
         "layer": ["F.Cu"],
@@ -394,7 +394,7 @@
         "rotation": 0
       }
     ],
-    [
+    "5": [
       {
         "type": "smd",
         "layer": ["F.Cu"],
@@ -428,7 +428,7 @@
         "rotation": 0
       }
     ],
-    [
+    "6": [
       {
         "type": "smd",
         "layer": ["F.Cu"],
@@ -478,7 +478,7 @@
         "rotation": 0
       }
     ],
-    [
+    "7": [
       {
         "type": "smd",
         "layer": ["F.Cu"],
@@ -512,7 +512,7 @@
         "rotation": 0
       }
     ],
-    [
+    "8": [
       {
         "type": "smd",
         "layer": ["F.Cu"],
@@ -546,7 +546,7 @@
         "rotation": 90
       }
     ],
-    [
+    "9": [
       {
         "type": "smd",
         "layer": ["F.Cu"],
@@ -564,7 +564,7 @@
         "rotation": 90
       }
     ],
-    [
+    "10": [
       {
         "type": "smd",
         "layer": ["F.Cu"],
@@ -582,7 +582,7 @@
         "rotation": 90
       }
     ],
-    [
+    "42": [
       {
         "type": "smd",
         "layer": ["F.Cu"],
@@ -600,7 +600,7 @@
         "rotation": 0
       }
     ]
-  ],
+  },
   "differential_pairs": [],
   "keepouts": [
     {
@@ -855,7 +855,7 @@
   "rules": {
     "net_classes": [
       {
-        "indices": [5, 1, 0, 2, 4, 3, 6, 8, 7, 9, 10],
+        "indices": [1, 2, 3, 4, 5, 6, 7, 8, 9, 10, 11, 12, 13, 14, 15, 16, 17, 18, 19, 20, 21, 22, 23, 24, 25, 26, 27, 28, 29, 30, 31, 32, 33, 34, 35, 36, 37, 38, 39, 40, 41, 42],
         "width": 0.25,
         "clearance": 0.2,
         "via_diameter": 0.8
@@ -1919,20 +1919,17 @@
       {
         "position": [115.3736, 80.016],
         "diameter": 0.8,
-        "layers": ["F.Cu", "B.Cu"],
-        "net": 2
+        "layers": ["F.Cu", "B.Cu"]
       },
       {
         "position": [118.2, 84.1],
         "diameter": 0.8,
-        "layers": ["F.Cu", "B.Cu"],
-        "net": 5
+        "layers": ["F.Cu", "B.Cu"]
       },
       {
         "position": [124.3, 84.1],
         "diameter": 0.8,
-        "layers": ["F.Cu", "B.Cu"],
-        "net": 5
+        "layers": ["F.Cu", "B.Cu"]
       }
     ]
   }

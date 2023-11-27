@@ -45,8 +45,8 @@
       ]
     }
   ],
-  "nets": [
-    [
+  "nets": {
+    "14": [
       {
         "type": "thru_hole",
         "layer": ["F.Cu", "B.Cu"],
@@ -96,7 +96,7 @@
         "rotation": 90
       }
     ],
-    [
+    "15": [
       {
         "type": "thru_hole",
         "layer": ["F.Cu", "B.Cu"],
@@ -122,7 +122,7 @@
         "rotation": 0
       }
     ],
-    [
+    "16": [
       {
         "type": "thru_hole",
         "layer": ["F.Cu", "B.Cu"],
@@ -148,7 +148,7 @@
         "rotation": 0
       }
     ],
-    [
+    "17": [
       {
         "type": "thru_hole",
         "layer": ["F.Cu", "B.Cu"],
@@ -174,7 +174,7 @@
         "rotation": 90
       }
     ],
-    [
+    "2": [
       {
         "type": "thru_hole",
         "layer": ["F.Cu", "B.Cu"],
@@ -336,7 +336,7 @@
         "rotation": 0
       }
     ],
-    [
+    "13": [
       {
         "type": "thru_hole",
         "layer": ["F.Cu", "B.Cu"],
@@ -362,7 +362,7 @@
         "rotation": 0
       }
     ],
-    [
+    "10": [
       {
         "type": "thru_hole",
         "layer": ["F.Cu", "B.Cu"],
@@ -380,7 +380,7 @@
         "rotation": 90
       }
     ],
-    [
+    "22": [
       {
         "type": "thru_hole",
         "layer": ["F.Cu", "B.Cu"],
@@ -406,7 +406,7 @@
         "rotation": 90
       }
     ],
-    [
+    "23": [
       {
         "type": "thru_hole",
         "layer": ["F.Cu", "B.Cu"],
@@ -448,7 +448,7 @@
         "rotation": 0
       }
     ],
-    [
+    "9": [
       {
         "type": "thru_hole",
         "layer": ["F.Cu", "B.Cu"],
@@ -474,7 +474,7 @@
         "rotation": 0
       }
     ],
-    [
+    "20": [
       {
         "type": "thru_hole",
         "layer": ["F.Cu", "B.Cu"],
@@ -492,7 +492,7 @@
         "rotation": 90
       }
     ],
-    [
+    "21": [
       {
         "type": "thru_hole",
         "layer": ["F.Cu", "B.Cu"],
@@ -510,7 +510,7 @@
         "rotation": 0
       }
     ],
-    [
+    "12": [
       {
         "type": "thru_hole",
         "layer": ["F.Cu", "B.Cu"],
@@ -536,7 +536,7 @@
         "rotation": 0
       }
     ],
-    [
+    "6": [
       {
         "type": "thru_hole",
         "layer": ["F.Cu", "B.Cu"],
@@ -554,7 +554,7 @@
         "rotation": 90
       }
     ],
-    [
+    "4": [
       {
         "type": "thru_hole",
         "layer": ["F.Cu", "B.Cu"],
@@ -588,7 +588,7 @@
         "rotation": 90
       }
     ],
-    [
+    "5": [
       {
         "type": "thru_hole",
         "layer": ["F.Cu", "B.Cu"],
@@ -606,7 +606,7 @@
         "rotation": 90
       }
     ],
-    [
+    "3": [
       {
         "type": "thru_hole",
         "layer": ["F.Cu", "B.Cu"],
@@ -632,7 +632,7 @@
         "rotation": 0
       }
     ],
-    [
+    "18": [
       {
         "type": "thru_hole",
         "layer": ["F.Cu", "B.Cu"],
@@ -650,7 +650,7 @@
         "rotation": 90
       }
     ],
-    [
+    "1": [
       {
         "type": "thru_hole",
         "layer": ["F.Cu", "B.Cu"],
@@ -708,7 +708,7 @@
         "rotation": 0
       }
     ],
-    [
+    "19": [
       {
         "type": "thru_hole",
         "layer": ["F.Cu", "B.Cu"],
@@ -726,7 +726,7 @@
         "rotation": 90
       }
     ],
-    [
+    "11": [
       {
         "type": "thru_hole",
         "layer": ["F.Cu", "B.Cu"],
@@ -744,7 +744,7 @@
         "rotation": 90
       }
     ],
-    [
+    "7": [
       {
         "type": "thru_hole",
         "layer": ["F.Cu", "B.Cu"],
@@ -762,7 +762,7 @@
         "rotation": 90
       }
     ],
-    [
+    "8": [
       {
         "type": "thru_hole",
         "layer": ["F.Cu", "B.Cu"],
@@ -780,7 +780,7 @@
         "rotation": 90
       }
     ]
-  ],
+  },
   "differential_pairs": [],
   "keepouts": [
     {
@@ -819,14 +819,14 @@
   "rules": {
     "net_classes": [
       {
-        "indices": [0, 15, 21, 13, 2, 3, 1, 22, 4, 16, 14, 9, 6, 20, 12, 5, 11, 7, 8],
-        "width": 0.254,
+        "indices": [20, 19, 18, 1],
+        "width": 1,
         "clearance": 0.254,
         "via_diameter": 0.889
       },
       {
-        "indices": [10, 19, 17, 18],
-        "width": 1,
+        "indices": [2, 3, 4, 5, 6, 7, 8, 9, 10, 11, 12, 13, 14, 15, 16, 17, 21, 22, 23],
+        "width": 0.254,
         "clearance": 0.254,
         "via_diameter": 0.889
       }

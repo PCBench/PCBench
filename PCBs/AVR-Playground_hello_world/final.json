@@ -38,8 +38,8 @@
       ]
     }
   ],
-  "nets": [
-    [
+  "nets": {
+    "1": [
       {
         "type": "thru_hole",
         "layer": ["F.Cu", "B.Cu"],
@@ -65,7 +65,7 @@
         "rotation": 90
       }
     ],
-    [
+    "2": [
       {
         "type": "thru_hole",
         "layer": ["F.Cu", "B.Cu"],
@@ -83,7 +83,7 @@
         "rotation": 0
       }
     ],
-    [
+    "3": [
       {
         "type": "thru_hole",
         "layer": ["F.Cu", "B.Cu"],
@@ -101,7 +101,7 @@
         "rotation": 90
       }
     ],
-    [
+    "10": [
       {
         "type": "thru_hole",
         "layer": ["F.Cu", "B.Cu"],
@@ -119,7 +119,7 @@
         "rotation": 90
       }
     ]
-  ],
+  },
   "differential_pairs": [],
   "keepouts": [
     {
@@ -358,13 +358,7 @@
   "rules": {
     "net_classes": [
       {
-        "indices": [],
-        "width": 0.25,
-        "clearance": 0.2,
-        "via_diameter": 0.6
-      },
-      {
-        "indices": [3, 0, 1, 2],
+        "indices": [10, 1, 2, 3, 4, 21, 23, 25, 27, 29, 30, 32, 5, 7, 9, 6, 11, 14, 16, 18, 20, 22, 24, 26, 28, 8, 31, 33, 12, 13, 15, 17, 19],
         "width": 0.6096,
         "clearance": 0.2,
         "via_diameter": 0.6
@@ -385,56 +379,49 @@
         "end": [157.48, 133.35],
         "width": 0.606,
         "layer": "F.Cu",
-        "net": 1,
-        "status": 400000
+        "net": 1
       },
       {
         "start": [157.48, 113.03],
         "end": [144.78, 100.33],
         "width": 0.606,
         "layer": "F.Cu",
-        "net": 1,
-        "status": 800000
+        "net": 1
       },
       {
         "start": [150.62, 139.7],
         "end": [151.13, 139.7],
         "width": 0.606,
         "layer": "F.Cu",
-        "net": 1,
-        "status": "C00000"
+        "net": 1
       },
       {
         "start": [144.78, 125.73],
         "end": [144.78, 133.86],
         "width": 0.606,
         "layer": "F.Cu",
-        "net": 1,
-        "status": 400000
+        "net": 1
       },
       {
         "start": [144.78, 133.86],
         "end": [150.62, 139.7],
         "width": 0.606,
         "layer": "F.Cu",
-        "net": 1,
-        "status": 800000
+        "net": 1
       },
       {
         "start": [147.32, 125.73],
         "end": [147.32, 120.65],
         "width": 0.606,
         "layer": "B.Cu",
-        "net": 2,
-        "status": 400000
+        "net": 2
       },
       {
         "start": [129.54, 125.73],
         "end": [119.38, 125.73],
         "width": 0.606,
         "layer": "B.Cu",
-        "net": 2,
-        "status": 800000
+        "net": 2
       },
       {
         "start": [134.62, 120.65],
@@ -455,16 +442,14 @@
         "end": [114.3, 123.19],
         "width": 0.606,
         "layer": "B.Cu",
-        "net": 3,
-        "status": 400000
+        "net": 3
       },
       {
         "start": [121.92, 106.68],
         "end": [121.92, 100.33],
         "width": 0.606,
         "layer": "B.Cu",
-        "net": 3,
-        "status": 800000
+        "net": 3
       },
       {
         "start": [113.03, 106.68],
@@ -492,16 +477,14 @@
         "end": [120.65, 133.35],
         "width": 0.606,
         "layer": "F.Cu",
-        "net": 10,
-        "status": 400000
+        "net": 10
       },
       {
         "start": [124.46, 129.54],
         "end": [124.46, 115.57],
         "width": 0.606,
         "layer": "F.Cu",
-        "net": 10,
-        "status": 800000
+        "net": 10
       },
       {
         "start": [120.65, 133.35],

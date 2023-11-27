@@ -63,8 +63,8 @@
       "radius": 2.539999999999999
     }
   ],
-  "nets": [
-    [
+  "nets": {
+    "1": [
       {
         "type": "smd",
         "layer": ["F.Cu"],
@@ -154,7 +154,7 @@
         "rotation": 0
       }
     ],
-    [
+    "13": [
       {
         "type": "smd",
         "layer": ["F.Cu"],
@@ -180,7 +180,7 @@
         "rotation": 90
       }
     ],
-    [
+    "5": [
       {
         "type": "smd",
         "layer": ["F.Cu"],
@@ -350,7 +350,7 @@
         "rotation": 90
       }
     ],
-    [
+    "2": [
       {
         "type": "smd",
         "layer": ["F.Cu"],
@@ -368,7 +368,7 @@
         "rotation": 0
       }
     ],
-    [
+    "8": [
       {
         "type": "smd",
         "layer": ["F.Cu"],
@@ -394,7 +394,7 @@
         "rotation": 90
       }
     ],
-    [
+    "9": [
       {
         "type": "smd",
         "layer": ["F.Cu"],
@@ -420,7 +420,7 @@
         "rotation": 90
       }
     ],
-    [
+    "3": [
       {
         "type": "smd",
         "layer": ["F.Cu"],
@@ -438,7 +438,7 @@
         "rotation": 0
       }
     ],
-    [
+    "11": [
       {
         "type": "smd",
         "layer": ["F.Cu"],
@@ -456,7 +456,7 @@
         "rotation": 0
       }
     ],
-    [
+    "7": [
       {
         "type": "smd",
         "layer": ["F.Cu"],
@@ -474,7 +474,7 @@
         "rotation": 90
       }
     ],
-    [
+    "12": [
       {
         "type": "smd",
         "layer": ["F.Cu"],
@@ -492,7 +492,7 @@
         "rotation": 0
       }
     ],
-    [
+    "6": [
       {
         "type": "smd",
         "layer": ["F.Cu"],
@@ -510,7 +510,7 @@
         "rotation": 90
       }
     ],
-    [
+    "20": [
       {
         "type": "smd",
         "layer": ["B.Cu"],
@@ -528,7 +528,7 @@
         "rotation": 0
       }
     ],
-    [
+    "21": [
       {
         "type": "smd",
         "layer": ["B.Cu"],
@@ -546,7 +546,7 @@
         "rotation": 90
       }
     ],
-    [
+    "15": [
       {
         "type": "smd",
         "layer": ["B.Cu"],
@@ -564,7 +564,7 @@
         "rotation": 90
       }
     ],
-    [
+    "16": [
       {
         "type": "smd",
         "layer": ["B.Cu"],
@@ -582,7 +582,7 @@
         "rotation": 0
       }
     ],
-    [
+    "10": [
       {
         "type": "thru_hole",
         "layer": ["F.Cu", "B.Cu"],
@@ -600,7 +600,7 @@
         "rotation": 0
       }
     ],
-    [
+    "4": [
       {
         "type": "thru_hole",
         "layer": ["F.Cu", "B.Cu"],
@@ -650,7 +650,7 @@
         "rotation": 0
       }
     ],
-    [
+    "14": [
       {
         "type": "thru_hole",
         "layer": ["F.Cu", "B.Cu"],
@@ -668,7 +668,7 @@
         "rotation": 90
       }
     ],
-    [
+    "26": [
       {
         "type": "thru_hole",
         "layer": ["F.Cu", "B.Cu"],
@@ -686,7 +686,7 @@
         "rotation": 90
       }
     ],
-    [
+    "25": [
       {
         "type": "thru_hole",
         "layer": ["F.Cu", "B.Cu"],
@@ -704,7 +704,7 @@
         "rotation": 0
       }
     ],
-    [
+    "19": [
       {
         "type": "thru_hole",
         "layer": ["F.Cu", "B.Cu"],
@@ -722,7 +722,7 @@
         "rotation": 0
       }
     ],
-    [
+    "17": [
       {
         "type": "thru_hole",
         "layer": ["F.Cu", "B.Cu"],
@@ -748,7 +748,7 @@
         "rotation": 0
       }
     ],
-    [
+    "22": [
       {
         "type": "thru_hole",
         "layer": ["F.Cu", "B.Cu"],
@@ -774,7 +774,7 @@
         "rotation": 0
       }
     ],
-    [
+    "24": [
       {
         "type": "smd",
         "layer": ["F.Cu"],
@@ -792,7 +792,7 @@
         "rotation": 0
       }
     ],
-    [
+    "23": [
       {
         "type": "thru_hole",
         "layer": ["F.Cu", "B.Cu"],
@@ -810,7 +810,7 @@
         "rotation": 0
       }
     ],
-    [
+    "18": [
       {
         "type": "thru_hole",
         "layer": ["F.Cu", "B.Cu"],
@@ -828,7 +828,7 @@
         "rotation": 0
       }
     ]
-  ],
+  },
   "differential_pairs": [],
   "keepouts": [
     {
@@ -1003,16 +1003,16 @@
   "rules": {
     "net_classes": [
       {
-        "indices": [16, 2, 10, 8, 4, 5, 15, 7, 9, 17, 13, 14, 21, 25, 20, 11, 12, 22, 24, 19, 18],
-        "width": 0.254,
-        "clearance": 0.254,
-        "via_diameter": 0.889
-      },
-      {
-        "indices": [0, 3, 6, 1, 23],
+        "indices": [1, 2, 3, 13, 24],
         "width": 0.5,
         "clearance": 0.254,
         "via_diameter": 1
+      },
+      {
+        "indices": [4, 5, 6, 7, 8, 9, 10, 11, 12, 14, 15, 16, 17, 18, 19, 20, 21, 22, 23, 25, 26],
+        "width": 0.254,
+        "clearance": 0.254,
+        "via_diameter": 0.889
       }
     ]
   },
@@ -2766,74 +2766,62 @@
       {
         "position": [73.025, 73.66],
         "diameter": 1,
-        "layers": ["F.Cu", "B.Cu"],
-        "net": 1
+        "layers": ["F.Cu", "B.Cu"]
       },
       {
         "position": [52.07, 81.915],
         "diameter": 1,
-        "layers": ["F.Cu", "B.Cu"],
-        "net": 1
+        "layers": ["F.Cu", "B.Cu"]
       },
       {
         "position": [76.835, 52.07],
         "diameter": 0.889,
-        "layers": ["F.Cu", "B.Cu"],
-        "net": 4
+        "layers": ["F.Cu", "B.Cu"]
       },
       {
         "position": [68.58, 62.865],
         "diameter": 0.889,
-        "layers": ["F.Cu", "B.Cu"],
-        "net": 4
+        "layers": ["F.Cu", "B.Cu"]
       },
       {
         "position": [61.595, 62.865],
         "diameter": 0.889,
-        "layers": ["F.Cu", "B.Cu"],
-        "net": 4
+        "layers": ["F.Cu", "B.Cu"]
       },
       {
         "position": [50.8, 76.2],
         "diameter": 0.889,
-        "layers": ["F.Cu", "B.Cu"],
-        "net": 8
+        "layers": ["F.Cu", "B.Cu"]
       },
       {
         "position": [50.8, 77.47],
         "diameter": 0.889,
-        "layers": ["F.Cu", "B.Cu"],
-        "net": 9
+        "layers": ["F.Cu", "B.Cu"]
       },
       {
         "position": [71.755, 76.835],
         "diameter": 0.889,
-        "layers": ["F.Cu", "B.Cu"],
-        "net": 11
+        "layers": ["F.Cu", "B.Cu"]
       },
       {
         "position": [69.215, 79.375],
         "diameter": 0.889,
-        "layers": ["F.Cu", "B.Cu"],
-        "net": 11
+        "layers": ["F.Cu", "B.Cu"]
       },
       {
         "position": [64.77, 72.39],
         "diameter": 0.889,
-        "layers": ["F.Cu", "B.Cu"],
-        "net": 17
+        "layers": ["F.Cu", "B.Cu"]
       },
       {
         "position": [70.485, 76.835],
         "diameter": 0.889,
-        "layers": ["F.Cu", "B.Cu"],
-        "net": 22
+        "layers": ["F.Cu", "B.Cu"]
       },
       {
         "position": [70.485, 72.39],
         "diameter": 0.889,
-        "layers": ["F.Cu", "B.Cu"],
-        "net": 22
+        "layers": ["F.Cu", "B.Cu"]
       }
     ]
   }

@@ -63,8 +63,8 @@
       "radius": 10.159999999999997
     }
   ],
-  "nets": [
-    [
+  "nets": {
+    "15": [
       {
         "type": "thru_hole",
         "layer": ["F.Cu", "B.Cu"],
@@ -122,7 +122,7 @@
         "rotation": 0
       }
     ],
-    [
+    "6": [
       {
         "type": "thru_hole",
         "layer": ["F.Cu", "B.Cu"],
@@ -140,7 +140,7 @@
         "rotation": 0
       }
     ],
-    [
+    "5": [
       {
         "type": "thru_hole",
         "layer": ["F.Cu", "B.Cu"],
@@ -158,7 +158,7 @@
         "rotation": 0
       }
     ],
-    [
+    "1": [
       {
         "type": "thru_hole",
         "layer": ["F.Cu", "B.Cu"],
@@ -176,7 +176,7 @@
         "rotation": 0
       }
     ],
-    [
+    "2": [
       {
         "type": "thru_hole",
         "layer": ["F.Cu", "B.Cu"],
@@ -194,7 +194,7 @@
         "rotation": 0
       }
     ],
-    [
+    "3": [
       {
         "type": "thru_hole",
         "layer": ["F.Cu", "B.Cu"],
@@ -212,7 +212,7 @@
         "rotation": 0
       }
     ],
-    [
+    "4": [
       {
         "type": "thru_hole",
         "layer": ["F.Cu", "B.Cu"],
@@ -230,7 +230,7 @@
         "rotation": 0
       }
     ],
-    [
+    "7": [
       {
         "type": "thru_hole",
         "layer": ["F.Cu", "B.Cu"],
@@ -248,7 +248,7 @@
         "rotation": 0
       }
     ],
-    [
+    "8": [
       {
         "type": "thru_hole",
         "layer": ["F.Cu", "B.Cu"],
@@ -266,7 +266,7 @@
         "rotation": 0
       }
     ],
-    [
+    "9": [
       {
         "type": "thru_hole",
         "layer": ["F.Cu", "B.Cu"],
@@ -284,7 +284,7 @@
         "rotation": 0
       }
     ],
-    [
+    "10": [
       {
         "type": "thru_hole",
         "layer": ["F.Cu", "B.Cu"],
@@ -302,7 +302,7 @@
         "rotation": 0
       }
     ],
-    [
+    "11": [
       {
         "type": "thru_hole",
         "layer": ["F.Cu", "B.Cu"],
@@ -320,7 +320,7 @@
         "rotation": 0
       }
     ],
-    [
+    "12": [
       {
         "type": "thru_hole",
         "layer": ["F.Cu", "B.Cu"],
@@ -338,7 +338,7 @@
         "rotation": 0
       }
     ],
-    [
+    "13": [
       {
         "type": "thru_hole",
         "layer": ["F.Cu", "B.Cu"],
@@ -356,7 +356,7 @@
         "rotation": 0
       }
     ],
-    [
+    "14": [
       {
         "type": "thru_hole",
         "layer": ["F.Cu", "B.Cu"],
@@ -374,7 +374,7 @@
         "rotation": 0
       }
     ]
-  ],
+  },
   "differential_pairs": [],
   "keepouts": [
     {
@@ -517,7 +517,7 @@
   "rules": {
     "net_classes": [
       {
-        "indices": [3, 10, 11, 12, 13, 14, 4, 5, 0, 6, 2, 1, 7, 8, 9],
+        "indices": [1, 2, 3, 4, 5, 6, 7, 8, 9, 10, 11, 12, 13, 14, 15],
         "width": 1.27,
         "clearance": 0.4,
         "via_diameter": 2
@@ -531,32 +531,28 @@
         "end": [176.500743, 86.359831],
         "width": 1.27,
         "layer": "B.Cu",
-        "net": 1,
-        "status": 30
+        "net": 1
       },
       {
         "start": [176.500743, 86.359831],
         "end": [176.53, 74.93],
         "width": 1.27,
         "layer": "B.Cu",
-        "net": 1,
-        "status": 10
+        "net": 1
       },
       {
         "start": [176.53, 74.93],
         "end": [177.88, 73.74],
         "width": 1.27,
         "layer": "B.Cu",
-        "net": 1,
-        "status": 10
+        "net": 1
       },
       {
         "start": [176.61, 86.36],
         "end": [176.53, 86.44],
         "width": 1.27,
         "layer": "B.Cu",
-        "net": 1,
-        "status": 30
+        "net": 1
       },
       {
         "start": [181.61, 66.04],
@@ -619,16 +615,14 @@
         "end": [179.07, 88.9],
         "width": 1.27,
         "layer": "B.Cu",
-        "net": 2,
-        "status": 10
+        "net": 2
       },
       {
         "start": [179.07, 88.9],
         "end": [180.34, 87.63],
         "width": 1.27,
         "layer": "B.Cu",
-        "net": 2,
-        "status": 10
+        "net": 2
       },
       {
         "start": [180.34, 87.63],
@@ -642,8 +636,7 @@
         "end": [176.49, 88.98],
         "width": 1.27,
         "layer": "B.Cu",
-        "net": 2,
-        "status": 30
+        "net": 2
       },
       {
         "start": [180.34, 87.63],
@@ -685,16 +678,14 @@
         "end": [173.99, 99.06],
         "width": 1.27,
         "layer": "B.Cu",
-        "net": 3,
-        "status": 10
+        "net": 3
       },
       {
         "start": [173.99, 99.06],
         "end": [171.45, 96.52],
         "width": 1.27,
         "layer": "B.Cu",
-        "net": 3,
-        "status": 10
+        "net": 3
       },
       {
         "start": [171.45, 96.52],
@@ -708,8 +699,7 @@
         "end": [176.53, 99.14],
         "width": 1.27,
         "layer": "B.Cu",
-        "net": 3,
-        "status": 30
+        "net": 3
       },
       {
         "start": [176.53, 64.77],
@@ -786,16 +776,14 @@
         "end": [177.8, 101.6],
         "width": 1.27,
         "layer": "B.Cu",
-        "net": 4,
-        "status": 20
+        "net": 4
       },
       {
         "start": [177.8, 101.6],
         "end": [176.53, 101.64],
         "width": 1.27,
         "layer": "B.Cu",
-        "net": 4,
-        "status": 20
+        "net": 4
       },
       {
         "start": [179.07, 100.33],
@@ -879,16 +867,14 @@
         "end": [163.83, 86.36],
         "width": 1.27,
         "layer": "B.Cu",
-        "net": 5,
-        "status": 20
+        "net": 5
       },
       {
         "start": [163.83, 86.36],
         "end": [164.084, 86.614],
         "width": 1.27,
         "layer": "B.Cu",
-        "net": 5,
-        "status": 30
+        "net": 5
       },
       {
         "start": [173.99, 64.77],
@@ -1028,32 +1014,28 @@
         "end": [166.37, 87.63],
         "width": 1.27,
         "layer": "B.Cu",
-        "net": 6,
-        "status": 20
+        "net": 6
       },
       {
         "start": [166.37, 87.63],
         "end": [165.1, 88.9],
         "width": 1.27,
         "layer": "B.Cu",
-        "net": 6,
-        "status": 20
+        "net": 6
       },
       {
         "start": [165.1, 88.9],
         "end": [163.83, 88.9],
         "width": 1.27,
         "layer": "B.Cu",
-        "net": 6,
-        "status": 20
+        "net": 6
       },
       {
         "start": [163.83, 88.9],
         "end": [163.79, 88.86],
         "width": 1.27,
         "layer": "B.Cu",
-        "net": 6,
-        "status": 30
+        "net": 6
       },
       {
         "start": [161.29, 99.06],
@@ -1067,8 +1049,7 @@
         "end": [161.29, 99.06],
         "width": 1.27,
         "layer": "B.Cu",
-        "net": 7,
-        "status": 10
+        "net": 7
       },
       {
         "start": [158.75, 96.52],
@@ -1082,8 +1063,7 @@
         "end": [163.83, 99.14],
         "width": 1.27,
         "layer": "B.Cu",
-        "net": 7,
-        "status": 30
+        "net": 7
       },
       {
         "start": [171.45, 64.77],
@@ -1174,16 +1154,14 @@
         "end": [165.1, 101.64],
         "width": 1.27,
         "layer": "B.Cu",
-        "net": 8,
-        "status": 20
+        "net": 8
       },
       {
         "start": [165.1, 101.64],
         "end": [163.83, 101.64],
         "width": 1.27,
         "layer": "B.Cu",
-        "net": 8,
-        "status": 20
+        "net": 8
       },
       {
         "start": [166.41, 100.29],
@@ -1302,8 +1280,7 @@
         "end": [151.05, 86.28],
         "width": 1.27,
         "layer": "B.Cu",
-        "net": 9,
-        "status": 30
+        "net": 9
       },
       {
         "start": [153.67, 87.63],
@@ -1324,8 +1301,7 @@
         "end": [152.4, 88.9],
         "width": 1.27,
         "layer": "B.Cu",
-        "net": 10,
-        "status": 10
+        "net": 10
       },
       {
         "start": [153.67, 80.01],
@@ -1374,8 +1350,7 @@
         "end": [151.13, 88.94],
         "width": 1.27,
         "layer": "B.Cu",
-        "net": 10,
-        "status": 30
+        "net": 10
       },
       {
         "start": [148.59, 99.06],
@@ -1389,8 +1364,7 @@
         "end": [148.59, 99.06],
         "width": 1.27,
         "layer": "B.Cu",
-        "net": 11,
-        "status": 10
+        "net": 11
       },
       {
         "start": [146.05, 96.52],
@@ -1516,16 +1490,14 @@
         "end": [152.4, 101.64],
         "width": 1.27,
         "layer": "B.Cu",
-        "net": 12,
-        "status": 20
+        "net": 12
       },
       {
         "start": [152.4, 101.64],
         "end": [151.13, 101.64],
         "width": 1.27,
         "layer": "B.Cu",
-        "net": 12,
-        "status": 20
+        "net": 12
       },
       {
         "start": [153.67, 100.33],
@@ -1595,8 +1567,7 @@
         "end": [140.97, 78.74],
         "width": 1.27,
         "layer": "B.Cu",
-        "net": 13,
-        "status": 20
+        "net": 13
       },
       {
         "start": [140.97, 69.85],
@@ -1652,8 +1623,7 @@
         "end": [140.93, 78.7],
         "width": 1.27,
         "layer": "B.Cu",
-        "net": 13,
-        "status": 30
+        "net": 13
       },
       {
         "start": [163.83, 67.31],
@@ -1716,72 +1686,63 @@
         "end": [142.24, 81.28],
         "width": 1.27,
         "layer": "B.Cu",
-        "net": 14,
-        "status": 20
+        "net": 14
       },
       {
         "start": [142.24, 81.28],
         "end": [140.97, 81.28],
         "width": 1.27,
         "layer": "B.Cu",
-        "net": 14,
-        "status": 20
+        "net": 14
       },
       {
         "start": [163.83, 104.14],
         "end": [156.21, 104.14],
         "width": 1.27,
         "layer": "B.Cu",
-        "net": 15,
-        "status": 10
+        "net": 15
       },
       {
         "start": [176.53, 104.14],
         "end": [168.91, 104.14],
         "width": 1.27,
         "layer": "B.Cu",
-        "net": 15,
-        "status": 10
+        "net": 15
       },
       {
         "start": [163.83, 104.14],
         "end": [168.91, 104.14],
         "width": 1.27,
         "layer": "B.Cu",
-        "net": 15,
-        "status": 10
+        "net": 15
       },
       {
         "start": [181.61, 102.87],
         "end": [180.34, 104.14],
         "width": 1.27,
         "layer": "B.Cu",
-        "net": 15,
-        "status": 20
+        "net": 15
       },
       {
         "start": [180.34, 104.14],
         "end": [176.53, 104.14],
         "width": 1.27,
         "layer": "B.Cu",
-        "net": 15,
-        "status": 20
+        "net": 15
       },
       {
         "start": [156.21, 104.14],
         "end": [151.13, 104.14],
         "width": 1.27,
         "layer": "B.Cu",
-        "net": 15,
-        "status": 20
+        "net": 15
       },
       {
         "start": [151.13, 91.44],
         "end": [154.94, 91.44],
         "width": 1.27,
         "layer": "B.Cu",
-        "net": 15,
-        "status": 10
+        "net": 15
       },
       {
         "start": [154.94, 91.44],
@@ -1816,24 +1777,21 @@
         "end": [146.05, 104.14],
         "width": 1.27,
         "layer": "B.Cu",
-        "net": 15,
-        "status": 10
+        "net": 15
       },
       {
         "start": [146.05, 104.14],
         "end": [138.43, 96.52],
         "width": 1.27,
         "layer": "B.Cu",
-        "net": 15,
-        "status": 10
+        "net": 15
       },
       {
         "start": [163.83, 91.44],
         "end": [167.64, 91.44],
         "width": 1.27,
         "layer": "B.Cu",
-        "net": 15,
-        "status": 10
+        "net": 15
       },
       {
         "start": [167.64, 91.44],
@@ -1854,8 +1812,7 @@
         "end": [180.34, 91.44],
         "width": 1.27,
         "layer": "B.Cu",
-        "net": 15,
-        "status": 10
+        "net": 15
       },
       {
         "start": [180.34, 91.44],
@@ -1876,92 +1833,77 @@
       {
         "position": [177.8, 73.66],
         "diameter": 2,
-        "layers": ["F.Cu", "B.Cu"],
-        "net": 1
+        "layers": ["F.Cu", "B.Cu"]
       },
       {
         "position": [179.07, 69.85],
         "diameter": 2,
-        "layers": ["F.Cu", "B.Cu"],
-        "net": 2
+        "layers": ["F.Cu", "B.Cu"]
       },
       {
         "position": [171.45, 76.2],
         "diameter": 2,
-        "layers": ["F.Cu", "B.Cu"],
-        "net": 3
+        "layers": ["F.Cu", "B.Cu"]
       },
       {
         "position": [176.53, 69.85],
         "diameter": 2,
-        "layers": ["F.Cu", "B.Cu"],
-        "net": 4
+        "layers": ["F.Cu", "B.Cu"]
       },
       {
         "position": [163.83, 78.74],
         "diameter": 2,
-        "layers": ["F.Cu", "B.Cu"],
-        "net": 5
+        "layers": ["F.Cu", "B.Cu"]
       },
       {
         "position": [173.99, 69.85],
         "diameter": 2,
-        "layers": ["F.Cu", "B.Cu"],
-        "net": 6
+        "layers": ["F.Cu", "B.Cu"]
       },
       {
         "position": [158.75, 81.28],
         "diameter": 2,
-        "layers": ["F.Cu", "B.Cu"],
-        "net": 7
+        "layers": ["F.Cu", "B.Cu"]
       },
       {
         "position": [171.45, 69.85],
         "diameter": 2,
-        "layers": ["F.Cu", "B.Cu"],
-        "net": 8
+        "layers": ["F.Cu", "B.Cu"]
       },
       {
         "position": [151.13, 74.93],
         "diameter": 2,
-        "layers": ["F.Cu", "B.Cu"],
-        "net": 9
+        "layers": ["F.Cu", "B.Cu"]
       },
       {
         "position": [158.75, 74.93],
         "diameter": 2,
-        "layers": ["F.Cu", "B.Cu"],
-        "net": 10
+        "layers": ["F.Cu", "B.Cu"]
       },
       {
         "position": [146.05, 72.39],
         "diameter": 2,
-        "layers": ["F.Cu", "B.Cu"],
-        "net": 11
+        "layers": ["F.Cu", "B.Cu"]
       },
       {
         "position": [153.67, 72.39],
         "diameter": 2,
-        "layers": ["F.Cu", "B.Cu"],
-        "net": 12
+        "layers": ["F.Cu", "B.Cu"]
       },
       {
         "position": [140.97, 69.85],
         "diameter": 2,
-        "layers": ["F.Cu", "B.Cu"],
-        "net": 13
+        "layers": ["F.Cu", "B.Cu"]
       },
       {
         "position": [148.59, 69.85],
         "diameter": 2,
-        "layers": ["F.Cu", "B.Cu"],
-        "net": 14
+        "layers": ["F.Cu", "B.Cu"]
       },
       {
         "position": [138.43, 64.77],
         "diameter": 2,
-        "layers": ["F.Cu", "B.Cu"],
-        "net": 15
+        "layers": ["F.Cu", "B.Cu"]
       }
     ]
   }

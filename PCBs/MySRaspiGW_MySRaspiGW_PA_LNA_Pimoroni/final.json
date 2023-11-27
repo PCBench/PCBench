@@ -45,8 +45,8 @@
       ]
     }
   ],
-  "nets": [
-    [
+  "nets": {
+    "1": [
       {
         "type": "smd",
         "layer": ["Bottom"],
@@ -88,7 +88,7 @@
         "rotation": 0
       }
     ],
-    [
+    "2": [
       {
         "type": "smd",
         "layer": ["Bottom"],
@@ -130,7 +130,7 @@
         "rotation": 0
       }
     ],
-    [
+    "3": [
       {
         "type": "thru_hole",
         "layer": ["Top", "Bottom"],
@@ -148,7 +148,7 @@
         "rotation": 0
       }
     ],
-    [
+    "4": [
       {
         "type": "thru_hole",
         "layer": ["Top", "Bottom"],
@@ -166,7 +166,7 @@
         "rotation": 0
       }
     ],
-    [
+    "5": [
       {
         "type": "thru_hole",
         "layer": ["Top", "Bottom"],
@@ -184,7 +184,7 @@
         "rotation": 0
       }
     ],
-    [
+    "6": [
       {
         "type": "thru_hole",
         "layer": ["Top", "Bottom"],
@@ -202,7 +202,7 @@
         "rotation": 0
       }
     ],
-    [
+    "7": [
       {
         "type": "thru_hole",
         "layer": ["Top", "Bottom"],
@@ -220,7 +220,7 @@
         "rotation": 0
       }
     ]
-  ],
+  },
   "differential_pairs": [],
   "keepouts": [
     {
@@ -243,16 +243,16 @@
   "rules": {
     "net_classes": [
       {
-        "indices": [0, 4, 6, 1, 3, 2, 5],
-        "width": 0.254,
-        "clearance": 0.254,
-        "via_diameter": 0.889
-      },
-      {
         "indices": [],
         "width": 0.508,
         "clearance": 0.3048,
         "via_diameter": 1.143
+      },
+      {
+        "indices": [1, 2, 3, 4, 5, 6, 7, 8, 9],
+        "width": 0.254,
+        "clearance": 0.254,
+        "via_diameter": 0.889
       }
     ]
   },
@@ -746,14 +746,12 @@
       {
         "position": [55.25, 42.1056],
         "diameter": 0.889,
-        "layers": ["Top", "Bottom"],
-        "net": 1
+        "layers": ["Top", "Bottom"]
       },
       {
         "position": [58.2849, 42.04],
         "diameter": 0.889,
-        "layers": ["Top", "Bottom"],
-        "net": 5
+        "layers": ["Top", "Bottom"]
       }
     ]
   }

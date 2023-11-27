@@ -38,48 +38,6 @@
       ]
     },
     {
-      "type": "polyline",
-      "vertices": [
-        [120.5, 124.75],
-        [137.5, 124.75]
-      ]
-    },
-    {
-      "type": "polyline",
-      "vertices": [
-        [120.5, 56.25],
-        [137.5, 56.25]
-      ]
-    },
-    {
-      "type": "polyline",
-      "vertices": [
-        [120.5, 69.0],
-        [130.5, 69.0]
-      ]
-    },
-    {
-      "type": "polyline",
-      "vertices": [
-        [130.5, 67.0],
-        [120.5, 67.0]
-      ]
-    },
-    {
-      "type": "polyline",
-      "vertices": [
-        [120.0, 66.5],
-        [120.0, 56.75]
-      ]
-    },
-    {
-      "type": "polyline",
-      "vertices": [
-        [120.0, 69.5],
-        [120.0, 124.25]
-      ]
-    },
-    {
       "type": "arc",
       "vertices": [
         [140.5, 129],
@@ -126,10 +84,92 @@
         [136.5, 56.25]
       ],
       "radius": 1.0
+    },
+    {
+      "type": "polyline",
+      "vertices": [
+        [120.5, 124.75],
+        [137.5, 124.75]
+      ]
+    },
+    {
+      "type": "polyline",
+      "vertices": [
+        [120.5, 56.25],
+        [137.5, 56.25]
+      ]
+    },
+    {
+      "type": "polyline",
+      "vertices": [
+        [120.5, 69.0],
+        [130.5, 69.0]
+      ]
+    },
+    {
+      "type": "polyline",
+      "vertices": [
+        [130.5, 67.0],
+        [120.5, 67.0]
+      ]
+    },
+    {
+      "type": "polyline",
+      "vertices": [
+        [120.0, 66.5],
+        [120.0, 56.75]
+      ]
+    },
+    {
+      "type": "polyline",
+      "vertices": [
+        [120.0, 69.5],
+        [120.0, 124.25]
+      ]
+    },
+    {
+      "type": "arc",
+      "vertices": [
+        [130.5, 68.0],
+        [130.5, 70.0]
+      ],
+      "radius": 1.0
+    },
+    {
+      "type": "arc",
+      "vertices": [
+        [120.5, 69.5],
+        [121.0, 69.0]
+      ],
+      "radius": 0.5
+    },
+    {
+      "type": "arc",
+      "vertices": [
+        [120.5, 56.75],
+        [121.0, 56.25]
+      ],
+      "radius": 0.5
+    },
+    {
+      "type": "arc",
+      "vertices": [
+        [120.5, 66.5],
+        [120.0, 66.0]
+      ],
+      "radius": 0.5
+    },
+    {
+      "type": "arc",
+      "vertices": [
+        [120.5, 124.25],
+        [120.0, 123.75]
+      ],
+      "radius": 0.5
     }
   ],
-  "nets": [
-    [
+  "nets": {
+    "7": [
       {
         "type": "thru_hole",
         "layer": ["Front", "Back"],
@@ -243,7 +283,7 @@
         "rotation": 90
       }
     ],
-    [
+    "8": [
       {
         "type": "thru_hole",
         "layer": ["Front", "Back"],
@@ -349,7 +389,7 @@
         "rotation": 90
       }
     ],
-    [
+    "4": [
       {
         "type": "thru_hole",
         "layer": ["Front", "Back"],
@@ -535,7 +575,7 @@
         "rotation": 0
       }
     ],
-    [
+    "2": [
       {
         "type": "thru_hole",
         "layer": ["Front", "Back"],
@@ -577,7 +617,7 @@
         "rotation": 0
       }
     ],
-    [
+    "1": [
       {
         "type": "thru_hole",
         "layer": ["Front", "Back"],
@@ -619,7 +659,7 @@
         "rotation": 0
       }
     ],
-    [
+    "3": [
       {
         "type": "smd",
         "layer": ["Front"],
@@ -645,7 +685,7 @@
         "rotation": 0
       }
     ],
-    [
+    "6": [
       {
         "type": "smd",
         "layer": ["Front"],
@@ -679,7 +719,7 @@
         "rotation": 0
       }
     ],
-    [
+    "5": [
       {
         "type": "smd",
         "layer": ["Front"],
@@ -713,7 +753,7 @@
         "rotation": 0
       }
     ],
-    [
+    "9": [
       {
         "type": "thru_hole",
         "layer": ["Front", "Back"],
@@ -731,10 +771,10 @@
         "rotation": 90
       }
     ]
-  ],
+  },
   "differential_pairs": [
-    [4, 3],
-    [1, 0]
+    [2, 1],
+    [7, 8]
   ],
   "keepouts": [
     {
@@ -797,19 +837,13 @@
   "rules": {
     "net_classes": [
       {
-        "indices": [0, 1, 8, 2],
-        "width": 0.127,
-        "clearance": 0.127,
-        "via_diameter": 0.6
-      },
-      {
-        "indices": [3, 4],
+        "indices": [2, 1],
         "width": 0.154,
         "clearance": 0.154,
         "via_diameter": 0.6
       },
       {
-        "indices": [6, 7],
+        "indices": [6, 5],
         "width": 0.4,
         "clearance": 1,
         "via_diameter": 0.6
@@ -821,9 +855,15 @@
         "via_diameter": 0.6
       },
       {
-        "indices": [5],
+        "indices": [3],
         "width": 0.4,
         "clearance": 0.154,
+        "via_diameter": 0.6
+      },
+      {
+        "indices": [4, 7, 8, 9],
+        "width": 0.127,
+        "clearance": 0.127,
         "via_diameter": 0.6
       }
     ]
@@ -1640,26 +1680,22 @@
       {
         "position": [125.05, 110.578],
         "diameter": 0.6,
-        "layers": ["Front", "Back"],
-        "net": 5
+        "layers": ["Front", "Back"]
       },
       {
         "position": [124.3528, 114.4424],
         "diameter": 0.6,
-        "layers": ["Front", "Back"],
-        "net": 6
+        "layers": ["Front", "Back"]
       },
       {
         "position": [127.225, 80.9294],
         "diameter": 0.6,
-        "layers": ["Front", "Back"],
-        "net": 7
+        "layers": ["Front", "Back"]
       },
       {
         "position": [127.05, 66.4369],
         "diameter": 0.6,
-        "layers": ["Front", "Back"],
-        "net": 8
+        "layers": ["Front", "Back"]
       }
     ]
   }

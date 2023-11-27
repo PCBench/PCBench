@@ -31,8 +31,8 @@
       ]
     }
   ],
-  "nets": [
-    [
+  "nets": {
+    "1": [
       {
         "type": "smd",
         "layer": ["Bottom"],
@@ -74,7 +74,7 @@
         "rotation": 90
       }
     ],
-    [
+    "2": [
       {
         "type": "smd",
         "layer": ["Bottom"],
@@ -116,7 +116,7 @@
         "rotation": 0
       }
     ],
-    [
+    "5": [
       {
         "type": "smd",
         "layer": ["Top"],
@@ -134,7 +134,7 @@
         "rotation": 90
       }
     ],
-    [
+    "7": [
       {
         "type": "smd",
         "layer": ["Top"],
@@ -152,7 +152,7 @@
         "rotation": 90
       }
     ],
-    [
+    "6": [
       {
         "type": "smd",
         "layer": ["Top"],
@@ -170,7 +170,7 @@
         "rotation": 90
       }
     ],
-    [
+    "3": [
       {
         "type": "smd",
         "layer": ["Top"],
@@ -188,7 +188,7 @@
         "rotation": 90
       }
     ],
-    [
+    "4": [
       {
         "type": "smd",
         "layer": ["Top"],
@@ -206,7 +206,7 @@
         "rotation": 90
       }
     ]
-  ],
+  },
   "differential_pairs": [],
   "keepouts": [
     {
@@ -229,16 +229,16 @@
   "rules": {
     "net_classes": [
       {
-        "indices": [0, 2, 3, 1, 6, 5, 4],
-        "width": 0.254,
-        "clearance": 0.254,
-        "via_diameter": 0.889
-      },
-      {
         "indices": [],
         "width": 0.508,
         "clearance": 0.3048,
         "via_diameter": 1.143
+      },
+      {
+        "indices": [1, 2, 3, 4, 5, 6, 7, 8, 9],
+        "width": 0.254,
+        "clearance": 0.254,
+        "via_diameter": 0.889
       }
     ]
   },
@@ -732,20 +732,17 @@
       {
         "position": [59.0167, 43.6874],
         "diameter": 0.889,
-        "layers": ["Top", "Bottom"],
-        "net": 1
+        "layers": ["Top", "Bottom"]
       },
       {
         "position": [58.8142, 42.3593],
         "diameter": 0.889,
-        "layers": ["Top", "Bottom"],
-        "net": 2
+        "layers": ["Top", "Bottom"]
       },
       {
         "position": [59.8274, 40.9798],
         "diameter": 0.889,
-        "layers": ["Top", "Bottom"],
-        "net": 7
+        "layers": ["Top", "Bottom"]
       }
     ]
   }

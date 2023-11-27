@@ -31,8 +31,8 @@
       ]
     }
   ],
-  "nets": [
-    [
+  "nets": {
+    "12": [
       {
         "type": "smd",
         "layer": ["Top"],
@@ -58,7 +58,7 @@
         "rotation": 0
       }
     ],
-    [
+    "1": [
       {
         "type": "smd",
         "layer": ["Top"],
@@ -92,7 +92,7 @@
         "rotation": 90
       }
     ],
-    [
+    "11": [
       {
         "type": "smd",
         "layer": ["Top"],
@@ -118,7 +118,7 @@
         "rotation": 90
       }
     ],
-    [
+    "6": [
       {
         "type": "smd",
         "layer": ["Top"],
@@ -152,7 +152,7 @@
         "rotation": 90
       }
     ]
-  ],
+  },
   "differential_pairs": [],
   "keepouts": [
     {
@@ -223,19 +223,13 @@
   "rules": {
     "net_classes": [
       {
-        "indices": [],
-        "width": 0.006,
-        "clearance": 0.006,
-        "via_diameter": 0.027
-      },
-      {
-        "indices": [1, 3, 0, 2],
+        "indices": [3, 1, 6, 12, 9, 10, 11, 4, 5, 7, 8],
         "width": 0.5,
         "clearance": 0.06,
         "via_diameter": 0.027
       },
       {
-        "indices": [],
+        "indices": [2],
         "width": 0.45,
         "clearance": 0.03,
         "via_diameter": 0.027

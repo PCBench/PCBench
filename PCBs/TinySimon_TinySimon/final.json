@@ -11,8 +11,8 @@
       "radius": 14.325600000000009
     }
   ],
-  "nets": [
-    [
+  "nets": {
+    "4": [
       {
         "type": "smd",
         "layer": ["Top"],
@@ -62,7 +62,7 @@
         "rotation": 0
       }
     ],
-    [
+    "9": [
       {
         "type": "smd",
         "layer": ["Top"],
@@ -88,7 +88,7 @@
         "rotation": 90
       }
     ],
-    [
+    "1": [
       {
         "type": "smd",
         "layer": ["Bottom"],
@@ -146,7 +146,7 @@
         "rotation": 90
       }
     ],
-    [
+    "2": [
       {
         "type": "smd",
         "layer": ["Bottom"],
@@ -212,7 +212,7 @@
         "rotation": 90
       }
     ],
-    [
+    "3": [
       {
         "type": "smd",
         "layer": ["Top"],
@@ -270,7 +270,7 @@
         "rotation": 0
       }
     ],
-    [
+    "5": [
       {
         "type": "smd",
         "layer": ["Top"],
@@ -320,7 +320,7 @@
         "rotation": 90
       }
     ],
-    [
+    "7": [
       {
         "type": "smd",
         "layer": ["Top"],
@@ -354,7 +354,7 @@
         "rotation": 90
       }
     ],
-    [
+    "8": [
       {
         "type": "smd",
         "layer": ["Top"],
@@ -380,7 +380,7 @@
         "rotation": 90
       }
     ],
-    [
+    "6": [
       {
         "type": "smd",
         "layer": ["Top"],
@@ -398,7 +398,7 @@
         "rotation": 135
       }
     ],
-    [
+    "10": [
       {
         "type": "smd",
         "layer": ["Bottom"],
@@ -416,13 +416,13 @@
         "rotation": 90
       }
     ]
-  ],
+  },
   "differential_pairs": [],
   "keepouts": [],
   "rules": {
     "net_classes": [
       {
-        "indices": [3, 2, 0, 4, 5, 6, 7, 1, 8, 9],
+        "indices": [1, 2, 3, 4, 5, 6, 7, 8, 9, 10],
         "width": 0.254,
         "clearance": 0.1524,
         "via_diameter": 0.6858
@@ -1941,134 +1941,112 @@
       {
         "position": [164.4777, 112.395004],
         "diameter": 0.6858,
-        "layers": ["Top", "Bottom"],
-        "net": 1
+        "layers": ["Top", "Bottom"]
       },
       {
         "position": [175.006, 106.172006],
         "diameter": 0.6858,
-        "layers": ["Top", "Bottom"],
-        "net": 1
+        "layers": ["Top", "Bottom"]
       },
       {
         "position": [162.559994, 111.76],
         "diameter": 0.6858,
-        "layers": ["Top", "Bottom"],
-        "net": 1
+        "layers": ["Top", "Bottom"]
       },
       {
         "position": [155.067, 97.028],
         "diameter": 0.6858,
-        "layers": ["Top", "Bottom"],
-        "net": 1
+        "layers": ["Top", "Bottom"]
       },
       {
         "position": [168.91, 92.075],
         "diameter": 0.6858,
-        "layers": ["Top", "Bottom"],
-        "net": 1
+        "layers": ["Top", "Bottom"]
       },
       {
         "position": [169.926, 109.982],
         "diameter": 0.6858,
-        "layers": ["Top", "Bottom"],
-        "net": 1
+        "layers": ["Top", "Bottom"]
       },
       {
         "position": [165.862, 112.395],
         "diameter": 0.6858,
-        "layers": ["Top", "Bottom"],
-        "net": 2
+        "layers": ["Top", "Bottom"]
       },
       {
         "position": [173.782707, 106.980707],
         "diameter": 0.6858,
-        "layers": ["Top", "Bottom"],
-        "net": 2
+        "layers": ["Top", "Bottom"]
       },
       {
         "position": [175.895, 108.585],
         "diameter": 0.6858,
-        "layers": ["Top", "Bottom"],
-        "net": 2
+        "layers": ["Top", "Bottom"]
       },
       {
         "position": [172.085, 90.805],
         "diameter": 0.6858,
-        "layers": ["Top", "Bottom"],
-        "net": 2
+        "layers": ["Top", "Bottom"]
       },
       {
         "position": [154.305, 94.615],
         "diameter": 0.6858,
-        "layers": ["Top", "Bottom"],
-        "net": 2
+        "layers": ["Top", "Bottom"]
       },
       {
         "position": [154.94, 95.25],
         "diameter": 0.6858,
-        "layers": ["Top", "Bottom"],
-        "net": 3
+        "layers": ["Top", "Bottom"]
       },
       {
         "position": [159.385, 92.075],
         "diameter": 0.6858,
-        "layers": ["Top", "Bottom"],
-        "net": 3
+        "layers": ["Top", "Bottom"]
       },
       {
         "position": [157.607, 109.093],
         "diameter": 0.6858,
-        "layers": ["Top", "Bottom"],
-        "net": 4
+        "layers": ["Top", "Bottom"]
       },
       {
         "position": [158.115, 90.805],
         "diameter": 0.6858,
-        "layers": ["Top", "Bottom"],
-        "net": 4
+        "layers": ["Top", "Bottom"]
       },
       {
         "position": [169.418, 114.554],
         "diameter": 0.6858,
-        "layers": ["Top", "Bottom"],
-        "net": 6
+        "layers": ["Top", "Bottom"]
       },
       {
         "position": [170.942, 111.506],
         "diameter": 0.6858,
-        "layers": ["Top", "Bottom"],
-        "net": 6
+        "layers": ["Top", "Bottom"]
       },
       {
         "position": [175.006, 107.315],
         "diameter": 0.6858,
-        "layers": ["Top", "Bottom"],
-        "net": 7
+        "layers": ["Top", "Bottom"]
       },
       {
         "position": [169.164, 110.5027],
         "diameter": 0.6858,
-        "layers": ["Top", "Bottom"],
-        "net": 8
+        "layers": ["Top", "Bottom"]
       },
       {
         "position": [156.591, 108.458],
         "diameter": 0.6858,
-        "layers": ["Top", "Bottom"],
-        "net": 9
+        "layers": ["Top", "Bottom"]
       },
       {
         "position": [168.275, 111.125],
         "diameter": 0.6858,
-        "layers": ["Top", "Bottom"],
-        "net": 9
+        "layers": ["Top", "Bottom"]
       },
       {
         "position": [158.623, 109.982],
         "diameter": 0.6858,
-        "layers": ["Top", "Bottom"],
-        "net": 10
+        "layers": ["Top", "Bottom"]
       }
     ]
   }

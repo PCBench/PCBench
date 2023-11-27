@@ -63,8 +63,8 @@
       "radius": 1.9050000000000011
     }
   ],
-  "nets": [
-    [
+  "nets": {
+    "3": [
       {
         "type": "smd",
         "layer": ["F.Cu"],
@@ -98,7 +98,7 @@
         "rotation": 0
       }
     ],
-    [
+    "1": [
       {
         "type": "smd",
         "layer": ["F.Cu"],
@@ -132,7 +132,7 @@
         "rotation": 90
       }
     ],
-    [
+    "2": [
       {
         "type": "thru_hole",
         "layer": ["F.Cu", "B.Cu"],
@@ -158,7 +158,7 @@
         "rotation": 90
       }
     ],
-    [
+    "4": [
       {
         "type": "thru_hole",
         "layer": ["F.Cu", "B.Cu"],
@@ -184,19 +184,13 @@
         "rotation": 90
       }
     ]
-  ],
+  },
   "differential_pairs": [],
   "keepouts": [],
   "rules": {
     "net_classes": [
       {
-        "indices": [],
-        "width": 0.25,
-        "clearance": 0.2,
-        "via_diameter": 0.6
-      },
-      {
-        "indices": [0, 2, 1, 3],
+        "indices": [3, 2, 1, 4],
         "width": 0.4,
         "clearance": 0.2,
         "via_diameter": 0.6

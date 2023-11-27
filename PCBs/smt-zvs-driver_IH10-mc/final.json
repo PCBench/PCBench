@@ -11,8 +11,8 @@
       "radius": 23.937699159852443
     }
   ],
-  "nets": [
-    [
+  "nets": {
+    "1": [
       {
         "type": "smd",
         "layer": ["Front"],
@@ -38,7 +38,7 @@
         "rotation": 0
       }
     ],
-    [
+    "5": [
       {
         "type": "smd",
         "layer": ["Front"],
@@ -64,7 +64,7 @@
         "rotation": 0
       }
     ],
-    [
+    "6": [
       {
         "type": "smd",
         "layer": ["Front"],
@@ -98,7 +98,7 @@
         "rotation": 0
       }
     ],
-    [
+    "2": [
       {
         "type": "smd",
         "layer": ["Front"],
@@ -156,7 +156,7 @@
         "rotation": 0
       }
     ],
-    [
+    "4": [
       {
         "type": "smd",
         "layer": ["Front"],
@@ -198,7 +198,7 @@
         "rotation": 0
       }
     ],
-    [
+    "3": [
       {
         "type": "smd",
         "layer": ["Front"],
@@ -240,7 +240,7 @@
         "rotation": 0
       }
     ],
-    [
+    "7": [
       {
         "type": "smd",
         "layer": ["Front"],
@@ -274,7 +274,7 @@
         "rotation": 0
       }
     ]
-  ],
+  },
   "differential_pairs": [],
   "keepouts": [
     {
@@ -321,7 +321,7 @@
   "rules": {
     "net_classes": [
       {
-        "indices": [0, 3, 5, 4, 1, 2, 6],
+        "indices": [1, 2, 3, 4, 5, 6, 7],
         "width": 0.4064,
         "clearance": 0.3302,
         "via_diameter": 0.889

@@ -38,8 +38,8 @@
       ]
     }
   ],
-  "nets": [
-    [
+  "nets": {
+    "1": [
       {
         "type": "thru_hole",
         "layer": ["F.Cu", "B.Cu"],
@@ -57,7 +57,7 @@
         "rotation": 0
       }
     ],
-    [
+    "2": [
       {
         "type": "thru_hole",
         "layer": ["F.Cu", "B.Cu"],
@@ -75,7 +75,7 @@
         "rotation": 0
       }
     ],
-    [
+    "3": [
       {
         "type": "thru_hole",
         "layer": ["F.Cu", "B.Cu"],
@@ -93,7 +93,7 @@
         "rotation": 0
       }
     ],
-    [
+    "4": [
       {
         "type": "thru_hole",
         "layer": ["F.Cu", "B.Cu"],
@@ -111,7 +111,7 @@
         "rotation": 0
       }
     ],
-    [
+    "8": [
       {
         "type": "thru_hole",
         "layer": ["F.Cu", "B.Cu"],
@@ -129,7 +129,7 @@
         "rotation": 0
       }
     ],
-    [
+    "7": [
       {
         "type": "thru_hole",
         "layer": ["F.Cu", "B.Cu"],
@@ -147,7 +147,7 @@
         "rotation": 0
       }
     ],
-    [
+    "6": [
       {
         "type": "thru_hole",
         "layer": ["F.Cu", "B.Cu"],
@@ -165,7 +165,7 @@
         "rotation": 0
       }
     ],
-    [
+    "5": [
       {
         "type": "thru_hole",
         "layer": ["F.Cu", "B.Cu"],
@@ -183,13 +183,13 @@
         "rotation": 0
       }
     ]
-  ],
+  },
   "differential_pairs": [],
   "keepouts": [],
   "rules": {
     "net_classes": [
       {
-        "indices": [0, 1, 2, 3, 7, 6, 5, 4],
+        "indices": [1, 2, 3, 4, 5, 6, 7, 8],
         "width": 0.25,
         "clearance": 0.2,
         "via_diameter": 0.6
@@ -203,240 +203,210 @@
         "end": [145.63, 106.775],
         "width": 0.25,
         "layer": "B.Cu",
-        "net": 1,
-        "status": 80000
+        "net": 1
       },
       {
         "start": [144.145, 107.95],
         "end": [145.415, 106.68],
         "width": 0.25,
         "layer": "B.Cu",
-        "net": 1,
-        "status": 80000
+        "net": 1
       },
       {
         "start": [143.51, 107.95],
         "end": [144.145, 107.95],
         "width": 0.25,
         "layer": "B.Cu",
-        "net": 1,
-        "status": 80000
+        "net": 1
       },
       {
         "start": [142.24, 109.22],
         "end": [143.51, 107.95],
         "width": 0.25,
         "layer": "B.Cu",
-        "net": 1,
-        "status": 80000
+        "net": 1
       },
       {
         "start": [142.3035, 109.22],
         "end": [142.24, 109.22],
         "width": 0.25,
         "layer": "B.Cu",
-        "net": 1,
-        "status": 80000
+        "net": 1
       },
       {
         "start": [145.415, 105.41],
         "end": [145.63, 105.505],
         "width": 0.25,
         "layer": "B.Cu",
-        "net": 2,
-        "status": 80000
+        "net": 2
       },
       {
         "start": [143.51, 105.41],
         "end": [145.415, 105.41],
         "width": 0.25,
         "layer": "B.Cu",
-        "net": 2,
-        "status": 80000
+        "net": 2
       },
       {
         "start": [142.24, 106.68],
         "end": [143.51, 105.41],
         "width": 0.25,
         "layer": "B.Cu",
-        "net": 2,
-        "status": 80000
+        "net": 2
       },
       {
         "start": [142.3035, 106.68],
         "end": [142.24, 106.68],
         "width": 0.25,
         "layer": "B.Cu",
-        "net": 2,
-        "status": 80000
+        "net": 2
       },
       {
         "start": [145.415, 104.14],
         "end": [145.63, 104.235],
         "width": 0.25,
         "layer": "B.Cu",
-        "net": 3,
-        "status": 80000
+        "net": 3
       },
       {
         "start": [142.3035, 104.14],
         "end": [145.415, 104.14],
         "width": 0.25,
         "layer": "B.Cu",
-        "net": 3,
-        "status": 80000
+        "net": 3
       },
       {
         "start": [145.415, 102.87],
         "end": [145.63, 102.965],
         "width": 0.25,
         "layer": "B.Cu",
-        "net": 4,
-        "status": 80000
+        "net": 4
       },
       {
         "start": [143.51, 102.87],
         "end": [145.415, 102.87],
         "width": 0.25,
         "layer": "B.Cu",
-        "net": 4,
-        "status": 80000
+        "net": 4
       },
       {
         "start": [142.24, 101.6],
         "end": [143.51, 102.87],
         "width": 0.25,
         "layer": "B.Cu",
-        "net": 4,
-        "status": 80000
+        "net": 4
       },
       {
         "start": [142.3035, 101.6],
         "end": [142.24, 101.6],
         "width": 0.25,
         "layer": "B.Cu",
-        "net": 4,
-        "status": 80000
+        "net": 4
       },
       {
         "start": [151.765, 102.87],
         "end": [151.63, 102.965],
         "width": 0.25,
         "layer": "B.Cu",
-        "net": 5,
-        "status": 80000
+        "net": 5
       },
       {
         "start": [153.67, 102.87],
         "end": [151.765, 102.87],
         "width": 0.25,
         "layer": "B.Cu",
-        "net": 5,
-        "status": 80000
+        "net": 5
       },
       {
         "start": [154.94, 101.6],
         "end": [153.67, 102.87],
         "width": 0.25,
         "layer": "B.Cu",
-        "net": 5,
-        "status": 80000
+        "net": 5
       },
       {
         "start": [155.0035, 101.6],
         "end": [154.94, 101.6],
         "width": 0.25,
         "layer": "B.Cu",
-        "net": 5,
-        "status": 80000
+        "net": 5
       },
       {
         "start": [151.765, 104.14],
         "end": [151.63, 104.235],
         "width": 0.25,
         "layer": "B.Cu",
-        "net": 6,
-        "status": 80000
+        "net": 6
       },
       {
         "start": [155.0035, 104.14],
         "end": [151.765, 104.14],
         "width": 0.25,
         "layer": "B.Cu",
-        "net": 6,
-        "status": 80000
+        "net": 6
       },
       {
         "start": [151.765, 105.41],
         "end": [151.63, 105.505],
         "width": 0.25,
         "layer": "B.Cu",
-        "net": 7,
-        "status": 80000
+        "net": 7
       },
       {
         "start": [153.67, 105.41],
         "end": [151.765, 105.41],
         "width": 0.25,
         "layer": "B.Cu",
-        "net": 7,
-        "status": 80000
+        "net": 7
       },
       {
         "start": [154.94, 106.68],
         "end": [153.67, 105.41],
         "width": 0.25,
         "layer": "B.Cu",
-        "net": 7,
-        "status": 80000
+        "net": 7
       },
       {
         "start": [155.0035, 106.68],
         "end": [154.94, 106.68],
         "width": 0.25,
         "layer": "B.Cu",
-        "net": 7,
-        "status": 80000
+        "net": 7
       },
       {
         "start": [151.765, 106.68],
         "end": [151.63, 106.775],
         "width": 0.25,
         "layer": "B.Cu",
-        "net": 8,
-        "status": 80000
+        "net": 8
       },
       {
         "start": [153.035, 107.95],
         "end": [151.765, 106.68],
         "width": 0.25,
         "layer": "B.Cu",
-        "net": 8,
-        "status": 80000
+        "net": 8
       },
       {
         "start": [153.67, 107.95],
         "end": [153.035, 107.95],
         "width": 0.25,
         "layer": "B.Cu",
-        "net": 8,
-        "status": 80000
+        "net": 8
       },
       {
         "start": [154.94, 109.22],
         "end": [153.67, 107.95],
         "width": 0.25,
         "layer": "B.Cu",
-        "net": 8,
-        "status": 80000
+        "net": 8
       },
       {
         "start": [155.0035, 109.22],
         "end": [154.94, 109.22],
         "width": 0.25,
         "layer": "B.Cu",
-        "net": 8,
-        "status": 80000
+        "net": 8
       }
     ],
     "vias": []
