@@ -1,4 +1,4 @@
-from typing import Any, Dict, Iterable, List, Optional, Set, Tuple
+from typing import Any, Dict, List, Optional, Set, Tuple
 import collections
 from .thirdparty.kicad_parser.kicad_pcb import *
 from .thirdparty.kicad_parser.sexp_parser import *
@@ -6,39 +6,18 @@ from .utils.pad_rotation import calculate_pad_pos_size, cal_xy
 from scipy.spatial import distance
 import math
 
-def extract_recursive(sexp_obj: Sexp, 
-                      exclude:list = [], only:list = None, 
-                      parents:list = None):
-    ret_dict = {}
-    if (not isinstance(sexp_obj._value,str)) and not isinstance(sexp_obj._value,int) and not isinstance(sexp_obj._value,float) and \
-        (any(isinstance(item,(Sexp)) for item in sexp_obj._value) or (isinstance(sexp_obj._value,OrderedDict))):
-        for item in sexp_obj._value:
-            if item not in exclude:
-                if isinstance(item, Sexp):
-                    ret_dict[item._key] = extract_recursive(item, exclude=exclude)
-                else:
-                    curr_val = sexp_obj[item]
-                    ret_dict[item] = curr_val\
-                                            if not isinstance(curr_val, Sexp) \
-                                            else extract_recursive(curr_val, exclude=exclude) if not isinstance(curr_val, Iterable)\
-                                            else [extract_recursive(sub_item) for sub_item in curr_val]           
-    else: 
-        ret_dict[sexp_obj._key] = sexp_obj._value
-
-    return ret_dict
-
-
 class PCB:
     def __init__(
             self, 
-            kicad_file: str="benchmarks/real_world/1bitsy.kicad_pcb", 
+            kicad_file: str="../../PCBs/1Bitsy_1bitsy/raw.kicad_pcb", 
             delete_nets: Optional[Set[str]]=None
         ) -> None:
         self.file = kicad_file
         self.obs_pad_value = -1
         self.via_obs_pad_value = -2
-        self.pcb = KicadPCB.load(kicad_file)
-        self.max_layer_index = 16 if self.pcb.version == 3 else 32
+        self.pcb, self.net_classes = KicadPCB.load(kicad_file)
+        self.kicad_version = self.pcb.version
+        self.max_layer_index = 16 if self.kicad_version == 3 else 32
         self.layers = extract_layer(pcb=self.pcb, max_layer_index=self.max_layer_index)
 
         # extract boundary info: circuit region and boundary lines with width
@@ -54,12 +33,10 @@ class PCB:
             net_indices=self.net_indices,
             obs_pad_value=self.obs_pad_value
         )
-        self.nets_info, self.differential_pairs = extract_net_info(pcb=self.pcb, net_indices=self.net_indices)
+        self.nets_info, self.differential_pairs = extract_net_info(pcb=self.pcb, net_indices=self.net_indices, net_classes=self.net_classes)
         # TODO: self.pcb.arcs?
         self.wires = self.pcb.segment if "segment" in self.pcb else []
         self.vias = self.pcb.via if "via" in self.pcb else []
-
-
 
     @property
     def net_pads(self):
@@ -93,8 +70,21 @@ class PCB:
     def nets_info(self, value):
         self._nets_info = value
 
+def replace_last_plus_with_minus(input_string):
+    # Find the last occurrence of "+"
+    last_plus_index = input_string.rfind("+")
 
-def extract_net_info(pcb: KicadPCB, net_indices: Set[int]) -> Tuple[Dict[int, Any], List[Tuple[int, int]]]:
+    # Check if "+" is found in the string
+    if last_plus_index != -1:
+        # Replace the last "+" with "-"
+        modified_string = input_string[:last_plus_index] + "-" + input_string[last_plus_index + 1:]
+        return modified_string
+    else:
+        # If "+" is not found, return the original string
+        return input_string
+
+
+def extract_net_info(pcb: KicadPCB, net_indices: Set[int], net_classes: Dict[str, Any]) -> Tuple[Dict[int, Any], List[Tuple[int, int]]]:
     nets_info = dict()
 
     netname2idx = dict()
@@ -102,40 +92,36 @@ def extract_net_info(pcb: KicadPCB, net_indices: Set[int]) -> Tuple[Dict[int, An
         nets_info[net_idx_name[0]] = dict()
         nets_info[net_idx_name[0]]["net_name"] = net_idx_name[1]
         netname2idx[str(net_idx_name[1])] = net_idx_name[0]
-    
     differential_pairs = []
     # extract differential pairs
     for name in netname2idx:
-        if "-" == name[-1] and name[:-1] + "+" in netname2idx:
-            differential_pairs.append((netname2idx[name], netname2idx[name[:-1]+"+"]))
-    
+        if "+" in name and replace_last_plus_with_minus(name) in netname2idx:
+            differential_pairs.append((netname2idx[name], netname2idx[replace_last_plus_with_minus(name)]))
+
+    visited_nets = set(['""', ""])
     # extract basic net info
-    if "net_class" in pcb:
-        for net_class in pcb.net_class:
-            if "add_net" in net_class: 
-                net_names = net_class['add_net']
-            else:
-                net_names = netname2idx.keys()
-            for netname in net_names:
-                netidx = netname2idx[str(netname)]
+    if net_classes is not None:
+        for _, net_class in net_classes.items():
+            for netname in net_class['net_names']:
+                visited_nets.add(netname)
+                netidx = netname2idx[str(netname)] if not isinstance(netname, str) else netname2idx[netname]
                 nets_info[netidx]["clearance"] = net_class['clearance']
-                nets_info[netidx]["trace_width"] = net_class['trace_width']
-                nets_info[netidx]["via_dia"] = net_class['via_dia']
-                nets_info[netidx]["via_drill"] = net_class['via_drill']
-                try:
-                    nets_info[netidx]["uvia_dia"] = net_class['uvia_dia']
-                    nets_info[netidx]["uvia_drill"] = net_class['uvia_drill']
-                except:
-                    print("There is no uvia in the net class!!!")
+                nets_info[netidx]["trace_width"] = net_class['width']
+                nets_info[netidx]["via_dia"] = net_class['via_diameter']
+        for netname, netidx in netname2idx.items():
+            if netname not in visited_nets:
+                nets_info[netidx]["clearance"] = net_classes["Default"]['clearance']
+                nets_info[netidx]["trace_width"] = net_classes["Default"]['width']
+                nets_info[netidx]["via_dia"] = net_classes["Default"]['via_diameter']
     else:
         print(f"there is no default net class, setting clearance manually!!")
         for netidx in net_indices:
             nets_info[netidx]["clearance"] = 0.12
             nets_info[netidx]["trace_width"] = 0.3
             nets_info[netidx]["via_dia"] = 0.5
-            nets_info[netidx]["via_drill"] = 0.35
-            nets_info[netidx]["uvia_dia"] = 0.3
-            nets_info[netidx]["uvia_drill"] = 0.1
+            # nets_info[netidx]["via_drill"] = 0.35
+            # nets_info[netidx]["uvia_dia"] = 0.3
+            # nets_info[netidx]["uvia_drill"] = 0.1
     return nets_info, differential_pairs
     
 def extract_nets_indices(pcb: KicadPCB, delete_nets: Optional[Set[str]]=None) -> Set[int]:
@@ -143,7 +129,8 @@ def extract_nets_indices(pcb: KicadPCB, delete_nets: Optional[Set[str]]=None) ->
     all_net_indices = set([n[0] for n in pcb["net"]])
     module_nets = collections.defaultdict(int)
 
-    for module in pcb.module:
+    modules = pcb.footprint if pcb.version > 20211000 else pcb.module
+    for module in modules:
         # pos = tuple(module.at)
         for p in module.pad:
             if "net" in p:
@@ -178,7 +165,8 @@ def extract_net_pads(pcb: KicadPCB,
 
     net2pads = collections.defaultdict(list)
 
-    for i_m, module in enumerate(pcb.module):
+    modules = pcb.footprint if pcb.version > 20211000 else pcb.module
+    for i_m, module in enumerate(modules):
         module_pos = tuple(module.at)
         for i_p, p in enumerate(module.pad):
             pads_info = extract_pad(p, module_pos, layers, net_indices, obs_pad_value)
@@ -222,7 +210,7 @@ def extract_pad(
     pad_info["module_pos"] = tuple(module_pos)[:2]
     pad_info["layer"] = []
     for pl in module_pad.layers:
-        if pl == "*.Cu":
+        if pl == "*.Cu" or pl == '"*.Cu"':
             pad_info["layer"] = layers
             break
         elif pl in layers:
@@ -258,18 +246,8 @@ def extract_bound(pcb: KicadPCB) -> Tuple[float, float, float, float, List[Any]]
     width = 0
     for line in gr_lines:
         if line["layer"][1:-1] == "Edge.Cuts" or line["layer"] == "Edge.Cuts":
-            width = line.width if "width" in line else line.stroke.width  # kicad v5 vs v6
+            width = line.width if "width" in line else line.stroke.width
             lines.append({"type":"polyline", "vertices":[tuple(line.start), tuple(line.end)]})
-    for module in pcb.module:
-        m_x, m_y = module.at[0], module.at[1]
-        angle = module.at[2] if len(module.at) == 3 else 0
-        if "fp_line" in module:
-            for line in module.fp_line:
-                if not isinstance(line, str) and line.layer == "Edge.Cuts":
-                    width = line.width if "width" in line else line.stroke.width  # kicad v5 vs v6
-                    lines.append({"type":"polyline", "vertices":[cal_xy([m_x, m_y], line.start, angle), cal_xy([m_x, m_y], line.end, angle)]})
-                    # lines.append({"type":"polyline", "start":cal_xy([m_x, m_y], line.start, angle), "end":cal_xy([m_x, m_y], line.end, angle)})
-                    # print({"type":"polyline", "vertices":[(line.start[0] + m_x, line.start[1] + m_y), (line.end[0] + m_x, line.end[1] + m_y)]})
     # for arcs in gr_arcs:
     #     if arcs["layer"][1:-1] == "Edge.Cuts" or arcs["layer"] == "Edge.Cuts":
     #         width = arcs.width if "width" in arcs else arcs.stroke.width
@@ -294,6 +272,34 @@ def extract_bound(pcb: KicadPCB) -> Tuple[float, float, float, float, List[Any]]
             radius = distance.euclidean(tuple(circle.end), tuple(circle.center))
             lines.append({"type":"circle", "vertices":[tuple(circle.end), tuple(circle.center)], "radius":radius})
 
+    modules = pcb.footprint if pcb.version > 20211000 else pcb.module
+    for module in modules:
+        m_x, m_y = module.at[0], module.at[1]
+        angle = module.at[2] if len(module.at) == 3 else 0
+        if "fp_line" in module:
+            for line in module.fp_line:
+                if not isinstance(line, str) and line.layer == "Edge.Cuts":
+                    width = line.width if "width" in line else line.stroke.width  # kicad v5 vs v7
+                    lines.append({"type":"polyline", "vertices":[cal_xy([m_x, m_y], line.start, angle), cal_xy([m_x, m_y], line.end, angle)]})
+                    # lines.append({"type":"polyline", "start":cal_xy([m_x, m_y], line.start, angle), "end":cal_xy([m_x, m_y], line.end, angle)})
+                    # print({"type":"polyline", "vertices":[(line.start[0] + m_x, line.start[1] + m_y), (line.end[0] + m_x, line.end[1] + m_y)]})
+        if "fp_arc" in module:
+            for arc in module.fp_arc:
+                if not isinstance(arc, str) and arc.layer == "Edge.Cuts":
+                    width = arc.width if "width" in arc else arc.stroke.width
+                    arc_start = cal_xy([m_x, m_y], arc.start, angle)
+                    arc_end = cal_xy([m_x, m_y], arc.end, angle)
+                    radius = distance.euclidean(tuple(arc_end), tuple(arc_start))
+                    end = calculate_arc_end_point(tuple(arc_start), tuple(arc_end), arc.angle)
+                    lines.append({"type":"arc", "vertices":[tuple(arc_start), end], "radius":radius})
+        if "fp_circle" in module:
+            for circle in module.fp_circle:
+                if not isinstance(circle, str) and circle.layer == "Edge.Cuts":
+                    width = circle.width if "width" in circle else circle.stroke.width  # kicad v5 vs v6
+                    circle_end = cal_xy([m_x, m_y], circle.end, angle)
+                    circle_center = cal_xy([m_x, m_y], circle.center, angle)
+                    radius = distance.euclidean(tuple(circle_end), tuple(circle_center))
+                    lines.append({"type":"circle", "vertices":[tuple(circle_end), tuple(circle_center)], "radius":radius}) 
     return lines
 
 def extract_single_via_pad(via_info: Dict[str, Any]) -> List[Any]:
@@ -308,28 +314,4 @@ def extract_single_via_pad(via_info: Dict[str, Any]) -> List[Any]:
         }
         ret_pads.append([via_info["net"], pad_info])
     return ret_pads
-
-def extract_net_classes(pcb: PCB):
-    net_classes = [extract_recursive(net_class) for net_class in pcb.net_class]
-    name_and_index = [extract_recursive(net) for net in pcb.net]
-    nameKey_indexVal = {net['net'][1]:net['net'][0] for net in name_and_index}
-    # Loop to deal with kinda silly add net structure of old files.
-    for net_class in net_classes:
-        nets = []
-        net_class['class_name'] = net_class.pop(0)
-        net_class['class_desc'] = net_class.pop(1)
-        for net in net_class['add_net']:
-            nets.append(net['add_net'])
-        net_class['indices'] = [nameKey_indexVal[net] for net in nets]
-        del net_class['add_net']
-    return net_classes
-    
-def extract_track_pieces(track_list:list):
-    pieces = [extract_recursive(piece) for piece in track_list]
-    for piece in pieces:
-        try:
-            del piece['tstamp']
-        except KeyError:
-            continue
-    return pieces
 

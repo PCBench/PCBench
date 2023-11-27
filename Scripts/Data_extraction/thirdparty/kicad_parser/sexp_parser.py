@@ -1,7 +1,7 @@
 '''
 S-Expression parser written in Python
 
-This module provides a generic parser `SexpParser` that coverts a python
+This module provides a generic parser `SexpParser` that converts a python
 list-based S-Expression into a python object model.  Each expression in the
 list-based S-Expression is defined as a recursive ``list`` representation in
 the form of ::
@@ -718,9 +718,32 @@ def parseFloat3(obj,sexp):
 def parseFloat4(obj,sexp):
     return parseCopy(obj,sexp,4,float)
 
-def parseSexp(sexp):
-    """Parses S-expressions and return a ``list`` represention
-        
+
+_sexp_regex = re.compile(
+    r'''(?mx)
+            \s*(?:
+            (?P<l>\()|
+            (?P<r>\))|
+            (?P<q>"(\\"|[^"])*")|
+            (?P<s>[^(^)\s]+)
+        )''')
+
+_sexp_regex_quote_no_parse = re.compile(
+        r'''(?mx)
+                \s*(?:
+                (?P<l>\()|
+                (?P<r>\))|
+                (?P<s>[^(^)\s]+)
+            )''')
+
+def parseSexp(sexp, quote_no_parse=None):
+    """Parses S-expressions and return a ``list`` representation
+
+        quote_no_parse: specify the first token of a S-expression to treat quote
+                        as normal character. It can either be a string or a
+                        compiled regular expression pattern. If it is '*', then
+                        it matches all.
+
         Code borrowed from: http://rosettacode.org/wiki/S-Expressions, with
         the following modifications,
 
@@ -728,23 +751,6 @@ def parseSexp(sexp):
         * Do not strip quotes (for easy export back to S-expression)
         * Added line number information for easy debugging
     """
-
-    if not hasattr(parseSexp,'regex'):
-        parseSexp.regex = re.compile(
-            r'''(?mx)
-                    \s*(?:
-                    (?P<l>\()|
-                    (?P<r>\))|
-                    # Case: kitspace_key-ripper
-                    # Failed test case: '(fp_text value "\\" (at 0 8) (layer "F.Fab"))'
-                    # (?P<q>"(\\"|[^"])*")|
-                    #
-                    # Case: kitspace_Unifying
-                    # Failed test case: '(property "Buck 5A (0.154\\", 3.90mm Width) Pad")'
-                    # (?P<q>"([^"])*")|
-                    (?P<q>"((?:\\.|[^"\\])*)")|
-                    (?P<s>[^(^)\s]+)
-                )''')
 
     # Pre-process data to get index position of each line end
     lines = []
@@ -756,32 +762,59 @@ def parseSexp(sexp):
         lines.append(count)
     sexp = ''.join(sexp)
 
+    regex = _sexp_regex
+
+    if isinstance(quote_no_parse, str):
+        if quote_no_parse == '*':
+            match = lambda _ : True
+        else:
+            match = lambda x : quote_no_parse == x
+    elif hasattr(quote_no_parse, 'match'):
+        match = lambda x : quote_no_parse.match(x)
+    else:
+        match = lambda _ : False
+
     stack = []
     out = []
     if logger.isEnabledFor(logging.DEBUG):
         logger.debug("%-6s %-14s %-44s %-s" % tuple("term value out stack".split()))
-    for termtypes in re.finditer(parseSexp.regex, sexp):
-        term, value = [(t,v) for t,v in termtypes.groupdict().items() if v][0]
-        if logger.isEnabledFor(logging.DEBUG):
-            logging.debug("%-7s %-14s %-44r %-r" % (term, value, out, stack))
-        if   term == 'l': # left bracket
-            stack.append(out)
-            out = []
-        elif term == 'r': # right bracket
-            assert stack, "Trouble with nesting of brackets"
-            tmpout, out = out, stack.pop(-1)
-            out.append(tmpout)
-        else:
-            if not out: 
-                # insert line number as the first element
-                out.append(bisect.bisect_right(lines,termtypes.start())+1)
-            if term == 'q': # quoted string
-                # out.append(value[1:-1]) # strip quotes
-                out.append(value) # do not strip quotes
-            elif term == 's': # simple string
-                out.append(value)
+    pos = 0
+    done = False
+    count = 0
+    while not done:
+        done = True
+        for termtypes in regex.finditer(sexp, pos=pos):
+            count += 1
+            term, value = [(t,v) for t,v in termtypes.groupdict().items() if v][0]
+            if logger.isEnabledFor(logging.DEBUG):
+                logging.debug("%-7s %-14s %-44r %-r" % (term, value, out, stack))
+            if   term == 'l': # left bracket
+                pos = termtypes.start()
+                stack.append(out)
+                out = []
+            elif term == 'r': # right bracket
+                assert stack, "Trouble with nesting of brackets"
+                tmpout, out = out, stack.pop(-1)
+                out.append(tmpout)
             else:
-                raise NotImplementedError('Error: {}, {}'.format(term, value))
+                if not out:
+                    # insert line number as the first element
+                    out.append(bisect.bisect_right(lines,termtypes.start())+1)
+                if term == 'q': # quoted string
+                    # out.append(value[1:-1]) # strip quotes
+                    out.append(value) # do not strip quotes
+                elif term == 's': # simple string
+                    if value and len(out) == 1:
+                        r = _sexp_regex_quote_no_parse if match(value) else _sexp_regex
+                        if regex is not r:
+                            out = stack.pop(-1)
+                            regex = r
+                            done = False
+                            break
+
+                    out.append(value)
+                else:
+                    raise NotImplementedError('Error: {}, {}'.format(term, value))
 
     assert not stack, "Trouble with nesting of brackets"
 

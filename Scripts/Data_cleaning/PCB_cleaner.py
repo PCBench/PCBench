@@ -7,7 +7,7 @@ from Data_extraction.thirdparty.kicad_parser.kicad_pcb import *
 
 import os
 
-PCB_folder = "new_PCBs"
+PCB_folder = "test_v7"
 
 def read_csv(file_name):
     with open(file_name, "r") as f:
@@ -19,10 +19,10 @@ def read_csv(file_name):
 
 def revise_module_fp_text(pcb):
     text_count = defaultdict(int)
-    for m in pcb.module:
+    for m in pcb.footprint:
         text_count[m.fp_text[0][1]] += 1
 
-    for m in pcb.module:
+    for m in pcb.footprint:
         if text_count[m.fp_text[0][1]] > 1 or m.fp_text[0][1] == '""' or m.fp_text[0][1] == '" "':
             tmp_text = m.fp_text[0][1]
             if tmp_text == '""':
@@ -30,7 +30,10 @@ def revise_module_fp_text(pcb):
             elif tmp_text == '" "':
                 m.fp_text[0][1] =  f"None_{text_count[tmp_text]}"
             else:
-                m.fp_text[0][1] =  str(tmp_text) + "_" + str(text_count[tmp_text])
+                if tmp_text[-1] == '"':
+                    m.fp_text[0][1] =  f'"{tmp_text[1:-1]}_{text_count[tmp_text]}"'
+                else:
+                    m.fp_text[0][1] =  f'{tmp_text}_{text_count[tmp_text]}'
             del m.fp_text[0][1][0]
             text_count[tmp_text] -= 1
 
@@ -71,7 +74,7 @@ def delete_fill_zone(pcb_names):
     for name in pcb_names:
         pcb_file_path = f"../../{PCB_folder}/" + name + "/raw.kicad_pcb"
         new_pcb_name = name + ".kicad_pcb"
-        pcb = KicadPCB.load(pcb_file_path)
+        pcb, _ = KicadPCB.load(pcb_file_path)
         fill_zone_nets = set([])
         for zone in pcb.zone:
             fill_zone_nets.add(zone.net)

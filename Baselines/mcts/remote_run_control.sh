@@ -10,12 +10,12 @@ servers=(Ybiao@c220g1-030611.wisc.cloudlab.us
 		Ybiao@c220g2-011322.wisc.cloudlab.us
 		Ybiao@c220g1-030614.wisc.cloudlab.us)
 
-declare -i idx=0
+declare -i idx=10
 for serv in ${servers[@]}; do
 	echo -e "copy $idx folder to $serv"
     # scp -r mul_run.py "$serv:~/PCBench/Baselines/mcts/"
-    scp -r run.sh "$serv:~/PCBench/Baselines/mcts/"
-	# scp -r ../RL/models_$idx "$serv:~/PCBench/Baselines/RL/"
+    # scp -r run.sh "$serv:~/PCBench/Baselines/mcts/"
+	scp -r ~/results/PCBench/RL/models_$idx "$serv:~/PCBench/Baselines/RL/"
 
 	idx=$(( idx + 1 ))
 done

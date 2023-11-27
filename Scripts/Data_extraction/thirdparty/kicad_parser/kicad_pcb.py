@@ -7,10 +7,13 @@ it is to implement a parser in an almost declarative way.
 
 A usage demonstration is available in `test.py`
 '''
-
-import collections
 import json
-from .sexp_parser import *
+import collections
+
+try:
+    from .sexp_parser import *
+except ImportError:
+    from sexp_parser.sexp_parser import *
 
 __author__ = "Zheng, Lei"
 __copyright__ = "Copyright 2016, Zheng, Lei"
@@ -45,7 +48,7 @@ class KicadPCB_module(SexpParser):
     _default_bools = 'locked'
     _parse_fp_text = KicadPCB_gr_text
     _parse_pad = KicadPCB_pad
-    
+
 
 class KicadPCB(SexpParser):
 
@@ -65,15 +68,18 @@ class KicadPCB(SexpParser):
                 'gr_circle',
                 'gr_arc',
                 'gr_curve',
+                'gr_poly',
                 'segment',
                 'arc',
                 'via',
+                'module',
+                'footprint',
                 ['module'] + _module,
                 ['footprint'] + _module,
                 ('zone',
                     'filled_polygon'))
 
-    _alias_keys = {'footprint' : 'module'}
+    # _alias_keys = {'footprint' : 'module'}
     _parse_module = KicadPCB_module
     _parse_footprint = KicadPCB_module
     _parse_gr_text = KicadPCB_gr_text
@@ -84,6 +90,11 @@ class KicadPCB(SexpParser):
     def getError(self):
         return getSexpError(self)
 
+    # @staticmethod
+    # def load(filename, quote_no_parse=None):
+    #     with open(filename,'r') as f:
+    #         return KicadPCB(parseSexp(f.read(), quote_no_parse))
+    
     @staticmethod
     def load(filename):
         ret = None
@@ -92,52 +103,41 @@ class KicadPCB(SexpParser):
             version = ret.version
         if (version) > 20211000:  # if v6, extract net_class from project file. 
             circuitname = filename[0:len(filename)-10]   # assumes project file and pcb file have same name & in same dir
+            net_classes = None
             try:
                 with open(circuitname+'.kicad_pro') as f:
                     net_settings = json.load(f)['net_settings']
-                    for net_class in net_settings['classes']:
-                         net_class = V6ToV5Naming(net_class)
-                         ret.net_class._value.append(Sexp('net_class', collections.OrderedDict(net_class)))
+                    net_classes = get_netclass(net_settings, "v7")
                     
-                    # In v6, classes other than Default have lists of member nets in kicad_pro
-                    # which we can convert to the add_net Sexp structure in V6ToV5Naming
-                    # afterward, all remaining nets (found in ret.net) are put into the add_net Sexp structure for
-                    # the Default net_class.
-                    for nc in ret.net_class:
-                        if nc[0] == "Default":
-                            for net in ret.net:
-                                if net[1] not in CLASSED_NETS:
-                                    nc['add_net'].append(Sexp('add_net',net[1]))
             except FileNotFoundError:
                 print(f"Warrning: kicad_pcb.py detected a kicad v6 file format, but\
                     \n could not find {circuitname}.kicad_pro in the directory of {circuitname}.kicad_pcb file\
                     Returning KicadPCB without getting .net_class attribute from project file")
-            except KeyError:
-                print(f"Warning: {circuitname}.kicad_pro did not contain key 'net_settings'\
-                    \nand/or its subkey 'classes'\
-                    Returning KicadPCB without getting .net_class attribute from project file")
-        if len(ret.net_class) == 0:
-            print(f"Warning: {filename} has been initialized with an empty net_class attribute")
-        
-        return ret
 
-CLASSED_NETS = set()
+            return ret, net_classes
+        return ret, get_netclass(ret["net_class"], "v5")
 
-def V6ToV5Naming(dict):
-    dict = collections.OrderedDict(dict)
-    dict[0] = dict['name']
-    dict['via_dia'] = dict['via_diameter']
-    dict['trace_width'] = dict['wire_width']
-    del dict['wire_width']
-    del dict['via_diameter']
-
-
-    dict['add_net'] = list()    # The v5 net-to-class structure the Sexp: (net_class {name} {desc} (add_net {name})...)
-                                # which converts to a List of add_net Sexp Objs with {name} values
-    for k in dict.keys():
-        if k == "nets":
-            for item in dict[k]:
-                dict["add_net"].append(Sexp("add_net", f'"{item}"'))    # Quotes preserved for Sexp
-                CLASSED_NETS.add(item)
-        dict[k] = Sexp(k, dict[k])
-    return dict
+def get_netclass(classes, kicad_version="v5"):
+    net_classes = {}
+    if kicad_version == "v5":
+        for net_class in classes:
+            nc_dict = {}
+            nc_dict['width'] = net_class.trace_width
+            nc_dict['clearance'] = net_class.clearance
+            nc_dict['via_diameter'] = net_class.via_dia
+            nc_dict['net_names'] = list()
+            for i in range(len(net_class.add_net)):
+                nc_dict["net_names"].append(net_class.add_net[i])
+            net_classes[net_class[0]] = nc_dict
+    elif kicad_version == "v7":
+        for net_class in classes["classes"]:
+            nc_dict = {}
+            nc_dict['width'] = net_class["track_width"]
+            nc_dict['clearance'] = net_class["clearance"]
+            nc_dict['via_diameter'] = net_class["via_diameter"]
+            nc_dict['net_names'] = list()
+            net_classes[net_class["name"]] = nc_dict
+        if "netclass_patterns" in classes:
+            for pattern in classes["netclass_patterns"]:
+                net_classes[pattern["netclass"]]["net_names"].append(f'"{pattern["pattern"]}"')
+    return net_classes
