@@ -24,11 +24,8 @@ All the PCB designs in our dataset are stored in the folder `PCBs`, where each P
 ```
 The `raw.kicad_pcb` is the raw PCB design file, `process.kicad_pcb` is the file after cleaning up, `final.json` stores only  routing-related information used for ML tasks. `metadata.json` stores the meta information for each single PCB design. `visual.png` is a visualization of each single PCB design. `master_meta.json` contains metadata of all PCBs and global-level information.
 
-### Meta Data
-The meta data information can be found [here](https://pcbench.slab.com/posts/json-for-board-metadata-wqa2wdrc).
-
 ### PCB Routing Description Language (PCB-RDL)
-We propose a JSON specification (`final.json` for each PCB design) called the PCB Routing Description  Language (PCB-RDL) that expresses a PCB routing problem and its solutions intuitively using basic concepts in order to facilitate research into automated PCB routing using ML. The details of PCB-RDL can be found [here](https://pcbench.slab.com/posts/pcb-routing-description-language-pcb-rdl-merz04kq). Following figure shows is an example of PCB with marked components in PCB-RDL (Left) and it corrsponding PCB-RDL (Right).
+We propose a JSON specification (`final.json` for each PCB design) called the PCB Routing Description  Language (PCB-RDL) that expresses a PCB routing problem and its solutions intuitively using basic concepts in order to facilitate research into automated PCB routing using ML. Following figure shows is an example of PCB with marked components in PCB-RDL (Left) and it corrsponding PCB-RDL (Right).
 
 ![PCB example](https://github.com/PCBench/PCBench/blob/main/Images/PCB_example.png)
 
